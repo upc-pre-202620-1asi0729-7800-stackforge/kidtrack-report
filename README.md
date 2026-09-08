@@ -130,7 +130,6 @@ Proyecto
     - [3.1. User Stories](#31-user-stories)
     - [3.2. Impact Mapping](#32-impact-mapping)
     - [3.3. Product Backlog](#33-product-backlog)
-- [Product Backlog - SafeRoute](#product-backlog-saferoute)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
     - [4.1. Style Guidelines](#41-style-guidelines)
         - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
@@ -195,18 +194,141 @@ Proyecto
 
 ### 1.1. Startup Profile
 #### 1.1.1. Descripción de la Startup
+StackForge es una startup tecnológica formada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC),
+enfocada en crear soluciones digitales para problemas reales en sectores con poca presencia tecnológica,
+y nace de la convicción de que la seguridad de los niños en su traslado escolar no debería depender de llamadas,
+mensajes de WhatsApp o anotaciones en papel, por lo que su propuesta de valor se materializa en KidTrack,
+una plataforma web de movilidad institucional inteligente que digitaliza y optimiza la gestión del transporte escolar,
+permitiendo a cualquier organización del rubro ya sea un grupo de padres que comparte una movilidad,
+un conductor independiente o una pequeña empresa centralizar en un solo lugar la administración de sus rutas, conductores, alumnos y comunicación.
 #### 1.1.2. Perfiles de integrantes del equipo
 
+|                   Foto                    | Apellidos y Nombres    |    Código    | Carrera                | Resumen                                                                                                                                                                                                                                                                                                                                                                                 |
+|:-----------------------------------------:|:-----------------------|:------------:| :--------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    ![foto](./assets/images/Team/.jpg)     | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
+|    ![foto](./assets/images/Team/.jpeg)    | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                    |
+| ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
+|        ![foto](assets/images/.png)        | nombre el integrante   |   [codigo]   | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
+|  ![foto](assets/images/Team/perfil-.png)  | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                      |
+
 ### 1.2. Solution Profile
+
 #### 1.2.1 Antecedentes y problemática
+
+Who (¿Quiénes son los afectados?)
+Existen dos grupos claramente afectados por esta problemática. Por un lado, los padres o apoderados de niños en edad inicial, kínder y primaria que contratan un servicio de transporte escolar privado, pero que no tienen forma de saber en tiempo real cómo va el traslado de sus hijos. Por otro lado, están los conductores ya sea independientes o vinculados a pequeñas empresas del rubro que deben coordinar rutas y alumnos sin contar con ninguna herramienta digital de apoyo.
+
+What (¿Cuál es el problema?)
+En el Perú, el transporte escolar privado sigue operando de manera mayormente artesanal, sin ningún tipo de respaldo tecnológico. Padres y conductores se comunican a través de medios informales como llamadas o grupos de WhatsApp, lo que trae consigo desorden, información que se pierde y una sensación permanente de duda en los padres sobre si sus hijos están realmente seguros. A esto se suma que los conductores y quienes administran el servicio no cuentan con ningún sistema para registrar asistencia, organizar rutas, dejar constancia de incidencias o mantener un historial de cada recorrido.
+
+Where (¿Dónde ocurre?)
+Este problema se concentra sobre todo en las zonas urbanas de Lima Metropolitana, donde el transporte escolar privado tiene alta demanda pero opera de forma dispersa y muchas veces informal. Aun así, la misma situación puede replicarse en cualquier otra ciudad peruana que tenga muchos colegios privados sin flota vehicular propia.
+
+When (¿Cuándo ocurre?)
+El problema se repite todos los días durante los horarios de ingreso y salida del colegio, generalmente entre las 6:00 a.m. y 8:30 a.m., y luego entre las 12:30 p.m. y 5:00 p.m. Justamente en esas franjas horarias es cuando más se nota la falta de información en tiempo real, lo que eleva la ansiedad de los padres y la presión sobre los conductores.
+
+Why (¿Por qué es un problema?)
+No contar con digitalización trae consecuencias concretas: los padres no tienen certeza de si su hijo subió al vehículo, si llegó al colegio o si algo ocurrió durante el camino. Los conductores, por su parte, incurren en errores como saltarse paradas u olvidar recoger a algún alumno, y no tienen un canal ordenado para avisar retrasos. Además, quienes administran el servicio terminan invirtiendo tiempo valioso en coordinar manualmente tareas que podrían automatizarse, sin tener registros históricos que les permitan optimizar la operación.
+
+How (¿Cómo se manifiesta?)
+Esto se traduce en un flujo constante de llamadas y mensajes de los padres hacia el conductor durante el trayecto, listas de alumnos anotadas en papel u hojas de cálculo que nadie más puede consultar, ninguna forma de dejar constancia de incidencias, imposibilidad de comprobar si se respetaron las paradas programadas, y falta total de trazabilidad sobre qué estudiantes efectivamente abordaron el vehículo en cada viaje.
+
+How much (¿Cuál es la magnitud?)
+Aunque no existen cifras exactas ni actualizadas que dimensionen con precisión el mercado del transporte escolar privado en el país, algunos indicadores del sector educativo y de transporte ayudan a entender la magnitud del problema.
+
+De acuerdo con el Censo Educativo 2022-2023 elaborado por el Ministerio de Educación (MINEDU, 2023), Lima Metropolitana alberga cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenecen al sector privado. Esta fuerte presencia de colegios privados hace que un número considerable de familias dependa de terceros para el traslado escolar, ya que son pocas las instituciones que cuentan con transporte propio.
+
+El panorama se complica aún más si se considera que, según la Autoridad de Transporte Urbano para Lima y Callao (ATU, 2024), el número de movilidades escolares con autorización formal cayó un 25% en tan solo un año lo que apunta a un crecimiento de la informalidad en el sector y, por tanto, a menos mecanismos de supervisión sobre el servicio que reciben los menores.
+
+En cuanto a seguridad, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (SUTRAN, 2024) desarrolló campañas de sensibilización dirigidas a más de 47,000 escolares, lo que confirma que este tema sigue siendo una prioridad para las autoridades competentes. Sin embargo, no hay data pública desagregada sobre incidentes puntuales registrados en este sector entre 2022 y 2025.
+
+**Figura 1** Distribución de estudiantes de nivel Inicial y Primaria matriculados en colegios privados dentro de zonas urbanas del Perú
+![CensoEstudiantil](./assets/images/Chapter1/CensoEstudiantil.png)
+_Nota._ Elaborado a partir de los datos del Censo Educativo 2022 (p. 12), Ministerio de Educación, 2023.
+
 #### 1.2.2 Lean UX Process
+
 ##### 1.2.2.1. Lean UX Problem Statements
+
+En nuestro país, la gran mayoría de servicios de movilidad escolar funciona todavía de manera artesanal: los conductores y las familias se coordinan a través de llamadas, chats de WhatsApp y anotaciones sueltas en cuadernos o papeles. Esta forma de trabajar termina afectando tanto la tranquilidad de los padres como la capacidad operativa de los transportistas, 
+comprometiendo la calidad y seguridad del servicio en general.
+
+Al analizar este ecosistema identificamos un punto crítico que lo atraviesa por completo: de un lado,
+las familias no tienen ninguna forma de conocer en qué momento del recorrido se encuentra su hijo; 
+del otro, los transportistas no cuentan con ningún sistema digital que les permita organizar sus rutas, controlar a los estudiantes o dejar constancia de incidentes de manera ordenada. 
+Lo interesante es que ambas carencias están profundamente conectadas: los padres necesitan poder ver el trayecto, pero son justamente los transportistas quienes no tienen las herramientas para ofrecerles esa visibilidad.
+
+Esto nos lleva a plantearnos la siguiente pregunta central: 
+¿de qué forma podríamos construir una solución que le dé al transportista escolar el control digital de su operación diaria, y que al mismo tiempo brinde a los padres de familia la tranquilidad de saber, en todo momento, cómo va el traslado de sus hijos?
 ##### 1.2.2.2. Lean UX Assumptions
+Siguiendo lo planteado en la tercera edición de *Lean UX*, los requisitos de un producto no deben asumirse como verdades absolutas, sino tratarse como supuestos que aún necesitan comprobación. Bajo ese principio, en StackForge no limitamos nuestros assumptions únicamente a las categorías clásicas de negocio y usuario, sino que los desglosamos en cinco bloques que se desprenden directamente de la primera parte del Lean UX Canvas, los cuales el equipo debe dejar explícitos antes de pasar a construir hipótesis y validarlas.
+
+**Business Problem Assumptions**
+
+- Suponemos que el servicio de movilidad escolar privada en Lima Metropolitana se maneja en su mayoría a través de llamadas, WhatsApp y anotaciones manuales, lo que trae como consecuencia escasa visibilidad, fallos operativos y desconfianza hacia el servicio.
+- Suponemos que no poder rastrear el traslado escolar impacta a la vez a los padres que buscan tranquilidad y a los transportistas, que necesitan mayor orden en su día a día.
+- Suponemos que hay una oportunidad comercial clara si KidTrack logra unir la necesidad de seguridad de las familias con la necesidad de digitalización de los transportistas.
+
+**Business Outcome Assumptions**
+
+- Suponemos que KidTrack tendrá viabilidad si los administradores logran completar el registro de toda su operación dentro de los primeros 15 días de uso.
+- Suponemos que mantener suscriptores dependerá de que la plataforma demuestre, en la práctica, ahorro de tiempo, menos errores y mayor confianza para las familias.
+- Suponemos que contar con planes Básico, Intermedio y Completo nos permitirá atender tanto a pequeños grupos de padres organizados como a empresas de transporte escolar con flotas más grandes.
+
+**User Assumptions**
+
+- Suponemos que nuestros usuarios principales son, por un lado, padres con hijos en el nivel inicial y primaria que ya contratan transporte escolar privado, y por otro, transportistas independientes o dueños de pequeñas empresas del rubro.
+- Suponemos que cualquiera de estos dos perfiles puede convertirse en Administrador cuando necesite registrar usuarios, conductores, hijos, rutas o asignaciones dentro del sistema.
+- Suponemos que los padres accederán a KidTrack principalmente en los horarios de entrada y salida del colegio, mientras que los transportistas la usarán durante toda su jornada de trabajo.
+
+**User Outcome and Benefit Assumptions**
+
+- Suponemos que lo que buscan los padres es disminuir la incertidumbre durante el traslado sin tener que estar llamando o escribiéndole constantemente al conductor.
+- Suponemos que los transportistas buscan aligerar la carga de coordinación manual, evitar errores al momento de recoger alumnos y transmitir una imagen más profesional frente a las familias.
+- Suponemos que los administradores buscan tener toda la operación centralizada en un solo lugar, dejando atrás el uso de herramientas dispersas.
+
+**Solution Assumptions**
+
+- Suponemos que un panel donde se administren usuarios, hijos, conductores y rutas ayudará a poner en orden la operación del transporte escolar.
+- Suponemos que funciones como el checklist de abordaje, la visualización de paradas, el historial de viajes y el reporte de incidencias son indispensables para generar valor desde el primer lanzamiento del MVP.
+- Suponemos que el rastreo GPS en tiempo real y futuras integraciones con IoT pueden ser el diferencial de los planes más avanzados, una vez que los usuarios ya perciban el valor de la solución base.
+- Suponemos que la interfaz debe sentirse limpia, ágil, accesible, disponible en dos idiomas y fácil de entender, sin importar el nivel de familiaridad tecnológica de quien la use.
 ##### 1.2.2.3. Lean UX Hypothesis Statements
+Hipótesis 1: "Creemos que los padres de familia lograrán sentir menos incertidumbre durante el traslado escolar gracias a una vista donde puedan ver el estado del trayecto, el registro de abordaje de cada alumno y la ubicación de las paradas.
+Sabremos que esto se cumple cuando, durante las primeras 4 semanas de uso, al menos el 70% de los padres activos revise el estado del trayecto como mínimo una vez al día."
+
+Hipótesis 2: "Creemos que los transportistas podrán operar sus rutas con menos errores y menor carga de trabajo gracias a una interfaz sencilla que les permita marcar abordajes, dar seguimiento a las paradas y reportar incidencias durante el viaje.
+Sabremos que esto se cumple cuando, durante las primeras 4 semanas de operación, el 80% de los trayectos registrados tenga el checklist de abordaje completado."
+
+Hipótesis 3: "Creemos que los administradores podrán centralizar la gestión de su servicio a través de un panel único donde registren usuarios, conductores, hijos, asignaciones y rutas.
+Sabremos que esto se cumple cuando, dentro de los primeros 15 días tras el onboarding, al menos el 75% de los administradores haya registrado la totalidad de sus usuarios y rutas."
+
+Hipótesis 4: "Creemos que los administradores subirán de nivel de suscripción al notar que las funciones de los planes superiores reducen de forma notable el tiempo que dedican a coordinar el servicio.
+Sabremos que esto se cumple cuando, dentro de los primeros 3 meses de uso, al menos el 20% de los administradores en planes Básico o Intermedio migre a un plan superior."
 ##### 1.2.2.4. Lean UX Canvas
-
+| Sección | Contenido                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| :--- |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Business Problem | En el Perú, el transporte escolar privado sigue funcionando de forma tradicional y sin ningún apoyo tecnológico. Los padres no tienen manera de saber cómo va el trayecto de sus hijos, y los transportistas organizan su operación a través de llamadas, WhatsApp y hojas sueltas, lo que se traduce en errores, poca eficiencia y un servicio que no genera confianza.                                                                                                                                                                                               |
+| 2. Business Outcomes | Que el 75% de los administradores complete el registro de su operación dentro de los primeros 15 días. Retener al 80% de los suscriptores activos durante los primeros 3 meses. Alcanzar un 20% de upgrade del plan Básico al Intermedio dentro de los primeros 3 meses de uso.                                                                                                                                                                                                                                                                                        |
+| 3. Users | Los segmentos que usan KidTrack son, por un lado, los padres de familia con hijos en nivel inicial y primaria que ya cuentan con un servicio de transporte escolar contratado, y por otro, los transportistas escolares conductores independientes o responsables de pequeñas empresas que operan dicho servicio. Cualquiera de ambos perfiles puede además tomar el rol de Administrador dentro de la plataforma.                                                                                                                                                    |
+| 4. User Outcomes & Benefits | Los padres buscan bajar su nivel de incertidumbre respecto al trayecto de sus hijos, pudiendo revisar el estado del viaje sin necesidad de contactar al conductor. Los transportistas buscan digitalizar la gestión de rutas, alumnos e incidencias, disminuyendo errores operativos y transmitiendo una imagen más profesional ante las familias. Quienes cumplen el rol de administrador buscan reunir toda la operación en un solo panel, dejando atrás la coordinación manual y el uso de herramientas dispersas.                                                  |
+| 5. Solution Ideas | Un panel de administración para usuarios, conductores, hijos y rutas. Un checklist digital de abordaje que completa el conductor. Una vista de paradas y estado del trayecto pensada para los padres. Registro de incidencias por cada ruta. Historial de trayectos organizado por comunidad de ruta. Seguimiento GPS en tiempo real (disponible en el plan Completo). Posibilidad de integrar sensores IoT más adelante.                                                                                                                                              |
+| 6. Hypotheses | Durante las primeras 4 semanas, el 70% de los padres revisa el estado del trayecto al menos una vez al día.<br>Durante las primeras 4 semanas, el 80% de los trayectos registrados tiene el checklist de abordaje completo gracias a una interfaz operativa simple.<br>Dentro de los primeros 15 días, el 75% de los administradores completa el registro de su operación usando el panel único de gestión.<br>Dentro de los primeros 3 meses, el 20% de los administradores en planes Básico o Intermedio hace upgrade al notar el valor de las funciones superiores. |
+| 7. What's the most important thing we need to learn first? | ¿Realmente el administrador del servicio percibe en KidTrack un valor lo bastante grande como para dejar de lado sus métodos informales actuales y pagar una suscripción mensual?                                                                                                                                                                                                                                                                                                                                                                                      |
+| 8. What's the least amount of work we need to do to learn the next most important thing? | Entrevistar entre 3 y 5 administradores de servicios de transporte escolar (ya sea padres representantes o transportistas independientes) para conocer qué tan dispuestos están al cambio y qué funciones consideran indispensables antes de construir el MVP.                                                                                                                                                                                                                                                                                                         |
 ### 1.3. Segmentos objetivo
+KidTrack está pensado para dos segmentos que forman parte del ecosistema del transporte escolar privado en Lima Metropolitana.
 
+- **Segmento 1: Padres de Familia**
+
+  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia.
+
+
+- **Segmento 2: Transportistas Escolares**
+
+  El segundo segmento reúne a las personas o entidades responsables de operar el servicio de transporte escolar privado, y dentro de él conviven tres perfiles distintos. Está, en primer lugar, el conductor independiente que ofrece el servicio por su cuenta. Luego está el conductor contratado para manejar una movilidad organizada entre varias familias. Y finalmente, los responsables de pequeñas empresas de transporte escolar que administran una flota de vehículos y conductores a su cargo. Aunque son perfiles diferentes entre sí, comparten un mismo problema de fondo: todos trabajan sin herramientas digitales especializadas y recurren a métodos manuales e informales para gestionar una actividad que compromete directamente la seguridad de menores de edad. La importancia de este segmento queda reflejada en que las movilidades escolares autorizadas en Lima cayeron un 25% en apenas un año, lo cual apunta a un aumento de la informalidad en el sector y, con ella, a menos mecanismos de control sobre el servicio que reciben los niños (Autoridad de Transporte Urbano para Lima y Callao, 2024). A esto se suma que, en 2024, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías realizó campañas de sensibilización dirigidas a más de 47,000 escolares, lo que reafirma que la seguridad en este rubro sigue siendo un tema que preocupa a las autoridades (SUTRAN, 2024). Por todo esto, lo que impulsa a este segmento a usar KidTrack es principalmente digitalizar y profesionalizar su forma de trabajar, reducir errores en la gestión de rutas y alumnos, y ofrecer a las familias que atienden un servicio más confiable y transparente.
+
+---
 ## Capítulo II: Requirements Elicitation & Analysis
 
 ### 2.1. Competidores
@@ -342,5 +464,10 @@ Proyecto
 ## Video About-the-Team
 
 ## Bibliografía
+- Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
+- Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). _Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial_. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
+
+
+
 
 ## Anexos
