@@ -130,7 +130,7 @@ Proyecto
     - [3.1. User Stories](#31-user-stories)
     - [3.2. Impact Mapping](#32-impact-mapping)
     - [3.3. Product Backlog](#33-product-backlog)
-- [Product Backlog - SafeRoute](#product-backlog-saferoute)
+- [Product Backlog - KidTrack](#product-backlog-kidtrack)
 - [Capítulo IV: Product Design](#capítulo-iv-product-design)
     - [4.1. Style Guidelines](#41-style-guidelines)
         - [4.1.1. General Style Guidelines](#411-general-style-guidelines)
@@ -262,6 +262,38 @@ Lo interesante es que ambas carencias están profundamente conectadas: los padre
 Esto nos lleva a plantearnos la siguiente pregunta central: 
 ¿de qué forma podríamos construir una solución que le dé al transportista escolar el control digital de su operación diaria, y que al mismo tiempo brinde a los padres de familia la tranquilidad de saber, en todo momento, cómo va el traslado de sus hijos?
 ##### 1.2.2.2. Lean UX Assumptions
+Siguiendo lo planteado en la tercera edición de *Lean UX*, los requisitos de un producto no deben asumirse como verdades absolutas, sino tratarse como supuestos que aún necesitan comprobación. Bajo ese principio, en StackForge no limitamos nuestros assumptions únicamente a las categorías clásicas de negocio y usuario, sino que los desglosamos en cinco bloques que se desprenden directamente de la primera parte del Lean UX Canvas, los cuales el equipo debe dejar explícitos antes de pasar a construir hipótesis y validarlas.
+
+**Business Problem Assumptions**
+
+- Suponemos que el servicio de movilidad escolar privada en Lima Metropolitana se maneja en su mayoría a través de llamadas, WhatsApp y anotaciones manuales, lo que trae como consecuencia escasa visibilidad, fallos operativos y desconfianza hacia el servicio.
+- Suponemos que no poder rastrear el traslado escolar impacta a la vez a los padres que buscan tranquilidad y a los transportistas, que necesitan mayor orden en su día a día.
+- Suponemos que hay una oportunidad comercial clara si KidTrack logra unir la necesidad de seguridad de las familias con la necesidad de digitalización de los transportistas.
+
+**Business Outcome Assumptions**
+
+- Suponemos que KidTrack tendrá viabilidad si los administradores logran completar el registro de toda su operación dentro de los primeros 15 días de uso.
+- Suponemos que mantener suscriptores dependerá de que la plataforma demuestre, en la práctica, ahorro de tiempo, menos errores y mayor confianza para las familias.
+- Suponemos que contar con planes Básico, Intermedio y Completo nos permitirá atender tanto a pequeños grupos de padres organizados como a empresas de transporte escolar con flotas más grandes.
+
+**User Assumptions**
+
+- Suponemos que nuestros usuarios principales son, por un lado, padres con hijos en el nivel inicial y primaria que ya contratan transporte escolar privado, y por otro, transportistas independientes o dueños de pequeñas empresas del rubro.
+- Suponemos que cualquiera de estos dos perfiles puede convertirse en Administrador cuando necesite registrar usuarios, conductores, hijos, rutas o asignaciones dentro del sistema.
+- Suponemos que los padres accederán a KidTrack principalmente en los horarios de entrada y salida del colegio, mientras que los transportistas la usarán durante toda su jornada de trabajo.
+
+**User Outcome and Benefit Assumptions**
+
+- Suponemos que lo que buscan los padres es disminuir la incertidumbre durante el traslado sin tener que estar llamando o escribiéndole constantemente al conductor.
+- Suponemos que los transportistas buscan aligerar la carga de coordinación manual, evitar errores al momento de recoger alumnos y transmitir una imagen más profesional frente a las familias.
+- Suponemos que los administradores buscan tener toda la operación centralizada en un solo lugar, dejando atrás el uso de herramientas dispersas.
+
+**Solution Assumptions**
+
+- Suponemos que un panel donde se administren usuarios, hijos, conductores y rutas ayudará a poner en orden la operación del transporte escolar.
+- Suponemos que funciones como el checklist de abordaje, la visualización de paradas, el historial de viajes y el reporte de incidencias son indispensables para generar valor desde el primer lanzamiento del MVP.
+- Suponemos que el rastreo GPS en tiempo real y futuras integraciones con IoT pueden ser el diferencial de los planes más avanzados, una vez que los usuarios ya perciban el valor de la solución base.
+- Suponemos que la interfaz debe sentirse limpia, ágil, accesible, disponible en dos idiomas y fácil de entender, sin importar el nivel de familiaridad tecnológica de quien la use.
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 ##### 1.2.2.4. Lean UX Canvas
 
