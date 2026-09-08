@@ -295,6 +295,17 @@ Siguiendo lo planteado en la tercera edición de *Lean UX*, los requisitos de un
 - Suponemos que el rastreo GPS en tiempo real y futuras integraciones con IoT pueden ser el diferencial de los planes más avanzados, una vez que los usuarios ya perciban el valor de la solución base.
 - Suponemos que la interfaz debe sentirse limpia, ágil, accesible, disponible en dos idiomas y fácil de entender, sin importar el nivel de familiaridad tecnológica de quien la use.
 ##### 1.2.2.3. Lean UX Hypothesis Statements
+Hipótesis 1: "Creemos que los padres de familia lograrán sentir menos incertidumbre durante el traslado escolar gracias a una vista donde puedan ver el estado del trayecto, el registro de abordaje de cada alumno y la ubicación de las paradas.
+Sabremos que esto se cumple cuando, durante las primeras 4 semanas de uso, al menos el 70% de los padres activos revise el estado del trayecto como mínimo una vez al día."
+
+Hipótesis 2: "Creemos que los transportistas podrán operar sus rutas con menos errores y menor carga de trabajo gracias a una interfaz sencilla que les permita marcar abordajes, dar seguimiento a las paradas y reportar incidencias durante el viaje.
+Sabremos que esto se cumple cuando, durante las primeras 4 semanas de operación, el 80% de los trayectos registrados tenga el checklist de abordaje completado."
+
+Hipótesis 3: "Creemos que los administradores podrán centralizar la gestión de su servicio a través de un panel único donde registren usuarios, conductores, hijos, asignaciones y rutas.
+Sabremos que esto se cumple cuando, dentro de los primeros 15 días tras el onboarding, al menos el 75% de los administradores haya registrado la totalidad de sus usuarios y rutas."
+
+Hipótesis 4: "Creemos que los administradores subirán de nivel de suscripción al notar que las funciones de los planes superiores reducen de forma notable el tiempo que dedican a coordinar el servicio.
+Sabremos que esto se cumple cuando, dentro de los primeros 3 meses de uso, al menos el 20% de los administradores en planes Básico o Intermedio migre a un plan superior."
 ##### 1.2.2.4. Lean UX Canvas
 
 ### 1.3. Segmentos objetivo
