@@ -215,6 +215,38 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 ### 1.2. Solution Profile
 
 #### 1.2.1 Antecedentes y problemática
+
+Who (¿Quiénes son los afectados?)
+Existen dos grupos claramente afectados por esta problemática. Por un lado, los padres o apoderados de niños en edad inicial, kínder y primaria que contratan un servicio de transporte escolar privado, pero que no tienen forma de saber en tiempo real cómo va el traslado de sus hijos. Por otro lado, están los conductores ya sea independientes o vinculados a pequeñas empresas del rubro que deben coordinar rutas y alumnos sin contar con ninguna herramienta digital de apoyo.
+
+What (¿Cuál es el problema?)
+En el Perú, el transporte escolar privado sigue operando de manera mayormente artesanal, sin ningún tipo de respaldo tecnológico. Padres y conductores se comunican a través de medios informales como llamadas o grupos de WhatsApp, lo que trae consigo desorden, información que se pierde y una sensación permanente de duda en los padres sobre si sus hijos están realmente seguros. A esto se suma que los conductores y quienes administran el servicio no cuentan con ningún sistema para registrar asistencia, organizar rutas, dejar constancia de incidencias o mantener un historial de cada recorrido.
+
+Where (¿Dónde ocurre?)
+Este problema se concentra sobre todo en las zonas urbanas de Lima Metropolitana, donde el transporte escolar privado tiene alta demanda pero opera de forma dispersa y muchas veces informal. Aun así, la misma situación puede replicarse en cualquier otra ciudad peruana que tenga muchos colegios privados sin flota vehicular propia.
+
+When (¿Cuándo ocurre?)
+El problema se repite todos los días durante los horarios de ingreso y salida del colegio, generalmente entre las 6:00 a.m. y 8:30 a.m., y luego entre las 12:30 p.m. y 5:00 p.m. Justamente en esas franjas horarias es cuando más se nota la falta de información en tiempo real, lo que eleva la ansiedad de los padres y la presión sobre los conductores.
+
+Why (¿Por qué es un problema?)
+No contar con digitalización trae consecuencias concretas: los padres no tienen certeza de si su hijo subió al vehículo, si llegó al colegio o si algo ocurrió durante el camino. Los conductores, por su parte, incurren en errores como saltarse paradas u olvidar recoger a algún alumno, y no tienen un canal ordenado para avisar retrasos. Además, quienes administran el servicio terminan invirtiendo tiempo valioso en coordinar manualmente tareas que podrían automatizarse, sin tener registros históricos que les permitan optimizar la operación.
+
+How (¿Cómo se manifiesta?)
+Esto se traduce en un flujo constante de llamadas y mensajes de los padres hacia el conductor durante el trayecto, listas de alumnos anotadas en papel u hojas de cálculo que nadie más puede consultar, ninguna forma de dejar constancia de incidencias, imposibilidad de comprobar si se respetaron las paradas programadas, y falta total de trazabilidad sobre qué estudiantes efectivamente abordaron el vehículo en cada viaje.
+
+How much (¿Cuál es la magnitud?)
+Aunque no existen cifras exactas ni actualizadas que dimensionen con precisión el mercado del transporte escolar privado en el país, algunos indicadores del sector educativo y de transporte ayudan a entender la magnitud del problema.
+
+De acuerdo con el Censo Educativo 2022-2023 elaborado por el Ministerio de Educación (MINEDU, 2023), Lima Metropolitana alberga cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenecen al sector privado. Esta fuerte presencia de colegios privados hace que un número considerable de familias dependa de terceros para el traslado escolar, ya que son pocas las instituciones que cuentan con transporte propio.
+
+El panorama se complica aún más si se considera que, según la Autoridad de Transporte Urbano para Lima y Callao (ATU, 2024), el número de movilidades escolares con autorización formal cayó un 25% en tan solo un año lo que apunta a un crecimiento de la informalidad en el sector y, por tanto, a menos mecanismos de supervisión sobre el servicio que reciben los menores.
+
+En cuanto a seguridad, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías (SUTRAN, 2024) desarrolló campañas de sensibilización dirigidas a más de 47,000 escolares, lo que confirma que este tema sigue siendo una prioridad para las autoridades competentes. Sin embargo, no hay data pública desagregada sobre incidentes puntuales registrados en este sector entre 2022 y 2025.
+
+**Figura 1** Distribución de estudiantes de nivel Inicial y Primaria matriculados en colegios privados dentro de zonas urbanas del Perú
+![CensoEstudiantil](./assets/images/Chapter1/CensoEstudiantil.png)
+_Nota._ Elaborado a partir de los datos del Censo Educativo 2022 (p. 12), Ministerio de Educación, 2023.
+
 #### 1.2.2 Lean UX Process
 ##### 1.2.2.1. Lean UX Problem Statements
 ##### 1.2.2.2. Lean UX Assumptions
@@ -358,5 +390,5 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 ## Video About-the-Team
 
 ## Bibliografía
-
+- Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
 ## Anexos
