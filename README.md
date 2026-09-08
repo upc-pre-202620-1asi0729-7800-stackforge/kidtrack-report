@@ -70,7 +70,7 @@ Proyecto
 **Período 202620**
 <br>
 
-**Julio, 2026**
+**Setiembre, 2026**
 <br><br><br><br><br><br><br>
 
 </div>
