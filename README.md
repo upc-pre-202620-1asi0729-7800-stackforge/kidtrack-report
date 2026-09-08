@@ -248,7 +248,19 @@ En cuanto a seguridad, la Superintendencia de Transporte Terrestre de Personas, 
 _Nota._ Elaborado a partir de los datos del Censo Educativo 2022 (p. 12), Ministerio de Educación, 2023.
 
 #### 1.2.2 Lean UX Process
+
 ##### 1.2.2.1. Lean UX Problem Statements
+
+En nuestro país, la gran mayoría de servicios de movilidad escolar funciona todavía de manera artesanal: los conductores y las familias se coordinan a través de llamadas, chats de WhatsApp y anotaciones sueltas en cuadernos o papeles. Esta forma de trabajar termina afectando tanto la tranquilidad de los padres como la capacidad operativa de los transportistas, 
+comprometiendo la calidad y seguridad del servicio en general.
+
+Al analizar este ecosistema identificamos un punto crítico que lo atraviesa por completo: de un lado,
+las familias no tienen ninguna forma de conocer en qué momento del recorrido se encuentra su hijo; 
+del otro, los transportistas no cuentan con ningún sistema digital que les permita organizar sus rutas, controlar a los estudiantes o dejar constancia de incidentes de manera ordenada. 
+Lo interesante es que ambas carencias están profundamente conectadas: los padres necesitan poder ver el trayecto, pero son justamente los transportistas quienes no tienen las herramientas para ofrecerles esa visibilidad.
+
+Esto nos lleva a plantearnos la siguiente pregunta central: 
+¿de qué forma podríamos construir una solución que le dé al transportista escolar el control digital de su operación diaria, y que al mismo tiempo brinde a los padres de familia la tranquilidad de saber, en todo momento, cómo va el traslado de sus hijos?
 ##### 1.2.2.2. Lean UX Assumptions
 ##### 1.2.2.3. Lean UX Hypothesis Statements
 ##### 1.2.2.4. Lean UX Canvas
