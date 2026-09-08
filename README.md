@@ -318,7 +318,18 @@ Sabremos que esto se cumple cuando, dentro de los primeros 3 meses de uso, al me
 | 7. What's the most important thing we need to learn first? | ¿Realmente el administrador del servicio percibe en KidTrack un valor lo bastante grande como para dejar de lado sus métodos informales actuales y pagar una suscripción mensual?                                                                                                                                                                                                                                                                                                                                                                                      |
 | 8. What's the least amount of work we need to do to learn the next most important thing? | Entrevistar entre 3 y 5 administradores de servicios de transporte escolar (ya sea padres representantes o transportistas independientes) para conocer qué tan dispuestos están al cambio y qué funciones consideran indispensables antes de construir el MVP.                                                                                                                                                                                                                                                                                                         |
 ### 1.3. Segmentos objetivo
+KidTrack está pensado para dos segmentos que forman parte del ecosistema del transporte escolar privado en Lima Metropolitana.
 
+- **Segmento 1: Padres de Familia**
+
+  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia.
+
+
+- **Segmento 2: Transportistas Escolares**
+
+  El segundo segmento reúne a las personas o entidades responsables de operar el servicio de transporte escolar privado, y dentro de él conviven tres perfiles distintos. Está, en primer lugar, el conductor independiente que ofrece el servicio por su cuenta. Luego está el conductor contratado para manejar una movilidad organizada entre varias familias. Y finalmente, los responsables de pequeñas empresas de transporte escolar que administran una flota de vehículos y conductores a su cargo. Aunque son perfiles diferentes entre sí, comparten un mismo problema de fondo: todos trabajan sin herramientas digitales especializadas y recurren a métodos manuales e informales para gestionar una actividad que compromete directamente la seguridad de menores de edad. La importancia de este segmento queda reflejada en que las movilidades escolares autorizadas en Lima cayeron un 25% en apenas un año, lo cual apunta a un aumento de la informalidad en el sector y, con ella, a menos mecanismos de control sobre el servicio que reciben los niños (Autoridad de Transporte Urbano para Lima y Callao, 2024). A esto se suma que, en 2024, la Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías realizó campañas de sensibilización dirigidas a más de 47,000 escolares, lo que reafirma que la seguridad en este rubro sigue siendo un tema que preocupa a las autoridades (SUTRAN, 2024). Por todo esto, lo que impulsa a este segmento a usar KidTrack es principalmente digitalizar y profesionalizar su forma de trabajar, reducir errores en la gestión de rutas y alumnos, y ofrecer a las familias que atienden un servicio más confiable y transparente.
+
+---
 ## Capítulo II: Requirements Elicitation & Analysis
 
 ### 2.1. Competidores
@@ -455,4 +466,9 @@ Sabremos que esto se cumple cuando, dentro de los primeros 3 meses de uso, al me
 
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
+- Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). _Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial_. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
+
+
+
+
 ## Anexos
