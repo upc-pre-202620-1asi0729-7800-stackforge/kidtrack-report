@@ -195,9 +195,25 @@ Proyecto
 
 ### 1.1. Startup Profile
 #### 1.1.1. Descripción de la Startup
+StackForge es una startup tecnológica formada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC),
+enfocada en crear soluciones digitales para problemas reales en sectores con poca presencia tecnológica,
+y nace de la convicción de que la seguridad de los niños en su traslado escolar no debería depender de llamadas,
+mensajes de WhatsApp o anotaciones en papel, por lo que su propuesta de valor se materializa en KidTrack,
+una plataforma web de movilidad institucional inteligente que digitaliza y optimiza la gestión del transporte escolar,
+permitiendo a cualquier organización del rubro ya sea un grupo de padres que comparte una movilidad,
+un conductor independiente o una pequeña empresa centralizar en un solo lugar la administración de sus rutas, conductores, alumnos y comunicación.
 #### 1.1.2. Perfiles de integrantes del equipo
 
+|                   Foto                    | Apellidos y Nombres    |    Código    | Carrera                | Resumen                                                                                                                                                                                                                                                                                                                                                                                 |
+|:-----------------------------------------:|:-----------------------|:------------:| :--------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    ![foto](./assets/images/Team/.jpg)     | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
+|    ![foto](./assets/images/Team/.jpeg)    | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                    |
+| ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
+|        ![foto](assets/images/.png)        | nombre el integrante   |   [codigo]   | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
+|  ![foto](assets/images/Team/perfil-.png)  | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                      |
+
 ### 1.2. Solution Profile
+
 #### 1.2.1 Antecedentes y problemática
 #### 1.2.2 Lean UX Process
 ##### 1.2.2.1. Lean UX Problem Statements
