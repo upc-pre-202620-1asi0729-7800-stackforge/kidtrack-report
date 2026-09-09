@@ -495,15 +495,15 @@ El diseño de **KidTrack** se fundamenta en decisiones visuales estratégicas de
 
 La selección cromática de **KidTrack** no es meramente estética; responde a una psicología del color aplicada a la seguridad y el entorno escolar, garantizando accesibilidad y jerarquía visual. Cada tono desempeña una función específica en la interfaz:
 
-![Paleta de Colores KidTrack](./assets/images/Chapter4/Colores%20.png)
+![Paleta de Colores KidTrack](./assets/images/Chapter4/Colores.png)
 
-**Naranja / Anaranjado (`#E07A2B`):** Identidad tipográfica principal ("Kid"). Aporta vitalidad, calidez, energía y una conexión visual amigable con el entorno escolar. Funciona como punto focal de acento en la interfaz.
-* **Azul Oscuro / Marino (`#1E3A63`):** Identidad tipográfica ("Track") e ícono del timón/brújula. Transmite autoridad, seriedad, seguridad corporativa y estabilidad tecnológica. Se emplea en títulos principales, componentes de navegación y elementos estructurales clave.
+* **Naranja / Anaranjado (`#E07A2B`):** Identidad tipográfica principal ("Kid"). Aporta vitalidad, calidez, energía y una conexión visual amigable con el entorno escolar. Funciona como punto focal de acento en la interfaz.
 * **Naranja Rojizo (`#DE4A26`):** Tono de acento secundario (utilizado en detalles gráficos como el banderín/sombrerito del vehículo). Se reserva para alertas, notificaciones destacadas y botones de llamado a la acción (*CTA*).
-* **Blanco (`#FFFFFF`):** Fondo principal y líneas interiores de contraste. Proporciona espacios limpios, máxima legibilidad y descansos visuales que reducen la fatiga en la navegación.
-* **Verde Éxito (`#22C55E`):** Indicador de estado operativo. Se emplea en confirmaciones de abordaje de estudiantes, rutas completadas con éxito y estados activos del vehículo.
-* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones y párrafos largos sobre fondos claros, ofreciendo excelente legibilidad.
-* **Gris Claro / Neutral (`#F8F9FB` / `#F4F7FA`):** Fondos alternos para la delimitación de secciones (como tarjetas de datos, paneles y tablas), estructurando la interfaz con un acabado moderno y ordenado.
+* **Azul Oscuro Fondo (`#1A1A2E`):** Tono de fondo nocturno y contraste profundo. Se emplea en bloques de encabezados, secciones principales oscuras, pie de página (*footer*) y tarjetas de contraste de alto nivel.
+* **Azul Marino (`#1E3A63`):** Identidad tipográfica ("Track") e ícono del timón/brújula. Transmite autoridad, seriedad, seguridad corporativa y estabilidad tecnológica. Se emplea en títulos principales, componentes de navegación y elementos estructurales clave.
+* **Blanco (`#FFFFFF`):** Fondo principal, tarjetas elevadas y líneas interiores de contraste. Proporciona espacios limpios, máxima legibilidad y descansos visuales que reducen la fatiga en la navegación.
+* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones, bordes sutiles y párrafos largos sobre fondos claros, ofreciendo excelente legibilidad.
+
 ##### Tipografía
 Se seleccionó la tipografía **“Plus Jakarta Sans”** como fuente principal para los títulos de la plataforma de **KidTrack** por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico pero amigable. Se utiliza en pesos altos para asegurar que los encabezados sean visualmente impactantes, sólidos y de fácil lectura.
 
@@ -552,6 +552,17 @@ Además de los lineamientos generales sobre colores, tipografía y branding, en 
 Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de **KidTrack**: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
 
 #### 4.1.2. Web Style Guidelines
+
+El diseño web de **KidTrack** está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
+
+En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (*CTAs*) emplean colores contrastantes y estados visuales (como *hover* y *active*) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema.
+
+La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (*i18n*), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la *landing page*.
+
+![Web Style Guidelines 1](./assets/images/Chapter4/Guidelines1.png)
+![Web Style Guidelines 2](./assets/images/Chapter4/Guidelines2.png)
+![Web Style Guidelines 3](./assets/images/Chapter4/Guidelines3.png)
+
 
 ### 4.2. Information Architecture
 #### 4.2.1. Organization Systems
