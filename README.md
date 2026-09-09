@@ -399,11 +399,86 @@ El propósito de este mapeo es comprender a fondo la experiencia actual del serv
 ---
 #### User Journey Map 2: Fernando Nery (Padre de Familia / Apoderado)
 ![Fernando Nery Journey Map](./assets/images/Chapter2/Fernando%20Nery%20journey%20map.png)
+
 #### 2.3.4. Empathy Mapping
+En esta sección se presenta el análisis de empatía realizado para nuestros segmentos objetivo, buscando responder a las preguntas fundamentales del marco de trabajo: *¿Con quién estamos empatizando?*, *¿Qué necesita hacer?*, *¿Qué ve?*, *¿Qué dice?*, *¿Qué hace?*, *¿Qué oye?*, *¿Qué piensa y siente?*, e identificando claramente sus dolores (*Pains*) y ganancias (*Gains*).
+
+---
+
+#### Segmento Objetivo 1: Conductor / Transportista Escolar (Arturo Núñez)
+
+![Arturo Núñez Empathy Map](./assets/images/Chapter2/Arturo%20Núñez%20Empaty%20map.png)
+
+---
+
+#### Segmento Objetivo 2: Padre de Familia / Apoderado (Fernando Nery)
+
+![Fernando Nery Empathy Map](./assets/images/Chapter2/Fernando%20Nery%20%20Empaty%20map.png)
 
 ### 2.4. Big Picture Event Storming
 
+En esta sección, se presenta el desarrollo y los resultados de la sesión de **Big Picture Event Storming** realizada por el equipo para el proyecto **KidTrack**. Este proceso consistió en una sesión colaborativa de modelado dirigida al dominio, donde el equipo se enfocó en comprender el ecosistema del negocio de movilidad escolar de manera integral.
+
+A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el *landscape* completo del negocio.
+
+---
+![Big Picture Event Storming - KidTrack](./assets/images/Chapter2/Event%20Storming.png)
+
+URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/MjI5THNDVXhqMFl5d0hzRCtkWHhiNDdBZ0JVQWlNaFBkd0JzcWNWUmVWcEJsamdpVmhxT0N5ZDFlMjcrZi9HZUZIZ1pZd3htOEtrZzl0bmFzd3c1VVAwMHNTcS9JOFYvQjYyR3VNVG5KNEZPM3k5SWliRnlURDViNkFYTTRvWkRnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=830546571837)
+
 ### 2.5. Ubiquitous Language
+
+En esta sección se presenta el glosario de términos de negocio utilizados dentro del dominio del sistema **KidTrack**. La definición de este Lenguaje Ubicuo asegura una comunicación clara y sin ambigüedades entre los miembros del equipo de desarrollo, los interesados del proyecto y los usuarios del sistema.
+
+| Term (English) | Equivalente en Español | Definición |
+| :--- | :--- | :--- |
+| **Administrator** | Administrador | Persona o entidad responsable de la gestión operativa del servicio de movilidad escolar. Administra usuarios, rutas, vehículos, estudiantes y suscripciones. |
+| **Driver** | Conductor | Responsable de operar la unidad de transporte escolar y ejecutar el viaje diario. Registra eventos como inicio de trayecto, abordaje, incidencias y cierre de ruta. |
+| **Parent / Guardian** | Padre de familia / Tutor / Apoderado | Usuario final que monitorea el recorrido del estudiante, recibe notificaciones y valida la seguridad del servicio. |
+| **Student** | Estudiante / Alumno | Beneficiario del servicio de transporte escolar. Su estado de abordaje, traslado y entrega representa el núcleo operativo del sistema. |
+| **Visitor** | Visitante | Usuario no registrado que accede a la Landing Page para conocer el servicio, consultar precios o solicitar una demostración. |
+| **Subscription** | Suscripción | Acuerdo comercial que habilita el acceso a la plataforma **KidTrack** según un plan contratado y vigente. |
+| **Plan** | Plan | Oferta comercial (*Basic*, *Intermediate*, *Premium*) que determina funcionalidades, límites operativos y capacidad de uso del sistema. |
+| **Billing Cycle** | Ciclo de facturación | Periodo de tiempo en el que se cobra y renueva la suscripción del cliente (mensual o anual). |
+| **Payment** | Pago | Transacción económica realizada por el Administrador para activar o renovar una suscripción. |
+| **Invoice** | Factura / Comprobante | Documento emitido luego de un pago exitoso como constancia de la transacción realizada. |
+| **Route** | Ruta | Definición logística que incluye origen, destino, paradas y secuencia del recorrido escolar. |
+| **Stop** | Parada | Punto físico autorizado donde el vehículo recoge o entrega estudiantes. |
+| **Checkpoint** | Punto de control | Referencia geográfica dentro de la ruta utilizada para validar avance y calcular tiempos estimados. |
+| **Trip / Journey** | Viaje / Trayecto | Ejecución en tiempo real de una ruta programada en una fecha y horario determinados. |
+| **Scheduled Trip** | Viaje programado | Viaje previamente configurado para una fecha, conductor, vehículo y ruta específica. |
+| **Boarding** | Abordaje | Acción física y registro digital del momento en que el estudiante sube al vehículo. |
+| **Boarding Status** | Estado de abordaje | Estado operativo del estudiante durante el viaje (*Boarded*, *Absent*, *Delivered*, *Pending*). |
+| **Absence** | Ausencia | Evento registrado cuando el estudiante no aborda la unidad en la parada correspondiente. |
+| **Delivery** | Entrega | Confirmación de que el estudiante fue dejado de forma segura en el destino autorizado. |
+| **Vehicle** | Vehículo / Unidad | Medio de transporte asignado a rutas específicas dentro de la operación escolar. |
+| **Fleet** | Flota | Conjunto de vehículos administrados por una misma organización o administrador. |
+| **Driver Assignment** | Asignación de conductor | Acción mediante la cual un conductor queda vinculado a una ruta o viaje programado. |
+| **Vehicle Assignment** | Asignación de vehículo | Acción mediante la cual una unidad queda vinculada a una ruta o viaje programado. |
+| **Manifest** | Manifiesto | Lista oficial de estudiantes asignados a una ruta o grupo para control operativo y asistencia. |
+| **Group** | Grupo | Conjunto de estudiantes relacionados a una ruta, zona o servicio común. |
+| **Live Tracking** | Monitoreo en tiempo real | Visualización dinámica de la ubicación actual del vehículo durante el viaje. |
+| **ETA (Estimated Time of Arrival)** | Tiempo estimado de llegada | Predicción del tiempo restante para llegar a una parada o destino. |
+| **Incident** | Incidente | Evento no planificado reportado durante el trayecto, como retrasos, tráfico, avería o emergencia. |
+| **Delay** | Retraso | Desviación del horario esperado del viaje respecto a la planificación original. |
+| **Emergency Alert** | Alerta de emergencia | Notificación prioritaria generada ante una situación crítica que requiere atención inmediata. |
+| **Notification** | Notificación | Comunicación automática enviada al usuario sobre eventos relevantes del servicio. |
+| **Push Notification** | Notificación push | Mensaje inmediato enviado al dispositivo móvil del usuario. |
+| **Announcement** | Comunicado | Mensaje masivo emitido por la administración hacia padres o usuarios registrados. |
+| **Dashboard** | Panel de control | Vista de gestión donde el Administrador monitorea operaciones, métricas y configuraciones. |
+| **Attendance** | Asistencia | Registro histórico de abordajes y ausencias del estudiante. |
+| **Attendance Report** | Reporte de asistencia | Resumen periódico del historial de presencia de estudiantes en el servicio. |
+| **Trip History** | Historial de viajes | Registro consolidado de trayectos ejecutados anteriormente. |
+| **Security Validation** | Validación de seguridad | Confirmación de identidad o permisos para acceder a funciones sensibles del servicio. |
+| **Account Provisioning** | Habilitación de cuenta | Proceso de creación y activación de acceso para un usuario del sistema. |
+| **Role** | Rol | Perfil funcional del usuario dentro del negocio (*Administrator*, *Driver*, *Parent*). |
+| **Capacity Limit** | Límite de capacidad | Restricción operativa determinada por el plan contratado, como número de rutas o conductores permitidos. |
+| **Renewal** | Renovación | Extensión de una suscripción al completar un nuevo pago. |
+| **Suspension** | Suspensión | Estado en el que se restringe el acceso al sistema por falta de pago o incumplimiento. |
+| **Landing Page** | Página informativa principal | Sitio web orientado a captación comercial donde se presenta la propuesta de valor del servicio **KidTrack**. |
+| **Demo Request** | Solicitud de demostración | Petición comercial realizada por un visitante interesado en conocer el producto. |
+| **Pricing** | Precios / Tarifario | Información pública de costos y beneficios asociados a cada plan disponible. |
+| **Trust Signal** | Señal de confianza | Elemento comercial que incrementa credibilidad, como testimonios, alianzas o certificaciones. |
 
 ## Capítulo III: Requirements Specification
 
