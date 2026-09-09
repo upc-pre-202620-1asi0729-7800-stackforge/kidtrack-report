@@ -490,21 +490,222 @@ En esta sección se presenta el glosario de términos de negocio utilizados dent
 
 ### 4.1. Style Guidelines
 #### 4.1.1. General Style Guidelines
+El diseño de **KidTrack** se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, fiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia.
 ##### Colores
+
+La selección cromática de **KidTrack** no es meramente estética; responde a una psicología del color aplicada a la seguridad y el entorno escolar, garantizando accesibilidad y jerarquía visual. Cada tono desempeña una función específica en la interfaz:
+
+![Paleta de Colores KidTrack](./assets/images/Chapter4/Colores.png)
+
+* **Naranja / Anaranjado (`#E07A2B`):** Identidad tipográfica principal ("Kid"). Aporta vitalidad, calidez, energía y una conexión visual amigable con el entorno escolar. Funciona como punto focal de acento en la interfaz.
+* **Naranja Rojizo (`#DE4A26`):** Tono de acento secundario (utilizado en detalles gráficos como el banderín/sombrerito del vehículo). Se reserva para alertas, notificaciones destacadas y botones de llamado a la acción (*CTA*).
+* **Azul Oscuro Fondo (`#1A1A2E`):** Tono de fondo nocturno y contraste profundo. Se emplea en bloques de encabezados, secciones principales oscuras, pie de página (*footer*) y tarjetas de contraste de alto nivel.
+* **Azul Marino (`#1E3A63`):** Identidad tipográfica ("Track") e ícono del timón/brújula. Transmite autoridad, seriedad, seguridad corporativa y estabilidad tecnológica. Se emplea en títulos principales, componentes de navegación y elementos estructurales clave.
+* **Blanco (`#FFFFFF`):** Fondo principal, tarjetas elevadas y líneas interiores de contraste. Proporciona espacios limpios, máxima legibilidad y descansos visuales que reducen la fatiga en la navegación.
+* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones, bordes sutiles y párrafos largos sobre fondos claros, ofreciendo excelente legibilidad.
+
 ##### Tipografía
+Se seleccionó la tipografía **“Plus Jakarta Sans”** como fuente principal para los títulos de la plataforma de **KidTrack** por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico pero amigable. Se utiliza en pesos altos para asegurar que los encabezados sean visualmente impactantes, sólidos y de fácil lectura.
+
+![Tipografía Principal - Plus Jakarta Sans](./assets/images/Chapter4/Tipografia1.png)
+
+Asimismo, se optó por la tipografía **“DM Sans”** como fuente secundaria para los textos de cuerpo y navegación por su diseño extremadamente legible, limpio y neutro. Su apariencia estética y claridad garantizan una experiencia de uso accesible y agradable, reduciendo la fatiga visual del usuario al leer información detallada sobre funciones, rutas o planes.
+
+![Tipografía Secundaria - DM Sans](./assets/images/Chapter4/Tipografia2.png)
+
+En cuanto al tamaño, se utiliza jerárquicamente en toda la aplicación para resaltar títulos principales, botones de acción y texto de soporte. Los tamaños más grandes en los encabezados guían al usuario rápidamente por los puntos clave del mensaje, mientras que los más pequeños en los párrafos aseguran la comprensión y la eficiencia en la lectura de detalles secundarios.
 ##### Branding
+El branding de **KidTrack** está diseñado para reflejar simplicidad, confianza y profesionalismo. El logo y los íconos adoptan un enfoque minimalista, con líneas claras y formas simples que comunican el propósito de seguridad y eficiencia de la plataforma. El diseño incluye una identidad tipográfica sólida acompañada de un ícono característico que integra la forma de un timón/brújula junto con la silueta de un vehículo escolar, simbolizando protección, dirección y monitoreo constante. Esta propuesta mantiene una apariencia limpia y fácilmente reconocible, tanto en entornos web como móviles.
+
+![Branding y Logotipo KidTrack](./assets/images/Chapter4/Logo.jpg)
+
 ##### Espaciado
+El diseño de **KidTrack** utiliza una estrategia de espacios en blanco diseñada para transmitir orden y claridad, factores críticos en una herramienta de seguridad y transporte escolar. En lugar de saturar la vista, aprovechamos márgenes amplios en los laterales de cada sección para que el usuario pueda diferenciar rápidamente entre los módulos de padres, conductores y colegios. El contenido se mantiene estructurado mediante el uso de Flexbox y CSS Grid, lo que evita que la información se disperse y mantiene una jerarquía visual equilibrada que facilita la lectura de las características del servicio. Además, los rellenos (*padding*) en elementos como las tarjetas de planes, alertas y funciones garantizan una distribución adecuada del contenido.
 ##### Dimensiones para el tono de comunicación y lenguaje aplicado
+En **KidTrack**, definimos cuidadosamente el tono de nuestra comunicación para alinearlo con la misión de la plataforma: garantizar la seguridad y la tranquilidad en el transporte escolar para padres, conductores e instituciones educativas. Nuestro tono de voz busca proyectar confianza y control, combinando una comunicación clara, directa y altamente profesional.
+
+Optamos por un tono formal pero empático, que permita a los padres de familia sentirse seguros al interactuar con funciones críticas como el monitoreo en vivo o las notificaciones de abordaje. Queremos que cada interacción refleje eficiencia para fomentar la puntualidad y el orden, pero también serenidad, asegurando que los usuarios sientan que el bienestar de los estudiantes es nuestra prioridad absoluta. Este equilibrio nos permite inspirar autoridad en la gestión logística, al tiempo que proyectamos cercanía y compromiso con la comunidad escolar.
+
+Además, se han considerado los siguientes aspectos clave en el diseño de **KidTrack**:
+
+* **Consistencia:** La coherencia visual y textual es fundamental para brindar una experiencia confiable. Todos los elementos, desde los mensajes de estado de los viajes hasta las etiquetas de los botones, mantienen una línea comunicativa uniforme. Esto facilita que los usuarios se familiaricen rápidamente con el sistema, algo vital en una operación diaria que requiere precisión.
+* **Navegación:** La estructura ha sido pensada para ser lógica y sin fricciones. Los usuarios pueden acceder rápidamente a la información relevante según su rol, ya sea para verificar una ruta en tiempo real o reportar una incidencia. Los menús son minimalistas para evitar confusiones y optimizar el tiempo de respuesta en entornos dinámicos.
+* **Accesibilidad:** La plataforma está optimizada para ser inclusiva y funcional en diversos contextos. Mediante el uso de etiquetas claras y un diseño responsivo, aseguramos que la información sea legible tanto para un administrador en una oficina como para un padre que revisa el celular en movimiento, garantizando una experiencia de uso fluida para todos.
+
 ##### Elementos de diseño
+Además de los lineamientos generales sobre colores, tipografía y branding, en el diseño visual de **KidTrack** se han aplicado de manera consciente diversos elementos fundamentales del diseño gráfico que enriquecen la experiencia del usuario y refuerzan la identidad de seguridad de la plataforma.
+
+* **Líneas:** Utilizadas sutilmente para separar secciones y delimitar las tarjetas de planes, roles y alertas, lo que organiza visualmente la interfaz y guía la lectura sin saturar al usuario.
+* **Color:** Cumple un rol fundamental no solo en la identidad, sino en la comunicación funcional. La paleta incluye el azul marino para transmitir autoridad, el naranja anaranjado para la acción y dinamismo, el naranja rojizo para acentos/alertas y el verde para confirmaciones, seleccionados por su capacidad para transmitir estados de seguridad y éxito operativo.
+* **Tamaño:** Se utiliza jerárquicamente para resaltar títulos, botones y texto de soporte. Los tamaños más grandes en los encabezados captan la atención en puntos clave como el panel principal, mientras que los más pequeños se emplean para detalles secundarios en las tarjetas de características, mejorando la comprensión y la eficiencia.
+* **Textura:** Limpia y moderna, gracias al uso de fondos suaves y superficies blancas que aportan una sensación de amplitud tecnológica sin distraer de las funciones de monitoreo.
+* **Espacio:** Se han implementado márgenes amplios y rellenos generosos entre secciones, lo que permite una interfaz despejada y cómoda para padres y conductores.
+* **Brillo (*Value*):** Se aplican contrastes claros que diferencian los botones de acción del fondo, guiando al usuario de forma intuitiva hacia la interacción deseada.
+* **Formas:** Se ha optado por geometrías amigables con bordes redondeados en botones, paneles y tarjetas. Estos acabados suavizados no solo mejoran la estética profesional, sino que también transmiten una imagen de accesibilidad y cercanía, alineándose con una herramienta diseñada para el cuidado y protección escolar.
+
 ##### Principios de diseño
+* **Contraste:** Se emplea para asegurar que los elementos críticos, como los llamados a la acción (CTA) o las etiquetas de "Unidad en trayecto", sean claramente visibles y resalten sobre los fondos neutros. Este principio es fundamental para la accesibilidad visual, permitiendo que tanto padres como conductores identifiquen los puntos de interacción más importantes de la plataforma de manera inmediata.
+* **Repetición:** La repetición de colores corporativos (Naranja `#E07A2B`, Naranja Rojizo `#DE4A26`, Azul Oscuro Fondo `#1A1A2E` y Azul Marino `#1E3A63`), junto con una iconografía coherente de timones, vehículos y mapas, refuerza la familiaridad y la consistencia del sistema visual. Al utilizar componentes recurrentes en toda la plataforma, los usuarios comprenden rápidamente la función de cada sección, lo que reduce la curva de aprendizaje al interactuar con las herramientas de seguimiento.
+* **Alineación:** Contribuye a la profesionalidad y solidez del diseño. La estructura de la página, los listados de roles y las tarjetas de datos mantienen una disposición coherente lograda mediante el uso de Flexbox y CSS Grid. Esta organización clara facilita una navegación intuitiva, transmitiendo el orden necesario para una plataforma de gestión logística escolar.
+* **Proximidad:** Agrupa de manera lógica los elementos relacionados, como los íconos de las funciones con sus respectivas descripciones o los beneficios específicos para cada rol. Al mantener los elementos vinculados cerca entre sí, se mejora significativamente la lectura y la comprensión de cada bloque de información, permitiendo que el usuario asocie rápidamente las soluciones de **KidTrack** con sus necesidades específicas.
+
+Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de **KidTrack**: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
+
 #### 4.1.2. Web Style Guidelines
 
+El diseño web de **KidTrack** está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
+
+En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (*CTAs*) emplean colores contrastantes y estados visuales (como *hover* y *active*) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema.
+
+La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (*i18n*), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la *landing page*.
+
+![Web Style Guidelines 1](./assets/images/Chapter4/Guidelines1.png)
+![Web Style Guidelines 2](./assets/images/Chapter4/Guidelines2.png)
+![Web Style Guidelines 3](./assets/images/Chapter4/Guidelines3.png)
+
+---
 ### 4.2. Information Architecture
 #### 4.2.1. Organization Systems
+---
+En el sistema **KidTrack**, se emplea la organización jerárquica (*visual hierarchy*) para destacar información crítica, como el mapa de monitoreo en tiempo real, las alertas de emergencia y las notificaciones de abordaje de los alumnos en los *dashboards* principales. Esta jerarquía visual permite que tanto padres como conductores identifiquen de forma inmediata los datos más relevantes según el contexto operativo, relegando datos secundarios del perfil a niveles inferiores.
+
+Asimismo, se aplica una organización secuencial (*step-by-step*) en procesos que requieren una guía estructurada. En la *landing page*, este sistema se evidencia en la sección "¿Cómo funciona?", donde se orienta al visitante a través de los pasos clave para la adopción del servicio. En la *Web Application*, este esquema se utilizará para el flujo de registro de paradas y asistencia que el conductor debe seguir durante su ruta, asegurando una progresión lógica que minimice errores de registro.
+
+Respecto a los esquemas de categorización, no se utilizan organizaciones alfabéticas o matriciales complejas. En su lugar, se emplea una organización cronológica para la visualización de datos históricos, permitiendo que los padres de familia revisen los registros pasados de asistencias y llegadas de sus hijos de manera ordenada por fecha y hora. Además, el contenido se clasifica según audiencia, segmentando las interfaces y funcionalidades de acuerdo con los dos *User Personas* identificados: **Conductores**, enfocados en la gestión de ruta y paradas, y **Padres de Familia**, orientados al monitoreo y recepción de avisos de seguridad.
+
 #### 4.2.2. Labeling Systems
+El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (*Landing Page*) como en el uso crítico de la aplicación (*Web Application*).
+
+##### Landing Page
+* **Funciones:** Agrupa las capacidades técnicas y herramientas de gestión de la plataforma.
+* **Roles:** Define los accesos y beneficios específicos para los dos perfiles del sistema.
+* **Planes:** Estructura la oferta comercial basándose en la escala de la flota de transporte.
+* **¿Cómo funciona?:** Etiqueta de apoyo que resuelve dudas sobre la implementación del servicio.
+* **Comenzar:** Botón de acción principal diseñado para motivar la conversión inmediata.
+
+##### Aplicación Web – Conductores
+* **Mis Rutas:** Vista principal donde se gestionan los trayectos diarios asignados.
+* **Lista de Alumnos:** Relación detallada de estudiantes por paradas, optimizando el tiempo de recogida.
+* **Estado de Abordaje:** Sistema de etiquetas rápidas (*"Abordado"*, *"Ausente"*, *"En espera"*) que permite al conductor registrar la asistencia con un solo toque.
+* **Iniciar Ruta:** Etiqueta de alta visibilidad que dispara el envío de alertas GPS a los padres.
+* **Botón de Incidencia:** Acceso directo para reportar eventos imprevistos (tráfico, accidentes) de forma estandarizada.
+
+##### Aplicación Web – Padres de Familia
+* **Monitoreo:** Sección central que integra el mapa en tiempo real y la ubicación de la unidad.
+* **Historial de Viajes:** Registro cronológico de las horas de recogida y entrega de sus hijos.
+* **Alertas:** Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
+* **Datos del Bus:** Información transparente sobre el vehículo y el conductor asignado para generar confianza.
+
 #### 4.2.3. SEO Tags and Meta Tags
+
+1. Landing Page
+
+**Charset**
+
+`<meta charset="UTF-8" />`
+
+Esta línea establece la codificación universal de caracteres. Su función es garantizar que el navegador interprete correctamente los textos del sistema i18n, asegurando que tildes, la letra "ñ" y símbolos especiales se visualicen sin errores en español e inglés, evitando una mala experiencia de lectura.
+
+**Viewport (Responsive)**
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0"/>`
+
+Controla el escalado de la página en diferentes dispositivos. Su función es hacer que la landing sea responsiva, ajustando el ancho del contenido al tamaño de la pantalla. Esto es vital para que los padres de familia visualicen la información de manera legible desde sus smartphones.
+
+**Title (SEO)**
+
+`<title>KidTrack — Transporte Escolar Seguro</title>`
+
+Define el título que aparece en la pestaña del navegador y en los resultados de búsqueda. Su función es proporcionar una identificación inmediata de la marca y su propósito principal, siendo un factor crítico para el posicionamiento orgánico.
+
+**Meta Description (SEO)**
+
+`<meta name="description" content="Plataforma integral para el monitoreo en tiempo real, control de asistencia y comunicación segura entre conductores y padres de familia.">`
+
+Provee un resumen conciso del contenido del sitio. Su función es aparecer como el fragmento de texto (snippet) en Google, atrayendo a los usuarios al explicar claramente cómo KidTrack resuelve la inseguridad en el transporte escolar.
+
+**Meta Keywords (SEO)**
+
+`<meta name="keywords" content="transporte escolar, monitoreo GPS, seguridad, KidTrack, logística escolar, app bilingüe">`
+
+Especifica palabras clave relevantes para la temática de la página. Su función es ayudar a los algoritmos de indexación a clasificar el sitio dentro del nicho de tecnología de transporte y seguridad educativa.
+
+**Meta Author**
+
+`<meta name="author" content="KidTrack Team">`
+
+Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de KidTrack, vinculando el desarrollo técnico con el startup responsable.
+
+**Meta Copyright**
+
+`<meta name="copyright" content="KidTrack 2026">`
+
+Esta línea establece legalmente la propiedad intelectual de la página. Su función es indicar la titularidad de los derechos de autor y el año de vigencia, protegiendo el contenido y diseño del sitio.
+
+**Meta Robots**
+
+`<meta name="robots" content="index, follow">`
+
+Instruye a los motores de búsqueda sobre cómo tratar el sitio. Su función es permitir que los "robots" incluyan la página en sus índices y sigan los enlaces internos, lo cual es fundamental para el crecimiento del tráfico hacia la plataforma.
+
+**Meta Language**
+
+`<html lang="es">`
+
+Declara el idioma principal de la estructura del sitio. Su función es informar a los navegadores y buscadores que el texto base está en español, mejorando la segmentación del público objetivo.
+
 #### 4.2.4. Searching Systems
+
+En esta sección se describen los mecanismos de asistencia y recuperación de información diseñados para **KidTrack**. El objetivo primordial es evitar la desorientación del usuario ante el flujo constante de datos logísticos, garantizando que la información sobre rutas y alumnos sea accesible de manera inmediata.
+
+##### Vista del Conductor / Dueño de Unidad
+
+1. **Medios de ayuda para la búsqueda de datos**
+   * **Barra de búsqueda operativa:** Ubicada en los módulos de "Rutas" y "Lista de Alumnos" para acceso rápido.
+   * **Autocompletado inteligente:** Sugiere nombres de alumnos o puntos de parada conforme el conductor escribe, facilitando la operación en dispositivos móviles.
+   * **Mensajes contextuales:** En caso de no hallar un registro, el sistema ofrece opciones como *"¿Desea registrar un nuevo alumno en esta parada?"*.
+   * **Búsqueda por proximidad:** Sugerencia automática de la siguiente parada basada en la ubicación GPS actual.
+
+2. **Filtros y opciones**
+   * **Por Nombre del Alumno:** Localización directa de la ficha de contacto y datos de emergencia.
+   * **Por Estado de Asistencia:** Filtrado rápido de alumnos *"Abordados"*, *"Pendientes"* o *"Ausentes"*.
+   * **Por Punto de Parada:** Visualización de todos los estudiantes vinculados a un hito específico de la ruta.
+   * **Por Turno:** Filtrado entre rutas de *"Recojo"* (mañana) y *"Retorno"* (tarde).
+
+3. **Visualización de resultados**
+   * **Tarjetas de Alumno (Cards):** Incluyen foto, nombre, grado y una etiqueta de estado de alta visibilidad.
+   * **Indicadores de Color:**
+     * **Naranja (`#E07A2B`):** Alumno en espera.
+     * **Verde (`#22C55E`):** Alumno ya abordó la unidad.
+     * **Naranja Rojizo (`#DE4A26`):** Alumno reportado como ausente.
+   * **Acciones rápidas:** Botones directos para *"Marcar Asistencia"*, *"Llamar a Apoderado"* o *"Reportar Incidencia"*.
+
+##### Vista del Padre de Familia
+
+1. **Medios de ayuda para la búsqueda de datos**
+   * **Buscador de historial:** Permite localizar eventos específicos dentro de la bitácora de viajes del alumno.
+   * **Sugerencias por fecha:** Calendario interactivo para seleccionar días específicos de consulta.
+   * **Acceso directo a Unidad:** Buscador para identificar los datos del bus asignado mediante la placa o nombre del conductor.
+
+2. **Filtros y opciones**
+   * **Por Fecha:** Consulta de registros de asistencia de días o meses anteriores.
+   * **Por Tipo de Evento:** Filtrado entre *"Notificaciones de Proximidad"*, *"Confirmación de Abordaje"* y *"Llegada al Destino"*.
+   * **Por Estado del Viaje:** Filtrado entre rutas *"Completadas"*, *"En curso"* o *"Canceladas"*.
+
+3. **Visualización de resultados**
+   * **Timeline de Eventos:** Lista cronológica detallada con la hora exacta de cada suceso.
+   * **Mapa de Resultados:** Al buscar un historial, se muestra el trazado que siguió la unidad en esa fecha específica.
+   * **Colores de Estado:**
+     * **Check Verde (`#22C55E`):** Evento completado con éxito.
+     * **Reloj Naranja (`#E07A2B`):** Retraso reportado en el punto de entrega.
+     * **Círculo Rojo (`#DE4A26`):** Registro de inasistencia justificada.
+
 #### 4.2.5. Navigation Systems
+La navegación en **KidTrack** ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la *landing page*, se utiliza un sistema de desplazamiento vertical (*smooth scroll*) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (*CTAs*) para el contacto. Esta navegación se apoya en una barra superior persistente (*Sticky Nav*) que incluye un selector de idioma (*i18n*), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
+
+Dentro de la aplicación web, la navegación principal se organiza mediante una barra lateral fija (*Sidebar*) que otorga acceso inmediato a las secciones críticas: Monitoreo en Tiempo Real, Lista de Alumnos, Historial de Rutas, Alertas de Seguridad y Configuración de Perfil. Este diseño permite que, por ejemplo, un conductor pueda alternar entre su hoja de ruta y el reporte de incidencias con un solo toque, manteniendo siempre la visibilidad del estado del viaje.
+
+La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (*tabs*) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
 
 ### 4.3. Landing Page UI Design
 #### 4.3.1. Landing Page Wireframe
