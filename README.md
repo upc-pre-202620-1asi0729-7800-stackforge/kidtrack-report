@@ -356,7 +356,49 @@ La elaboración de estas fichas es el resultado de una síntesis detallada entre
 ![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
 
 #### 2.3.2. User Task Matrix
+En esta sección se presenta la matriz de tareas de usuario, la cual consolida las actividades fundamentales que tanto el conductor (Arturo Núñez) como el padre de familia (Fernando Nery) ejecutan para asegurar un traslado escolar exitoso.
+
+Es importante destacar que estas tareas representan necesidades y procesos intrínsecos del servicio que existen independientemente de la presencia de una solución de software; el objetivo de **KidTrack** es optimizar y digitalizar estas interacciones para reducir la carga operativa, las distracciones al volante y la incertidumbre.
+
+| Tarea (*User Task*) | Conductor - Frecuencia | Conductor - Importancia | Padre - Frecuencia | Padre - Importancia |
+| :--- | :---: | :---: | :---: | :---: |
+| Verificar lista de asistencia de alumnos | Alta | Alta | N/A | N/A |
+| Identificar alumnos en el punto de recojo | Alta | Alta | N/A | N/A |
+| Confirmar el abordaje seguro del alumno | Alta | Crítica | Alta | Crítica |
+| Gestionar comunicación entre conductores y padres | Alta | Alta | Alta | Alta |
+| Notificar retrasos o imprevistos en la ruta | Media | Alta | Alta | Crítica |
+| Monitorear el progreso del trayecto | Media | Media | Alta | Alta |
+| Confirmar llegada al destino final | Alta | Crítica | Alta | Crítica |
+| Registrar la entrega del alumno al responsable | Alta | Crítica | Alta | Crítica |
+| Coordinar cambios de último momento en el servicio | Baja | Media | Baja | Alta |
+| Reportar incidencias de seguridad o salud | Baja | Crítica | Baja | Crítica |
+| Consultar el estado actual del servicio | Media | Media | Alta | Alta |
+| Revisar historial de trayectos realizados | Baja | Media | Media | Media |
+| Organizar y optimizar rutas y paradas | Alta | Alta | N/A | N/A |
+
+---
+
+#### Análisis y Explicación de la Matriz
+
+Tras el análisis de la matriz, se desprenden las siguientes conclusiones clave sobre el comportamiento y necesidades de los segmentos:
+
+* **Coincidencias en Tareas Críticas:** Existe una convergencia total en las tareas de *"Confirmar abordaje"*, *"Confirmar llegada"* y *"Registrar entrega"*. Para ambos segmentos, estas acciones representan la columna vertebral de la confianza en el servicio, manteniendo una importancia **Crítica** debido a que involucran directamente la seguridad e integridad del menor.
+* **Diferencias de Rol:** La carga operativa de planificación y ejecución (verificación de listas y organización de rutas) recae exclusivamente en el conductor. Por el contrario, el padre de familia se enfoca en tareas de supervisión pasiva como *"Monitorear el progreso"*, la cual mantiene una frecuencia alta debido a la ansiedad constante que genera la congestión vehicular en la ciudad.
+* **Gestión de Incidencias:** Se observa que tareas como *"Reportar incidencias"* tienen una frecuencia baja, pero su importancia es **Crítica**. Esto valida la necesidad de que **KidTrack** ofrezca canales de notificación prioritarios e instantáneos que garanticen que, ante un imprevisto, la información fluya sin errores ni demoras.
+* **Fricción en la Comunicación:** La tarea de *"Notificar retrasos"* es de frecuencia media para el conductor pero de importancia crítica para el padre, lo que resalta el mayor punto de fricción actual: la necesidad de información automatizada en tiempo real para reducir el estrés parental sin distraer al conductor mientras maneja.
+
 #### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los **User Journey Maps** en versión *As-Is* correspondientes a los dos segmentos objetivo definidos previamente: el conductor de transporte escolar independiente (**Arturo Núñez**) y el padre de familia/apoderado (**Fernando Nery**). 
+
+El propósito de este mapeo es comprender a fondo la experiencia actual del servicio de transporte escolar en Lima, identificando emociones, fricciones operativas, puntos críticos de comunicación y oportunidades de mejora antes de la implementación de **KidTrack**. A continuación, se detallan los mapas del viaje del usuario vinculando sus objetivos y puntos de dolor con cada etapa del proceso tradicional.
+
+---
+#### User Journey Map 1: Arturo Núñez (Conductor / Transportista Escolar)
+![Arturo Núñez Journey Map](./assets/images/Chapter2/Arturo%20Núñez%20journey%20map.png)
+---
+#### User Journey Map 2: Fernando Nery (Padre de Familia / Apoderado)
+![Fernando Nery Journey Map](./assets/images/Chapter2/Fernando%20Nery%20journey%20map.png)
 #### 2.3.4. Empathy Mapping
 
 ### 2.4. Big Picture Event Storming
