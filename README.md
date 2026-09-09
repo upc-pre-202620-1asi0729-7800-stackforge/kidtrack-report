@@ -520,9 +520,36 @@ El branding de **KidTrack** está diseñado para reflejar simplicidad, confianza
 ![Branding y Logotipo KidTrack](./assets/images/Chapter4/Logo.jpg)
 
 ##### Espaciado
+El diseño de **KidTrack** utiliza una estrategia de espacios en blanco diseñada para transmitir orden y claridad, factores críticos en una herramienta de seguridad y transporte escolar. En lugar de saturar la vista, aprovechamos márgenes amplios en los laterales de cada sección para que el usuario pueda diferenciar rápidamente entre los módulos de padres, conductores y colegios. El contenido se mantiene estructurado mediante el uso de Flexbox y CSS Grid, lo que evita que la información se disperse y mantiene una jerarquía visual equilibrada que facilita la lectura de las características del servicio. Además, los rellenos (*padding*) en elementos como las tarjetas de planes, alertas y funciones garantizan una distribución adecuada del contenido.
 ##### Dimensiones para el tono de comunicación y lenguaje aplicado
+En **KidTrack**, definimos cuidadosamente el tono de nuestra comunicación para alinearlo con la misión de la plataforma: garantizar la seguridad y la tranquilidad en el transporte escolar para padres, conductores e instituciones educativas. Nuestro tono de voz busca proyectar confianza y control, combinando una comunicación clara, directa y altamente profesional.
+
+Optamos por un tono formal pero empático, que permita a los padres de familia sentirse seguros al interactuar con funciones críticas como el monitoreo en vivo o las notificaciones de abordaje. Queremos que cada interacción refleje eficiencia para fomentar la puntualidad y el orden, pero también serenidad, asegurando que los usuarios sientan que el bienestar de los estudiantes es nuestra prioridad absoluta. Este equilibrio nos permite inspirar autoridad en la gestión logística, al tiempo que proyectamos cercanía y compromiso con la comunidad escolar.
+
+Además, se han considerado los siguientes aspectos clave en el diseño de **KidTrack**:
+
+* **Consistencia:** La coherencia visual y textual es fundamental para brindar una experiencia confiable. Todos los elementos, desde los mensajes de estado de los viajes hasta las etiquetas de los botones, mantienen una línea comunicativa uniforme. Esto facilita que los usuarios se familiaricen rápidamente con el sistema, algo vital en una operación diaria que requiere precisión.
+* **Navegación:** La estructura ha sido pensada para ser lógica y sin fricciones. Los usuarios pueden acceder rápidamente a la información relevante según su rol, ya sea para verificar una ruta en tiempo real o reportar una incidencia. Los menús son minimalistas para evitar confusiones y optimizar el tiempo de respuesta en entornos dinámicos.
+* **Accesibilidad:** La plataforma está optimizada para ser inclusiva y funcional en diversos contextos. Mediante el uso de etiquetas claras y un diseño responsivo, aseguramos que la información sea legible tanto para un administrador en una oficina como para un padre que revisa el celular en movimiento, garantizando una experiencia de uso fluida para todos.
+
 ##### Elementos de diseño
+Además de los lineamientos generales sobre colores, tipografía y branding, en el diseño visual de **KidTrack** se han aplicado de manera consciente diversos elementos fundamentales del diseño gráfico que enriquecen la experiencia del usuario y refuerzan la identidad de seguridad de la plataforma.
+
+* **Líneas:** Utilizadas sutilmente para separar secciones y delimitar las tarjetas de planes, roles y alertas, lo que organiza visualmente la interfaz y guía la lectura sin saturar al usuario.
+* **Color:** Cumple un rol fundamental no solo en la identidad, sino en la comunicación funcional. La paleta incluye el azul marino para transmitir autoridad, el naranja anaranjado para la acción y dinamismo, el naranja rojizo para acentos/alertas y el verde para confirmaciones, seleccionados por su capacidad para transmitir estados de seguridad y éxito operativo.
+* **Tamaño:** Se utiliza jerárquicamente para resaltar títulos, botones y texto de soporte. Los tamaños más grandes en los encabezados captan la atención en puntos clave como el panel principal, mientras que los más pequeños se emplean para detalles secundarios en las tarjetas de características, mejorando la comprensión y la eficiencia.
+* **Textura:** Limpia y moderna, gracias al uso de fondos suaves y superficies blancas que aportan una sensación de amplitud tecnológica sin distraer de las funciones de monitoreo.
+* **Espacio:** Se han implementado márgenes amplios y rellenos generosos entre secciones, lo que permite una interfaz despejada y cómoda para padres y conductores.
+* **Brillo (*Value*):** Se aplican contrastes claros que diferencian los botones de acción del fondo, guiando al usuario de forma intuitiva hacia la interacción deseada.
+* **Formas:** Se ha optado por geometrías amigables con bordes redondeados en botones, paneles y tarjetas. Estos acabados suavizados no solo mejoran la estética profesional, sino que también transmiten una imagen de accesibilidad y cercanía, alineándose con una herramienta diseñada para el cuidado y protección escolar.
+
 ##### Principios de diseño
+* **Contraste:** Se emplea para asegurar que los elementos críticos, como los llamados a la acción (CTA) o las etiquetas de "Unidad en trayecto", sean claramente visibles y resalten sobre los fondos neutros. Este principio es fundamental para la accesibilidad visual, permitiendo que tanto padres como conductores identifiquen los puntos de interacción más importantes de la plataforma de manera inmediata.
+* **Repetición:** La repetición de colores corporativos (Azul Marino `#1E3A63` y Naranja `#E07A2B`), junto con una iconografía coherente de timones, vehículos y mapas, refuerza la familiaridad y la consistencia del sistema visual. Al utilizar componentes recurrentes en toda la plataforma, los usuarios comprenden rápidamente la función de cada sección, lo que reduce la curva de aprendizaje al interactuar con las herramientas de seguimiento.
+* **Alineación:** Contribuye a la profesionalidad y solidez del diseño. La estructura de la página, los listados de roles y las tarjetas de datos mantienen una disposición coherente lograda mediante el uso de Flexbox y CSS Grid. Esta organización clara facilita una navegación intuitiva, transmitiendo el orden necesario para una plataforma de gestión logística escolar.
+* **Proximidad:** Agrupa de manera lógica los elementos relacionados, como los íconos de las funciones con sus respectivas descripciones o los beneficios específicos para cada rol. Al mantener los elementos vinculados cerca entre sí, se mejora significativamente la lectura y la comprensión de cada bloque de información, permitiendo que el usuario asocie rápidamente las soluciones de **KidTrack** con sus necesidades específicas.
+
+Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de **KidTrack**: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
 #### 4.1.2. Web Style Guidelines
 
 ### 4.2. Information Architecture
