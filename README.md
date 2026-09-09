@@ -343,6 +343,18 @@ KidTrack está pensado para dos segmentos que forman parte del ecosistema del tr
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
+En esta sección se presentan los arquetipos de usuario diseñados para representar los segmentos objetivo de **KidTrack**: el conductor de transporte escolar independiente y el padre de familia/apoderado.
+
+La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (como grupos de WhatsApp y llamadas telefónicas durante la conducción), la ansiedad generada en los padres por la incertidumbre del tráfico en Lima y la necesidad operativa de profesionalizar y digitalizar un sector mayoritariamente no estructurado.
+
+#### Persona 1: Conductor / Transportista Escolar
+
+![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20Segmento.png)
+---
+#### Persona 2: Padre de Familia / Apoderado
+
+![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
+
 #### 2.3.2. User Task Matrix
 #### 2.3.3. User Journey Mapping
 #### 2.3.4. Empathy Mapping
