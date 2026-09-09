@@ -347,13 +347,13 @@ En esta sección se presentan los arquetipos de usuario diseñados para represen
 
 La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (como grupos de WhatsApp y llamadas telefónicas durante la conducción), la ansiedad generada en los padres por la incertidumbre del tráfico en Lima y la necesidad operativa de profesionalizar y digitalizar un sector mayoritariamente no estructurado.
 
-#### Persona 1: Conductor / Transportista Escolar
+#### Persona 1: Drivers
 
-![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20Segmento.png)
+![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20segmento.png)
 ---
-#### Persona 2: Padre de Familia / Apoderado
+#### Persona 2: Parents
 
-![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
+![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20segmento.png)
 
 #### 2.3.2. User Task Matrix
 En esta sección se presenta la matriz de tareas de usuario, la cual consolida las actividades fundamentales que tanto el conductor (Arturo Núñez) como el padre de familia (Fernando Nery) ejecutan para asegurar un traslado escolar exitoso.
@@ -394,10 +394,10 @@ En esta sección se presentan los **User Journey Maps** en versión *As-Is* corr
 El propósito de este mapeo es comprender a fondo la experiencia actual del servicio de transporte escolar en Lima, identificando emociones, fricciones operativas, puntos críticos de comunicación y oportunidades de mejora antes de la implementación de **KidTrack**. A continuación, se detallan los mapas del viaje del usuario vinculando sus objetivos y puntos de dolor con cada etapa del proceso tradicional.
 
 ---
-#### User Journey Map 1: Arturo Núñez (Conductor / Transportista Escolar)
+#### User Journey Map 1: Drivers
 ![Arturo Núñez Journey Map](./assets/images/Chapter2/Arturo%20Núñez%20journey%20map.png)
 ---
-#### User Journey Map 2: Fernando Nery (Padre de Familia / Apoderado)
+#### User Journey Map 2: Parents
 ![Fernando Nery Journey Map](./assets/images/Chapter2/Fernando%20Nery%20journey%20map.png)
 
 #### 2.3.4. Empathy Mapping
@@ -405,13 +405,13 @@ En esta sección se presenta el análisis de empatía realizado para nuestros se
 
 ---
 
-#### Segmento Objetivo 1: Conductor / Transportista Escolar (Arturo Núñez)
+#### Segmento Objetivo 1: Drivers
 
 ![Arturo Núñez Empathy Map](./assets/images/Chapter2/Arturo%20Núñez%20Empaty%20map.png)
 
 ---
 
-#### Segmento Objetivo 2: Padre de Familia / Apoderado (Fernando Nery)
+#### Segmento Objetivo 2: Parents
 
 ![Fernando Nery Empathy Map](./assets/images/Chapter2/Fernando%20Nery%20%20Empaty%20map.png)
 
