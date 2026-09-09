@@ -343,13 +343,142 @@ KidTrack está pensado para dos segmentos que forman parte del ecosistema del tr
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
+En esta sección se presentan los arquetipos de usuario diseñados para representar los segmentos objetivo de **KidTrack**: el conductor de transporte escolar independiente y el padre de familia/apoderado.
+
+La elaboración de estas fichas es el resultado de una síntesis detallada entre el análisis de la competencia y el proceso de Needfinding. Se han identificado características críticas como la alta dependencia de herramientas informales (como grupos de WhatsApp y llamadas telefónicas durante la conducción), la ansiedad generada en los padres por la incertidumbre del tráfico en Lima y la necesidad operativa de profesionalizar y digitalizar un sector mayoritariamente no estructurado.
+
+#### Persona 1: Drivers
+
+![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20segmento.png)
+---
+#### Persona 2: Parents
+
+![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20segmento.png)
+
 #### 2.3.2. User Task Matrix
+En esta sección se presenta la matriz de tareas de usuario, la cual consolida las actividades fundamentales que tanto el conductor (Arturo Núñez) como el padre de familia (Fernando Nery) ejecutan para asegurar un traslado escolar exitoso.
+
+Es importante destacar que estas tareas representan necesidades y procesos intrínsecos del servicio que existen independientemente de la presencia de una solución de software; el objetivo de **KidTrack** es optimizar y digitalizar estas interacciones para reducir la carga operativa, las distracciones al volante y la incertidumbre.
+
+| Tarea (*User Task*) | Conductor - Frecuencia | Conductor - Importancia | Padre - Frecuencia | Padre - Importancia |
+| :--- | :---: | :---: | :---: | :---: |
+| Verificar lista de asistencia de alumnos | Alta | Alta | N/A | N/A |
+| Identificar alumnos en el punto de recojo | Alta | Alta | N/A | N/A |
+| Confirmar el abordaje seguro del alumno | Alta | Crítica | Alta | Crítica |
+| Gestionar comunicación entre conductores y padres | Alta | Alta | Alta | Alta |
+| Notificar retrasos o imprevistos en la ruta | Media | Alta | Alta | Crítica |
+| Monitorear el progreso del trayecto | Media | Media | Alta | Alta |
+| Confirmar llegada al destino final | Alta | Crítica | Alta | Crítica |
+| Registrar la entrega del alumno al responsable | Alta | Crítica | Alta | Crítica |
+| Coordinar cambios de último momento en el servicio | Baja | Media | Baja | Alta |
+| Reportar incidencias de seguridad o salud | Baja | Crítica | Baja | Crítica |
+| Consultar el estado actual del servicio | Media | Media | Alta | Alta |
+| Revisar historial de trayectos realizados | Baja | Media | Media | Media |
+| Organizar y optimizar rutas y paradas | Alta | Alta | N/A | N/A |
+
+---
+
+#### Análisis y Explicación de la Matriz
+
+Tras el análisis de la matriz, se desprenden las siguientes conclusiones clave sobre el comportamiento y necesidades de los segmentos:
+
+* **Coincidencias en Tareas Críticas:** Existe una convergencia total en las tareas de *"Confirmar abordaje"*, *"Confirmar llegada"* y *"Registrar entrega"*. Para ambos segmentos, estas acciones representan la columna vertebral de la confianza en el servicio, manteniendo una importancia **Crítica** debido a que involucran directamente la seguridad e integridad del menor.
+* **Diferencias de Rol:** La carga operativa de planificación y ejecución (verificación de listas y organización de rutas) recae exclusivamente en el conductor. Por el contrario, el padre de familia se enfoca en tareas de supervisión pasiva como *"Monitorear el progreso"*, la cual mantiene una frecuencia alta debido a la ansiedad constante que genera la congestión vehicular en la ciudad.
+* **Gestión de Incidencias:** Se observa que tareas como *"Reportar incidencias"* tienen una frecuencia baja, pero su importancia es **Crítica**. Esto valida la necesidad de que **KidTrack** ofrezca canales de notificación prioritarios e instantáneos que garanticen que, ante un imprevisto, la información fluya sin errores ni demoras.
+* **Fricción en la Comunicación:** La tarea de *"Notificar retrasos"* es de frecuencia media para el conductor pero de importancia crítica para el padre, lo que resalta el mayor punto de fricción actual: la necesidad de información automatizada en tiempo real para reducir el estrés parental sin distraer al conductor mientras maneja.
+
 #### 2.3.3. User Journey Mapping
+
+En esta sección se presentan los **User Journey Maps** en versión *As-Is* correspondientes a los dos segmentos objetivo definidos previamente: el conductor de transporte escolar independiente (**Arturo Núñez**) y el padre de familia/apoderado (**Fernando Nery**). 
+
+El propósito de este mapeo es comprender a fondo la experiencia actual del servicio de transporte escolar en Lima, identificando emociones, fricciones operativas, puntos críticos de comunicación y oportunidades de mejora antes de la implementación de **KidTrack**. A continuación, se detallan los mapas del viaje del usuario vinculando sus objetivos y puntos de dolor con cada etapa del proceso tradicional.
+
+---
+#### User Journey Map 1: Drivers
+![Arturo Núñez Journey Map](./assets/images/Chapter2/Arturo%20Núñez%20journey%20map.png)
+---
+#### User Journey Map 2: Parents
+![Fernando Nery Journey Map](./assets/images/Chapter2/Fernando%20Nery%20journey%20map.png)
+
 #### 2.3.4. Empathy Mapping
+En esta sección se presenta el análisis de empatía realizado para nuestros segmentos objetivo, buscando responder a las preguntas fundamentales del marco de trabajo: *¿Con quién estamos empatizando?*, *¿Qué necesita hacer?*, *¿Qué ve?*, *¿Qué dice?*, *¿Qué hace?*, *¿Qué oye?*, *¿Qué piensa y siente?*, e identificando claramente sus dolores (*Pains*) y ganancias (*Gains*).
+
+---
+
+#### Segmento Objetivo 1: Drivers
+
+![Arturo Núñez Empathy Map](./assets/images/Chapter2/Arturo%20Núñez%20Empaty%20map.png)
+
+---
+
+#### Segmento Objetivo 2: Parents
+
+![Fernando Nery Empathy Map](./assets/images/Chapter2/Fernando%20Nery%20%20Empaty%20map.png)
 
 ### 2.4. Big Picture Event Storming
 
+En esta sección, se presenta el desarrollo y los resultados de la sesión de **Big Picture Event Storming** realizada por el equipo para el proyecto **KidTrack**. Este proceso consistió en una sesión colaborativa de modelado dirigida al dominio, donde el equipo se enfocó en comprender el ecosistema del negocio de movilidad escolar de manera integral.
+
+A través de esta dinámica, se logró plasmar los eventos significativos y sus interrelaciones, construyendo una primera aproximación visual de alto nivel que explora el *landscape* completo del negocio.
+
+---
+![Big Picture Event Storming - KidTrack](./assets/images/Chapter2/Event%20Storming.png)
+
+URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/MjI5THNDVXhqMFl5d0hzRCtkWHhiNDdBZ0JVQWlNaFBkd0JzcWNWUmVWcEJsamdpVmhxT0N5ZDFlMjcrZi9HZUZIZ1pZd3htOEtrZzl0bmFzd3c1VVAwMHNTcS9JOFYvQjYyR3VNVG5KNEZPM3k5SWliRnlURDViNkFYTTRvWkRnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=830546571837)
+
 ### 2.5. Ubiquitous Language
+
+En esta sección se presenta el glosario de términos de negocio utilizados dentro del dominio del sistema **KidTrack**. La definición de este Lenguaje Ubicuo asegura una comunicación clara y sin ambigüedades entre los miembros del equipo de desarrollo, los interesados del proyecto y los usuarios del sistema.
+
+| Term (English) | Equivalente en Español | Definición |
+| :--- | :--- | :--- |
+| **Administrator** | Administrador | Persona o entidad responsable de la gestión operativa del servicio de movilidad escolar. Administra usuarios, rutas, vehículos, estudiantes y suscripciones. |
+| **Driver** | Conductor | Responsable de operar la unidad de transporte escolar y ejecutar el viaje diario. Registra eventos como inicio de trayecto, abordaje, incidencias y cierre de ruta. |
+| **Parent / Guardian** | Padre de familia / Tutor / Apoderado | Usuario final que monitorea el recorrido del estudiante, recibe notificaciones y valida la seguridad del servicio. |
+| **Student** | Estudiante / Alumno | Beneficiario del servicio de transporte escolar. Su estado de abordaje, traslado y entrega representa el núcleo operativo del sistema. |
+| **Visitor** | Visitante | Usuario no registrado que accede a la Landing Page para conocer el servicio, consultar precios o solicitar una demostración. |
+| **Subscription** | Suscripción | Acuerdo comercial que habilita el acceso a la plataforma **KidTrack** según un plan contratado y vigente. |
+| **Plan** | Plan | Oferta comercial (*Basic*, *Intermediate*, *Premium*) que determina funcionalidades, límites operativos y capacidad de uso del sistema. |
+| **Billing Cycle** | Ciclo de facturación | Periodo de tiempo en el que se cobra y renueva la suscripción del cliente (mensual o anual). |
+| **Payment** | Pago | Transacción económica realizada por el Administrador para activar o renovar una suscripción. |
+| **Invoice** | Factura / Comprobante | Documento emitido luego de un pago exitoso como constancia de la transacción realizada. |
+| **Route** | Ruta | Definición logística que incluye origen, destino, paradas y secuencia del recorrido escolar. |
+| **Stop** | Parada | Punto físico autorizado donde el vehículo recoge o entrega estudiantes. |
+| **Checkpoint** | Punto de control | Referencia geográfica dentro de la ruta utilizada para validar avance y calcular tiempos estimados. |
+| **Trip / Journey** | Viaje / Trayecto | Ejecución en tiempo real de una ruta programada en una fecha y horario determinados. |
+| **Scheduled Trip** | Viaje programado | Viaje previamente configurado para una fecha, conductor, vehículo y ruta específica. |
+| **Boarding** | Abordaje | Acción física y registro digital del momento en que el estudiante sube al vehículo. |
+| **Boarding Status** | Estado de abordaje | Estado operativo del estudiante durante el viaje (*Boarded*, *Absent*, *Delivered*, *Pending*). |
+| **Absence** | Ausencia | Evento registrado cuando el estudiante no aborda la unidad en la parada correspondiente. |
+| **Delivery** | Entrega | Confirmación de que el estudiante fue dejado de forma segura en el destino autorizado. |
+| **Vehicle** | Vehículo / Unidad | Medio de transporte asignado a rutas específicas dentro de la operación escolar. |
+| **Fleet** | Flota | Conjunto de vehículos administrados por una misma organización o administrador. |
+| **Driver Assignment** | Asignación de conductor | Acción mediante la cual un conductor queda vinculado a una ruta o viaje programado. |
+| **Vehicle Assignment** | Asignación de vehículo | Acción mediante la cual una unidad queda vinculada a una ruta o viaje programado. |
+| **Manifest** | Manifiesto | Lista oficial de estudiantes asignados a una ruta o grupo para control operativo y asistencia. |
+| **Group** | Grupo | Conjunto de estudiantes relacionados a una ruta, zona o servicio común. |
+| **Live Tracking** | Monitoreo en tiempo real | Visualización dinámica de la ubicación actual del vehículo durante el viaje. |
+| **ETA (Estimated Time of Arrival)** | Tiempo estimado de llegada | Predicción del tiempo restante para llegar a una parada o destino. |
+| **Incident** | Incidente | Evento no planificado reportado durante el trayecto, como retrasos, tráfico, avería o emergencia. |
+| **Delay** | Retraso | Desviación del horario esperado del viaje respecto a la planificación original. |
+| **Emergency Alert** | Alerta de emergencia | Notificación prioritaria generada ante una situación crítica que requiere atención inmediata. |
+| **Notification** | Notificación | Comunicación automática enviada al usuario sobre eventos relevantes del servicio. |
+| **Push Notification** | Notificación push | Mensaje inmediato enviado al dispositivo móvil del usuario. |
+| **Announcement** | Comunicado | Mensaje masivo emitido por la administración hacia padres o usuarios registrados. |
+| **Dashboard** | Panel de control | Vista de gestión donde el Administrador monitorea operaciones, métricas y configuraciones. |
+| **Attendance** | Asistencia | Registro histórico de abordajes y ausencias del estudiante. |
+| **Attendance Report** | Reporte de asistencia | Resumen periódico del historial de presencia de estudiantes en el servicio. |
+| **Trip History** | Historial de viajes | Registro consolidado de trayectos ejecutados anteriormente. |
+| **Security Validation** | Validación de seguridad | Confirmación de identidad o permisos para acceder a funciones sensibles del servicio. |
+| **Account Provisioning** | Habilitación de cuenta | Proceso de creación y activación de acceso para un usuario del sistema. |
+| **Role** | Rol | Perfil funcional del usuario dentro del negocio (*Administrator*, *Driver*, *Parent*). |
+| **Capacity Limit** | Límite de capacidad | Restricción operativa determinada por el plan contratado, como número de rutas o conductores permitidos. |
+| **Renewal** | Renovación | Extensión de una suscripción al completar un nuevo pago. |
+| **Suspension** | Suspensión | Estado en el que se restringe el acceso al sistema por falta de pago o incumplimiento. |
+| **Landing Page** | Página informativa principal | Sitio web orientado a captación comercial donde se presenta la propuesta de valor del servicio **KidTrack**. |
+| **Demo Request** | Solicitud de demostración | Petición comercial realizada por un visitante interesado en conocer el producto. |
+| **Pricing** | Precios / Tarifario | Información pública de costos y beneficios asociados a cada plan disponible. |
+| **Trust Signal** | Señal de confianza | Elemento comercial que incrementa credibilidad, como testimonios, alianzas o certificaciones. |
 
 ## Capítulo III: Requirements Specification
 
