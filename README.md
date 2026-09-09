@@ -58,8 +58,8 @@ Proyecto
     <td style="border: none; text-align: left; padding: 5px 15px;">nombre</td>
   </tr>
   <tr style="border: none;">
-    <td style="border: none; text-align: center; padding: 5px 15px;">codigo</td>
-    <td style="border: none; text-align: left; padding: 5px 15px;">nombre</td>
+    <td style="border: none; text-align: center; padding: 5px 15px;">U20221A390</td>
+    <td style="border: none; text-align: left; padding: 5px 15px;">Su Caletti Eddo</td>
   </tr>
  
  
@@ -206,7 +206,7 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 |                   Foto                    | Apellidos y Nombres    |    Código    | Carrera                | Resumen                                                                                                                                                                                                                                                                                                                                                                                 |
 |:-----------------------------------------:|:-----------------------|:------------:| :--------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    ![foto](./assets/images/Team/.jpg)     | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
-|    ![foto](./assets/images/Team/.jpeg)    | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                    |
+|    ![foto](./assets/images/Team/Eddo%20foto.jpeg)    | Eddo Su Caletti  | [U20221A390] | Ingeniería de Software | Soy Eddo Su Caletti, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. A lo largo de mi formación he desarrollado un gran interés por la tecnología y la programación. Me considero una persona organizada y dedicada, apasionada por la fotografía y por disfrutar de momentos de calidad en familia.                                    |
 | ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
 |        ![foto](assets/images/.png)        | nombre el integrante   |   [codigo]   | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
 |  ![foto](assets/images/Team/perfil-.png)  | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                      |
