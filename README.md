@@ -490,9 +490,35 @@ En esta sección se presenta el glosario de términos de negocio utilizados dent
 
 ### 4.1. Style Guidelines
 #### 4.1.1. General Style Guidelines
+El diseño de **KidTrack** se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, fiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia.
 ##### Colores
+
+La selección cromática de **KidTrack** no es meramente estética; responde a una psicología del color aplicada a la seguridad y el entorno escolar, garantizando accesibilidad y jerarquía visual. Cada tono desempeña una función específica en la interfaz:
+
+![Paleta de Colores KidTrack](./assets/images/Chapter4/Colores%20.png)
+
+**Naranja / Anaranjado (`#E07A2B`):** Identidad tipográfica principal ("Kid"). Aporta vitalidad, calidez, energía y una conexión visual amigable con el entorno escolar. Funciona como punto focal de acento en la interfaz.
+* **Azul Oscuro / Marino (`#1E3A63`):** Identidad tipográfica ("Track") e ícono del timón/brújula. Transmite autoridad, seriedad, seguridad corporativa y estabilidad tecnológica. Se emplea en títulos principales, componentes de navegación y elementos estructurales clave.
+* **Naranja Rojizo (`#DE4A26`):** Tono de acento secundario (utilizado en detalles gráficos como el banderín/sombrerito del vehículo). Se reserva para alertas, notificaciones destacadas y botones de llamado a la acción (*CTA*).
+* **Blanco (`#FFFFFF`):** Fondo principal y líneas interiores de contraste. Proporciona espacios limpios, máxima legibilidad y descansos visuales que reducen la fatiga en la navegación.
+* **Verde Éxito (`#22C55E`):** Indicador de estado operativo. Se emplea en confirmaciones de abordaje de estudiantes, rutas completadas con éxito y estados activos del vehículo.
+* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones y párrafos largos sobre fondos claros, ofreciendo excelente legibilidad.
+* **Gris Claro / Neutral (`#F8F9FB` / `#F4F7FA`):** Fondos alternos para la delimitación de secciones (como tarjetas de datos, paneles y tablas), estructurando la interfaz con un acabado moderno y ordenado.
 ##### Tipografía
+Se seleccionó la tipografía **“Plus Jakarta Sans”** como fuente principal para los títulos de la plataforma de **KidTrack** por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico pero amigable. Se utiliza en pesos altos para asegurar que los encabezados sean visualmente impactantes, sólidos y de fácil lectura.
+
+![Tipografía Principal - Plus Jakarta Sans](./assets/images/Chapter4/Tipografia1.png)
+
+Asimismo, se optó por la tipografía **“DM Sans”** como fuente secundaria para los textos de cuerpo y navegación por su diseño extremadamente legible, limpio y neutro. Su apariencia estética y claridad garantizan una experiencia de uso accesible y agradable, reduciendo la fatiga visual del usuario al leer información detallada sobre funciones, rutas o planes.
+
+![Tipografía Secundaria - DM Sans](./assets/images/Chapter4/Tipografia2.png)
+
+En cuanto al tamaño, se utiliza jerárquicamente en toda la aplicación para resaltar títulos principales, botones de acción y texto de soporte. Los tamaños más grandes en los encabezados guían al usuario rápidamente por los puntos clave del mensaje, mientras que los más pequeños en los párrafos aseguran la comprensión y la eficiencia en la lectura de detalles secundarios.
 ##### Branding
+El branding de **KidTrack** está diseñado para reflejar simplicidad, confianza y profesionalismo. El logo y los íconos adoptan un enfoque minimalista, con líneas claras y formas simples que comunican el propósito de seguridad y eficiencia de la plataforma. El diseño incluye una identidad tipográfica sólida acompañada de un ícono característico que integra la forma de un timón/brújula junto con la silueta de un vehículo escolar, simbolizando protección, dirección y monitoreo constante. Esta propuesta mantiene una apariencia limpia y fácilmente reconocible, tanto en entornos web como móviles.
+
+![Branding y Logotipo KidTrack](./assets/images/Chapter4/Logo.jpg)
+
 ##### Espaciado
 ##### Dimensiones para el tono de comunicación y lenguaje aplicado
 ##### Elementos de diseño
