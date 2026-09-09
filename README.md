@@ -563,7 +563,7 @@ La navegación se apoya en transiciones suaves y menús persistentes que asegura
 ![Web Style Guidelines 2](./assets/images/Chapter4/Guidelines2.png)
 ![Web Style Guidelines 3](./assets/images/Chapter4/Guidelines3.png)
 
-
+---
 ### 4.2. Information Architecture
 #### 4.2.1. Organization Systems
 ---
