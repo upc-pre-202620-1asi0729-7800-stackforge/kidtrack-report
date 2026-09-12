@@ -708,7 +708,63 @@ Dentro de la aplicación web, la navegación principal se organiza mediante una 
 La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (*tabs*) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
 
 ### 4.3. Landing Page UI Design
+
 #### 4.3.1. Landing Page Wireframe
+
+A continuación, se presentan los wireframes de las principales secciones de la landing page. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción de la plataforma.
+ 
+**Principios Aplicados**
+ 
+- **Jerarquía visual clara:** Los contenidos se ordenan priorizando la información de confianza en el Hero Section (Seguridad y Gestión). Se guía al usuario progresivamente a través de las estadísticas de impacto, los beneficios específicos para padres y conductores, la tabla comparativa de planes y, finalmente, el tutorial operativo.
+- **Consistencia visual:** Se mantuvieron patrones uniformes utilizando la tipografía Plus Jakarta Sans para títulos impactantes y DM Sans para la legibilidad del cuerpo. Se aplicó la paleta institucional (azul marino para seguridad y ámbar para alertas) de manera coherente en todos los componentes.
+- **Contraste y accesibilidad:** Se garantizó un contraste elevado entre el texto y los fondos para facilitar la lectura en condiciones de luz exterior (común para conductores y padres en ruta). Los botones de acción cuentan con estados visuales claros para confirmar la interacción del usuario.
+- **Optimización para dispositivos móviles:** Los wireframes y el diseño final contemplan una navegación móvil dedicada. Se implementó un menú lateral (sidebar) activado por un botón hamburguesa para ahorrar espacio, se ajustaron las cuadrículas (grids) a una sola columna para evitar el desplazamiento horizontal y se optimizaron las áreas de contacto en botones para una interacción táctil precisa.
+- **Diseño inclusivo:** La estructura es totalmente compatible con el sistema i18n, permitiendo que el diseño se adapte dinámicamente al largo de las palabras en español e inglés. Además, se aseguró que la navegación sea lógica y accesible mediante teclado y lectores de pantalla, facilitando el uso para cualquier tipo de usuario.
+##### Versión Desktop Web Browser:
+ 
+En esta primera sección se presenta la pantalla Home de la landing page, donde se observa el encabezado principal con la propuesta de valor y el acceso al sistema de internacionalización (i18n). Se aprecia un botón call-to-action principal diseñado para captar el interés de los padres de familia y conductores independientes.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP1.png" alt="Home KidTrack" width="900px">
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma KidTrack, utilizando iconos y textos breves para una lectura rápida.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP2.png" alt="Características KidTrack" width="900px">
+Se presenta la sección de Funcionalidades, la cual profundiza en las capacidades tecnológicas del sistema, como el monitoreo en tiempo real y las notificaciones automáticas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP3.png" alt="Funcionalidades" width="900px">
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP4.png" alt="Roles KidTrack" width="900px">
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP5.png" alt="Planes KidTrack" width="900px">
+A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo funciona?". Este tutorial visual guía al nuevo usuario a través de los pasos necesarios para implementar la plataforma con éxito.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP6.png" alt="Tutorial KidTrack" width="900px">
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de StackForge.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP7.png" alt="Footer KidTrack" width="900px">
+
+#### Versión Mobile Web Browser
+ 
+A continuación, se presenta la adaptación responsiva de KidTrack para dispositivos móviles. En estas vistas se observa la reorganización de los elementos en una estructura vertical y el uso de componentes optimizados para la interacción táctil.
+ 
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-1.png" alt="Home Mobile" width="700px">
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-3.png" alt="Roles Mobile" width="700px">
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de StackForge de manera compacta al final del recorrido del usuario.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
+
 #### 4.3.2. Landing Page Mock-up
 
 ### 4.4. Web Applications UX/UI Design
