@@ -546,6 +546,16 @@ Cada historia tiene criterios de aceptación comprobables en estructura Given–
 | US32 | Uso desde celular y computadora | Como visitante o usuario registrado, deseo acceder a las funciones desde distintos tamaños de pantalla, para utilizar KidTrack desde mi dispositivo disponible. | **S1:** **Given** un dispositivo móvil con ancho de 360 píxeles CSS, **When** la persona consulta el contenido o completa una operación autorizada, **Then** el sistema mantiene legibles los datos y accesibles todas las acciones requeridas.<br>**S2:** **Given** una computadora con ancho de 1280 píxeles CSS, **When** la persona utiliza las mismas funciones, **Then** el sistema mantiene los datos, permisos y resultados equivalentes a los de la versión móvil.<br>**S3:** **Given** una operación en curso, **When** la persona cambia la orientación o el tamaño de la ventana, **Then** el sistema conserva los datos ingresados y no ejecuta ni duplica la operación automáticamente. | EP05 |
 
 ### 3.2. Impact Mapping
+
+El Impact Mapping de KidTrack relaciona los objetivos del negocio con los cambios de comportamiento esperados en sus usuarios y las funciones que pueden favorecerlos. Se consideran las personas definidas en el capítulo II: Arturo Núñez, conductor independiente, y Fernando Nery, padre de familia. 
+
+### Impact Mapping 1: Arturo Nuñez
+![Impact Mapping - Captación de Transportistas](./KidTrack%20%E2%80%93%20Captaci%C3%B3n%20de%20transportistas-ImpactMapping1.png)
+
+### Impact Mapping 2: Fernando Nery
+![Impact Mapping - Consulta del Traslado](./KidTrack%20%E2%80%93%20Consulta%20del%20traslado%20por%20los%20apoderado-ImpactMapping2s.png)
+
+
 ### 3.3. Product Backlog
 
 ## Capítulo IV: Product Design
