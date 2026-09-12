@@ -208,7 +208,7 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 |    ![foto](./assets/images/Team/.jpg)     | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
 |    ![foto](./assets/images/Team/Eddo%20foto.jpeg)    | Eddo Su Caletti  | [U20221A390] | Ingeniería de Software | Soy Eddo Su Caletti, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. A lo largo de mi formación he desarrollado un gran interés por la tecnología y la programación. Me considero una persona organizada y dedicada, apasionada por la fotografía y por disfrutar de momentos de calidad en familia.                                    |
 | ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
-|        ![foto](assets/images/.png)        | nombre el integrante   |   [codigo]   | Ingeniería de Software | descripcion                                                                                                                                                                                                                                                                                                                                                                             |
+|        ![foto](assets/images/Team/perfil-mathias-delacruz.jpg)        | De la Cruz De los Santos, Mathias Marcelo  |   u202424059   | Ingeniería de Software | Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el 5to ciclo de la carrera en la Universidad Peruana de Ciencias Aplicadas. Me considero un fanático de la programación, del futbol y los videojuegos. Considero que puedo aportar al equipo y al proyecto mis conocimientos técnicos, además de considerarme una persona disciplinada, responsable y que valora el trabajo en equipo.                                                                                                                                                                                                                                                                                                                                                                             |
 |  ![foto](assets/images/Team/perfil-.png)  | nombre el integrante   | [codigo] | Ingeniería de Software | descripcion                                                                                      |
 
 ### 1.2. Solution Profile
@@ -708,13 +708,453 @@ Dentro de la aplicación web, la navegación principal se organiza mediante una 
 La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (*tabs*) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
 
 ### 4.3. Landing Page UI Design
+
 #### 4.3.1. Landing Page Wireframe
+
+A continuación, se presentan los wireframes de las principales secciones de la landing page. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción de la plataforma.
+ 
+**Principios Aplicados**
+ 
+- **Jerarquía visual clara:** Los contenidos se ordenan priorizando la información de confianza en el Hero Section (Seguridad y Gestión). Se guía al usuario progresivamente a través de las estadísticas de impacto, los beneficios específicos para padres y conductores, la tabla comparativa de planes y, finalmente, el tutorial operativo.
+- **Consistencia visual:** Se mantuvieron patrones uniformes utilizando la tipografía Plus Jakarta Sans para títulos impactantes y DM Sans para la legibilidad del cuerpo. Se aplicó la paleta institucional (azul marino para seguridad y ámbar para alertas) de manera coherente en todos los componentes.
+- **Contraste y accesibilidad:** Se garantizó un contraste elevado entre el texto y los fondos para facilitar la lectura en condiciones de luz exterior (común para conductores y padres en ruta). Los botones de acción cuentan con estados visuales claros para confirmar la interacción del usuario.
+- **Optimización para dispositivos móviles:** Los wireframes y el diseño final contemplan una navegación móvil dedicada. Se implementó un menú lateral (sidebar) activado por un botón hamburguesa para ahorrar espacio, se ajustaron las cuadrículas (grids) a una sola columna para evitar el desplazamiento horizontal y se optimizaron las áreas de contacto en botones para una interacción táctil precisa.
+- **Diseño inclusivo:** La estructura es totalmente compatible con el sistema i18n, permitiendo que el diseño se adapte dinámicamente al largo de las palabras en español e inglés. Además, se aseguró que la navegación sea lógica y accesible mediante teclado y lectores de pantalla, facilitando el uso para cualquier tipo de usuario.
+
+##### Versión Desktop Web Browser:
+ 
+En esta primera sección se presenta la pantalla Home de la landing page, donde se observa el encabezado principal con la propuesta de valor y el acceso al sistema de internacionalización (i18n). Se aprecia un botón call-to-action principal diseñado para captar el interés de los padres de familia y conductores independientes.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP1.png" alt="Home KidTrack" width="900px">
+
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma KidTrack, utilizando iconos y textos breves para una lectura rápida.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP2.png" alt="Características KidTrack" width="900px">
+
+Se presenta la sección de Funcionalidades, la cual profundiza en las capacidades tecnológicas del sistema, como el monitoreo en tiempo real y las notificaciones automáticas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP3.png" alt="Funcionalidades" width="900px">
+
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP4.png" alt="Roles KidTrack" width="900px">
+
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP5.png" alt="Planes KidTrack" width="900px">
+
+A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo funciona?". Este tutorial visual guía al nuevo usuario a través de los pasos necesarios para implementar la plataforma con éxito.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP6.png" alt="Tutorial KidTrack" width="900px">
+
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de StackForge.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-LP7.png" alt="Footer KidTrack" width="900px">
+
+#### Versión Mobile Web Browser
+ 
+A continuación, se presenta la adaptación responsiva de KidTrack para dispositivos móviles. En estas vistas se observa la reorganización de los elementos en una estructura vertical y el uso de componentes optimizados para la interacción táctil.
+ 
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-1.png" alt="Home Mobile" width="700px">
+
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
+
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-3.png" alt="Roles Mobile" width="700px">
+
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los créditos de StackForge de manera compacta al final del recorrido del usuario.
+ 
+<img src="assets/images/Chapter4/Landing/Wireframes/wireframe-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
+
 #### 4.3.2. Landing Page Mock-up
 
+A continuación, se presentan los mock-ups de las principales secciones de la landing page. Cada imagen ilustra el diseño propuesto para las diferentes funcionalidades, flujos de navegación y elementos de interacción de la plataforma.
+ 
+En esta primera sección se presenta la pantalla Home de la landing page, donde se observa el encabezado principal con la propuesta de valor y el acceso al sistema de internacionalización (i18n). Se aprecia un botón call-to-action principal diseñado para captar el interés de los padres de familia y conductores independientes.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP1.png" alt="Home KidTrack" width="900px">
+
+A continuación, se muestra la Sección de Características, donde se detallan los pilares y eficiencia que sustentan la plataforma KidTrack, utilizando iconos y textos breves para una lectura rápida.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP2.png" alt="Características KidTrack" width="900px">
+
+Se presenta la sección de Funcionalidades, la cual profundiza en las capacidades tecnológicas del sistema, como el monitoreo en tiempo real y las notificaciones automáticas.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP3.png" alt="Funcionalidades" width="900px">
+
+El siguiente frame corresponde a los Roles del Sistema, donde se segmentan los beneficios específicos para cada usuario objetivo: los padres de familia, enfocados en la tranquilidad y el seguimiento, y los conductores, enfocados en la gestión operativa de la ruta.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP4.png" alt="Roles KidTrack" width="900px">
+
+Se presenta la sección de Planes, donde se muestra la estructura de precios y niveles de servicio, diseñada de forma escaneable para facilitar la toma de decisiones comerciales.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP5.png" alt="Planes KidTrack" width="900px">
+
+A continuación, se detalla el flujo de uso del sistema en la sección "¿Cómo funciona?". Este tutorial visual guía al nuevo usuario a través de los pasos necesarios para implementar la plataforma con éxito.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP6.png" alt="Tutorial KidTrack" width="900px">
+
+Finalmente, se presenta la sección de Footer, la cual incluye el cierre de la página con los créditos correspondientes al equipo de desarrollo de StackForge.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-LP7.png" alt="Footer KidTrack" width="900px">
+
+#### Versión Mobile Web Browser
+ 
+A continuación, se presentan los mock-ups de la versión móvil de la aplicación. Cada imagen muestra la adaptación responsiva de las principales funcionalidades y secciones diseñadas para ofrecer una experiencia de usuario optimizada en dispositivos móviles.
+ 
+Pantalla Home y Menú Lateral (Sidebar):
+Se muestra la adaptación del Hero Section y el funcionamiento del menú hamburguesa, el cual despliega una barra lateral para facilitar la navegación en pantallas pequeñas sin obstruir el contenido.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-mobile-1.png" alt="Home Mobile" width="700px">
+
+Secciones de Características y Funcionalidades en Móvil:
+Los pilares de seguridad y las capacidades tecnológicas del sistema se reorganizan en una sola columna. Esto permite que los iconos y textos descriptivos mantengan un tamaño adecuado para la lectura táctil, evitando que el usuario deba realizar zoom para comprender las funciones de monitoreo y alertas.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-mobile-2.png" alt="Características y Funcionalidades Mobile" width="800px">
+
+Sección de Roles del Sistema en Móvil:
+Se adapta la segmentación de beneficios para padres y conductores mediante un flujo vertical. Cada rol se presenta de forma independiente para asegurar que el impacto visual de los beneficios específicos no se pierda en pantallas de dimensiones reducidas.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-mobile-3.png" alt="Roles Mobile" width="700px">
+
+Planes, Tutorial y Footer Móvil:
+La tabla de precios se transforma en tarjetas individuales desplazables de arriba hacia abajo, seguida del flujo paso a paso del tutorial. El cierre de página se optimiza para mostrar los botones de contacto y los créditos de StackForge de manera compacta y accesible al final del recorrido del usuario.
+ 
+<img src="assets/images/Chapter4/Landing/Mock-ups/mockup-mobile-4.png" alt="Planes y Footer Mobile" width="1000px">
+
 ### 4.4. Web Applications UX/UI Design
-#### 4.4.1. Web Applications Wireframes
+
+### 4.4.1. Web Applications Wireframes
+
+A continuación se muestran los wireframes que conforman la estructura visual de la aplicación web de KidTrack, pensada para reunir en un solo lugar la administración de la seguridad y la logística del transporte escolar.
+
+#### Principios aplicados
+
+- Jerarquía funcional clara: el recorrido de navegación pone primero las acciones más sensibles para la seguridad, por ejemplo entrar al mapa de seguimiento en vivo o activar las alertas de pánico.
+
+- Consistencia y patrones de diseño: los formularios y las tablas de datos comparten el mismo lenguaje visual en toda la aplicación, de modo que cualquier usuario tarde poco en aprender a usarla.
+
+- Accesibilidad en interfaces: se usaron contrastes altos y tipografía legible (Plus Jakarta Sans) para que la aplicación se pueda usar cómodamente tanto en celular como en computadora.
+
+- Diseño adaptativo: al ser responsivo, el diseño funciona igual de bien en una estación de monitoreo de escritorio que en la tablet que usa el conductor durante la ruta.
+
+#### Versión Desktop Wireframes - Acceso y Configuración (Universal)
+
+##### Autenticación y Acceso
+
+Registro de Cuenta
+Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/universalregister.png" width="900px" alt="register">
+
+Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/universallogin.png" width="900px" alt="login">
+
+Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/password-change1.png" width="900px" alt="password-change">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/password-change2.png" width="900px" alt="password-change">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/password-change3.png" width="900px" alt="password-change">
+
+#### Versión Desktop Wireframes - Administradores
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación
+
+Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/home-dashboard.png" width="900px" alt="home-dashboard">
+
+Asignación de Roles
+
+Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/role-assignment.png" width="900px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes
+
+Pantalla comercial donde el dueño de la flota o la institución elige y contrata el plan que mejor se ajusta a su número de buses y alumnos.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/hire-plan.png" width="900px" alt="hire-plan">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/hire-plan2.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas
+
+Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+
+Alta y Gestión de Alumnos
+
+Vista conectada a la API desde donde se ve el listado completo de estudiantes, se registran nuevos alumnos y se actualiza la información de los ya existentes.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/student-management.png" width="900px" alt="student-management">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/student-management2.png" width="900px" alt="student-management">
+
+Registro de Conductores
+
+Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
+
+Registro de Padres
+
+Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/parent-registration.png" width="900px" alt="driver-registration">
+
+Creación y Edición de Rutas
+
+Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/route-creation.png" width="900px" alt="route-creation">
+
+#### Versión Desktop Wireframes - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto
+
+Pantalla desde la que el conductor confirma que va a empezar el recorrido; al presionar "Iniciar Viaje" se activa el rastreo GPS que verán los padres.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/start-trip1.png" width="900px" alt="start-trip">
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/start-trip2.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje
+
+Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/boarding-check.png" width="900px" alt="boarding-check">
+
+Finalización de Ruta
+
+Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/route-end.png" width="900px" alt="route-end">
+
+Bitácora de Viajes Histórica
+
+Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/trip-log.png" width="900px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta
+
+M�dulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/incident-report.png" width="900px" alt="incident-report">
+
+Botón de Pánico
+
+Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/panic-button.png" width="900px" alt="panic-button">
+
+#### Versión Desktop Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real
+
+Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
+Acceso a Cámara Interna
+
+Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/camera-access.png" width="900px" alt="camera-access">
+
+Alerta de Proximidad
+
+Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
+Confirmación de Llegada
+
+Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
+Historial de Asistencia
+
+Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+#### Versión Mobile Wireframes - Acceso y Configuración (Universal)
+
+##### Autenticación y Acceso
+
+Registro de Cuenta
+Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/universalregister.png" width="400px" alt="register">
+
+Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/universallogin.png" width="400px" alt="login">
+
+Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/password-change.png" width="900px" alt="password-change">
+
+#### Versión Mobile Wireframes - Administradores
+
+##### Configuración y Gestión Administrativa
+
+Panel de Inicio y Navegación
+
+Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/home-dashboard.png" width="600px" alt="home-dashboard">
+
+Asignación de Roles
+
+Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+
+Contratación de Planes
+
+Pantalla comercial donde el dueño de la flota o la institución elige y contrata el plan que mejor se ajusta a su número de buses y alumnos.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas
+
+Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+
+Alta y Gestión de Alumnos
+
+Vista conectada a la API desde donde se ve el listado completo de estudiantes, se registran nuevos alumnos y se actualiza la información de los ya existentes.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores
+
+Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres
+
+Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas
+
+Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+#### Versión Mobile Wireframes - Conductores
+
+##### Operación de Viaje
+
+Inicio de Trayecto
+
+Pantalla desde la que el conductor confirma que va a empezar el recorrido; al presionar "Iniciar Viaje" se activa el rastreo GPS que verán los padres.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/trip-start.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje
+
+Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta
+
+Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica
+
+Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+
+Reporte de Incidencias en Ruta
+
+M�dulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico
+
+Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Wireframes - Padres de Familia
+
+##### Monitoreo y Supervisión
+
+Rastreo en Tiempo Real
+
+Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna
+
+Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad
+
+Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada
+
+Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia
+
+Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
+
+<img src="assets/images/Chapter4/WebApp/Wireframes/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
 #### 4.4.2. Web Applications Wireflow Diagrams
+
 #### 4.4.3. Web Applications Mock-ups
+
 #### 4.4.4. Web Applications User Flow Diagrams
 
 ### 4.5. Web Applications Prototyping
