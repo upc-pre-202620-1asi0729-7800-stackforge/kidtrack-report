@@ -54,8 +54,8 @@ Proyecto
     <td style="border: none; text-align: left; padding: 5px 15px;">Ramirez Ruiz, Nickolas</td>
   </tr>
     <tr style="border: none;">
-    <td style="border: none; text-align: center; padding: 5px 15px;"> codigo </td>
-    <td style="border: none; text-align: left; padding: 5px 15px;">nombre</td>
+    <td style="border: none; text-align: center; padding: 5px 15px;">U202316852</td>
+    <td style="border: none; text-align: left; padding: 5px 15px;">Ortega Quintana, Jose Zacarias</td>
   </tr>
   <tr style="border: none;">
     <td style="border: none; text-align: center; padding: 5px 15px;">U20221A390</td>
