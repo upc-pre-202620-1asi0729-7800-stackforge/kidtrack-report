@@ -1368,8 +1368,8 @@ KidTrack utiliza Git para controlar versiones y GitHub para alojar los repositor
 | :--- | :--- |
 | Organización | [StackForge](https://github.com/upc-pre-202620-1asi0729-7800-stackforge) |
 | Informe | [kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report) |
-| Landing Page | Pendiente  |
-| Frontend Web Application | Pendiente |
+| Landing Page | [kidtrack-landingpage](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git)  |
+| Frontend Web Application | [kidtrack-webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git) |
 
 
 ##### Flujo de ramas
@@ -1442,7 +1442,54 @@ Referencias: [Google Java Style Guide](https://google.github.io/styleguide/javag
 Cada escenario utilizará `Given`, `When` y `Then` para expresar contexto, acción y resultado observable. Se mantendrá la correspondencia con los IDs US/TS del informe. Los criterios no se escribirán como secuencias de clics ni dependerán de posiciones o colores de controles.
 
 Referencia: [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/).
+
 #### 5.1.4. Software Deployment Configuration
+
+El despliegue de KidTrack comprende tres productos: Landing Page estática, aplicación Angular y servicios Java. Las siguientes instrucciones describen la configuración prevista. Las direcciones públicas y capturas se incorporarán cuando cada publicación haya sido realizada y verificada.
+
+##### Despliegue de Landing Page
+
+Se propone GitHub Pages para alojar los archivos HTML, CSS, JavaScript y recursos estáticos.
+
+1. Confirmar el repositorio de la Landing Page e integrar la versión revisada en `main`.
+2. Comprobar `index.html`, las rutas relativas y la carga de imágenes, estilos y traducciones.
+3. En `Settings > Pages`, seleccionar la publicación desde una rama y elegir `main` con la carpeta que contiene el sitio, o configurar un workflow de GitHub Actions si se requiere un proceso de construcción.
+4. Esperar la finalización de la publicación y abrir la URL que informa GitHub Pages.
+5. Verificar navegación, idiomas y enlaces de acceso desde escritorio y móvil. Registrar la URL y una captura del sitio accesible.
+
+**URL pública:** 
+[Landing page](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git).
+
+##### Despliegue de Frontend Web Application
+
+Se propone Vercel para la aplicación Angular. La plataforma y la cuenta de publicación deben confirmarse antes de registrar esta configuración como definitiva.
+
+1. Verificar el repositorio del frontend, su versión de Node.js y los scripts declarados en `package.json`.
+2. Instalar las dependencias con el archivo de bloqueo del proyecto y ejecutar la compilación de producción.
+3. Vincular el repositorio con Vercel, seleccionar la raíz del proyecto y comprobar el comando de construcción y la carpeta real de salida definida por Angular. No se supondrá una ruta `dist` sin comprobar sus archivos.
+4. Configurar la URL pública de la API mediante el mecanismo de configuración del frontend. Los valores incluidos en el navegador son públicos y no deben contener secretos del backend.
+5. Para una aplicación renderizada en el cliente, configurar el fallback de navegación a `index.html` cuando corresponda y comprobar la recarga de rutas internas. Si se adopta SSR, utilizar una configuración compatible con esa modalidad.
+6. Publicar la versión y verificar autenticación, solicitudes a la API, rutas internas y recursos estáticos.
+
+**URL pública:** [Webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git).
+
+Referencia de configuración: [Vercel](https://vercel.com/docs).
+
+##### Despliegue de Backend Services
+
+El backend se desarrollará con Java y Spring Boot. Requiere un proveedor que ejecute la aplicación y una base de datos MySQL accesible. Swagger UI formará parte de su documentación; no será el proveedor de hosting.
+
+1. Seleccionar el proveedor y confirmar compatibilidad con la versión de Java declarada en el proyecto. La selección está pendiente.
+2. Crear o habilitar MySQL y configurar la conexión, usuario y contraseña mediante variables del entorno de ejecución.
+3. Ejecutar las pruebas y empaquetar el servicio con Maven, utilizando el wrapper si existe. Un comando habitual es `./mvnw clean verify`; en Windows, `mvnw.cmd clean verify`.
+4. Publicar el JAR ejecutable o la imagen de contenedor que adopte el equipo. Configurar el proceso de arranque, el perfil de ejecución, el puerto requerido por el proveedor y los secretos de autenticación.
+5. Aplicar el mecanismo de creación o migración del esquema definido en el proyecto y verificar la conexión sin introducir credenciales de desarrollo en el despliegue.
+6. Configurar HTTPS y los orígenes CORS autorizados para el frontend publicado. Verificar un endpoint público y otro protegido, además de una operación con persistencia.
+7. Comprobar la especificación OpenAPI y Swagger UI en las rutas configuradas; registrar las URLs reales de la API y su documentación.
+
+**Proveedor, URL de API y URL de documentación:** pendientes 
+
+Referencia: [Despliegue de Spring Boot en la nube](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html).
 
 ### 5.2. Landing Page, Services & Applications Implementation
 ### 5.2.1. Sprint 1
