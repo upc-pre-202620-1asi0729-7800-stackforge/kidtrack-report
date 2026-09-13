@@ -1310,7 +1310,54 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
+
+La gestión de configuración de KidTrack establece cómo el equipo StackForge organiza sus herramientas, controla los cambios y prepara las versiones del producto. Estas convenciones permiten trabajar sobre el informe, la Landing Page, la aplicación web y los servicios RESTful manteniendo coherencia entre los requisitos y la implementación.
+
+La configuración descrita constituye el esquema de trabajo previsto. Los enlaces o datos marcados como pendientes deben completarse con la información real del equipo antes de presentar las evidencias del entregable.
+
 #### 5.1.1. Software Development Environment Configuration
+
+El entorno de KidTrack contempla actividades de planificación, requisitos, diseño, programación, pruebas y publicación. Las versiones concretas de las herramientas se registrarán en los repositorios de software para que los integrantes utilicen un entorno compatible.
+
+##### Project Management & Requirements Management
+
+| Herramienta | Uso en KidTrack | Referencia |
+| :--- | :--- | :--- |
+| Trello | Organizar el Product Backlog mediante tarjetas con ID, descripción, criterios de aceptación y Story Points. El tablero se complementa con la tabla del informe. | [Trello](https://trello.com/) |
+| Git y GitHub | Registrar modificaciones, mantener ramas y revisar propuestas de integración mediante Pull Requests. | [Git — descarga](https://git-scm.com/downloads), [GitHub](https://github.com/) |
+| UXPressia | Elaborar las personas, mapas de empatía, journeys e Impact Maps vinculados con los requisitos del servicio. | [UXPressia](https://uxpressia.com/) |
+
+##### Product UX/UI Design
+
+| Herramienta | Uso en KidTrack | Referencia |
+| :--- | :--- | :--- |
+| Figma | Diseñar wireframes, mock-ups y prototipos de la Landing Page y la aplicación, considerando escritorio y dispositivos móviles. | [Figma](https://www.figma.com/) |
+| Miro | Representar el Big Picture Event Storming del transporte escolar y sus eventos de negocio. | [Miro](https://miro.com/) |
+
+##### Software Development & Testing
+
+| Tecnología o herramienta | Propósito en el proyecto | Referencia |
+| :--- | :--- | :--- |
+| IntelliJ IDEA | Entorno propuesto para desarrollar y depurar los servicios Java. | [IntelliJ IDEA — descarga](https://www.jetbrains.com/idea/download/) |
+| HTML5, CSS3 y JavaScript | Construir el contenido, la presentación y las interacciones de la Landing Page estática. | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) |
+| Angular y TypeScript | Implementar la aplicación web y organizar sus componentes, servicios y rutas según las funciones de KidTrack. | [Angular](https://angular.dev/), [TypeScript](https://www.typescriptlang.org/) |
+| Angular Material | Mantener componentes visuales coherentes con Material Design en la aplicación. | [Angular Material](https://material.angular.dev/) |
+| Node.js y npm | Instalar dependencias y ejecutar los scripts de desarrollo y compilación del frontend. | [Node.js — descarga](https://nodejs.org/en/download) |
+| Java y Spring Boot | Desarrollar la RESTful API para usuarios, rutas, viajes, asistencia y comunicación del servicio. | [JDK — descarga](https://jdk.java.net/), [Spring Boot](https://spring.io/projects/spring-boot) |
+| Spring Data JPA y MySQL | Implementar la persistencia de las entidades del dominio en una base de datos relacional. | [Spring Data JPA](https://spring.io/projects/spring-data-jpa), [MySQL — descarga](https://dev.mysql.com/downloads/) |
+| Leaflet | Representar las rutas, sus paradas y la ubicación disponible del viaje. | [Leaflet](https://leafletjs.com/) |
+| Pruebas de Spring Boot y del frontend | Verificar reglas de negocio, servicios e interacciones relevantes mediante las herramientas declaradas en los manifiestos de cada repositorio. | [Pruebas en Spring Boot](https://docs.spring.io/spring-boot/reference/testing/index.html), [Pruebas en Angular](https://angular.dev/guide/testing) |
+
+
+##### Software Documentation & Deployment
+
+| Herramienta | Uso previsto | Referencia |
+| :--- | :--- | :--- |
+| Markdown en GitHub | Mantener el informe y las instrucciones de cada repositorio. | [Documentación de GitHub](https://docs.github.com/) |
+| OpenAPI y Swagger UI | Describir los contratos de la API y permitir su consulta y prueba interactiva. Swagger UI documenta los servicios; no ejecuta ni hospeda el backend Java. | [Swagger UI](https://swagger.io/open-source/swagger-ui/) |
+| GitHub Pages | Servicio propuesto para publicar la Landing Page estática. | [GitHub Pages](https://docs.github.com/en/pages) |
+| Vercel | Alternativa propuesta para publicar la aplicación Angular; su uso debe confirmarse con el equipo. | [Vercel — documentación](https://vercel.com/docs) |
+| Hosting compatible con Java y MySQL | Ejecutar el backend y disponer de persistencia accesible desde el entorno publicado. El proveedor está pendiente de definición. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
 #### 5.1.2. Source Code Management
 #### 5.1.3. Source Code Style Guide & Conventions
 #### 5.1.4. Software Deployment Configuration
