@@ -1403,6 +1403,45 @@ Cada repositorio tendrá su propio historial de versiones. Al cerrar una release
 Referencias: [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), [Semantic Versioning](https://semver.org/).
 
 #### 5.1.3. Source Code Style Guide & Conventions
+
+Los identificadores del código se redactarán en inglés y utilizarán términos consistentes con el Ubiquitous Language de KidTrack. Se distinguirá una `Route`, que define el recorrido, de un `Trip`, que representa su ejecución. Los comentarios explicarán decisiones o restricciones relevantes, sin repetir instrucciones evidentes. El informe y los criterios de aceptación podrán redactarse en español, mientras que los productos ofrecerán inglés por defecto y español latinoamericano según el alcance definido.
+
+##### Landing Page: HTML, CSS y JavaScript
+
+Se utilizará HTML semántico, una estructura de encabezados coherente y etiquetas accesibles en formularios. Las clases CSS usarán `kebab-case`, como `plan-card`, y los identificadores HTML seguirán una convención única, por ejemplo `registration-form`. Las variables y funciones JavaScript usarán `camelCase`, como `selectedLanguage` o `changeLanguage()`. Los archivos tendrán nombres descriptivos en `kebab-case` y extensiones `.html`, `.css` y `.js`.
+
+Se evitará depender únicamente del color para comunicar estados. Los textos traducibles se separarán de la lógica para mantener consistencia entre idiomas.
+
+Referencia: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html).
+
+##### Frontend Web Application: Angular y TypeScript
+
+El código se organizará por áreas funcionales del dominio, manteniendo próximas sus vistas, modelos y servicios. Se evitará concentrar todas las funcionalidades en un único componente. Se adoptará una convención homogénea de archivos dentro del repositorio, sin mezclar patrones por preferencia individual.
+
+| Elemento | Convención | Ejemplo |
+| :--- | :--- | :--- |
+| Clases, componentes, servicios e interfaces | `PascalCase` | `TripMap`, `AttendanceService`, `Student` |
+| Variables, propiedades y métodos | `camelCase` | `selectedTrip`, `attendanceService`, `loadStudents()` |
+| Archivos y carpetas | `kebab-case` | `trip-map.ts`, `attendance-service.ts` |
+| Constantes inmutables de configuración | `UPPER_SNAKE_CASE` cuando corresponda | `DEFAULT_LANGUAGE` |
+
+El nombre de una clase de servicio comienza con mayúscula; su instancia o propiedad utiliza minúscula inicial. Las interfaces no necesitan un prefijo `I`. Se usarán tipos explícitos en los contratos y se evitará `any` cuando el modelo pueda definirse. Los servicios encapsularán el acceso HTTP y las vistas comunicarán los errores sin presentar operaciones fallidas como exitosas.
+
+Referencias: [Angular Style Guide](https://angular.dev/style-guide), [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html).
+
+##### Backend: Java y Spring Boot
+
+Las clases e interfaces usarán `PascalCase`, los métodos y variables `camelCase`, las constantes `UPPER_SNAKE_CASE` y los paquetes nombres en minúsculas separados por puntos. La estructura distinguirá dominio, aplicación, infraestructura e interfaces, de acuerdo con la arquitectura adoptada. Los controladores traducirán las solicitudes HTTP; las reglas del servicio se mantendrán fuera de ellos cuando pertenezcan al dominio o a la aplicación.
+
+Los recursos REST utilizarán nombres en inglés, normalmente sustantivos en plural y palabras separadas por guiones, como `/api/v1/trips` o `/api/v1/trips/{tripId}/location-updates`. Los códigos HTTP y los errores se documentarán en OpenAPI. Los permisos se comprobarán en el backend, sin depender de filtros o restricciones visuales del cliente.
+
+Referencias: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), [Spring Boot Reference](https://docs.spring.io/spring-boot/reference/index.html).
+
+##### Criterios de aceptación
+
+Cada escenario utilizará `Given`, `When` y `Then` para expresar contexto, acción y resultado observable. Se mantendrá la correspondencia con los IDs US/TS del informe. Los criterios no se escribirán como secuencias de clics ni dependerán de posiciones o colores de controles.
+
+Referencia: [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/).
 #### 5.1.4. Software Deployment Configuration
 
 ### 5.2. Landing Page, Services & Applications Implementation
