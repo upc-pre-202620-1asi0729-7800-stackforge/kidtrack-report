@@ -1491,9 +1491,34 @@ El backend se desarrollará con Java y Spring Boot. Requiere un proveedor que ej
 
 Referencia: [Despliegue de Spring Boot en la nube](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html).
 
+
 ### 5.2. Landing Page, Services & Applications Implementation
-### 5.2.1. Sprint 1
+
+#### 5.2.1. Sprint 1
+
+El primer sprint se orienta a una versión inicial de la Landing Page que explique el propósito de KidTrack y permita conocer el servicio.
+
 ##### 5.2.1.1. Sprint Planning 1
+
+| Sprint # | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-09-13 |
+| Time | 9:00 PM |
+| Location | Microsoft Teams, Google Meet y sesiones vía Discord |
+| Prepared By | Ortega Quintana, Jose Zacarias |
+| Attendees (to planning meeting) | Chamorro Salvador/De la Cruz De los Santos, Mathias Marcelo/Ramirez Ruiz, Nickolas/Ortega Quintana, Jose Zacarias/Su Caletti Eddo|
+| Sprint 0 Review Summary | No aplica |
+| Sprint 0 Retrospective Summary | No aplica  |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Nuestro enfoque es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados interesados comprender la propuesta de KidTrack, comparar las condiciones de sus planes y conocer cómo comenzar a utilizar el servicio. Consideramos que esto les permitirá evaluar si la plataforma responde a sus necesidades y encontrar el siguiente paso para acceder a ella. Lo confirmaremos al finalizar el sprint mediante la validación satisfactoria de tres recorridos: consultar los beneficios correspondientes a su rol, comparar los planes publicados y continuar hacia el registro o inicio de sesión. |
+| Sprint 1 Velocity | 14 story points |
+| Sum of Story Points | 9 story points |
+
+**Historias propuestas:** US21 — Consulta de propuesta y beneficios; US22 — Comparación de planes; US23 — Consulta del funcionamiento y acceso al servicio, y finalmente US26. Los valores proceden del Product Backlog de la sección 3.3.
+
+
+
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
