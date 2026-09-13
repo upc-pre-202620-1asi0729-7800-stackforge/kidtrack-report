@@ -1358,7 +1358,50 @@ El entorno de KidTrack contempla actividades de planificación, requisitos, dise
 | GitHub Pages | Servicio propuesto para publicar la Landing Page estática. | [GitHub Pages](https://docs.github.com/en/pages) |
 | Vercel | Alternativa propuesta para publicar la aplicación Angular; su uso debe confirmarse con el equipo. | [Vercel — documentación](https://vercel.com/docs) |
 | Hosting compatible con Java y MySQL | Ejecutar el backend y disponer de persistencia accesible desde el entorno publicado. El proveedor está pendiente de definición. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
+
+
 #### 5.1.2. Source Code Management
+
+KidTrack utiliza Git para controlar versiones y GitHub para alojar los repositorios y revisar las contribuciones de StackForge. El informe conserva las decisiones y evidencias; los repositorios de software contienen el código, la configuración y las pruebas correspondientes a cada producto.
+
+| Recurso | Ubicación |
+| :--- | :--- |
+| Organización | [StackForge](https://github.com/upc-pre-202620-1asi0729-7800-stackforge) |
+| Informe | [kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report) |
+| Landing Page | Pendiente  |
+| Frontend Web Application | Pendiente |
+
+
+##### Flujo de ramas
+
+El equipo aplicará GitFlow con las siguientes convenciones:
+
+| Rama | Origen y destino | Propósito y ejemplo |
+| :--- | :--- | :--- |
+| `main` | Recibe versiones revisadas desde una release y correcciones urgentes. | Conservar las versiones estables de cada producto. |
+| `develop` | Integra features y recibe las correcciones de releases y hotfixes. | Reunir el avance antes de preparar una versión estable. |
+| `feature/<description>` | Se crea desde `develop` y vuelve a `develop` mediante un PR. | Una rama por funcionalidad o sección: `feature/student-management` o `feature/chapter-5-configuration-management`. |
+| `release/<version>` | Se crea desde `develop`; al cerrarse se integra en `main` y sus ajustes regresan a `develop`. | Preparar una entrega, por ejemplo `release/0.1.0`, sin incorporar nuevas funcionalidades ajenas al cierre. |
+| `hotfix/<version>-<description>` | Se crea desde `main`; su corrección se integra en `main` y `develop`, o en la release activa cuando corresponda. | Resolver un problema crítico de una versión publicada, por ejemplo `hotfix/0.1.1-login-validation`. |
+
+Los nombres nuevos usarán palabras en inglés separadas por guiones y evitarán espacios. Las ramas existentes conservarán su nombre hasta terminar el trabajo para no interrumpir las contribuciones abiertas. En el informe, las features identifican capítulos o bloques; en el software, capacidades del producto.
+
+Cada integrante comprobará sus cambios antes de abrir un Pull Request. La revisión verificará el alcance, los conflictos y la coherencia con los requisitos; se ejecutarán las comprobaciones aplicables al producto. La política del equipo es no realizar cambios directos en `main` y trabajar las funcionalidades fuera de `develop`. La protección automática de estas ramas y sus reglas de revisión deberá configurarse y evidenciarse; no se considera habilitada solamente por describirla en el informe.
+
+##### Conventional Commits
+
+Los mensajes se escribirán en inglés con el formato `type(scope): description`; el alcance es opcional. Se utilizarán `feat` para funcionalidades, `fix` para errores, `docs` para documentación, `style` para cambios de formato sin modificación de comportamiento, `refactor` para reorganización interna, `test` para pruebas, `build` para dependencias o compilación, `ci` para automatizaciones y `chore` para mantenimiento. Un cambio visual funcional no se clasifica automáticamente como `style`.
+
+
+
+##### Versionado de entregas
+
+Se adoptará Semantic Versioning con el formato `MAJOR.MINOR.PATCH`. Para una API estable, una modificación incompatible incrementa MAJOR; una funcionalidad compatible, MINOR; y una corrección compatible, PATCH. Durante el desarrollo inicial se pueden utilizar versiones `0.y.z`, dejando documentados los cambios de contrato. Una secuencia ilustrativa es `0.1.0`, `0.2.0` y `0.2.1`; estos valores no representan releases ya publicadas.
+
+Cada repositorio tendrá su propio historial de versiones. Al cerrar una release se creará una etiqueta, por ejemplo `v0.1.0`, y una descripción de sus cambios. En el informe, las versiones identificarán revisiones de entregables y no se equipararán automáticamente a la versión de la API.
+
+Referencias: [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), [Semantic Versioning](https://semver.org/).
+
 #### 5.1.3. Source Code Style Guide & Conventions
 #### 5.1.4. Software Deployment Configuration
 
