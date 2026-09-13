@@ -1310,14 +1310,215 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
 ### 5.1. Software Configuration Management
+
+La gestión de configuración de KidTrack establece cómo el equipo StackForge organiza sus herramientas, controla los cambios y prepara las versiones del producto. Estas convenciones permiten trabajar sobre el informe, la Landing Page, la aplicación web y los servicios RESTful manteniendo coherencia entre los requisitos y la implementación.
+
+La configuración descrita constituye el esquema de trabajo previsto. Los enlaces o datos marcados como pendientes deben completarse con la información real del equipo antes de presentar las evidencias del entregable.
+
 #### 5.1.1. Software Development Environment Configuration
+
+El entorno de KidTrack contempla actividades de planificación, requisitos, diseño, programación, pruebas y publicación. Las versiones concretas de las herramientas se registrarán en los repositorios de software para que los integrantes utilicen un entorno compatible.
+
+##### Project Management & Requirements Management
+
+| Herramienta | Uso en KidTrack | Referencia |
+| :--- | :--- | :--- |
+| Trello | Organizar el Product Backlog mediante tarjetas con ID, descripción, criterios de aceptación y Story Points. El tablero se complementa con la tabla del informe. | [Trello](https://trello.com/) |
+| Git y GitHub | Registrar modificaciones, mantener ramas y revisar propuestas de integración mediante Pull Requests. | [Git — descarga](https://git-scm.com/downloads), [GitHub](https://github.com/) |
+| UXPressia | Elaborar las personas, mapas de empatía, journeys e Impact Maps vinculados con los requisitos del servicio. | [UXPressia](https://uxpressia.com/) |
+
+##### Product UX/UI Design
+
+| Herramienta | Uso en KidTrack | Referencia |
+| :--- | :--- | :--- |
+| Figma | Diseñar wireframes, mock-ups y prototipos de la Landing Page y la aplicación, considerando escritorio y dispositivos móviles. | [Figma](https://www.figma.com/) |
+| Miro | Representar el Big Picture Event Storming del transporte escolar y sus eventos de negocio. | [Miro](https://miro.com/) |
+
+##### Software Development & Testing
+
+| Tecnología o herramienta | Propósito en el proyecto | Referencia |
+| :--- | :--- | :--- |
+| IntelliJ IDEA | Entorno propuesto para desarrollar y depurar los servicios Java. | [IntelliJ IDEA — descarga](https://www.jetbrains.com/idea/download/) |
+| HTML5, CSS3 y JavaScript | Construir el contenido, la presentación y las interacciones de la Landing Page estática. | [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) |
+| Angular y TypeScript | Implementar la aplicación web y organizar sus componentes, servicios y rutas según las funciones de KidTrack. | [Angular](https://angular.dev/), [TypeScript](https://www.typescriptlang.org/) |
+| Angular Material | Mantener componentes visuales coherentes con Material Design en la aplicación. | [Angular Material](https://material.angular.dev/) |
+| Node.js y npm | Instalar dependencias y ejecutar los scripts de desarrollo y compilación del frontend. | [Node.js — descarga](https://nodejs.org/en/download) |
+| Java y Spring Boot | Desarrollar la RESTful API para usuarios, rutas, viajes, asistencia y comunicación del servicio. | [JDK — descarga](https://jdk.java.net/), [Spring Boot](https://spring.io/projects/spring-boot) |
+| Spring Data JPA y MySQL | Implementar la persistencia de las entidades del dominio en una base de datos relacional. | [Spring Data JPA](https://spring.io/projects/spring-data-jpa), [MySQL — descarga](https://dev.mysql.com/downloads/) |
+| Leaflet | Representar las rutas, sus paradas y la ubicación disponible del viaje. | [Leaflet](https://leafletjs.com/) |
+| Pruebas de Spring Boot y del frontend | Verificar reglas de negocio, servicios e interacciones relevantes mediante las herramientas declaradas en los manifiestos de cada repositorio. | [Pruebas en Spring Boot](https://docs.spring.io/spring-boot/reference/testing/index.html), [Pruebas en Angular](https://angular.dev/guide/testing) |
+
+
+##### Software Documentation & Deployment
+
+| Herramienta | Uso previsto | Referencia |
+| :--- | :--- | :--- |
+| Markdown en GitHub | Mantener el informe y las instrucciones de cada repositorio. | [Documentación de GitHub](https://docs.github.com/) |
+| OpenAPI y Swagger UI | Describir los contratos de la API y permitir su consulta y prueba interactiva. Swagger UI documenta los servicios; no ejecuta ni hospeda el backend Java. | [Swagger UI](https://swagger.io/open-source/swagger-ui/) |
+| GitHub Pages | Servicio propuesto para publicar la Landing Page estática. | [GitHub Pages](https://docs.github.com/en/pages) |
+| Vercel | Alternativa propuesta para publicar la aplicación Angular; su uso debe confirmarse con el equipo. | [Vercel — documentación](https://vercel.com/docs) |
+| Hosting compatible con Java y MySQL | Ejecutar el backend y disponer de persistencia accesible desde el entorno publicado. El proveedor está pendiente de definición. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
+
+
 #### 5.1.2. Source Code Management
+
+KidTrack utiliza Git para controlar versiones y GitHub para alojar los repositorios y revisar las contribuciones de StackForge. El informe conserva las decisiones y evidencias; los repositorios de software contienen el código, la configuración y las pruebas correspondientes a cada producto.
+
+| Recurso | Ubicación |
+| :--- | :--- |
+| Organización | [StackForge](https://github.com/upc-pre-202620-1asi0729-7800-stackforge) |
+| Informe | [kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report) |
+| Landing Page | [kidtrack-landingpage](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git)  |
+| Frontend Web Application | [kidtrack-webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git) |
+
+
+##### Flujo de ramas
+
+El equipo aplicará GitFlow con las siguientes convenciones:
+
+| Rama | Origen y destino | Propósito y ejemplo |
+| :--- | :--- | :--- |
+| `main` | Recibe versiones revisadas desde una release y correcciones urgentes. | Conservar las versiones estables de cada producto. |
+| `develop` | Integra features y recibe las correcciones de releases y hotfixes. | Reunir el avance antes de preparar una versión estable. |
+| `feature/<description>` | Se crea desde `develop` y vuelve a `develop` mediante un PR. | Una rama por funcionalidad o sección: `feature/student-management` o `feature/chapter-5-configuration-management`. |
+| `release/<version>` | Se crea desde `develop`; al cerrarse se integra en `main` y sus ajustes regresan a `develop`. | Preparar una entrega, por ejemplo `release/0.1.0`, sin incorporar nuevas funcionalidades ajenas al cierre. |
+| `hotfix/<version>-<description>` | Se crea desde `main`; su corrección se integra en `main` y `develop`, o en la release activa cuando corresponda. | Resolver un problema crítico de una versión publicada, por ejemplo `hotfix/0.1.1-login-validation`. |
+
+Los nombres nuevos usarán palabras en inglés separadas por guiones y evitarán espacios. Las ramas existentes conservarán su nombre hasta terminar el trabajo para no interrumpir las contribuciones abiertas. En el informe, las features identifican capítulos o bloques; en el software, capacidades del producto.
+
+Cada integrante comprobará sus cambios antes de abrir un Pull Request. La revisión verificará el alcance, los conflictos y la coherencia con los requisitos; se ejecutarán las comprobaciones aplicables al producto. La política del equipo es no realizar cambios directos en `main` y trabajar las funcionalidades fuera de `develop`. La protección automática de estas ramas y sus reglas de revisión deberá configurarse y evidenciarse; no se considera habilitada solamente por describirla en el informe.
+
+##### Conventional Commits
+
+Los mensajes se escribirán en inglés con el formato `type(scope): description`; el alcance es opcional. Se utilizarán `feat` para funcionalidades, `fix` para errores, `docs` para documentación, `style` para cambios de formato sin modificación de comportamiento, `refactor` para reorganización interna, `test` para pruebas, `build` para dependencias o compilación, `ci` para automatizaciones y `chore` para mantenimiento. Un cambio visual funcional no se clasifica automáticamente como `style`.
+
+
+
+##### Versionado de entregas
+
+Se adoptará Semantic Versioning con el formato `MAJOR.MINOR.PATCH`. Para una API estable, una modificación incompatible incrementa MAJOR; una funcionalidad compatible, MINOR; y una corrección compatible, PATCH. Durante el desarrollo inicial se pueden utilizar versiones `0.y.z`, dejando documentados los cambios de contrato. Una secuencia ilustrativa es `0.1.0`, `0.2.0` y `0.2.1`; estos valores no representan releases ya publicadas.
+
+Cada repositorio tendrá su propio historial de versiones. Al cerrar una release se creará una etiqueta, por ejemplo `v0.1.0`, y una descripción de sus cambios. En el informe, las versiones identificarán revisiones de entregables y no se equipararán automáticamente a la versión de la API.
+
+Referencias: [GitFlow](https://nvie.com/posts/a-successful-git-branching-model/), [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), [Semantic Versioning](https://semver.org/).
+
 #### 5.1.3. Source Code Style Guide & Conventions
+
+Los identificadores del código se redactarán en inglés y utilizarán términos consistentes con el Ubiquitous Language de KidTrack. Se distinguirá una `Route`, que define el recorrido, de un `Trip`, que representa su ejecución. Los comentarios explicarán decisiones o restricciones relevantes, sin repetir instrucciones evidentes. El informe y los criterios de aceptación podrán redactarse en español, mientras que los productos ofrecerán inglés por defecto y español latinoamericano según el alcance definido.
+
+##### Landing Page: HTML, CSS y JavaScript
+
+Se utilizará HTML semántico, una estructura de encabezados coherente y etiquetas accesibles en formularios. Las clases CSS usarán `kebab-case`, como `plan-card`, y los identificadores HTML seguirán una convención única, por ejemplo `registration-form`. Las variables y funciones JavaScript usarán `camelCase`, como `selectedLanguage` o `changeLanguage()`. Los archivos tendrán nombres descriptivos en `kebab-case` y extensiones `.html`, `.css` y `.js`.
+
+Se evitará depender únicamente del color para comunicar estados. Los textos traducibles se separarán de la lógica para mantener consistencia entre idiomas.
+
+Referencia: [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html).
+
+##### Frontend Web Application: Angular y TypeScript
+
+El código se organizará por áreas funcionales del dominio, manteniendo próximas sus vistas, modelos y servicios. Se evitará concentrar todas las funcionalidades en un único componente. Se adoptará una convención homogénea de archivos dentro del repositorio, sin mezclar patrones por preferencia individual.
+
+| Elemento | Convención | Ejemplo |
+| :--- | :--- | :--- |
+| Clases, componentes, servicios e interfaces | `PascalCase` | `TripMap`, `AttendanceService`, `Student` |
+| Variables, propiedades y métodos | `camelCase` | `selectedTrip`, `attendanceService`, `loadStudents()` |
+| Archivos y carpetas | `kebab-case` | `trip-map.ts`, `attendance-service.ts` |
+| Constantes inmutables de configuración | `UPPER_SNAKE_CASE` cuando corresponda | `DEFAULT_LANGUAGE` |
+
+El nombre de una clase de servicio comienza con mayúscula; su instancia o propiedad utiliza minúscula inicial. Las interfaces no necesitan un prefijo `I`. Se usarán tipos explícitos en los contratos y se evitará `any` cuando el modelo pueda definirse. Los servicios encapsularán el acceso HTTP y las vistas comunicarán los errores sin presentar operaciones fallidas como exitosas.
+
+Referencias: [Angular Style Guide](https://angular.dev/style-guide), [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html).
+
+##### Backend: Java y Spring Boot
+
+Las clases e interfaces usarán `PascalCase`, los métodos y variables `camelCase`, las constantes `UPPER_SNAKE_CASE` y los paquetes nombres en minúsculas separados por puntos. La estructura distinguirá dominio, aplicación, infraestructura e interfaces, de acuerdo con la arquitectura adoptada. Los controladores traducirán las solicitudes HTTP; las reglas del servicio se mantendrán fuera de ellos cuando pertenezcan al dominio o a la aplicación.
+
+Los recursos REST utilizarán nombres en inglés, normalmente sustantivos en plural y palabras separadas por guiones, como `/api/v1/trips` o `/api/v1/trips/{tripId}/location-updates`. Los códigos HTTP y los errores se documentarán en OpenAPI. Los permisos se comprobarán en el backend, sin depender de filtros o restricciones visuales del cliente.
+
+Referencias: [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html), [Spring Boot Reference](https://docs.spring.io/spring-boot/reference/index.html).
+
+##### Criterios de aceptación
+
+Cada escenario utilizará `Given`, `When` y `Then` para expresar contexto, acción y resultado observable. Se mantendrá la correspondencia con los IDs US/TS del informe. Los criterios no se escribirán como secuencias de clics ni dependerán de posiciones o colores de controles.
+
+Referencia: [Gherkin Reference](https://cucumber.io/docs/gherkin/reference/).
+
 #### 5.1.4. Software Deployment Configuration
 
+El despliegue de KidTrack comprende tres productos: Landing Page estática, aplicación Angular y servicios Java. Las siguientes instrucciones describen la configuración prevista. Las direcciones públicas y capturas se incorporarán cuando cada publicación haya sido realizada y verificada.
+
+##### Despliegue de Landing Page
+
+Se propone GitHub Pages para alojar los archivos HTML, CSS, JavaScript y recursos estáticos.
+
+1. Confirmar el repositorio de la Landing Page e integrar la versión revisada en `main`.
+2. Comprobar `index.html`, las rutas relativas y la carga de imágenes, estilos y traducciones.
+3. En `Settings > Pages`, seleccionar la publicación desde una rama y elegir `main` con la carpeta que contiene el sitio, o configurar un workflow de GitHub Actions si se requiere un proceso de construcción.
+4. Esperar la finalización de la publicación y abrir la URL que informa GitHub Pages.
+5. Verificar navegación, idiomas y enlaces de acceso desde escritorio y móvil. Registrar la URL y una captura del sitio accesible.
+
+**URL pública:** 
+[Landing page](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git).
+
+##### Despliegue de Frontend Web Application
+
+Se propone Vercel para la aplicación Angular. La plataforma y la cuenta de publicación deben confirmarse antes de registrar esta configuración como definitiva.
+
+1. Verificar el repositorio del frontend, su versión de Node.js y los scripts declarados en `package.json`.
+2. Instalar las dependencias con el archivo de bloqueo del proyecto y ejecutar la compilación de producción.
+3. Vincular el repositorio con Vercel, seleccionar la raíz del proyecto y comprobar el comando de construcción y la carpeta real de salida definida por Angular. No se supondrá una ruta `dist` sin comprobar sus archivos.
+4. Configurar la URL pública de la API mediante el mecanismo de configuración del frontend. Los valores incluidos en el navegador son públicos y no deben contener secretos del backend.
+5. Para una aplicación renderizada en el cliente, configurar el fallback de navegación a `index.html` cuando corresponda y comprobar la recarga de rutas internas. Si se adopta SSR, utilizar una configuración compatible con esa modalidad.
+6. Publicar la versión y verificar autenticación, solicitudes a la API, rutas internas y recursos estáticos.
+
+**URL pública:** [Webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git).
+
+Referencia de configuración: [Vercel](https://vercel.com/docs).
+
+##### Despliegue de Backend Services
+
+El backend se desarrollará con Java y Spring Boot. Requiere un proveedor que ejecute la aplicación y una base de datos MySQL accesible. Swagger UI formará parte de su documentación; no será el proveedor de hosting.
+
+1. Seleccionar el proveedor y confirmar compatibilidad con la versión de Java declarada en el proyecto. La selección está pendiente.
+2. Crear o habilitar MySQL y configurar la conexión, usuario y contraseña mediante variables del entorno de ejecución.
+3. Ejecutar las pruebas y empaquetar el servicio con Maven, utilizando el wrapper si existe. Un comando habitual es `./mvnw clean verify`; en Windows, `mvnw.cmd clean verify`.
+4. Publicar el JAR ejecutable o la imagen de contenedor que adopte el equipo. Configurar el proceso de arranque, el perfil de ejecución, el puerto requerido por el proveedor y los secretos de autenticación.
+5. Aplicar el mecanismo de creación o migración del esquema definido en el proyecto y verificar la conexión sin introducir credenciales de desarrollo en el despliegue.
+6. Configurar HTTPS y los orígenes CORS autorizados para el frontend publicado. Verificar un endpoint público y otro protegido, además de una operación con persistencia.
+7. Comprobar la especificación OpenAPI y Swagger UI en las rutas configuradas; registrar las URLs reales de la API y su documentación.
+
+**Proveedor, URL de API y URL de documentación:** pendientes 
+
+Referencia: [Despliegue de Spring Boot en la nube](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html).
+
+
 ### 5.2. Landing Page, Services & Applications Implementation
-### 5.2.1. Sprint 1
+
+#### 5.2.1. Sprint 1
+
+El primer sprint se orienta a una versión inicial de la Landing Page que explique el propósito de KidTrack y permita conocer el servicio.
+
 ##### 5.2.1.1. Sprint Planning 1
+
+| Sprint # | Sprint 1 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-09-13 |
+| Time | 9:00 PM |
+| Location | Microsoft Teams, Google Meet y sesiones vía Discord |
+| Prepared By | Ortega Quintana, Jose Zacarias |
+| Attendees (to planning meeting) | Chamorro Salvador/De la Cruz De los Santos, Mathias Marcelo/Ramirez Ruiz, Nickolas/Ortega Quintana, Jose Zacarias/Su Caletti Eddo|
+| Sprint 0 Review Summary | No aplica |
+| Sprint 0 Retrospective Summary | No aplica  |
+| **Sprint Goal & User Stories** | |
+| Sprint 1 Goal | Nuestro enfoque es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados interesados comprender la propuesta de KidTrack, comparar las condiciones de sus planes y conocer cómo comenzar a utilizar el servicio. Consideramos que esto les permitirá evaluar si la plataforma responde a sus necesidades y encontrar el siguiente paso para acceder a ella. Lo confirmaremos al finalizar el sprint mediante la validación satisfactoria de tres recorridos: consultar los beneficios correspondientes a su rol, comparar los planes publicados y continuar hacia el registro o inicio de sesión. |
+| Sprint 1 Velocity | 14 story points |
+| Sum of Story Points | 9 story points |
+
+**Historias propuestas:** US21 — Consulta de propuesta y beneficios; US22 — Comparación de planes; US23 — Consulta del funcionamiento y acceso al servicio, y finalmente US26. Los valores proceden del Product Backlog de la sección 3.3.
+
+
+
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
