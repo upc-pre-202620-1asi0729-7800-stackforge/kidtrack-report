@@ -558,6 +558,70 @@ El Impact Mapping de KidTrack relaciona los objetivos del negocio con los cambio
 
 ### 3.3. Product Backlog
 
+El Product Backlog de KidTrack reúne las 35 User Stories y las 12 Technical Stories definidas. Se mantienen sus identificadores, títulos y descripciones para conservar la trazabilidad con los requisitos y el Impact Mapping.
+
+Se utiliza la escala 1, 2, 3, 5 y 8: 1 corresponde a una modificación mínima; 2, a una función acotada; 3, a un flujo sencillo con validaciones; 5, a un flujo con varias reglas o integración; y 8, a una historia con mayor incertidumbre o coordinación.
+
+| # Orden | User Story ID | Título | Descripción | Story Points |
+| :---: | :--- | :--- | :--- | :---: |
+| 1 | US21 | Consulta de propuesta y beneficios | Como visitante, deseo conocer la propuesta de KidTrack y sus beneficios por rol, para evaluar su utilidad para mi servicio o familia. | 2 |
+| 2 | US23 | Consulta del funcionamiento y acceso al servicio | Como visitante, deseo conocer el proceso de uso de KidTrack, para comprender cómo comenzar a utilizar el servicio. | 2 |
+| 3 | US22 | Comparación de planes | Como visitante, deseo consultar precios, condiciones y beneficios de los planes, para evaluar la alternativa que necesita mi servicio. | 2 |
+| 4 | US11 | Registro manual de abordaje y ausencia | Como conductor, deseo registrar manualmente el abordaje o la ausencia, para completar la asistencia cuando no se utiliza QR. | 5 |
+| 5 | US12 | Registro de entrega individual | Como conductor, deseo confirmar la entrega de cada estudiante en su destino autorizado, para dejar constancia de la finalización de su traslado. | 5 |
+| 6 | US35 | Confirmación de estado y datos del traslado | Como padre o apoderado, deseo consultar el estado actual de cada hijo y los datos del transporte asignado, para saber quién realiza su traslado y si fue entregado. | 3 |
+| 7 | US18 | Consulta de avisos del servicio | Como padre o apoderado, deseo consultar los avisos de los viajes de mis hijos, para conocer sus abordajes, ausencias, entregas e incidencias. | 5 |
+| 8 | US08 | Inicio del viaje | Como conductor, deseo iniciar un viaje programado, para dejar constancia del comienzo del traslado. | 3 |
+| 9 | US13 | Finalización del viaje | Como conductor, deseo finalizar el viaje después de resolver la asistencia, para cerrar el registro del recorrido. | 5 |
+| 10 | US03 | Registro de estudiantes y vínculo con apoderados | Como administrador, deseo registrar estudiantes y sus apoderados, para identificar quién utiliza el servicio y quién puede consultar su información. | 5 |
+| 11 | US05 | Definición de rutas y paradas | Como administrador, deseo definir el origen, destino y secuencia de paradas de cada ruta, para organizar el recorrido de la movilidad. | 5 |
+| 12 | US06 | Programación y asignación de viajes | Como administrador, deseo programar viajes de recojo o retorno con conductor, vehículo y estudiantes, para coordinar quién realiza cada traslado. | 8 |
+| 13 | US07 | Consulta de viajes asignados | Como conductor, deseo consultar mis viajes y sus listas de estudiantes, para preparar cada recorrido. | 3 |
+| 14 | US02 | Registro y actualización de conductores | Como administrador, deseo registrar y actualizar conductores con sus datos y unidad asociada, para mantener identificados a los responsables de los traslados. | 5 |
+| 15 | US04 | Registro de vehículos | Como administrador, deseo registrar vehículos con su placa y capacidad, para asignar unidades identificadas a los viajes. | 3 |
+| 16 | US01 | Registro de cuenta del responsable | Como responsable del servicio, deseo registrar mi cuenta y los datos de mi organización, para iniciar la gestión del transporte escolar. | 5 |
+| 17 | US33 | Habilitación de acceso y roles operativos | Como administrador, deseo vincular cuentas con los perfiles del servicio y habilitar sus roles, para controlar qué operaciones realiza cada participante. | 5 |
+| 18 | US24 | Inicio y cierre de sesión | Como usuario registrado, deseo iniciar y cerrar mi sesión, para acceder a mis funciones y proteger el acceso desde mi dispositivo. | 3 |
+| 19 | TS01 | Autenticación JWT mediante API | Como Developer, deseo implementar el registro y la autenticación JWT, para conectar el acceso de KidTrack con los servicios protegidos. | 5 |
+| 20 | TS02 | Consulta de estudiantes y perfiles mediante API | Como Developer, deseo consultar estudiantes, apoderados y conductores, para alimentar las listas operativas del servicio. | 5 |
+| 21 | TS03 | API de rutas y paradas | Como Developer, deseo disponer de servicios para gestionar rutas y paradas, para proporcionar los recorridos que utiliza la aplicación. | 5 |
+| 22 | TS04 | API del ciclo de vida del viaje | Como Developer, deseo implementar la creación, activación y finalización de viajes, para registrar el estado del traslado. | 5 |
+| 23 | TS05 | API de asistencia y abordaje | Como Developer, deseo implementar el registro y la consulta de asistencia, para confirmar los estados de los estudiantes durante el viaje. | 5 |
+| 24 | TS07 | API de incidencias y avisos internos | Como Developer, deseo registrar incidencias y consultar notificaciones, para comunicar los eventos del servicio dentro de la aplicación. | 5 |
+| 25 | US26 | Uso en inglés y español | Como visitante o usuario registrado, deseo utilizar el contenido en inglés o español latinoamericano, para comprender la información del servicio. | 3 |
+| 26 | TS12 | Internacionalización del frontend | Como Developer, deseo configurar las traducciones de la aplicación, para ofrecer la experiencia de KidTrack en inglés y español. | 3 |
+| 27 | US32 | Uso desde celular y computadora | Como visitante o usuario registrado, deseo acceder a las funciones desde distintos tamaños de pantalla, para utilizar KidTrack desde mi dispositivo disponible. | 5 |
+| 28 | US27 | Acceso mediante teclado y tecnologías de asistencia | Como visitante o usuario registrado, deseo utilizar las funciones sin depender exclusivamente del ratón o del color, para consultar y operar el servicio de forma accesible. | 5 |
+| 29 | US19 | Historial de asistencia del estudiante | Como padre o apoderado, deseo consultar la asistencia de mis hijos por fecha, para revisar sus abordajes, entregas y ausencias. | 5 |
+| 30 | US15 | Consulta de bitácora de viajes | Como conductor, deseo consultar el historial de mis viajes, para revisar horarios, asistencia e incidencias registradas. | 3 |
+| 31 | US20 | Consulta del resumen del servicio | Como administrador, deseo consultar las cantidades de rutas, estudiantes y conductores de mi organización, para conocer el estado general de sus registros. | 2 |
+| 32 | US34 | Búsqueda y actualización de registros | Como administrador, deseo buscar y actualizar estudiantes y conductores, para mantener actualizados los datos de mi servicio. | 5 |
+| 33 | US09 | Obtención del QR del estudiante | Como padre o apoderado, deseo obtener el código QR de mi hijo, para facilitar su identificación durante el abordaje. | 3 |
+| 34 | US10 | Registro de abordaje mediante QR | Como conductor, deseo identificar al estudiante mediante su QR y confirmar su abordaje, para registrar su ingreso al vehículo sin buscarlo manualmente. | 5 |
+| 35 | TS11 | Integración de generación y lectura de QR | Como Developer, deseo integrar la generación y lectura de códigos QR con un formato único, para identificar al estudiante y enviar su abordaje al servicio existente. | 5 |
+| 36 | US16 | Publicación de ubicación del viaje | Como conductor, deseo compartir la ubicación de mi dispositivo durante el viaje, para permitir que las familias sigan el traslado. | 8 |
+| 37 | TS06 | Persistencia de ubicación mediante API | Como Developer, deseo almacenar y consultar las coordenadas del viaje, para proporcionar posiciones al seguimiento. | 5 |
+| 38 | TS10 | Integración de Leaflet en el frontend | Como Developer, deseo integrar Leaflet en la aplicación web, para representar rutas, paradas y la ubicación disponible del viaje. | 3 |
+| 39 | US17 | Consulta de ubicación disponible | Como padre o apoderado, deseo consultar la última ubicación del viaje de mi hijo, para conocer el avance del traslado. | 5 |
+| 40 | TS09 | Documentación Swagger y OpenAPI | Como Developer, deseo disponer de documentación de los servicios, para consultar y probar los contratos de la API. | 2 |
+| 41 | US29 | Activación de alerta de emergencia | Como conductor, deseo confirmar una alerta prioritaria durante el viaje, para avisar al administrador ante una situación urgente. | 5 |
+| 42 | US28 | Selección y cambio de plan en la demostración | Como administrador, deseo seleccionar o cambiar el plan de mi organización en la versión académica, para comprobar las alternativas de gestión del servicio. | 3 |
+| 43 | TS08 | API de planes y suscripción de demostración | Como Developer, deseo gestionar el catálogo y la selección de planes, para demostrar la gestión comercial sin integrar cobros reales. | 3 |
+| 44 | US31 | Exportación de asistencia | Como administrador o apoderado, deseo exportar la asistencia que tengo permiso para consultar, para conservar un reporte del periodo seleccionado. | 5 |
+| 45 | US14 | Reporte de incidencias y evidencias | Como conductor, deseo reportar incidencias con tipo, gravedad y evidencia opcional, para informar los problemas ocurridos durante el traslado. | 8 |
+| 46 | US30 | Consulta de tiempo estimado y aviso de proximidad | Como padre o apoderado, deseo consultar el tiempo estimado hasta mi parada y recibir un aviso de proximidad, para preparar el recojo o la recepción de mi hijo. | 8 |
+| 47 | US25 | Recuperación de contraseña mediante código | Como usuario registrado, deseo recuperar el acceso mediante un código enviado a mi correo, para establecer una nueva contraseña cuando olvido la anterior. | 8 |
+
+
+
+**Herramienta y evidencia del Product Backlog**
+
+Se propone utilizar Trello, una de las herramientas permitidas por la guía. Cada historia se registra como una tarjeta con ID, título, descripción, puntos, épica y criterios de aceptación. Las tarjetas se ordenan de arriba hacia abajo según la tabla, sin agrupar el orden principal por épicas. Las etiquetas pueden identificar la épica y el tipo de historia.
+
+![Product Backlog en Trello](./assets/images/Chapter3/productbacklog.png)
+
+
+
 ## Capítulo IV: Product Design
 
 ### 4.1. Style Guidelines
