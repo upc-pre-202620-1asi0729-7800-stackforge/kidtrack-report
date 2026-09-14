@@ -1462,14 +1462,17 @@ Registro de Cuenta
 Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/universalregister.png" width="900px" alt="register">
+
 Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/universallogin.png" width="900px" alt="login">
+
 Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change1.png" width="900px" alt="password-change">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change2.png" width="900px" alt="password-change">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change3.png" width="900px" alt="password-change">
+
 #### Versión Desktop Mockups - Administradores
  
 ##### Configuración y Gestión Administrativa
@@ -1479,11 +1482,13 @@ Panel de Inicio y Navegación
 Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/home-dashboard.png" width="900px" alt="home-dashboard">
+
 Asignación de Roles
  
 Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/role-assignment.png" width="900px" alt="role-assignment">
+
 ##### Gestión Comercial y Planes
  
 Contratación de Planes
@@ -1492,11 +1497,13 @@ Pantalla comercial donde el dueño de la flota o la institución elige y contrat
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/hire-plan.png" width="900px" alt="hire-plan">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/hire-plan2.png" width="900px" alt="hire-plan">
+
 Consulta de Precios y Tarifas
  
 Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/pricing-query.png" width="900px" alt="pricing-query">
+
 ##### Gestión de Logística y Alumnos
  
 Alta y Gestión de Alumnos
@@ -1505,22 +1512,26 @@ Vista conectada a la API desde donde se ve el listado completo de estudiantes, s
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/student-management.png" width="900px" alt="student-management">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/student-management2.png" width="900px" alt="student-management">
+
 Registro de Conductores
  
 Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
+
 Registro de Padres
  
 Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/parent-registration.png" width="900px" alt="driver-registration">
+
 Creación y Edición de Rutas
  
 Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/route-creation.png" width="900px" alt="route-creation">
+
 #### Versión Desktop Mockups - Conductores
  
 ##### Operación de Viaje
@@ -1531,26 +1542,30 @@ Pantalla desde la que el conductor confirma que va a empezar el recorrido; al pr
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/start.png" width="900px" alt="start-trip">
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/start-trip.png" width="900px" alt="start-trip">
+
 Marcación de Abordaje
  
 Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/boarding-check.png" width="900px" alt="boarding-check">
+
 Finalización de Ruta
  
 Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/route-end.png" width="900px" alt="route-end">
+
 Bitácora de Viajes Histórica
  
 Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/trip-log.png" width="900px" alt="trip-log">
+
 ##### Seguridad y Alertas
  
 Reporte de Incidencias en Ruta
  
-M�dulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+Módulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/incident-report.png" width="900px" alt="incident-report">
 Botón de Pánico
@@ -1558,6 +1573,7 @@ Botón de Pánico
 Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/panic-button.png" width="900px" alt="panic-button">
+
 #### Versión Desktop Mockups - Padres de Familia
  
 ##### Monitoreo y Supervisión
@@ -1567,26 +1583,179 @@ Rastreo en Tiempo Real
 Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
 Acceso a Cámara Interna
  
 Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/camera-access.png" width="900px" alt="camera-access">
+
 Alerta de Proximidad
  
 Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
 Confirmación de Llegada
  
 Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
 Historial de Asistencia
  
 Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
  
 <img src="assets/images/Chapter4/WebApp/Mockups/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+#### Versión Mobile Mockups - Acceso y Configuración (Universal)
+ 
+##### Autenticación y Acceso
+ 
+Registro de Cuenta
+Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/universalregister.png" width="400px" alt="register">
+
+Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/universallogin.png" width="400px" alt="login">
+
+Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/password-change.png" width="900px" alt="password-change">
+
+#### Versión Mobile Mockups - Administradores
+ 
+##### Configuración y Gestión Administrativa
+ 
+Panel de Inicio y Navegación
+ 
+Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/home-dashboard.png" width="900px" alt="home-dashboard">
+
+Asignación de Roles
+ 
+Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+ 
+Contratación de Planes
+ 
+Pantalla comercial donde el dueño de la flota o la institución elige y contrata el plan que mejor se ajusta a su número de buses y alumnos.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas
+ 
+Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+ 
+Alta y Gestión de Alumnos
+ 
+Vista conectada a la API desde donde se ve el listado completo de estudiantes, se registran nuevos alumnos y se actualiza la información de los ya existentes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores
+ 
+Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres
+ 
+Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas
+ 
+Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+#### Versión Mobile Mockups - Conductores
+ 
+##### Operación de Viaje
+ 
+Inicio de Trayecto
+ 
+Pantalla desde la que el conductor confirma que va a empezar el recorrido; al presionar "Iniciar Viaje" se activa el rastreo GPS que verán los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/start-trip.png" width="800px" alt="start-trip">
+
+Marcación de Abordaje
+ 
+Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta
+ 
+Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica
+ 
+Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+ 
+Reporte de Incidencias en Ruta
+ 
+M�dulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico
+ 
+Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Mockups - Padres de Familia
+ 
+##### Monitoreo y Supervisión
+ 
+Rastreo en Tiempo Real
+ 
+Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna
+ 
+Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad
+ 
+Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada
+ 
+Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia
+ 
+Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/attendance-history.png" width="400px" alt="attendance-history">
 
 #### 4.4.4. Web Applications User Flow Diagrams
 
