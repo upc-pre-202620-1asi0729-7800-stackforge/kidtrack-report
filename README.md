@@ -1422,6 +1422,11 @@ Los bounded contexts agrupan los agregados en dominios de negocio independientes
 - Notifications & Communication: es el puente de comunicación inmediata entre el transporte y el hogar; se encarga de las notificaciones push (como el estado de abordaje), las alertas de pánico y los mensajes de difusión general para mantener informados a padres y administradores.
 
 #### 4.6.2. Software Architecture Context Diagram
+
+El diagrama de contexto ubica a KidTrack como el sistema central, rodeado de sus tres tipos de usuario y de los sistemas externos con los que se conecta. El Administrador usa la plataforma para configurar rutas, registrar actores y administrar suscripciones; el Conductor entra para ejecutar sus viajes, registrar el abordaje de los estudiantes y lanzar alertas de pánico; y el Padre/Tutor monitorea en tiempo real la ruta de su hijo y recibe las notificaciones correspondientes. KidTrack se conecta con PayPal para procesar los pagos, con Leaflet + OpenRouteService para mostrar los mapas y calcular las rutas escolares, y con Resend como proveedor de correo transaccional para el envío de alertas y notificaciones.
+ 
+![ContextDiagram](./assets/images/Chapter4/C4/SystemContext.png)
+
 #### 4.6.3. Software Architecture Container Diagrams
 #### 4.6.4. Software Architecture Components Diagrams
 
