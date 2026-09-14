@@ -2970,9 +2970,34 @@ Se implementó el titulo "De la configuración al primer viaje", seguido por 5 p
 Al final de la landing page se implementó el footer con el titutlo "¿Listo para digitalizar tu operación?" seguido de dos botones: "Adquirir plan" e "Iniciar sesión"
 
 ![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-page-cta-footer.png)
-##### 5.2.1.6. Services Documentation Evidence for Sprint Review
-##### 5.2.1.7. Software Deployment Evidence for Sprint Review
-##### 5.2.1.8. Team Collaboration Insights during Sprint
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de KidTrack, así como en la documentación de la arquitectura base del sistema bajo el enfoque Domain-Driven Design (DDD). En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
+
+| Recurso      | Acción implementada   | Método HTTP | URL / Endpoint | Link de repositorio                                                             |
+| ------------ | --------------------- | ----------- | -------------- | ------------------------------------------------------------------------------- |
+| Landing Page | Visualización inicial | GET         |                | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 1 se realizó el despliegue de la Landing Page de KidTrack
+utilizando GitHub Pages como plataforma de hosting estático.
+
+1. Se activó GitHub Pages en el repositorio `kidtrack-website`, configurando
+   la rama `main` como fuente de publicación.
+
+   ![GitHub Pages](assets/images/Chapter-5/Sprint1/deployment-evidence.png)
+
+2. Se verificó la accesibilidad pública de la Landing Page.
+   **URL:**
+
+https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#features
+
+![Landing Live](assets/images/Chapter-5/Sprint1/landing-page.png)
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+## ![Pulse Insights](assets/images/Chapter-5/Sprint1/insights.png)
 
 ### 5.2.2. Sprint 2
 ##### 5.2.2.1. Sprint Planning 2
