@@ -1428,6 +1428,11 @@ El diagrama de contexto ubica a KidTrack como el sistema central, rodeado de sus
 ![ContextDiagram](./assets/images/Chapter4/C4/SystemContext.png)
 
 #### 4.6.3. Software Architecture Container Diagrams
+
+Aquí se detallan las principales unidades de despliegue del sistema. El diagrama muestra cómo KidTrack se divide en una Landing Page estática (HTML5, CSS3, JavaScript), una aplicación web interactiva del lado del cliente construida en Angular con Angular Material, una API backend modularizada hecha en Spring Boot y Java, un Shared Kernel como librería Java de tipos compartidos entre los distintos contextos, y un repositorio central de persistencia en MySQL.
+ 
+![ContainerDiagram](./assets/images/Chapter4/C4/ContainerDiagram-dark.png)
+
 #### 4.6.4. Software Architecture Components Diagrams
 
 ### 4.7. Software Object-Oriented Design
