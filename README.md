@@ -1281,7 +1281,7 @@ Este bounded context reúne las relaciones operativas y los recursos utilizados 
 | RegisterVehicle() | Registra un nuevo vehículo. |
 | GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
-Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de SafeRoute, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
+Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de KidTrack, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
 
 ![DataBase](./assets/images/ChapterIV/DataBase.png)
 
