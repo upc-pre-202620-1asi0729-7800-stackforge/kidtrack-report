@@ -655,7 +655,40 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 - ¿Qué opinas de una herramienta que te permita tener mayor visibilidad del transporte escolar de tu hijo?
 - ¿Qué funcionalidad tendría que ofrecer una aplicación de transporte escolar para que realmente consideres utilizarla diariamente?
 - ¿Qué tan dispuesto estarías a usar una herramienta de monitoreo de transporte escolar?
+
 #### 2.2.2. Registro de entrevistas
+
+#### Entrevista 1: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
 #### 2.2.3. Análisis de entrevistas
 
 ### 2.3. Needfinding
