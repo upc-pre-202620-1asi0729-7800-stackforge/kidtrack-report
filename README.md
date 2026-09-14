@@ -2895,6 +2895,30 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
+**URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
+
+Durante el Sprint 1, el equipo realizó commits principalmente sobre el repositorio del informe (kidtrack-report), abarcando la documentación de los capítulos I al V, incluyendo el diseño de producto, arquitectura de software, wireframes, mockups y la configuración del entorno de desarrollo.
+
+| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
+| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
+| KidTrack-report  | develop        | fa1d064   | Initial commit                                                          | Bynickram02   | 2026-03-09 |
+| KidTrack-report  | develop        | 8fb0e8e   | docs: add report skeleton                                               | Bynickram02   | 2026-07-09 |
+| KidTrack-report  | develop        | 68020cf   | docs: add startup profile and team member profiles for chapter 1        | Bynickram02   | 2026-08-09 |
+| KidTrack-report  | develop        | 63df1d7   | docs: complete sections 2.3 Needfinding, and 2.3.1. user persona        | Asalreon520   | 2026-08-09 |
+| KidTrack-report  | develop        | 1c099f8   | docs: complete sections 2.3.2 to 2.5 including task matrix, journey maps, empathy maps, event storming, and ubiquitous language.                                    | Asalreon520      | 2026-08-09 |
+| KidTrack-report  | develop        | 57695a1   | docs: complete chapter 4 documentation for KidTrack style guidelines and information architecture.| Asalreon520   | 2026-08-09 |
+| KidTrack-report  | develop        | 369ad9c   | docs: add landing page wireframe                                     | Dela0405      | 2026-12-09 |
+| KidTrack-report  | develop        | 3bd7c3a   | docs: add Web Applications Wireframes                               | Dela0405      | 2026-12-09 |
+| KidTrack-report  | develop        | 0809bcd   | docs: add profile description                                      | Dela0405    | 2026-12-09 |
+| KidTrack-report  | develop        | d5d0e9a   | docs: add KidTrack epics, technical stories and user stories with acceptance criteria                                     | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | bf6fa3ea  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | 0bd140de  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | c5f5b5bc  | docs: add 2.1.1 Análisis Competitivo             | SALVA1704    | 2026-13-09 |
+| KidTrack-report  | develop        | 402aaa1c  | docs: add 2.1.2. Estrategias y tácticas frente a competidores             | SALVA1704    | 2026-13-09 |
+| KidTrack-report  | develop        | f2368c77  | docs: add 2.2.1 Diseño de entrevistas             | SALVA1704    | 2026-13-09 |
+
+
+
 ##### 5.2.1.5. Execution Evidence for Sprint Review
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
