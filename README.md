@@ -727,6 +727,201 @@ La experiencia de navegación también se adapta dinámicamente según el tipo d
 
 ### 4.7. Software Object-Oriented Design
 #### 4.7.1. Class Diagrams
+**FrontEnd**
+
+Los diagramas presentan a App como el componente raíz que contiene los componentes de cada bounded context mediante relaciones de composición (composes). Las clases *Store administran el estado con Signal<T> y recurren a las clases *Api para realizar solicitudes HTTP. Por su parte, las clases *Assembler convierten las respuestas de la API, representadas mediante *Resource, en modelos propios del dominio.
+
+- Trip Execution & Monitoring:
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
+
+Este contexto reúne las pantallas destinadas a supervisar y gestionar los viajes durante su ejecución.
+
+**Presentation & Domain:** App integra TripDashboard, encargado de iniciar y finalizar los viajes; AttendanceChecklist, que administra el estado de abordaje de los estudiantes; e IncidentForm, utilizado para registrar incidentes. La información presentada por estos componentes se obtiene de los modelos Trip, Attendance e Incident, de modo que las vistas representen el estado de la operación.
+
+**Application & Infrastructure:** TripStore concentra los datos del viaje en curso, junto con sus asistencias e incidentes. Las operaciones se canalizan mediante TripApi, que expone métodos como startTrip() y updateBoardingStatus(). La conversión de los recursos se realiza con TripAssembler, AttendanceAssembler e IncidentAssembler.
+
+- Fleet & Route Planning:
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
+
+Este contexto proporciona las interfaces necesarias para organizar las rutas, los vehículos y las asignaciones del servicio.
+
+**Presentation & Domain:** App incorpora RouteForm para registrar rutas, StopList para administrar paradas, VehicleList para consultar vehículos y AssignmentForm para asignar conductores y estudiantes. Estos componentes trabajan con las entidades Route, Stop, Vehicle y Assignment, manteniendo la información de las vistas vinculada al modelo del negocio.
+
+**Application & Infrastructure:** FleetStore administra el estado de las rutas, paradas, vehículos y asignaciones. FleetApi se ocupa de las solicitudes HTTP, mientras que las clases Assembler adaptan los recursos recibidos a las entidades correspondientes; por ejemplo, convierten RouteResource en Route.
+
+- Notifications & Communication:
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
+
+Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicados.
+
+**Presentation & Domain:** App contiene NotificationList, que permite filtrar notificaciones y marcarlas como leídas; AlertPanel, orientado a las alertas activas y de pánico; y AnnouncementForm, destinado a elaborar comunicados. Estos componentes presentan la información a partir de los modelos Notification, Alert y Announcement.
+
+**Application & Infrastructure:** NotificationsStore conserva el estado de las notificaciones, alertas y comunicados. Las solicitudes se ejecutan mediante NotificationsApi, con operaciones como dispatchNotification() y triggerAlert(). Los Assemblers convierten las respuestas obtenidas en los modelos de dominio utilizados por la aplicación.
+
+- Stakeholder & Asset Management:
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
+
+Incluye las vistas utilizadas para consultar y administrar a los participantes del servicio.
+
+**Presentation & Domain:** App integra ParentList, DriverList, ChildList y StudentGroupList. Estos componentes permiten buscar registros mediante searchQuery, seleccionarlos y eliminarlos. Para mostrar la información de los participantes y sus agrupaciones, utilizan los modelos Parent, Driver, Child y StudentGroup.
+
+**Application & Infrastructure:** StakeholderStore mantiene el estado de las listas mediante Signals. StakeholderApi realiza las operaciones CRUD con el backend, y las clases Assembler adaptan las respuestas a los modelos de dominio. Por ejemplo, ParentAssembler transforma los datos recibidos como ParentResource.
+
+- Identity and Access Management:
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
+
+Comprende las interfaces de autenticación y administración de los datos de la organización.
+
+**Presentation & Domain:** App reúne AdminLoginForm y UserLoginForm para el inicio de sesión, AdminRegisterForm para el registro, y OrganizationForm y OrganizationProfile para la gestión de la organización. Estos componentes se comunican con IamStore y utilizan los modelos User y Organization para consultar y actualizar la información asociada a la sesión.
+
+**Application & Infrastructure:** IamStore administra el estado mediante currentUserSignal y organizationSignal. Las acciones de acceso y creación de organizaciones se realizan a través de IamApi, con métodos como signIn() y createOrganization(). UserAssembler y OrganizationAssembler convierten UserResource y OrganizationResource en sus respectivos modelos de dominio.
+
+- Subscription & Plan Management:
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
+
+Ofrece las vistas para consultar los planes disponibles y administrar la suscripción de la organización.
+
+**Presentation & Domain:** App incorpora PlanSelector, destinado a elegir un plan, y SubscriptionStatus, que presenta el estado de la suscripción. Ambos reciben información de los modelos Subscription y Plan para mostrar datos como la vigencia restante y los límites del servicio, sin utilizar directamente las estructuras de respuesta de la API.
+
+**Application & Infrastructure:** SubscriptionStore conserva el estado en subscriptionSignal y plansSignal. Mediante SubscriptionApi consulta los planes con getAllPlans() y solicita cambios en la suscripción con upgradeSubscription() y cancelSubscription(). Los Assemblers correspondientes adaptan los recursos a los modelos empleados por la aplicación.
+
+**BackEnd**
+
+- Fleet & Route Planning:
+
+Concentra las responsabilidades relacionadas con la organización logística del transporte y la distribución de sus recursos.
+
+- Route Aggregate
+
+Representa el recorrido y las condiciones de su programación mediante Value Objects como DepartureTime y ServiceDays. También incorpora la secuencia de paradas que componen la ruta, representadas por Stop.
+
+![saferoute-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
+
+- Vehicle Aggregate
+
+Administra la información de capacidad y disponibilidad de cada vehículo destinado al servicio.
+
+![saferoute-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
+
+- Assignment Aggregate
+
+Establece la relación entre un conductor, un grupo de estudiantes y una ruta para organizar su participación en un viaje específico.
+
+![saferoute-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
+
+- Trip Execution & Monitoring:
+
+Agrupa la lógica necesaria para desarrollar los viajes y realizar su seguimiento.
+
+- Trip Aggregate
+
+Administra las etapas del viaje mediante operaciones como start() y complete(). Relaciona el recorrido con una ruta, un conductor y una organización, además de incorporar los registros de asistencia (Attendance) y los incidentes (Incident).
+
+![saferoute-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
+
+- TripLocation Aggregate
+
+Gestiona los datos de ubicación del vehículo para permitir su seguimiento en tiempo real durante el viaje.
+
+![saferoute-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
+
+- Notifications & Communication:
+
+Reúne la lógica de comunicación destinada a informar a los padres de familia sobre el servicio y sus alertas.
+
+- Notification Aggregate
+
+Administra los mensajes dirigidos a los apoderados, incluida su categoría y estado de entrega. Dentro de esta responsabilidad se consideran tanto las alertas como los comunicados.
+
+![saferoute-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
+
+- Stakeholder & Asset Management:
+
+Representa a los participantes del servicio y las agrupaciones mediante las cuales se organizan dentro de la aplicación.
+
+- Parent Aggregate
+
+Modela al apoderado y su relación con los estudiantes bajo su responsabilidad. Permite incorporar o retirar hijos de esa relación.
+
+![saferoute-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
+
+- Driver Aggregate
+
+Representa al conductor y reúne los datos asociados a su actividad, entre ellos la información de su licencia.
+
+![saferoute-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
+
+- StudentGroup Aggregate
+
+Reúne las referencias de varios estudiantes en un grupo para facilitar su asignación dentro de la operación del transporte.
+
+![saferoute-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
+
+- Identity and Access Management (IAM):
+
+Concentra la administración de las organizaciones, las cuentas de usuario y los roles de acceso.
+
+- Organization Aggregate
+
+Administra la creación y los cambios de estado de la organización mediante create(), suspend() y activate(). Su identificador, nombre y estado se representan mediante Value Objects.
+
+![saferoute-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
+
+- User Aggregate
+
+Reúne las operaciones de registro, autenticación y modificación del rol de una cuenta mediante register(), authenticate() y changeRole(). La pertenencia del usuario a una organización se establece con el identificador compartido OrganizationId, mientras que datos de seguridad como la contraseña se representan mediante Value Objects como PasswordHash.
+
+![saferoute-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
+
+- Subscription & Plan Management:
+
+Agrupa las reglas del modelo comercial relacionadas con los planes disponibles y las suscripciones de las organizaciones.
+
+- Plan Aggregate
+
+Define las condiciones económicas y los límites operativos del plan. Los Value Objects RouteQuota y DriverQuota representan las cuotas de rutas y conductores y permiten validar que se respete la capacidad contratada.
+
+![saferoute-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
+
+- Subscription Aggregate
+
+Administra la vigencia y los cambios de estado de la suscripción mediante activate(), upgrade() y cancel(). Cada suscripción mantiene su relación con una organización y un plan a través de sus respectivos identificadores.
+
+![saferoute-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
+
+- Payment Aggregate
+
+Administra los registros de pago asociados a las suscripciones del servicio.
+
+![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
+
+- Shared:
+
+Proporciona el Shared Kernel utilizado por los distintos contextos de la solución desarrollada en Spring Boot.
+
+- Shared Bounded Context
+
+Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
+
+![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
 #### 4.8.1. Database Diagrams
