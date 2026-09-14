@@ -1281,6 +1281,55 @@ Este bounded context reúne las relaciones operativas y los recursos utilizados 
 | RegisterVehicle() | Registra un nuevo vehículo. |
 | GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
+Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de SafeRoute, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
+
+![DataBase](./assets/images/ChapterIV/DataBase.png)
+
+**Identity and Access Management (IAM)**
+
+El modelo de IAM articula la autenticación, las identidades de usuario y los mecanismos de autorización de la plataforma. La entidad `users` resguarda las credenciales y la información principal de acceso, vinculando cada perfil a su respectiva entidad corporativa a través de `organization_id`. El catálogo de privilegios y niveles de acceso se define en la tabla `roles`, mientras que la entidad asociativa `user_roles` establece una relación de varios a varios para conceder múltiples perfiles a un solo usuario. Este esquema garantiza un control de accesos flexible y una adecuada segmentación de permisos.
+
+![DataBase](./assets/images/ChapterIV/DbIAM.png)
+
+---
+
+**Subscription**
+
+El esquema de Subscription administra el modelo de negocio, la facturación y la vigencia del servicio. La entidad `plans` actúa como catálogo de tarifas, configurando el costo económico y las restricciones operativas asociadas a cada modalidad. Por su parte, `subscriptions` conecta a una organización con el plan contratado, dando seguimiento al estado del servicio y su periodo de validez. Finalmente, la tabla `payments` audita la facturación derivada de cada suscripción, capturando datos sobre la pasarela de pagos, el estado del cobro, la moneda, el importe total y las eventuales fallas detectadas en la transacción.
+
+![DataBase](./assets/images/ChapterIV/DbSubscription.png)
+
+---
+
+**Fleet**
+
+El modelo de Fleet estructura la programación logística y la configuración previa de las rutas. La entidad `routes` registra los trayectos configurados para una organización, incluyendo atributos de estado, tipología, itinerario de salida, días operativos y la unidad asignada. La tabla `stops`, dependiente de `routes`, define cada paradero mediante geolocalización (coordenadas) y un orden secuencial dentro de la ruta. Gracias a esta arquitectura, es posible definir el recorrido global a partir de una sucesión ordenada de puntos de parada.
+
+![DataBase](./assets/images/ChapterIV/DbFleet.png)
+
+---
+
+**Trip**
+
+El esquema de Trip contempla el monitoreo y el desarrollo operativo en tiempo real de los recorridos planificados. La tabla `trips` consolida las ejecuciones diarias, asociando cada viaje con la organización, la ruta y el conductor designado. Alrededor de esta entidad gravitan `attendances`, que supervisa la subida de los estudiantes; `incidents`, encargada de registrar anomalías durante el trayecto; y `trip_locations`, que almacena la traza GPS transmitida durante el recorrido. Esta distribución facilita tanto el seguimiento en vivo como la auditoría e historial de cada operación.
+
+![DataBase](./assets/images/ChapterIV/DbTrip.png)
+
+---
+
+**Notifications**
+
+El modelo de Notifications gestiona los flujos de mensajería e interacciones salientes emitidas por el sistema. La entidad `notifications` conserva el historial de alertas despachadas a los usuarios, vinculándolas a una organización y, cuando aplique, a un viaje concreto. Adicionalmente, audita el estado de entrega, el tipo de notificación, la cantidad de reintentos, el historial de transmisiones y los posibles errores de entrega. Con esto, la plataforma garantiza la trazabilidad del envío y la gestión efectiva de reintentos ante fallos en la comunicación.
+
+![DataBase](./assets/images/ChapterIV/DbNotifications.png)
+
+---
+
+**Stakeholder**
+
+El esquema de Stakeholder organiza el inventario de activos y la asignación de actores operativos. La tabla `vehicles` gestiona el parque automotor de cada organización, detallando capacidad de pasajeros, placa, modelo y disponibilidad. La entidad `assignments` conecta a un conductor con una ruta dada, delegando la responsabilidad de la operación. Por último, la tabla `assignment_children` asocia los estudiantes a una asignación en particular, funcionando como conector entre los conductores/rutas y los menores transportados.
+
+## ![DataBase](./assets/images/ChapterIV/DbStakeHolder.png)
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
