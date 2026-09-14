@@ -1289,6 +1289,169 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 
 #### 4.4.2. Web Applications Wireflow Diagrams
 
+#### Task Flow 1: Administrar cuenta
+
+Objetivo del usuario: Que el usuario pueda mantener al día los datos de su cuenta y su suscripción, para no perder el acceso ni los beneficios de la plataforma.
+
+#### Pasos del Task Flow:
+
+1. Entrar a "Registrar usuario" y crear una cuenta nueva.
+
+2. Guardar los datos que acaba de llenar.
+
+3. Entrar a la aplicación con esa cuenta desde "Ingresar con usuario".
+
+4. Si no logra entrar, ir a la sección "Cambio de Contraseña".
+
+5. Definir la nueva contraseña.
+
+6. Volver a entrar con la cuenta y la nueva contraseña.
+
+7. El sistema lo lleva a "Inicio" y despliega el menú lateral.
+
+##### User Goal 1: Como suscriptor, quiero entrar a mi cuenta en la aplicación.
+
+![UserGoal1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 1.png>)
+
+##### User Goal 2: Como suscriptor, quiero cambiar mi contraseña para que mi cuenta se mantenga segura.
+
+![UserGoal2_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 2_1.png>)
+
+![UserGoal2_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 2_2.png>)
+
+#### Task Flow 2: Setup Logístico y Financiero del Servicio
+
+Objetivo: Dejar lista la parte operativa y los niveles de acceso necesarios para administrar la unidad.
+
+#### Pasos del Task Flow:
+
+1. Elegir y confirmar la "Contratación del Plan" según el tamaño de su flota.
+
+2. Entrar a "Asignación de Roles" para darle permisos de edición al equipo.
+
+3. Cargar los datos del personal operativo en "Registro de Conductor".
+
+4. Trazar los puntos de parada y los tiempos en "Creación de Rutas".
+
+5. El sistema arma el balance de costos, visible en "Consulta de Precios".
+
+##### User Goal 3: Como administrador, quiero dar de alta nuevos conductores y armarles sus rutas.
+
+![UserGoal3_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 3_1.png>)
+![UserGoal3_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 3_2.png>)
+
+##### User Goal 4: Como administrador, quiero tener los roles y las rutas organizados en un solo lugar.
+
+![UserGoal4](<assets/images/Chapter4/WebApp/UserGoals/User Goal 4.png>)
+
+##### User Goal 5: Como administrador, quiero acceder a más funciones de la aplicación cambiándome a un plan superior.
+
+![UserGoal5](<assets/images/Chapter4/WebApp/UserGoals/User Goal 5.png>)
+
+#### A. Segmento: Conductores
+
+#### Task Flow 3: Gestión de Abordaje y Control de Alumnos
+
+Objetivo: Dejar registrado el inicio de la ruta y confirmar, con sincronización en la nube, que cada estudiante subió a la unidad.
+
+#### Pasos del Task Flow:
+
+1. El conductor entra al sistema y elige la ruta que tiene asignada desde su panel principal.
+
+2. Presiona "Iniciar Trayecto", lo que activa la transmisión de sus coordenadas GPS.
+
+3. El sistema hace una petición GET a la API para traer la lista de alumnos de esa ruta.
+
+4. En cada parada, ubica al estudiante en la lista y toca "Marcación de Abordaje".
+
+5. El sistema guarda la hora exacta (timestamp) y cambia el estado del pasajero a "En ruta".
+
+6. Al llegar al colegio, el conductor toca "Finalización de Ruta".
+
+##### User Goal 6: Como conductor, quiero saber en todo momento qué alumnos van en la ruta.
+
+![UserGoal6_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 6_1.png>)
+
+![UserGoal6_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 6_2.png>)
+
+##### User Goal 7: Como conductor, quiero que mi servicio se vea más profesional y confiable.
+
+![UserGoal7_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 7_1.png>)
+
+![UserGoal7_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 7_2.png>)
+
+### Task Flow 4: Seguridad Crítica e Incidencias en Ruta
+
+Objetivo: Avisar sobre imprevistos en la ruta y activar de inmediato los protocolos de auxilio cuando hay una situación de riesgo.
+
+### Pasos del Task Flow:
+
+1. Mientras conduce, el conductor detecta un obstáculo o una emergencia.
+
+2. Entra al módulo de seguridad del Dashboard.
+
+3. Elige una categoría predefinida en "Reporte de Incidencias" para avisar de un retraso.
+
+4. Si el peligro es inminente, mantiene presionado el "Botón de Pánico" por 2 segundos.
+
+5. El sistema lanza una alerta roja al área de emergencias y notifica a los padres y al administrador.
+
+6. Una vez resuelto, el conductor revisa lo ocurrido en su "Bitácora de Viajes".
+
+##### User Goal 8: Como conductor, quiero poder avisar de una incidencia o del avance de la ruta mientras viajo.
+
+![UserGoal8](<assets/images/Chapter4/WebApp/UserGoals/User Goal 8.png>)
+
+##### User Goal 9: Como conductor, quiero contar con una forma inmediata de avisar una emergencia.
+
+![UserGoal9](<assets/images/Chapter4/WebApp/UserGoals/User Goal 9.png>)
+
+### B. Segmento: Padres de Familia
+
+### Task Flow 5: Monitoreo Parental y Supervisión Visual
+
+Objetivo: Que el padre pueda ver dónde está el vehículo escolar y cómo va todo dentro de él durante el trayecto.
+
+### Pasos del Task Flow:
+
+1. El padre inicia sesión y entra al seguimiento del bus de su hijo.
+
+2. El sistema muestra el mapa con la "Ubicación en Tiempo Real" del vehículo.
+
+3. El usuario activa el switch de "Acceso a la Cámara" para abrir la transmisión de video.
+
+4. El sistema valida los permisos y despliega el video en vivo.
+
+5. Cuando el bus entra al radio de 500 m, el sistema muestra la "Alerta de Proximidad".
+
+#### User Goal 10: Como padre de familia, quiero conocer en tiempo real la ubicación y la situación del vehículo.
+
+![UserGoal10](<assets/images/Chapter4/WebApp/UserGoals/User Goal 10.png>)
+
+#### User Goal 11: Como padre de familia, quiero que me lleguen las notificaciones sin tener que estar preguntando.
+
+![UserGoa11](<assets/images/Chapter4/WebApp/UserGoals/User Goal 11.png>)
+
+### Task Flow 6: Auditoría de Asistencia y Verificación de Entrega
+
+Objetivo: Comprobar que el servicio se cumplió y poder revisar el historial de seguridad del estudiante.
+
+### Pasos del Task Flow:
+
+1. Al padre le llega en pantalla la "Confirmación de Llegada" del bus a destino.
+
+2. El sistema deja registrado el cierre del viaje en el perfil del alumno.
+
+3. El usuario entra al módulo de "Historial de Asistencia".
+
+4. Elige el rango de fechas para revisar los horarios de recogida y entrega.
+
+5. El sistema arma un reporte visual con la puntualidad del servicio.
+
+#### User Goal 12: Como padre de familia, quiero confirmar que mi hijo abordó el transporte y que quedó registrado.
+
+![UserGoal12](<assets/images/Chapter4/WebApp/UserGoals/User Goal 12.png>)
+
 #### 4.4.3. Web Applications Mock-ups
 
 #### 4.4.4. Web Applications User Flow Diagrams
@@ -1300,6 +1463,7 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 #### 4.6.1. Design-Level Event Storming
 
 Plantilla de colores:
+
 ![Plantilla](assets/images/Chapter4/EventStorming/colors.png)
  
 1. Unstructured Exploration
