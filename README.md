@@ -424,7 +424,7 @@ A través de esta dinámica, se logró plasmar los eventos significativos y sus 
 ---
 ![Big Picture Event Storming - KidTrack](./assets/images/Chapter2/Event%20Storming.png)
 
-URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/MjI5THNDVXhqMFl5d0hzRCtkWHhiNDdBZ0JVQWlNaFBkd0JzcWNWUmVWcEJsamdpVmhxT0N5ZDFlMjcrZi9HZUZIZ1pZd3htOEtrZzl0bmFzd3c1VVAwMHNTcS9JOFYvQjYyR3VNVG5KNEZPM3k5SWliRnlURDViNkFYTTRvWkRnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=830546571837)
+URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/YUlZT1h3RFF1ZWV0bEJJdWFNUkEzWmZBODdEdVZFYmRyRzZ6dHZmRm8xYnZ4aHNJTWpNZms1dEUwSmhtb1FaUE5oTE01TGcwU1FvUGVlbThKanJERFBLM1BidzZEQmUvZXZrOWcvYTlIcDI0MWZmcktoVTBkZUgrRndQMGM1QTlBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=361339190464)
 
 ### 2.5. Ubiquitous Language
 
