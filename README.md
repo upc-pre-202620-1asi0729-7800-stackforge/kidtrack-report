@@ -691,6 +691,119 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 #### 2.2.3. Análisis de entrevistas
 
+#### Segmento Objetivo 1: Conductores de Transporte Escolar
+
+Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de conductores, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del primer segmento objetivo.
+#### Características Objetivas del Segmento
+
+| Característica                         | Resultado | Sustento                                                       |
+| -------------------------------------- | --------- | -------------------------------------------------------------- |
+| Texto | % | |
+| Texto | % | |
+| Texto | % | |
+| Texto | % | |
+| Texto | % | |
+
+#### Hallazgo
+
+#### Uso de Tecnología y Herramientas Actuales
+
+| Herramienta / Canal                                | Porcentaje |
+| -------------------------------------------------- | ---------- |
+| Texto | % |
+| Texto | % |
+| Texto | % |
+| Texto | % |
+
+#### Principales Problemas Detectados (Pain Points)
+
+| Problema identificado                           | Porcentaje |
+| ----------------------------------------------- | ---------- |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+
+#### Necesidades Funcionales Prioritarias
+
+| Necesidad mencionada                                    | Porcentaje |
+| ------------------------------------------------------- | ---------- |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+
+#### Características Subjetivas del Segmento
+
+| Rasgo detectado                            | Porcentaje |
+| ------------------------------------------ | ---------- |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+
+---
+
+#### Segmento Objetivo 2: Padres de Familia
+
+Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+
+#### Características Objetivas del Segmento
+
+| Característica                         | Resultado | Sustento                                                       |
+| -------------------------------------- | --------- | -------------------------------------------------------------- |
+| Característica | Resultado | Sustento |
+| Característica | Resultado | Sustento |
+| Característica | Resultado | Sustento |
+| Característica | Resultado | Sustento |
+| Característica | Resultado | Sustento |
+
+#### Hallazgo
+
+#### Uso de Tecnología y Herramientas Actuales
+
+| Herramienta / Canal                                | Porcentaje |
+| -------------------------------------------------- | ---------- |
+| Herramienta / Canal | % |
+| Herramienta / Canal | % |
+| Herramienta / Canal | % |
+| Herramienta / Canal | % |
+
+#### Principales Problemas Detectados (Pain Points)
+
+| Problema identificado                           | Porcentaje |
+| ----------------------------------------------- | ---------- |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+| Problema identificado| % |
+
+#### Necesidades Funcionales Prioritarias
+
+| Necesidad mencionada                                    | Porcentaje |
+| ------------------------------------------------------- | ---------- |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+| Necesidad mencionada | % |
+
+#### Características Subjetivas del Segmento
+
+| Rasgo detectado                            | Porcentaje |
+| ------------------------------------------ | ---------- |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+| Rasgo detectado | % |
+
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
 En esta sección se presentan los arquetipos de usuario diseñados para representar los segmentos objetivo de **KidTrack**: el conductor de transporte escolar independiente y el padre de familia/apoderado.
