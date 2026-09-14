@@ -924,6 +924,362 @@ Reúne únicamente Value Objects inmutables que representan identificadores y co
 ![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
+**- Identity & Access Management (IAM)**
+
+Este bounded context reúne las responsabilidades de identificación de usuarios y control de acceso a KidTrack. Las credenciales se almacenan en `users`, donde `organization_id` establece la organización a la que pertenece cada cuenta dentro del modelo multi-tenant. El catálogo `roles` define los roles disponibles, mientras que `user_roles` relaciona las cuentas con dichos roles mediante una asociación de muchos a muchos. Esta organización permite administrar los niveles de acceso mediante un esquema RBAC.
+
+**Tabla: users**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| organization_id | VARCHAR(64) |
+| username | VARCHAR(50) |
+| password | VARCHAR(120) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-----------------------------|------------------------------------------|
+| RegisterUser() | Registra un nuevo usuario en la plataforma. |
+| AuthenticateUser() | Autentica al usuario con sus credenciales. |
+| GetUserById() | Retorna los detalles de un usuario. |
+
+---
+
+**Tabla: roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| id | BIGINT (PK) |
+| name | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| GetAllRoles() | Retorna la lista de roles del sistema. |
+
+---
+
+**Tabla: user_roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| user_id | BIGINT (PK, FK) |
+| role_id | BIGINT (PK, FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| AssignRoleToUser() | Asigna un rol específico a un usuario. |
+
+---
+
+**- Subscription & Plan Management**
+
+Este bounded context organiza la información comercial de los planes, las suscripciones y sus pagos. En `plans` se definen las categorías de servicio, sus límites operativos y el precio correspondiente. Cada registro de `subscriptions` relaciona una organización con el plan seleccionado e incorpora el estado y las fechas de vigencia de la suscripción. Por su parte, `payments` conserva los datos de las transacciones asociadas, como proveedor, moneda, importe, estado, identificador externo y motivo de fallo cuando corresponda.
+
+**Tabla: plans**
+
+| Atributo | Tipo |
+|-------------|---------------|
+| id | INT (PK) |
+| plan_tier | VARCHAR(20) |
+| max_routes | INT |
+| max_drivers | INT |
+| price | DECIMAL(10,2) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------|----------------------------------------------|
+| GetAllPlans() | Retorna todos los planes disponibles. |
+| GetPlanById() | Retorna el detalle de un plan. |
+
+---
+
+**Tabla: subscriptions**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | CHAR(36) (PK) |
+| organization_id | CHAR(36) (FK) |
+| plan_id | INT (FK) |
+| state | VARCHAR(20) |
+| start_date | DATETIME |
+| end_date | DATETIME |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| CreateSubscription() | Crea una nueva suscripción para una organización. |
+| CancelSubscription() | Cancela la suscripción activa. |
+
+---
+
+**Tabla: payments**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | VARCHAR(36) (PK) |
+| amount | DECIMAL(12,2) |
+| confirmed_at | DATETIME(6) |
+| created_at | DATETIME(6) |
+| currency | VARCHAR(3) |
+| external_transaction_id | VARCHAR(255) |
+| failure_reason | VARCHAR(500) |
+| provider | ENUM |
+| status | ENUM |
+| subscription_id | VARCHAR(36) (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| ProcessPayment() | Procesa un nuevo pago para una suscripción. |
+| GetPaymentStatus() | Consulta el estado de un pago. |
+
+---
+
+**- Fleet Management**
+
+Este bounded context reúne los datos necesarios para organizar los recorridos del servicio de transporte. La tabla `routes` almacena las rutas de cada organización junto con el vehículo asociado, la hora de salida, los días de atención, el tipo de recorrido y su estado. Los paraderos y sus coordenadas se registran en `stops`, donde `stop_order` determina la posición de cada parada dentro de la ruta. Ambas tablas permiten consultar la planificación del recorrido y la secuencia de sus paraderos.
+
+**Tabla: routes**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| departure_time | TIME |
+| name | VARCHAR(255) |
+| organization_id | VARCHAR(64) (FK) |
+| route_state | ENUM |
+| route_type | ENUM |
+| service_days | VARCHAR(255) |
+| vehicle_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------|----------------------------------------------|
+| CreateRoute() | Crea una nueva ruta de transporte. |
+| UpdateRoute() | Actualiza los datos de la ruta. |
+| GetRoutesByOrgId() | Retorna las rutas de una organización. |
+
+---
+
+**Tabla: stops**
+
+| Atributo | Tipo |
+|------------|---------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| name | VARCHAR(255) |
+| stop_order | INT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|----------------------------------------------|
+| AddStopToRoute() | Agrega un paradero a la ruta. |
+| GetStopsByRouteId() | Retorna la secuencia ordenada de paraderos de una ruta. |
+
+---
+
+**- Trip Execution & Monitoring**
+
+Este bounded context concentra los registros generados durante la ejecución de los viajes. Cada recorrido realizado se almacena en `trips`, que lo relaciona con una organización, una ruta y un conductor. Los campos `trip_state`, `start_time` y `end_time` describen su estado y los momentos de inicio y finalización. La participación de los estudiantes se registra en `attendances` mediante su estado de abordaje, mientras que `incidents` conserva los sucesos reportados durante el traslado. Finalmente, `trip_locations` reúne las ubicaciones GPS del vehículo junto con su velocidad, dirección y momento de registro, permitiendo consultar la trayectoria reportada.
+
+**Tabla: trips**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| end_time | DATETIME(6) |
+| organization_id | VARCHAR(64) (FK) |
+| route_id | BIGINT (FK) |
+| start_time | DATETIME(6) |
+| trip_state | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------------|---------------------------------------------------|
+| StartTrip() | Inicia el viaje. |
+| CompleteTrip() | Completa el viaje. |
+| DeleteTrip() | Elimina un viaje. |
+| GetAllTrips() / GetTripById() | Consultas sobre viajes de una organización. |
+
+---
+
+**Tabla: attendances**
+
+| Atributo | Tipo |
+|----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| boarded_at | DATETIME(6) |
+| boarding_state | ENUM |
+| child_id | BIGINT |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|-------------------------------------------------|
+| UpdateBoardingStatus() | Actualiza el estado de abordaje del estudiante. |
+| GetAttendancesByTrip() | Obtiene la lista de asistencia de un viaje. |
+
+---
+
+**Tabla: incidents**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| description | VARCHAR(1000) |
+| reported_at | DATETIME(6) |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| ReportIncident() | Registra un incidente durante el viaje. |
+| GetIncidentsByTrip() | Retorna los incidentes de un viaje. |
+
+---
+
+**Tabla: trip_locations**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| heading | DOUBLE |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| recorded_at | DATETIME(6) |
+| speed | DOUBLE |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| SendLocation() | Envía la ubicación en tiempo real del vehículo. |
+| GetLatestLocation() | Retorna la última ubicación reportada. |
+| GetLocationHistory() | Retorna el historial de ubicaciones del viaje. |
+
+---
+
+**- Notifications & Communication**
+
+Este bounded context organiza los mensajes que KidTrack dirige a sus usuarios. La tabla `notifications` conserva el contenido de cada notificación y las referencias a la organización, usuario, viaje o destinatario que correspondan. También incluye su categoría, estado y fecha de entrega, además de los datos necesarios para controlar los reintentos: cantidad realizada, límite permitido, último intento y siguiente intento programado. El registro de los motivos de fallo permite consultar lo ocurrido cuando una comunicación no se entrega correctamente.
+
+**Tabla: notifications**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | VARCHAR(36) (PK) |
+| category | ENUM |
+| delivered_at | DATETIME(6) |
+| delivery_state | ENUM |
+| failure_reason | VARCHAR(500) |
+| last_attempt_at | DATETIME(6) |
+| max_retries | INT |
+| message | VARCHAR(1000) |
+| next_retry_at | DATETIME(6) |
+| recipient_id | VARCHAR(64) |
+| retry_count | INT |
+| organization_id | VARCHAR(64) (FK) |
+| trip_id | VARCHAR(36) |
+| user_id | VARCHAR(36) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------|----------------------------------------------------|
+| SendNotification() | Envía una nueva notificación. |
+| GetNotificationsByUser() | Retorna el historial de notificaciones de un usuario. |
+
+---
+
+**- Stakeholder Management**
+
+Este bounded context reúne las relaciones operativas y los recursos utilizados en el transporte escolar. Los vehículos de cada organización se almacenan en `vehicles`, junto con su placa, modelo, capacidad y estado. La tabla `assignments` establece qué conductor tiene a su cargo una ruta determinada. A través de `assignment_children`, cada asignación se vincula con los estudiantes correspondientes, lo que permite identificar a los niños incluidos en el recorrido asignado.
+
+**Tabla: assignments**
+
+| Atributo | Tipo |
+|-----------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------|-----------------------------------------------|
+| CreateAssignment() | Crea una asignación de conductor a ruta. |
+
+---
+
+**Tabla: assignment_children**
+
+| Atributo | Tipo |
+|---------------|--------------|
+| assignment_id | BIGINT (FK) |
+| child_id | BIGINT |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------------------------|
+| AddChilresourceAssignment() | Asocia un estudiante a una asignación de ruta. |
+| RemoveChildFromAssignment() | Desvincula un estudiante de una asignación. |
+
+---
+
+**Tabla: vehicles**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| capacity | INT |
+| model | VARCHAR(255) |
+| organization_id | VARCHAR(64) |
+| plate | VARCHAR(255) |
+| status | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------------|------------------------------------------|
+| RegisterVehicle() | Registra un nuevo vehículo. |
+| GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
 
 ## Capítulo V: Product Implementation, Validation & Deployment
