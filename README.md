@@ -556,59 +556,57 @@ El Impact Mapping de KidTrack relaciona los objetivos del negocio con los cambio
 
 ### 3.3. Product Backlog
 
-El Product Backlog de KidTrack reúne las 35 User Stories y las 12 Technical Stories definidas. Se mantienen sus identificadores, títulos y descripciones para conservar la trazabilidad con los requisitos y el Impact Mapping.
 
-Se utiliza la escala 1, 2, 3, 5 y 8: 1 corresponde a una modificación mínima; 2, a una función acotada; 3, a un flujo sencillo con validaciones; 5, a un flujo con varias reglas o integración; y 8, a una historia con mayor incertidumbre o coordinación.
+El Product Backlog de KidTrack reúne las historias funcionales y técnicas de las user stories.
 
-| # Orden | User Story ID | Título | Descripción | Story Points |
-| :---: | :--- | :--- | :--- | :---: |
-| 1 | US21 | Consulta de propuesta y beneficios | Como visitante, deseo conocer la propuesta de KidTrack y sus beneficios por rol, para evaluar su utilidad para mi servicio o familia. | 2 |
-| 2 | US23 | Consulta del funcionamiento y acceso al servicio | Como visitante, deseo conocer el proceso de uso de KidTrack, para comprender cómo comenzar a utilizar el servicio. | 2 |
-| 3 | US22 | Comparación de planes | Como visitante, deseo consultar precios, condiciones y beneficios de los planes, para evaluar la alternativa que necesita mi servicio. | 2 |
-| 4 | US11 | Registro manual de abordaje y ausencia | Como conductor, deseo registrar manualmente el abordaje o la ausencia, para completar la asistencia cuando no se utiliza QR. | 5 |
-| 5 | US12 | Registro de entrega individual | Como conductor, deseo confirmar la entrega de cada estudiante en su destino autorizado, para dejar constancia de la finalización de su traslado. | 5 |
-| 6 | US35 | Confirmación de estado y datos del traslado | Como padre o apoderado, deseo consultar el estado actual de cada hijo y los datos del transporte asignado, para saber quién realiza su traslado y si fue entregado. | 3 |
-| 7 | US18 | Consulta de avisos del servicio | Como padre o apoderado, deseo consultar los avisos de los viajes de mis hijos, para conocer sus abordajes, ausencias, entregas e incidencias. | 5 |
-| 8 | US08 | Inicio del viaje | Como conductor, deseo iniciar un viaje programado, para dejar constancia del comienzo del traslado. | 3 |
-| 9 | US13 | Finalización del viaje | Como conductor, deseo finalizar el viaje después de resolver la asistencia, para cerrar el registro del recorrido. | 5 |
-| 10 | US03 | Registro de estudiantes y vínculo con apoderados | Como administrador, deseo registrar estudiantes y sus apoderados, para identificar quién utiliza el servicio y quién puede consultar su información. | 5 |
-| 11 | US05 | Definición de rutas y paradas | Como administrador, deseo definir el origen, destino y secuencia de paradas de cada ruta, para organizar el recorrido de la movilidad. | 5 |
-| 12 | US06 | Programación y asignación de viajes | Como administrador, deseo programar viajes de recojo o retorno con conductor, vehículo y estudiantes, para coordinar quién realiza cada traslado. | 8 |
-| 13 | US07 | Consulta de viajes asignados | Como conductor, deseo consultar mis viajes y sus listas de estudiantes, para preparar cada recorrido. | 3 |
-| 14 | US02 | Registro y actualización de conductores | Como administrador, deseo registrar y actualizar conductores con sus datos y unidad asociada, para mantener identificados a los responsables de los traslados. | 5 |
-| 15 | US04 | Registro de vehículos | Como administrador, deseo registrar vehículos con su placa y capacidad, para asignar unidades identificadas a los viajes. | 3 |
-| 16 | US01 | Registro de cuenta del responsable | Como responsable del servicio, deseo registrar mi cuenta y los datos de mi organización, para iniciar la gestión del transporte escolar. | 5 |
-| 17 | US33 | Habilitación de acceso y roles operativos | Como administrador, deseo vincular cuentas con los perfiles del servicio y habilitar sus roles, para controlar qué operaciones realiza cada participante. | 5 |
-| 18 | US24 | Inicio y cierre de sesión | Como usuario registrado, deseo iniciar y cerrar mi sesión, para acceder a mis funciones y proteger el acceso desde mi dispositivo. | 3 |
-| 19 | TS01 | Autenticación JWT mediante API | Como Developer, deseo implementar el registro y la autenticación JWT, para conectar el acceso de KidTrack con los servicios protegidos. | 5 |
-| 20 | TS02 | Consulta de estudiantes y perfiles mediante API | Como Developer, deseo consultar estudiantes, apoderados y conductores, para alimentar las listas operativas del servicio. | 5 |
-| 21 | TS03 | API de rutas y paradas | Como Developer, deseo disponer de servicios para gestionar rutas y paradas, para proporcionar los recorridos que utiliza la aplicación. | 5 |
-| 22 | TS04 | API del ciclo de vida del viaje | Como Developer, deseo implementar la creación, activación y finalización de viajes, para registrar el estado del traslado. | 5 |
-| 23 | TS05 | API de asistencia y abordaje | Como Developer, deseo implementar el registro y la consulta de asistencia, para confirmar los estados de los estudiantes durante el viaje. | 5 |
-| 24 | TS07 | API de incidencias y avisos internos | Como Developer, deseo registrar incidencias y consultar notificaciones, para comunicar los eventos del servicio dentro de la aplicación. | 5 |
-| 25 | US26 | Uso en inglés y español | Como visitante o usuario registrado, deseo utilizar el contenido en inglés o español latinoamericano, para comprender la información del servicio. | 3 |
-| 26 | TS12 | Internacionalización del frontend | Como Developer, deseo configurar las traducciones de la aplicación, para ofrecer la experiencia de KidTrack en inglés y español. | 3 |
-| 27 | US32 | Uso desde celular y computadora | Como visitante o usuario registrado, deseo acceder a las funciones desde distintos tamaños de pantalla, para utilizar KidTrack desde mi dispositivo disponible. | 5 |
-| 28 | US27 | Acceso mediante teclado y tecnologías de asistencia | Como visitante o usuario registrado, deseo utilizar las funciones sin depender exclusivamente del ratón o del color, para consultar y operar el servicio de forma accesible. | 5 |
-| 29 | US19 | Historial de asistencia del estudiante | Como padre o apoderado, deseo consultar la asistencia de mis hijos por fecha, para revisar sus abordajes, entregas y ausencias. | 5 |
-| 30 | US15 | Consulta de bitácora de viajes | Como conductor, deseo consultar el historial de mis viajes, para revisar horarios, asistencia e incidencias registradas. | 3 |
-| 31 | US20 | Consulta del resumen del servicio | Como administrador, deseo consultar las cantidades de rutas, estudiantes y conductores de mi organización, para conocer el estado general de sus registros. | 2 |
-| 32 | US34 | Búsqueda y actualización de registros | Como administrador, deseo buscar y actualizar estudiantes y conductores, para mantener actualizados los datos de mi servicio. | 5 |
-| 33 | US09 | Obtención del QR del estudiante | Como padre o apoderado, deseo obtener el código QR de mi hijo, para facilitar su identificación durante el abordaje. | 3 |
-| 34 | US10 | Registro de abordaje mediante QR | Como conductor, deseo identificar al estudiante mediante su QR y confirmar su abordaje, para registrar su ingreso al vehículo sin buscarlo manualmente. | 5 |
-| 35 | TS11 | Integración de generación y lectura de QR | Como Developer, deseo integrar la generación y lectura de códigos QR con un formato único, para identificar al estudiante y enviar su abordaje al servicio existente. | 5 |
-| 36 | US16 | Publicación de ubicación del viaje | Como conductor, deseo compartir la ubicación de mi dispositivo durante el viaje, para permitir que las familias sigan el traslado. | 8 |
-| 37 | TS06 | Persistencia de ubicación mediante API | Como Developer, deseo almacenar y consultar las coordenadas del viaje, para proporcionar posiciones al seguimiento. | 5 |
-| 38 | TS10 | Integración de Leaflet en el frontend | Como Developer, deseo integrar Leaflet en la aplicación web, para representar rutas, paradas y la ubicación disponible del viaje. | 3 |
-| 39 | US17 | Consulta de ubicación disponible | Como padre o apoderado, deseo consultar la última ubicación del viaje de mi hijo, para conocer el avance del traslado. | 5 |
-| 40 | TS09 | Documentación Swagger y OpenAPI | Como Developer, deseo disponer de documentación de los servicios, para consultar y probar los contratos de la API. | 2 |
-| 41 | US29 | Activación de alerta de emergencia | Como conductor, deseo confirmar una alerta prioritaria durante el viaje, para avisar al administrador ante una situación urgente. | 5 |
-| 42 | US28 | Selección y cambio de plan en la demostración | Como administrador, deseo seleccionar o cambiar el plan de mi organización en la versión académica, para comprobar las alternativas de gestión del servicio. | 3 |
-| 43 | TS08 | API de planes y suscripción de demostración | Como Developer, deseo gestionar el catálogo y la selección de planes, para demostrar la gestión comercial sin integrar cobros reales. | 3 |
-| 44 | US31 | Exportación de asistencia | Como administrador o apoderado, deseo exportar la asistencia que tengo permiso para consultar, para conservar un reporte del periodo seleccionado. | 5 |
-| 45 | US14 | Reporte de incidencias y evidencias | Como conductor, deseo reportar incidencias con tipo, gravedad y evidencia opcional, para informar los problemas ocurridos durante el traslado. | 8 |
-| 46 | US30 | Consulta de tiempo estimado y aviso de proximidad | Como padre o apoderado, deseo consultar el tiempo estimado hasta mi parada y recibir un aviso de proximidad, para preparar el recojo o la recepción de mi hijo. | 8 |
-| 47 | US25 | Recuperación de contraseña mediante código | Como usuario registrado, deseo recuperar el acceso mediante un código enviado a mi correo, para establecer una nueva contraseña cuando olvido la anterior. | 8 |
+| Orden | Tipo | ID | Título | Descripción | Story Points |
+| ---: | :--- | :--- | :--- | :--- | ---: |
+| 1 | US | US23 | Visualización de Hero | Como visitante, deseo conocer la propuesta de valor de KidTrack, para comprender qué ofrece el servicio. | 2 |
+| 2 | US | US24 | Navegación de Funciones | Como visitante, deseo explorar las funcionalidades de KidTrack, para conocer las capacidades del servicio. | 3 |
+| 3 | US | US25 | Detalle de Roles | Como visitante, deseo conocer los beneficios de cada perfil, para identificar cómo utilizaría el servicio. | 3 |
+| 4 | US | US26 | Consulta de Precios | Como visitante, deseo comparar los precios de los planes, para evaluar cuál se ajusta a mi presupuesto. | 3 |
+| 5 | US | US29 | Formulario de Contacto | Como visitante, deseo enviar una consulta comercial, para recibir información o una cotización del servicio. | 3 |
+| 6 | US | US28 | Testimonios Reales | Como visitante, deseo consultar experiencias de usuarios reales, para evaluar la confianza que transmite KidTrack. | 2 |
+| 7 | US | US27 | Selección de Idioma | Como visitante, deseo elegir entre inglés y español, para consultar el sitio en el idioma que comprendo mejor. | 3 |
+| 8 | US | US33 | Diseño Adaptable e i18n | Como visitante, deseo leer el contenido traducido desde mi celular, para comprenderlo sin cortes ni pérdida de información. | 2 |
+| 9 | US | US34 | Metadatos SEO e i18n | Como visitante, deseo que la información pública del sitio esté disponible en mi idioma para buscadores y vistas previas, para reconocer el servicio antes de abrirlo. | 3 |
+| 10 | US | US35 | Verificación de SSL | Como visitante, deseo acceder a KidTrack mediante una conexión segura, para proteger los datos que envío al sitio. | 5 |
+| 11 | US | US36 | Política de Cookies i18n | Como visitante, deseo decidir sobre el uso de cookies opcionales, para controlar mis preferencias de privacidad. | 5 |
+| 12 | US | US30 | Suscripción al Newsletter | Como visitante, deseo suscribirme con mi correo, para recibir contenidos sobre seguridad en el transporte escolar. | 3 |
+| 13 | US | US31 | Visualización de Partners | Como visitante, deseo identificar a las organizaciones aliadas, para conocer quiénes respaldan o colaboran con el servicio. | 2 |
+| 14 | US | US32 | Preguntas Frecuentes (FAQ) | Como visitante, deseo consultar respuestas a preguntas frecuentes, para resolver dudas sin recurrir inicialmente al soporte. | 2 |
+| 15 | TS | TS5 | Soporte i18n de la Landing Page | Como desarrollador, deseo configurar los recursos de traducción de la Landing Page, para presentar su contenido en inglés y español. | 5 |
+| 16 | TS | TS6 | Implementación HTTPS/SSL | Como desarrollador, deseo configurar HTTPS con un certificado válido, para proteger la transmisión de información entre los clientes y los servicios. | 3 |
+| 17 | TS | TS2 | Integración Leaflet Maps | Como desarrollador, deseo integrar Leaflet en las vistas de seguimiento, para representar las rutas y las ubicaciones recibidas del vehículo. | 5 |
+| 18 | US | US1 | Contratar Plan | Como administrador, deseo seleccionar el plan de mi organización, para disponer de la capacidad que requiere el servicio de transporte. | 5 |
+| 19 | US | US2 | Registro de Conductores | Como administrador, deseo registrar cuentas de conductores, para asignarles responsabilidades dentro de la operación. | 3 |
+| 20 | US | US4 | Alta de Alumnos | Como administrador, deseo dar de alta a los estudiantes, para incorporarlos a los recorridos del servicio. | 5 |
+| 21 | US | US3 | Registro de Padres | Como administrador, deseo incorporar a los padres de familia, para habilitar su acceso al seguimiento de sus hijos. | 3 |
+| 22 | TS | TS1 | Implementación JWT Authentication | Como desarrollador, deseo implementar la emisión y validación de tokens JWT, para controlar el acceso autenticado a los servicios de KidTrack. | 5 |
+| 23 | TS | TS8 | API: Obtener Alumnos | Como desarrollador, deseo consultar estudiantes por ruta mediante la API, para integrar sus datos en clientes autorizados. | 3 |
+| 24 | US | US5 | Creación de Rutas | Como administrador, deseo definir rutas y paradas, para organizar recorridos con tiempos de traslado adecuados. | 8 |
+| 25 | US | US6 | Asignación de Conductores a Rutas | Como administrador, deseo asignar conductores a las rutas, para distribuir la responsabilidad de cada recorrido. | 3 |
+| 26 | TS | TS3 | Persistencia de Tracking GPS | Como desarrollador, deseo persistir las ubicaciones GPS de los viajes, para permitir la consulta posterior de su trayectoria. | 5 |
+| 27 | US | US10 | Inicio de Trayecto | Como conductor, deseo iniciar el viaje asignado, para comunicar a las familias que el traslado está en marcha. | 3 |
+| 28 | US | US11 | Marcación de Abordaje | Como conductor, deseo registrar el abordaje de los estudiantes, para mantener actualizada la asistencia del viaje. | 5 |
+| 29 | US | US17 | Rastreo en Tiempo Real | Como padre, deseo consultar la ubicación del vehículo en el mapa, para conocer el avance del traslado de mi hijo. | 8 |
+| 30 | US | US18 | Alerta de Proximidad | Como padre, deseo recibir avisos de cercanía del vehículo, para acompañar a mi hijo a la parada a tiempo. | 5 |
+| 31 | US | US19 | Confirmación de Llegada | Como padre, deseo recibir la confirmación de entrega de mi hijo, para conocer cuándo llega a su destino. | 3 |
+| 32 | US | US14 | Finalización de Viaje | Como conductor, deseo finalizar el viaje, para dejar constancia de que el recorrido ha concluido. | 2 |
+| 33 | US | US12 | Reporte de Incidencias | Como conductor, deseo reportar incidencias del recorrido, para que el administrador pueda coordinar una respuesta. | 5 |
+| 34 | US | US16 | Navegación Integrada | Como conductor, deseo abrir una herramienta externa de navegación, para recibir indicaciones durante el recorrido. | 3 |
+| 35 | TS | TS7 | Soporte Offline para Conductores | Como desarrollador, deseo disponer de almacenamiento local para los eventos del conductor, para conservarlos durante interrupciones de conectividad. | 5 |
+| 36 | US | US7 | Analítica de Flota | Como administrador, deseo consultar indicadores de la flota, para evaluar el rendimiento del servicio. | 8 |
+| 37 | US | US21 | Historial de Asistencia | Como padre, deseo revisar la asistencia mensual de mi hijo, para conocer los días en que utilizó el transporte. | 5 |
+| 38 | US | US15 | Bitácora de Viajes | Como conductor, deseo consultar mi bitácora, para revisar los viajes que he realizado. | 3 |
+| 39 | US | US22 | Perfil del Estudiante | Como padre, deseo mantener actualizada la información médica de mi hijo, para que el conductor conozca las precauciones necesarias. | 5 |
+| 40 | US | US13 | Botón de Pánico | Como conductor, deseo activar una alerta SOS, para comunicar una situación de emergencia. | 8 |
+| 41 | US | US20 | Acceso a Cámara | Como padre, deseo consultar la cámara interior del vehículo, para observar las condiciones del traslado de mi hijo. | 5 |
+| 42 | US | US8 | Gestión de Notificaciones | Como administrador, deseo distribuir avisos generales, para comunicar a las familias los eventos que afectan al servicio. | 5 |
+| 43 | US | US9 | Auditoría de Logs | Como administrador, deseo consultar los registros técnicos del sistema, para investigar errores reportados. | 5 |
+| 44 | TS | TS4 | Configuración Swagger/OpenAPI | Como desarrollador, deseo disponer de documentación interactiva OpenAPI, para consultar y probar las operaciones REST de KidTrack. | 3 |
+
+
 
 
 
