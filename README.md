@@ -1296,15 +1296,248 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 ### 4.5. Web Applications Prototyping
 
 ### 4.6. Domain-Driven Software Architecture
+
 #### 4.6.1. Design-Level Event Storming
+
+Plantilla de colores:
+![Plantilla](assets/images/Chapter4/EventStorming/colors.png)
+ 
+1. Unstructured Exploration
+   ![BigPicture](assets/images/Chapter4/EventStorming/event.png)
+En este primer paso reunimos los eventos de dominio más importantes para la movilidad escolar, sin preocuparnos todavía por el orden en que ocurren. La idea es capturar los hitos de negocio que hacen posible la interacción segura entre padres, conductores y administradores. Estos eventos se agrupan en seis grandes bloques:
+ 
+- Identidad y Gestión de Accesos (IAM): cubre la seguridad y el inicio de sesión de la plataforma, con eventos como Login, Authenticate User, la emisión de tokens JWT para mantener las sesiones seguras y el alta de administradores.
+- Gestión de Suscripciones y Planes: regula el acceso comercial a las funciones de la plataforma, desde elegir un plan hasta procesar el pago con una pasarela externa y habilitar las funciones de gestión de rutas correspondientes al plan contratado (básico, intermedio o completo).
+- Gestión de Stakeholders y Activos: administra los perfiles de las personas involucradas y cómo se relacionan entre sí — el registro de conductores, padres y estudiantes, la creación de grupos de transporte y la vinculación de cada hijo con su padre para poder darle seguimiento individual.
+- Planificación de Flota y Rutas: define toda la logística antes de que el viaje empiece: la creación de la geocerca de la ruta (RouteGeofenceCreated), la elección de los puntos de parada (Pick Waypoints), la asignación de estudiantes a un vehículo y la fijación del horario de salida.
+- Ejecución y Monitoreo de Viajes: es el núcleo operativo que corre en tiempo real, desde que el conductor da inicio al trayecto (TripStarted), pasando por el registro del estado de abordaje de cada estudiante (StudentStatus), hasta la consulta en vivo de la información de la ruta mientras dura el recorrido.
+2. Timelines
+   ![TimeLines](./assets/images/Chapter4/EventStorming/timelines.png)
+En este paso ordenamos los eventos en el tiempo para ver cómo fluyen naturalmente los procesos del negocio. Las líneas de tiempo más relevantes son:
+ 
+- Flujo de Incorporación y Suscripción: Registro de administrador → Creación de organización → Selección de plan de suscripción → Procesamiento de pago → Activación de cuotas de servicios.
+- Gestión de Stakeholders y Activos: Registro de conductores y padres → Vinculación de estudiante a padre → Creación de grupos de transporte → Registro de vehículos → Asignación de conductor a vehículo.
+- Planificación de Rutas Institucionales: Definición de geocerca de la ruta → Selección de puntos de parada (waypoints) → Asignación de estudiantes a la ruta → Establecimiento de horarios de salida → Finalización de la activación de ruta.
+- Ejecución de Viajes y Monitoreo: Inicio de viaje por el conductor → Consulta de información de ruta → Registro de abordaje del estudiante → Notificación automática al padre → Seguimiento de progreso en tiempo real.
+- Gestión de Comunicaciones e Incidentes: Detección de anomalía → Generación de alerta de pánico de alta prioridad → Despacho de alerta a administradores/padres → Difusión de mensajes de estado (broadcast) → Visualización en línea de tiempo.
+- Cierre de Operación: Llegada al destino final → Confirmación de descenso total de estudiantes → Finalización de viaje → Archivamiento de datos de ejecución → Liberación de recursos de flota.
+Estas líneas de tiempo dejan ver las dependencias en el tiempo y el orden en que ocurren las operaciones del sistema, garantizando que la información viaje correctamente desde la base de datos hasta la notificación que recibe el padre en su dispositivo.
+ 
+3. Pain Points
+   ![PainPoints](assets/images/Chapter4/EventStorming/paintpoints.png)
+En esta etapa identificamos los puntos de fricción, cuellos de botella y otros problemas que aparecen durante los procesos operativos y administrativos. Entre los pain points detectados están:
+ 
+- Sincronización de Notificaciones: la alerta push que le llega al padre cuando el estudiante aborda el vehículo a veces se demora, lo que genera una incertidumbre que no debería existir.
+- Gestión de Errores en Abordaje: si el conductor se equivoca al registrar manualmente el estado del estudiante (StudentStatus), el registro de asistencia queda mal.
+- Validaciones de Seguridad: una emergencia real puede coincidir con una caída de conectividad o un error del sistema, bloqueando o impidiendo que se genere la alerta de pánico de alta prioridad.
+- Asignación de Recursos: un error al vincular manualmente un conductor con su vehículo o ruta impide que el viaje arranque correctamente en la plataforma.
+- Fricción en el Pago y Suscripción: si el procesamiento del pago se interrumpe, se deshabilitan las cuotas de rutas contratadas y se frena la operación diaria de la institución.
+- Precisión de Geolocalización: la falta de precisión del GPS a veces hace que la ubicación de los checkpoints no sea del todo confiable.
+Tener claros estos puntos críticos le permite al equipo de KidTrack priorizar mecanismos de redundancia y mejorar la experiencia de usuario, para que la comunicación entre el transporte y el hogar no falle.
+ 
+4. Pivotal Points
+   ![PivotalPoints](assets/images/Chapter4/EventStorming/pivotal.png)
+Los puntos pivotales son los eventos que marcan un antes y un después en el ciclo de vida del servicio. Entre ellos están:
+ 
+Activación de Suscripción: es el momento en que la cuenta pasa de un estado de configuración restringida a uno operativo, habilitando las cuotas de rutas y conductores que se necesitan para funcionar.
+ 
+Finalización de Definición de Ruta: aquí termina la planificación técnica y la ruta ya puede asignarse a un vehículo y a un conductor.
+ 
+Inicio de Viaje: activa el monitoreo en tiempo real y desde ese momento los padres pueden ver el progreso del transporte en su aplicación.
+ 
+Registro de Abordaje (Student Boarded): es el evento pivotal en cuanto a comunicación, porque confirma que el estudiante está a salvo y dispara automáticamente la notificación push hacia su tutor legal.
+ 
+Generación de Alerta de Pánico: cambia el estado del viaje de "Normal" a "Emergencia", lo que activa los protocolos de respuesta inmediata y le da prioridad a la comunicación dentro de la red de seguridad.
+ 
+Completación de Viaje: cierra la responsabilidad operativa del conductor sobre los estudiantes y archiva el registro, dejando libres los recursos de la flota.
+ 
+Estos puntos son claves para que la movilidad escolar funcione de principio a fin, porque garantizan que cada fase del proceso se cumpla antes de pasar a la siguiente.
+ 
+5. Commands
+   ![Commands](assets/images/Chapter4/EventStorming/comand.png)
+Los comandos son las acciones o intenciones del usuario que disparan un evento en el sistema. Los principales que identificamos son:
+ 
+- Gestión de Identidad y Acceso (IAM): Registrar administrador, iniciar sesión, autenticar usuario, asignar rol, revocar privilegios.
+- Gestión de Suscripciones y Planes: Seleccionar plan, iniciar proceso de pago, activar funciones de gestión, actualizar cuotas de conductores, cancelar servicio.
+- Gestión de Stakeholders y Activos: Registrar conductor, registrar padre, vincular estudiante a pariente, registrar vehículo, crear grupo de transporte, asignar miembros al grupo.
+- Gestión de Flota y Rutas: Definir geocerca, seleccionar puntos de parada (waypoints), asignar estudiantes a ruta, asignar vehículo a ruta, establecer horario de salida, finalizar activación de ruta.
+- Ejecución de Viajes y Monitoreo: Iniciar viaje, consultar información de ruta, registrar estado de abordaje del estudiante, reportar incidente (botón de pánico), finalizar viaje.
+- Comunicación y Notificaciones: Preparar notificación push, despachar alerta a padres, publicar mensaje de difusión (broadcast), mostrar mensaje en línea de tiempo.
+6. Policies
+   ![Policies](assets/images/Chapter4/EventStorming/policy.png)
+Las políticas automatizan la lógica de negocio y mantienen la coherencia del sistema frente a eventos críticos. Las más importantes son:
+ 
+- Cuando el pago se procesa con éxito → se activa la suscripción y se habilitan automáticamente las cuotas de rutas y conductores.
+- Cuando el conductor inicia un viaje → se avisa a todos los padres de esa ruta que ya pueden ver el monitoreo en tiempo real.
+- Cuando se registra el abordaje de un estudiante → se envía de inmediato una notificación push al dispositivo del padre correspondiente.
+- Cuando se reporta un incidente de pánico → se genera una alerta de alta prioridad que llega al instante a los administradores y a los padres del grupo.
+- Cuando se publica un mensaje de difusión → aparece en la línea de tiempo de todos los miembros del grupo seleccionado.
+- Cuando se confirma que todos los estudiantes bajaron → el viaje se marca como completado y se archivan los datos de su ejecución.
+- Cuando falla el registro de un stakeholder → se le envía al administrador una notificación de error con el detalle de la validación.
+7. Read Models
+   ![ReadModels](assets/images/Chapter4/EventStorming/readmodel.png)
+Para que el sistema sea transparente, identificamos estos modelos de lectura principales:
+ 
+- Dashboard del Conductor: muestra en detalle la ruta asignada, la lista de estudiantes por recoger, los puntos de parada (waypoints) y el estado de abordaje en tiempo real.
+- Panel de Monitoreo para Padres: deja ver en tiempo real dónde está el vehículo, el estado de seguridad del estudiante y la línea de tiempo de eventos del viaje.
+- Vista de Gestión de Grupos: agrupa a los estudiantes por ruta, los vincula con sus padres y muestra el estado de asistencia del mes.
+- Estado de la Flota: registra qué vehículos están activos, qué conductor tiene asignado cada uno y qué recursos hay disponibles para nuevas rutas.
+- Historial de Incidentes: lleva el registro cronológico de las alertas de pánico, los mensajes de difusión enviados y cómo se resolvió cada evento de seguridad.
+- Panel de Suscripción y Cuotas: reúne la información del plan activo, el estado de los pagos y el uso de las cuotas de rutas y conductores contratadas.
+- Directorio de Stakeholders: reúne el perfil completo de cada usuario (padres, conductores y administradores) con su rol y sus privilegios de acceso.
+8. External Systems
+   ![ExternalSystems](assets/images/Chapter4/EventStorming/externalsystem.png)
+Las integraciones externas que identificamos para la solución son:
+ 
+- Leaflet (Proveedor de Mapas): se usa para mostrar las rutas de forma interactiva, trazar las geocercas (geofencing) y manejar las coordenadas geográficas del monitoreo en tiempo real.
+- Resend (Servicio de Email): envía las notificaciones transaccionales y los correos automáticos, como los mensajes de bienvenida, la confirmación de registro y las alertas administrativas.
+- PayPal (Pasarela de Pago): procesa de forma segura los pagos para activar, renovar o cambiar el plan de suscripción de la institución.
+- MySQL (Gestión de Base de Datos): es el motor de base de datos relacional donde se guarda y organiza toda la información de usuarios, rutas, vehículos y registros operativos.
+9. Aggregates
+   ![Aggregates](assets/images/Chapter4/EventStorming/aggregate.png)
+A partir de los dominios operativos que identificamos, estos son los agregados:
+ 
+User (Raíz): concentra la identidad del usuario — sus credenciales de acceso, el rol que tiene asignado (Administrador, Padre, Conductor) y los privilegios que le dan acceso al panel de control.
+ 
+Organization (Raíz): maneja la configuración de la institución, sus miembros y la relación de la cuenta con los parámetros base del sistema institucional.
+ 
+Subscription (Raíz): controla el ciclo de vida del plan contratado, apoyándose en PayPal para procesar el pago y así habilitar o restringir las cuotas de rutas y conductores disponibles.
+ 
+Stakeholder (Raíz): agrupa la información de padres y conductores, y gestiona el vínculo clave entre el tutor (padre) y el estudiante que hace posible el flujo de notificaciones.
+ 
+Vehicle (Raíz): registra las unidades de transporte, sus datos técnicos y los cambios de estado (activo/inactivo) dentro de la flota.
+ 
+Route (Raíz): coordina la logística del recorrido: la geocerca, los paraderos (waypoints) elegidos y los estudiantes que quedan asignados de antemano a esa ruta.
+ 
+Trip (Raíz): controla la ejecución del viaje en tiempo real, registrando cuándo arranca el trayecto, los cambios en el estado de abordaje de los estudiantes y el log de incidentes que se generan durante el recorrido.
+ 
+10. Bounded Contexts
+    ![BoundedContexts](./assets/images/Chapter4/EventStorming/eventstorming1.jpg)
+Los bounded contexts agrupan los agregados en dominios de negocio independientes, de forma que cada uno pueda evolucionar por su cuenta y el sistema sea más fácil de escalar:
+ 
+- Identity & Access Management: se encarga de la seguridad perimetral — autenticar usuarios, crear organizaciones y asignar roles y privilegios a administradores, padres y conductores. Agregados: User, Organization.
+- Subscription & Plan Management: administra el lado comercial del servicio, desde elegir el plan hasta procesar el pago con PayPal y activar las cuotas de rutas y conductores contratadas. Agregados: Subscription.
+- Stakeholder & Asset Management: maneja los perfiles de las personas clave y los recursos físicos de la institución — el registro de conductores y padres, la vinculación entre cada padre y su hijo, y la gestión de la flota de vehículos. Agregados: Stakeholder, Vehicle.
+- Route Planning & Execution: cubre toda la logística, desde la planificación técnica hasta la operación en tiempo real — la geocerca, los paraderos, el monitoreo del abordaje y la gestión de incidentes durante el trayecto. Agregados: Route, Trip.
+- Notifications & Communication: es el puente de comunicación inmediata entre el transporte y el hogar; se encarga de las notificaciones push (como el estado de abordaje), las alertas de pánico y los mensajes de difusión general para mantener informados a padres y administradores.
+
 #### 4.6.2. Software Architecture Context Diagram
+
+El diagrama de contexto ubica a KidTrack como el sistema central, rodeado de sus tres tipos de usuario y de los sistemas externos con los que se conecta. El Administrador usa la plataforma para configurar rutas, registrar actores y administrar suscripciones; el Conductor entra para ejecutar sus viajes, registrar el abordaje de los estudiantes y lanzar alertas de pánico; y el Padre/Tutor monitorea en tiempo real la ruta de su hijo y recibe las notificaciones correspondientes. KidTrack se conecta con PayPal para procesar los pagos, con Leaflet + OpenRouteService para mostrar los mapas y calcular las rutas escolares, y con Resend como proveedor de correo transaccional para el envío de alertas y notificaciones.
+ 
+![ContextDiagram](./assets/images/Chapter4/C4/SystemContext.png)
+
 #### 4.6.3. Software Architecture Container Diagrams
+
+Aquí se detallan las principales unidades de despliegue del sistema. El diagrama muestra cómo KidTrack se divide en una Landing Page estática (HTML5, CSS3, JavaScript), una aplicación web interactiva del lado del cliente construida en Angular con Angular Material, una API backend modularizada hecha en Spring Boot y Java, un Shared Kernel como librería Java de tipos compartidos entre los distintos contextos, y un repositorio central de persistencia en MySQL.
+ 
+![ContainerDiagram](./assets/images/Chapter4/C4/ContainerDiagram-dark.png)
+
 #### 4.6.4. Software Architecture Components Diagrams
 
+**FrontEnd**
+ 
+- Single Page
+
+![WebServices](assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
+La SPA se construyó con Angular, Angular Material y TypeScript, y está organizada en módulos según el bounded context. Cada módulo mantiene la misma estructura interna de cuatro capas: Model (los resources del dominio), Assembler (transforma lo que devuelve la API), API Service (consume el backend por HttpClient) y Store (el estado reactivo, con Angular Signals). La Navigation Bar del módulo Shared se encarga de moverse entre módulos, el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
+ 
+- Trip Execution & Monitoring:
+
+  Muestra el núcleo operativo del frontend en sus 4 capas: la Trip View procesa la ejecución del viaje en tiempo real, el Signal Store guarda el estado de los abordajes y los incidentes activos, y el Trip Service manda cada evento al Web Service, que a su vez dispara las notificaciones que correspondan.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Trip-dark%20(1).png)
+
+  "C:\Users\mathi\Downloads\OPEEN\kidtrack-report\assets\images\Chapter4\C4\Front\ComponentDiagram_Trip-dark (1).png"
+
+  Presentation trip:
+
+  ![WebServices](/assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Trip-dark(1).png)
+
+- Route Planning & Execution:
+  Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Route-dark%20(1).png>)
+
+  Presentation Route:
+
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Route-dark%20(1).png>)
+
+- Stakeholder & Asset Management:
+  Representa las 4 capas del módulo que administra, en el frontend, la información central del negocio: las vistas para crear y vincular perfiles de conductores, padres, estudiantes y vehículos, con un Signal Store que centraliza el estado de los grupos y las asignaciones por organización.
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Stakeholder-dark%20(1).png>)
+
+  Presentation stakeholder:
+
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Stakeholder-dark%20(1).png>)
+  - Notifications & Communication:
+    Describe, en sus 4 capas, el módulo que comunica al sistema con el usuario: la Notifications View muestra alertas, confirmaciones de abordaje y anuncios en tiempo real, el Signal Store lleva la cuenta de lo no leído, y el Notification Service consulta periódicamente al Web Service para mantener todo actualizado.
+    ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Notification-dark%20(1).png>)
+
+  Presentation trip:
+
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Notification-dark%20(1).png>)
+
+- Shared Kernel:
+  Detalla las 4 capas transversales que sostienen a todos los módulos de bounded context en el frontend: el Navigation Bar en la capa de presentación, el HTTP Service centralizado con interceptores JWT en la capa de aplicación, los resources e interfaces base en el dominio, y el Map Service, que integra Leaflet y OpenRouteService, en la capa de infraestructura.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark.png)
+
+  Presentation shared:
+  ![WebServices](./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Shared-dark.png)
+  - Identity & Access Management:
+    Desglosa el módulo de identidad del frontend en sus 4 capas internas: la Identity View se encarga de los formularios de login y registro, el Signal Store guarda el estado de sesión y el rol del usuario activo, y el IAM Service envía las peticiones de autenticación al Web Service, adjuntando y guardando el token JWT.
+    ![WebServices](</assets/images/Chapter4/C4/ComponentDiagram_IAM-dark%20(1).png>)
+
+  Presentation IAM:
+
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_IAM-dark%20(1).png>)
+
+- Subscription & Plan Management:
+  Muestra la arquitectura interna de 4 capas del módulo que maneja la monetización en el cliente: la Subscriptions View presenta los planes disponibles, el Signal Store mantiene el estado del plan activo y sus cuotas, y el Subscription Service se comunica con el Web Service para manejar todo el ciclo de vida del pago.
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Subscription-dark%20(1).png>)
+
+  Presentation subscription:
+
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Subscription-dark%20(1).png>)
+
+**BackEnd**
+ 
+- Web Services:
+  ![WebServices](./assets/images/Chapter4/C4/WebServiceComponents-dark.png)
+  Este diagrama da la vista general del backend: muestra cómo el monolito de Spring Boot está organizado, a nivel lógico, en seis Bounded Contexts independientes más un Shared Kernel (el núcleo compartido de Value Objects), lo que deja bien separadas las responsabilidades de cada dominio.
+
+- Trip Execution & Monitoring:
+  Muestra el núcleo operativo del sistema en sus 4 capas: cómo se procesa la lógica en tiempo real durante el viaje, el registro del abordaje de cada estudiante, el log de incidentes y la emisión de los eventos de dominio internos que activan el contexto de Notificaciones.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Trip-dark.png)
+
+- Route Planning & Execution:
+  Detalla la arquitectura modular (Controller, Service, Domain, Repository) que se encarga de la logística previa al viaje: la definición de paraderos con coordenadas GPS de alta precisión, la asignación de vehículos y conductores, y la configuración de horarios y días de servicio de cada ruta.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Route-dark.png)
+
+- Stakeholder & Asset Management:
+  Representa las capas internas del dominio que administra la información central del negocio: crear y vincular los perfiles de conductores, padres y estudiantes, y gestionar la flota de vehículos disponible por organización.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Stakeholder-dark.png)
+
+- Notifications & Communication:
+  Describe el módulo de comunicación asíncrona en sus 4 capas: recibe los eventos internos que emite el contexto de Trip y usa su capa de infraestructura para enviar, a través de Resend, las alertas de pánico, las notificaciones de abordaje y los comunicados de difusión general.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Notification-dark.png)
+
+- Shared Kernel:
+  Este diagrama muestra las 4 capas transversales (Building Blocks) sobre las que se apoya la arquitectura limpia del monolito: los Middlewares en la capa API, las interfaces y resources base en Application, los Value Objects globales (TripId, StudentId) en Domain, y los repositorios genéricos en Infrastructure, todo pensado para no duplicar código en el resto de los Bounded Contexts.
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark%20(1).png>)
+
+  - Identity & Access Management:
+    Desglosa el módulo de identidad en sus 4 capas internas (API, Application, Domain, Infrastructure): cómo se maneja la autenticación de usuarios, la creación de cuentas y la asignación de roles de forma aislada, con Spring Security encargándose de emitir los tokens JWT en la capa de infraestructura.
+    ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_IAM-dark.png)
+
+- Subscription & Plan Management:
+  Muestra la estructura interna de 4 capas del contexto de monetización: el flujo va desde el controlador REST hasta la infraestructura que se integra con PayPal para manejar el ciclo de vida de los planes y los pagos de suscripción.
+  ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Subscription-dark.png)
+
 ### 4.7. Software Object-Oriented Design
+
 #### 4.7.1. Class Diagrams
 
 ### 4.8. Database Design
+
 #### 4.8.1. Database Diagrams
 
 ## Capítulo V: Product Implementation, Validation & Deployment
