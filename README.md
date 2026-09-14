@@ -2917,9 +2917,59 @@ Durante el Sprint 1, el equipo realizó commits principalmente sobre el reposito
 | KidTrack-report  | develop        | 402aaa1c  | docs: add 2.1.2. Estrategias y tácticas frente a competidores             | SALVA1704    | 2026-13-09 |
 | KidTrack-report  | develop        | f2368c77  | docs: add 2.2.1 Diseño de entrevistas             | SALVA1704    | 2026-13-09 |
 
+#### 5.2.1.5. Execution Evidence for Sprint Review
 
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
 
-##### 5.2.1.5. Execution Evidence for Sprint Review
+La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción, informacion del flujo de uso y soporte de internacionalización (ES/EN). 
+A continuación se presentan las capturas de las secciones implementadas:
+
+**Sección Hero**
+
+Se implementó en la sección principal el titulo "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?".
+El navbar incluye navegación a las secciones principales "Funciones", "Roles", "planes" ,"¿Cómo funciona?", "Comenzar" y el boton de cambio de idioma ES/EN.
+
+![Hero Section](assets/images/Chapter-5/Sprint1/landing-page-hero.png)
+
+---
+
+**Sección Funcionalidades**
+
+Se implementó el titulo "Todo lo que necesitas para gestionar tu flota" seguido por la presentacion de las seis funcionalidades principales de la plataforma mediante las siguientes tarjetas con íconos y descripciones: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+
+![Funcionalidades Section](assets/images/Chapter-5/Sprint1/landing-page-funcionalidades.png)
+
+---
+
+**Sección Roles del Sistema**
+
+Se implementó el titulo "Una plataforma, tres experiencias", seguido por la presentacion de los 3 roles principales con los que trabajara la plataforma mediante las siguientes tarjetas con iconos y sus respectivas funciones:  Administrador, Conductor y Padre de Familia.
+
+![Roles Section](assets/images/Chapter-5/Sprint1/landing-page-roles.png)
+
+---
+
+**Sección Planes**
+
+Se implementó el titulo "Escala según tu operación", seguido por la presentacion de los tres planes de suscripción disponibles mediante tarjetas interactivas con sus respectivos botones de contratacion: Básico (9.99 dolares/mes), Intermedio (24.99 dolares/mes) y Completo (49.99 dolares/mes).
+
+![Planes Section](assets/images/Chapter-5/Sprint1/landing-page-planes.png)
+
+---
+
+**Sección ¿Cómo funciona?**
+
+Se implementó el titulo "De la configuración al primer viaje", seguido por 5 pasos que resumen el flujo completo de uso de la plataforma: desde la la seleccion de algun plan hasta el monitoreo en tiempo real por parte de los padres.
+
+![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-page-como-funciona.png)
+
+---
+
+**Sección Footer**
+
+Al final de la landing page se implementó el footer con el titutlo "¿Listo para digitalizar tu operación?" seguido de dos botones: "Adquirir plan" e "Iniciar sesión"
+
+![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-page-cta-footer.png)
 ##### 5.2.1.6. Services Documentation Evidence for Sprint Review
 ##### 5.2.1.7. Software Deployment Evidence for Sprint Review
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
