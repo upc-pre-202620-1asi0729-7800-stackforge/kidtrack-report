@@ -2124,7 +2124,7 @@ Aquí se detallan las principales unidades de despliegue del sistema. El diagram
  
 - Single Page
 
-![WebServices](./assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
+![WebServices](.\assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
 La SPA se construyó con Angular, Angular Material y TypeScript, y está organizada en módulos según el bounded context. Cada módulo mantiene la misma estructura interna de cuatro capas: Model (los resources del dominio), Assembler (transforma lo que devuelve la API), API Service (consume el backend por HttpClient) y Store (el estado reactivo, con Angular Signals). La Navigation Bar del módulo Shared se encarga de moverse entre módulos, el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
  
 - Trip Execution & Monitoring:
@@ -2134,7 +2134,7 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   Presentation trip:
 
-  ![WebServices](./assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
+  ![WebServices](.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
