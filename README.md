@@ -190,6 +190,40 @@ Proyecto
 ---
 ## Student Outcome
 
+**ABET – EAC - Student Outcome 3:**  Capacidad de comunicarse efectivamente con un rango de audiencias
+
+<table>
+ <tr>
+    <th colspan="2">Criterio Específico</th>
+    <th colspan="10">Acciones Realizadas</td>
+    <th colspan="2">Conclusiones</td>
+ </tr>
+ <tr>
+    <td colspan="2">Comunica oralmente con efectividad a diferentes rangos de audiencia.
+    </th>
+    <td colspan="10">
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:<br><br>
+    <td colspan="2">
+    AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.</td>
+ </tr>
+ <tr>
+    <td colspan="2">Comunica por escrito con efectividad a diferentes rangos de audiencia.
+    </th>
+    <td colspan="10">
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:<br><br><b> </b> 
+    <td colspan="2"> AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.</td>
+ </tr>
+
+  </table>
+
 ## Capítulo I: Introducción
 
 ### 1.1. Startup Profile
@@ -812,11 +846,11 @@ La elaboración de estas fichas es el resultado de una síntesis detallada entre
 
 #### Persona 1: Drivers
 
-![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20segmento.png)
+![Conductor - Arturo Núñez](assets/images/Chapter2/Arturo%20Núñez%20Segmento.png)
 ---
 #### Persona 2: Parents
 
-![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20segmento.png)
+![Padre - Fernando Nery](assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
 
 #### 2.3.2. User Task Matrix
 En esta sección se presenta la matriz de tareas de usuario, la cual consolida las actividades fundamentales que tanto el conductor (Arturo Núñez) como el padre de familia (Fernando Nery) ejecutan para asegurar un traslado escolar exitoso.
@@ -887,7 +921,7 @@ A través de esta dinámica, se logró plasmar los eventos significativos y sus 
 ---
 ![Big Picture Event Storming - KidTrack](./assets/images/Chapter2/Event%20Storming.png)
 
-URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/MjI5THNDVXhqMFl5d0hzRCtkWHhiNDdBZ0JVQWlNaFBkd0JzcWNWUmVWcEJsamdpVmhxT0N5ZDFlMjcrZi9HZUZIZ1pZd3htOEtrZzl0bmFzd3c1VVAwMHNTcS9JOFYvQjYyR3VNVG5KNEZPM3k5SWliRnlURDViNkFYTTRvWkRnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=830546571837)
+URL: [https://miro.com/welcomeonboard/...](https://miro.com/welcomeonboard/YUlZT1h3RFF1ZWV0bEJJdWFNUkEzWmZBODdEdVZFYmRyRzZ6dHZmRm8xYnZ4aHNJTWpNZms1dEUwSmhtb1FaUE5oTE01TGcwU1FvUGVlbThKanJERFBLM1BidzZEQmUvZXZrOWcvYTlIcDI0MWZmcktoVTBkZUgrRndQMGM1QTlBS2NFMDFkcUNFSnM0d3FEN050ekl3PT0hdjE=?share_link_id=361339190464)
 
 ### 2.5. Ubiquitous Language
 
@@ -2587,7 +2621,7 @@ Aquí se detallan las principales unidades de despliegue del sistema. El diagram
  
 - Single Page
 
-![WebServices](./assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
+![WebServices](.\assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
 La SPA se construyó con Angular, Angular Material y TypeScript, y está organizada en módulos según el bounded context. Cada módulo mantiene la misma estructura interna de cuatro capas: Model (los resources del dominio), Assembler (transforma lo que devuelve la API), API Service (consume el backend por HttpClient) y Store (el estado reactivo, con Angular Signals). La Navigation Bar del módulo Shared se encarga de moverse entre módulos, el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
  
 - Trip Execution & Monitoring:
@@ -2597,7 +2631,7 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   Presentation trip:
 
-  ![WebServices](./assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
+  ![WebServices](.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
