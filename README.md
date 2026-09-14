@@ -2597,7 +2597,7 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   Presentation trip:
 
-  ![WebServices](.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
+  ![WebServices](<.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png>)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
