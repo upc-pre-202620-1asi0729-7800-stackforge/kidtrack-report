@@ -1447,11 +1447,9 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
   Muestra el núcleo operativo del frontend en sus 4 capas: la Trip View procesa la ejecución del viaje en tiempo real, el Signal Store guarda el estado de los abordajes y los incidentes activos, y el Trip Service manda cada evento al Web Service, que a su vez dispara las notificaciones que correspondan.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Trip-dark%20(1).png)
 
-  "C:\Users\mathi\Downloads\OPEEN\kidtrack-report\assets\images\Chapter4\C4\Front\ComponentDiagram_Trip-dark (1).png"
-
   Presentation trip:
 
-  ![WebServices](/assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Trip-dark(1).png)
+  ![WebServices](assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
