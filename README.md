@@ -2881,13 +2881,123 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 
 
 
-##### 5.2.1.2. Aspect Leaders and Collaborators
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
+| ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | C                          | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                          | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | C                          | L                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | L                          | C                  | C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
+
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
-##### 5.2.1.5. Execution Evidence for Sprint Review
-##### 5.2.1.6. Services Documentation Evidence for Sprint Review
-##### 5.2.1.7. Software Deployment Evidence for Sprint Review
-##### 5.2.1.8. Team Collaboration Insights during Sprint
+**URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
+
+Durante el Sprint 1, el equipo realizó commits principalmente sobre el repositorio del informe (kidtrack-report), abarcando la documentación de los capítulos I al V, incluyendo el diseño de producto, arquitectura de software, wireframes, mockups y la configuración del entorno de desarrollo.
+
+| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
+| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
+| KidTrack-report  | develop        | fa1d064   | Initial commit                                                          | Bynickram02   | 2026-03-09 |
+| KidTrack-report  | develop        | 8fb0e8e   | docs: add report skeleton                                               | Bynickram02   | 2026-07-09 |
+| KidTrack-report  | develop        | 68020cf   | docs: add startup profile and team member profiles for chapter 1        | Bynickram02   | 2026-08-09 |
+| KidTrack-report  | develop        | 63df1d7   | docs: complete sections 2.3 Needfinding, and 2.3.1. user persona        | Asalreon520   | 2026-08-09 |
+| KidTrack-report  | develop        | 1c099f8   | docs: complete sections 2.3.2 to 2.5 including task matrix, journey maps, empathy maps, event storming, and ubiquitous language.                                    | Asalreon520      | 2026-08-09 |
+| KidTrack-report  | develop        | 57695a1   | docs: complete chapter 4 documentation for KidTrack style guidelines and information architecture.| Asalreon520   | 2026-08-09 |
+| KidTrack-report  | develop        | 369ad9c   | docs: add landing page wireframe                                     | Dela0405      | 2026-12-09 |
+| KidTrack-report  | develop        | 3bd7c3a   | docs: add Web Applications Wireframes                               | Dela0405      | 2026-12-09 |
+| KidTrack-report  | develop        | 0809bcd   | docs: add profile description                                      | Dela0405    | 2026-12-09 |
+| KidTrack-report  | develop        | d5d0e9a   | docs: add KidTrack epics, technical stories and user stories with acceptance criteria                                     | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | bf6fa3ea  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | 0bd140de  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
+| KidTrack-report  | develop        | c5f5b5bc  | docs: add 2.1.1 Análisis Competitivo             | SALVA1704    | 2026-13-09 |
+| KidTrack-report  | develop        | 402aaa1c  | docs: add 2.1.2. Estrategias y tácticas frente a competidores             | SALVA1704    | 2026-13-09 |
+| KidTrack-report  | develop        | f2368c77  | docs: add 2.2.1 Diseño de entrevistas             | SALVA1704    | 2026-13-09 |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
+
+La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción, informacion del flujo de uso y soporte de internacionalización (ES/EN). 
+A continuación se presentan las capturas de las secciones implementadas:
+
+**Sección Hero**
+
+Se implementó en la sección principal el titulo "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?".
+El navbar incluye navegación a las secciones principales "Funciones", "Roles", "planes" ,"¿Cómo funciona?", "Comenzar" y el boton de cambio de idioma ES/EN.
+
+![Hero Section](assets/images/Chapter-5/Sprint1/landing-page-hero.png)
+
+---
+
+**Sección Funcionalidades**
+
+Se implementó el titulo "Todo lo que necesitas para gestionar tu flota" seguido por la presentacion de las seis funcionalidades principales de la plataforma mediante las siguientes tarjetas con íconos y descripciones: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+
+![Funcionalidades Section](assets/images/Chapter-5/Sprint1/landing-page-funcionalidades.png)
+
+---
+
+**Sección Roles del Sistema**
+
+Se implementó el titulo "Una plataforma, tres experiencias", seguido por la presentacion de los 3 roles principales con los que trabajara la plataforma mediante las siguientes tarjetas con iconos y sus respectivas funciones:  Administrador, Conductor y Padre de Familia.
+
+![Roles Section](assets/images/Chapter-5/Sprint1/landing-page-roles.png)
+
+---
+
+**Sección Planes**
+
+Se implementó el titulo "Escala según tu operación", seguido por la presentacion de los tres planes de suscripción disponibles mediante tarjetas interactivas con sus respectivos botones de contratacion: Básico (9.99 dolares/mes), Intermedio (24.99 dolares/mes) y Completo (49.99 dolares/mes).
+
+![Planes Section](assets/images/Chapter-5/Sprint1/landing-page-planes.png)
+
+---
+
+**Sección ¿Cómo funciona?**
+
+Se implementó el titulo "De la configuración al primer viaje", seguido por 5 pasos que resumen el flujo completo de uso de la plataforma: desde la la seleccion de algun plan hasta el monitoreo en tiempo real por parte de los padres.
+
+![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-page-como-funciona.png)
+
+---
+
+**Sección Footer**
+
+Al final de la landing page se implementó el footer con el titutlo "¿Listo para digitalizar tu operación?" seguido de dos botones: "Adquirir plan" e "Iniciar sesión"
+
+![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-page-cta-footer.png)
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de KidTrack, así como en la documentación de la arquitectura base del sistema bajo el enfoque Domain-Driven Design (DDD). En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
+
+| Recurso      | Acción implementada   | Método HTTP | URL / Endpoint | Link de repositorio                                                             |
+| ------------ | --------------------- | ----------- | -------------- | ------------------------------------------------------------------------------- |
+| Landing Page | Visualización inicial | GET         |                | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review
+
+Durante el Sprint 1 se realizó el despliegue de la Landing Page de KidTrack
+utilizando GitHub Pages como plataforma de hosting estático.
+
+1. Se activó GitHub Pages en el repositorio `kidtrack-website`, configurando
+   la rama `main` como fuente de publicación.
+
+   ![GitHub Pages](assets/images/Chapter-5/Sprint1/deployment-evidence.png)
+
+2. Se verificó la accesibilidad pública de la Landing Page.
+   **URL:**
+
+https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#features
+
+![Landing Live](assets/images/Chapter-5/Sprint1/landing-page.png)
+
+#### 5.2.1.8. Team Collaboration Insights during Sprint
+
+## ![Pulse Insights](assets/images/Chapter-5/Sprint1/insights.png)
 
 ### 5.2.2. Sprint 2
 ##### 5.2.2.1. Sprint Planning 2
