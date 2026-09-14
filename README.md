@@ -1289,9 +1289,693 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 
 #### 4.4.2. Web Applications Wireflow Diagrams
 
+#### Task Flow 1: Administrar cuenta
+
+Objetivo del usuario: Que el usuario pueda mantener al día los datos de su cuenta y su suscripción, para no perder el acceso ni los beneficios de la plataforma.
+
+#### Pasos del Task Flow:
+
+1. Entrar a "Registrar usuario" y crear una cuenta nueva.
+
+2. Guardar los datos que acaba de llenar.
+
+3. Entrar a la aplicación con esa cuenta desde "Ingresar con usuario".
+
+4. Si no logra entrar, ir a la sección "Cambio de Contraseña".
+
+5. Definir la nueva contraseña.
+
+6. Volver a entrar con la cuenta y la nueva contraseña.
+
+7. El sistema lo lleva a "Inicio" y despliega el menú lateral.
+
+##### User Goal 1: Como suscriptor, quiero entrar a mi cuenta en la aplicación.
+
+![UserGoal1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 1.png>)
+
+##### User Goal 2: Como suscriptor, quiero cambiar mi contraseña para que mi cuenta se mantenga segura.
+
+![UserGoal2_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 2_1.png>)
+
+![UserGoal2_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 2_2.png>)
+
+#### Task Flow 2: Setup Logístico y Financiero del Servicio
+
+Objetivo: Dejar lista la parte operativa y los niveles de acceso necesarios para administrar la unidad.
+
+#### Pasos del Task Flow:
+
+1. Elegir y confirmar la "Contratación del Plan" según el tamaño de su flota.
+
+2. Entrar a "Asignación de Roles" para darle permisos de edición al equipo.
+
+3. Cargar los datos del personal operativo en "Registro de Conductor".
+
+4. Trazar los puntos de parada y los tiempos en "Creación de Rutas".
+
+5. El sistema arma el balance de costos, visible en "Consulta de Precios".
+
+##### User Goal 3: Como administrador, quiero dar de alta nuevos conductores y armarles sus rutas.
+
+![UserGoal3_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 3_1.png>)
+![UserGoal3_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 3_2.png>)
+
+##### User Goal 4: Como administrador, quiero tener los roles y las rutas organizados en un solo lugar.
+
+![UserGoal4](<assets/images/Chapter4/WebApp/UserGoals/User Goal 4.png>)
+
+##### User Goal 5: Como administrador, quiero acceder a más funciones de la aplicación cambiándome a un plan superior.
+
+![UserGoal5](<assets/images/Chapter4/WebApp/UserGoals/User Goal 5.png>)
+
+#### A. Segmento: Conductores
+
+#### Task Flow 3: Gestión de Abordaje y Control de Alumnos
+
+Objetivo: Dejar registrado el inicio de la ruta y confirmar, con sincronización en la nube, que cada estudiante subió a la unidad.
+
+#### Pasos del Task Flow:
+
+1. El conductor entra al sistema y elige la ruta que tiene asignada desde su panel principal.
+
+2. Presiona "Iniciar Trayecto", lo que activa la transmisión de sus coordenadas GPS.
+
+3. El sistema hace una petición GET a la API para traer la lista de alumnos de esa ruta.
+
+4. En cada parada, ubica al estudiante en la lista y toca "Marcación de Abordaje".
+
+5. El sistema guarda la hora exacta (timestamp) y cambia el estado del pasajero a "En ruta".
+
+6. Al llegar al colegio, el conductor toca "Finalización de Ruta".
+
+##### User Goal 6: Como conductor, quiero saber en todo momento qué alumnos van en la ruta.
+
+![UserGoal6_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 6_1.png>)
+
+![UserGoal6_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 6_2.png>)
+
+##### User Goal 7: Como conductor, quiero que mi servicio se vea más profesional y confiable.
+
+![UserGoal7_1](<assets/images/Chapter4/WebApp/UserGoals/User Goal 7_1.png>)
+
+![UserGoal7_2](<assets/images/Chapter4/WebApp/UserGoals/User Goal 7_2.png>)
+
+### Task Flow 4: Seguridad Crítica e Incidencias en Ruta
+
+Objetivo: Avisar sobre imprevistos en la ruta y activar de inmediato los protocolos de auxilio cuando hay una situación de riesgo.
+
+### Pasos del Task Flow:
+
+1. Mientras conduce, el conductor detecta un obstáculo o una emergencia.
+
+2. Entra al módulo de seguridad del Dashboard.
+
+3. Elige una categoría predefinida en "Reporte de Incidencias" para avisar de un retraso.
+
+4. Si el peligro es inminente, mantiene presionado el "Botón de Pánico" por 2 segundos.
+
+5. El sistema lanza una alerta roja al área de emergencias y notifica a los padres y al administrador.
+
+6. Una vez resuelto, el conductor revisa lo ocurrido en su "Bitácora de Viajes".
+
+##### User Goal 8: Como conductor, quiero poder avisar de una incidencia o del avance de la ruta mientras viajo.
+
+![UserGoal8](<assets/images/Chapter4/WebApp/UserGoals/User Goal 8.png>)
+
+##### User Goal 9: Como conductor, quiero contar con una forma inmediata de avisar una emergencia.
+
+![UserGoal9](<assets/images/Chapter4/WebApp/UserGoals/User Goal 9.png>)
+
+### B. Segmento: Padres de Familia
+
+### Task Flow 5: Monitoreo Parental y Supervisión Visual
+
+Objetivo: Que el padre pueda ver dónde está el vehículo escolar y cómo va todo dentro de él durante el trayecto.
+
+### Pasos del Task Flow:
+
+1. El padre inicia sesión y entra al seguimiento del bus de su hijo.
+
+2. El sistema muestra el mapa con la "Ubicación en Tiempo Real" del vehículo.
+
+3. El usuario activa el switch de "Acceso a la Cámara" para abrir la transmisión de video.
+
+4. El sistema valida los permisos y despliega el video en vivo.
+
+5. Cuando el bus entra al radio de 500 m, el sistema muestra la "Alerta de Proximidad".
+
+#### User Goal 10: Como padre de familia, quiero conocer en tiempo real la ubicación y la situación del vehículo.
+
+![UserGoal10](<assets/images/Chapter4/WebApp/UserGoals/User Goal 10.png>)
+
+#### User Goal 11: Como padre de familia, quiero que me lleguen las notificaciones sin tener que estar preguntando.
+
+![UserGoa11](<assets/images/Chapter4/WebApp/UserGoals/User Goal 11.png>)
+
+### Task Flow 6: Auditoría de Asistencia y Verificación de Entrega
+
+Objetivo: Comprobar que el servicio se cumplió y poder revisar el historial de seguridad del estudiante.
+
+### Pasos del Task Flow:
+
+1. Al padre le llega en pantalla la "Confirmación de Llegada" del bus a destino.
+
+2. El sistema deja registrado el cierre del viaje en el perfil del alumno.
+
+3. El usuario entra al módulo de "Historial de Asistencia".
+
+4. Elige el rango de fechas para revisar los horarios de recogida y entrega.
+
+5. El sistema arma un reporte visual con la puntualidad del servicio.
+
+#### User Goal 12: Como padre de familia, quiero confirmar que mi hijo abordó el transporte y que quedó registrado.
+
+![UserGoal12](<assets/images/Chapter4/WebApp/UserGoals/User Goal 12.png>)
+
 #### 4.4.3. Web Applications Mock-ups
 
+#### Versión Desktop Mockups - Acceso y Configuración (Universal)
+ 
+##### Autenticación y Acceso
+ 
+Registro de Cuenta
+Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/universalregister.png" width="900px" alt="register">
+
+Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/universallogin.png" width="900px" alt="login">
+
+Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change1.png" width="900px" alt="password-change">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change2.png" width="900px" alt="password-change">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/password-change3.png" width="900px" alt="password-change">
+
+#### Versión Desktop Mockups - Administradores
+ 
+##### Configuración y Gestión Administrativa
+ 
+Panel de Inicio y Navegación
+ 
+Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/home-dashboard.png" width="900px" alt="home-dashboard">
+
+Asignación de Roles
+ 
+Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/role-assignment.png" width="900px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+ 
+Contratación de Planes
+ 
+Pantalla comercial donde el dueño de la flota o la institución elige y contrata el plan que mejor se ajusta a su número de buses y alumnos.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/hire-plan.png" width="900px" alt="hire-plan">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/hire-plan2.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas
+ 
+Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+ 
+Alta y Gestión de Alumnos
+ 
+Vista conectada a la API desde donde se ve el listado completo de estudiantes, se registran nuevos alumnos y se actualiza la información de los ya existentes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/student-management.png" width="900px" alt="student-management">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/student-management2.png" width="900px" alt="student-management">
+
+Registro de Conductores
+ 
+Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/driver-registration1.png" width="900px" alt="driver-registration">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/driver-registration2.png" width="900px" alt="driver-registration">
+
+Registro de Padres
+ 
+Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/parent-registration.png" width="900px" alt="driver-registration">
+
+Creación y Edición de Rutas
+ 
+Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/route-creation.png" width="900px" alt="route-creation">
+
+#### Versión Desktop Mockups - Conductores
+ 
+##### Operación de Viaje
+ 
+Inicio de Trayecto
+ 
+Pantalla desde la que el conductor confirma que va a empezar el recorrido; al presionar "Iniciar Viaje" se activa el rastreo GPS que verán los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/start.png" width="900px" alt="start-trip">
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/start-trip.png" width="900px" alt="start-trip">
+
+Marcación de Abordaje
+ 
+Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/boarding-check.png" width="900px" alt="boarding-check">
+
+Finalización de Ruta
+ 
+Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/route-end.png" width="900px" alt="route-end">
+
+Bitácora de Viajes Histórica
+ 
+Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/trip-log.png" width="900px" alt="trip-log">
+
+##### Seguridad y Alertas
+ 
+Reporte de Incidencias en Ruta
+ 
+Módulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/incident-report.png" width="900px" alt="incident-report">
+Botón de Pánico
+ 
+Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/panic-button.png" width="900px" alt="panic-button">
+
+#### Versión Desktop Mockups - Padres de Familia
+ 
+##### Monitoreo y Supervisión
+ 
+Rastreo en Tiempo Real
+ 
+Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/real-time-tracking.png" width="900px" alt="real-time-tracking">
+
+Acceso a Cámara Interna
+ 
+Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/camera-access.png" width="900px" alt="camera-access">
+
+Alerta de Proximidad
+ 
+Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/proximity-alert.png" width="900px" alt="proximity-alert">
+
+Confirmación de Llegada
+ 
+Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/arrival-confirmation.png" width="900px" alt="arrival-confirmation">
+
+Historial de Asistencia
+ 
+Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Desktop/attendance-history.png" width="900px" alt="attendance-history">
+
+#### Versión Mobile Mockups - Acceso y Configuración (Universal)
+ 
+##### Autenticación y Acceso
+ 
+Registro de Cuenta
+Pantalla de registro única en la que la persona elige su rol (Padre, Conductor o Administrador) y llena sus datos básicos. Es el primer paso para que cualquier tipo de usuario empiece a usar la plataforma.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/universalregister.png" width="400px" alt="register">
+
+Inicio de Sesión (Login) Pantalla de acceso donde se ingresan las credenciales. Una vez validado el rol, el sistema envía automáticamente al usuario a su panel correspondiente.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/universallogin.png" width="400px" alt="login">
+
+Cambio de Contraseña Flujo de seguridad para recuperar el acceso: primero se verifica la identidad con un código y solo después se habilita el cambio de credenciales, para asegurar que sea el dueño de la cuenta quien lo haga.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/password-change.png" width="900px" alt="password-change">
+
+#### Versión Mobile Mockups - Administradores
+ 
+##### Configuración y Gestión Administrativa
+ 
+Panel de Inicio y Navegación
+ 
+Panel principal que reúne todos los módulos del sistema en una barra lateral, para moverse rápido entre rutas, alumnos y reportes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/home-dashboard.png" width="900px" alt="home-dashboard">
+
+Asignación de Roles
+ 
+Sección solo para el administrador, donde se configuran los permisos de cada usuario registrado para proteger la integridad de la información.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/role-assignment.png" width="400px" alt="role-assignment">
+
+##### Gestión Comercial y Planes
+ 
+Contratación de Planes
+ 
+Pantalla comercial donde el dueño de la flota o la institución elige y contrata el plan que mejor se ajusta a su número de buses y alumnos.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/hire-plan.png" width="900px" alt="hire-plan">
+
+Consulta de Precios y Tarifas
+ 
+Vista informativa con el detalle de costos y tarifas vigentes para operar el servicio de transporte escolar.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/pricing-query.png" width="900px" alt="pricing-query">
+
+##### Gestión de Logística y Alumnos
+ 
+Alta y Gestión de Alumnos
+ 
+Vista conectada a la API desde donde se ve el listado completo de estudiantes, se registran nuevos alumnos y se actualiza la información de los ya existentes.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/student-managament.png" width="900px" alt="student-management">
+
+Registro de Conductores
+ 
+Formulario para crear el perfil de un conductor, guardando sus datos personales, su licencia y un contacto de emergencia.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/driver-registration.png" width="900px" alt="driver-registration">
+
+Registro de Padres
+ 
+Formulario para registrar al padre de familia, con sus datos personales y el estudiante del que es apoderado.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/parent-registration.png" width="400px" alt="driver-registration">
+
+Creación y Edición de Rutas
+ 
+Herramienta con la que el administrador diseña el recorrido: traza la ruta, ubica las paradas y calcula los tiempos estimados de viaje.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/route-creation.png" width="400px" alt="route-creation">
+
+#### Versión Mobile Mockups - Conductores
+ 
+##### Operación de Viaje
+ 
+Inicio de Trayecto
+ 
+Pantalla desde la que el conductor confirma que va a empezar el recorrido; al presionar "Iniciar Viaje" se activa el rastreo GPS que verán los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/start-trip.png" width="800px" alt="start-trip">
+
+Marcación de Abordaje
+ 
+Listado interactivo de alumnos organizado por parada, donde el conductor marca con un toque quién subió al bus y el estado de asistencia se actualiza al instante.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/boarding-check.png" width="400px" alt="boarding-check">
+
+Finalización de Ruta
+ 
+Pantalla de cierre en la que el conductor da por terminado el viaje, confirmando que cada alumno bajó en su destino.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/route-end.png" width="400px" alt="route-end">
+
+Bitácora de Viajes Histórica
+ 
+Resumen diario de los viajes hechos, con las horas de inicio y fin y las incidencias registradas en cada turno.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/trip-log.png" width="400px" alt="trip-log">
+
+##### Seguridad y Alertas
+ 
+Reporte de Incidencias en Ruta
+ 
+M�dulo para avisar de imprevistos —tráfico, accidentes, fallas mecánicas— que dispara una alerta automática hacia la central y hacia los padres.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/incident-report.png" width="400px" alt="incident-report">
+
+Botón de Pánico
+ 
+Botón de emergencia de un solo clic que manda de inmediato una alerta a los administradores junto con la ubicación exacta del vehículo.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/panic-button.png" width="400px" alt="panic-button">
+
+#### Versión Mobile Mockups - Padres de Familia
+ 
+##### Monitoreo y Supervisión
+ 
+Rastreo en Tiempo Real
+ 
+Mapa interactivo donde el padre sigue el recorrido del bus y ve cuánto falta para que llegue a su parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/real-time-tracking.png" width="400px" alt="real-time-tracking">
+
+Acceso a Cámara Interna
+ 
+Función de video en vivo del interior del vehículo, pensada como una capa extra de tranquilidad sobre la seguridad del niño.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/camera-access.png" width="400px" alt="camera-access">
+
+Alerta de Proximidad
+ 
+Aviso visual que se activa cuando el bus se acerca al hogar (por ejemplo, a 500 metros), como señal de que ya es hora de salir hacia la parada.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/proximity-alert.png" width="400px" alt="proximity-alert">
+
+Confirmación de Llegada
+ 
+Notificación automática que le llega al padre cuando el vehículo llega bien al colegio o al destino final.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/arrival-confirmation.png" width="400px" alt="arrival-confirmation">
+
+Historial de Asistencia
+ 
+Calendario donde el padre revisa los días de asistencia, la hora de abordaje y las incidencias de viajes anteriores.
+ 
+<img src="assets/images/Chapter4/WebApp/Mockups/Mobile/attendance-history.png" width="400px" alt="attendance-history">
+
 #### 4.4.4. Web Applications User Flow Diagrams
+
+### User Flows Desktop
+ 
+#### Desktop User Flow 1:
+ 
+Relacionado con User Goal 1:
+Como suscriptor, quiero entrar a mi cuenta en la aplicación.
+ 
+El usuario entra a la pantalla de login y coloca su correo y contraseña. Si los datos son válidos, el sistema lo valida y lo manda directo a "Inicio" con el menú lateral ya activo. Si todavía no tiene cuenta, puede ir a la sección de registro, llenar sus datos personales y guardar el nuevo usuario para después iniciar sesión con normalidad.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/UserFlow1.png" width="1500px" alt="ug1">
+
+#### Desktop User Flow 2:
+ 
+Relacionado con User Goal 2:
+Como suscriptor, quiero cambiar mi contraseña para que mi cuenta se mantenga segura.
+ 
+Desde la pantalla de login, el usuario elige "Cambio de Contraseña". Ahí el sistema le pide su correo registrado y la contraseña nueva; al confirmar, actualiza las credenciales y lo deja entrar de nuevo con la contraseña que acaba de definir. Así no pierde el acceso aunque se le haya olvidado la anterior.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow2.png" width="900px" alt="ug2">
+
+#### Desktop User Flow 3:
+ 
+Relacionado con User Goal 3:
+Como administrador, quiero dar de alta nuevos conductores y armarles sus rutas.
+ 
+Después de iniciar sesión, el administrador entra a "Registro de Conductor" y carga los datos del personal operativo. Luego pasa a "Creación de Rutas", donde marca los puntos de parada, calcula los tiempos estimados y le asigna la ruta al conductor que acaba de registrar. El sistema confirma que todo se guardó y actualiza el panel de gestión.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow3.png" width="900px" alt="ug3">
+
+#### Desktop User Flow 4:
+ 
+Relacionado con User Goal 4:
+Como administrador, quiero tener los roles y las rutas organizados en un solo lugar.
+ 
+Desde el panel principal, el administrador entra a "Asignación de Roles" y define, para cada miembro del equipo, si tiene permiso de edición o solo de lectura. Después puede revisar y reasignar rutas desde una vista centralizada, verificando que cada conductor tenga su ruta bien vinculada.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow4.png" width="900px" alt="ug4">
+
+#### Desktop User Flow 5:
+ 
+Relacionado con User Goal 5:
+Como administrador, quiero acceder a más funciones de la aplicación cambiándome a un plan superior.
+ 
+El administrador entra a "Contratación del Plan" y ve las opciones de suscripción según el tamaño de su flota. Al elegir una, pasa a la pasarela de pagos, ingresa sus datos financieros y confirma la contratación. Una vez que el pago se procesa, el sistema habilita los beneficios del nuevo plan y el administrador puede ver el balance de costos en "Consulta de Precios".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow5.png" width="900px" alt="ug5">
+
+#### Desktop User Flow 6:
+ 
+Relacionado con User Goal 6:
+Como conductor, quiero saber en todo momento qué alumnos van en la ruta.
+ 
+El conductor inicia sesión y, desde su panel, elige la ruta que tiene asignada. Presiona "Iniciar Trayecto" y con eso se activa la transmisión GPS. El sistema carga solo la lista de alumnos de esa ruta. En cada parada, ubica al estudiante y registra el abordaje con "Marcación de Abordaje". Al llegar al destino, cierra el trayecto presionando "Finalización de Ruta".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow6.png" width="900px" alt="ug6">
+
+#### Desktop User Flow 7:
+ 
+Relacionado con User Goal 7:
+Como conductor, quiero que mi servicio se vea más profesional y confiable.
+ 
+El conductor entra a su "Bitácora de Viajes" y ahí encuentra el historial completo de sus trayectos: horarios, estudiantes transportados e incidencias. Con esa información puede detectar patrones, mejorar su puntualidad y tener un registro formal de su desempeño frente al administrador.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow7.png" width="900px" alt="ug7">
+
+#### Desktop User Flow 8:
+ 
+Relacionado con User Goal 8:
+Como conductor, quiero poder avisar de una incidencia o del avance de la ruta mientras viajo.
+ 
+Mientras hace una ruta, el conductor detecta un imprevisto y entra al módulo de seguridad del Dashboard. Elige una categoría predefinida en "Reporte de Incidencias" (retraso, desvío, obstáculo, etc.) y envía el aviso. El sistema lo hace llegar al instante al administrador y a los padres afectados.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow8.png" width="900px" alt="ug8">
+
+#### Desktop User Flow 9:
+ 
+Relacionado con User Goal 9: Como conductor, quiero contar con una forma inmediata de avisar una emergencia.
+ 
+Si durante la ruta se presenta un peligro inminente, el conductor mantiene presionado el "Botón de Pánico" por 2 segundos. Eso dispara automáticamente una alerta roja hacia los servicios de emergencia, el administrador y los padres de todos los alumnos que van a bordo. Una vez resuelto el incidente, el conductor puede revisar el evento en su Bitácora de Viajes.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow9.png" width="900px" alt="ug9">
+
+#### Desktop User Flow 10:
+ 
+Relacionado con User Goal 10:
+Como padre de familia, quiero conocer en tiempo real la ubicación y la situación del vehículo.
+ 
+El padre inicia sesión y entra al seguimiento del bus de su hijo. El sistema le muestra el mapa con la ubicación del vehículo en tiempo real, y puede activar "Acceso a la Cámara" para ver la transmisión en vivo del interior de la unidad. Cuando el bus está a 500 metros del destino, el sistema le manda automáticamente una "Alerta de Proximidad".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/userflow10.png" width="900px" alt="ug10">
+
+#### Desktop User Flow 11:
+ 
+Relacionado con User Goal 11: Como padre de familia, quiero que me lleguen las notificaciones sin tener que estar preguntando.
+ 
+El padre recibe notificaciones automáticas en distintos momentos del trayecto: cuando el bus arranca la ruta, cuando se acerca a su parada y cada vez que el conductor reporta una incidencia. Estas alertas le llegan solas, sin que tenga que estar revisando la aplicación todo el tiempo.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/UserFlow11.png" width="1500px" alt="ug11">
+
+#### Desktop User Flow 12:
+ 
+Relacionado con User Goal 12:
+Como padre de familia, quiero confirmar que mi hijo abordó el transporte y que quedó registrado.
+ 
+Cuando el conductor marca el abordaje del estudiante, al padre le aparece una "Confirmación de Llegada" con la hora exacta del registro. Ese evento queda guardado en el "Historial de Asistencia", donde el padre puede elegir un rango de fechas para revisar los horarios de recogida y entrega, y el sistema le arma un reporte visual con la puntualidad del servicio.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Desktop/user flow12.png" width="1500px" alt="ug12">
+
+### User Flows Mobile
+ 
+#### Mobile User Flow 1:
+ 
+Relacionado con User Goal 1:
+Como suscriptor, quiero entrar a mi cuenta en la aplicación.
+ 
+El usuario entra a la pantalla de login y coloca su correo y contraseña. Si los datos son válidos, el sistema lo valida y lo manda directo a "Inicio" con el menú lateral ya activo. Si todavía no tiene cuenta, puede ir a la sección de registro, llenar sus datos personales y guardar el nuevo usuario para después iniciar sesión con normalidad.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 1_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 2:
+ 
+Relacionado con User Goal 2:
+Como suscriptor, quiero cambiar mi contraseña para que mi cuenta se mantenga segura.
+ 
+Desde la pantalla de login, el usuario elige "Cambio de Contraseña". Ahí el sistema le pide su correo registrado y la contraseña nueva; al confirmar, actualiza las credenciales y lo deja entrar de nuevo con la contraseña que acaba de definir. Así no pierde el acceso aunque se le haya olvidado la anterior.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 2_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 3:
+ 
+Relacionado con User Goal 3:
+Como administrador, quiero dar de alta nuevos conductores y armarles sus rutas.
+ 
+Después de iniciar sesión, el administrador entra a "Registro de Conductor" y carga los datos del personal operativo. Luego pasa a "Creación de Rutas", donde marca los puntos de parada, calcula los tiempos estimados y le asigna la ruta al conductor que acaba de registrar. El sistema confirma que todo se guardó y actualiza el panel de gestión.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 3_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 4:
+ 
+Relacionado con User Goal 4:
+Como administrador, quiero tener los roles y las rutas organizados en un solo lugar.
+ 
+Desde el panel principal, el administrador entra a "Asignación de Roles" y define, para cada miembro del equipo, si tiene permiso de edición o solo de lectura. Después puede revisar y reasignar rutas desde una vista centralizada, verificando que cada conductor tenga su ruta bien vinculada.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 4_MockUp.png" width="400px" alt="attendance-history">
+
+#### Mobile User Flow 5:
+ 
+Relacionado con User Goal 5:
+Como administrador, quiero acceder a más funciones de la aplicación cambiándome a un plan superior.
+ 
+El administrador entra a "Contratación del Plan" y ve las opciones de suscripción según el tamaño de su flota. Al elegir una, pasa a la pasarela de pagos, ingresa sus datos financieros y confirma la contratación. Una vez que el pago se procesa, el sistema habilita los beneficios del nuevo plan y el administrador puede ver el balance de costos en "Consulta de Precios".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 5_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 6:
+ 
+Relacionado con User Goal 6:
+Como conductor, quiero saber en todo momento qué alumnos van en la ruta.
+ 
+El conductor inicia sesión y, desde su panel, elige la ruta que tiene asignada. Presiona "Iniciar Trayecto" y con eso se activa la transmisión GPS. El sistema carga solo la lista de alumnos de esa ruta. En cada parada, ubica al estudiante y registra el abordaje con "Marcación de Abordaje". Al llegar al destino, cierra el trayecto presionando "Finalización de Ruta".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 6_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 7:
+ 
+Relacionado con User Goal 7:
+Como conductor, quiero que mi servicio se vea más profesional y confiable.
+ 
+El conductor entra a su "Bitácora de Viajes" y ahí encuentra el historial completo de sus trayectos: horarios, estudiantes transportados e incidencias. Con esa información puede detectar patrones, mejorar su puntualidad y tener un registro formal de su desempeño frente al administrador.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 7_MockUp.png" width="900px" alt="attendance-history">
+
+#### Mobile User Flow 8:
+ 
+Relacionado con User Goal 8:
+Como conductor, quiero poder avisar de una incidencia o del avance de la ruta mientras viajo.
+ 
+Mientras hace una ruta, el conductor detecta un imprevisto y entra al módulo de seguridad del Dashboard. Elige una categoría predefinida en "Reporte de Incidencias" (retraso, desvío, obstáculo, etc.) y envía el aviso. El sistema lo hace llegar al instante al administrador y a los padres afectados.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 8_MockUp.png" width="400px" alt="attendance-history">
+
+#### Mobile User Flow 9:
+ 
+Relacionado con User Goal 9:
+Como conductor, quiero contar con una forma inmediata de avisar una emergencia.
+ 
+Si durante la ruta se presenta un peligro inminente, el conductor mantiene presionado el "Botón de Pánico" por 2 segundos. Eso dispara automáticamente una alerta roja hacia los servicios de emergencia, el administrador y los padres de todos los alumnos que van a bordo. Una vez resuelto el incidente, el conductor puede revisar el evento en su Bitácora de Viajes.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 9_MockUp.png" width="400px" alt="attendance-history">
+
+#### Mobile User Flow 10:
+ 
+Relacionado con User Goal 10:
+Como padre de familia, quiero conocer en tiempo real la ubicación y la situación del vehículo.
+ 
+El padre inicia sesión y entra al seguimiento del bus de su hijo. El sistema le muestra el mapa con la ubicación del vehículo en tiempo real, y puede activar "Acceso a la Cámara" para ver la transmisión en vivo del interior de la unidad. Cuando el bus está a 500 metros del destino, el sistema le manda automáticamente una "Alerta de Proximidad".
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 10_MockUp.png" width="400px" alt="attendance-history">
+
+#### Mobile User Flow 11:
+ 
+Relacionado con User Goal 11:
+Como padre de familia, quiero que me lleguen las notificaciones sin tener que estar preguntando.
+ 
+El padre recibe notificaciones automáticas en distintos momentos del trayecto: cuando el bus arranca la ruta, cuando se acerca a su parada y cada vez que el conductor reporta una incidencia. Estas alertas le llegan solas, sin que tenga que estar revisando la aplicación todo el tiempo.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 11_MockUp.png" width="400px" alt="attendance-history">
+
+#### Mobile User Flow 12:
+ 
+Relacionado con User Goal 12:
+Como padre de familia, quiero confirmar que mi hijo abordó el transporte y que quedó registrado.
+ 
+Cuando el conductor marca el abordaje del estudiante, al padre le aparece una "Confirmación de Llegada" con la hora exacta del registro. Ese evento queda guardado en el "Historial de Asistencia", donde el padre puede elegir un rango de fechas para revisar los horarios de recogida y entrega, y el sistema le arma un reporte visual con la puntualidad del servicio.
+ 
+<img src="assets/images/Chapter4/WebApp/UserFlow/Mobile/UserGoal 12_MockUp.png" width="400px" alt="attendance-history">
 
 ### 4.5. Web Applications Prototyping
 
@@ -1300,6 +1984,7 @@ Calendario donde el padre revisa los días de asistencia, la hora de abordaje y 
 #### 4.6.1. Design-Level Event Storming
 
 Plantilla de colores:
+
 ![Plantilla](assets/images/Chapter4/EventStorming/colors.png)
  
 1. Unstructured Exploration
