@@ -2894,6 +2894,34 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 | Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
 
 ##### 5.2.1.3. Sprint Backlog 1
+El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores, y se desarrollaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design(DDD).
+
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint-Backlog-1.png)
+
+**URL del Board:** [KidTrack - Sprint 1]()
+
+| Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
+| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
+| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
+| **Story Id**         | **Story Title**     | **Task Id**  | **Task Title**                                    | **Task Description**                                                                     | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing pageprincipal                       | 1          |      Nickolas     | Done        |
+| US21  | Consulta de propuesta y beneficios | T02          | Estructura base de seccion hero, funcionalidades y roles| Implementar la estructura inicial de las 3 secciones                        | 1          |      Nickolas     | Done        |
+| US21  | Consulta de propuesta y beneficios | T03          | Implementar seccion hero | Incorporar la informacion principal de la plataforma y los botones que nos llevaran a otras secciones                       | 2          |     Nickolas      | Done        |
+| US21  | Consulta de propuesta y beneficios | T04          | Implementar seccion funcionalidades  | Incorporar cards explicando las funcionalidades de la plataforma                       | 2          |     Nickolas      | Done        |
+| US21  | Consulta de propuesta y beneficios | T05          | Implementar seccion Roles del sistema  | Incorporar cards explicando los roles que habran en la plataforma y que lugar ocupara cada uno                       | 2          |    Nickolas       | Done        |
+| US21  | Consulta de propuesta y beneficios | T06          | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 1 |     Jose      | Done        |
+| US22  | Comparación de planes              | T07                  | Estructurar seccion planes | Implementar la estructura inicial de la seccion planes                      | 1 |     Jose       | Done        |
+| US22  | Comparación de planes              | T08                  | Implementar seccion plan basico   | Se agregara una cards con la informacion del plan basico y un boton que funcionara si se selecciona dicho plan                       | 1          |    Edo       | Done        |
+| US22  | Comparación de planes              | T09                  | Implementar seccion plan Intermedio   | Se agregara una cards con la informacion del plan intermedio y un boton que funcionara si se selecciona dicho plan                        | 1          |   Edo        | Done        |
+| US22  | Comparación de planes              | T010                  | Implementar seccion plan Completo | Se agregara una cards con la informacion del plan completo y un boton que funcionara si se selecciona dicho plan                        | 1          |     Edo      | Done        |
+| US22  | Comparación de planes              | T011                  | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |     Jose      | Done        |
+| US23  | Consulta del funcionamiento y acceso al servicio | T012                  | Estructurar seccion de como funciona la plataforma | Implementar la estructura inicial de la seccion de como funciona la plataforma                       | 2          |      Salvador     | Done       |
+| US23  | Consulta del funcionamiento y acceso al servicio | T013                  | Implementar seccion de como funciona la plataforma | Se agregara la informacion mediante pasos de un workflow simple de como se usa la plataforma                       | 1          |     Salvador     | Done       |
+| US23  | Consulta del funcionamiento y acceso al servicio                            | T014                  | Aplicar tipografia y guia de estilos del modelo de negocio   | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |    Jose       | Done        |
+| US26  | Uso en inglés y español i18n                     | T015                  | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto.                       | 2          |    Matias       | Done       |
+| US26  | Uso en inglés y español i18n                     | T016                  | Crear diccionario en español | Definir textos de la Landing Page en español.                       | 1          |    Matias      | Done       |
+| US26  | Uso en inglés y español i18n                     | T017                  | Crear diccionario en inglés | Definir traducciones de la Landing Page en inglés.                       | 1          |    Matias       | Done       |
+| US26  | Uso en inglés y español i18n                     | T018                  | Implementar boton de seleccion de idioma | Agregar boton cambio de idioma ES/EN en la interfaz.                       | 3          |    Jose       | Done       |
 ##### 5.2.1.4. Development Evidence for Sprint Review
 **URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
 
