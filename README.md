@@ -349,11 +349,11 @@ La elaboración de estas fichas es el resultado de una síntesis detallada entre
 
 #### Persona 1: Drivers
 
-![Conductor - Arturo Núñez](./assets/images/Chapter2/Arturo%20Núñez%20segmento.png)
+![Conductor - Arturo Núñez](assets/images/Chapter2/Arturo%20Núñez%20Segmento.png)
 ---
 #### Persona 2: Parents
 
-![Padre - Fernando Nery](./assets/images/Chapter2/Fernando%20Nery%20segmento.png)
+![Padre - Fernando Nery](assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
 
 #### 2.3.2. User Task Matrix
 En esta sección se presenta la matriz de tareas de usuario, la cual consolida las actividades fundamentales que tanto el conductor (Arturo Núñez) como el padre de familia (Fernando Nery) ejecutan para asegurar un traslado escolar exitoso.
