@@ -110,9 +110,9 @@ Proyecto
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
         - [Identificación de Competidores](#identificación-de-competidores)
-            - [Life360](#life360)
-            - [Find My Kids](#find-my-kids)
-            - [OnTrack School](#ontrack-school)
+            - [OnTrack School](#onTrack-school)
+            - [SafeRoute Parent](#safesoute-parent)
+            - [BusRight](#busright)
         - [2.1.1 Análisis Competitivo - Landscape](#211-análisis-competitivo---landscape)
         - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2. Entrevistas](#22-entrevistas)
@@ -390,19 +390,19 @@ En esta sección se realizará la identificación de los principales competidore
    <td colspan="2"></td>
    <td>
     <strong>KidTrack</strong><br>
-    <img src="./assets/images/Chapter2/KidTrack.png" alt="KidTrack" width="100">
+    <img src="./assets/images/KidTrack.jpg" alt="KidTrack" width="100">
    </td>
    <td>
     <strong>OnTrack School</strong><br>
-    <img src="./assets/images/Chapter2/OnTrackSchool.png" alt="OnTrack School" width="100">
+    <img src="./assets/images/OnTrackSchool.jpg" alt="OnTrack School" width="100">
    </td>
    <td>
     <strong>SafeRoute Parent</strong><br>
-    <img src="./assets/images/Chapter2/SafeRouteParent.png" alt="SafeRoute Parent" width="100">
+    <img src="./assets/images/SafeRouteParent.jpg" alt="SafeRoute Parent" width="100">
    </td>
    <td>
     <strong>BusRight</strong><br>
-    <img src="./assets/images/Chapter2/BusRight.png" alt="BusRight" width="100">
+    <img src="./assets/images/BusRight.jpg" alt="BusRight" width="100">
    </td>
   </tr>
   <!-- Perfil -->
@@ -411,16 +411,13 @@ En esta sección se realizará la identificación de los principales competidore
     <td><strong>Overview</strong></td>
     <td> Plataforma de monitoreo y gestion de transporte escolar</td>
     <td>
-      Plataforma de gestión de transporte escolar para colegios,
-      instituciones educativas y empresas de transporte.
+      Plataforma de gestión de transporte escolar para colegios y empresas de transporte.
     </td>
     <td>
-      Plataforma de monitoreo y seguridad del transporte escolar
-      enfocada principalmente en padres de familia.
+      Plataforma de monitoreo y seguridad del transporte escolar enfocada principalmente en padres de familia.
     </td>
     <td>
-      Plataforma integral para la gestión y optimización del
-      transporte escolar y sus operaciones.
+      Plataforma integral para la gestión y optimización del transporte escolar enfocados en colegios locales.
     </td>
   </tr>
 
@@ -498,18 +495,15 @@ En esta sección se realizará la identificación de los principales competidore
 
   <tr>
     <td><strong>Precios y Costos</strong></td>
-    <td>Suscripcion mensual de entre S/.9.99 y S/.49.99</td>
+    <td>Suscripcion mensual de entre $.9.99 y $.49.99</td>
     <td>
-      Precios personalizados según los servicios y características
-      contratados por cada institución.
+      Precios personalizados según los servicios y características contratados por cada institución.
     </td>
     <td>
-      Aplicación gratuita para padres. No presenta información
-      pública clara sobre los precios para instituciones u operadores.
+      Aplicación gratuita para padres. 
     </td>
     <td>
-      Precios personalizados según el tamaño y las necesidades
-      de cada organización.
+      Precios personalizados según el tamaño y las necesidades de cada organización.
     </td>
   </tr>
 
@@ -517,16 +511,13 @@ En esta sección se realizará la identificación de los principales competidore
     <td><strong>Canales de Distribución (Web y/o Móvil)</strong></td>
     <td> Plataforma web</td>
     <td>
-      Plataforma web y aplicaciones móviles para padres,
-      conductores y administradores.
+      Plataforma web y aplicaciones móviles.
     </td>
     <td>
-      Aplicación móvil para padres y herramientas digitales
-      para operadores de transporte.
+      Aplicación móvil.
     </td>
     <td>
-      Plataforma web y aplicaciones móviles para administradores,
-      conductores y padres.
+      Plataforma web y aplicacion móvil.
     </td>
   </tr>
 
@@ -534,14 +525,12 @@ En esta sección se realizará la identificación de los principales competidore
   <tr>
     <td rowspan="4"><strong>Análisis SWOT</strong></td>
     <td><strong>Fortalezas</strong></td>
-    <td>Sistema enfocado en seguimiento de viajes, control de viajes y agendas y gestion</td>
+    <td>Sistema enfocado en seguimiento de viajes, control de viajes, agendas, comunicación y gestión</td>
     <td>
-      Amplia propuesta de valor, integración con servicios escolares
-      y presencia en el mercado latinoamericano.
+      Amplia propuesta de valor, integración con servicios escolares y presencia en el mercado latinoamericano.
     </td>
     <td>
-      Fuerte enfoque en seguridad, monitoreo en tiempo real
-      y experiencia de los padres.
+      Fuerte enfoque en seguridad con monitoreo avanzado en tiempo real.
     </td>
     <td>
       Plataforma completa con optimización de rutas,
@@ -553,54 +542,48 @@ En esta sección se realizará la identificación de los principales competidore
     <td><strong>Debilidades</strong></td>
     <td>Modelo de negocio nuevo en un mercado con mucha incertidumbre</td>
     <td>
-      Puede resultar complejo para pequeños operadores y depende
-      principalmente de instituciones educativas.
+      Puede resultar complejo para pequeños operadores y depende principalmente de instituciones educativas.
     </td>
     <td>
-      Se concentra principalmente en monitoreo y seguridad,
-      con menor énfasis en la gestión integral del transporte.
+      Se concentra principalmente en monitoreo y seguridad, con menor énfasis en la gestión integral del transporte.
     </td>
     <td>
-      Está orientado principalmente a organizaciones grandes
-      y al mercado estadounidense.
+      Está orientado principalmente a organizaciones grandes y al mercado estadounidense.
     </td>
   </tr>
 
   <tr>
     <td><strong>Oportunidades</strong></td>
-    <td>Gran</td>
+    <td>Operar en un mercado donde aun no se ha desarrollado a profundidad un modelo de negocio similar</td>
     <td>
-      Expandirse en Latinoamérica y ofrecer más servicios
+      Posibilidad de expandirse en Latinoamérica y ofrecer más servicios
       para empresas de transporte escolar.
     </td>
     <td>
-      Incorporar funcionalidades de gestión de rutas,
-      alumnos, conductores y operaciones.
+      Capacidad de incorporar eficientes funcionalidades de gestión de rutas para alumnos y conductores.
     </td>
     <td>
-      Expandirse hacia nuevos mercados e incorporar inteligencia
-      artificial para optimizar rutas y operaciones.
+      Capacidad de expandirse hacia nuevos mercados mediante la incorporacion de inteligencia artificial.
     </td>
   </tr>
 
   <tr>
     <td><strong>Amenazas</strong></td>
-    <td></td>
+    <td>Se proyecta trabajar en un mercado donde la informalidad esta establecida y el modelo de negocio aun no es lo suficientemente atractivo.</td>
     <td>
-      Nuevas plataformas SaaS, soluciones locales de transporte
-      y sistemas GPS de menor costo.
+      Nuevas plataformas SaaS, soluciones locales de transporte y sistemas GPS de menor costo.
     </td>
     <td>
       Competidores que integren monitoreo, gestión, pagos
       y comunicación en una sola plataforma.
     </td>
     <td>
-      Software local, soluciones internas de colegios y nuevos
-      competidores especializados en transporte escolar.
+      Ofertas en aumento de software enfocados en colegios.
     </td>
   </tr>
 </table>
 
+    
 #### 2.1.2. Estrategias y tácticas frente a competidores
 
 En base al analisis competitivo realizado, se plantearan las siguientes estrategias y tácticas para hacer frente a nuestros competidores:
@@ -638,6 +621,7 @@ En base al analisis competitivo realizado, se plantearan las siguientes estrateg
 #### Estrategia de preparación tecnológica a futuro
 
 - La arquitectura de KidTrack estará diseñada considerando futuras integraciones con tecnologías IoT, como sensores, cámaras y otros dispositivos de monitoreo.
+
 ### 2.2. Entrevistas
 
 #### 2.2.1 Diseño de entrevistas
@@ -690,6 +674,9 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 - ¿Qué funcionalidad tendría que ofrecer una aplicación de transporte escolar para que realmente consideres utilizarla diariamente?
 - ¿Qué tan dispuesto estarías a usar una herramienta de monitoreo de transporte escolar?
 
+
+
+
 #### 2.2.2. Registro de entrevistas
 
 #### Entrevista 1: 
@@ -723,6 +710,7 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 #### Validación del Arquetipo
 ---
 
+
 #### 2.2.3. Análisis de entrevistas
 
 #### Segmento Objetivo 1: Conductores de Transporte Escolar
@@ -732,11 +720,7 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 
 | Característica                         | Resultado | Sustento                                                       |
 | -------------------------------------- | --------- | -------------------------------------------------------------- |
-| Texto | % | |
-| Texto | % | |
-| Texto | % | |
-| Texto | % | |
-| Texto | % | |
+| - | - | - |
 
 #### Hallazgo
 
@@ -744,41 +728,27 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 
 | Herramienta / Canal                                | Porcentaje |
 | -------------------------------------------------- | ---------- |
-| Texto | % |
-| Texto | % |
-| Texto | % |
-| Texto | % |
+| - | - |
+
 
 #### Principales Problemas Detectados (Pain Points)
 
 | Problema identificado                           | Porcentaje |
 | ----------------------------------------------- | ---------- |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
+| -| - |
+
 
 #### Necesidades Funcionales Prioritarias
 
 | Necesidad mencionada                                    | Porcentaje |
 | ------------------------------------------------------- | ---------- |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
+| - | - |
 
 #### Características Subjetivas del Segmento
 
 | Rasgo detectado                            | Porcentaje |
 | ------------------------------------------ | ---------- |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
+| - | - |
 
 ---
 
@@ -790,11 +760,7 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 
 | Característica                         | Resultado | Sustento                                                       |
 | -------------------------------------- | --------- | -------------------------------------------------------------- |
-| Característica | Resultado | Sustento |
-| Característica | Resultado | Sustento |
-| Característica | Resultado | Sustento |
-| Característica | Resultado | Sustento |
-| Característica | Resultado | Sustento |
+| - | - | - |
 
 #### Hallazgo
 
@@ -802,41 +768,28 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 
 | Herramienta / Canal                                | Porcentaje |
 | -------------------------------------------------- | ---------- |
-| Herramienta / Canal | % |
-| Herramienta / Canal | % |
-| Herramienta / Canal | % |
-| Herramienta / Canal | % |
+| - | - |
+
 
 #### Principales Problemas Detectados (Pain Points)
 
 | Problema identificado                           | Porcentaje |
 | ----------------------------------------------- | ---------- |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
-| Problema identificado| % |
+| -| - |
+
 
 #### Necesidades Funcionales Prioritarias
 
 | Necesidad mencionada                                    | Porcentaje |
 | ------------------------------------------------------- | ---------- |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
-| Necesidad mencionada | % |
+| - | - |
+
 
 #### Características Subjetivas del Segmento
 
 | Rasgo detectado                            | Porcentaje |
 | ------------------------------------------ | ---------- |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
-| Rasgo detectado | % |
+| - | - |
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
