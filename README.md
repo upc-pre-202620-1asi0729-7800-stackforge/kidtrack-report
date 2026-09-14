@@ -190,6 +190,40 @@ Proyecto
 ---
 ## Student Outcome
 
+**ABET – EAC - Student Outcome 3:**  Capacidad de comunicarse efectivamente con un rango de audiencias
+
+<table>
+ <tr>
+    <th colspan="2">Criterio Específico</th>
+    <th colspan="10">Acciones Realizadas</td>
+    <th colspan="2">Conclusiones</td>
+ </tr>
+ <tr>
+    <td colspan="2">Comunica oralmente con efectividad a diferentes rangos de audiencia.
+    </th>
+    <td colspan="10">
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:<br><br>
+    <td colspan="2">
+    AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.</td>
+ </tr>
+ <tr>
+    <td colspan="2">Comunica por escrito con efectividad a diferentes rangos de audiencia.
+    </th>
+    <td colspan="10">
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:<br><br><b> </b> 
+    <td colspan="2"> AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.</td>
+ </tr>
+
+  </table>
+
 ## Capítulo I: Introducción
 
 ### 1.1. Startup Profile
