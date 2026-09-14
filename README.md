@@ -2881,7 +2881,18 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 
 
 
-##### 5.2.1.2. Aspect Leaders and Collaborators
+#### 5.2.1.2. Aspect Leaders and Collaborators
+
+De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
+| ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | C                          | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                          | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | C                          | L                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | L                          | C                  | C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
+
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
 ##### 5.2.1.5. Execution Evidence for Sprint Review
