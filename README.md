@@ -566,8 +566,44 @@ En esta sección se realizará la identificación de los principales competidore
     </td>
   </tr>
 </table>
-#### 2.1.2 Estrategias y tácticas frente a competidores
 
+#### 2.1.2. Estrategias y tácticas frente a competidores
+
+En base al analisis competitivo realizado, se plantearan las siguientes estrategias y tácticas para hacer frente a nuestros competidores:
+
+#### Enfoque en la especialización del problema
+
+- KidTrack se enfocará específicamente en el transporte escolar, incorporando herramientas diseñadas para las necesidades de este sector, como el control de abordaje, la administración de rutas y el registro de incidencias.
+- De esta manera, la plataforma busca atender aspectos operativos y de seguridad que normalmente no son considerados por las aplicaciones convencionales de geolocalización.
+
+#### Estrategia de digitalización del sector no estructurado
+
+- La solución estará dirigida principalmente a transportistas independientes que actualmente gestionan sus servicios mediante WhatsApp, llamadas telefónicas y procesos manuales.
+- KidTrack ofrecerá una plataforma sencilla y fácil de utilizar, permitiendo digitalizar estas actividades sin requerir conocimientos técnicos avanzados ni procesos complejos de implementación.
+
+#### Diferenciación mediante simplicidad y accesibilidad
+
+- Se priorizará una experiencia simple, intuitiva y de bajo costo, diferenciándose de plataformas corporativas más complejas, como OnTrack School.
+- La interfaz estará diseñada especialmente para reducir las tareas administrativas del conductor y facilitar su uso durante la operación diaria.
+
+#### Estrategia de confianza y seguridad para los padres
+
+- KidTrack buscará disminuir la incertidumbre de los padres mediante notificaciones automáticas sobre el abordaje, seguimiento del recorrido y alertas en tiempo real.
+- Esto permitirá reemplazar la comunicación informal y dispersa por un sistema organizado que proporcione información clara, oportuna y confiable sobre el traslado de los estudiantes.
+
+#### Estrategia de crecimiento progresivo y escalabilidad
+
+- La plataforma contará con planes escalonados, como Básico, Intermedio y Completo, que podrán adaptarse al crecimiento de la cantidad de estudiantes o vehículos administrados por cada cliente.
+- Este modelo permitirá facilitar la incorporación de nuevos usuarios mediante una opción inicial de bajo costo, con la posibilidad de ampliar los servicios conforme aumenten sus necesidades.
+
+#### Estrategia de posicionamiento local
+
+- Inicialmente, KidTrack estará orientado a las dinámicas operativas y características geográficas de Lima Metropolitana, buscando comprender las necesidades específicas del transporte escolar en este mercado.
+- Una vez consolidada la solución a nivel local, se podrá evaluar su expansión progresiva hacia otras ciudades del Perú.
+
+#### Estrategia de preparación tecnológica a futuro
+
+- La arquitectura de KidTrack estará diseñada considerando futuras integraciones con tecnologías IoT, como sensores, cámaras y otros dispositivos de monitoreo.
 ### 2.2. Entrevistas
 #### 2.2.1. Diseño de entrevistas
 #### 2.2.2. Registro de entrevistas
