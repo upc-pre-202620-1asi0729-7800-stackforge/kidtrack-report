@@ -3619,8 +3619,10 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 ![Landing Live](assets/images/Chapter-5/Sprint1/landing-page.png)
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
-
-## ![Pulse Insights](assets/images/Chapter-5/Sprint1/insights.png)
+## Report:
+![KidTrack Report](assets/images/Chapter-5/Sprint1/Insights-Report.png)
+## Landing Page:
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
 ### 5.2.2. Sprint 2
 ##### 5.2.2.1. Sprint Planning 2
