@@ -1515,10 +1515,6 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 | Sprint 1 Velocity | 14 story points |
 | Sum of Story Points | 9 story points |
 
-**Historias propuestas:** US21 — Consulta de propuesta y beneficios; US22 — Comparación de planes; US23 — Consulta del funcionamiento y acceso al servicio, y finalmente US26. Los valores proceden del Product Backlog de la sección 3.3.
-
-
-
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 ##### 5.2.1.3. Sprint Backlog 1
 ##### 5.2.1.4. Development Evidence for Sprint Review
