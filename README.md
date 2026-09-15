@@ -3662,6 +3662,11 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 ### 5.4 Video About-the-Product
 
 ## Conclusiones
+- KidTrack permitirá a los transportistas escolares gestionar de manera más organizada sus rutas, alumnos, abordajes e incidencias, optimizando sus actividades diarias y reduciendo la dependencia de herramientas informales como WhatsApp o registros manuales.
+
+- Los padres de familia tendrán mayor visibilidad sobre el traslado de sus hijos mediante información organizada sobre el estado del viaje, las paradas y los registros de abordaje, contribuyendo a disminuir la incertidumbre y fortalecer la confianza en el servicio de transporte escolar.
+
+- La centralización de la información permitirá mejorar el control de la operación, facilitando el registro de alumnos, conductores y rutas, así como el seguimiento de incidencias y recorridos. Esto puede contribuir a reducir errores y mejorar la planificación del servicio.
 
 ## Recomendaciones
 
