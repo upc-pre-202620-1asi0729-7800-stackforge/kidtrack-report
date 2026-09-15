@@ -390,19 +390,19 @@ En esta sección se realizará la identificación de los principales competidore
    <td colspan="2"></td>
    <td>
     <strong>KidTrack</strong><br>
-    <img src="./assets/images/KidTrack.jpg" alt="KidTrack" width="100">
+    <img src="./assets/images/Chapter2/KidTrack.png" alt="KidTrack" width="100">
    </td>
    <td>
     <strong>OnTrack School</strong><br>
-    <img src="./assets/images/OnTrackSchool.jpg" alt="OnTrack School" width="100">
+    <img src="./assets/images/Chapter2/OnTrackSchool.png" alt="OnTrack School" width="100">
    </td>
    <td>
     <strong>SafeRoute Parent</strong><br>
-    <img src="./assets/images/SafeRouteParent.jpg" alt="SafeRoute Parent" width="100">
+    <img src="./assets/images/Chapter2/SafeRouteParent.png" alt="SafeRoute Parent" width="100">
    </td>
    <td>
     <strong>BusRight</strong><br>
-    <img src="./assets/images/BusRight.jpg" alt="BusRight" width="100">
+    <img src="./assets/images/Chapter2/BusRight.png" alt="BusRight" width="100">
    </td>
   </tr>
   <!-- Perfil -->
@@ -3482,10 +3482,10 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 | Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
 | ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | C                          | L                  | C                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                          | C                  | C                   |
-| Su Caletti, Eddo                    | Asalreon520     | C                  | C                          | L                  | C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | L                          | C                  | C                   |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                          | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | C                  | L                          | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | L                  | C                          | C                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                          | L                  | L                   |
 | Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
 
 ##### 5.2.1.3. Sprint Backlog 1
@@ -3493,13 +3493,13 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 
 ![Sprint Backlog 1](assets/images/Chapter-5/Sprint-Backlog-1.png)
 
-**URL del Board:** [KidTrack - Sprint 1]()
+**URL del Board:** [KidTrack - Sprint 1](https://trello.com/b/SUgGiFTd/my-trello-board)
 
 | Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
 | :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
 | **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
 | **Story Id**         | **Story Title**     | **Task Id**  | **Task Title**                                    | **Task Description**                                                                     | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing pageprincipal                       | 1          |      Nickolas     | Done        |
+| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal                       | 1          |      Nickolas     | Done        |
 | US21  | Consulta de propuesta y beneficios | T02          | Estructura base de seccion hero, funcionalidades y roles| Implementar la estructura inicial de las 3 secciones                        | 1          |      Nickolas     | Done        |
 | US21  | Consulta de propuesta y beneficios | T03          | Implementar seccion hero | Incorporar la informacion principal de la plataforma y los botones que nos llevaran a otras secciones                       | 2          |     Nickolas      | Done        |
 | US21  | Consulta de propuesta y beneficios | T04          | Implementar seccion funcionalidades  | Incorporar cards explicando las funcionalidades de la plataforma                       | 2          |     Nickolas      | Done        |
@@ -3542,7 +3542,7 @@ Durante el Sprint 1, el equipo realizó commits principalmente sobre el reposito
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
 
 La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción, informacion del flujo de uso y soporte de internacionalización (ES/EN). 
 A continuación se presentan las capturas de las secciones implementadas:
