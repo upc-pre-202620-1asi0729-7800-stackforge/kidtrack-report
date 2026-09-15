@@ -2660,14 +2660,613 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 - Subscription & Plan Management:
   Muestra la estructura interna de 4 capas del contexto de monetización: el flujo va desde el controlador REST hasta la infraestructura que se integra con PayPal para manejar el ciclo de vida de los planes y los pagos de suscripción.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Subscription-dark.png)
-
+  
 ### 4.7. Software Object-Oriented Design
-
 #### 4.7.1. Class Diagrams
+**FrontEnd**
+
+Los diagramas presentan a App como el componente raíz que contiene los componentes de cada bounded context mediante relaciones de composición (composes). Las clases *Store administran el estado con Signal<T> y recurren a las clases *Api para realizar solicitudes HTTP. Por su parte, las clases *Assembler convierten las respuestas de la API, representadas mediante *Resource, en modelos propios del dominio.
+
+- Trip Execution & Monitoring:
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
+
+Este contexto reúne las pantallas destinadas a supervisar y gestionar los viajes durante su ejecución.
+
+**Presentation & Domain:** App integra TripDashboard, encargado de iniciar y finalizar los viajes; AttendanceChecklist, que administra el estado de abordaje de los estudiantes; e IncidentForm, utilizado para registrar incidentes. La información presentada por estos componentes se obtiene de los modelos Trip, Attendance e Incident, de modo que las vistas representen el estado de la operación.
+
+**Application & Infrastructure:** TripStore concentra los datos del viaje en curso, junto con sus asistencias e incidentes. Las operaciones se canalizan mediante TripApi, que expone métodos como startTrip() y updateBoardingStatus(). La conversión de los recursos se realiza con TripAssembler, AttendanceAssembler e IncidentAssembler.
+
+- Fleet & Route Planning:
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
+
+Este contexto proporciona las interfaces necesarias para organizar las rutas, los vehículos y las asignaciones del servicio.
+
+**Presentation & Domain:** App incorpora RouteForm para registrar rutas, StopList para administrar paradas, VehicleList para consultar vehículos y AssignmentForm para asignar conductores y estudiantes. Estos componentes trabajan con las entidades Route, Stop, Vehicle y Assignment, manteniendo la información de las vistas vinculada al modelo del negocio.
+
+**Application & Infrastructure:** FleetStore administra el estado de las rutas, paradas, vehículos y asignaciones. FleetApi se ocupa de las solicitudes HTTP, mientras que las clases Assembler adaptan los recursos recibidos a las entidades correspondientes; por ejemplo, convierten RouteResource en Route.
+
+- Notifications & Communication:
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
+
+Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicados.
+
+**Presentation & Domain:** App contiene NotificationList, que permite filtrar notificaciones y marcarlas como leídas; AlertPanel, orientado a las alertas activas y de pánico; y AnnouncementForm, destinado a elaborar comunicados. Estos componentes presentan la información a partir de los modelos Notification, Alert y Announcement.
+
+**Application & Infrastructure:** NotificationsStore conserva el estado de las notificaciones, alertas y comunicados. Las solicitudes se ejecutan mediante NotificationsApi, con operaciones como dispatchNotification() y triggerAlert(). Los Assemblers convierten las respuestas obtenidas en los modelos de dominio utilizados por la aplicación.
+
+- Stakeholder & Asset Management:
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
+
+Incluye las vistas utilizadas para consultar y administrar a los participantes del servicio.
+
+**Presentation & Domain:** App integra ParentList, DriverList, ChildList y StudentGroupList. Estos componentes permiten buscar registros mediante searchQuery, seleccionarlos y eliminarlos. Para mostrar la información de los participantes y sus agrupaciones, utilizan los modelos Parent, Driver, Child y StudentGroup.
+
+**Application & Infrastructure:** StakeholderStore mantiene el estado de las listas mediante Signals. StakeholderApi realiza las operaciones CRUD con el backend, y las clases Assembler adaptan las respuestas a los modelos de dominio. Por ejemplo, ParentAssembler transforma los datos recibidos como ParentResource.
+
+- Identity and Access Management:
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
+
+Comprende las interfaces de autenticación y administración de los datos de la organización.
+
+**Presentation & Domain:** App reúne AdminLoginForm y UserLoginForm para el inicio de sesión, AdminRegisterForm para el registro, y OrganizationForm y OrganizationProfile para la gestión de la organización. Estos componentes se comunican con IamStore y utilizan los modelos User y Organization para consultar y actualizar la información asociada a la sesión.
+
+**Application & Infrastructure:** IamStore administra el estado mediante currentUserSignal y organizationSignal. Las acciones de acceso y creación de organizaciones se realizan a través de IamApi, con métodos como signIn() y createOrganization(). UserAssembler y OrganizationAssembler convierten UserResource y OrganizationResource en sus respectivos modelos de dominio.
+
+- Subscription & Plan Management:
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
+
+Ofrece las vistas para consultar los planes disponibles y administrar la suscripción de la organización.
+
+**Presentation & Domain:** App incorpora PlanSelector, destinado a elegir un plan, y SubscriptionStatus, que presenta el estado de la suscripción. Ambos reciben información de los modelos Subscription y Plan para mostrar datos como la vigencia restante y los límites del servicio, sin utilizar directamente las estructuras de respuesta de la API.
+
+**Application & Infrastructure:** SubscriptionStore conserva el estado en subscriptionSignal y plansSignal. Mediante SubscriptionApi consulta los planes con getAllPlans() y solicita cambios en la suscripción con upgradeSubscription() y cancelSubscription(). Los Assemblers correspondientes adaptan los recursos a los modelos empleados por la aplicación.
+
+**BackEnd**
+
+- Fleet & Route Planning:
+
+Concentra las responsabilidades relacionadas con la organización logística del transporte y la distribución de sus recursos.
+
+- Route Aggregate
+
+Representa el recorrido y las condiciones de su programación mediante Value Objects como DepartureTime y ServiceDays. También incorpora la secuencia de paradas que componen la ruta, representadas por Stop.
+
+![saferoute-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
+
+- Vehicle Aggregate
+
+Administra la información de capacidad y disponibilidad de cada vehículo destinado al servicio.
+
+![saferoute-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
+
+- Assignment Aggregate
+
+Establece la relación entre un conductor, un grupo de estudiantes y una ruta para organizar su participación en un viaje específico.
+
+![saferoute-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
+
+- Trip Execution & Monitoring:
+
+Agrupa la lógica necesaria para desarrollar los viajes y realizar su seguimiento.
+
+- Trip Aggregate
+
+Administra las etapas del viaje mediante operaciones como start() y complete(). Relaciona el recorrido con una ruta, un conductor y una organización, además de incorporar los registros de asistencia (Attendance) y los incidentes (Incident).
+
+![saferoute-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
+
+- TripLocation Aggregate
+
+Gestiona los datos de ubicación del vehículo para permitir su seguimiento en tiempo real durante el viaje.
+
+![saferoute-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
+
+- Notifications & Communication:
+
+Reúne la lógica de comunicación destinada a informar a los padres de familia sobre el servicio y sus alertas.
+
+- Notification Aggregate
+
+Administra los mensajes dirigidos a los apoderados, incluida su categoría y estado de entrega. Dentro de esta responsabilidad se consideran tanto las alertas como los comunicados.
+
+![saferoute-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
+
+- Stakeholder & Asset Management:
+
+Representa a los participantes del servicio y las agrupaciones mediante las cuales se organizan dentro de la aplicación.
+
+- Parent Aggregate
+
+Modela al apoderado y su relación con los estudiantes bajo su responsabilidad. Permite incorporar o retirar hijos de esa relación.
+
+![saferoute-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
+
+- Driver Aggregate
+
+Representa al conductor y reúne los datos asociados a su actividad, entre ellos la información de su licencia.
+
+![saferoute-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
+
+- StudentGroup Aggregate
+
+Reúne las referencias de varios estudiantes en un grupo para facilitar su asignación dentro de la operación del transporte.
+
+![saferoute-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
+
+- Identity and Access Management (IAM):
+
+Concentra la administración de las organizaciones, las cuentas de usuario y los roles de acceso.
+
+- Organization Aggregate
+
+Administra la creación y los cambios de estado de la organización mediante create(), suspend() y activate(). Su identificador, nombre y estado se representan mediante Value Objects.
+
+![saferoute-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
+
+- User Aggregate
+
+Reúne las operaciones de registro, autenticación y modificación del rol de una cuenta mediante register(), authenticate() y changeRole(). La pertenencia del usuario a una organización se establece con el identificador compartido OrganizationId, mientras que datos de seguridad como la contraseña se representan mediante Value Objects como PasswordHash.
+
+![saferoute-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
+
+- Subscription & Plan Management:
+
+Agrupa las reglas del modelo comercial relacionadas con los planes disponibles y las suscripciones de las organizaciones.
+
+- Plan Aggregate
+
+Define las condiciones económicas y los límites operativos del plan. Los Value Objects RouteQuota y DriverQuota representan las cuotas de rutas y conductores y permiten validar que se respete la capacidad contratada.
+
+![saferoute-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
+
+- Subscription Aggregate
+
+Administra la vigencia y los cambios de estado de la suscripción mediante activate(), upgrade() y cancel(). Cada suscripción mantiene su relación con una organización y un plan a través de sus respectivos identificadores.
+
+![saferoute-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
+
+- Payment Aggregate
+
+Administra los registros de pago asociados a las suscripciones del servicio.
+
+![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
+
+- Shared:
+
+Proporciona el Shared Kernel utilizado por los distintos contextos de la solución desarrollada en Spring Boot.
+
+- Shared Bounded Context
+
+Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
+
+![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
+**- Identity & Access Management (IAM)**
 
+Este bounded context reúne las responsabilidades de identificación de usuarios y control de acceso a KidTrack. Las credenciales se almacenan en `users`, donde `organization_id` establece la organización a la que pertenece cada cuenta dentro del modelo multi-tenant. El catálogo `roles` define los roles disponibles, mientras que `user_roles` relaciona las cuentas con dichos roles mediante una asociación de muchos a muchos. Esta organización permite administrar los niveles de acceso mediante un esquema RBAC.
+
+**Tabla: users**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| organization_id | VARCHAR(64) |
+| username | VARCHAR(50) |
+| password | VARCHAR(120) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-----------------------------|------------------------------------------|
+| RegisterUser() | Registra un nuevo usuario en la plataforma. |
+| AuthenticateUser() | Autentica al usuario con sus credenciales. |
+| GetUserById() | Retorna los detalles de un usuario. |
+
+---
+
+**Tabla: roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| id | BIGINT (PK) |
+| name | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| GetAllRoles() | Retorna la lista de roles del sistema. |
+
+---
+
+**Tabla: user_roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| user_id | BIGINT (PK, FK) |
+| role_id | BIGINT (PK, FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| AssignRoleToUser() | Asigna un rol específico a un usuario. |
+
+---
+
+**- Subscription & Plan Management**
+
+Este bounded context organiza la información comercial de los planes, las suscripciones y sus pagos. En `plans` se definen las categorías de servicio, sus límites operativos y el precio correspondiente. Cada registro de `subscriptions` relaciona una organización con el plan seleccionado e incorpora el estado y las fechas de vigencia de la suscripción. Por su parte, `payments` conserva los datos de las transacciones asociadas, como proveedor, moneda, importe, estado, identificador externo y motivo de fallo cuando corresponda.
+
+**Tabla: plans**
+
+| Atributo | Tipo |
+|-------------|---------------|
+| id | INT (PK) |
+| plan_tier | VARCHAR(20) |
+| max_routes | INT |
+| max_drivers | INT |
+| price | DECIMAL(10,2) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------|----------------------------------------------|
+| GetAllPlans() | Retorna todos los planes disponibles. |
+| GetPlanById() | Retorna el detalle de un plan. |
+
+---
+
+**Tabla: subscriptions**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | CHAR(36) (PK) |
+| organization_id | CHAR(36) (FK) |
+| plan_id | INT (FK) |
+| state | VARCHAR(20) |
+| start_date | DATETIME |
+| end_date | DATETIME |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| CreateSubscription() | Crea una nueva suscripción para una organización. |
+| CancelSubscription() | Cancela la suscripción activa. |
+
+---
+
+**Tabla: payments**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | VARCHAR(36) (PK) |
+| amount | DECIMAL(12,2) |
+| confirmed_at | DATETIME(6) |
+| created_at | DATETIME(6) |
+| currency | VARCHAR(3) |
+| external_transaction_id | VARCHAR(255) |
+| failure_reason | VARCHAR(500) |
+| provider | ENUM |
+| status | ENUM |
+| subscription_id | VARCHAR(36) (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| ProcessPayment() | Procesa un nuevo pago para una suscripción. |
+| GetPaymentStatus() | Consulta el estado de un pago. |
+
+---
+
+**- Fleet Management**
+
+Este bounded context reúne los datos necesarios para organizar los recorridos del servicio de transporte. La tabla `routes` almacena las rutas de cada organización junto con el vehículo asociado, la hora de salida, los días de atención, el tipo de recorrido y su estado. Los paraderos y sus coordenadas se registran en `stops`, donde `stop_order` determina la posición de cada parada dentro de la ruta. Ambas tablas permiten consultar la planificación del recorrido y la secuencia de sus paraderos.
+
+**Tabla: routes**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| departure_time | TIME |
+| name | VARCHAR(255) |
+| organization_id | VARCHAR(64) (FK) |
+| route_state | ENUM |
+| route_type | ENUM |
+| service_days | VARCHAR(255) |
+| vehicle_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------|----------------------------------------------|
+| CreateRoute() | Crea una nueva ruta de transporte. |
+| UpdateRoute() | Actualiza los datos de la ruta. |
+| GetRoutesByOrgId() | Retorna las rutas de una organización. |
+
+---
+
+**Tabla: stops**
+
+| Atributo | Tipo |
+|------------|---------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| name | VARCHAR(255) |
+| stop_order | INT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|----------------------------------------------|
+| AddStopToRoute() | Agrega un paradero a la ruta. |
+| GetStopsByRouteId() | Retorna la secuencia ordenada de paraderos de una ruta. |
+
+---
+
+**- Trip Execution & Monitoring**
+
+Este bounded context concentra los registros generados durante la ejecución de los viajes. Cada recorrido realizado se almacena en `trips`, que lo relaciona con una organización, una ruta y un conductor. Los campos `trip_state`, `start_time` y `end_time` describen su estado y los momentos de inicio y finalización. La participación de los estudiantes se registra en `attendances` mediante su estado de abordaje, mientras que `incidents` conserva los sucesos reportados durante el traslado. Finalmente, `trip_locations` reúne las ubicaciones GPS del vehículo junto con su velocidad, dirección y momento de registro, permitiendo consultar la trayectoria reportada.
+
+**Tabla: trips**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| end_time | DATETIME(6) |
+| organization_id | VARCHAR(64) (FK) |
+| route_id | BIGINT (FK) |
+| start_time | DATETIME(6) |
+| trip_state | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------------|---------------------------------------------------|
+| StartTrip() | Inicia el viaje. |
+| CompleteTrip() | Completa el viaje. |
+| DeleteTrip() | Elimina un viaje. |
+| GetAllTrips() / GetTripById() | Consultas sobre viajes de una organización. |
+
+---
+
+**Tabla: attendances**
+
+| Atributo | Tipo |
+|----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| boarded_at | DATETIME(6) |
+| boarding_state | ENUM |
+| child_id | BIGINT |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|-------------------------------------------------|
+| UpdateBoardingStatus() | Actualiza el estado de abordaje del estudiante. |
+| GetAttendancesByTrip() | Obtiene la lista de asistencia de un viaje. |
+
+---
+
+**Tabla: incidents**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| description | VARCHAR(1000) |
+| reported_at | DATETIME(6) |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| ReportIncident() | Registra un incidente durante el viaje. |
+| GetIncidentsByTrip() | Retorna los incidentes de un viaje. |
+
+---
+
+**Tabla: trip_locations**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| heading | DOUBLE |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| recorded_at | DATETIME(6) |
+| speed | DOUBLE |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| SendLocation() | Envía la ubicación en tiempo real del vehículo. |
+| GetLatestLocation() | Retorna la última ubicación reportada. |
+| GetLocationHistory() | Retorna el historial de ubicaciones del viaje. |
+
+---
+
+**- Notifications & Communication**
+
+Este bounded context organiza los mensajes que KidTrack dirige a sus usuarios. La tabla `notifications` conserva el contenido de cada notificación y las referencias a la organización, usuario, viaje o destinatario que correspondan. También incluye su categoría, estado y fecha de entrega, además de los datos necesarios para controlar los reintentos: cantidad realizada, límite permitido, último intento y siguiente intento programado. El registro de los motivos de fallo permite consultar lo ocurrido cuando una comunicación no se entrega correctamente.
+
+**Tabla: notifications**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | VARCHAR(36) (PK) |
+| category | ENUM |
+| delivered_at | DATETIME(6) |
+| delivery_state | ENUM |
+| failure_reason | VARCHAR(500) |
+| last_attempt_at | DATETIME(6) |
+| max_retries | INT |
+| message | VARCHAR(1000) |
+| next_retry_at | DATETIME(6) |
+| recipient_id | VARCHAR(64) |
+| retry_count | INT |
+| organization_id | VARCHAR(64) (FK) |
+| trip_id | VARCHAR(36) |
+| user_id | VARCHAR(36) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------|----------------------------------------------------|
+| SendNotification() | Envía una nueva notificación. |
+| GetNotificationsByUser() | Retorna el historial de notificaciones de un usuario. |
+
+---
+
+**- Stakeholder Management**
+
+Este bounded context reúne las relaciones operativas y los recursos utilizados en el transporte escolar. Los vehículos de cada organización se almacenan en `vehicles`, junto con su placa, modelo, capacidad y estado. La tabla `assignments` establece qué conductor tiene a su cargo una ruta determinada. A través de `assignment_children`, cada asignación se vincula con los estudiantes correspondientes, lo que permite identificar a los niños incluidos en el recorrido asignado.
+
+**Tabla: assignments**
+
+| Atributo | Tipo |
+|-----------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------|-----------------------------------------------|
+| CreateAssignment() | Crea una asignación de conductor a ruta. |
+
+---
+
+**Tabla: assignment_children**
+
+| Atributo | Tipo |
+|---------------|--------------|
+| assignment_id | BIGINT (FK) |
+| child_id | BIGINT |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------------------------|
+| AddChilresourceAssignment() | Asocia un estudiante a una asignación de ruta. |
+| RemoveChildFromAssignment() | Desvincula un estudiante de una asignación. |
+
+---
+
+**Tabla: vehicles**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| capacity | INT |
+| model | VARCHAR(255) |
+| organization_id | VARCHAR(64) |
+| plate | VARCHAR(255) |
+| status | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------------|------------------------------------------|
+| RegisterVehicle() | Registra un nuevo vehículo. |
+| GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
+Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de KidTrack, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
+
+![DataBase](./assets/images/ChapterIV/DataBase.png)
+
+**Identity and Access Management (IAM)**
+
+El modelo de IAM articula la autenticación, las identidades de usuario y los mecanismos de autorización de la plataforma. La entidad `users` resguarda las credenciales y la información principal de acceso, vinculando cada perfil a su respectiva entidad corporativa a través de `organization_id`. El catálogo de privilegios y niveles de acceso se define en la tabla `roles`, mientras que la entidad asociativa `user_roles` establece una relación de varios a varios para conceder múltiples perfiles a un solo usuario. Este esquema garantiza un control de accesos flexible y una adecuada segmentación de permisos.
+
+![DataBase](./assets/images/ChapterIV/DbIAM.png)
+
+---
+
+**Subscription**
+
+El esquema de Subscription administra el modelo de negocio, la facturación y la vigencia del servicio. La entidad `plans` actúa como catálogo de tarifas, configurando el costo económico y las restricciones operativas asociadas a cada modalidad. Por su parte, `subscriptions` conecta a una organización con el plan contratado, dando seguimiento al estado del servicio y su periodo de validez. Finalmente, la tabla `payments` audita la facturación derivada de cada suscripción, capturando datos sobre la pasarela de pagos, el estado del cobro, la moneda, el importe total y las eventuales fallas detectadas en la transacción.
+
+![DataBase](./assets/images/ChapterIV/DbSubscription.png)
+
+---
+
+**Fleet**
+
+El modelo de Fleet estructura la programación logística y la configuración previa de las rutas. La entidad `routes` registra los trayectos configurados para una organización, incluyendo atributos de estado, tipología, itinerario de salida, días operativos y la unidad asignada. La tabla `stops`, dependiente de `routes`, define cada paradero mediante geolocalización (coordenadas) y un orden secuencial dentro de la ruta. Gracias a esta arquitectura, es posible definir el recorrido global a partir de una sucesión ordenada de puntos de parada.
+
+![DataBase](./assets/images/ChapterIV/DbFleet.png)
+
+---
+
+**Trip**
+
+El esquema de Trip contempla el monitoreo y el desarrollo operativo en tiempo real de los recorridos planificados. La tabla `trips` consolida las ejecuciones diarias, asociando cada viaje con la organización, la ruta y el conductor designado. Alrededor de esta entidad gravitan `attendances`, que supervisa la subida de los estudiantes; `incidents`, encargada de registrar anomalías durante el trayecto; y `trip_locations`, que almacena la traza GPS transmitida durante el recorrido. Esta distribución facilita tanto el seguimiento en vivo como la auditoría e historial de cada operación.
+
+![DataBase](./assets/images/ChapterIV/DbTrip.png)
+
+---
+
+**Notifications**
+
+El modelo de Notifications gestiona los flujos de mensajería e interacciones salientes emitidas por el sistema. La entidad `notifications` conserva el historial de alertas despachadas a los usuarios, vinculándolas a una organización y, cuando aplique, a un viaje concreto. Adicionalmente, audita el estado de entrega, el tipo de notificación, la cantidad de reintentos, el historial de transmisiones y los posibles errores de entrega. Con esto, la plataforma garantiza la trazabilidad del envío y la gestión efectiva de reintentos ante fallos en la comunicación.
+
+![DataBase](./assets/images/ChapterIV/DbNotifications.png)
+
+---
+
+**Stakeholder**
+
+El esquema de Stakeholder organiza el inventario de activos y la asignación de actores operativos. La tabla `vehicles` gestiona el parque automotor de cada organización, detallando capacidad de pasajeros, placa, modelo y disponibilidad. La entidad `assignments` conecta a un conductor con una ruta dada, delegando la responsabilidad de la operación. Por último, la tabla `assignment_children` asocia los estudiantes a una asignación en particular, funcionando como conector entre los conductores/rutas y los menores transportados.
+
+## ![DataBase](./assets/images/ChapterIV/DbStakeHolder.png)
+
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
