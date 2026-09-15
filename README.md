@@ -3491,7 +3491,7 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 ##### 5.2.1.3. Sprint Backlog 1
 El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores, y se desarrollaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design(DDD).
 
-![Sprint Backlog 1](assets/images/Chapter-5/Sprint-Backlog-1.png)
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/Sprint-Backlog-1.png)
 
 **URL del Board:** [KidTrack - Sprint 1](https://trello.com/b/SUgGiFTd/my-trello-board)
 
