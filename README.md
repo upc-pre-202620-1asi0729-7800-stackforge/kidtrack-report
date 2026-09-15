@@ -3493,7 +3493,7 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 
 ![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/Sprint-Backlog-1.png)
 
-**URL del Board:** [KidTrack - Sprint 1](https://trello.com/b/SUgGiFTd/my-trello-board)
+**URL del Board:** [KidTrack - Sprint 1](https://trello.com/b/SUgGiFTd/kidtrack)
 
 | Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
 | :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
