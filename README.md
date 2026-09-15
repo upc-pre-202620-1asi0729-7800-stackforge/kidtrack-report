@@ -1057,14 +1057,13 @@ El Product Backlog de KidTrack reúne las historias funcionales y técnicas de l
 | 44 | TS | TS4 | Configuración Swagger/OpenAPI | Como desarrollador, deseo disponer de documentación interactiva OpenAPI, para consultar y probar las operaciones REST de KidTrack. | 3 |
 
 
-
-
-
 **Herramienta y evidencia del Product Backlog**
 
 Se propone utilizar Trello, una de las herramientas permitidas por la guía. Cada historia se registra como una tarjeta con ID, título, descripción, puntos, épica y criterios de aceptación. Las tarjetas se ordenan de arriba hacia abajo según la tabla, sin agrupar el orden principal por épicas. Las etiquetas pueden identificar la épica y el tipo de historia.
 
-![Product Backlog en Trello](./assets/images/Chapter3/productbacklog.png)
+![Product Backlog en Trello](./assets/images/Chapter3/ProductBacklogTrello.png)
+**URL:**
+[Trello](https://trello.com/invite/b/6aa6150f039a9de0cf4575d4/ATTIcf439e2a70fe8889977fa57f906d2f0aF7057E64/kidtrack1)
 
 
 
