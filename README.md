@@ -390,19 +390,19 @@ En esta sección se realizará la identificación de los principales competidore
    <td colspan="2"></td>
    <td>
     <strong>KidTrack</strong><br>
-    <img src="./assets/images/KidTrack.jpg" alt="KidTrack" width="100">
+    <img src="./assets/images/Chapter2/KidTrack.png" alt="KidTrack" width="100">
    </td>
    <td>
     <strong>OnTrack School</strong><br>
-    <img src="./assets/images/OnTrackSchool.jpg" alt="OnTrack School" width="100">
+    <img src="./assets/images/Chapter2/OnTrackSchool.png" alt="OnTrack School" width="100">
    </td>
    <td>
     <strong>SafeRoute Parent</strong><br>
-    <img src="./assets/images/SafeRouteParent.jpg" alt="SafeRoute Parent" width="100">
+    <img src="./assets/images/Chapter2/SafeRouteParent.png" alt="SafeRoute Parent" width="100">
    </td>
    <td>
     <strong>BusRight</strong><br>
-    <img src="./assets/images/BusRight.jpg" alt="BusRight" width="100">
+    <img src="./assets/images/Chapter2/BusRight.png" alt="BusRight" width="100">
    </td>
   </tr>
   <!-- Perfil -->
@@ -683,6 +683,198 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |        Jesus Denilson Tarqui                                                                                                                                                                             |
+| **Edad**                       |                                                                                 24 años                                                                        |
+| **Distrito / Zona de trabajo** |                                                                                                San Borja                                |
+| **Segmento**                   |         Conductor                                                                                                                         |
+| **Inicio en video**            |              -                                                                                                                                                                       |
+| **Fin de video**               |              -                                                                                                                                                                              |
+|     **Duración**                   |                                                                           -                                                                                                              |
+| **URL del video**              | -  |
+
+#### Screenshot
+---
+
+### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+Jesús Quiroz Tarqui tiene 24 años y vive en San Borja. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+Actualmente utiliza herramientas informales para operar:
+
+- WhatsApp como canal de comunicación con los padres de familia
+- Google Maps para navegación y rutas alternas
+- Smartphone como dispositivo principal de trabajo
+
+El uso del teléfono móvil es la herramienta principal por lo que se evidencia familiaridad con aplicaciones digitales de uso cotidiano.
+
+#### Características Subjetivas y Personalidad
+
+Jesús presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
+También demuestra preocupación por hacer bien su trabajo y porque los traslados se realicen de manera segura. 
+
+#### Pain Points Detectados
+
+- Dificultad para comunicarse con clientes que tienen poco tiempo disponible.
+- Espera de respuestas para poder confirmar o coordinar determinados detalles.
+- Exceso de mensajes o llamadas durante el servicio.
+- Posibles distracciones al tener que revisar constantemente el celular.
+- Confusiones cuando la información no está organizada o llega de manera separada.
+- Presión por asegurarse de que todo salga correctamente durante el recorrido.
+- Necesidad de mantener la seguridad sin descuidar la comunicación con los clientes.
+
+#### Oportunidades Identificadas
+
+- Implementar una comunicación más rápida y organizada entre conductores y clientes.
+- Automatizar confirmaciones y avisos para reducir mensajes innecesarios.
+- Permitir que los clientes confirmen información sin necesidad de comunicarse constantemente con el conductor.
+- Gestionar horarios, rutas, datos y avisos importantes en una sola plataforma.
+- Crear alertas simples que permitan al conductor conocer información importante sin distraerse.
+- Reducir la dependencia de mensajes y llamadas para realizar coordinaciones básicas.
+---
+
+#### Entrevista 2: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+#### Entrevista 3: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+#### Entrevista 4: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |   Edgar Alfonso Su Llaque                                                                                                                                                |
+| **Edad**                       |          56                                                                                                                                             |
+| **Distrito / Zona de trabajo** |                Santiago de Surco                                                                                                                 |
+| **Segmento**                   |           Padre de familia                                                                                                                       |
+| **Inicio en video**            |             0:05                                                                                                                                                                        |
+| **Fin de video**               |               5:57                                                                                                                                                                             |
+|     **Duración**                   |                                                                5:57                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+Pendiente de completar con el contenido de la entrevista. Se debe resumir brevemente quién es el entrevistado, su situación, sus actividades y el problema o necesidad que comenta durante la entrevista.
+
+#### Características Objetivas y Entorno
+Aquí colocaremos datos observables del entrevistado y su contexto, por ejemplo:
+
+- Edad y lugar donde vive.
+- Actividad principal.
+- Situación familiar.
+- Contexto en el que realiza las actividades relacionadas con el problema.
+- Recursos o condiciones que tiene disponibles.
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+Aquí identificaremos:
+
+- Celular, computadora u otros dispositivos que utilice.
+- Aplicaciones o plataformas que mencione.
+- Redes sociales.
+- Medios que utiliza para comunicarse.
+- Cómo busca información o realiza sus actividades.
+
+#### Características Subjetivas y Personalidad
+Aquí analizaremos lo que expresa durante la entrevista:
+
+- Opiniones.
+- Preferencias.
+- Motivaciones.
+- Hábitos.
+- Preocupaciones.
+- Qué considera importante.
+- Cómo toma decisiones.
+
+#### Pain Points Detectados
+Aquí debemos colocar los problemas o dificultades que menciona el entrevistado, por ejemplo:
+
+- Problemas que enfrenta actualmente.
+- Actividades que le resultan complicadas.
+- Falta de información.
+- Pérdida de tiempo.
+- Dificultades con alguna herramienta o proceso.
+- Frustraciones que expresa.
+
+#### Oportunidades Identificadas
+A partir de los pain points, podemos plantear:
+
+- Qué podría mejorarse.
+- Qué solución podría facilitarle el proceso.
+- Qué tecnología podría ayudarlo.
+- Qué característica debería tener una posible solución.
+
+#### Validación del Arquetipo
+
+El entrevistado presenta características que coinciden con el perfil de usuario planteado, por lo que se respalda correctamente el User
+
+---
+
+#### Entrevista 5: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Nombre y Apellidos**         |                                                                                                                                                                                     |
 | **Edad**                       |                                                                                                                                                         |
 | **Distrito / Zona de trabajo** |                                                                                                                                 |
@@ -711,85 +903,187 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 ---
 
 
-#### 2.2.3. Análisis de entrevistas
+#### Entrevista 6: 
 
-#### Segmento Objetivo 1: Conductores de Transporte Escolar
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
 
-Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de conductores, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del primer segmento objetivo.
-#### Características Objetivas del Segmento
-
-| Característica                         | Resultado | Sustento                                                       |
-| -------------------------------------- | --------- | -------------------------------------------------------------- |
-| - | - | - |
-
-#### Hallazgo
-
-#### Uso de Tecnología y Herramientas Actuales
-
-| Herramienta / Canal                                | Porcentaje |
-| -------------------------------------------------- | ---------- |
-| - | - |
-
-
-#### Principales Problemas Detectados (Pain Points)
-
-| Problema identificado                           | Porcentaje |
-| ----------------------------------------------- | ---------- |
-| -| - |
-
-
-#### Necesidades Funcionales Prioritarias
-
-| Necesidad mencionada                                    | Porcentaje |
-| ------------------------------------------------------- | ---------- |
-| - | - |
-
-#### Características Subjetivas del Segmento
-
-| Rasgo detectado                            | Porcentaje |
-| ------------------------------------------ | ---------- |
-| - | - |
-
+#### Screenshot
 ---
 
-#### Segmento Objetivo 2: Padres de Familia
+#### Resumen Descriptivo de la Entrevista
 
-Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+
+### 2.2.3. Análisis de entrevistas
+
+### Segmento Objetivo 1: Conductores de Transporte Escolar
+
+Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
 
 #### Características Objetivas del Segmento
 
-| Característica                         | Resultado | Sustento                                                       |
-| -------------------------------------- | --------- | -------------------------------------------------------------- |
-| - | - | - |
+| **Característica** | **Resultado** | **Sustento** |
+| ------------------------------------ | ---- | -------------------------------------------------------------- |
+| Adulto joven | 100% | Jesús tiene 24 años |
+| Reside en una zona urbana | 100% | Vive en San Borja |
+| Pertenece al segmento de conductores | 100% | Se desempeña como conductor |
+| Familiarizado con la tecnología | 100% | Se desenvuelve con facilidad utilizando herramientas digitales |
+| No tiene hijos actualmente | 100% | No cuenta con hijos ni familia propia |
+| Mantiene una actitud responsable | 100% | Procura que los traslados se realicen de forma segura |
 
 #### Hallazgo
 
+El conductor entrevistado representa un perfil joven y familiarizado con la tecnología, por lo que utilizar una herramienta digital no representa una dificultad importante para él. El principal reto se encuentra en la comunicación con los clientes, especialmente cuando estos están ocupados y no pueden responder de inmediato.
+
+Esto evidencia una oportunidad para hacer más simples las coordinaciones y reducir la cantidad de interacciones que el conductor debe atender mientras se encuentra trabajando.
+
 #### Uso de Tecnología y Herramientas Actuales
 
-| Herramienta / Canal                                | Porcentaje |
-| -------------------------------------------------- | ---------- |
-| - | - |
+| **Herramienta / Canal** | **Porcentaje** |
+| ------------------------------------------- | ---- |
+| Teléfono móvil como dispositivo principal | 100% |
+| Aplicaciones de navegación | 100% |
+| Mensajería instantánea | 100% |
+| Herramientas digitales para sus actividades | 100% |
+| Comunicación directa con clientes | 100% |
 
+Actualmente, la tecnología forma parte de la rutina del conductor y sirve principalmente como apoyo para la navegación y comunicación. Sin embargo, cuando algunas coordinaciones dependen de respuestas constantes de los clientes, el proceso puede hacerse más lento y generar interrupciones durante el servicio.
 
 #### Principales Problemas Detectados (Pain Points)
 
-| Problema identificado                           | Porcentaje |
-| ----------------------------------------------- | ---------- |
-| -| - |
+| **Problema identificado** | **Porcentaje** |
+| ------------------------------------------------- | ---- |
+| Dificultad para comunicarse con clientes ocupados | 100% |
+| Espera de respuestas para realizar coordinaciones | 100% |
+| Necesidad de revisar mensajes durante el servicio | 100% |
+| Posibles distracciones durante la conducción | 100% |
+| Información poco organizada | 100% |
+| Preocupación por mantener la seguridad | 100% |
 
+La principal dificultad encontrada está relacionada con la comunicación. Aunque Jesús está familiarizado con la tecnología, depender de mensajes y respuestas en tiempo real puede complicar algunas coordinaciones y generar distracciones mientras realiza el recorrido.
 
 #### Necesidades Funcionales Prioritarias
 
-| Necesidad mencionada                                    | Porcentaje |
-| ------------------------------------------------------- | ---------- |
-| - | - |
+| **Necesidad mencionada** | **Porcentaje** |
+| --------------------------------------- | ---- |
+| Comunicación rápida con los clientes | 100% |
+| Confirmaciones automáticas | 100% |
+| Información clara y organizada | 100% |
+| Reducir la necesidad de revisar el celular | 100% |
+| Acceso rápido a información importante | 100% |
+| Herramienta sencilla desde el celular | 100% |
+| Funciones relacionadas con la seguridad | 100% |
 
+El conductor necesita una solución que le permita manejar las coordinaciones de manera rápida y con la menor cantidad de interrupciones posible. Funciones como confirmaciones automáticas, avisos y mensajes predeterminados podrían ayudar a que el servicio sea más ordenado y fluido.
 
 #### Características Subjetivas del Segmento
 
-| Rasgo detectado                            | Porcentaje |
-| ------------------------------------------ | ---------- |
-| - | - |
+| **Rasgo detectado** | **Porcentaje** |
+| -------------------------------------------------- | ---- |
+| Familiaridad con la tecnología | 100% |
+| Disposición a utilizar soluciones digitales útiles | 100% |
+| Preocupación por la seguridad | 100% |
+| Responsabilidad con los pasajeros | 100% |
+| Valora una comunicación clara y rápida | 100% |
+| Busca evitar complicaciones | 100% |
+| Perfil práctico | 100% |
+
+El perfil identificado corresponde a un conductor joven, práctico y cómodo utilizando tecnología. Su interés no estaría simplemente en usar una nueva herramienta, sino en encontrar una solución que realmente le ayude a realizar su trabajo de forma más sencilla y organizada.
+
+#### Conclusion del segmento
+A partir de esta primera entrevista, se puede observar que el conductor busca principalmente seguridad, comunicación clara y facilidad para realizar su trabajo. Nuestra solución sera útil ya que ayudara a simplificar las coordinaciones con los clientes, reducira las distracciones y permitira gestionar la información importante de manera rápida y sencilla.
+
+### Segmento Objetivo 2: Padres de Familia
+
+Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+
+#### Características Objetivas del Segmento
+
+| **Característica** | **Resultado** | **Sustento** |
+| -------------------------------------- | ---- | -------------------------------------------------------------- |
+| Edad Adulta (50 a 60 años) | 100% | Edgar tiene 56 años y pertenece al segmento de padres de familia |
+| Reside en una zona urbana | 100% | Vive en Santiago de Surco |
+| Tiene responsabilidades familiares | 100% | Su perfil corresponde al de un padre de familia |
+| Uso de servicio de transporte escolar | 100% | No siempre usa el transporte escolar pero siempre alguna modalidad de transporte |
+| Contexto cotidiano | 100% | Desarrolla su vida diaria con constantes actividades familiares |
+
+#### Hallazgo
+
+El entrevistado representa a un padre de familia que busca desenvolverse de manera práctica frente a las responsabilidades del día a día. Su perfil permite entender mejor las necesidades que pueden aparecer al momento de organizar actividades familiares y tomar decisiones relacionadas con la seguridad y bienestar de sus hijos.
+
+#### Uso de Tecnología y Herramientas Actuales
+
+| **Herramienta / Canal** | **Resultado** |
+| -------------------------------------------------- | ---- |
+| Teléfono celular | 100% |
+| Comunicación mediante canales digitales | 100% |
+| Uso de herramientas tecnológicas en actividades cotidianas | 100% |
+| Comunicación directa para coordinar actividades | 100% |
+
+Actualmente, la tecnología forma parte de la rutina de los padres de familia y puede ser utilizada como apoyo para facilitar la comunicación, organización y seguimiento de diferentes actividades.
+
+#### Principales Problemas Detectados (Pain Points)
+
+| **Problema identificado** | **Resultado** |
+| ----------------------------------------------- | ---- |
+| Preocupación por la seguridad de los hijos | 100% |
+| Necesidad de contar con información clara | 100% |
+| Dependencia de la comunicación para conocer el estado de una actividad | 100% |
+| Incertidumbre cuando no existe información suficiente | 100% |
+| Necesidad de mayor tranquilidad durante las actividades familiares | 100% |
+
+El principal paint point identificado está relacionado con la incertidumbre. Para un padre de familia, no contar con información suficiente puede generar preocupación, especialmente cuando se trata de actividades relacionadas con sus hijos.
+
+#### Necesidades Funcionales Prioritarias
+
+| **Necesidad mencionada** | **Resultado** |
+| --------------------------------------- | ---- |
+| Contar con información actualizada y la ubicación en tiempo real del transporte | 100% |
+| Tener mayor visibilidad sobre las actividades | 100% |
+| Recibir información de manera sencilla | 100% |
+| Poder comunicarse fácilmente cuando sea necesario | 100% |
+| Contar con una herramienta práctica desde el celular | 100% |
+| Obtener mayor tranquilidad y confianza | 100% |
+
+Se buscara reducir la incertidumbre mediante el monitoreo a tiempo real y la fidelidad de la informacion que el padre recibe.
+
+#### Características Subjetivas del Segmento
+
+| **Rasgo detectado** | **Resultado** |
+| ------------------------------------------ | ---- |
+| Preocupación por el bienestar familiar | 100% |
+| Interés por soluciones prácticas | 100% |
+| Valora la información clara | 100% |
+| Busca sentirse más tranquilo y seguro | 100% |
+| Disposición hacia herramientas digitales útiles | 100% |
+| Perfil orientado a la familia | 100% |
+
+El entrevistado refleja un perfil principalmente familiar y practico,por lo que nuestra plataforma tendría mayor valor si es fácil de entender, rápida de utilizar.
+
+### Conclusión del Segmento
+
+A partir de esta primera entrevista, se puede observar que el padre de familia busca principalmente seguridad, información real y tranquilidad. Nuestra solucion planteada jugara un papel importante siempre que simplifique el proceso y no se agreguen más complicaciones.
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
@@ -1057,14 +1351,13 @@ El Product Backlog de KidTrack reúne las historias funcionales y técnicas de l
 | 44 | TS | TS4 | Configuración Swagger/OpenAPI | Como desarrollador, deseo disponer de documentación interactiva OpenAPI, para consultar y probar las operaciones REST de KidTrack. | 3 |
 
 
-
-
-
 **Herramienta y evidencia del Product Backlog**
 
 Se propone utilizar Trello, una de las herramientas permitidas por la guía. Cada historia se registra como una tarjeta con ID, título, descripción, puntos, épica y criterios de aceptación. Las tarjetas se ordenan de arriba hacia abajo según la tabla, sin agrupar el orden principal por épicas. Las etiquetas pueden identificar la épica y el tipo de historia.
 
-![Product Backlog en Trello](./assets/images/Chapter3/productbacklog.png)
+![Product Backlog en Trello](./assets/images/Chapter3/ProductBacklogTrello.png)
+**URL:**
+[Trello](https://trello.com/invite/b/6aa6150f039a9de0cf4575d4/ATTIcf439e2a70fe8889977fa57f906d2f0aF7057E64/kidtrack1)
 
 
 
@@ -2660,14 +2953,613 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 - Subscription & Plan Management:
   Muestra la estructura interna de 4 capas del contexto de monetización: el flujo va desde el controlador REST hasta la infraestructura que se integra con PayPal para manejar el ciclo de vida de los planes y los pagos de suscripción.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Subscription-dark.png)
-
+  
 ### 4.7. Software Object-Oriented Design
-
 #### 4.7.1. Class Diagrams
+**FrontEnd**
+
+Los diagramas presentan a App como el componente raíz que contiene los componentes de cada bounded context mediante relaciones de composición (composes). Las clases *Store administran el estado con Signal<T> y recurren a las clases *Api para realizar solicitudes HTTP. Por su parte, las clases *Assembler convierten las respuestas de la API, representadas mediante *Resource, en modelos propios del dominio.
+
+- Trip Execution & Monitoring:
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
+
+![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
+
+Este contexto reúne las pantallas destinadas a supervisar y gestionar los viajes durante su ejecución.
+
+**Presentation & Domain:** App integra TripDashboard, encargado de iniciar y finalizar los viajes; AttendanceChecklist, que administra el estado de abordaje de los estudiantes; e IncidentForm, utilizado para registrar incidentes. La información presentada por estos componentes se obtiene de los modelos Trip, Attendance e Incident, de modo que las vistas representen el estado de la operación.
+
+**Application & Infrastructure:** TripStore concentra los datos del viaje en curso, junto con sus asistencias e incidentes. Las operaciones se canalizan mediante TripApi, que expone métodos como startTrip() y updateBoardingStatus(). La conversión de los recursos se realiza con TripAssembler, AttendanceAssembler e IncidentAssembler.
+
+- Fleet & Route Planning:
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
+
+![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
+
+Este contexto proporciona las interfaces necesarias para organizar las rutas, los vehículos y las asignaciones del servicio.
+
+**Presentation & Domain:** App incorpora RouteForm para registrar rutas, StopList para administrar paradas, VehicleList para consultar vehículos y AssignmentForm para asignar conductores y estudiantes. Estos componentes trabajan con las entidades Route, Stop, Vehicle y Assignment, manteniendo la información de las vistas vinculada al modelo del negocio.
+
+**Application & Infrastructure:** FleetStore administra el estado de las rutas, paradas, vehículos y asignaciones. FleetApi se ocupa de las solicitudes HTTP, mientras que las clases Assembler adaptan los recursos recibidos a las entidades correspondientes; por ejemplo, convierten RouteResource en Route.
+
+- Notifications & Communication:
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
+
+![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
+
+Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicados.
+
+**Presentation & Domain:** App contiene NotificationList, que permite filtrar notificaciones y marcarlas como leídas; AlertPanel, orientado a las alertas activas y de pánico; y AnnouncementForm, destinado a elaborar comunicados. Estos componentes presentan la información a partir de los modelos Notification, Alert y Announcement.
+
+**Application & Infrastructure:** NotificationsStore conserva el estado de las notificaciones, alertas y comunicados. Las solicitudes se ejecutan mediante NotificationsApi, con operaciones como dispatchNotification() y triggerAlert(). Los Assemblers convierten las respuestas obtenidas en los modelos de dominio utilizados por la aplicación.
+
+- Stakeholder & Asset Management:
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
+
+![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
+
+Incluye las vistas utilizadas para consultar y administrar a los participantes del servicio.
+
+**Presentation & Domain:** App integra ParentList, DriverList, ChildList y StudentGroupList. Estos componentes permiten buscar registros mediante searchQuery, seleccionarlos y eliminarlos. Para mostrar la información de los participantes y sus agrupaciones, utilizan los modelos Parent, Driver, Child y StudentGroup.
+
+**Application & Infrastructure:** StakeholderStore mantiene el estado de las listas mediante Signals. StakeholderApi realiza las operaciones CRUD con el backend, y las clases Assembler adaptan las respuestas a los modelos de dominio. Por ejemplo, ParentAssembler transforma los datos recibidos como ParentResource.
+
+- Identity and Access Management:
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
+
+![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
+
+Comprende las interfaces de autenticación y administración de los datos de la organización.
+
+**Presentation & Domain:** App reúne AdminLoginForm y UserLoginForm para el inicio de sesión, AdminRegisterForm para el registro, y OrganizationForm y OrganizationProfile para la gestión de la organización. Estos componentes se comunican con IamStore y utilizan los modelos User y Organization para consultar y actualizar la información asociada a la sesión.
+
+**Application & Infrastructure:** IamStore administra el estado mediante currentUserSignal y organizationSignal. Las acciones de acceso y creación de organizaciones se realizan a través de IamApi, con métodos como signIn() y createOrganization(). UserAssembler y OrganizationAssembler convierten UserResource y OrganizationResource en sus respectivos modelos de dominio.
+
+- Subscription & Plan Management:
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
+
+![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
+
+Ofrece las vistas para consultar los planes disponibles y administrar la suscripción de la organización.
+
+**Presentation & Domain:** App incorpora PlanSelector, destinado a elegir un plan, y SubscriptionStatus, que presenta el estado de la suscripción. Ambos reciben información de los modelos Subscription y Plan para mostrar datos como la vigencia restante y los límites del servicio, sin utilizar directamente las estructuras de respuesta de la API.
+
+**Application & Infrastructure:** SubscriptionStore conserva el estado en subscriptionSignal y plansSignal. Mediante SubscriptionApi consulta los planes con getAllPlans() y solicita cambios en la suscripción con upgradeSubscription() y cancelSubscription(). Los Assemblers correspondientes adaptan los recursos a los modelos empleados por la aplicación.
+
+**BackEnd**
+
+- Fleet & Route Planning:
+
+Concentra las responsabilidades relacionadas con la organización logística del transporte y la distribución de sus recursos.
+
+- Route Aggregate
+
+Representa el recorrido y las condiciones de su programación mediante Value Objects como DepartureTime y ServiceDays. También incorpora la secuencia de paradas que componen la ruta, representadas por Stop.
+
+![saferoute-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
+
+- Vehicle Aggregate
+
+Administra la información de capacidad y disponibilidad de cada vehículo destinado al servicio.
+
+![saferoute-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
+
+- Assignment Aggregate
+
+Establece la relación entre un conductor, un grupo de estudiantes y una ruta para organizar su participación en un viaje específico.
+
+![saferoute-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
+
+- Trip Execution & Monitoring:
+
+Agrupa la lógica necesaria para desarrollar los viajes y realizar su seguimiento.
+
+- Trip Aggregate
+
+Administra las etapas del viaje mediante operaciones como start() y complete(). Relaciona el recorrido con una ruta, un conductor y una organización, además de incorporar los registros de asistencia (Attendance) y los incidentes (Incident).
+
+![saferoute-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
+
+- TripLocation Aggregate
+
+Gestiona los datos de ubicación del vehículo para permitir su seguimiento en tiempo real durante el viaje.
+
+![saferoute-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
+
+- Notifications & Communication:
+
+Reúne la lógica de comunicación destinada a informar a los padres de familia sobre el servicio y sus alertas.
+
+- Notification Aggregate
+
+Administra los mensajes dirigidos a los apoderados, incluida su categoría y estado de entrega. Dentro de esta responsabilidad se consideran tanto las alertas como los comunicados.
+
+![saferoute-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
+
+- Stakeholder & Asset Management:
+
+Representa a los participantes del servicio y las agrupaciones mediante las cuales se organizan dentro de la aplicación.
+
+- Parent Aggregate
+
+Modela al apoderado y su relación con los estudiantes bajo su responsabilidad. Permite incorporar o retirar hijos de esa relación.
+
+![saferoute-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
+
+- Driver Aggregate
+
+Representa al conductor y reúne los datos asociados a su actividad, entre ellos la información de su licencia.
+
+![saferoute-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
+
+- StudentGroup Aggregate
+
+Reúne las referencias de varios estudiantes en un grupo para facilitar su asignación dentro de la operación del transporte.
+
+![saferoute-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
+
+- Identity and Access Management (IAM):
+
+Concentra la administración de las organizaciones, las cuentas de usuario y los roles de acceso.
+
+- Organization Aggregate
+
+Administra la creación y los cambios de estado de la organización mediante create(), suspend() y activate(). Su identificador, nombre y estado se representan mediante Value Objects.
+
+![saferoute-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
+
+- User Aggregate
+
+Reúne las operaciones de registro, autenticación y modificación del rol de una cuenta mediante register(), authenticate() y changeRole(). La pertenencia del usuario a una organización se establece con el identificador compartido OrganizationId, mientras que datos de seguridad como la contraseña se representan mediante Value Objects como PasswordHash.
+
+![saferoute-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
+
+- Subscription & Plan Management:
+
+Agrupa las reglas del modelo comercial relacionadas con los planes disponibles y las suscripciones de las organizaciones.
+
+- Plan Aggregate
+
+Define las condiciones económicas y los límites operativos del plan. Los Value Objects RouteQuota y DriverQuota representan las cuotas de rutas y conductores y permiten validar que se respete la capacidad contratada.
+
+![saferoute-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
+
+- Subscription Aggregate
+
+Administra la vigencia y los cambios de estado de la suscripción mediante activate(), upgrade() y cancel(). Cada suscripción mantiene su relación con una organización y un plan a través de sus respectivos identificadores.
+
+![saferoute-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
+
+- Payment Aggregate
+
+Administra los registros de pago asociados a las suscripciones del servicio.
+
+![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
+
+- Shared:
+
+Proporciona el Shared Kernel utilizado por los distintos contextos de la solución desarrollada en Spring Boot.
+
+- Shared Bounded Context
+
+Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
+
+![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
+**- Identity & Access Management (IAM)**
 
+Este bounded context reúne las responsabilidades de identificación de usuarios y control de acceso a KidTrack. Las credenciales se almacenan en `users`, donde `organization_id` establece la organización a la que pertenece cada cuenta dentro del modelo multi-tenant. El catálogo `roles` define los roles disponibles, mientras que `user_roles` relaciona las cuentas con dichos roles mediante una asociación de muchos a muchos. Esta organización permite administrar los niveles de acceso mediante un esquema RBAC.
+
+**Tabla: users**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| organization_id | VARCHAR(64) |
+| username | VARCHAR(50) |
+| password | VARCHAR(120) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-----------------------------|------------------------------------------|
+| RegisterUser() | Registra un nuevo usuario en la plataforma. |
+| AuthenticateUser() | Autentica al usuario con sus credenciales. |
+| GetUserById() | Retorna los detalles de un usuario. |
+
+---
+
+**Tabla: roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| id | BIGINT (PK) |
+| name | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| GetAllRoles() | Retorna la lista de roles del sistema. |
+
+---
+
+**Tabla: user_roles**
+
+| Atributo | Tipo |
+|----------|-------------|
+| user_id | BIGINT (PK, FK) |
+| role_id | BIGINT (PK, FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------|
+| AssignRoleToUser() | Asigna un rol específico a un usuario. |
+
+---
+
+**- Subscription & Plan Management**
+
+Este bounded context organiza la información comercial de los planes, las suscripciones y sus pagos. En `plans` se definen las categorías de servicio, sus límites operativos y el precio correspondiente. Cada registro de `subscriptions` relaciona una organización con el plan seleccionado e incorpora el estado y las fechas de vigencia de la suscripción. Por su parte, `payments` conserva los datos de las transacciones asociadas, como proveedor, moneda, importe, estado, identificador externo y motivo de fallo cuando corresponda.
+
+**Tabla: plans**
+
+| Atributo | Tipo |
+|-------------|---------------|
+| id | INT (PK) |
+| plan_tier | VARCHAR(20) |
+| max_routes | INT |
+| max_drivers | INT |
+| price | DECIMAL(10,2) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------|----------------------------------------------|
+| GetAllPlans() | Retorna todos los planes disponibles. |
+| GetPlanById() | Retorna el detalle de un plan. |
+
+---
+
+**Tabla: subscriptions**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | CHAR(36) (PK) |
+| organization_id | CHAR(36) (FK) |
+| plan_id | INT (FK) |
+| state | VARCHAR(20) |
+| start_date | DATETIME |
+| end_date | DATETIME |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| CreateSubscription() | Crea una nueva suscripción para una organización. |
+| CancelSubscription() | Cancela la suscripción activa. |
+
+---
+
+**Tabla: payments**
+
+| Atributo | Tipo |
+|-----------------|-------------|
+| id | VARCHAR(36) (PK) |
+| amount | DECIMAL(12,2) |
+| confirmed_at | DATETIME(6) |
+| created_at | DATETIME(6) |
+| currency | VARCHAR(3) |
+| external_transaction_id | VARCHAR(255) |
+| failure_reason | VARCHAR(500) |
+| provider | ENUM |
+| status | ENUM |
+| subscription_id | VARCHAR(36) (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------|----------------------------------------------|
+| ProcessPayment() | Procesa un nuevo pago para una suscripción. |
+| GetPaymentStatus() | Consulta el estado de un pago. |
+
+---
+
+**- Fleet Management**
+
+Este bounded context reúne los datos necesarios para organizar los recorridos del servicio de transporte. La tabla `routes` almacena las rutas de cada organización junto con el vehículo asociado, la hora de salida, los días de atención, el tipo de recorrido y su estado. Los paraderos y sus coordenadas se registran en `stops`, donde `stop_order` determina la posición de cada parada dentro de la ruta. Ambas tablas permiten consultar la planificación del recorrido y la secuencia de sus paraderos.
+
+**Tabla: routes**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| departure_time | TIME |
+| name | VARCHAR(255) |
+| organization_id | VARCHAR(64) (FK) |
+| route_state | ENUM |
+| route_type | ENUM |
+| service_days | VARCHAR(255) |
+| vehicle_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------|----------------------------------------------|
+| CreateRoute() | Crea una nueva ruta de transporte. |
+| UpdateRoute() | Actualiza los datos de la ruta. |
+| GetRoutesByOrgId() | Retorna las rutas de una organización. |
+
+---
+
+**Tabla: stops**
+
+| Atributo | Tipo |
+|------------|---------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| name | VARCHAR(255) |
+| stop_order | INT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|----------------------------------------------|
+| AddStopToRoute() | Agrega un paradero a la ruta. |
+| GetStopsByRouteId() | Retorna la secuencia ordenada de paraderos de una ruta. |
+
+---
+
+**- Trip Execution & Monitoring**
+
+Este bounded context concentra los registros generados durante la ejecución de los viajes. Cada recorrido realizado se almacena en `trips`, que lo relaciona con una organización, una ruta y un conductor. Los campos `trip_state`, `start_time` y `end_time` describen su estado y los momentos de inicio y finalización. La participación de los estudiantes se registra en `attendances` mediante su estado de abordaje, mientras que `incidents` conserva los sucesos reportados durante el traslado. Finalmente, `trip_locations` reúne las ubicaciones GPS del vehículo junto con su velocidad, dirección y momento de registro, permitiendo consultar la trayectoria reportada.
+
+**Tabla: trips**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| end_time | DATETIME(6) |
+| organization_id | VARCHAR(64) (FK) |
+| route_id | BIGINT (FK) |
+| start_time | DATETIME(6) |
+| trip_state | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|---------------------------------|---------------------------------------------------|
+| StartTrip() | Inicia el viaje. |
+| CompleteTrip() | Completa el viaje. |
+| DeleteTrip() | Elimina un viaje. |
+| GetAllTrips() / GetTripById() | Consultas sobre viajes de una organización. |
+
+---
+
+**Tabla: attendances**
+
+| Atributo | Tipo |
+|----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| boarded_at | DATETIME(6) |
+| boarding_state | ENUM |
+| child_id | BIGINT |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------------------|-------------------------------------------------|
+| UpdateBoardingStatus() | Actualiza el estado de abordaje del estudiante. |
+| GetAttendancesByTrip() | Obtiene la lista de asistencia de un viaje. |
+
+---
+
+**Tabla: incidents**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| description | VARCHAR(1000) |
+| reported_at | DATETIME(6) |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| ReportIncident() | Registra un incidente durante el viaje. |
+| GetIncidentsByTrip() | Retorna los incidentes de un viaje. |
+
+---
+
+**Tabla: trip_locations**
+
+| Atributo | Tipo |
+|-------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| heading | DOUBLE |
+| latitude | DOUBLE |
+| longitude | DOUBLE |
+| recorded_at | DATETIME(6) |
+| speed | DOUBLE |
+| trip_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|--------------------|-----------------------------------------|
+| SendLocation() | Envía la ubicación en tiempo real del vehículo. |
+| GetLatestLocation() | Retorna la última ubicación reportada. |
+| GetLocationHistory() | Retorna el historial de ubicaciones del viaje. |
+
+---
+
+**- Notifications & Communication**
+
+Este bounded context organiza los mensajes que KidTrack dirige a sus usuarios. La tabla `notifications` conserva el contenido de cada notificación y las referencias a la organización, usuario, viaje o destinatario que correspondan. También incluye su categoría, estado y fecha de entrega, además de los datos necesarios para controlar los reintentos: cantidad realizada, límite permitido, último intento y siguiente intento programado. El registro de los motivos de fallo permite consultar lo ocurrido cuando una comunicación no se entrega correctamente.
+
+**Tabla: notifications**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | VARCHAR(36) (PK) |
+| category | ENUM |
+| delivered_at | DATETIME(6) |
+| delivery_state | ENUM |
+| failure_reason | VARCHAR(500) |
+| last_attempt_at | DATETIME(6) |
+| max_retries | INT |
+| message | VARCHAR(1000) |
+| next_retry_at | DATETIME(6) |
+| recipient_id | VARCHAR(64) |
+| retry_count | INT |
+| organization_id | VARCHAR(64) (FK) |
+| trip_id | VARCHAR(36) |
+| user_id | VARCHAR(36) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|------------------|----------------------------------------------------|
+| SendNotification() | Envía una nueva notificación. |
+| GetNotificationsByUser() | Retorna el historial de notificaciones de un usuario. |
+
+---
+
+**- Stakeholder Management**
+
+Este bounded context reúne las relaciones operativas y los recursos utilizados en el transporte escolar. Los vehículos de cada organización se almacenan en `vehicles`, junto con su placa, modelo, capacidad y estado. La tabla `assignments` establece qué conductor tiene a su cargo una ruta determinada. A través de `assignment_children`, cada asignación se vincula con los estudiantes correspondientes, lo que permite identificar a los niños incluidos en el recorrido asignado.
+
+**Tabla: assignments**
+
+| Atributo | Tipo |
+|-----------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| driver_id | BIGINT |
+| route_id | BIGINT (FK) |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------|-----------------------------------------------|
+| CreateAssignment() | Crea una asignación de conductor a ruta. |
+
+---
+
+**Tabla: assignment_children**
+
+| Atributo | Tipo |
+|---------------|--------------|
+| assignment_id | BIGINT (FK) |
+| child_id | BIGINT |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|----------------|------------------------------------------------------|
+| AddChilresourceAssignment() | Asocia un estudiante a una asignación de ruta. |
+| RemoveChildFromAssignment() | Desvincula un estudiante de una asignación. |
+
+---
+
+**Tabla: vehicles**
+
+| Atributo | Tipo |
+|-----------------|--------------|
+| id | BIGINT (PK) |
+| created_at | DATETIME(6) |
+| updated_at | DATETIME(6) |
+| capacity | INT |
+| model | VARCHAR(255) |
+| organization_id | VARCHAR(64) |
+| plate | VARCHAR(255) |
+| status | ENUM |
+
+**Métodos (API REST)**
+
+| Método | Descripción |
+|-------------------------------|------------------------------------------|
+| RegisterVehicle() | Registra un nuevo vehículo. |
+| GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
+Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de KidTrack, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
+
+![DataBase](./assets/images/ChapterIV/DataBase.png)
+
+**Identity and Access Management (IAM)**
+
+El modelo de IAM articula la autenticación, las identidades de usuario y los mecanismos de autorización de la plataforma. La entidad `users` resguarda las credenciales y la información principal de acceso, vinculando cada perfil a su respectiva entidad corporativa a través de `organization_id`. El catálogo de privilegios y niveles de acceso se define en la tabla `roles`, mientras que la entidad asociativa `user_roles` establece una relación de varios a varios para conceder múltiples perfiles a un solo usuario. Este esquema garantiza un control de accesos flexible y una adecuada segmentación de permisos.
+
+![DataBase](./assets/images/ChapterIV/DbIAM.png)
+
+---
+
+**Subscription**
+
+El esquema de Subscription administra el modelo de negocio, la facturación y la vigencia del servicio. La entidad `plans` actúa como catálogo de tarifas, configurando el costo económico y las restricciones operativas asociadas a cada modalidad. Por su parte, `subscriptions` conecta a una organización con el plan contratado, dando seguimiento al estado del servicio y su periodo de validez. Finalmente, la tabla `payments` audita la facturación derivada de cada suscripción, capturando datos sobre la pasarela de pagos, el estado del cobro, la moneda, el importe total y las eventuales fallas detectadas en la transacción.
+
+![DataBase](./assets/images/ChapterIV/DbSubscription.png)
+
+---
+
+**Fleet**
+
+El modelo de Fleet estructura la programación logística y la configuración previa de las rutas. La entidad `routes` registra los trayectos configurados para una organización, incluyendo atributos de estado, tipología, itinerario de salida, días operativos y la unidad asignada. La tabla `stops`, dependiente de `routes`, define cada paradero mediante geolocalización (coordenadas) y un orden secuencial dentro de la ruta. Gracias a esta arquitectura, es posible definir el recorrido global a partir de una sucesión ordenada de puntos de parada.
+
+![DataBase](./assets/images/ChapterIV/DbFleet.png)
+
+---
+
+**Trip**
+
+El esquema de Trip contempla el monitoreo y el desarrollo operativo en tiempo real de los recorridos planificados. La tabla `trips` consolida las ejecuciones diarias, asociando cada viaje con la organización, la ruta y el conductor designado. Alrededor de esta entidad gravitan `attendances`, que supervisa la subida de los estudiantes; `incidents`, encargada de registrar anomalías durante el trayecto; y `trip_locations`, que almacena la traza GPS transmitida durante el recorrido. Esta distribución facilita tanto el seguimiento en vivo como la auditoría e historial de cada operación.
+
+![DataBase](./assets/images/ChapterIV/DbTrip.png)
+
+---
+
+**Notifications**
+
+El modelo de Notifications gestiona los flujos de mensajería e interacciones salientes emitidas por el sistema. La entidad `notifications` conserva el historial de alertas despachadas a los usuarios, vinculándolas a una organización y, cuando aplique, a un viaje concreto. Adicionalmente, audita el estado de entrega, el tipo de notificación, la cantidad de reintentos, el historial de transmisiones y los posibles errores de entrega. Con esto, la plataforma garantiza la trazabilidad del envío y la gestión efectiva de reintentos ante fallos en la comunicación.
+
+![DataBase](./assets/images/ChapterIV/DbNotifications.png)
+
+---
+
+**Stakeholder**
+
+El esquema de Stakeholder organiza el inventario de activos y la asignación de actores operativos. La tabla `vehicles` gestiona el parque automotor de cada organización, detallando capacidad de pasajeros, placa, modelo y disponibilidad. La entidad `assignments` conecta a un conductor con una ruta dada, delegando la responsabilidad de la operación. Por último, la tabla `assignment_children` asocia los estudiantes a una asignación en particular, funcionando como conector entre los conductores/rutas y los menores transportados.
+
+## ![DataBase](./assets/images/ChapterIV/DbStakeHolder.png)
+
 
 ## Capítulo V: Product Implementation, Validation & Deployment
 
@@ -2877,9 +3769,6 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 | Sprint 1 Velocity | 14 story points |
 | Sum of Story Points | 9 story points |
 
-**Historias propuestas:** US21 — Consulta de propuesta y beneficios; US22 — Comparación de planes; US23 — Consulta del funcionamiento y acceso al servicio, y finalmente US26. Los valores proceden del Product Backlog de la sección 3.3.
-
-
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
@@ -2887,13 +3776,41 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 
 | Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
 | ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | C                          | L                  | C                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                          | C                  | C                   |
-| Su Caletti, Eddo                    | Asalreon520     | C                  | C                          | L                  | C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | L                          | C                  | C                   |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                          | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | C                  | L                          | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | L                  | C                          | C                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                          | L                  | L                   |
 | Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
 
 ##### 5.2.1.3. Sprint Backlog 1
+El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores, y se desarrollaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design(DDD).
+
+![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/Sprint-Backlog-1.png)
+
+**URL del Board:** [KidTrack - Sprint 1](https://trello.com/b/SUgGiFTd/kidtrack)
+
+| Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
+| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
+| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
+| **Story Id**         | **Story Title**     | **Task Id**  | **Task Title**                                    | **Task Description**                                                                     | **Estimation (Hours)** | **Assigned To** | **Status** |
+| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal                       | 1          |      Nickolas     | Done        |
+| US21  | Consulta de propuesta y beneficios | T02          | Estructura base de seccion hero, funcionalidades y roles| Implementar la estructura inicial de las 3 secciones                        | 1          |      Nickolas     | Done        |
+| US21  | Consulta de propuesta y beneficios | T03          | Implementar seccion hero | Incorporar la informacion principal de la plataforma y los botones que nos llevaran a otras secciones                       | 2          |     Nickolas      | Done        |
+| US21  | Consulta de propuesta y beneficios | T04          | Implementar seccion funcionalidades  | Incorporar cards explicando las funcionalidades de la plataforma                       | 2          |     Nickolas      | Done        |
+| US21  | Consulta de propuesta y beneficios | T05          | Implementar seccion Roles del sistema  | Incorporar cards explicando los roles que habran en la plataforma y que lugar ocupara cada uno                       | 2          |    Nickolas       | Done        |
+| US21  | Consulta de propuesta y beneficios | T06          | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 1 |     Jose      | Done        |
+| US22  | Comparación de planes              | T07                  | Estructurar seccion planes | Implementar la estructura inicial de la seccion planes                      | 1 |     Jose       | Done        |
+| US22  | Comparación de planes              | T08                  | Implementar seccion plan basico   | Se agregara una cards con la informacion del plan basico y un boton que funcionara si se selecciona dicho plan                       | 1          |    Edo       | Done        |
+| US22  | Comparación de planes              | T09                  | Implementar seccion plan Intermedio   | Se agregara una cards con la informacion del plan intermedio y un boton que funcionara si se selecciona dicho plan                        | 1          |   Edo        | Done        |
+| US22  | Comparación de planes              | T010                  | Implementar seccion plan Completo | Se agregara una cards con la informacion del plan completo y un boton que funcionara si se selecciona dicho plan                        | 1          |     Edo      | Done        |
+| US22  | Comparación de planes              | T011                  | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |     Jose      | Done        |
+| US23  | Consulta del funcionamiento y acceso al servicio | T012                  | Estructurar seccion de como funciona la plataforma | Implementar la estructura inicial de la seccion de como funciona la plataforma                       | 2          |      Salvador     | Done       |
+| US23  | Consulta del funcionamiento y acceso al servicio | T013                  | Implementar seccion de como funciona la plataforma | Se agregara la informacion mediante pasos de un workflow simple de como se usa la plataforma                       | 1          |     Salvador     | Done       |
+| US23  | Consulta del funcionamiento y acceso al servicio                            | T014                  | Aplicar tipografia y guia de estilos del modelo de negocio   | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |    Jose       | Done        |
+| US26  | Uso en inglés y español i18n                     | T015                  | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto.                       | 2          |    Matias       | Done       |
+| US26  | Uso en inglés y español i18n                     | T016                  | Crear diccionario en español | Definir textos de la Landing Page en español.                       | 1          |    Matias      | Done       |
+| US26  | Uso en inglés y español i18n                     | T017                  | Crear diccionario en inglés | Definir traducciones de la Landing Page en inglés.                       | 1          |    Matias       | Done       |
+| US26  | Uso en inglés y español i18n                     | T018                  | Implementar boton de seleccion de idioma | Agregar boton cambio de idioma ES/EN en la interfaz.                       | 3          |    Jose       | Done       |
 ##### 5.2.1.4. Development Evidence for Sprint Review
 **URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
 
@@ -2919,7 +3836,7 @@ Durante el Sprint 1, el equipo realizó commits principalmente sobre el reposito
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
+Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
 
 La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción, informacion del flujo de uso y soporte de internacionalización (ES/EN). 
 A continuación se presentan las capturas de las secciones implementadas:
@@ -2996,8 +3913,10 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 ![Landing Live](assets/images/Chapter-5/Sprint1/landing-page.png)
 
 #### 5.2.1.8. Team Collaboration Insights during Sprint
-
-## ![Pulse Insights](assets/images/Chapter-5/Sprint1/insights.png)
+## Report:
+![KidTrack Report](assets/images/Chapter-5/Sprint1/Insights-Report.png)
+## Landing Page:
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
 ### 5.2.2. Sprint 2
 ##### 5.2.2.1. Sprint Planning 2
