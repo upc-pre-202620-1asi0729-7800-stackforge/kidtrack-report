@@ -710,6 +710,204 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 #### Validación del Arquetipo
 ---
 
+#### Entrevista 2: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+#### Entrevista 3: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+#### Entrevista 4: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |   Edgar Alfonso Su Llaque                                                                                                                                                |
+| **Edad**                       |          56                                                                                                                                             |
+| **Distrito / Zona de trabajo** |                Santiago de Surco                                                                                                                 |
+| **Segmento**                   |           Padre de familia                                                                                                                       |
+| **Inicio en video**            |             0:05                                                                                                                                                                        |
+| **Fin de video**               |               5:57                                                                                                                                                                             |
+|     **Duración**                   |                                                                5:57                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+Pendiente de completar con el contenido de la entrevista. Se debe resumir brevemente quién es el entrevistado, su situación, sus actividades y el problema o necesidad que comenta durante la entrevista.
+
+#### Características Objetivas y Entorno
+Aquí colocaremos datos observables del entrevistado y su contexto, por ejemplo:
+
+- Edad y lugar donde vive.
+- Actividad principal.
+- Situación familiar.
+- Contexto en el que realiza las actividades relacionadas con el problema.
+- Recursos o condiciones que tiene disponibles.
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+Aquí identificaremos:
+
+- Celular, computadora u otros dispositivos que utilice.
+- Aplicaciones o plataformas que mencione.
+- Redes sociales.
+- Medios que utiliza para comunicarse.
+- Cómo busca información o realiza sus actividades.
+
+#### Características Subjetivas y Personalidad
+Aquí analizaremos lo que expresa durante la entrevista:
+
+- Opiniones.
+- Preferencias.
+- Motivaciones.
+- Hábitos.
+- Preocupaciones.
+- Qué considera importante.
+- Cómo toma decisiones.
+
+#### Pain Points Detectados
+Aquí debemos colocar los problemas o dificultades que menciona el entrevistado, por ejemplo:
+
+- Problemas que enfrenta actualmente.
+- Actividades que le resultan complicadas.
+- Falta de información.
+- Pérdida de tiempo.
+- Dificultades con alguna herramienta o proceso.
+- Frustraciones que expresa.
+
+#### Oportunidades Identificadas
+A partir de los pain points, podemos plantear:
+
+- Qué podría mejorarse.
+- Qué solución podría facilitarle el proceso.
+- Qué tecnología podría ayudarlo.
+- Qué característica debería tener una posible solución.
+
+#### Validación del Arquetipo
+
+El entrevistado presenta características que coinciden con el perfil de usuario planteado, por lo que se respalda correctamente el User
+
+---
+
+#### Entrevista 5: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
+
+#### Entrevista 6: 
+
+| Campo                          | Detalle                                                                                                                                                                                         |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nombre y Apellidos**         |                                                                                                                                                                                     |
+| **Edad**                       |                                                                                                                                                         |
+| **Distrito / Zona de trabajo** |                                                                                                                                 |
+| **Segmento**                   |                                                                                                                                  |
+| **Inicio en video**            |                                                                                                                                                                                     |
+| **Fin de video**               |                                                                                                                                                                                            |
+|     **Duración**                   |                                                                                                                                                                                         |
+| **URL del video**              |  |
+
+#### Screenshot
+---
+
+#### Resumen Descriptivo de la Entrevista
+
+#### Características Objetivas y Entorno
+
+#### Herramientas, Tecnología y Canales de Interacción
+
+#### Características Subjetivas y Personalidad
+
+#### Pain Points Detectados
+
+#### Oportunidades Identificadas
+
+#### Validación del Arquetipo
+---
+
 
 #### 2.2.3. Análisis de entrevistas
 
@@ -756,40 +954,71 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 
 Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
 
-#### Características Objetivas del Segmento
+### Características Objetivas del Segmento
 
-| Característica                         | Resultado | Sustento                                                       |
-| -------------------------------------- | --------- | -------------------------------------------------------------- |
-| - | - | - |
+| **Característica** | **Resultado** | **Sustento** |
+| -------------------------------------- | ---- | -------------------------------------------------------------- |
+| Edad Adulta (50 a 60 años) | 100% | Edgar tiene 56 años y pertenece al segmento de padres de familia |
+| Reside en una zona urbana | 100% | Vive en Santiago de Surco |
+| Tiene responsabilidades familiares | 100% | Su perfil corresponde al de un padre de familia |
+| Uso de servicio de transporte escolar | 100% | No siempre usa el transporte escolar pero siempre alguna modalidad de transporte |
+| Contexto cotidiano | 100% | Desarrolla su vida diaria con constantes actividades familiares |
 
-#### Hallazgo
+### Hallazgo
 
-#### Uso de Tecnología y Herramientas Actuales
+El entrevistado representa a un padre de familia que busca desenvolverse de manera práctica frente a las responsabilidades del día a día. Su perfil permite entender mejor las necesidades que pueden aparecer al momento de organizar actividades familiares y tomar decisiones relacionadas con la seguridad y bienestar de sus hijos.
 
-| Herramienta / Canal                                | Porcentaje |
-| -------------------------------------------------- | ---------- |
-| - | - |
+### Uso de Tecnología y Herramientas Actuales
 
+| **Herramienta / Canal** | **Resultado** |
+| -------------------------------------------------- | ---- |
+| Teléfono celular | 100% |
+| Comunicación mediante canales digitales | 100% |
+| Uso de herramientas tecnológicas en actividades cotidianas | 100% |
+| Comunicación directa para coordinar actividades | 100% |
 
-#### Principales Problemas Detectados (Pain Points)
+Actualmente, la tecnología forma parte de la rutina de los padres de familia y puede ser utilizada como apoyo para facilitar la comunicación, organización y seguimiento de diferentes actividades.
 
-| Problema identificado                           | Porcentaje |
-| ----------------------------------------------- | ---------- |
-| -| - |
+### Principales Problemas Detectados (Pain Points)
 
+| **Problema identificado** | **Resultado** |
+| ----------------------------------------------- | ---- |
+| Preocupación por la seguridad de los hijos | 100% |
+| Necesidad de contar con información clara | 100% |
+| Dependencia de la comunicación para conocer el estado de una actividad | 100% |
+| Incertidumbre cuando no existe información suficiente | 100% |
+| Necesidad de mayor tranquilidad durante las actividades familiares | 100% |
 
-#### Necesidades Funcionales Prioritarias
+El principal paint point identificado está relacionado con la incertidumbre. Para un padre de familia, no contar con información suficiente puede generar preocupación, especialmente cuando se trata de actividades relacionadas con sus hijos.
 
-| Necesidad mencionada                                    | Porcentaje |
-| ------------------------------------------------------- | ---------- |
-| - | - |
+### Necesidades Funcionales Prioritarias
 
+| **Necesidad mencionada** | **Resultado** |
+| --------------------------------------- | ---- |
+| Contar con información actualizada y la ubicación en tiempo real del transporte | 100% |
+| Tener mayor visibilidad sobre las actividades | 100% |
+| Recibir información de manera sencilla | 100% |
+| Poder comunicarse fácilmente cuando sea necesario | 100% |
+| Contar con una herramienta práctica desde el celular | 100% |
+| Obtener mayor tranquilidad y confianza | 100% |
 
-#### Características Subjetivas del Segmento
+Se buscara reducir la incertidumbre mediante el monitoreo a tiempo real y la fidelidad de la informacion que el padre recibe.
 
-| Rasgo detectado                            | Porcentaje |
-| ------------------------------------------ | ---------- |
-| - | - |
+### Características Subjetivas del Segmento
+
+| **Rasgo detectado** | **Resultado** |
+| ------------------------------------------ | ---- |
+| Preocupación por el bienestar familiar | 100% |
+| Interés por soluciones prácticas | 100% |
+| Valora la información clara | 100% |
+| Busca sentirse más tranquilo y seguro | 100% |
+| Disposición hacia herramientas digitales útiles | 100% |
+| Perfil orientado a la familia | 100% |
+
+El entrevistado refleja un perfil principalmente familiar y practico,por lo que nuestra plataforma tendría mayor valor si es fácil de entender, rápida de utilizar.
+
+### Conclusión del Segmento
+A partir de esta primera entrevista, se puede observar que el padre de familia busca principalmente seguridad, información real y tranquilidad. Nuestra solucion planteada jugara un papel importante siempre que simplifique el proceso y no se agreguen más complicaciones.
 
 ### 2.3. Needfinding
 #### 2.3.1. User Personas
