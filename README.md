@@ -206,7 +206,7 @@ Proyecto
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:Trabaje de manera grupal y coordinadamente con mis compañeros, manteniendo comunicación constante y clara con ellos.<br><br>
     <td colspan="2">
     AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.</td>
  </tr>
@@ -218,7 +218,7 @@ Proyecto
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1:<br><br><b> </b> 
+    <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br><br><b> </b> 
     <td colspan="2"> AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.</td>
  </tr>
 
