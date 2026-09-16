@@ -683,31 +683,57 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
-| **Inicio en video**            |                                                                                                                                                                                     |
-| **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
+| **Nombre y Apellidos**         |        Jesus Denilson Tarqui                                                                                                                                                                             |
+| **Edad**                       |                                                                                 24 años                                                                        |
+| **Distrito / Zona de trabajo** |                                                                                                San Borja                                |
+| **Segmento**                   |         Conductor                                                                                                                         |
+| **Inicio en video**            |              -                                                                                                                                                                       |
+| **Fin de video**               |              -                                                                                                                                                                              |
+|     **Duración**                   |                                                                           -                                                                                                              |
+| **URL del video**              | -  |
 
 #### Screenshot
 ---
 
-#### Resumen Descriptivo de la Entrevista
+### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
 
+Jesús Quiroz Tarqui tiene 24 años y vive en San Borja. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
+
 #### Herramientas, Tecnología y Canales de Interacción
+
+Actualmente utiliza herramientas informales para operar:
+
+- WhatsApp como canal de comunicación con los padres de familia
+- Google Maps para navegación y rutas alternas
+- Smartphone como dispositivo principal de trabajo
+
+El uso del teléfono móvil es la herramienta principal por lo que se evidencia familiaridad con aplicaciones digitales de uso cotidiano.
 
 #### Características Subjetivas y Personalidad
 
+Jesús presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
+También demuestra preocupación por hacer bien su trabajo y porque los traslados se realicen de manera segura. 
+
 #### Pain Points Detectados
+
+- Dificultad para comunicarse con clientes que tienen poco tiempo disponible.
+- Espera de respuestas para poder confirmar o coordinar determinados detalles.
+- Exceso de mensajes o llamadas durante el servicio.
+- Posibles distracciones al tener que revisar constantemente el celular.
+- Confusiones cuando la información no está organizada o llega de manera separada.
+- Presión por asegurarse de que todo salga correctamente durante el recorrido.
+- Necesidad de mantener la seguridad sin descuidar la comunicación con los clientes.
 
 #### Oportunidades Identificadas
 
-#### Validación del Arquetipo
+- Implementar una comunicación más rápida y organizada entre conductores y clientes.
+- Automatizar confirmaciones y avisos para reducir mensajes innecesarios.
+- Permitir que los clientes confirmen información sin necesidad de comunicarse constantemente con el conductor.
+- Gestionar horarios, rutas, datos y avisos importantes en una sola plataforma.
+- Crear alertas simples que permitan al conductor conocer información importante sin distraerse.
+- Reducir la dependencia de mensajes y llamadas para realizar coordinaciones básicas.
 ---
 
 #### Entrevista 2: 
@@ -909,52 +935,90 @@ El entrevistado presenta características que coinciden con el perfil de usuario
 ---
 
 
-#### 2.2.3. Análisis de entrevistas
+### 2.2.3. Análisis de entrevistas
 
-#### Segmento Objetivo 1: Conductores de Transporte Escolar
+### Segmento Objetivo 1: Conductores de Transporte Escolar
 
-Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de conductores, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del primer segmento objetivo.
+Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+
 #### Características Objetivas del Segmento
 
-| Característica                         | Resultado | Sustento                                                       |
-| -------------------------------------- | --------- | -------------------------------------------------------------- |
-| - | - | - |
+| **Característica** | **Resultado** | **Sustento** |
+| ------------------------------------ | ---- | -------------------------------------------------------------- |
+| Adulto joven | 100% | Jesús tiene 24 años |
+| Reside en una zona urbana | 100% | Vive en San Borja |
+| Pertenece al segmento de conductores | 100% | Se desempeña como conductor |
+| Familiarizado con la tecnología | 100% | Se desenvuelve con facilidad utilizando herramientas digitales |
+| No tiene hijos actualmente | 100% | No cuenta con hijos ni familia propia |
+| Mantiene una actitud responsable | 100% | Procura que los traslados se realicen de forma segura |
 
 #### Hallazgo
 
+El conductor entrevistado representa un perfil joven y familiarizado con la tecnología, por lo que utilizar una herramienta digital no representa una dificultad importante para él. El principal reto se encuentra en la comunicación con los clientes, especialmente cuando estos están ocupados y no pueden responder de inmediato.
+
+Esto evidencia una oportunidad para hacer más simples las coordinaciones y reducir la cantidad de interacciones que el conductor debe atender mientras se encuentra trabajando.
+
 #### Uso de Tecnología y Herramientas Actuales
 
-| Herramienta / Canal                                | Porcentaje |
-| -------------------------------------------------- | ---------- |
-| - | - |
+| **Herramienta / Canal** | **Porcentaje** |
+| ------------------------------------------- | ---- |
+| Teléfono móvil como dispositivo principal | 100% |
+| Aplicaciones de navegación | 100% |
+| Mensajería instantánea | 100% |
+| Herramientas digitales para sus actividades | 100% |
+| Comunicación directa con clientes | 100% |
 
+Actualmente, la tecnología forma parte de la rutina del conductor y sirve principalmente como apoyo para la navegación y comunicación. Sin embargo, cuando algunas coordinaciones dependen de respuestas constantes de los clientes, el proceso puede hacerse más lento y generar interrupciones durante el servicio.
 
 #### Principales Problemas Detectados (Pain Points)
 
-| Problema identificado                           | Porcentaje |
-| ----------------------------------------------- | ---------- |
-| -| - |
+| **Problema identificado** | **Porcentaje** |
+| ------------------------------------------------- | ---- |
+| Dificultad para comunicarse con clientes ocupados | 100% |
+| Espera de respuestas para realizar coordinaciones | 100% |
+| Necesidad de revisar mensajes durante el servicio | 100% |
+| Posibles distracciones durante la conducción | 100% |
+| Información poco organizada | 100% |
+| Preocupación por mantener la seguridad | 100% |
 
+La principal dificultad encontrada está relacionada con la comunicación. Aunque Jesús está familiarizado con la tecnología, depender de mensajes y respuestas en tiempo real puede complicar algunas coordinaciones y generar distracciones mientras realiza el recorrido.
 
 #### Necesidades Funcionales Prioritarias
 
-| Necesidad mencionada                                    | Porcentaje |
-| ------------------------------------------------------- | ---------- |
-| - | - |
+| **Necesidad mencionada** | **Porcentaje** |
+| --------------------------------------- | ---- |
+| Comunicación rápida con los clientes | 100% |
+| Confirmaciones automáticas | 100% |
+| Información clara y organizada | 100% |
+| Reducir la necesidad de revisar el celular | 100% |
+| Acceso rápido a información importante | 100% |
+| Herramienta sencilla desde el celular | 100% |
+| Funciones relacionadas con la seguridad | 100% |
+
+El conductor necesita una solución que le permita manejar las coordinaciones de manera rápida y con la menor cantidad de interrupciones posible. Funciones como confirmaciones automáticas, avisos y mensajes predeterminados podrían ayudar a que el servicio sea más ordenado y fluido.
 
 #### Características Subjetivas del Segmento
 
-| Rasgo detectado                            | Porcentaje |
-| ------------------------------------------ | ---------- |
-| - | - |
+| **Rasgo detectado** | **Porcentaje** |
+| -------------------------------------------------- | ---- |
+| Familiaridad con la tecnología | 100% |
+| Disposición a utilizar soluciones digitales útiles | 100% |
+| Preocupación por la seguridad | 100% |
+| Responsabilidad con los pasajeros | 100% |
+| Valora una comunicación clara y rápida | 100% |
+| Busca evitar complicaciones | 100% |
+| Perfil práctico | 100% |
 
----
+El perfil identificado corresponde a un conductor joven, práctico y cómodo utilizando tecnología. Su interés no estaría simplemente en usar una nueva herramienta, sino en encontrar una solución que realmente le ayude a realizar su trabajo de forma más sencilla y organizada.
 
-#### Segmento Objetivo 2: Padres de Familia
+#### Conclusion del segmento
+A partir de esta primera entrevista, se puede observar que el conductor busca principalmente seguridad, comunicación clara y facilidad para realizar su trabajo. Nuestra solución sera útil ya que ayudara a simplificar las coordinaciones con los clientes, reducira las distracciones y permitira gestionar la información importante de manera rápida y sencilla.
 
-Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+### Segmento Objetivo 2: Padres de Familia
 
-### Características Objetivas del Segmento
+Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas del segmento de padres de familia, por lo que los porcentajes presentados nos ayudaran a construir un perfil sólido del segundo segmento objetivo.
+
+#### Características Objetivas del Segmento
 
 | **Característica** | **Resultado** | **Sustento** |
 | -------------------------------------- | ---- | -------------------------------------------------------------- |
@@ -964,11 +1028,11 @@ Este análisis se realizó a partir de una muestra de 3 entrevistas válidas del
 | Uso de servicio de transporte escolar | 100% | No siempre usa el transporte escolar pero siempre alguna modalidad de transporte |
 | Contexto cotidiano | 100% | Desarrolla su vida diaria con constantes actividades familiares |
 
-### Hallazgo
+#### Hallazgo
 
 El entrevistado representa a un padre de familia que busca desenvolverse de manera práctica frente a las responsabilidades del día a día. Su perfil permite entender mejor las necesidades que pueden aparecer al momento de organizar actividades familiares y tomar decisiones relacionadas con la seguridad y bienestar de sus hijos.
 
-### Uso de Tecnología y Herramientas Actuales
+#### Uso de Tecnología y Herramientas Actuales
 
 | **Herramienta / Canal** | **Resultado** |
 | -------------------------------------------------- | ---- |
@@ -979,7 +1043,7 @@ El entrevistado representa a un padre de familia que busca desenvolverse de mane
 
 Actualmente, la tecnología forma parte de la rutina de los padres de familia y puede ser utilizada como apoyo para facilitar la comunicación, organización y seguimiento de diferentes actividades.
 
-### Principales Problemas Detectados (Pain Points)
+#### Principales Problemas Detectados (Pain Points)
 
 | **Problema identificado** | **Resultado** |
 | ----------------------------------------------- | ---- |
@@ -991,7 +1055,7 @@ Actualmente, la tecnología forma parte de la rutina de los padres de familia y 
 
 El principal paint point identificado está relacionado con la incertidumbre. Para un padre de familia, no contar con información suficiente puede generar preocupación, especialmente cuando se trata de actividades relacionadas con sus hijos.
 
-### Necesidades Funcionales Prioritarias
+#### Necesidades Funcionales Prioritarias
 
 | **Necesidad mencionada** | **Resultado** |
 | --------------------------------------- | ---- |
@@ -1004,7 +1068,7 @@ El principal paint point identificado está relacionado con la incertidumbre. Pa
 
 Se buscara reducir la incertidumbre mediante el monitoreo a tiempo real y la fidelidad de la informacion que el padre recibe.
 
-### Características Subjetivas del Segmento
+#### Características Subjetivas del Segmento
 
 | **Rasgo detectado** | **Resultado** |
 | ------------------------------------------ | ---- |
@@ -1018,6 +1082,7 @@ Se buscara reducir la incertidumbre mediante el monitoreo a tiempo real y la fid
 El entrevistado refleja un perfil principalmente familiar y practico,por lo que nuestra plataforma tendría mayor valor si es fácil de entender, rápida de utilizar.
 
 ### Conclusión del Segmento
+
 A partir de esta primera entrevista, se puede observar que el padre de familia busca principalmente seguridad, información real y tranquilidad. Nuestra solucion planteada jugara un papel importante siempre que simplifique el proceso y no se agreguen más complicaciones.
 
 ### 2.3. Needfinding
