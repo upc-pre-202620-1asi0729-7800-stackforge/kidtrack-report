@@ -203,7 +203,7 @@ Proyecto
     </th>
     <td colspan="10">
     <b>Chamorro Acero, Salvador Edward</b> Durante el desarrollo de esta primera entrega se sostuvo una comunicacion constante mediante reuniones y trabajo en conjunto para poder lograr los objetivos de manera satisfactoria. <br>AV1:<br><br>
-    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Mantuve comunicación constante con el equipo durante el desarrollo de este primer avance, coordinando la distribución del trabajo en ramas de Git entre los integrantes y validando junto a ellos los cambios de branding y contenido antes de integrarlos al repositorio.<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Lideré la presentación oral del proyecto, exponiendo los objetivos generales y estructurando los avances del equipo de manera clara y articulada, transmitiendo las ideas clave con un lenguaje técnico y adaptado a la audiencia.  <br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:En el desarrollo de la primera entrega se consolidó comunicación clara y precisa acerca de los objetivos del trabajo, se mantuvo una comunicación constante referente a algunos problemas o cruces que podría suceder.<br><br>
     <b>Su Caletti, Eddo</b> <br>AV1:Trabaje de manera grupal y coordinadamente con mis compañeros, manteniendo comunicación constante y clara con ellos.<br><br>
@@ -215,7 +215,7 @@ Proyecto
     </th>
     <td colspan="10">
     <b>Chamorro Acero, Salvador Edward</b> Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto. <br>AV1:<br><br>
-    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Redacté y adapté las secciones Landing Page UI Design,Web Applications UX/UI Design: wireframes, wireflow diagrams, mock-ups y user flow diagrams, Web Applications Prototyping y Domain-Driven Software Architecture: Event Storming, diagrama de contexto, de contenedores y de componentes del informe. Además, lideré el rebranding de la landing page de SafeRoute a KidTrack (paleta de colores, logotipo y textos) y coordiné la división del código de la landing entre los integrantes del equipo mediante ramas de Git.<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:Redacté todo el bloque del capítulo 3 ( User Stories.Impact Mapping,Product Backlog). También tuve colaboración en los Class Diagrams,Database Design y Database Diagrams. Finalmente aporté en parte de la elaboración de la landing page y el capítulo 5 sobre la configuración, despliego de software y sprint.<br><br>
     <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br><br><b> </b> 
@@ -803,7 +803,7 @@ Se puede validar que el entrevistado cumple perfectamente con el arquetipo condu
 | **Inicio en video**            |          18:44                                                                                                                                                                            |
 | **Fin de video**               |     23:30                                                                                                                                                                                       |
 |     **Duración**                   |               04:46 min                                                                                                                                                                      |
-| **URL del video**              | [Entrevista 3](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h) |
+| **URL del video**              | [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBW1l_ZVSxdRJHhJwGCjIIWAZ_QIjQLBUCDoAnzN3IgcBo?e=J0j2sI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
