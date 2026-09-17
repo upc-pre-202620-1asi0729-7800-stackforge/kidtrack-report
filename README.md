@@ -774,31 +774,87 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
-| **Inicio en video**            |                                                                                                                                                                                     |
-| **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
+| **Nombre y Apellidos**         |                         Carla Peláez                                                                                                                                                            |
+| **Edad**                       | 38 años                                                                                                                                                         |
+| **Distrito / Zona de trabajo** | Santiago de Surco, Lima                                                                                                                                |
+| **Segmento**                   | Padre de familia                                                                                                                                  |
+| **Inicio en video**            |          -                                                                                                                                                                           |
+| **Fin de video**               |     -                                                                                                                                                                                       |
+|     **Duración**                   |               04:46                                                                                                                                                                          |
+| **URL del video**              | https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h |
 
 #### Screenshot
+
+![SegmentoObjetivo2](./assets/images/Chapter2/CarlaPelaez-SegmentoObjetivo2.png)
+
 ---
 
 #### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
 
+Carla Peláez es una madre de familia de 38 años residente en el distrito de Santiago de Surco. Vive con su esposo y sus cuatro hijos, de los cuales dos utilizan actualmente servicio de transporte escolar. Representa a familias urbanas con alta responsabilidad logística diaria, donde el traslado escolar cumple un rol clave para compatibilizar horarios familiares, laborales y educativos.
+
+El transporte escolar forma parte importante de su rutina diaria, ya que permite asegurar la asistencia puntual de sus hijos al centro educativo.
+
 #### Herramientas, Tecnología y Canales de Interacción
+
+Actualmente utiliza herramientas informales para operar:
+
+- WhatsApp como canal de comunicación con los conductores
+- Smartphone como dispositivo principal de trabajo
+
+El uso del teléfono móvil es la herramienta principal por lo que se evidencia familiaridad con aplicaciones digitales de uso cotidiano.
 
 #### Características Subjetivas y Personalidad
 
+A partir de sus respuestas, se identifica un perfil:
+
+- Protector y orientado al bienestar familiar
+- Preventivo frente a riesgos externos
+- Receptivo a herramientas digitales útiles
+- Sensible a la falta de información
+- Altamente motivado por la seguridad de sus hijos
+
 #### Pain Points Detectados
+
+Durante la entrevista se identificaron preocupaciones relevantes:
+
+- Angustia cuando la movilidad se retrasa
+- Ansiedad cuando no llega la confirmación del colegio
+- Falta de visibilidad en tiempo real durante el trayecto
+- Dependencia de terceros para validar información
+- Percepción de inseguridad en el contexto actual de transporte urbano
+- Menor confianza cuando la movilidad no pertenece directamente al colegio
+
+Estos puntos reflejan una necesidad clara de trazabilidad, confianza y comunicación inmediata.
 
 #### Oportunidades Identificadas
 
+Carla mostró alta aceptación hacia una plataforma digital que le permita:
+
+- Ver la ruta del vehículo en tiempo real
+- Conocer si ocurrió algún inconveniente durante el trayecto
+- Recibir confirmación automática de llegada
+- Saber la ubicación permanente de sus hijos
+- Reducir ansiedad e incertidumbre diaria
+- Incrementar confianza en el servicio contratado
+
+Para Carla, el atributo más importante para sentirse tranquila es:
+
+“Saber en dónde está en todo momento”.
+
 #### Validación del Arquetipo
+
+Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
+
+- Seguridad del estudiante
+- Monitoreo en tiempo real
+- Alertas automáticas
+- Comunicación confiable
+- Reducción de ansiedad durante el traslado escolar
+
+Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tranquilidad, confianza y visibilidad operacional para las familias usuarias.
 ---
 
 #### Entrevista 4: 
