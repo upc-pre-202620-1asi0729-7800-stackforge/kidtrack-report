@@ -202,7 +202,7 @@ Proyecto
     <td colspan="2">Comunica oralmente con efectividad a diferentes rangos de audiencia.
     </th>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>Chamorro Acero, Salvador Edward</b> Durante el desarrollo de esta primera entrega se sostuvo una comunicacion constante mediante reuniones y trabajo en conjunto para poder lograr los objetivos de manera satisfactoria. <br>AV1:<br><br>
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Lideré la presentación oral del proyecto, exponiendo los objetivos generales y estructurando los avances del equipo de manera clara y articulada, transmitiendo las ideas clave con un lenguaje técnico y adaptado a la audiencia.  <br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
@@ -214,7 +214,7 @@ Proyecto
     <td colspan="2">Comunica por escrito con efectividad a diferentes rangos de audiencia.
     </th>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>Chamorro Acero, Salvador Edward</b> Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto. <br>AV1:<br><br>
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
