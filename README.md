@@ -691,8 +691,8 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 | **Segmento**                   |         Conductor                                                                                                                         |
 | **Inicio en video**            |              -                                                                                                                                                                       |
 | **Fin de video**               |              -                                                                                                                                                                              |
-|     **Duración**                   |                                                                           -                                                                                                              |
-| **URL del video**              | -  |
+|     **Duración**                   |             8:13 min                                                             -                                                                                                              |
+| **URL del video**              | [Entrevista 1 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC9ov_D2fTJQ5LB_AyO9bVPAckd13FbPmFobcTby6rnFuc?e=XSIkcs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
@@ -749,11 +749,12 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 | **Segmento**                   |                                                                                                                                  |
 | **Inicio en video**            |                                                                                                                                                                                     |
 | **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
+|     **Duración**                   |    10:31 min                                                                                                                                                                                     |
+| **URL del video**              | [Entrevista 1 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBW1l_ZVSxdRJHhJwGCjIIWAZ_QIjQLBUCDoAnzN3IgcBo?e=J0j2sI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista2.png) 
 
 #### Resumen Descriptivo de la Entrevista
 
@@ -780,8 +781,8 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 | **Segmento**                   | Padre de familia                                                                                                                                  |
 | **Inicio en video**            |          -                                                                                                                                                                           |
 | **Fin de video**               |     -                                                                                                                                                                                       |
-|     **Duración**                   |               04:46                                                                                                                                                                          |
-| **URL del video**              | https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h |
+|     **Duración**                   |               04:46 min                                                                                                                                                                      |
+| **URL del video**              | [SegmentoObjetivo2](https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h) |
 
 #### Screenshot
 
@@ -867,11 +868,12 @@ Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tra
 | **Segmento**                   |           Padre de familia                                                                                                                       |
 | **Inicio en video**            |             0:05                                                                                                                                                                        |
 | **Fin de video**               |               5:57                                                                                                                                                                             |
-|     **Duración**                   |                                                                5:57                                                                                                                         |
-| **URL del video**              |  |
+|     **Duración**                   |                5:57 min                                                5:57                                                                                                                         |
+| **URL del video**              | [Entrevista 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDAt9nwJvDHSa0htW0MsAc2AciAq6TfmjePmx3v0nyazSA?e=7Yb250&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista4.png) 
 
 #### Resumen Descriptivo de la Entrevista
 Pendiente de completar con el contenido de la entrevista. Se debe resumir brevemente quién es el entrevistado, su situación, sus actividades y el problema o necesidad que comenta durante la entrevista.
@@ -940,11 +942,12 @@ El entrevistado presenta características que coinciden con el perfil de usuario
 | **Segmento**                   | Padre de Familia |
 | **Inicio en video**            |                  |
 | **Fin de video**               |                  |
-|     **Duración**                   |                  |
-| **URL del video**              |                  |
+|     **Duración**                   |      8:02 min            |
+| **URL del video**              |       [Entrevista 5](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQADI_jRQC-zRYBpVO9tvOYBAdl8qvUA6Hd77iae18To8mk?e=OBv8ZL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)           |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista5.png) 
 
 #### Resumen Descriptivo de la Entrevista
 Entrevista de validación de usuario realizada por Nickolas Ramírez a Máximo Quevedo, padre de familia residente en Lima, orientada a identificar necesidades, puntos de fricción y disposición de adopción de una plataforma móvil para el monitoreo y gestión de movilidad escolar privada.
