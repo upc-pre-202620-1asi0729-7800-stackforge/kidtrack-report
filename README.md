@@ -202,11 +202,11 @@ Proyecto
     <td colspan="2">Comunica oralmente con efectividad a diferentes rangos de audiencia.
     </th>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>Chamorro Acero, Salvador Edward</b> Durante el desarrollo de esta primera entrega se sostuvo una comunicacion constante mediante reuniones y trabajo en conjunto para poder lograr los objetivos de manera satisfactoria. <br>AV1:<br><br>
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
-    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Lideré la presentación oral del proyecto, exponiendo los objetivos generales y estructurando los avances del equipo de manera clara y articulada, transmitiendo las ideas clave con un lenguaje técnico y adaptado a la audiencia.  <br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1:<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1:Trabaje de manera grupal y coordinadamente con mis compañeros, manteniendo comunicación constante y clara con ellos.<br><br>
     <td colspan="2">
     AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.</td>
  </tr>
@@ -214,11 +214,11 @@ Proyecto
     <td colspan="2">Comunica por escrito con efectividad a diferentes rangos de audiencia.
     </th>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> <br>AV1:<br><br>
+    <b>Chamorro Acero, Salvador Edward</b> Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto. <br>AV1:<br><br>
     <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1:<br><br>
-    <b>Ramirez Ruiz, Nickolas</b> <br>AV1:<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1:<br><br><b> </b> 
+    <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br><br><b> </b> 
     <td colspan="2"> AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.</td>
  </tr>
 
@@ -239,11 +239,13 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 
 |                   Foto                    | Apellidos y Nombres    |    Código    | Carrera                | Resumen                                                                                                                                                                                                                                                                                                                                                                                 |
 |:-----------------------------------------:|:-----------------------|:------------:| :--------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    ![foto](./assets/images/Team/salvador.png)     | Chamorro Acero, Salvador Edward   | u201914367 | Ingeniería de Software | Estudiante de la carrera de ingenieria de software y entusiasta de la tecnologia. Poseo conocimientos en distintos lenguajes de programacion y tecnologias como python c++, git, js y me considero capaz de trabajar bajo presion y en equipo.                                                                                                                                                                                                                                                                                                                                                                          |
-|    ![foto](./assets/images/Team/perfil-mathias-delacruz.jpg)    | De la Cruz De los Santos, Mathías Marcelo | [U202424059] | Ingeniería de Software |Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el 5to ciclo de la carrera en la Universidad Peruana de Ciencias Aplicadas. Me considero un fanático de la programación, del fútbol y de los videojuegos. Considero que puedo aportar al equipo y al proyecto mis conocimientos técnicos, además de considerarme una persona disciplinada, responsable y que valora el trabajo en equipo.                                 |
-    | ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
-|        ![foto](assets/images/Team/JoseOrtega.png)        | Ortega Quintana, José Zacarías.  |   [U202316852]   | Ingeniería de Software | Soy José Ortega, tengo 21 años y soy un estudiante de Ingeniería de Software. Tengo interés en la creatividad, creación y el funcionamiento de ciertas cosas o ciclos. Espero ser de ayuda a mi equipo y podamos llevar al proyecto de forma dedicada y apasionada.                                                                                                                                                                                                                                                                                                                                                                             |
+|    ![foto](./assets/images/Team/salvador.png)     | Chamorro Acero, Salvador Edward   | u201914367 | Ingeniería de Software | Estudiante de la carrera de ingenieria de software y entusiasta de la tecnologia. Poseo conocimientos en distintos lenguajes de programacion y tecnologias como python c++, git, js y me considero capaz de trabajar bajo presion y en equipo. |
+|    ![foto](./assets/images/Team/perfil-mathias-delacruz.jpg)    | De la Cruz De los Santos, Mathías Marcelo | [U202424059] | Ingeniería de Software |Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el 5to ciclo de la carrera en la Universidad Peruana de Ciencias Aplicadas. Me considero un fanático de la programación, del fútbol y de los videojuegos. Considero que puedo aportar al equipo y al proyecto mis conocimientos técnicos, además de considerarme una persona disciplinada, responsable y que valora el trabajo en equipo. |
+| ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
+|        ![foto](assets/images/Team/JoseOrtega.png)        | Ortega Quintana, José Zacarías.  |   [U202316852]   | Ingeniería de Software | Soy José Ortega, tengo 21 años y soy un estudiante de Ingeniería de Software. Tengo interés en la creatividad, creación y el funcionamiento de ciertas cosas o ciclos. Espero ser de ayuda a mi equipo y podamos llevar al proyecto de forma dedicada y apasionada.|
 |  ![foto](assets/images/Team/Eddo%20foto.jpeg)  | Su Caletti, Eddo  | [U20221A390] | Ingeniería de Software |Soy Eddo Su Caletti, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. A lo largo de mi formación he desarrollado un gran interés por la tecnología y la programación. Me considero una persona organizada y dedicada, apasionada por la fotografía y por disfrutar de momentos de calidad en familia.                                                                          |
+
+
 
 ### 1.2. Solution Profile
 
@@ -772,31 +774,87 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
-| **Inicio en video**            |                                                                                                                                                                                     |
-| **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
+| **Nombre y Apellidos**         |                         Carla Peláez                                                                                                                                                            |
+| **Edad**                       | 38 años                                                                                                                                                         |
+| **Distrito / Zona de trabajo** | Santiago de Surco, Lima                                                                                                                                |
+| **Segmento**                   | Padre de familia                                                                                                                                  |
+| **Inicio en video**            |          -                                                                                                                                                                           |
+| **Fin de video**               |     -                                                                                                                                                                                       |
+|     **Duración**                   |               04:46                                                                                                                                                                          |
+| **URL del video**              | https://1drv.ms/v/c/f647ccc757f760c7/IQBpmAWWCOusSLuP0uLD_z7NAe5clO5HVvyL8gi5oJuddj8?e=9qIP9h |
 
 #### Screenshot
+
+![SegmentoObjetivo2](./assets/images/Chapter2/CarlaPelaez-SegmentoObjetivo2.png)
+
 ---
 
 #### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
 
+Carla Peláez es una madre de familia de 38 años residente en el distrito de Santiago de Surco. Vive con su esposo y sus cuatro hijos, de los cuales dos utilizan actualmente servicio de transporte escolar. Representa a familias urbanas con alta responsabilidad logística diaria, donde el traslado escolar cumple un rol clave para compatibilizar horarios familiares, laborales y educativos.
+
+El transporte escolar forma parte importante de su rutina diaria, ya que permite asegurar la asistencia puntual de sus hijos al centro educativo.
+
 #### Herramientas, Tecnología y Canales de Interacción
+
+Actualmente utiliza herramientas informales para operar:
+
+- WhatsApp como canal de comunicación con los conductores
+- Smartphone como dispositivo principal de trabajo
+
+El uso del teléfono móvil es la herramienta principal por lo que se evidencia familiaridad con aplicaciones digitales de uso cotidiano.
 
 #### Características Subjetivas y Personalidad
 
+A partir de sus respuestas, se identifica un perfil:
+
+- Protector y orientado al bienestar familiar
+- Preventivo frente a riesgos externos
+- Receptivo a herramientas digitales útiles
+- Sensible a la falta de información
+- Altamente motivado por la seguridad de sus hijos
+
 #### Pain Points Detectados
+
+Durante la entrevista se identificaron preocupaciones relevantes:
+
+- Angustia cuando la movilidad se retrasa
+- Ansiedad cuando no llega la confirmación del colegio
+- Falta de visibilidad en tiempo real durante el trayecto
+- Dependencia de terceros para validar información
+- Percepción de inseguridad en el contexto actual de transporte urbano
+- Menor confianza cuando la movilidad no pertenece directamente al colegio
+
+Estos puntos reflejan una necesidad clara de trazabilidad, confianza y comunicación inmediata.
 
 #### Oportunidades Identificadas
 
+Carla mostró alta aceptación hacia una plataforma digital que le permita:
+
+- Ver la ruta del vehículo en tiempo real
+- Conocer si ocurrió algún inconveniente durante el trayecto
+- Recibir confirmación automática de llegada
+- Saber la ubicación permanente de sus hijos
+- Reducir ansiedad e incertidumbre diaria
+- Incrementar confianza en el servicio contratado
+
+Para Carla, el atributo más importante para sentirse tranquila es:
+
+“Saber en dónde está en todo momento”.
+
 #### Validación del Arquetipo
+
+Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
+
+- Seguridad del estudiante
+- Monitoreo en tiempo real
+- Alertas automáticas
+- Comunicación confiable
+- Reducción de ansiedad durante el traslado escolar
+
+Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tranquilidad, confianza y visibilidad operacional para las familias usuarias.
 ---
 
 #### Entrevista 4: 
