@@ -693,7 +693,8 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 | **URL del video**              | -  |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista1.png) 
 
 ### Resumen Descriptivo de la Entrevista
 
