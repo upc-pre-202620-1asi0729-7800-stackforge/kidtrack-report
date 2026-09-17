@@ -2801,6 +2801,20 @@ Cuando el conductor marca el abordaje del estudiante, al padre le aparece una "C
 
 ### 4.5. Web Applications Prototyping
 
+La interacción con la interfaz se rige por pilares de diseño clave. Por un lado, el contraste guía la atención hacia funciones vitales como el Botón de Pánico y los avisos de cercanía; por otro, la uniformidad visual se logra mediante la repetición en los paneles destinados a administradores, conductores y tutores. Asimismo, una correcta alineación fomenta una lectura fluida, mientras que la proximidad agrupa de manera lógica los datos de los estudiantes y sus estados de embarque. Todo esto converge en una experiencia inclusiva, práctica y fiel al propósito de brindar un transporte escolar seguro.
+
+En cuanto a la arquitectura de información, KidTrack se estructura mediante un panel principal de navegación jerárquica, respaldado por flujos paso a paso para tareas críticas como el arranque de rutas, el registro de pasajeros y la notificación de eventualidades. Adicionalmente, cuenta con taxonomías intuitivas, divisiones por roles y herramientas de monitoreo en tiempo real que optimizan la dinámica de uso.
+
+Asimismo, se integraron elementos responsivos como efectos visuales en botones (hover/active), validaciones instantáneas en formularios, respuestas operativas claras y esquemas de navegación personalizados para cada perfil (Administrador, Conductor o Padre de Familia). De este modo, se asegura que consultar datos o realizar gestiones sea un proceso fluido, seguro y pensado para la tranquilidad de toda la comunidad.
+
+Más adelante, se presentan capturas de pantalla tomadas de un video demostrativo para las versiones de escritorio y móvil, donde se detallan los flujos interactivos principales implementados en los prototipos.
+
+#### Web Applications Mobile:
+
+[Mobile Prototype](https://1drv.ms/v/c/a3bda66c80e2095c/IQAHgwxCjWdTT7gZyM6kceTfAXgBPj865SIOo7kzbsRkavg?e=kFyB65)
+
+<img src="assets/images/Chapter4/KidtrackMobile.png" width="900px" alt="Protoype">
+
 ### 4.6. Domain-Driven Software Architecture
 
 #### 4.6.1. Design-Level Event Storming
