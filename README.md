@@ -683,9 +683,9 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |        Jesus Denilson Tarqui                                                                                                                                                                             |
-| **Edad**                       |                                                                                 24 años                                                                        |
-| **Distrito / Zona de trabajo** |                                                                                                San Borja                                |
+| **Nombre y Apellidos**         |        Eduardo Martinez                                                                                                                                                                             |
+| **Edad**                       |                                                                                 28 años                                                                        |
+| **Distrito / Zona de trabajo** |                                                                                                Surco                                |
 | **Segmento**                   |         Conductor                                                                                                                         |
 | **Inicio en video**            |              -                                                                                                                                                                       |
 | **Fin de video**               |              -                                                                                                                                                                              |
@@ -693,13 +693,14 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 | **URL del video**              | -  |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista1.png) 
 
 ### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
 
-Jesús Quiroz Tarqui tiene 24 años y vive en San Borja. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
+Eduardo Martinez tiene 28 años y vive en Surco. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
 
 #### Herramientas, Tecnología y Canales de Interacción
 
@@ -713,7 +714,7 @@ El uso del teléfono móvil es la herramienta principal por lo que se evidencia 
 
 #### Características Subjetivas y Personalidad
 
-Jesús presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
+Eduardo presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
 También demuestra preocupación por hacer bien su trabajo y porque los traslados se realicen de manera segura. 
 
 #### Pain Points Detectados
@@ -966,8 +967,8 @@ Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas
 
 | **Característica** | **Resultado** | **Sustento** |
 | ------------------------------------ | ---- | -------------------------------------------------------------- |
-| Adulto joven | 100% | Jesús tiene 24 años |
-| Reside en una zona urbana | 100% | Vive en San Borja |
+| Adulto joven | 100% | Eduardo tiene 28 años |
+| Reside en una zona urbana | 100% | Vive en Surco |
 | Pertenece al segmento de conductores | 100% | Se desempeña como conductor |
 | Familiarizado con la tecnología | 100% | Se desenvuelve con facilidad utilizando herramientas digitales |
 | No tiene hijos actualmente | 100% | No cuenta con hijos ni familia propia |
