@@ -2848,6 +2848,9 @@ Más adelante, se presentan capturas de pantalla tomadas de un video demostrativ
 
 <img src="assets/images/Chapter4/KidtrackMobile.png" width="900px" alt="Protoype">
 
+#### Web Applications Desktop:
+
+[Desktop Prototype](https://streamable.com/bcvzjg)
 ### 4.6. Domain-Driven Software Architecture
 
 #### 4.6.1. Design-Level Event Storming
