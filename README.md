@@ -241,7 +241,7 @@ un conductor independiente o una pequeña empresa centralizar en un solo lugar l
 |:-----------------------------------------:|:-----------------------|:------------:| :--------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    ![foto](./assets/images/Team/salvador.png)     | Chamorro Acero, Salvador Edward   | u201914367 | Ingeniería de Software | Estudiante de la carrera de ingenieria de software y entusiasta de la tecnologia. Poseo conocimientos en distintos lenguajes de programacion y tecnologias como python c++, git, js y me considero capaz de trabajar bajo presion y en equipo.                                                                                                                                                                                                                                                                                                                                                                          |
 |    ![foto](./assets/images/Team/perfil-mathias-delacruz.jpg)    | De la Cruz De los Santos, Mathías Marcelo | [U202424059] | Ingeniería de Software |Soy estudiante de la carrera de Ingeniería de Software y actualmente me encuentro cursando el 5to ciclo de la carrera en la Universidad Peruana de Ciencias Aplicadas. Me considero un fanático de la programación, del fútbol y de los videojuegos. Considero que puedo aportar al equipo y al proyecto mis conocimientos técnicos, además de considerarme una persona disciplinada, responsable y que valora el trabajo en equipo.                                 |
-| ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
+    | ![foto](assets/images/Team/nickolas.png ) | Ramirez Ruiz, Nickolas | [U202415551] | Ingeniería de Software | Soy Nickolas Ramirez Ruiz, estudiante del sexto ciclo de la carrera de Ingeniería de Software. A lo largo de mi formación académica he adquirido conocimientos en programación, principalmente utilizando el lenguaje Java. Me considero una persona organizada, comprometida y con un enfoque proactivo, siempre buscando cumplir con mis responsabilidades antes del tiempo previsto. |
 |        ![foto](assets/images/Team/JoseOrtega.png)        | Ortega Quintana, José Zacarías.  |   [U202316852]   | Ingeniería de Software | Soy José Ortega, tengo 21 años y soy un estudiante de Ingeniería de Software. Tengo interés en la creatividad, creación y el funcionamiento de ciertas cosas o ciclos. Espero ser de ayuda a mi equipo y podamos llevar al proyecto de forma dedicada y apasionada.                                                                                                                                                                                                                                                                                                                                                                             |
 |  ![foto](assets/images/Team/Eddo%20foto.jpeg)  | Su Caletti, Eddo  | [U20221A390] | Ingeniería de Software |Soy Eddo Su Caletti, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. A lo largo de mi formación he desarrollado un gran interés por la tecnología y la programación. Me considero una persona organizada y dedicada, apasionada por la fotografía y por disfrutar de momentos de calidad en familia.                                                                          |
 
@@ -683,9 +683,9 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |        Jesus Denilson Tarqui                                                                                                                                                                             |
-| **Edad**                       |                                                                                 24 años                                                                        |
-| **Distrito / Zona de trabajo** |                                                                                                San Borja                                |
+| **Nombre y Apellidos**         |        Eduardo Martinez                                                                                                                                                                             |
+| **Edad**                       |                                                                                 28 años                                                                        |
+| **Distrito / Zona de trabajo** |                                                                                                Surco                                |
 | **Segmento**                   |         Conductor                                                                                                                         |
 | **Inicio en video**            |              -                                                                                                                                                                       |
 | **Fin de video**               |              -                                                                                                                                                                              |
@@ -693,13 +693,14 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 | **URL del video**              | -  |
 
 #### Screenshot
----
+
+ ![foto](./assets/images/Chapter2/Entrevista1.png) 
 
 ### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
 
-Jesús Quiroz Tarqui tiene 24 años y vive en San Borja. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
+Eduardo Martinez tiene 28 años y vive en Surco. Es un conductor joven que se desenvuelve en un entorno urbano y que, por su edad, está bastante familiarizado con el uso de herramientas digitales. Aunque todavía no tiene hijos ni una familia propia, muestra una actitud responsable frente al servicio y procura que cada traslado se realice de forma segura y sin inconvenientes.
 
 #### Herramientas, Tecnología y Canales de Interacción
 
@@ -713,7 +714,7 @@ El uso del teléfono móvil es la herramienta principal por lo que se evidencia 
 
 #### Características Subjetivas y Personalidad
 
-Jesús presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
+Eduardo presenta un perfil joven, práctico y responsable. Se muestra cómodo utilizando tecnología y está abierto a utilizar herramientas que puedan facilitar su trabajo.
 También demuestra preocupación por hacer bien su trabajo y porque los traslados se realicen de manera segura. 
 
 #### Pain Points Detectados
@@ -873,33 +874,54 @@ El entrevistado presenta características que coinciden con el perfil de usuario
 
 #### Entrevista 5: 
 
-| Campo                          | Detalle                                                                                                                                                                                         |
-| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
-| **Inicio en video**            |                                                                                                                                                                                     |
-| **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
+| Campo                          | Detalle          |
+| :----------------------------- |:-----------------|
+| **Nombre y Apellidos**         | Maximo Quevedo   |
+| **Edad**                       | 28 años          |
+| **Distrito / Zona de trabajo** | Lima             |
+| **Segmento**                   | Padre de Familia |
+| **Inicio en video**            |                  |
+| **Fin de video**               |                  |
+|     **Duración**                   |                  |
+| **URL del video**              |                  |
 
 #### Screenshot
 ---
 
 #### Resumen Descriptivo de la Entrevista
+Entrevista de validación de usuario realizada por Nickolas Ramírez a Máximo Quevedo, padre de familia residente en Lima, orientada a identificar necesidades, puntos de fricción y disposición de adopción de una plataforma móvil para el monitoreo y gestión de movilidad escolar privada.
 
 #### Características Objetivas y Entorno
+* **Hijo a cargo:** Padre de un niño de 7 años en edad escolar.
+* **Ubicación y desplazamientos:** Reside y transita en Lima; utiliza arterias congestionadas como la Av. Javier Prado.
+* **Tiempos de traslado:** Llevar al menor al colegio y luego dirigirse al centro de trabajo le tomaba cerca de 1 hora de trayecto; contratar movilidad escolar reduce su traslado directo a ~40 minutos.
+* **Entorno laboral:** Trabajo de oficina analítico que demanda alta concentración (elaboración de reportes exhaustivos, informes y análisis de costos).
 
 #### Herramientas, Tecnología y Canales de Interacción
+* **Canales actuales:** Coordinación mediante WhatsApp y llamadas telefónicas tradicionales tanto con el transportista como con el colegio.
+* **Referentes tecnológicos:** Familiarizado con el uso habitual de aplicaciones bancarias y financieras para supervisión y trazabilidad de transacciones.
+* **Preferencia de interacción:** Notificaciones push en segundo plano (estilo alertas transaccionales), descartando la necesidad de supervisar activamente una pantalla con mapa en vivo durante la jornada laboral.
 
 #### Características Subjetivas y Personalidad
+* **Perfil:** Analítico, pragmático, enfocado en la eficiencia de tiempos y altamente receptivo a soluciones tecnológicas modernas.
+* **Postura frente a la innovación:** Considera indispensable la modernización digital en la era actual; afirma que descartaría a prestadores de servicio que rehúsen adaptarse.
+* **Factores emocionales:** Prioriza la tranquilidad y la certidumbre; experimenta angustia ante la falta de comunicación sobre el paradero o bienestar del menor.
 
 #### Pain Points Detectados
+* **Falta de visibilidad y trazabilidad en tiempo real:** Desconocimiento de la hora exacta de llegada o aproximación a la vivienda.
+* **Ausencia de comunicación ante contingencias:** Ante un retraso de 20 minutos por congestión vehicular, no obtuvo respuesta ni del conductor ni de la dirección escolar, provocando preocupación por accidentes o incidentes de seguridad.
+* **Desorganización financiera:** Cobros y acuerdos coordinados por mensajería informal sujetos a confusiones, desfases de montos y carencia de un historial consolidado.
+* **Fricción al reportar novedades:** La notificación manual por chat para avisar que el alumno no asistirá demanda tiempo y está expuesta a omisiones o lecturas tardías del conductor.
 
 #### Oportunidades Identificadas
+* **Alertas automáticas de hitos clave:** Notificaciones instantáneas y pasivas de eventos relevantes ("menor a bordo", "llegada confirmada al colegio").
+* **Módulo centralizado de pagos e historial:** Registro ordenado y auditable de cobros mensuales, acuerdos tarifarios y fechas de pago en la misma interfaz.
+* **Botón de ausencia en un clic:** Mecanismo anticipado (ej. la noche previa) para registrar inasistencias sin requerir redacción de mensajes ni generar paradas innecesarias.
+* **Contactos de emergencia delegados:** Configuración de usuarios secundarios autorizados para recibir avisos y alertas cuando el tutor principal se encuentre inubicable.
 
 #### Validación del Arquetipo
+* **Arquetipo validado:** *Padre profesional urbano, optimizador de tiempo y dependiente de canales digitales*.
+* **Fit producto-usuario:** Validación alta y explícita; el usuario confirma que cambiaría de transportista si este se negara a implementar un sistema de monitoreo digital y respaldaría una solución que sustituya la informalidad de la mensajería tradicional.
 ---
 
 
@@ -945,8 +967,8 @@ Este análisis se realizó a partir de una muestra de las 3 entrevistas válidas
 
 | **Característica** | **Resultado** | **Sustento** |
 | ------------------------------------ | ---- | -------------------------------------------------------------- |
-| Adulto joven | 100% | Jesús tiene 24 años |
-| Reside en una zona urbana | 100% | Vive en San Borja |
+| Adulto joven | 100% | Eduardo tiene 28 años |
+| Reside en una zona urbana | 100% | Vive en Surco |
 | Pertenece al segmento de conductores | 100% | Se desempeña como conductor |
 | Familiarizado con la tecnología | 100% | Se desenvuelve con facilidad utilizando herramientas digitales |
 | No tiene hijos actualmente | 100% | No cuenta con hijos ni familia propia |
