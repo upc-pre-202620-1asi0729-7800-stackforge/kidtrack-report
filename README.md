@@ -2437,7 +2437,7 @@ Más adelante, se presentan capturas de pantalla tomadas de un video demostrativ
 
 [Mobile Prototype](https://1drv.ms/v/c/a3bda66c80e2095c/IQAHgwxCjWdTT7gZyM6kceTfAXgBPj865SIOo7kzbsRkavg?e=kFyB65)
 
-<img src="assets/images/chapter4/KidtrackMobile.png" width="900px" alt="Protoype">
+<img src="assets/images/Chapter4/KidtrackMobile.png" width="900px" alt="Protoype">
 
 ### 4.6. Domain-Driven Software Architecture
 
