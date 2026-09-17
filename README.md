@@ -1396,10 +1396,10 @@ Las Technical Stories se presentan primero. Cada historia incluye tres escenario
 El Impact Mapping de KidTrack relaciona los objetivos del negocio con los cambios de comportamiento esperados en sus usuarios y las funciones que pueden favorecerlos. Se consideran las personas definidas en el capítulo II: Arturo Núñez, conductor independiente, y Fernando Nery, padre de familia. 
 
 ### Impact Mapping 1: Arturo Nuñez
-![Impact Mapping - Captación de Transportistas](./assets/images/Chapter3/KidTrackImpactMapping1.png)
+![Impact Mapping - Captación de Transportistas](./assets/images/Chapter3/Impact1.png)
 
 ### Impact Mapping 2: Fernando Nery
-![Impact Mapping - Consulta del Traslado](./assets/images/Chapter3/KidTrackImpactMapping2.png)
+![Impact Mapping - Consulta del Traslado](./assets/images/Chapter3/Impact2.png)
 
 
 ### 3.3. Product Backlog
