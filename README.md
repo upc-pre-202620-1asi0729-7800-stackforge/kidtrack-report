@@ -743,10 +743,10 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 
 | Campo                          | Detalle                                                                                                                                                                                         |
 | :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
+| **Nombre y Apellidos**         |   Jairo Douglas Lanchi                                                                                                                                                                                  |
+| **Edad**                       |   28                                                                                                                                                     |
+| **Distrito / Zona de trabajo** |   Comas                                                                                                                              |
+| **Segmento**                   |   Conductor                                                                                                                               |
 | **Inicio en video**            |           8:13                                                                                                                                                                          |
 | **Fin de video**               |           18:44                                                                                                                                                                               |
 |     **Duración**                   |    10:31 min                                                                                                                                                                                     |
@@ -759,18 +759,39 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 #### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
+Jairo Douglas tiene 28 años de edad, trabaja como conductor privado para un colegio y por sus tardes libres se dedica al taxeo. Actualmente solo vive con su pareja y sin hijos. Por el momento se guia bastante por las rutas debido a sus años de experiencia pero si ubica que necesita una herramienta externa para manejar bien sus horarios, disponibilidad y ser más organizado
 
 #### Herramientas, Tecnología y Canales de Interacción
 
+- WhatsApp como canal de comunicación con los padres
+- Smartphone como dispositivo principal de trabajo para anotar la lista de alumnos
+-Lista de alumnos basado a mano
+-Uso de Google Maps 
+
 #### Características Subjetivas y Personalidad
+
+- No requiere mucho de mapas pero si saber la situación de las rutas(tráfico,etc)
+- Prefiere una herramienta externa rápida
+- Es muy aficionado a la tecnología junto con su pareja
+- Tiene días atareados ya que se dedica completamente al servicio de su vhículo
 
 #### Pain Points Detectados
 
+- No cuenta con una manera rápida de contactar a los padres sin detener el vehículo
+- Estar al tanto de la lista de alumnos
+- Falta de información sobre el estado de las rutas
+- Pérdida de tiempo de que le cancelen la ruta o el servicio por demora
+
 #### Oportunidades Identificadas
 
-#### Validación del Arquetipo
----
+- Ve un potencial válido en la propuesta mostrada
+- Quiere poder ver con facilidad los accidentes o incidentes en las rutas
+- Quiere listar a los alumnos de manera rápida y eficaz
+- Le emociona una solución tecnológica 
 
+#### Validación del Arquetipo
+
+Se puede validar que el entrevistado cumple perfectamente con el arquetipo conductor y sirve perfectamente para moldear las user personas que Kidtrack necesita.
 #### Entrevista 3: 
 
 | Campo                          | Detalle                                                                                                                                                                                         |
