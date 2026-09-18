@@ -76,7 +76,7 @@ Proyecto
 </div>
 
 
--
+
 ---
 ---
 
@@ -86,6 +86,9 @@ Proyecto
 | :----- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AV1    | 25/04/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
 
+
+
+---
 ## Project Report Collaboration Insights
 
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report/tree/develop)
@@ -1031,20 +1034,7 @@ Entrevista de validación de usuario realizada por Nickolas Ramírez a Máximo Q
 * **Fit producto-usuario:** Validación alta y explícita; el usuario confirma que cambiaría de transportista si este se negara a implementar un sistema de monitoreo digital y respaldaría una solución que sustituya la informalidad de la mensajería tradicional.
 ---
 
-#### Resumen Descriptivo de la Entrevista
 
-#### Características Objetivas y Entorno
-
-#### Herramientas, Tecnología y Canales de Interacción
-
-#### Características Subjetivas y Personalidad
-
-#### Pain Points Detectados
-
-#### Oportunidades Identificadas
-
-#### Validación del Arquetipo
----
 
 
 ### 2.2.3. Análisis de entrevistas
@@ -3755,7 +3745,7 @@ KidTrack utiliza Git para controlar versiones y GitHub para alojar los repositor
 | Informe | [kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report) |
 | Landing Page | [kidtrack-landingpage](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git)  |
 | Frontend Web Application | [kidtrack-webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git) |
-
+| Backend Web Application | [kidtrack-platform](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform.git) |
 
 ##### Flujo de ramas
 
