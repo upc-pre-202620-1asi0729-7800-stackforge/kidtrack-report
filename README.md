@@ -369,7 +369,7 @@ KidTrack está pensado para dos segmentos que forman parte del ecosistema del tr
 
 - **Segmento 1: Padres de Familia**
 
-  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia.
+  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia de transporte.
 
 
 - **Segmento 2: Transportistas Escolares**
@@ -908,60 +908,67 @@ Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tra
 
  ![foto](./assets/images/Chapter2/Entrevista4.png) 
 
-#### Resumen Descriptivo de la Entrevista
-Pendiente de completar con el contenido de la entrevista. Se debe resumir brevemente quién es el entrevistado, su situación, sus actividades y el problema o necesidad que comenta durante la entrevista.
+### Resumen Descriptivo de la Entrevista
 
-#### Características Objetivas y Entorno
-Aquí colocaremos datos observables del entrevistado y su contexto, por ejemplo:
+El entrevistado es **Edgar Alfonso Su**, de 56 años, residente en el distrito de Santiago de Surco. Tiene un hijo de 10 años que asiste al colegio y utiliza el servicio de movilidad escolar privada de lunes a viernes. Por las mañanas, Edgar prepara al menor con su lonchera y baja a la recepción de su edificio para entregarlo a la van. Su mayor dolor es la incertidumbre durante el trayecto: no sabe dónde está la unidad en tiempo real, teme por accidentes viales o demoras y debe asumir que todo salió bien si no recibe llamadas de emergencia en un lapso de 30 a 40 minutos. Considera indispensable y lógico contar con una herramienta similar a las apps de taxi (Uber, Yango) para monitorear el recorrido y tener la confirmación de llegada a salvo.
 
-- Edad y lugar donde vive.
-- Actividad principal.
-- Situación familiar.
-- Contexto en el que realiza las actividades relacionadas con el problema.
-- Recursos o condiciones que tiene disponibles.
+---
 
-#### Herramientas, Tecnología y Canales de Interacción
+### Características Objetivas y Entorno
 
-Aquí identificaremos:
+* **Nombre completo:** Edgar Alfonso Su
+* **Edad:** 56 años
+* **Lugar donde vive:** Santiago de Surco, Lima (vive en departamento en edificio)
+* **Situación familiar:** Divorciado, un hijo menor de 10 años y una mascota
+* **Contexto de la actividad:** Rutina diaria de lunes a viernes; prepara la lonchera en la mañana, baja a recepción a esperar el transporte y coordina la recepción por la tarde
+* **Recursos y condiciones del servicio:** Contrató a una transportista recomendada durante la matrícula del colegio tras verificar personalmente la unidad, la capacidad de pasajeros y la tarifa mensual
 
-- Celular, computadora u otros dispositivos que utilice.
-- Aplicaciones o plataformas que mencione.
-- Redes sociales.
-- Medios que utiliza para comunicarse.
-- Cómo busca información o realiza sus actividades.
+---
 
-#### Características Subjetivas y Personalidad
-Aquí analizaremos lo que expresa durante la entrevista:
+### Herramientas, Tecnología y Canales de Interacción
 
-- Opiniones.
-- Preferencias.
-- Motivaciones.
-- Hábitos.
-- Preocupaciones.
-- Qué considera importante.
-- Cómo toma decisiones.
+* **Dispositivos:** Celular inteligente (smartphone), utilizado continuamente durante el día
+* **Aplicaciones y plataformas:** Uber, Yango, aplicaciones bancarias y de pagos móviles
+* **Canales de comunicación:** Llamadas telefónicas y WhatsApp/mensajería directa con la conductora; avisos del colegio ante faltas
+* **Uso digital:** Acostumbrado a resolver trámites cotidianos, pagos y transporte mediante aplicaciones móviles sin necesidad de efectivo
 
-#### Pain Points Detectados
-Aquí debemos colocar los problemas o dificultades que menciona el entrevistado, por ejemplo:
+---
 
-- Problemas que enfrenta actualmente.
-- Actividades que le resultan complicadas.
-- Falta de información.
-- Pérdida de tiempo.
-- Dificultades con alguna herramienta o proceso.
-- Frustraciones que expresa.
+### Características Subjetivas y Personalidad
 
-#### Oportunidades Identificadas
-A partir de los pain points, podemos plantear:
+* **Prioridades:** Puntualidad estricta y seguridad física del menor
+* **Preocupaciones:** Posibilidad de siniestros viales y demoras que no le sean notificadas a tiempo
+* **Sensación de control:** Manifiesta desasosiego al admitir que una vez que el niño sube a la movilidad, la situación «escapa de sus manos»
+* **Hábito ante la falta de noticias:** Adopta la regla pasiva de que «la ausencia de llamadas en 30-40 minutos equivale a que llegó bien»
+* **Toma de decisiones:** Evalúa recomendaciones escolares formales, revisión visual de la unidad y estado legal de la misma antes de elegir el servicio
 
-- Qué podría mejorarse.
-- Qué solución podría facilitarle el proceso.
-- Qué tecnología podría ayudarlo.
-- Qué característica debería tener una posible solución.
+---
 
-#### Validación del Arquetipo
+### Pain Points Detectados
 
-El entrevistado presenta características que coinciden con el perfil de usuario planteado, por lo que se respalda correctamente el User
+* **Falta de visibilidad del trayecto:** No tiene ningún medio para saber la ubicación geográfica del vehículo en tiempo real.
+* **Incertidumbre y zozobra:** No saber si un retraso se debe al tráfico habitual o a un incidente grave genera angustia.
+* **Avisos reactivos:** El transportista comunica cambios de ruta o retrasos con poca anticipación o recién al llegar al punto de recojo.
+* **Temor por el estado de las unidades:** Desconfianza hacia movilidades escolares antiguas que circulan sin revisiones técnicas óptimas ni SOAT vigente.
+
+---
+
+### Oportunidades Identificadas
+
+* **Trazabilidad GPS en vivo:** Mapa interactivo con la ruta en tiempo real del vehículo, replicando el modelo de Uber/Yango.
+* **Notificaciones de estado automáticas:** Alertas push al momento de salida, recojo en casa y entrega efectiva en la puerta del colegio.
+* **Transparencia y ficha técnica:** Visualización directa dentro del perfil del chofer de SOAT, revisiones técnicas y capacidad autorizada de la van.
+* **Alertas preventivas de demora:** Avisos automáticos si la unidad presenta más de 10 o 15 minutos de retraso por congestión vehicular.
+
+---
+
+### Validación del Arquetipo
+
+El entrevistado valida de forma directa el arquetipo de **Padre de Familia Usuario de Movilidad Escolar**:
+* Depende operativamente del transporte escolar diario por comodidad y tiempos.
+* Posee familiaridad y destreza con smartphones y apps de geolocalización.
+* Sufre la falta de información como una fuente continua de estrés matutino y vespertino.
+* Demuestra alta disposición e interés hacia la adopción de una solución digital que brinde monitoreo y confirmaciones automáticas de llegada.
 
 ---
 
@@ -3078,9 +3085,9 @@ Los diagramas presentan a App como el componente raíz que contiene los componen
 
 - Trip Execution & Monitoring:
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
+![kidtrack-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
+![kidtrack-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
 
 Este contexto reúne las pantallas destinadas a supervisar y gestionar los viajes durante su ejecución.
 
@@ -3090,9 +3097,9 @@ Este contexto reúne las pantallas destinadas a supervisar y gestionar los viaje
 
 - Fleet & Route Planning:
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
+![kidtrack-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
+![kidtrack-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
 
 Este contexto proporciona las interfaces necesarias para organizar las rutas, los vehículos y las asignaciones del servicio.
 
@@ -3102,9 +3109,9 @@ Este contexto proporciona las interfaces necesarias para organizar las rutas, lo
 
 - Notifications & Communication:
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
+![kidtrack-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
+![kidtrack-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
 
 Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicados.
 
@@ -3114,9 +3121,9 @@ Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicad
 
 - Stakeholder & Asset Management:
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
+![kidtrack-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
+![kidtrack-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
 
 Incluye las vistas utilizadas para consultar y administrar a los participantes del servicio.
 
@@ -3126,9 +3133,9 @@ Incluye las vistas utilizadas para consultar y administrar a los participantes d
 
 - Identity and Access Management:
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
+![kidtrack-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
+![kidtrack-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
 
 Comprende las interfaces de autenticación y administración de los datos de la organización.
 
@@ -3138,9 +3145,9 @@ Comprende las interfaces de autenticación y administración de los datos de la 
 
 - Subscription & Plan Management:
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
+![kidtrack-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
+![kidtrack-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
 
 Ofrece las vistas para consultar los planes disponibles y administrar la suscripción de la organización.
 
@@ -3158,19 +3165,19 @@ Concentra las responsabilidades relacionadas con la organización logística del
 
 Representa el recorrido y las condiciones de su programación mediante Value Objects como DepartureTime y ServiceDays. También incorpora la secuencia de paradas que componen la ruta, representadas por Stop.
 
-![saferoute-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
+![kidtrack-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
 
 - Vehicle Aggregate
 
 Administra la información de capacidad y disponibilidad de cada vehículo destinado al servicio.
 
-![saferoute-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
+![kidtrack-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
 
 - Assignment Aggregate
 
 Establece la relación entre un conductor, un grupo de estudiantes y una ruta para organizar su participación en un viaje específico.
 
-![saferoute-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
+![kidtrack-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
 
 - Trip Execution & Monitoring:
 
@@ -3180,13 +3187,13 @@ Agrupa la lógica necesaria para desarrollar los viajes y realizar su seguimient
 
 Administra las etapas del viaje mediante operaciones como start() y complete(). Relaciona el recorrido con una ruta, un conductor y una organización, además de incorporar los registros de asistencia (Attendance) y los incidentes (Incident).
 
-![saferoute-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
+![kidtrack-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
 
 - TripLocation Aggregate
 
 Gestiona los datos de ubicación del vehículo para permitir su seguimiento en tiempo real durante el viaje.
 
-![saferoute-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
+![kidtrack-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
 
 - Notifications & Communication:
 
@@ -3196,7 +3203,7 @@ Reúne la lógica de comunicación destinada a informar a los padres de familia 
 
 Administra los mensajes dirigidos a los apoderados, incluida su categoría y estado de entrega. Dentro de esta responsabilidad se consideran tanto las alertas como los comunicados.
 
-![saferoute-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
+![kidtrack-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
 
 - Stakeholder & Asset Management:
 
@@ -3206,19 +3213,19 @@ Representa a los participantes del servicio y las agrupaciones mediante las cual
 
 Modela al apoderado y su relación con los estudiantes bajo su responsabilidad. Permite incorporar o retirar hijos de esa relación.
 
-![saferoute-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
+![kidtrack-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
 
 - Driver Aggregate
 
 Representa al conductor y reúne los datos asociados a su actividad, entre ellos la información de su licencia.
 
-![saferoute-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
+![kidtrack-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
 
 - StudentGroup Aggregate
 
 Reúne las referencias de varios estudiantes en un grupo para facilitar su asignación dentro de la operación del transporte.
 
-![saferoute-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
+![kidtrack-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
 
 - Identity and Access Management (IAM):
 
@@ -3228,13 +3235,13 @@ Concentra la administración de las organizaciones, las cuentas de usuario y los
 
 Administra la creación y los cambios de estado de la organización mediante create(), suspend() y activate(). Su identificador, nombre y estado se representan mediante Value Objects.
 
-![saferoute-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
+![kidtrack-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
 
 - User Aggregate
 
 Reúne las operaciones de registro, autenticación y modificación del rol de una cuenta mediante register(), authenticate() y changeRole(). La pertenencia del usuario a una organización se establece con el identificador compartido OrganizationId, mientras que datos de seguridad como la contraseña se representan mediante Value Objects como PasswordHash.
 
-![saferoute-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
+![kidtrack-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
 
 - Subscription & Plan Management:
 
@@ -3244,19 +3251,19 @@ Agrupa las reglas del modelo comercial relacionadas con los planes disponibles y
 
 Define las condiciones económicas y los límites operativos del plan. Los Value Objects RouteQuota y DriverQuota representan las cuotas de rutas y conductores y permiten validar que se respete la capacidad contratada.
 
-![saferoute-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
+![kidtrack-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
 
 - Subscription Aggregate
 
 Administra la vigencia y los cambios de estado de la suscripción mediante activate(), upgrade() y cancel(). Cada suscripción mantiene su relación con una organización y un plan a través de sus respectivos identificadores.
 
-![saferoute-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
+![kidtrack-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
 
 - Payment Aggregate
 
 Administra los registros de pago asociados a las suscripciones del servicio.
 
-![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
+![kidtrack-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
 
 - Shared:
 
@@ -3266,7 +3273,7 @@ Proporciona el Shared Kernel utilizado por los distintos contextos de la soluci�
 
 Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
 
-![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
+![kidtrack-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
 **- Identity & Access Management (IAM)**
