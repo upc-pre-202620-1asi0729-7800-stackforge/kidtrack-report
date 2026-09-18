@@ -78,6 +78,7 @@ Proyecto
 
 <br><br><br>
 <br><br><br>
+
 ---
 ---
 
@@ -98,7 +99,10 @@ Proyecto
 
 
 
-
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ---
 ---
 ## Project Report Collaboration Insights
@@ -135,6 +139,8 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 
 
 <br><br>
+<br><br><br>
+<br><br><br>
 <br><br><br>
 ---
 ---
