@@ -78,8 +78,6 @@ Proyecto
 
 <br><br><br>
 <br><br><br>
-<br><br><br>
-<br><br><br>
 ---
 ---
 
@@ -114,9 +112,6 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ## Landing Page:
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
-### Sprint 2
-### Sprint 3
-### Sprint 4
 
 
 
@@ -134,16 +129,12 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 
 
 
--
 
 
 
 
 
-
-
-
-<br><br><br><br>
+<br><br>
 <br><br><br>
 ---
 ---
