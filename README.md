@@ -1018,23 +1018,6 @@ Entrevista de validación de usuario realizada por Nickolas Ramírez a Máximo Q
 * **Fit producto-usuario:** Validación alta y explícita; el usuario confirma que cambiaría de transportista si este se negara a implementar un sistema de monitoreo digital y respaldaría una solución que sustituya la informalidad de la mensajería tradicional.
 ---
 
-
-#### Entrevista 6: 
-
-| Campo                          | Detalle                                                                                                                                                                                         |
-| :----------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nombre y Apellidos**         |                                                                                                                                                                                     |
-| **Edad**                       |                                                                                                                                                         |
-| **Distrito / Zona de trabajo** |                                                                                                                                 |
-| **Segmento**                   |                                                                                                                                  |
-| **Inicio en video**            |                                                                                                                                                                                     |
-| **Fin de video**               |                                                                                                                                                                                            |
-|     **Duración**                   |                                                                                                                                                                                         |
-| **URL del video**              |  |
-
-#### Screenshot
----
-
 #### Resumen Descriptivo de la Entrevista
 
 #### Características Objetivas y Entorno
