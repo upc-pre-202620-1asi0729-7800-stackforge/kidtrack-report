@@ -33,7 +33,7 @@ Proyecto
 <br>
 **KidTrack**
 
-<br><br><br><br><br>
+<br><br><br>
 
 **Integrantes**
 
@@ -65,7 +65,7 @@ Proyecto
  
 </table>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br>
 
 **Período 202620**
 <br>
