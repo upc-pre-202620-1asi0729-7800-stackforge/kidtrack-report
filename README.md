@@ -75,6 +75,9 @@ Proyecto
 
 </div>
 
+
+-
+---
 ---
 
 ## Registro de Versiones del Informe
@@ -98,6 +101,9 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ### Sprint 3
 ### Sprint 4
 
+
+
+---
 ## Tabla de contenidos
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -1202,6 +1208,8 @@ La elaboración de estas fichas es el resultado de una síntesis detallada entre
 ![Conductor - Arturo Núñez](assets/images/Chapter2/Arturo%20Núñez%20Segmento.png)
 ---
 #### Persona 2: Parents
+
+---
 
 ![Padre - Fernando Nery](assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
 
