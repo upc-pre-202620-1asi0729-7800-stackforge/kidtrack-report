@@ -17,7 +17,7 @@ NRC
 <br>
 **7800**
 <br>
-**Informe de Trabajo Final**
+**Informe AV1**
 <br>
 Docente
 <br>
@@ -88,6 +88,17 @@ Proyecto
 
 
 
+
+
+
+
+
+
+
+
+
+
+---
 ---
 ## Project Report Collaboration Insights
 
@@ -106,6 +117,8 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 
 
 
+---
+---
 ---
 ## Tabla de contenidos
 
