@@ -227,7 +227,7 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
     </th>
     <td colspan="10">
     <b>Chamorro Acero, Salvador Edward</b> Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto. <br>AV1:<br><br>
-    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Redacté y adapté las secciones Landing Page UI Design,Web Applications UX/UI Design: wireframes, wireflow diagrams, mock-ups y user flow diagrams, Web Applications Prototyping y Domain-Driven Software Architecture: Event Storming, diagrama de contexto, de contenedores y de componentes del informe. Además, lideré el rebranding de la landing page de SafeRoute a KidTrack (paleta de colores, logotipo y textos) y coordiné la división del código de la landing entre los integrantes del equipo mediante ramas de Git.<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Redacté y adapté las secciones Landing Page UI Design,Web Applications UX/UI Design: wireframes, wireflow diagrams, mock-ups y user flow diagrams, Web Applications Prototyping y Domain-Driven Software Architecture: Event Storming, diagrama de contexto, de contenedores y de componentes del informe. Además, lideré el rebranding de la landing page de  KidTrack (paleta de colores, logotipo y textos) y coordiné la división del código de la landing entre los integrantes del equipo mediante ramas de Git.<br><br>
     <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br><br>
     <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:Redacté todo el bloque del capítulo 3 ( User Stories.Impact Mapping,Product Backlog). También tuve colaboración en los Class Diagrams,Database Design y Database Diagrams. Finalmente aporté en parte de la elaboración de la landing page y el capítulo 5 sobre la configuración, despliego de software y sprint.<br><br>
     <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br><br><b> </b> 
@@ -396,7 +396,7 @@ En esta sección se realizará la identificación de los principales competidore
       Este análisis nos permite conocer las características, ventajas y
       limitaciones de las principales soluciones de transporte escolar
       existentes en el mercado. También ayuda a identificar oportunidades
-      de diferenciación y áreas de mejora para SafeRoute.
+      de diferenciación y áreas de mejora para KickTrack.
     </td>
   </tr>
 
@@ -880,7 +880,7 @@ Para Carla, el atributo más importante para sentirse tranquila es:
 
 #### Validación del Arquetipo
 
-Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto SafeRoute. Se confirma que este segmento prioriza:
+Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto KickTrack. Se confirma que este segmento prioriza:
 
 - Seguridad del estudiante
 - Monitoreo en tiempo real
