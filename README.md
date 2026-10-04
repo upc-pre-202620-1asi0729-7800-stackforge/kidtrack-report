@@ -1166,24 +1166,25 @@ En términos de interactividad, los botones de acción (*CTA*) destacan por el u
 El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (*Landing Page*) como en el uso crítico de la aplicación (*Web Application*).
 
 ##### Landing Page
-* **Funciones:** Agrupa las capacidades técnicas y herramientas de gestión de la plataforma.
-* **Roles:** Define los accesos y beneficios específicos para los dos perfiles del sistema.
-* **Planes:** Estructura la oferta comercial basándose en la escala de la flota de transporte.
-* **¿Cómo funciona?:** Etiqueta de apoyo que resuelve dudas sobre la implementación del servicio.
-* **Comenzar:** Botón de acción principal diseñado para motivar la conversión inmediata.
+* **Funciones:** Agrupa las capacidades técnicas y herramientas de la plataforma.
+* **Roles:** Define los accesos y beneficios específicos para cada perfil.
+* **Planes:** Estructura la oferta comercial según la escala de la flota.
+* **¿Cómo funciona?:** Guía explicativa sobre la adopción del servicio.
+* **Comenzar:** Llamado a la acción principal para el registro o contacto.
 
 ##### Aplicación Web – Conductores
-* **Mis Rutas:** Vista principal donde se gestionan los trayectos diarios asignados.
-* **Lista de Alumnos:** Relación detallada de estudiantes por paradas, optimizando el tiempo de recogida.
-* **Estado de Abordaje:** Sistema de etiquetas rápidas (*"Abordado"*, *"Ausente"*, *"En espera"*) que permite al conductor registrar la asistencia con un solo toque.
-* **Iniciar Ruta:** Etiqueta de alta visibilidad que dispara el envío de alertas GPS a los padres.
-* **Botón de Incidencia:** Acceso directo para reportar eventos imprevistos (tráfico, accidentes) de forma estandarizada.
+* **Mis Rutas:** Gestión de trayectos diarios asignados.
+* **Lista de Alumnos:** Relación de estudiantes organizados por paradas.
+* **Estado de Abordaje:** Etiquetas de registro rápido (*"Abordado"*, *"Ausente"*, *"En espera"*).
+* **Iniciar Ruta:** Botón de alta visibilidad que activa el rastreo GPS.
+* **Reportar Incidencia:** Acceso directo para registrar eventos imprevistos (tráfico, desviaciones, averías).
 
 ##### Aplicación Web – Padres de Familia
-* **Monitoreo:** Sección central que integra el mapa en tiempo real y la ubicación de la unidad.
-* **Historial de Viajes:** Registro cronológico de las horas de recogida y entrega de sus hijos.
-* **Alertas:** Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
-* **Datos del Bus:** Información transparente sobre el vehículo y el conductor asignado para generar confianza.
+* **Monitoreo:** Centro de control con el mapa en tiempo real y la posición del vehículo.
+* **Historial de Viajes:** Registro cronológico de horas de recogida y entrega.
+* **Alertas:** Notificaciones de proximidad y confirmaciones de abordaje.
+* **Datos del Bus:** Información transparente sobre el vehículo y el conductor asignado.
+
 
 #### 4.2.3. SEO Tags and Meta Tags
 
