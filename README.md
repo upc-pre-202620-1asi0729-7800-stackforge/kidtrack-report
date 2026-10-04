@@ -2622,8 +2622,11 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Notification-dark%20(1).png>)
 
-- Shared Kernel:
-  Detalla las 4 capas transversales que sostienen a todos los módulos de bounded context en el frontend: el Navigation Bar en la capa de presentación, el HTTP Service centralizado con interceptores JWT en la capa de aplicación, los resources e interfaces base en el dominio, y el Map Service, que integra Leaflet y OpenRouteService, en la capa de infraestructura.
+**Shared — Componentes compartidos del frontend**
+
+El diagrama presenta componentes reutilizables de soporte para el frontend, como la navegación, la comunicación HTTP, los interceptores y la integración con mapas. Estos elementos se agrupan bajo la denominación Shared por su función técnica transversal.
+
+En esta vista, Shared representa componentes técnicos compartidos y no implica que todos ellos formen parte de un Shared Kernel de dominio. Las reglas de negocio permanecen bajo la responsabilidad de los contextos correspondientes.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark.png)
 
   Presentation shared:
@@ -2666,8 +2669,16 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
   Describe el módulo de comunicación asíncrona en sus 4 capas: recibe los eventos internos que emite el contexto de Trip y usa su capa de infraestructura para enviar, a través de Resend, las alertas de pánico, las notificaciones de abordaje y los comunicados de difusión general.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Notification-dark.png)
 
-- Shared Kernel:
-  Este diagrama muestra las 4 capas transversales (Building Blocks) sobre las que se apoya la arquitectura limpia del monolito: los Middlewares en la capa API, las interfaces y resources base en Application, los Value Objects globales (TripId, StudentId) en Domain, y los repositorios genéricos en Infrastructure, todo pensado para no duplicar código en el resto de los Bounded Contexts.
+- Shared — Componentes compartidos del backend:
+
+El diagrama reúne componentes de soporte utilizados por distintos bounded contexts, organizados en interfaces, aplicación, dominio e infraestructura.
+
+Para interpretar esta vista, el rótulo “Shared Kernel” del contenedor general debe entenderse como “Shared — componentes compartidos”. Su alcance gráfico incluye utilidades técnicas y, por tanto, es más amplio que el concepto de Shared Kernel de dominio.
+
+En el presente diseño se reserva el término Shared Kernel para un conjunto mínimo de tipos de dominio que necesiten mantener el mismo significado y las mismas reglas entre contextos. Los middlewares, recursos REST, configuraciones y utilidades de persistencia se consideran soporte técnico compartido; su reutilización no los convierte en parte de ese núcleo de dominio.
+
+Como regla de diseño, solo se incorporarán al núcleo los tipos cuya necesidad de compartir esté justificada. Sus cambios deberán coordinarse con los contextos consumidores. Las reglas de negocio y los repositorios específicos permanecerán en sus respectivos contextos, y el núcleo de dominio no deberá depender de componentes web ni de implementaciones de persistencia.
+
   ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark%20(1).png>)
 
   - Identity & Access Management:
@@ -2866,13 +2877,13 @@ Administra los registros de pago asociados a las suscripciones del servicio.
 
 ![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
 
-- Shared:
+**Shared — Componentes técnicos compartidos**
 
-Proporciona el Shared Kernel utilizado por los distintos contextos de la solución desarrollada en Spring Boot.
+El diagrama de clases de Shared muestra elementos reutilizables para construir respuestas REST, transformar errores, manejar excepciones y configurar aspectos de infraestructura, como el acceso web, la persistencia y la localización de mensajes.
 
-- Shared Bounded Context
+Shared se presenta aquí como un módulo de soporte técnico, no como un bounded context de negocio independiente. Por ello, su contenido no se limita a Value Objects ni debe identificarse en su totalidad como un Shared Kernel de dominio.
 
-Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
+La inclusión de un tipo de dominio en el Shared Kernel requiere justificar que varios contextos necesitan compartir su significado y sus reglas. El diagrama de soporte técnico presentado a continuación no constituye, por sí solo, un inventario de esos tipos de dominio.
 
 ![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
