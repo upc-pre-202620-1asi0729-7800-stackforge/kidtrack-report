@@ -1524,7 +1524,27 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 ##### 5.2.1.8. Team Collaboration Insights during Sprint
 
 ### 5.2.2. Sprint 2
-##### 5.2.2.1. Sprint Planning 2
+#### 5.2.2.1. Sprint Planning 2
+
+El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera versión navegable del frontend para administradores, conductores y apoderados, junto con mejoras informativas de la Landing Page. Mientras no se disponga de los servicios backend, los flujos de la aplicación utilizarán datos de prueba identificados como tales.
+.
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-09-27 |
+| Time |  07:00 PM |
+| Location |  Microsoft Teams, Discord |
+| Prepared By | Ortega Quintana, Jose Zacarias |
+| Attendees (to planning meeting) | Todo el equipo |
+| Sprint 1 Review Summary | El incremento reportado del Sprint 1 corresponde a la Landing Page pública de KidTrack. La selección informada comprende US23, US24, US25, US26, US27, US33 y TS5, con una suma de 21 Story Points. La retroalimentación del entregable identificó la necesidad de alinear los identificadores del Sprint Backlog con el Product Backlog, diferenciar capacidad estimada de puntos seleccionados y aportar evidencia de los recorridos definidos en el Sprint Goal. Los 21 puntos seleccionados no se consideran automáticamente velocidad observada sin verificar la aceptación de las historias. |
+| Sprint 1 Retrospective Summary | A partir de la revisión del entregable, se proponen como mejoras para el siguiente sprint mantener una única correspondencia de IDs entre historias y tareas, identificar las dependencias de backend antes de comprometer funcionalidades y registrar resultados verificables de las pruebas. Asimismo, se concluyó que el uso de ramas feature permitió reducir conflictos de integración y mejorar el trabajo colaborativo. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Nuestro enfoque es permitir que administradores, conductores y apoderados evalúen los flujos iniciales de organización y seguimiento del transporte escolar en el frontend de KidTrack, además de facilitar que los visitantes resuelvan dudas sobre el servicio en la Landing Page. Consideramos que esto permitirá detectar dificultades de navegación y comprensión antes de integrar el backend. Lo confirmaremos al finalizar el sprint mediante la ejecución documentada de tres recorridos con datos de prueba: un administrador completa el formulario de un estudiante y consulta una ruta con sus paradas; un conductor accede a un viaje asignado y visualiza su cambio de estado mediante una simulación de inicio; y un apoderado consulta en el mapa una ubicación de prueba del vehículo. Cada recorrido deberá alcanzar el resultado esperado sin enlaces rotos ni errores que impidan completarlo. Asimismo, se comprobará el acceso HTTPS a la Landing Page y se evaluará la interfaz de suscripción al newsletter, diferenciando la validación del formulario de la suscripción efectiva, que requerirá un servicio operativo. |
+| Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
+| Sum of Story Points | 86 Story Points, correspondientes a US35, US30, TS6, TS2, US1, US2, US4, US3, US5, US6, US10, US11, US17, US19, US14, US12, US21, US22 y US13. |
+
+
+
 ##### 5.2.2.2. Aspect Leaders and Collaborators
 ##### 5.2.2.3. Sprint Backlog 2
 ##### 5.2.2.4. Development Evidence for Sprint Review
