@@ -1512,8 +1512,8 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 | Sprint 0 Retrospective Summary | No aplica  |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | Nuestro enfoque es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados interesados comprender la propuesta de KidTrack, comparar las condiciones de sus planes y conocer cómo comenzar a utilizar el servicio. Consideramos que esto les permitirá evaluar si la plataforma responde a sus necesidades y encontrar el siguiente paso para acceder a ella. Lo confirmaremos al finalizar el sprint mediante la validación satisfactoria de tres recorridos: consultar los beneficios correspondientes a su rol, comparar los planes publicados y continuar hacia el registro o inicio de sesión. |
-| Sprint 1 Velocity | 14 story points |
-| Sum of Story Points | 9 story points |
+| Sprint 1 Velocity | No se cuenta con velocidad histórica por tratarse del primer sprint. No quedó registrada una estimación independiente de capacidad durante la planificación. El alcance seleccionado comprende 21 Story Points. |
+| Sum of Story Points | 21 Story Points, correspondientes a US23 (2), US24 (3), US25 (3), US26 (3), US27 (3), US33 (2) y TS5 (5)|
 
 ##### 5.2.1.2. Aspect Leaders and Collaborators
 ##### 5.2.1.3. Sprint Backlog 1
