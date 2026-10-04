@@ -1270,11 +1270,9 @@ En esta sección se describen los mecanismos de asistencia y recuperación de in
 * **Visualización de Resultados:** *Timeline* cronológico con marcas horarias, mapa con el recorrido trazado e indicadores cromáticos de estado (Verde: *Completado*, Naranja: *Retraso*, Naranja Rojizo: *Inasistencia/Incidencia*).
 
 #### 4.2.5. Navigation Systems
-La navegación en **KidTrack** ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la *landing page*, se utiliza un sistema de desplazamiento vertical (*smooth scroll*) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (*CTAs*) para el contacto. Esta navegación se apoya en una barra superior persistente (*Sticky Nav*) que incluye un selector de idioma (*i18n*), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
+La navegación en la **Landing Page** utiliza un desplazamiento vertical fluido (*Smooth Scroll*) acompañado de una barra superior fija (*Sticky Navigation*) con selector bilingüe (i18n).
 
-Dentro de la aplicación web, la navegación principal se organiza mediante una barra lateral fija (*Sidebar*) que otorga acceso inmediato a las secciones críticas: Monitoreo en Tiempo Real, Lista de Alumnos, Historial de Rutas, Alertas de Seguridad y Configuración de Perfil. Este diseño permite que, por ejemplo, un conductor pueda alternar entre su hoja de ruta y el reporte de incidencias con un solo toque, manteniendo siempre la visibilidad del estado del viaje.
-
-La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (*tabs*) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
+Dentro de la **Aplicación Web**, la estructura se basa en un menú lateral fijo (*Sidebar*) que brinda acceso directo a las secciones clave (*Monitoreo*, *Lista de Alumnos*, *Historial*, *Alertas* y *Configuración*). El diseño adapta dinámicamente sus controles al perfil del usuario, empleando pestañas (*tabs*) y accesos directos para ejecutar acciones operativas sin abandonar el contexto del mapa o la ruta activa.
 
 ### 4.3. Landing Page UI Design
 
