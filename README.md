@@ -3711,7 +3711,6 @@ El esquema de Stakeholder organiza el inventario de activos y la asignación de 
 
 La gestión de configuración de KidTrack establece cómo el equipo StackForge organiza sus herramientas, controla los cambios y prepara las versiones del producto. Estas convenciones permiten trabajar sobre el informe, la Landing Page, la aplicación web y los servicios RESTful manteniendo coherencia entre los requisitos y la implementación.
 
-La configuración descrita constituye el esquema de trabajo previsto. Los enlaces o datos marcados como pendientes deben completarse con la información real del equipo antes de presentar las evidencias del entregable.
 
 #### 5.1.1. Software Development Environment Configuration
 
@@ -3755,7 +3754,7 @@ El entorno de KidTrack contempla actividades de planificación, requisitos, dise
 | OpenAPI y Swagger UI | Describir los contratos de la API y permitir su consulta y prueba interactiva. Swagger UI documenta los servicios; no ejecuta ni hospeda el backend Java. | [Swagger UI](https://swagger.io/open-source/swagger-ui/) |
 | GitHub Pages | Servicio propuesto para publicar la Landing Page estática. | [GitHub Pages](https://docs.github.com/en/pages) |
 | Vercel | Alternativa propuesta para publicar la aplicación Angular; su uso debe confirmarse con el equipo. | [Vercel — documentación](https://vercel.com/docs) |
-| Hosting compatible con Java y MySQL | Ejecutar el backend y disponer de persistencia accesible desde el entorno publicado. El proveedor está pendiente de definición. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
+| Hosting compatible con Java y MySQL | Ejecutar el backend y proporcionar acceso a la base de datos MySQL. La selección y configuración del proveedor están previstas para el Sprint 3 y quedan fuera del alcance por el momento. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
 
 
 #### 5.1.2. Source Code Management
@@ -3885,7 +3884,7 @@ El backend se desarrollará con Java y Spring Boot. Requiere un proveedor que ej
 6. Configurar HTTPS y los orígenes CORS autorizados para el frontend publicado. Verificar un endpoint público y otro protegido, además de una operación con persistencia.
 7. Comprobar la especificación OpenAPI y Swagger UI en las rutas configuradas; registrar las URLs reales de la API y su documentación.
 
-**Proveedor, URL de API y URL de documentación:** pendientes 
+**Proveedor, URL de API y URL de documentación:** se registrarán después de su publicación en el Sprint 3. No disponibles en AV1 por encontrarse fuera de su alcance.
 
 Referencia: [Despliegue de Spring Boot en la nube](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html).
 
