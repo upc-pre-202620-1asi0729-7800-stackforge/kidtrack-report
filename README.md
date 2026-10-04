@@ -1145,11 +1145,9 @@ El tono de voz en KidTrack está alineado con la misión de la plataforma: garan
 * **Proximidad:** Agrupación lógica de elementos vinculados (íconos con descripciones, beneficios por rol) para facilitar la lectura rápida.
 #### 4.1.2. Web Style Guidelines
 
-El diseño web de **KidTrack** está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
+El diseño web de KidTrack está optimizado para proporcionar una experiencia de usuario fluida y profesional. La estructura flexible organiza el contenido con claridad, empleando espacios en blanco estratégicos para evitar la saturación visual y priorizar la información crítica de seguridad. Las tarjetas de planes y secciones de roles mantienen proporciones equilibradas para guiarnos jerárquicamente.
 
-En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (*CTAs*) emplean colores contrastantes y estados visuales (como *hover* y *active*) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema.
-
-La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (*i18n*), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la *landing page*.
+En términos de interactividad, los botones de acción (*CTA*) destacan por el uso de colores contrastantes y estados visuales explícitos (*hover*, *focus* y *active*) que ofrecen retroalimentación inmediata. La navegación se apoya en transiciones suaves y una barra superior persistente (*Sticky Navigation*) que mantiene siempre accesible el selector de idiomas mediante el sistema de internacionalización (i18n).
 
 ![Web Style Guidelines 1](./assets/images/Chapter4/Guidelines1.png)
 ![Web Style Guidelines 2](./assets/images/Chapter4/Guidelines2.png)
