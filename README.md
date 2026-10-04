@@ -1192,7 +1192,7 @@ El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio d
 
 **Charset**
 
-```html
+
 <!-- Codificación de Caracteres -->
 <meta charset="UTF-8" />
 
@@ -1253,45 +1253,21 @@ En esta sección se describen los mecanismos de asistencia y recuperación de in
 
 ##### Vista del Conductor / Dueño de Unidad
 
-1. **Medios de ayuda para la búsqueda de datos**
-   * **Barra de búsqueda operativa:** Ubicada en los módulos de "Rutas" y "Lista de Alumnos" para acceso rápido.
-   * **Autocompletado inteligente:** Sugiere nombres de alumnos o puntos de parada conforme el conductor escribe, facilitando la operación en dispositivos móviles.
-   * **Mensajes contextuales:** En caso de no hallar un registro, el sistema ofrece opciones como *"¿Desea registrar un nuevo alumno en esta parada?"*.
-   * **Búsqueda por proximidad:** Sugerencia automática de la siguiente parada basada en la ubicación GPS actual.
-
-2. **Filtros y opciones**
-   * **Por Nombre del Alumno:** Localización directa de la ficha de contacto y datos de emergencia.
-   * **Por Estado de Asistencia:** Filtrado rápido de alumnos *"Abordados"*, *"Pendientes"* o *"Ausentes"*.
-   * **Por Punto de Parada:** Visualización de todos los estudiantes vinculados a un hito específico de la ruta.
-   * **Por Turno:** Filtrado entre rutas de *"Recojo"* (mañana) y *"Retorno"* (tarde).
-
-3. **Visualización de resultados**
-   * **Tarjetas de Alumno (Cards):** Incluyen foto, nombre, grado y una etiqueta de estado de alta visibilidad.
-   * **Indicadores de Color:**
-     * **Naranja (`#E07A2B`):** Alumno en espera.
-     * **Verde (`#22C55E`):** Alumno ya abordó la unidad.
-     * **Naranja Rojizo (`#DE4A26`):** Alumno reportado como ausente.
-   * **Acciones rápidas:** Botones directos para *"Marcar Asistencia"*, *"Llamar a Apoderado"* o *"Reportar Incidencia"*.
+* **Barra de búsqueda operativa:** Disponible en "Rutas" y "Lista de Alumnos".
+  * **Autocompletado inteligente:** Sugiere nombres de estudiantes o paradas al escribir.
+  * **Búsqueda por proximidad:** Prioriza las paradas siguientes según la posición GPS.
+  * **Mensajes contextuales:** Asistencia paso a paso ante búsquedas sin resultados.
+* **Filtros Disponibles:** Por nombre del alumno, estado de asistencia (*Abordado*, *Pendiente*, *Ausente*), punto de parada y turno (*Mañana* / *Tarde*).
+* **Visualización de Resultados:** Tarjetas con fotografía, grado, indicadores cromáticos de estado y botones de acción rápida (*Marcar Asistencia*, *Llamar Apoderado*, *Reportar Incidencia*).
 
 ##### Vista del Padre de Familia
 
-1. **Medios de ayuda para la búsqueda de datos**
-   * **Buscador de historial:** Permite localizar eventos específicos dentro de la bitácora de viajes del alumno.
-   * **Sugerencias por fecha:** Calendario interactivo para seleccionar días específicos de consulta.
-   * **Acceso directo a Unidad:** Buscador para identificar los datos del bus asignado mediante la placa o nombre del conductor.
-
-2. **Filtros y opciones**
-   * **Por Fecha:** Consulta de registros de asistencia de días o meses anteriores.
-   * **Por Tipo de Evento:** Filtrado entre *"Notificaciones de Proximidad"*, *"Confirmación de Abordaje"* y *"Llegada al Destino"*.
-   * **Por Estado del Viaje:** Filtrado entre rutas *"Completadas"*, *"En curso"* o *"Canceladas"*.
-
-3. **Visualización de resultados**
-   * **Timeline de Eventos:** Lista cronológica detallada con la hora exacta de cada suceso.
-   * **Mapa de Resultados:** Al buscar un historial, se muestra el trazado que siguió la unidad en esa fecha específica.
-   * **Colores de Estado:**
-     * **Check Verde (`#22C55E`):** Evento completado con éxito.
-     * **Reloj Naranja (`#E07A2B`):** Retraso reportado en el punto de entrega.
-     * **Círculo Rojo (`#DE4A26`):** Registro de inasistencia justificada.
+* **Medios de Ayuda:**
+  * **Buscador de historial:** Localización de eventos específicos en la bitácora.
+  * **Calendario interactivo:** Selección de fechas específicas de consulta.
+  * **Buscador de unidad:** Consulta rápida por placa o datos del conductor.
+* **Filtros Disponibles:** Por fecha, tipo de evento (*Proximidad*, *Abordaje*, *Llegada*) y estado del viaje (*Completado*, *En curso*, *Cancelado*).
+* **Visualización de Resultados:** *Timeline* cronológico con marcas horarias, mapa con el recorrido trazado e indicadores cromáticos de estado (Verde: *Completado*, Naranja: *Retraso*, Naranja Rojizo: *Inasistencia/Incidencia*).
 
 #### 4.2.5. Navigation Systems
 La navegación en **KidTrack** ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la *landing page*, se utiliza un sistema de desplazamiento vertical (*smooth scroll*) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (*CTAs*) para el contacto. Esta navegación se apoya en una barra superior persistente (*Sticky Nav*) que incluye un selector de idioma (*i18n*), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
