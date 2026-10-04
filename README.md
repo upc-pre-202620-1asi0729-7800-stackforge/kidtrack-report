@@ -1488,7 +1488,6 @@ El Product Backlog de KidTrack reúne las historias funcionales y técnicas de l
 | 32 | US | US14 | Finalización de Viaje | Como conductor, deseo finalizar el viaje, para dejar constancia de que el recorrido ha concluido. | 2 |
 | 33 | US | US12 | Reporte de Incidencias | Como conductor, deseo reportar incidencias del recorrido, para que el administrador pueda coordinar una respuesta. | 5 |
 | 34 | US | US16 | Navegación Integrada | Como conductor, deseo abrir una herramienta externa de navegación, para recibir indicaciones durante el recorrido. | 3 |
-| 35 | TS | TS7 | Soporte Offline para Conductores | Como desarrollador, deseo disponer de almacenamiento local para los eventos del conductor, para conservarlos durante interrupciones de conectividad. | 5 |
 | 36 | US | US7 | Analítica de Flota | Como administrador, deseo consultar indicadores de la flota, para evaluar el rendimiento del servicio. | 8 |
 | 37 | US | US21 | Historial de Asistencia | Como padre, deseo revisar la asistencia mensual de mi hijo, para conocer los días en que utilizó el transporte. | 5 |
 | 38 | US | US15 | Bitácora de Viajes | Como conductor, deseo consultar mi bitácora, para revisar los viajes que he realizado. | 3 |
