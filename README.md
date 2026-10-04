@@ -1157,11 +1157,10 @@ En términos de interactividad, los botones de acción (*CTA*) destacan por el u
 ### 4.2. Information Architecture
 #### 4.2.1. Organization Systems
 ---
-En el sistema **KidTrack**, se emplea la organización jerárquica (*visual hierarchy*) para destacar información crítica, como el mapa de monitoreo en tiempo real, las alertas de emergencia y las notificaciones de abordaje de los alumnos en los *dashboards* principales. Esta jerarquía visual permite que tanto padres como conductores identifiquen de forma inmediata los datos más relevantes según el contexto operativo, relegando datos secundarios del perfil a niveles inferiores.
-
-Asimismo, se aplica una organización secuencial (*step-by-step*) en procesos que requieren una guía estructurada. En la *landing page*, este sistema se evidencia en la sección "¿Cómo funciona?", donde se orienta al visitante a través de los pasos clave para la adopción del servicio. En la *Web Application*, este esquema se utilizará para el flujo de registro de paradas y asistencia que el conductor debe seguir durante su ruta, asegurando una progresión lógica que minimice errores de registro.
-
-Respecto a los esquemas de categorización, no se utilizan organizaciones alfabéticas o matriciales complejas. En su lugar, se emplea una organización cronológica para la visualización de datos históricos, permitiendo que los padres de familia revisen los registros pasados de asistencias y llegadas de sus hijos de manera ordenada por fecha y hora. Además, el contenido se clasifica según audiencia, segmentando las interfaces y funcionalidades de acuerdo con los dos *User Personas* identificados: **Conductores**, enfocados en la gestión de ruta y paradas, y **Padres de Familia**, orientados al monitoreo y recepción de avisos de seguridad.
+* **Organización Jerárquica:** Se prioriza la información de mayor valor operativo, como el mapa de monitoreo en tiempo real, las alertas de emergencia y los estados de abordaje, relegando detalles secundarios del perfil a niveles inferiores.
+* **Organización Secuencial (Paso a paso):** Aplicada en flujos estructurados. En la *Landing Page*, se aprecia en la sección *"¿Cómo funciona?"*; en la *Aplicación Web*, guía el registro progresivo de paradas y asistencia por parte del conductor.
+* **Organización Cronológica:** Empleada en la bitácora e historial de viajes, permitiendo a los padres revisar asistencias y horarios de llegada ordenados temporalmente.
+* **Organización por Audiencia:** Segmentación clara de interfaces según el rol del usuario: **Conductores** (enfocados en la gestión operativa de rutas) y **Padres de Familia** (orientados al seguimiento en vivo y recepción de notificaciones).
 
 #### 4.2.2. Labeling Systems
 El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (*Landing Page*) como en el uso crítico de la aplicación (*Web Application*).
