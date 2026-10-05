@@ -17,7 +17,7 @@ NRC
 <br>
 **7800**
 <br>
-**Informe AV1**
+**Informe TB1**
 <br>
 Docente
 <br>
@@ -70,7 +70,7 @@ Proyecto
 **Período 202620**
 <br>
 
-**Setiembre, 2026**
+**Octubre, 2026**
 <br><br><br><br><br><br><br>
 
 </div>
