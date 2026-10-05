@@ -3333,7 +3333,7 @@ Este bounded context organiza la información comercial de los planes, las suscr
 | Atributo | Tipo |
 |-----------------|-------------|
 | id | CHAR(36) (PK) |
-| organization_id | CHAR(36) (FK) |
+| organization_id | VARCHAR(64)|
 | plan_id | INT (FK) |
 | state | VARCHAR(20) |
 | start_date | DATETIME |
@@ -3361,7 +3361,7 @@ Este bounded context organiza la información comercial de los planes, las suscr
 | failure_reason | VARCHAR(500) |
 | provider | ENUM |
 | status | ENUM |
-| subscription_id | VARCHAR(36) (FK) |
+| subscription_id | CHAR(36) (FK) |
 
 **Métodos (API REST)**
 
@@ -3385,7 +3385,7 @@ Este bounded context reúne los datos necesarios para organizar los recorridos d
 | updated_at | DATETIME(6) |
 | departure_time | TIME |
 | name | VARCHAR(255) |
-| organization_id | VARCHAR(64) (FK) |
+| organization_id | VARCHAR(64) |
 | route_state | ENUM |
 | route_type | ENUM |
 | service_days | VARCHAR(255) |
@@ -3436,7 +3436,7 @@ Este bounded context concentra los registros generados durante la ejecución de 
 | updated_at | DATETIME(6) |
 | driver_id | BIGINT |
 | end_time | DATETIME(6) |
-| organization_id | VARCHAR(64) (FK) |
+| organization_id | VARCHAR(64)|
 | route_id | BIGINT (FK) |
 | start_time | DATETIME(6) |
 | trip_state | ENUM |
@@ -3536,9 +3536,9 @@ Este bounded context organiza los mensajes que KidTrack dirige a sus usuarios. L
 | next_retry_at | DATETIME(6) |
 | recipient_id | VARCHAR(64) |
 | retry_count | INT |
-| organization_id | VARCHAR(64) (FK) |
-| trip_id | VARCHAR(36) |
-| user_id | VARCHAR(36) |
+| organization_id | VARCHAR(64) |
+| trip_id | BIGINT |
+| user_id | BIGINT |
 
 **Métodos (API REST)**
 
@@ -3607,7 +3607,20 @@ Este bounded context reúne las relaciones operativas y los recursos utilizados 
 | RegisterVehicle() | Registra un nuevo vehículo. |
 | GetVehiclesByOrganization() | Retorna los vehículos de una organización. |
 #### 4.8.1. Database Diagrams
-Esta sección detalla y analiza los esquemas de base de datos correspondientes a los bounded contexts de KidTrack, en estricta conformidad con el modelo relacional vigente y los endpoints del API REST desarrollados. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
+
+**Estrategia de identidad y referencias**
+
+El esquema presentado constituye el diseño previsto para la implementación del backend en el Sprint 3.
+
+Los usuarios y viajes utilizan identificadores numéricos BIGINT. Por ello, los campos que referencian directamente a estas entidades, como notifications.user_id y notifications.trip_id, emplean el mismo tipo.
+
+Las suscripciones utilizan identificadores CHAR(36), y payments.subscription_id conserva ese tipo para mantener la correspondencia con subscriptions.id. Las referencias a organizaciones se representan uniformemente mediante VARCHAR(64).
+
+En esta propuesta, organization_id se considera una referencia lógica entre contextos, no una clave foránea física. Su existencia y la pertenencia de los recursos a la organización deberán validarse mediante el contexto propietario al implementar los servicios. Las relaciones identificadas como FK deberán especificar una tabla y columna de destino y utilizar tipos compatibles.
+
+Los Value Objects de identidad encapsulan y validan los identificadores del dominio. Su uso no sustituye las restricciones de base de datos ni las validaciones de referencias entre contextos.
+
+Esta sección presenta los diagramas del diseño de base de datos previsto para KidTrack. Las representaciones describen las tablas, atributos y relaciones propuestas por contexto; no constituyen evidencia de una base de datos desplegada ni de endpoints implementados. La implementación del Sprint 3 deberá mantener consistencia entre este diseño, las entidades del backend y las migraciones del esquema. En cada representación visual se exponen las entidades persistentes con sus respectivas tablas, atributos, tipados, claves primarias y foráneas, además de los vínculos cardinales que las conectan. Asimismo, evidencian de qué forma cada dominio preserva su autonomía funcional mientras se articula mediante identificadores transversales tales como `organization_id`, `route_id`, `trip_id`, `user_id` y demás claves de asociación.
 
 ![DataBase](./assets/images/ChapterIV/DataBase.png)
 
