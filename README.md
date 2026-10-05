@@ -80,30 +80,17 @@ Proyecto
 <br><br><br>
 
 ---
----
 
 ## Registro de Versiones del Informe
 
-| Avance | Fecha      | Autor                                                                                                                                                         | Descripción de Modificación                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Avance | Fecha      | Autor                                                                                                                                                         | Descripción de Modificación                                                                                                                                                                                                                                                                                                |
 | :----- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| AV1    | 25/04/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
-
-
-
-
-
-
-
-
-
-
-
+| AV1    | 17/09/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
 
 <br><br><br>
 <br><br><br>
 <br><br><br>
 <br><br><br>
----
 ---
 ## Project Report Collaboration Insights
 
@@ -116,34 +103,10 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ## Landing Page:
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br><br>
 <br><br><br>
 <br><br><br>
 <br><br><br>
----
----
 ---
 ## Tabla de contenidos
 
@@ -151,8 +114,6 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 - [Project Report Collaboration Insights](#project-report-collaboration-insights)
     - [Sprint 1](#sprint-1)
     - [Sprint 2](#sprint-2)
-    - [Sprint 3](#sprint-3)
-    - [Sprint 4](#sprint-4)
 - [Student Outcome](#student-outcome)
 - [Capítulo I: Introducción](#capítulo-i-introducción)
     - [1.1. Startup Profile](#11-startup-profile)
@@ -443,7 +404,7 @@ En esta sección se realizará la identificación de los principales competidore
       Este análisis nos permite conocer las características, ventajas y
       limitaciones de las principales soluciones de transporte escolar
       existentes en el mercado. También ayuda a identificar oportunidades
-      de diferenciación y áreas de mejora para KickTrack.
+      de diferenciación y áreas de mejora para KidTrack.
     </td>
   </tr>
 
@@ -919,7 +880,7 @@ Para Carla, el atributo más importante para sentirse tranquila es:
 
 #### Validación del Arquetipo
 
-Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto KickTrack. Se confirma que este segmento prioriza:
+Los datos recolectados en esta entrevista validan los supuestos definidos para el segmento Padre de Familia dentro del proyecto KidTrack. Se confirma que este segmento prioriza:
 
 - Seguridad del estudiante
 - Monitoreo en tiempo real
@@ -4175,44 +4136,20 @@ Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEn
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
-### 5.2.3. Sprint 3
-##### 5.2.3.1. Sprint Planning 3
-##### 5.2.3.2. Aspect Leaders and Collaborators
-##### 5.2.3.3. Sprint Backlog 3
-##### 5.2.3.4. Development Evidence for Sprint Review
-##### 5.2.3.5. Execution Evidence for Sprint Review
-##### 5.2.3.6. Services Documentation Evidence for Sprint Review
-##### 5.2.3.7. Software Deployment Evidence for Sprint Review
-##### 5.2.3.8. Team Collaboration Insights during Sprint
-
-### 5.2.4. Sprint 4
-##### 5.2.4.1. Sprint Planning 4
-##### 5.2.4.2. Aspect Leaders and Collaborators
-##### 5.2.4.3. Sprint Backlog 4
-##### 5.2.4.4. Development Evidence for Sprint Review
-##### 5.2.4.5. Execution Evidence for Sprint Review
-##### 5.2.4.6. Services Documentation Evidence for Sprint Review
-##### 5.2.4.7. Software Deployment Evidence for Sprint Review
-##### 5.2.4.8. Team Collaboration Insights during Sprint
-
-### 5.3. Validation Interviews
-#### 5.3.1. Diseño de Entrevistas
-#### 5.3.2. Registro de Entrevistas
-#### 5.3.3. Evaluaciones según heurísticas
-
 ### 5.4 Video About-the-Product
 
 ## Conclusiones
-
+- El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
+- La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
+- El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas, ya que se necesitan de experiencias de usuarios reales.
 ## Recomendaciones
-
+-Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
+-Analizar la posibilidad de actualizar o corregir tipografia tanto en el FrontEnd como en la Landing Page.
 ## Video About-the-Team
 
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
 - Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). _Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial_. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
-
-
 
 
 ## Anexos
