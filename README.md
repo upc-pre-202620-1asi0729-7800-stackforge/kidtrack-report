@@ -3917,16 +3917,16 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
 
-| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
-| ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                          | L                  | C                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | C                  | L                          | C                  | C                   |
-| Su Caletti, Eddo                    | Asalreon520     | L                  | C                          | C                  | C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                          | L                  | L                   |
-| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |
+| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |
 
 ##### 5.2.1.3. Sprint Backlog 1
-El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores, y se desarrollaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design(DDD).
+El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores.
 
 ![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/Sprint-Backlog-1.png)
 
@@ -3935,25 +3935,32 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 | Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
 | :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
 | **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
-| **Story Id**         | **Story Title**     | **Task Id**  | **Task Title**                                    | **Task Description**                                                                     | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal                       | 1          |      Nickolas     | Done        |
-| US21  | Consulta de propuesta y beneficios | T02          | Estructura base de seccion hero, funcionalidades y roles| Implementar la estructura inicial de las 3 secciones                        | 1          |      Nickolas     | Done        |
-| US21  | Consulta de propuesta y beneficios | T03          | Implementar seccion hero | Incorporar la informacion principal de la plataforma y los botones que nos llevaran a otras secciones                       | 2          |     Nickolas      | Done        |
-| US21  | Consulta de propuesta y beneficios | T04          | Implementar seccion funcionalidades  | Incorporar cards explicando las funcionalidades de la plataforma                       | 2          |     Nickolas      | Done        |
-| US21  | Consulta de propuesta y beneficios | T05          | Implementar seccion Roles del sistema  | Incorporar cards explicando los roles que habran en la plataforma y que lugar ocupara cada uno                       | 2          |    Nickolas       | Done        |
-| US21  | Consulta de propuesta y beneficios | T06          | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 1 |     Jose      | Done        |
-| US22  | Comparación de planes              | T07                  | Estructurar seccion planes | Implementar la estructura inicial de la seccion planes                      | 1 |     Jose       | Done        |
-| US22  | Comparación de planes              | T08                  | Implementar seccion plan basico   | Se agregara una cards con la informacion del plan basico y un boton que funcionara si se selecciona dicho plan                       | 1          |    Edo       | Done        |
-| US22  | Comparación de planes              | T09                  | Implementar seccion plan Intermedio   | Se agregara una cards con la informacion del plan intermedio y un boton que funcionara si se selecciona dicho plan                        | 1          |   Edo        | Done        |
-| US22  | Comparación de planes              | T010                  | Implementar seccion plan Completo | Se agregara una cards con la informacion del plan completo y un boton que funcionara si se selecciona dicho plan                        | 1          |     Edo      | Done        |
-| US22  | Comparación de planes              | T011                  | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |     Jose      | Done        |
-| US23  | Consulta del funcionamiento y acceso al servicio | T012                  | Estructurar seccion de como funciona la plataforma | Implementar la estructura inicial de la seccion de como funciona la plataforma                       | 2          |      Salvador     | Done       |
-| US23  | Consulta del funcionamiento y acceso al servicio | T013                  | Implementar seccion de como funciona la plataforma | Se agregara la informacion mediante pasos de un workflow simple de como se usa la plataforma                       | 1          |     Salvador     | Done       |
-| US23  | Consulta del funcionamiento y acceso al servicio                            | T014                  | Aplicar tipografia y guia de estilos del modelo de negocio   | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |    Jose       | Done        |
-| US26  | Uso en inglés y español i18n                     | T015                  | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto.                       | 2          |    Matias       | Done       |
-| US26  | Uso en inglés y español i18n                     | T016                  | Crear diccionario en español | Definir textos de la Landing Page en español.                       | 1          |    Matias      | Done       |
-| US26  | Uso en inglés y español i18n                     | T017                  | Crear diccionario en inglés | Definir traducciones de la Landing Page en inglés.                       | 1          |    Matias       | Done       |
-| US26  | Uso en inglés y español i18n                     | T018                  | Implementar boton de seleccion de idioma | Agregar boton cambio de idioma ES/EN en la interfaz.                       | 3          |    Jose       | Done       |
+| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS5 | Soporte i18n de la Landing Page | T01 | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto. | 2 | Matias | Done |
+|   |   | T02 | Crear diccionario en español | Definir los textos de la Landing Page en español. | 1 | Salvador | Done |
+|   |   | T03 | Crear diccionario en inglés | Definir las traducciones de la Landing Page en inglés. | 2 | Salvador | Done |
+|   |   | T04 | Persistir idioma seleccionado | Guardar la preferencia de idioma del visitante para conservarla al recargar la página. | 2 | Matias | Done |
+|  |   | T05 | Definir traducción de respaldo en inglés | Usar la traducción en inglés cuando falte una clave en el idioma seleccionado. | 1 | Matias | Done |
+| US23 | Visualización de Hero | T01 | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal. | 1 | Nickolas | Done |
+|   |   | T02 | Implementar sección hero | Incorporar la información principal de KidTrack y su propuesta de seguridad en el transporte escolar. | 2 | Nickolas | Done |
+|   |   | T03 | Agregar botón de registro y página de recurso no encontrado | Dirigir al visitante al registro y mostrar una página con opción para volver al inicio ante una dirección inexistente. | 2 | Nickolas | Done |
+| US24 | Navegación de Funciones | T01 | Estructurar sección de funcionalidades | Implementar la estructura inicial de la sección de funcionalidades. | 1 | Jose | Done |
+|   |   | T02 | Implementar cards de funcionalidades | Incorporar cards explicando las capacidades de monitoreo y gestión de la plataforma. | 2 | Jose | Done |
+|   |  | T03 | Implementar detalle ampliado | Permitir consultar la descripción completa con ratón, teclado o interacción táctil. | 2 | Jose | Done |
+| US25 | Detalle de Roles | T01 | Estructurar sección de roles del sistema | Implementar la estructura inicial de la sección de roles. | 1 | Nickolas | Done |
+|  |   | T02 | Implementar cards de roles | Incorporar cards con los beneficios y funciones de padre, conductor y administrador. | 2 | Nickolas | Done |
+|   |   | T03 | Definir perfil inicial | Mostrar inicialmente la información del administrador al acceder a la sección. | 1 | Nickolas | Done |
+| US26 | Consulta de Precios | T01 | Estructurar sección de planes | Implementar la estructura inicial de la sección de planes. | 1 | Edo | Done |
+|   |   | T02 | Implementar cards de planes Básico, Intermedio y Completo | Agregar cards con la información de cada plan y un botón para seleccionarlo. | 3 | Edo | Done |
+|   |  | T03 | Mostrar precios en PEN con descuento anual | Presentar los importes en soles peruanos y aplicar el 20 % de descuento a la modalidad anual. | 2 | Edo | Done |
+|   |   | T04 | Marcar planes como Próximamente | Identificar los planes no disponibles e impedir iniciar su contratación. | 1 | Edo | Done |
+| US27 | Selección de Idioma | T01 | Implementar botón de selección de idioma | Agregar el botón de cambio de idioma ES/EN en la interfaz. | 2 | Jose | Done |
+| |   | T02 | Definir inglés como idioma predeterminado | Usar inglés en la primera visita sin preferencia guardada. | 1 | Jose | Done |
+|   |   | T03 | Aplicar idioma de respaldo | Usar inglés cuando la preferencia guardada corresponda a un idioma no soportado. | 1 | Jose | Done |
+| US33 | Diseño Adaptable e i18n | T01 | Aplicar tipografía y guía de estilos del modelo de negocio | Aplicar tipografías, colores y diseños, y comprobar que el responsive funciona correctamente. | 2 | Salvador | Done |
+|  |   | T02 | Ajustar contenido traducido en móvil | Mantener legible el texto traducido que ocupa más espacio en pantallas pequeñas. | 2 | Salvador | Done |
+|   |   | T03 | Adaptar navegación y tamaño de fuente | Conservar el idioma al cambiar la orientación y permitir leer el texto con fuente ampliada sin recortes. | 1 | Salvador | Done |
+
 ##### 5.2.1.4. Development Evidence for Sprint Review
 **URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
 
@@ -4080,12 +4087,99 @@ El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera vers
 | Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
 | Sum of Story Points | 86 Story Points, correspondientes a US35, US30, TS6, TS2, US1, US2, US4, US3, US5, US6, US10, US11, US17, US19, US14, US12, US21, US22 y US13. |
 
-
 ##### 5.2.2.2. Aspect Leaders and Collaborators
+De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |FrontEnd (L/C) |
+| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |L                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |C                   |
+
 ##### 5.2.2.3. Sprint Backlog 2
+| Sprint #       | Sprint 2                |                      |                                              |                                                                                        |                        |                 |            |
+| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
+| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
+| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar y configurar Leaflet con su capa base de mapa en las vistas de seguimiento. | 2 | Matias | Done |
+|  |  | T02 | Representar rutas y paradas en el mapa | Dibujar el recorrido y los marcadores de las paradas a partir de coordenadas válidas. | 3 | Matias | Done |
+|  |  | T03 | Actualizar marcador y manejar falla del mapa base | Reflejar nuevas ubicaciones del vehículo e informar cuando el proveedor de teselas no responda. | 2 | Matias | Done |
+| TS6 | Implementación HTTPS/SSL | T01 | Configurar certificado SSL | Instalar un certificado válido en el sitio publicado. | 2 | Matias | Done |
+|  |  | T02 | Configurar redirección de HTTP a HTTPS | Redirigir automáticamente las visitas HTTP a su dirección HTTPS. | 1 | Matias | Done |
+|  |  | T03 | Forzar HTTPS en formularios | Asegurar que los formularios con datos sensibles solo transmitan por HTTPS. | 1 | Matias | Done |
+| US1 | Contratar Plan | T01 | Implementar vista de selección de planes | Permitir al administrador elegir el plan de su organización. | 2 | Nickolas | Done |
+|  |  | T02 | Integrar confirmación de pago | Confirmar el pago y aplicar los límites del plan contratado. | 3 | Nickolas | Done |
+|  |  | T03 | Manejar cancelación y pago rechazado | Mantener el plan actual cuando se cancele la contratación o se rechace el pago. | 3 | Nickolas | Done |
+| US2 | Registro de Conductores | T01 | Crear modelo y API de conductores | Implementar la entidad Conductor con sus operaciones de registro y consulta. | 3 | Nickolas | Done |
+|  |  | T02 | Implementar formulario de registro de conductor | Crear la vista con los datos del conductor y validación de campos obligatorios. | 3 | Nickolas | Done |
+|  |  | T03 | Validar DNI único y verificación de licencia | Rechazar DNI duplicados y registrar el estado Verificado al aprobar la licencia. | 2 | Nickolas | Done |
+| US3 | Registro de Padres | T01 | Crear modelo y API de padres | Implementar la entidad Padre con registro y envío de invitación de acceso. | 3 | Nickolas | Done |
+|  | Registro de Padres | T02 | Implementar formulario de registro de padres | Crear la vista de registro con validación del formato de correo. | 2 | Nickolas | Done |
+|  | Registro de Padres | T03 | Vincular padre con estudiante | Asociar al padre con su hijo para habilitar el seguimiento autorizado. | 2 | Nickolas | Done |
+| US4 | Alta de Alumnos | T01 | Crear modelo y API de estudiantes | Implementar la entidad Estudiante con sus operaciones de alta y consulta. | 3 | Nickolas | Done |
+|  |  | T02 | Implementar formulario de alta de alumnos | Crear la vista de registro e identificar los datos obligatorios faltantes. | 2 | Nickolas | Done |
+|  |  | T03 | Cargar fotografía y generar carné digital | Guardar una fotografía válida y mostrarla en el carné digital del estudiante. | 3 | Nickolas | Done |
+| US5 | Creación de Rutas | T01 | Crear modelo y API de rutas y paradas | Implementar las entidades Ruta y Parada con sus operaciones de creación y consulta. | 3 | Jose | Done |
+|  |  | T02 | Implementar vista de creación de rutas | Crear la interfaz para definir origen, destino y paradas sobre el mapa. | 3 | Jose | Done |
+|  |  | T03 | Calcular recorrido y duración estimada | Obtener el trazado, el tiempo estimado y un orden sugerido de paradas; informar si no hay trayecto. | 3 | Jose | Done |
+| US6 | Asignación de Conductores a Rutas | T01 | Crear API de asignación conductor-ruta | Registrar la asignación de un conductor disponible a una ruta. | 2 | Jose | Done |
+|  |  | T02 | Validar conflictos de horario | Impedir asignaciones incompatibles en el mismo horario e informar la falta de disponibilidad. | 2 | Jose | Done |
+|  |  | T03 | Implementar vista de asignación y aviso | Crear la interfaz de asignación y notificar al conductor asignado. | 2 | Jose | Done |
+| US10 | Inicio de Trayecto | T01 | Crear endpoint de inicio de viaje | Cambiar el viaje asignado al estado En camino. | 2 | Edo | Done |
+|  |  | T02 | Implementar botón de inicio de viaje | Crear la interfaz del conductor para confirmar el inicio. | 2 | Edo | Done |
+|  |  | T03 | Enviar coordenadas y manejar falta de conexión | Iniciar el envío de ubicación e informar cuando no se pueda confirmar el inicio. | 3 | Edo | Done |
+| US11 | Marcación de Abordaje | T01 | Registrar abordaje de estudiantes | Guardar la asistencia del viaje y generar el aviso al padre. | 2 | Edo | Done |
+|  |  | T02 | Implementar escaneo de código QR | Leer el QR del estudiante asignado sin duplicar asistencias. | 3 | Edo | Done |
+|  |  | T03 | Validar estudiante por parada | Rechazar abordajes de estudiantes que no corresponden a la parada. | 2 | Edo | Done |
+| US12 | Reporte de Incidencias | T01 | Implementar formulario de incidencias | Crear la vista para que el conductor registre retrasos y averías. | 2 | Edo | Done |
+|  |  | T02 | Actualizar hora estimada de llegada | Recalcular la llegada que consultan los padres tras un retraso. | 3 | Edo | Done |
+| |  | T03 | Notificar a central y permitir ubicación manual | Enviar el aviso de avería y permitir indicar dónde ocurrió sin GPS. | 2 | Edo | Done |
+| US13 | Botón de Pánico | T01 | Implementar interfaz de alerta SOS | Activar tras mantener presionado 3 segundos y permitir cancelar en 2 segundos. | 3 | Edo | Done |
+|  |  | T02 | Enviar alerta con ubicación y hora | Registrar y enviar la alerta con la ubicación disponible. | 3 | Edo | Done |
+|  |  | T03 | Manejar alerta sin ubicación GPS | Enviar la identificación del conductor y la hora indicando que la ubicación no está disponible. | 2 | Edo | Done |
+| US14 | Finalización de Viaje | T01 | Crear endpoint de cierre de viaje | Cerrar el viaje y detener el envío de ubicación. | 2 | Jose | Done |
+|  |  | T02 | Validar estudiantes a bordo | Impedir el cierre mientras haya estudiantes pendientes de entrega. | 2 | Jose | Done |
+|  |  | T03 | Manejar rechazo del servidor y reintento | Informar que el viaje no se cerró y permitir volver a intentarlo. | 2 | Jose | Done |
+| US17 | Rastreo en Tiempo Real | T01 | Implementar vista de seguimiento | Crear la pantalla del padre con el mapa del viaje activo. | 3 | Salvador | Done |
+|  |  | T02 | Actualizar marcador del vehículo | Representar las posiciones recibidas durante el viaje. | 3 | Salvador | Done |
+|  |  | T03 | Mostrar distancia a la parada y estado finalizado | Calcular los kilómetros a la parada e indicar cuando el servicio concluyó. | 2 | Salvador | Done |
+| US19 | Confirmación de Llegada | T01 | Registrar entrega individual del estudiante | Guardar la confirmación del conductor en viajes de ida y de retorno. | 2 | Salvador | Done |
+| | | T02 | Enviar aviso Hijo entregado | Notificar al padre la llegada de su hijo. | 2 | Salvador | Done |
+|  |  | T03 | Generar alerta de demora | Alertar cuando el retraso supere veinte minutos respecto a la llegada estimada. | 3 | Salvador | Done |
+| US21 | Historial de Asistencia | T01 | Implementar consulta mensual de asistencia | Mostrar los días y estados de asistencia del estudiante. | 3 | Salvador | Done |
+|  |  | T02 | Registrar justificación de ausencias | Marcar una ausencia como Justificado tras el registro del padre. | 2 | Salvador | Done |
+|  |  | T03 | Manejar periodos sin datos | Informar cuando el mes consultado aún no tiene registros. | 1 | Salvador | Done |
+| US22 | Perfil del Estudiante | T01 | Implementar formulario de información médica | Guardar alergias y precauciones visibles para el conductor asignado. | 3 | Salvador | Done |
+|  |  | T02 | Actualizar fotografía del estudiante | Reflejar la nueva imagen en las vistas autorizadas. | 2 | Salvador | Done |
+|  |  | T03 | Validar campos obligatorios | Informar el campo faltante y conservar los datos previos. | 2 | Salvador | Done |
+| US30 | Suscripción al Newsletter | T01 | Implementar formulario de suscripción | Registrar el correo válido con el consentimiento del visitante. | 2 | Matias | Done |
+|  |  | T02 | Enviar mensaje de bienvenida | Enviar el correo tras confirmar la suscripción. | 2 | Matias | Done |
+|  |  | T03 | Evitar suscripciones duplicadas | Informar cuando el correo ya esté suscrito. | 1 | Matias | Done |
+| US35 | Verificación de SSL | T01 | Verificar conexión HTTPS | Comprobar que el sitio use un certificado válido. | 1 | Matias | Done |
+|  |  | T02 | Verificar envío de formularios por HTTPS | Comprobar que las solicitudes de los formularios se transmitan de forma segura. | 1 | Matias | Done |
+|  |  | T03 | Comprobar advertencia por certificado inválido | Verificar que el navegador informe del problema antes de continuar. | 1 | Matias | Done |
+
 ##### 5.2.2.4. Development Evidence for Sprint Review
+
+| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
+| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
+| - | -        | -   | -                                                        | -  | - |
+
 ##### 5.2.2.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo logró diseñar y desplegar la primera versión pública del FrontEnd de KidTrack:
+
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEnd de KidTrack. 
+
+| Endpoint      | Acción implementada   | URL | Método HTTP    | Sintaxis de llamada | Parametros | Response |
+| ------------- | --------------------  | --- | -------------- | --------------------|-------------|-------- |
+|               |                       |     |                |                     |             |         |
+
+
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
