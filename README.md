@@ -3919,23 +3919,39 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 
 Durante el Sprint 1, el equipo realizó commits principalmente sobre el repositorio del informe (kidtrack-report), abarcando la documentación de los capítulos I al V, incluyendo el diseño de producto, arquitectura de software, wireframes, mockups y la configuración del entorno de desarrollo.
 
-| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
-| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
-| KidTrack-report  | develop        | fa1d064   | Initial commit                                                          | Bynickram02   | 2026-03-09 |
-| KidTrack-report  | develop        | 8fb0e8e   | docs: add report skeleton                                               | Bynickram02   | 2026-07-09 |
-| KidTrack-report  | develop        | 68020cf   | docs: add startup profile and team member profiles for chapter 1        | Bynickram02   | 2026-08-09 |
-| KidTrack-report  | develop        | 63df1d7   | docs: complete sections 2.3 Needfinding, and 2.3.1. user persona        | Asalreon520   | 2026-08-09 |
-| KidTrack-report  | develop        | 1c099f8   | docs: complete sections 2.3.2 to 2.5 including task matrix, journey maps, empathy maps, event storming, and ubiquitous language.                                    | Asalreon520      | 2026-08-09 |
-| KidTrack-report  | develop        | 57695a1   | docs: complete chapter 4 documentation for KidTrack style guidelines and information architecture.| Asalreon520   | 2026-08-09 |
-| KidTrack-report  | develop        | 369ad9c   | docs: add landing page wireframe                                     | Dela0405      | 2026-12-09 |
-| KidTrack-report  | develop        | 3bd7c3a   | docs: add Web Applications Wireframes                               | Dela0405      | 2026-12-09 |
-| KidTrack-report  | develop        | 0809bcd   | docs: add profile description                                      | Dela0405    | 2026-12-09 |
-| KidTrack-report  | develop        | d5d0e9a   | docs: add KidTrack epics, technical stories and user stories with acceptance criteria                                     | Argox16      | 2026-12-09 |
-| KidTrack-report  | develop        | bf6fa3ea  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
-| KidTrack-report  | develop        | 0bd140de  | docs: add Source Code Style Guide & Coding Conventions             | Argox16      | 2026-12-09 |
-| KidTrack-report  | develop        | c5f5b5bc  | docs: add 2.1.1 Análisis Competitivo             | SALVA1704    | 2026-13-09 |
-| KidTrack-report  | develop        | 402aaa1c  | docs: add 2.1.2. Estrategias y tácticas frente a competidores             | SALVA1704    | 2026-13-09 |
-| KidTrack-report  | develop        | f2368c77  | docs: add 2.2.1 Diseño de entrevistas             | SALVA1704    | 2026-13-09 |
+| Repository | Branch | Commit Id | Commit Message | Committed By | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| kidtrack-website | main | 480e3f7 | Initial commit | Bynickram02 | 2026-09-03 |
+| kidtrack-website | feature/Nav-layout-base | 0893966 | feat: add nav and layout base markup | Dela0405 | 2026-09-12 |
+| kidtrack-website | feature/Nav-layout-base | bfee7c7 | feat: add nav and layout base styles | Dela0405 | 2026-09-12 |
+| kidtrack-website | feature/Nav-layout-base | d4ef589 | feat: add nav and layout base i18n logic | Dela0405 | 2026-09-12 |
+| kidtrack-website | feature/Nav-layout-base | d257f72 | feat: add nav and layout base i18n logic | Dela0405 | 2026-09-12 |
+| kidtrack-website | feature/Nav-layout-base | a40a848 | feat: add KidTrackLogo | Dela0405 | 2026-09-12 |
+| kidtrack-website | develop | 91291a5 | Merge pull request #1 from feature/Nav-layout-base | Dela0405 | 2026-09-12 |
+| kidtrack-website | feature/hero-stats | 0a68911 | feat: add hero and stats section | Bynickram02 | 2026-09-12 |
+| kidtrack-website | feature/hero-stats | fcb8b59 | feat: add stats section | Bynickram02 | 2026-09-12 |
+| kidtrack-website | feature/hero-stats | 5987580 | feat: add hero and stats styles | Bynickram02 | 2026-09-12 |
+| kidtrack-website | feature/hero-stats | c8412db | fix: rename translations.js to translations.json | Bynickram02 | 2026-09-12 |
+| kidtrack-website | feature/hero-stats | bd521c8 | feat: add hero and stats translations | Bynickram02 | 2026-09-12 |
+| kidtrack-website | develop | 8e64fd9 | Merge pull request #2 from feature/hero-stats | Bynickram02 | 2026-09-12 |
+| kidtrack-website | feature/cta-footer | 0277931 | feat: add cta section styles in css | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 7fdd7f0 | feature: add cta and footer translations for es and en | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 263f713 | feature: integrate video player logic and bind i18n async initialization | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 3a85371 | feat: add cta section and footer to index html | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 5468e2a | feat: add cta and footer translations for es and en | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | d00396c | feat: integrate video player logic and bind i18n async initialization | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 1c6b011 | feat: add cta section and footer to index html | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/cta-footer | 3867311 | Merge branch 'feature/cta-footer' into feature/cta-footer | Argox16 | 2026-09-13 |
+| kidtrack-website | develop | d9ed2ec | Merge pull request #3 from feature/cta-footer | Argox16 | 2026-09-13 |
+| kidtrack-website | feature/plans-how | b847b43 | feat: add plans section styles in css | SALVA1704 | 2026-09-13 |
+| kidtrack-website | feature/plans-how | bc74fb9 | feat: add plans and how section translation | SALVA1704 | 2026-09-13 |
+| kidtrack-website | feature/plans-how | 432e0eb | feat: add functions to render plans and how in i18n.js | SALVA1704 | 2026-09-13 |
+| kidtrack-website | feature/plans-how | 7978551 | feat: add plans and how sections to index.html | SALVA1704 | 2026-09-13 |
+| kidtrack-website | develop | 032e9b7 | Merge pull request #4 from feature/plans-how | SALVA1704 | 2026-09-13 |
+| kidtrack-website | develop | 182840c | docs: fix index.html | Dela0405 | 2026-09-13 |
+| kidtrack-website | develop | b71810b | docs: added README landing documentation | Dela0405 | 2026-09-13 |
+| kidtrack-website | develop | a734823 | docs: fix i18n.js | Dela0405 | 2026-09-13 |
+
 
 #### 5.2.1.5. Execution Evidence for Sprint Review
 
@@ -3992,7 +4008,7 @@ Al final de la landing page se implementó el footer con el titutlo "¿Listo par
 ![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-page-cta-footer.png)
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de KidTrack, así como en la documentación de la arquitectura base del sistema bajo el enfoque Domain-Driven Design (DDD). En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
+Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de KidTrack. En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
 
 | Recurso      | Acción implementada   | Método HTTP | URL / Endpoint | Link de repositorio                                                             |
 | ------------ | --------------------- | ----------- | -------------- | ------------------------------------------------------------------------------- |
