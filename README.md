@@ -700,40 +700,32 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 
 **Preguntas para segmento Objetivo 1: Conductor**
 - ¿En qué distrito o zona sueles trabajar?
-- ¿Podrías contarme un poco sobre tu trabajo como conductor de transporte escolar?
-- ¿Trabajas de manera independiente o en coordinación con otro grupo de personas o empresa?
-- ¿Cómo organizas actualmente tus recorridos para recoger y dejar a los estudiantes?
-- ¿Qué herramientas utilizas actualmente para organizar tus recorridos?
-- ¿Cómo te comunicas actualmente con los padres de familia?
-- ¿Cómo te enteras de que un estudiante no viajará ese día?
-- ¿Cuál es la parte más complicada de organizar tus rutas?
-- ¿Qué haces cuando ocurre una situación inesperada durante el recorrido, como un retraso o cambio de ruta?
-- ¿Qué tan organizado sientes que es tu proceso actual de trabajo?
-- ¿Qué tan cómodo(a) te sientes utilizando tecnología en tu vida diaria?
-- ¿Qué opinas de una herramienta que te permita tener mayor control en la organizacion de los recorridos y mejor comunicación con los padres de familia?
-- ¿Cómo te gustaría que fuera la comunicación con los padres para que no interfiera con tu conducción?
-- ¿Qué funcionalidad tendría que ofrecer una aplicación de transporte escolar para que realmente consideres utilizarla diariamente?
-- ¿Qué tan dispuesto estarías a usar una herramienta que te ayude a organizar y monitorear tu trabajo? ¿Por qué?
+- ¿Trabajas de manera independiente o con una empresa u otro grupo de personas?
+- Cuéntame como es un día de trabajo, desde que empieza el día hasta que termina.
+- ¿Cómo armas y organizas actualmente tus recorridos? ¿Qué herramientas usas (cuaderno, WhatsApp, bloc de notas)?
+- ¿Qué fue lo más difícil de organizar en tus rutas el último mes?
+- ¿Cómo te comunicas con los padres de familia? 
+- Cuéntame de la última vez que un estudiante no fue al colegio. ¿Cómo te enteraste y que hiciste al respecto?
+- ¿Con qué frecuencia te avisan si lo estudiantes van a demorar en salir o no te avisan? ¿Qué pasó la última vez que sucedió algo así?
+- Cuéntame de la última vez que hubo un retraso o cambio de ruta. ¿Qué hiciste y cómo avisaste a los padres?
+- ¿Los padres de familia tienen acceso a la ubicación en tiempo real? ¿Qué herramienta usas?
+- ¿Alguna vez perdiste tiempo, dinero o un cliente por un problema de coordinación? Cuéntame que sucedió
+- ¿Has pagado alguna vez por una herramienta o servicio para tu trabajo? ¿Cuál y cuánto?
 
 
 **Preguntas para segmento Objetivo 2: Padre de Familia**
-- ¿Qué edades tienen tus hijos que utilizan transporte escolar?
-- ¿Con cuanta recurrencia optas por utilizar transporte escolar?
-- ¿Cómo organizas actualmente el traslado de tu hijo/a hacia y desde el colegio?
-- ¿Qué factores tomaste en cuenta para elegir a la persona o servicio que transporta a tu hijo/a?
-- ¿Qué es lo que más valoras del servicio de transporte que utilizas actualmente?
-- ¿Qué tan cómodo(a) te sientes utilizando el servicio de transporte escolar?
-- ¿Qué es lo que más te preocupa cuando tu hijo está en el transporte escolar?
-- ¿Qué es lo que menos te gusta o te genera inconvenientes?
-- ¿Cuál es tu principal preocupación cuando tu hijo/a está viajando en un vehículo sin ti?
-- ¿Recuerdas alguna situación en la que hayas sentido preocupación o falta de información? ¿Qué ocurrió?
-- ¿Cómo te enteras de que tu hijo/a ya llegó al colegio o a casa?
-- ¿Cómo sabes cuando el conductor se retrasara o cambiara la hora habitual de recojo?
-- ¿Qué tipo de información sientes que hoy no tienes y te gustaría tener?
-- ¿Qué tan cómodo(a) te sientes utilizando tecnología en tu vida diaria?
-- ¿Qué opinas de una herramienta que te permita tener mayor visibilidad del transporte escolar de tu hijo?
-- ¿Qué funcionalidad tendría que ofrecer una aplicación de transporte escolar para que realmente consideres utilizarla diariamente?
-- ¿Qué tan dispuesto estarías a usar una herramienta de monitoreo de transporte escolar?
+- ¿Desde hace cuánto tiempo empezaste a utilizar el servicio de transporte escolar?
+- ¿Optas por usarlo cada año y durante todo el año o con qué frecuencia lo contratas?
+- Cuéntame cómo es un día normal en cuanto al traslado o diferentes traslados de tu hijo, desde que sale de casa hasta que regresa.
+- ¿Cómo elegiste al conductor o servicio actual? ¿Qué otras opciones evaluaste o descartaste?
+- ¿Cuánto pagas al mes por el servicio?
+- ¿Alguna vez cambiaste de transporte? Es decir, si optaste por no usar transporte escolar ¿Qué pasó para que lo hicieras?
+- ¿Estas informado acerca de las rutas que toma el transporte escolar y los diferentes puntos de recojo de los otros estudiantes?
+- Cuéntame de la última vez que sentiste preocupación o no supiste dónde estaba tu hijo/a. ¿Qué ocurrió y qué hiciste?
+- ¿Cómo te enteras de que llegó al colegio o a casa? ¿A quién le escribes o llamas?
+- ¿Qué pasa cuando el conductor se retrasa o cambia la hora de recojo y como te enteras? Cuéntame acerca de la última vez que sucedió algo así
+- ¿Tienes acceso a la ubicación en tiempo real? ¿Qué herramienta usas?
+- Cuéntame acerca de la última vez que tuviste algún problema con el conductor por falta de comunicación. ¿Qué sucedió? ¿Cómo se solucionó?
 
 
 
