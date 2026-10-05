@@ -3905,7 +3905,7 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 |   |   | T03 | Definir perfil inicial | Mostrar inicialmente la información del administrador al acceder a la sección. | 1 | Nickolas | Done |
 | US26 | Consulta de Precios | T01 | Estructurar sección de planes | Implementar la estructura inicial de la sección de planes. | 1 | Edo | Done |
 |   |   | T02 | Implementar cards de planes Básico, Intermedio y Completo | Agregar cards con la información de cada plan y un botón para seleccionarlo. | 3 | Edo | Done |
-|   |  | T03 | Mostrar precios en PEN con descuento anual | Presentar los importes en soles peruanos y aplicar el 20 % de descuento a la modalidad anual. | 2 | Edo | Done |
+|   |  | T03 | Mostrar precios en dolares con descuento anual | Presentar los importes en soles peruanos y aplicar el 20 % de descuento a la modalidad anual. | 2 | Edo | Done |
 |   |   | T04 | Marcar planes como Próximamente | Identificar los planes no disponibles e impedir iniciar su contratación. | 1 | Edo | Done |
 | US27 | Selección de Idioma | T01 | Implementar botón de selección de idioma | Agregar el botón de cambio de idioma ES/EN en la interfaz. | 2 | Jose | Done |
 | |   | T02 | Definir inglés como idioma predeterminado | Usar inglés en la primera visita sin preferencia guardada. | 1 | Jose | Done |
