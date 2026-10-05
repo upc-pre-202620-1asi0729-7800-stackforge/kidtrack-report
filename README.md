@@ -4106,6 +4106,11 @@ De acuerdo a la especialización de cada integrante en la esquematización del p
 | Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |C                   |
 
 ##### 5.2.2.3. Sprint Backlog 2
+
+El objetivo del Sprint 2 fue el desarrollo y despliegue del Front End
+
+![Sprint Backlog 2](assets/images/Chapter-5/Sprint2/Sprint-Backlog-2.png)
+
 | Sprint #       | Sprint 2                |                      |                                              |                                                                                        |                        |                 |            |
 | :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
 | **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
