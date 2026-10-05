@@ -3874,7 +3874,7 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 | Sprint 0 Review Summary | No aplica |
 | Sprint 0 Retrospective Summary | No aplica  |
 | **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | Nuestro enfoque es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados interesados comprender la propuesta de KidTrack, comparar las condiciones de sus planes y conocer cómo comenzar a utilizar el servicio. Consideramos que esto les permitirá evaluar si la plataforma responde a sus necesidades y encontrar el siguiente paso para acceder a ella. Lo confirmaremos al finalizar el sprint mediante la validación satisfactoria de tres recorridos: consultar los beneficios correspondientes a su rol, comparar los planes publicados y continuar hacia el registro o inicio de sesión. |
+| Sprint 1 Goal | **Nuestro enfoque** es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados conocer la propuesta de valor de KidTrack, identificar las funcionalidades y roles disponibles, comparar los planes de membresía y entender cómo iniciar el uso del servicio. **Consideramos que esto les permitirá**  evaluar si KidTrack responde a sus necesidades y conocer como acceder al servicio. **Lo confirmaremos cuando** al finalizar el Sprint los usuarios puedan completar satisfactoriamente los siguientes seis recorridos en la Landing Page: Visualizar una sección inicial con información introductoria de la aplicación, visualizar las funcionalidades principales de la aplicación,visualizar los roles que participan en la aplicación, visualizar y comparar los planes de membresía disponibles, visualizar el flujo de funcionamiento de la aplicación y llegar a una sección final donde puedan iniciar sesión o adquirir un plan, teniendo en cuenta que en esta etapa, las acciones de registro, inicio de sesión y contratación de planes serán únicamente visuales, debido a que el desarrollo del frontend y backend funcional aún no forma parte del alcance de este Sprint.  |
 | Sprint 1 Velocity | El alcance seleccionado comprende 21 Story Points. |
 | Sum of Story Points | 21 Story Points, correspondientes a US23 (2), US24 (3), US25 (3), US26 (3), US27 (3), US33 (2) y TS5 (5)|
 
@@ -3972,55 +3972,78 @@ Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión p
 
 Se realizo un video donde se puede ver la ejecucion en tiempo real:[Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQAt1Zy5Fu7xQ5eE68drZG6-AXmE_FsPNgi_vQMHooi3NTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=veoeG9)
 
-La Landing Page presenta la propuesta de valor del producto, las funcionalidades principales, los roles del sistema, los planes de suscripción, informacion del flujo de uso y soporte de internacionalización (ES/EN). 
-A continuación se presentan las capturas de las secciones implementadas:
+**Validación del Sprint 1 Goal :**
+
+
+**Recorrido 1: Visualizar una sección inicial con información introductoria a la aplicación**
+
+Se implementó en la sección principal el título "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?".
+
+El navbar incluye navegación a las secciones principales "Funciones", "Roles", "Planes", "¿Cómo funciona?", "Comenzar" y el botón de cambio de idioma ES/EN.
 
 **Sección Hero**
-
-Se implementó en la sección principal el titulo "Transporte escolar seguro y digital", una ilustración del sistema en funcionamiento y dos botones de llamada a la acción: "Ver planes" y "¿Cómo funciona?".
-El navbar incluye navegación a las secciones principales "Funciones", "Roles", "planes" ,"¿Cómo funciona?", "Comenzar" y el boton de cambio de idioma ES/EN.
 
 ![Hero Section](assets/images/Chapter-5/Sprint1/landing-page-hero.png)
 
 ---
 
-**Sección Funcionalidades**
+**Recorrido 2: Visualizar las funcionalidades**
 
-Se implementó el titulo "Todo lo que necesitas para gestionar tu flota" seguido por la presentacion de las seis funcionalidades principales de la plataforma mediante las siguientes tarjetas con íconos y descripciones: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+Se implementó una sección con el título "Todo lo que necesitas para gestionar tu flota", seguida por la presentación de las seis funcionalidades principales de la plataforma mediante tarjetas con íconos y descripciones: Gestión de rutas y paradas, Monitoreo en tiempo real, Control de abordaje, Reporte de incidencias, Historial y reportes, y Notificaciones de estado.
+
+**Sección Funcionalidades**
 
 ![Funcionalidades Section](assets/images/Chapter-5/Sprint1/landing-page-funcionalidades.png)
 
 ---
 
-**Sección Roles del Sistema**
+**Recorrido 3: Visualizar los roles que hay en la aplicación**
 
-Se implementó el titulo "Una plataforma, tres experiencias", seguido por la presentacion de los 3 roles principales con los que trabajara la plataforma mediante las siguientes tarjetas con iconos y sus respectivas funciones:  Administrador, Conductor y Padre de Familia.
+Se implementó una sección con el título "Una plataforma, tres experiencias", seguida por la presentación de los tres roles principales con los que trabajará la plataforma mediante tarjetas con íconos y sus respectivas funciones: Administrador, Conductor y Padre de Familia.
+
+**Sección Roles del Sistema**
 
 ![Roles Section](assets/images/Chapter-5/Sprint1/landing-page-roles.png)
 
 ---
 
-**Sección Planes**
+**Recorrido 4: Visualizar y comparar los planes de membresía que tiene la aplicación**
 
-Se implementó el titulo "Escala según tu operación", seguido por la presentacion de los tres planes de suscripción disponibles mediante tarjetas interactivas con sus respectivos botones de contratacion: Básico (9.99 dolares/mes), Intermedio (24.99 dolares/mes) y Completo (49.99 dolares/mes).
+Se implementó una sección con el título "Escala según tu operación", seguida por la presentación de los tres planes de suscripción disponibles mediante tarjetas interactivas con sus respectivos botones de contratación: Básico (9.99 dólares/mes), Intermedio (24.99 dólares/mes) y Completo (49.99 dólares/mes).
+
+**Sección Planes**
 
 ![Planes Section](assets/images/Chapter-5/Sprint1/landing-page-planes.png)
 
 ---
 
-**Sección ¿Cómo funciona?**
+**Recorrido 5: Visualizar el flujo de funcionamiento de la aplicación**
 
-Se implementó el titulo "De la configuración al primer viaje", seguido por 5 pasos que resumen el flujo completo de uso de la plataforma: desde la la seleccion de algun plan hasta el monitoreo en tiempo real por parte de los padres.
+Se implementó una sección con el título "De la configuración al primer viaje", seguida por 5 pasos que resumen el flujo completo de uso de la plataforma, desde la selección de algún plan hasta el monitoreo en tiempo real por parte de los padres.
+
+**Sección ¿Cómo funciona?**
 
 ![Como Funciona Section](assets/images/Chapter-5/Sprint1/landing-page-como-funciona.png)
 
 ---
 
+**Recorrido 6: Finalizar en una sección donde podrá registrarse y contratar un plan**
+
+Al final de la landing page se implementó una sección de llamada a la acción con el título "¿Listo para digitalizar tu operación?", seguida de dos botones: "Adquirir plan" e "Iniciar sesión".
+
+Esta sección permite al usuario continuar con el proceso de contratación de un plan o iniciar sesión en la plataforma. Por el momento, esta funcionalidad es únicamente visual, ya que aún no se cuenta con un frontend funcional ni un backend implementado.
+
 **Sección Footer**
 
-Al final de la landing page se implementó el footer con el titutlo "¿Listo para digitalizar tu operación?" seguido de dos botones: "Adquirir plan" e "Iniciar sesión"
-
 ![CTA y Footer Section](assets/images/Chapter-5/Sprint1/landing-page-cta-footer.png)
+
+---
+
+**Conclusion:** 
+
+La Landing Page desarrollada permite validar satisfactoriamente el Sprint 1 Goal, ya que los seis recorridos definidos fueron implementados. El usuario puede conocer la propuesta de valor de KidTrack, explorar sus principales funcionalidades y roles, visualizar y comparar los planes de membresía, comprender el flujo de funcionamiento de la plataforma y, finalmente, acceder a una sección donde puede iniciar sesión o adquirir un plan. 
+Las acciones de registro, inicio de sesión y contratación de planes son actualmente de carácter visual, debido a que la implementación del frontend y backend funcional no forma parte del alcance de este Sprint.
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review
 
 Durante el Sprint 1, el equipo se enfocó en el diseño y despliegue de la Landing Page de KidTrack. En consecuencia, no se implementaron ni desplegaron servicios web (Web Services / RESTful API) durante este sprint.
@@ -4069,7 +4092,7 @@ El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera vers
 | **Sprint Goal & User Stories** | |
 | Sprint 2 Goal | Nuestro enfoque es permitir que administradores, conductores y apoderados evalúen los flujos iniciales de organización y seguimiento del transporte escolar en el frontend de KidTrack, además de facilitar que los visitantes resuelvan dudas sobre el servicio en la Landing Page. Consideramos que esto permitirá detectar dificultades de navegación y comprensión antes de integrar el backend. Lo confirmaremos al finalizar el sprint mediante la ejecución documentada de tres recorridos con datos de prueba: un administrador completa el formulario de un estudiante y consulta una ruta con sus paradas; un conductor accede a un viaje asignado y visualiza su cambio de estado mediante una simulación de inicio; y un apoderado consulta en el mapa una ubicación de prueba del vehículo. Cada recorrido deberá alcanzar el resultado esperado sin enlaces rotos ni errores que impidan completarlo. Asimismo, se comprobará el acceso HTTPS a la Landing Page y se evaluará la interfaz de suscripción al newsletter, diferenciando la validación del formulario de la suscripción efectiva, que requerirá un servicio operativo. |
 | Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
-| Sum of Story Points | 86 Story Points, correspondientes a US35, US30, TS6, TS2, US1, US2, US4, US3, US5, US6, US10, US11, US17, US19, US14, US12, US21, US22 y US13. |
+| Sum of Story Points | 86 Story Points, correspondientes a TS2 (5), TS6 (3), US1 (5), US2 (3), US3 (3), US4 (5), US5 (5), US6 (3), US10 (3), US11 (5), US12 (5), US13 (5), US14 (2), US17 (5), US19 (3), US21 (5), US22 (5), US30 (3) y US35 (5). |
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
