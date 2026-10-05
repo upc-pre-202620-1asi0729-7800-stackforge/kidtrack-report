@@ -17,7 +17,7 @@ NRC
 <br>
 **7800**
 <br>
-**Informe de Trabajo Final**
+**Informe AV1**
 <br>
 Docente
 <br>
@@ -75,6 +75,11 @@ Proyecto
 
 </div>
 
+
+<br><br><br>
+<br><br><br>
+
+---
 ---
 
 ## Registro de Versiones del Informe
@@ -83,6 +88,23 @@ Proyecto
 | :----- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AV1    | 25/04/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
 
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+---
+---
 ## Project Report Collaboration Insights
 
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report/tree/develop)
@@ -94,10 +116,35 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ## Landing Page:
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
-### Sprint 2
-### Sprint 3
-### Sprint 4
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+---
+---
+---
 ## Tabla de contenidos
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -369,7 +416,7 @@ KidTrack está pensado para dos segmentos que forman parte del ecosistema del tr
 
 - **Segmento 1: Padres de Familia**
 
-  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia.
+  Este primer segmento agrupa a padres o apoderados con hijos en el nivel inicial o primaria que ya cuentan con un servicio de transporte escolar privado contratado. Son personas que han puesto en manos de un tercero el traslado de sus hijos, pero que durante el recorrido no reciben ningún tipo de información organizada sobre cómo va el viaje. No se trata de un segmento definido por un nivel socioeconómico particular, sino por dos condiciones puntuales: tener hijos en edad escolar que usan transporte privado y contar con acceso a internet desde algún dispositivo con navegador. Lo que principalmente los motiva a usar KidTrack es poder reducir esa sensación de no saber si su hijo abordó con seguridad, en qué punto del trayecto se encuentra o si pasó algo fuera de lo normal durante el viaje. Para tener una idea del tamaño de este segmento, el Censo Educativo 2022-2023 señala que Lima Metropolitana cuenta con cerca de 1.9 millones de estudiantes repartidos en aproximadamente 7,602 instituciones educativas, de las cuales el 74% pertenece al sector privado (Ministerio de Educación, 2023). Esa alta cantidad de colegios privados hace que buena parte de las familias limeñas termine dependiendo de servicios externos de transporte, ya que son pocas las instituciones que tienen flota propia de transporte.
 
 
 - **Segmento 2: Transportistas Escolares**
@@ -704,7 +751,7 @@ En esta sección se han definido una cierta cantidad de preguntas para nuestros 
 | **Inicio en video**            |              00:00                                                                                                                                                                      |
 | **Fin de video**               |              8:13                                                                                                                                                                              |
 |     **Duración**                   |             8:13 min                                                             -                                                                                                              |
-| **URL del video**              | [Entrevista 1 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC9ov_D2fTJQ5LB_AyO9bVPAckd13FbPmFobcTby6rnFuc?e=XSIkcs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **URL del video**              | [Entrevista 1 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDXAma4S1rEQY8IfSRseXYiARoG6SFULg33qLhhr5iSrHc?e=4llkew&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
@@ -762,7 +809,7 @@ También demuestra preocupación por hacer bien su trabajo y porque los traslado
 | **Inicio en video**            |           8:13                                                                                                                                                                          |
 | **Fin de video**               |           18:44                                                                                                                                                                               |
 |     **Duración**                   |    10:31 min                                                                                                                                                                                     |
-| **URL del video**              | [Entrevista 1 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBW1l_ZVSxdRJHhJwGCjIIWAZ_QIjQLBUCDoAnzN3IgcBo?e=J0j2sI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **URL del video**              | [Entrevista 2 ](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDXAma4S1rEQY8IfSRseXYiARoG6SFULg33qLhhr5iSrHc?e=4llkew&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
@@ -815,7 +862,7 @@ Se puede validar que el entrevistado cumple perfectamente con el arquetipo condu
 | **Inicio en video**            |          18:44                                                                                                                                                                            |
 | **Fin de video**               |     23:30                                                                                                                                                                                       |
 |     **Duración**                   |               04:46 min                                                                                                                                                                      |
-| **URL del video**              | [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBW1l_ZVSxdRJHhJwGCjIIWAZ_QIjQLBUCDoAnzN3IgcBo?e=J0j2sI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **URL del video**              | [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDXAma4S1rEQY8IfSRseXYiARoG6SFULg33qLhhr5iSrHc?e=4llkew&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
@@ -902,66 +949,73 @@ Asimismo, respalda los objetivos del Impact Mapping relacionados con generar tra
 | **Inicio en video**            |             23:30                                                                                                                                                                        |
 | **Fin de video**               |              29:27                                                                                                                                                                             |
 |     **Duración**                   |                5:57 min                                                5:57                                                                                                                         |
-| **URL del video**              | [Entrevista 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDAt9nwJvDHSa0htW0MsAc2AciAq6TfmjePmx3v0nyazSA?e=7Yb250&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
+| **URL del video**              | [Entrevista 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDXAma4S1rEQY8IfSRseXYiARoG6SFULg33qLhhr5iSrHc?e=4llkew&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 #### Screenshot
 
  ![foto](./assets/images/Chapter2/Entrevista4.png) 
 
-#### Resumen Descriptivo de la Entrevista
-Pendiente de completar con el contenido de la entrevista. Se debe resumir brevemente quién es el entrevistado, su situación, sus actividades y el problema o necesidad que comenta durante la entrevista.
+### Resumen Descriptivo de la Entrevista
 
-#### Características Objetivas y Entorno
-Aquí colocaremos datos observables del entrevistado y su contexto, por ejemplo:
+El entrevistado es **Edgar Alfonso Su**, de 56 años, residente en el distrito de Santiago de Surco. Tiene un hijo de 10 años que asiste al colegio y utiliza el servicio de movilidad escolar privada de lunes a viernes. Por las mañanas, Edgar prepara al menor con su lonchera y baja a la recepción de su edificio para entregarlo a la van. Su mayor dolor es la incertidumbre durante el trayecto: no sabe dónde está la unidad en tiempo real, teme por accidentes viales o demoras y debe asumir que todo salió bien si no recibe llamadas de emergencia en un lapso de 30 a 40 minutos. Considera indispensable y lógico contar con una herramienta similar a las apps de taxi (Uber, Yango) para monitorear el recorrido y tener la confirmación de llegada a salvo.
 
-- Edad y lugar donde vive.
-- Actividad principal.
-- Situación familiar.
-- Contexto en el que realiza las actividades relacionadas con el problema.
-- Recursos o condiciones que tiene disponibles.
+---
 
-#### Herramientas, Tecnología y Canales de Interacción
+### Características Objetivas y Entorno
 
-Aquí identificaremos:
+* **Nombre completo:** Edgar Alfonso Su
+* **Edad:** 56 años
+* **Lugar donde vive:** Santiago de Surco, Lima (vive en departamento en edificio)
+* **Situación familiar:** Divorciado, un hijo menor de 10 años y una mascota
+* **Contexto de la actividad:** Rutina diaria de lunes a viernes; prepara la lonchera en la mañana, baja a recepción a esperar el transporte y coordina la recepción por la tarde
+* **Recursos y condiciones del servicio:** Contrató a una transportista recomendada durante la matrícula del colegio tras verificar personalmente la unidad, la capacidad de pasajeros y la tarifa mensual
 
-- Celular, computadora u otros dispositivos que utilice.
-- Aplicaciones o plataformas que mencione.
-- Redes sociales.
-- Medios que utiliza para comunicarse.
-- Cómo busca información o realiza sus actividades.
+---
 
-#### Características Subjetivas y Personalidad
-Aquí analizaremos lo que expresa durante la entrevista:
+### Herramientas, Tecnología y Canales de Interacción
 
-- Opiniones.
-- Preferencias.
-- Motivaciones.
-- Hábitos.
-- Preocupaciones.
-- Qué considera importante.
-- Cómo toma decisiones.
+* **Dispositivos:** Celular inteligente (smartphone), utilizado continuamente durante el día
+* **Aplicaciones y plataformas:** Uber, Yango, aplicaciones bancarias y de pagos móviles
+* **Canales de comunicación:** Llamadas telefónicas y WhatsApp/mensajería directa con la conductora; avisos del colegio ante faltas
+* **Uso digital:** Acostumbrado a resolver trámites cotidianos, pagos y transporte mediante aplicaciones móviles sin necesidad de efectivo
 
-#### Pain Points Detectados
-Aquí debemos colocar los problemas o dificultades que menciona el entrevistado, por ejemplo:
+---
 
-- Problemas que enfrenta actualmente.
-- Actividades que le resultan complicadas.
-- Falta de información.
-- Pérdida de tiempo.
-- Dificultades con alguna herramienta o proceso.
-- Frustraciones que expresa.
+### Características Subjetivas y Personalidad
 
-#### Oportunidades Identificadas
-A partir de los pain points, podemos plantear:
+* **Prioridades:** Puntualidad estricta y seguridad física del menor
+* **Preocupaciones:** Posibilidad de siniestros viales y demoras que no le sean notificadas a tiempo
+* **Sensación de control:** Manifiesta desasosiego al admitir que una vez que el niño sube a la movilidad, la situación «escapa de sus manos»
+* **Hábito ante la falta de noticias:** Adopta la regla pasiva de que «la ausencia de llamadas en 30-40 minutos equivale a que llegó bien»
+* **Toma de decisiones:** Evalúa recomendaciones escolares formales, revisión visual de la unidad y estado legal de la misma antes de elegir el servicio
 
-- Qué podría mejorarse.
-- Qué solución podría facilitarle el proceso.
-- Qué tecnología podría ayudarlo.
-- Qué característica debería tener una posible solución.
+---
 
-#### Validación del Arquetipo
+### Pain Points Detectados
 
-El entrevistado presenta características que coinciden con el perfil de usuario planteado, por lo que se respalda correctamente el User
+* **Falta de visibilidad del trayecto:** No tiene ningún medio para saber la ubicación geográfica del vehículo en tiempo real.
+* **Incertidumbre y zozobra:** No saber si un retraso se debe al tráfico habitual o a un incidente grave genera angustia.
+* **Avisos reactivos:** El transportista comunica cambios de ruta o retrasos con poca anticipación o recién al llegar al punto de recojo.
+* **Temor por el estado de las unidades:** Desconfianza hacia movilidades escolares antiguas que circulan sin revisiones técnicas óptimas ni SOAT vigente.
+
+---
+
+### Oportunidades Identificadas
+
+* **Trazabilidad GPS en vivo:** Mapa interactivo con la ruta en tiempo real del vehículo, replicando el modelo de Uber/Yango.
+* **Notificaciones de estado automáticas:** Alertas push al momento de salida, recojo en casa y entrega efectiva en la puerta del colegio.
+* **Transparencia y ficha técnica:** Visualización directa dentro del perfil del chofer de SOAT, revisiones técnicas y capacidad autorizada de la van.
+* **Alertas preventivas de demora:** Avisos automáticos si la unidad presenta más de 10 o 15 minutos de retraso por congestión vehicular.
+
+---
+
+### Validación del Arquetipo
+
+El entrevistado valida de forma directa el arquetipo de **Padre de Familia Usuario de Movilidad Escolar**:
+* Depende operativamente del transporte escolar diario por comodidad y tiempos.
+* Posee familiaridad y destreza con smartphones y apps de geolocalización.
+* Sufre la falta de información como una fuente continua de estrés matutino y vespertino.
+* Demuestra alta disposición e interés hacia la adopción de una solución digital que brinde monitoreo y confirmaciones automáticas de llegada.
 
 ---
 
@@ -976,7 +1030,7 @@ El entrevistado presenta características que coinciden con el perfil de usuario
 | **Inicio en video**            |       29:27           |
 | **Fin de video**               |        37:29           |
 |     **Duración**                   |      8:02 min            |
-| **URL del video**              |       [Entrevista 5](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQADI_jRQC-zRYBpVO9tvOYBAdl8qvUA6Hd77iae18To8mk?e=OBv8ZL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)           |
+| **URL del video**              |       [Entrevista 5](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQDXAma4S1rEQY8IfSRseXYiARoG6SFULg33qLhhr5iSrHc?e=4llkew&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)           |
 
 #### Screenshot
 
@@ -1018,20 +1072,7 @@ Entrevista de validación de usuario realizada por Nickolas Ramírez a Máximo Q
 * **Fit producto-usuario:** Validación alta y explícita; el usuario confirma que cambiaría de transportista si este se negara a implementar un sistema de monitoreo digital y respaldaría una solución que sustituya la informalidad de la mensajería tradicional.
 ---
 
-#### Resumen Descriptivo de la Entrevista
 
-#### Características Objetivas y Entorno
-
-#### Herramientas, Tecnología y Canales de Interacción
-
-#### Características Subjetivas y Personalidad
-
-#### Pain Points Detectados
-
-#### Oportunidades Identificadas
-
-#### Validación del Arquetipo
----
 
 
 ### 2.2.3. Análisis de entrevistas
@@ -1196,6 +1237,8 @@ La elaboración de estas fichas es el resultado de una síntesis detallada entre
 ---
 #### Persona 2: Parents
 
+---
+
 ![Padre - Fernando Nery](assets/images/Chapter2/Fernando%20Nery%20Segmento.png)
 
 #### 2.3.2. User Task Matrix
@@ -1342,24 +1385,23 @@ Las Technical Stories se presentan primero. Cada historia incluye tres escenario
 | TS4 | Configuración Swagger/OpenAPI | Como desarrollador, deseo disponer de documentación interactiva OpenAPI, para consultar y probar las operaciones REST de KidTrack. | **S1:** **Given** el servicio disponible, **When** el desarrollador accede a la dirección configurada de Swagger UI, **Then** consulta las operaciones y sus contratos documentados. <br> **S2:** **Given** una operación documentada y los permisos necesarios, **When** el desarrollador ejecuta una solicitud válida, **Then** obtiene la respuesta prevista por el contrato. <br> **S3:** **Given** Swagger UI previamente cargado y la API sin disponibilidad, **When** el desarrollador ejecuta una solicitud, **Then** la interfaz informa del fallo de conexión. | E5 |
 | TS5 | Soporte i18n de la Landing Page | Como desarrollador, deseo configurar los recursos de traducción de la Landing Page, para presentar su contenido en inglés y español. | **S1:** **Given** el contenido presentado en inglés, **When** el visitante selecciona español, **Then** la aplicación utiliza las traducciones correspondientes. <br> **S2:** **Given** una preferencia de idioma guardada, **When** el visitante vuelve a cargar la página, **Then** se conserva el idioma seleccionado. <br> **S3:** **Given** una clave sin traducción en el idioma seleccionado, **When** la aplicación resuelve su contenido, **Then** utiliza la traducción de respaldo en inglés. | E5 |
 | TS6 | Implementación HTTPS/SSL | Como desarrollador, deseo configurar HTTPS con un certificado válido, para proteger la transmisión de información entre los clientes y los servicios. | **S1:** **Given** el sitio publicado, **When** una persona accede mediante HTTP, **Then** es redirigida a su dirección HTTPS. <br> **S2:** **Given** un formulario que transmite credenciales, **When** el cliente envía la solicitud, **Then** utiliza una conexión HTTPS con certificado válido. <br> **S3:** **Given** una conexión TLS no válida, **When** el cliente intenta transmitir datos sensibles, **Then** la comunicación no continúa por un canal HTTP como alternativa. | E5 |
-| TS7 | Soporte Offline para Conductores | Como desarrollador, deseo disponer de almacenamiento local para los eventos del conductor, para conservarlos durante interrupciones de conectividad. | **S1:** **Given** un conductor con un viaje cargado y sin conexión, **When** registra un abordaje, **Then** el evento queda guardado localmente y señalado como pendiente de sincronización. <br> **S2:** **Given** eventos locales pendientes, **When** se restablece la conexión y la sesión permite sincronizar, **Then** el sistema los envía sin crear registros duplicados. <br> **S3:** **Given** un evento incompatible con el estado registrado en el servidor, **When** el sistema sincroniza, **Then** informa del conflicto y conserva el evento para su revisión. | E5 |
-| TS8 | API: Obtener Alumnos | Como desarrollador, deseo consultar estudiantes por ruta mediante la API, para integrar sus datos en clientes autorizados. | **S1:** **Given** un administrador autenticado y una ruta de su organización, **When** solicita sus estudiantes, **Then** la API devuelve la lista correspondiente en JSON. <br> **S2:** **Given** un estudiante perteneciente al ámbito autorizado, **When** el cliente consulta su identificador, **Then** la API entrega los datos de ese estudiante. <br> **S3:** **Given** un token expirado, **When** el cliente solicita información de estudiantes, **Then** la API responde con 401 Unauthorized. | E5 |
+| TS7 | API: Obtener Alumnos | Como desarrollador, deseo consultar estudiantes por ruta mediante la API, para integrar sus datos en clientes autorizados. | **S1:** **Given** un administrador autenticado y una ruta de su organización, **When** solicita sus estudiantes, **Then** la API devuelve la lista correspondiente en JSON. <br> **S2:** **Given** un estudiante perteneciente al ámbito autorizado, **When** el cliente consulta su identificador, **Then** la API entrega los datos de ese estudiante. <br> **S3:** **Given** un token expirado, **When** el cliente solicita información de estudiantes, **Then** la API responde con 401 Unauthorized. | E5 |
 | **E1** | **Gestión Administrativa** | Administración de planes, participantes, rutas y supervisión del servicio. | N/A | N/A |
-| US1 | Contratar Plan | Como administrador, deseo seleccionar el plan de mi organización, para disponer de la capacidad que requiere el servicio de transporte. | **S1:** **Given** una organización que solicita el Plan Completo, **When** el pago queda confirmado, **Then** se aplican los límites correspondientes al plan contratado. <br> **S2:** **Given** una suscripción vigente y una regla de prorrateo definida, **When** el administrador solicita una mejora de plan, **Then** conoce el importe proporcional antes de confirmar el pago. <br> **S3:** **Given** un pago rechazado por fondos insuficientes, **When** el administrador intenta contratar el plan, **Then** se informa del rechazo y se mantiene la suscripción anterior. | E1 |
+| US1 | Contratar Plan | Como administrador, deseo seleccionar el plan de mi organización, para disponer de la capacidad que requiere el servicio de transporte. | **S1:** **Given** una organización que solicita el Plan Completo, **When** el pago queda confirmado, **Then** se aplican los límites correspondientes al plan contratado. <br> **S2:** **Given** un administrador que ha seleccionado un plan y todavía no ha confirmado el pago, **When** cancela la contratación, **Then** el sistema mantiene el plan actual de la organización y no inicia el cobro.<br> **S3:** **Given** un pago rechazado por fondos insuficientes, **When** el administrador intenta contratar el plan, **Then** se informa del rechazo y se mantiene la suscripción anterior. | E1 |
 | US2 | Registro de Conductores | Como administrador, deseo registrar cuentas de conductores, para asignarles responsabilidades dentro de la operación. | **S1:** **Given** datos válidos de un conductor, **When** el administrador confirma su registro, **Then** se crea el perfil asociado a la organización. <br> **S2:** **Given** una licencia presentada para revisión, **When** el responsable autorizado aprueba su validación, **Then** el registro refleja el estado Verificado. <br> **S3:** **Given** un DNI ya registrado en el ámbito donde debe ser único, **When** el administrador intenta crear otro registro, **Then** el sistema informa de la duplicidad y no lo guarda. | E1 |
 | US3 | Registro de Padres | Como administrador, deseo incorporar a los padres de familia, para habilitar su acceso al seguimiento de sus hijos. | **S1:** **Given** un correo válido, **When** el administrador registra al padre, **Then** se envía la invitación de acceso. <br> **S2:** **Given** un padre asociado a un estudiante, **When** se confirma la vinculación, **Then** puede consultar el seguimiento autorizado de ese estudiante. <br> **S3:** **Given** una dirección de correo con formato incorrecto, **When** el administrador solicita el registro, **Then** el sistema informa del error y no envía la invitación. | E1 |
 | US4 | Alta de Alumnos | Como administrador, deseo dar de alta a los estudiantes, para incorporarlos a los recorridos del servicio. | **S1:** **Given** los datos obligatorios de un estudiante, **When** el administrador confirma el alta, **Then** el estudiante queda registrado y pendiente de asignación. <br> **S2:** **Given** una fotografía válida del estudiante, **When** el administrador la guarda, **Then** la imagen aparece en su carné digital. <br> **S3:** **Given** datos obligatorios incompletos, **When** el administrador intenta registrar al estudiante, **Then** el sistema identifica la información faltante y no completa el alta. | E1 |
 | US5 | Creación de Rutas | Como administrador, deseo definir rutas y paradas, para organizar recorridos con tiempos de traslado adecuados. | **S1:** **Given** un origen y un destino válidos, **When** el administrador solicita el trazado, **Then** el sistema presenta el recorrido y su duración estimada. <br> **S2:** **Given** nuevas paradas incorporadas a una ruta, **When** el administrador solicita optimizar el recorrido, **Then** el sistema propone un orden calculado para las paradas. <br> **S3:** **Given** puntos para los que el servicio de rutas no encuentra un trayecto transitable, **When** se solicita el trazado, **Then** se informa de que no existe un recorrido disponible. | E1 |
 | US6 | Asignación de Conductores a Rutas | Como administrador, deseo asignar conductores a las rutas, para distribuir la responsabilidad de cada recorrido. | **S1:** **Given** un conductor disponible, **When** el administrador lo asigna a una ruta, **Then** la asignación queda registrada y el conductor recibe un aviso. <br> **S2:** **Given** una asignación existente, **When** el administrador cambia la unidad asociada, **Then** los usuarios autorizados consultan la asignación actualizada. <br> **S3:** **Given** un conductor con una asignación incompatible en el mismo horario, **When** el administrador intenta asignarlo, **Then** el sistema informa de su falta de disponibilidad y evita el conflicto. | E1 |
-| US7 | Analítica de Flota | Como administrador, deseo consultar indicadores de la flota, para evaluar el rendimiento del servicio. | **S1:** **Given** una organización con Plan Completo y registros de combustible, **When** el administrador consulta la analítica, **Then** obtiene el consumo correspondiente a los datos disponibles. <br> **S2:** **Given** un periodo mensual con información registrada, **When** el administrador solicita el reporte de rendimiento, **Then** el sistema genera el documento PDF del periodo. <br> **S3:** **Given** una organización con Plan Básico sin acceso a analítica, **When** el administrador solicita estos reportes, **Then** el sistema informa de la restricción y del plan requerido. | E1 |
+| US7 | Analítica de Flota | Como administrador, deseo consultar indicadores de la flota, para evaluar el rendimiento del servicio. | **S1:** **Given** una organización con Plan Completo y registros de combustible, **When** el administrador consulta la analítica, **Then** obtiene el consumo correspondiente a los datos disponibles. <br> **S2:** **Given** una organización con acceso a analítica, pero sin registros de combustible, **When** el administrador consulta el consumo de la flota,  **Then** el sistema informa que no existen datos disponibles y no presenta valores calculados. <br> **S3:** **Given** una organización con Plan Básico sin acceso a analítica, **When** el administrador solicita estos reportes, **Then** el sistema informa de la restricción y del plan requerido. | E1 |
 | US8 | Gestión de Notificaciones | Como administrador, deseo distribuir avisos generales, para comunicar a las familias los eventos que afectan al servicio. | **S1:** **Given** un comunicado válido, **When** el administrador confirma su envío general, **Then** el sistema envía notificaciones push a los padres destinatarios que tienen habilitado ese canal. <br> **S2:** **Given** un aviso con fecha y hora de envío, **When** llega el momento programado, **Then** el sistema ejecuta su distribución. <br> **S3:** **Given** un comunicado sin contenido, **When** el administrador solicita enviarlo, **Then** el sistema rechaza el envío e indica que debe completar el mensaje. | E1 |
 | US9 | Auditoría de Logs | Como administrador, deseo consultar los registros técnicos del sistema, para investigar errores reportados. | **S1:** **Given** un fallo registrado, **When** el administrador autorizado consulta los logs, **Then** identifica el momento del evento y el usuario asociado cuando corresponde. <br> **S2:** **Given** un conjunto de registros autorizado, **When** el administrador solicita exportarlo, **Then** obtiene un archivo CSV con la información seleccionada. <br> **S3:** **Given** una cuenta sin permisos de auditoría, **When** intenta consultar los logs, **Then** el sistema deniega el acceso. | E1 |
 | **E2** | **Operación del Conductor** | Funciones que acompañan al conductor durante la ejecución de los viajes. | N/A | N/A |
-| US10 | Inicio de Trayecto | Como conductor, deseo iniciar el viaje asignado, para comunicar a las familias que el traslado está en marcha. | **S1:** **Given** un viaje preparado y asignado al conductor, **When** el conductor confirma su inicio, **Then** el viaje pasa al estado En camino. <br> **S2:** **Given** permiso de ubicación y GPS disponible, **When** el conductor inicia el viaje, **Then** comienza el envío de las coordenadas del vehículo. <br> **S3:** **Given** una interrupción de conexión, **When** el conductor solicita iniciar el viaje, **Then** el sistema informa de la falta de conectividad y distingue el estado local de la confirmación del servidor. | E2 |
+| US10 | Inicio de Trayecto | Como conductor, deseo iniciar el viaje asignado, para comunicar a las familias que el traslado está en marcha. | **S1:** **Given** un viaje preparado y asignado al conductor, **When** el conductor confirma su inicio, **Then** el viaje pasa al estado En camino. <br> **S2:** **Given** permiso de ubicación y GPS disponible, **When** el conductor inicia el viaje, **Then** comienza el envío de las coordenadas del vehículo. <br> **S3:** **Given** un conductor sin conexión con el servidor, **When** solicita iniciar el viaje, **Then** el sistema informa que no pudo confirmar el inicio y no muestra el viaje como iniciado. | E2 |
 | US11 | Marcación de Abordaje | Como conductor, deseo registrar el abordaje de los estudiantes, para mantener actualizada la asistencia del viaje. | **S1:** **Given** un estudiante asignado a la parada del viaje, **When** el conductor confirma su abordaje, **Then** se registra la asistencia y se genera el aviso para su padre. <br> **S2:** **Given** un código QR válido de un estudiante asignado, **When** el conductor lo escanea, **Then** el sistema registra el abordaje sin duplicar una asistencia existente. <br> **S3:** **Given** un estudiante que no corresponde a la parada, **When** el conductor intenta registrar su abordaje, **Then** el sistema informa de la incompatibilidad y no confirma el registro. | E2 |
 | US12 | Reporte de Incidencias | Como conductor, deseo reportar incidencias del recorrido, para que el administrador pueda coordinar una respuesta. | **S1:** **Given** un retraso por congestión y datos suficientes para estimarlo, **When** el conductor reporta la incidencia, **Then** el sistema actualiza la hora estimada de llegada que consultan los padres. <br> **S2:** **Given** una avería mecánica y una central de auxilio configurada, **When** el conductor registra el incidente, **Then** el sistema envía el aviso a esa central. <br> **S3:** **Given** una incidencia sin ubicación GPS disponible, **When** el conductor prepara el reporte, **Then** el sistema permite indicar manualmente dónde ocurrió. | E2 |
-| US13 | Botón de Pánico | Como conductor, deseo activar una alerta SOS, para comunicar una situación de emergencia. | **S1:** **Given** una situación de peligro, **When** el conductor mantiene activada la solicitud SOS durante tres segundos, **Then** el sistema envía la alerta con la ubicación disponible y su hora de registro. <br> **S2:** **Given** una alerta activa, **When** el administrador responde, **Then** se habilita el canal de audio entre los participantes. <br> **S3:** **Given** una activación accidental aún pendiente de envío, **When** el conductor la cancela dentro de los dos segundos del periodo de confirmación, **Then** el sistema descarta la alerta. | E2 |
-| US14 | Finalización de Viaje | Como conductor, deseo finalizar el viaje, para dejar constancia de que el recorrido ha concluido. | **S1:** **Given** un recorrido sin estudiantes pendientes de entrega, **When** el conductor confirma su finalización, **Then** el viaje queda cerrado y se detiene el envío de ubicación. <br> **S2:** **Given** estudiantes que continúan registrados a bordo, **When** el conductor solicita finalizar el viaje, **Then** el sistema advierte la situación e impide cerrarlo hasta resolverla. <br> **S3:** **Given** un fallo del servidor al confirmar el cierre, **When** el conductor solicita finalizar el viaje, **Then** el sistema conserva localmente la solicitud y la identifica como pendiente de sincronización. | E2 |
+| US13 | Botón de Pánico | Como conductor, deseo activar una alerta SOS, para comunicar una situación de emergencia. | **S1:** **Given** una situación de peligro, **When** el conductor mantiene activada la solicitud SOS durante tres segundos, **Then** el sistema envía la alerta con la ubicación disponible y su hora de registro. <br> **S2:** **Given** una situación de emergencia con conexión al servidor, pero sin ubicación GPS disponible, **When** el conductor activa la alerta SOS,  **Then** el sistema registra y envía la alerta con la identificación del conductor y la hora del evento, indicando que la ubicación no está disponible. <br> **S3:** **Given** una activación accidental aún pendiente de envío, **When** el conductor la cancela dentro de los dos segundos del periodo de confirmación, **Then** el sistema descarta la alerta. | E2 |
+| US14 | Finalización de Viaje | Como conductor, deseo finalizar el viaje, para dejar constancia de que el recorrido ha concluido. | **S1:** **Given** un recorrido sin estudiantes pendientes de entrega, **When** el conductor confirma su finalización, **Then** el viaje queda cerrado y se detiene el envío de ubicación. <br> **S2:** **Given** estudiantes que continúan registrados a bordo, **When** el conductor solicita finalizar el viaje, **Then** el sistema advierte la situación e impide cerrarlo hasta resolverla. <br> **S3:** **Given**  un viaje en curso,**When** el servidor rechaza la solicitud de finalización, **Then** el sistema informa que el viaje no pudo cerrarse y permite volver a intentarlo, sin mostrarlo como finalizado.| E2 |
 | US15 | Bitácora de Viajes | Como conductor, deseo consultar mi bitácora, para revisar los viajes que he realizado. | **S1:** **Given** viajes con ubicaciones registradas, **When** el conductor consulta una fecha y selecciona un viaje, **Then** obtiene su recorrido en el mapa. <br> **S2:** **Given** viajes registrados durante una semana, **When** el conductor solicita el resumen semanal, **Then** el sistema presenta la duración acumulada de esos viajes. <br> **S3:** **Given** un conductor sin viajes previos, **When** consulta su historial, **Then** el sistema informa de que todavía no hay registros. | E2 |
 | US16 | Navegación Integrada | Como conductor, deseo abrir una herramienta externa de navegación, para recibir indicaciones durante el recorrido. | **S1:** **Given** un viaje iniciado con destino definido, **When** el conductor solicita navegar, **Then** el sistema abre la aplicación externa con ese destino. <br> **S2:** **Given** una integración que permite recibir actualizaciones del servicio de navegación, **When** el proveedor informa de una variación del tiempo de llegada, **Then** KidTrack actualiza la estimación del viaje. <br> **S3:** **Given** que la aplicación de mapas requerida no está instalada, **When** el conductor intenta abrirla, **Then** el sistema informa de ello y ofrece el enlace de instalación. | E2 |
 | **E3** | **Monitoreo de Padres de Familia** | Seguimiento del traslado y consulta de información de los estudiantes. | N/A | N/A |
@@ -1384,6 +1426,14 @@ Las Technical Stories se presentan primero. Cada historia incluye tres escenario
 | US34 | Metadatos SEO e i18n | Como visitante, deseo que la información pública del sitio esté disponible en mi idioma para buscadores y vistas previas, para reconocer el servicio antes de abrirlo. | **S1:** **Given** la versión española publicada, **When** se consulta su documento HTML, **Then** contiene título, descripción e identificación de idioma coherentes con KidTrack en español. <br> **S2:** **Given** la versión inglesa publicada, **When** se consulta su documento HTML, **Then** contiene metadatos equivalentes en inglés y referencias a las versiones de idioma disponibles. <br> **S3:** **Given** una herramienta de vista previa compatible con los metadatos publicados, **When** procesa una URL de idioma, **Then** obtiene el título y la descripción correspondientes a esa versión. | E4 |
 | US35 | Verificación de SSL | Como visitante, deseo acceder a KidTrack mediante una conexión segura, para proteger los datos que envío al sitio. | **S1:** **Given** la dirección pública del sitio, **When** el visitante accede, **Then** la conexión utiliza HTTPS con un certificado válido. <br> **S2:** **Given** un formulario disponible, **When** el visitante envía sus datos, **Then** la solicitud se transmite mediante HTTPS. <br> **S3:** **Given** un certificado vencido o no válido, **When** el navegador intenta establecer la conexión, **Then** informa del problema de seguridad antes de permitir continuar según su política. | E4 |
 | US36 | Política de Cookies i18n | Como visitante, deseo decidir sobre el uso de cookies opcionales, para controlar mis preferencias de privacidad. | **S1:** **Given** una primera visita con cookies opcionales configuradas, **When** el visitante consulta el aviso, **Then** puede aceptar todas, rechazar las opcionales o configurar su elección antes de que estas se activen. <br> **S2:** **Given** el sitio presentado en inglés, **When** el visitante consulta el aviso de cookies, **Then** las explicaciones y opciones se presentan en ese idioma. <br> **S3:** **Given** el rechazo de las cookies opcionales, **When** el visitante continúa navegando, **Then** solo se utilizan las cookies necesarias para el funcionamiento del servicio. | E4 |
+
+#### Fundamentación de la lectura QR en US11
+
+US11 contempla el registro del abordaje de los estudiantes para mantener actualizada la asistencia de cada viaje. Como mecanismo adicional, el equipo propone incorporar la lectura de códigos QR asociados a los estudiantes.
+
+La selección de esta tecnología constituye una decisión técnica del equipo; no se presenta como una solicitud explícita de los entrevistados ni como una funcionalidad ya implementada. Su inclusión mantiene el objetivo de la historia y complementa el registro manual de abordaje.
+
+**Hipótesis técnica:** utilizar un código QR para identificar al estudiante podría reducir el tiempo de registro frente a la selección manual, manteniendo las validaciones de asignación al viaje y evitando asistencias duplicadas.
 
 
 ### 3.2. Impact Mapping
@@ -1438,7 +1488,6 @@ El Product Backlog de KidTrack reúne las historias funcionales y técnicas de l
 | 32 | US | US14 | Finalización de Viaje | Como conductor, deseo finalizar el viaje, para dejar constancia de que el recorrido ha concluido. | 2 |
 | 33 | US | US12 | Reporte de Incidencias | Como conductor, deseo reportar incidencias del recorrido, para que el administrador pueda coordinar una respuesta. | 5 |
 | 34 | US | US16 | Navegación Integrada | Como conductor, deseo abrir una herramienta externa de navegación, para recibir indicaciones durante el recorrido. | 3 |
-| 35 | TS | TS7 | Soporte Offline para Conductores | Como desarrollador, deseo disponer de almacenamiento local para los eventos del conductor, para conservarlos durante interrupciones de conectividad. | 5 |
 | 36 | US | US7 | Analítica de Flota | Como administrador, deseo consultar indicadores de la flota, para evaluar el rendimiento del servicio. | 8 |
 | 37 | US | US21 | Historial de Asistencia | Como padre, deseo revisar la asistencia mensual de mi hijo, para conocer los días en que utilizó el transporte. | 5 |
 | 38 | US | US15 | Bitácora de Viajes | Como conductor, deseo consultar mi bitácora, para revisar los viajes que he realizado. | 3 |
@@ -1464,74 +1513,65 @@ Se propone utilizar Trello, una de las herramientas permitidas por la guía. Cad
 
 ### 4.1. Style Guidelines
 #### 4.1.1. General Style Guidelines
-El diseño de **KidTrack** se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, fiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia.
+El diseño de **KidTrack** se fundamenta en decisiones visuales estratégicas destinadas a proyectar seguridad, confiabilidad y modernidad. El objetivo principal es construir una experiencia de usuario que genere confianza inmediata, tanto en los padres de familia que buscan tranquilidad como en los transportistas que necesitan eficiencia en su gestión diaria.
 ##### Colores
 
-La selección cromática de **KidTrack** no es meramente estética; responde a una psicología del color aplicada a la seguridad y el entorno escolar, garantizando accesibilidad y jerarquía visual. Cada tono desempeña una función específica en la interfaz:
+La selección cromática de KidTrack responde a una psicología del color aplicada a la seguridad y al entorno escolar, garantizando accesibilidad, contraste y jerarquía visual. Cada tono desempeña una función específica dentro de la interfaz:
 
 ![Paleta de Colores KidTrack](./assets/images/Chapter4/Colores.png)
 
 * **Naranja / Anaranjado (`#E07A2B`):** Identidad tipográfica principal ("Kid"). Aporta vitalidad, calidez, energía y una conexión visual amigable con el entorno escolar. Funciona como punto focal de acento en la interfaz.
-* **Naranja Rojizo (`#DE4A26`):** Tono de acento secundario (utilizado en detalles gráficos como el banderín/sombrerito del vehículo). Se reserva para alertas, notificaciones destacadas y botones de llamado a la acción (*CTA*).
+* **Naranja Rojizo (`#DE4A26`):** Tono de acento secundario (utilizado en detalles gráficos como el indicador del vehículo). Se reserva para alertas, notificaciones destacadas y botones de llamado a la acción (*Call to Action* - CTA).
 * **Azul Oscuro Fondo (`#1A1A2E`):** Tono de fondo nocturno y contraste profundo. Se emplea en bloques de encabezados, secciones principales oscuras, pie de página (*footer*) y tarjetas de contraste de alto nivel.
 * **Azul Marino (`#1E3A63`):** Identidad tipográfica ("Track") e ícono del timón/brújula. Transmite autoridad, seriedad, seguridad corporativa y estabilidad tecnológica. Se emplea en títulos principales, componentes de navegación y elementos estructurales clave.
+* **Verde Éxito (`#22C55E`):** Estado de confirmación e hito completado. Reservado para estados positivos como "Alumno Abordado", "Ruta Finalizada" o eventos exitosos en la bitácora.
 * **Blanco (`#FFFFFF`):** Fondo principal, tarjetas elevadas y líneas interiores de contraste. Proporciona espacios limpios, máxima legibilidad y descansos visuales que reducen la fatiga en la navegación.
-* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones, bordes sutiles y párrafos largos sobre fondos claros, ofreciendo excelente legibilidad.
+* **Gris Neutro (`#6B7280`):** Utilizado para el texto de cuerpo, descripciones, bordes sutiles y párrafos sobre fondos claros, ofreciendo excelente legibilidad.
 
 ##### Tipografía
-Se seleccionó la tipografía **“Plus Jakarta Sans”** como fuente principal para los títulos de la plataforma de **KidTrack** por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico pero amigable. Se utiliza en pesos altos para asegurar que los encabezados sean visualmente impactantes, sólidos y de fácil lectura.
+ **Tipografía Principal ("Plus Jakarta Sans"):** Seleccionada para los títulos y encabezados de la plataforma por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico y accesible. Se utiliza en pesos *Bold* y *Semi-Bold* para asegurar que los encabezados sean visualmente impactantes y de fácil lectura.* **Tipografía Principal ("Plus Jakarta Sans"):** Seleccionada para los títulos y encabezados de la plataforma por su estilo geométrico moderno y su capacidad para captar la atención del usuario con un toque tecnológico y accesible. Se utiliza en pesos *Bold* y *Semi-Bold* para asegurar que los encabezados sean visualmente impactantes y de fácil lectura.
 
 ![Tipografía Principal - Plus Jakarta Sans](./assets/images/Chapter4/Tipografia1.png)
 
-Asimismo, se optó por la tipografía **“DM Sans”** como fuente secundaria para los textos de cuerpo y navegación por su diseño extremadamente legible, limpio y neutro. Su apariencia estética y claridad garantizan una experiencia de uso accesible y agradable, reduciendo la fatiga visual del usuario al leer información detallada sobre funciones, rutas o planes.
+**Tipografía Secundaria ("DM Sans"):** Elegida para los textos de cuerpo, descripciones y componentes de navegación debido a su diseño legible, limpio y neutro. Garantiza una experiencia accesible, reduciendo la fatiga visual al leer información detallada sobre funciones, rutas o datos del alumno.
 
 ![Tipografía Secundaria - DM Sans](./assets/images/Chapter4/Tipografia2.png)
 
-En cuanto al tamaño, se utiliza jerárquicamente en toda la aplicación para resaltar títulos principales, botones de acción y texto de soporte. Los tamaños más grandes en los encabezados guían al usuario rápidamente por los puntos clave del mensaje, mientras que los más pequeños en los párrafos aseguran la comprensión y la eficiencia en la lectura de detalles secundarios.
+ **Jerarquía de Tamaños:** Se utiliza de forma consistente en toda la aplicación para resaltar títulos principales, botones de acción y texto de soporte. Los tamaños superiores en los encabezados guían al usuario rápidamente por los puntos clave, mientras que los tamaños reducidos en los párrafos aseguran la comprensión eficiente de detalles secundarios.
 ##### Branding
-El branding de **KidTrack** está diseñado para reflejar simplicidad, confianza y profesionalismo. El logo y los íconos adoptan un enfoque minimalista, con líneas claras y formas simples que comunican el propósito de seguridad y eficiencia de la plataforma. El diseño incluye una identidad tipográfica sólida acompañada de un ícono característico que integra la forma de un timón/brújula junto con la silueta de un vehículo escolar, simbolizando protección, dirección y monitoreo constante. Esta propuesta mantiene una apariencia limpia y fácilmente reconocible, tanto en entornos web como móviles.
-
+La marca de **KidTrack** refleja simplicidad, confianza y profesionalismo. El logotipo y los íconos adoptan un enfoque minimalista con líneas claras que comunican el propósito de seguridad de la plataforma. La identidad integra una propuesta tipográfica sólida acompañada de un isotipo característico que fusiona la forma de un timón/brújula con la silueta de un vehículo escolar, simbolizando protección, dirección y monitoreo constante. Esta propuesta mantiene una apariencia limpia y reconocible tanto en entornos web como móviles.
 ![Branding y Logotipo KidTrack](./assets/images/Chapter4/Logo.jpg)
 
 ##### Espaciado
 El diseño de **KidTrack** utiliza una estrategia de espacios en blanco diseñada para transmitir orden y claridad, factores críticos en una herramienta de seguridad y transporte escolar. En lugar de saturar la vista, aprovechamos márgenes amplios en los laterales de cada sección para que el usuario pueda diferenciar rápidamente entre los módulos de padres, conductores y colegios. El contenido se mantiene estructurado mediante el uso de Flexbox y CSS Grid, lo que evita que la información se disperse y mantiene una jerarquía visual equilibrada que facilita la lectura de las características del servicio. Además, los rellenos (*padding*) en elementos como las tarjetas de planes, alertas y funciones garantizan una distribución adecuada del contenido.
 ##### Dimensiones para el tono de comunicación y lenguaje aplicado
-En **KidTrack**, definimos cuidadosamente el tono de nuestra comunicación para alinearlo con la misión de la plataforma: garantizar la seguridad y la tranquilidad en el transporte escolar para padres, conductores e instituciones educativas. Nuestro tono de voz busca proyectar confianza y control, combinando una comunicación clara, directa y altamente profesional.
+El tono de voz en KidTrack está alineado con la misión de la plataforma: garantizar la seguridad y la tranquilidad en el transporte escolar. Se combina una comunicación clara, directa y highly profesional con un enfoque empático. 
 
-Optamos por un tono formal pero empático, que permita a los padres de familia sentirse seguros al interactuar con funciones críticas como el monitoreo en vivo o las notificaciones de abordaje. Queremos que cada interacción refleje eficiencia para fomentar la puntualidad y el orden, pero también serenidad, asegurando que los usuarios sientan que el bienestar de los estudiantes es nuestra prioridad absoluta. Este equilibrio nos permite inspirar autoridad en la gestión logística, al tiempo que proyectamos cercanía y compromiso con la comunidad escolar.
-
-Además, se han considerado los siguientes aspectos clave en el diseño de **KidTrack**:
-
-* **Consistencia:** La coherencia visual y textual es fundamental para brindar una experiencia confiable. Todos los elementos, desde los mensajes de estado de los viajes hasta las etiquetas de los botones, mantienen una línea comunicativa uniforme. Esto facilita que los usuarios se familiaricen rápidamente con el sistema, algo vital en una operación diaria que requiere precisión.
-* **Navegación:** La estructura ha sido pensada para ser lógica y sin fricciones. Los usuarios pueden acceder rápidamente a la información relevante según su rol, ya sea para verificar una ruta en tiempo real o reportar una incidencia. Los menús son minimalistas para evitar confusiones y optimizar el tiempo de respuesta en entornos dinámicos.
-* **Accesibilidad:** La plataforma está optimizada para ser inclusiva y funcional en diversos contextos. Mediante el uso de etiquetas claras y un diseño responsivo, aseguramos que la información sea legible tanto para un administrador en una oficina como para un padre que revisa el celular en movimiento, garantizando una experiencia de uso fluida para todos.
+* **Formal pero Empático:** Permite que los padres de familia se sientan seguros al interactuar con funciones críticas como el monitoreo en vivo o las notificaciones de abordaje.
+* **Eficiente y Sereno:** Refleja puntualidad y orden en la gestión logística, asegurando que los usuarios perciban que el bienestar de los estudiantes es la prioridad absoluta.
+* **Consistencia:** Todos los mensajes de estado, etiquetas y textos del sistema mantienen una línea comunicativa uniforme, acelerando la curva de aprendizaje.
+* **Navegación Intuitiva:** Menús minimalistas y estructurados por rol para optimizar el tiempo de respuesta en entornos dinámicos.
+* **Accesibilidad:** Diseñado con etiquetas claras y maquetación *responsive* para garantizar lectura adecuada en ordenadores de escritorio y dispositivos móviles en movimiento.
 
 ##### Elementos de diseño
-Además de los lineamientos generales sobre colores, tipografía y branding, en el diseño visual de **KidTrack** se han aplicado de manera consciente diversos elementos fundamentales del diseño gráfico que enriquecen la experiencia del usuario y refuerzan la identidad de seguridad de la plataforma.
-
-* **Líneas:** Utilizadas sutilmente para separar secciones y delimitar las tarjetas de planes, roles y alertas, lo que organiza visualmente la interfaz y guía la lectura sin saturar al usuario.
-* **Color:** Cumple un rol fundamental no solo en la identidad, sino en la comunicación funcional. La paleta incluye el azul marino para transmitir autoridad, el naranja anaranjado para la acción y dinamismo, el naranja rojizo para acentos/alertas y el verde para confirmaciones, seleccionados por su capacidad para transmitir estados de seguridad y éxito operativo.
-* **Tamaño:** Se utiliza jerárquicamente para resaltar títulos, botones y texto de soporte. Los tamaños más grandes en los encabezados captan la atención en puntos clave como el panel principal, mientras que los más pequeños se emplean para detalles secundarios en las tarjetas de características, mejorando la comprensión y la eficiencia.
-* **Textura:** Limpia y moderna, gracias al uso de fondos suaves y superficies blancas que aportan una sensación de amplitud tecnológica sin distraer de las funciones de monitoreo.
-* **Espacio:** Se han implementado márgenes amplios y rellenos generosos entre secciones, lo que permite una interfaz despejada y cómoda para padres y conductores.
-* **Brillo (*Value*):** Se aplican contrastes claros que diferencian los botones de acción del fondo, guiando al usuario de forma intuitiva hacia la interacción deseada.
-* **Formas:** Se ha optado por geometrías amigables con bordes redondeados en botones, paneles y tarjetas. Estos acabados suavizados no solo mejoran la estética profesional, sino que también transmiten una imagen de accesibilidad y cercanía, alineándose con una herramienta diseñada para el cuidado y protección escolar.
+* **Líneas:** Utilizadas de manera sutil para delimitar tarjetas de planes, módulos de roles y centros de alertas.
+* **Color:** Aplicado con intencionalidad funcional para transmitir autoridad (Azul Marino), acción/dinamismo (Naranja), alertas (Naranja Rojizo) y confirmaciones (Verde).
+* **Tamaño:** Escalar de manera jerárquica para enfocar la atención en el panel principal y desglosar especificaciones secundarias.
+* **Textura:** Superficies suaves, limpias y fondos blancos elevados que aportan modernidad y amplitud.
+* **Espacio:** Márgenes y rellenos generosos que evitan la saturación cognitiva.
+* **Brillo / Contraste (*Value*):** Contrastes calculados entre elementos interactivos y fondos para guiar la interacción de manera intuitiva.
+* **Formas:** Geometrías con bordes redondeados en botones, paneles y tarjetas, transmitiendo cercanía, accesibilidad y cuidado escolar.
 
 ##### Principios de diseño
-* **Contraste:** Se emplea para asegurar que los elementos críticos, como los llamados a la acción (CTA) o las etiquetas de "Unidad en trayecto", sean claramente visibles y resalten sobre los fondos neutros. Este principio es fundamental para la accesibilidad visual, permitiendo que tanto padres como conductores identifiquen los puntos de interacción más importantes de la plataforma de manera inmediata.
-* **Repetición:** La repetición de colores corporativos (Naranja `#E07A2B`, Naranja Rojizo `#DE4A26`, Azul Oscuro Fondo `#1A1A2E` y Azul Marino `#1E3A63`), junto con una iconografía coherente de timones, vehículos y mapas, refuerza la familiaridad y la consistencia del sistema visual. Al utilizar componentes recurrentes en toda la plataforma, los usuarios comprenden rápidamente la función de cada sección, lo que reduce la curva de aprendizaje al interactuar con las herramientas de seguimiento.
-* **Alineación:** Contribuye a la profesionalidad y solidez del diseño. La estructura de la página, los listados de roles y las tarjetas de datos mantienen una disposición coherente lograda mediante el uso de Flexbox y CSS Grid. Esta organización clara facilita una navegación intuitiva, transmitiendo el orden necesario para una plataforma de gestión logística escolar.
-* **Proximidad:** Agrupa de manera lógica los elementos relacionados, como los íconos de las funciones con sus respectivas descripciones o los beneficios específicos para cada rol. Al mantener los elementos vinculados cerca entre sí, se mejora significativamente la lectura y la comprensión de cada bloque de información, permitiendo que el usuario asocie rápidamente las soluciones de **KidTrack** con sus necesidades específicas.
-
-Estos elementos y principios no se aplican de forma aislada, sino como parte integral de un sistema visual que busca ser funcional, estético y coherente con la misión de **KidTrack**: digitalizar y dar seguridad al transporte escolar a través de una experiencia clara, confiable y eficiente.
-
+* **Contraste:** Garantiza la visibilidad de elementos críticos (botones CTA, estado "Unidad en trayecto") sobre fondos neutros.
+* **Repetición:** Uso sistemático de la paleta corporativa y de una iconografía coherente (timones, vehículos, mapas) para reforzar la identidad del sistema.
+* **Alineación:** Disposición estructurada en rejillas (Grid/Flexbox) que aporta solidez, profesionalismo y orden.
+* **Proximidad:** Agrupación lógica de elementos vinculados (íconos con descripciones, beneficios por rol) para facilitar la lectura rápida.
 #### 4.1.2. Web Style Guidelines
 
-El diseño web de **KidTrack** está optimizado para proporcionar una experiencia de usuario fluida y profesional, centrada en la legibilidad y la facilidad de navegación. Se emplean estructuras de contenedores flexibles que permiten que el contenido se organice de manera clara, utilizando amplios espacios en blanco para evitar la saturación visual y garantizar la accesibilidad de la información crítica sobre seguridad. Los elementos visuales, como tarjetas de planes y secciones de roles, mantienen proporciones equilibradas para guiar la vista del usuario de forma jerárquica.
+El diseño web de KidTrack está optimizado para proporcionar una experiencia de usuario fluida y profesional. La estructura flexible organiza el contenido con claridad, empleando espacios en blanco estratégicos para evitar la saturación visual y priorizar la información crítica de seguridad. Las tarjetas de planes y secciones de roles mantienen proporciones equilibradas para guiarnos jerárquicamente.
 
-En cuanto a la interactividad, la plataforma utiliza una lógica de componentes claramente identificables. Los botones de acción (*CTAs*) emplean colores contrastantes y estados visuales (como *hover* y *active*) que ofrecen una retroalimentación inmediata, reforzando la confianza del usuario al interactuar con el sistema.
-
-La navegación se apoya en transiciones suaves y menús persistentes que aseguran que las herramientas principales, como el sistema de internacionalización (*i18n*), estén siempre al alcance del usuario, facilitando un flujo de trabajo intuitivo y eficiente dentro de la *landing page*.
+En términos de interactividad, los botones de acción (*CTA*) destacan por el uso de colores contrastantes y estados visuales explícitos (*hover*, *focus* y *active*) que ofrecen retroalimentación inmediata. La navegación se apoya en transiciones suaves y una barra superior persistente (*Sticky Navigation*) que mantiene siempre accesible el selector de idiomas mediante el sistema de internacionalización (i18n).
 
 ![Web Style Guidelines 1](./assets/images/Chapter4/Guidelines1.png)
 ![Web Style Guidelines 2](./assets/images/Chapter4/Guidelines2.png)
@@ -1541,34 +1581,34 @@ La navegación se apoya en transiciones suaves y menús persistentes que asegura
 ### 4.2. Information Architecture
 #### 4.2.1. Organization Systems
 ---
-En el sistema **KidTrack**, se emplea la organización jerárquica (*visual hierarchy*) para destacar información crítica, como el mapa de monitoreo en tiempo real, las alertas de emergencia y las notificaciones de abordaje de los alumnos en los *dashboards* principales. Esta jerarquía visual permite que tanto padres como conductores identifiquen de forma inmediata los datos más relevantes según el contexto operativo, relegando datos secundarios del perfil a niveles inferiores.
-
-Asimismo, se aplica una organización secuencial (*step-by-step*) en procesos que requieren una guía estructurada. En la *landing page*, este sistema se evidencia en la sección "¿Cómo funciona?", donde se orienta al visitante a través de los pasos clave para la adopción del servicio. En la *Web Application*, este esquema se utilizará para el flujo de registro de paradas y asistencia que el conductor debe seguir durante su ruta, asegurando una progresión lógica que minimice errores de registro.
-
-Respecto a los esquemas de categorización, no se utilizan organizaciones alfabéticas o matriciales complejas. En su lugar, se emplea una organización cronológica para la visualización de datos históricos, permitiendo que los padres de familia revisen los registros pasados de asistencias y llegadas de sus hijos de manera ordenada por fecha y hora. Además, el contenido se clasifica según audiencia, segmentando las interfaces y funcionalidades de acuerdo con los dos *User Personas* identificados: **Conductores**, enfocados en la gestión de ruta y paradas, y **Padres de Familia**, orientados al monitoreo y recepción de avisos de seguridad.
+* **Organización Jerárquica:** Se prioriza la información de mayor valor operativo, como el mapa de monitoreo en tiempo real, las alertas de emergencia y los estados de abordaje, relegando detalles secundarios del perfil a niveles inferiores.
+* **Organización Secuencial (Paso a paso):** Aplicada en flujos estructurados. En la *Landing Page*, se aprecia en la sección *"¿Cómo funciona?"*; en la *Aplicación Web*, guía el registro progresivo de paradas y asistencia por parte del conductor.
+* **Organización Cronológica:** Empleada en la bitácora e historial de viajes, permitiendo a los padres revisar asistencias y horarios de llegada ordenados temporalmente.
+* **Organización por Audiencia:** Segmentación clara de interfaces según el rol del usuario: **Conductores** (enfocados en la gestión operativa de rutas) y **Padres de Familia** (orientados al seguimiento en vivo y recepción de notificaciones).
 
 #### 4.2.2. Labeling Systems
 El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio de funcionalidad operativa, buscando que cada término actúe como una señal clara que reduzca el esfuerzo cognitivo de los usuarios. Se han seleccionado etiquetas descriptivas que permiten una navegación intuitiva tanto en el proceso de descubrimiento (*Landing Page*) como en el uso crítico de la aplicación (*Web Application*).
 
 ##### Landing Page
-* **Funciones:** Agrupa las capacidades técnicas y herramientas de gestión de la plataforma.
-* **Roles:** Define los accesos y beneficios específicos para los dos perfiles del sistema.
-* **Planes:** Estructura la oferta comercial basándose en la escala de la flota de transporte.
-* **¿Cómo funciona?:** Etiqueta de apoyo que resuelve dudas sobre la implementación del servicio.
-* **Comenzar:** Botón de acción principal diseñado para motivar la conversión inmediata.
+* **Funciones:** Agrupa las capacidades técnicas y herramientas de la plataforma.
+* **Roles:** Define los accesos y beneficios específicos para cada perfil.
+* **Planes:** Estructura la oferta comercial según la escala de la flota.
+* **¿Cómo funciona?:** Guía explicativa sobre la adopción del servicio.
+* **Comenzar:** Llamado a la acción principal para el registro o contacto.
 
 ##### Aplicación Web – Conductores
-* **Mis Rutas:** Vista principal donde se gestionan los trayectos diarios asignados.
-* **Lista de Alumnos:** Relación detallada de estudiantes por paradas, optimizando el tiempo de recogida.
-* **Estado de Abordaje:** Sistema de etiquetas rápidas (*"Abordado"*, *"Ausente"*, *"En espera"*) que permite al conductor registrar la asistencia con un solo toque.
-* **Iniciar Ruta:** Etiqueta de alta visibilidad que dispara el envío de alertas GPS a los padres.
-* **Botón de Incidencia:** Acceso directo para reportar eventos imprevistos (tráfico, accidentes) de forma estandarizada.
+* **Mis Rutas:** Gestión de trayectos diarios asignados.
+* **Lista de Alumnos:** Relación de estudiantes organizados por paradas.
+* **Estado de Abordaje:** Etiquetas de registro rápido (*"Abordado"*, *"Ausente"*, *"En espera"*).
+* **Iniciar Ruta:** Botón de alta visibilidad que activa el rastreo GPS.
+* **Reportar Incidencia:** Acceso directo para registrar eventos imprevistos (tráfico, desviaciones, averías).
 
 ##### Aplicación Web – Padres de Familia
-* **Monitoreo:** Sección central que integra el mapa en tiempo real y la ubicación de la unidad.
-* **Historial de Viajes:** Registro cronológico de las horas de recogida y entrega de sus hijos.
-* **Alertas:** Centro de notificaciones sobre la proximidad del bus o confirmaciones de llegada.
-* **Datos del Bus:** Información transparente sobre el vehículo y el conductor asignado para generar confianza.
+* **Monitoreo:** Centro de control con el mapa en tiempo real y la posición del vehículo.
+* **Historial de Viajes:** Registro cronológico de horas de recogida y entrega.
+* **Alertas:** Notificaciones de proximidad y confirmaciones de abordaje.
+* **Datos del Bus:** Información transparente sobre el vehículo y el conductor asignado.
+
 
 #### 4.2.3. SEO Tags and Meta Tags
 
@@ -1576,37 +1616,40 @@ El sistema de etiquetado de **KidTrack** ha sido desarrollado bajo un criterio d
 
 **Charset**
 
-`<meta charset="UTF-8" />`
+
+<!-- Codificación de Caracteres -->
+<meta charset="UTF-8" />
 
 Esta línea establece la codificación universal de caracteres. Su función es garantizar que el navegador interprete correctamente los textos del sistema i18n, asegurando que tildes, la letra "ñ" y símbolos especiales se visualicen sin errores en español e inglés, evitando una mala experiencia de lectura.
 
 **Viewport (Responsive)**
-
-`<meta name="viewport" content="width=device-width, initial-scale=1.0"/>`
+<!-- Ventana Gráfica Responsiva -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 Controla el escalado de la página en diferentes dispositivos. Su función es hacer que la landing sea responsiva, ajustando el ancho del contenido al tamaño de la pantalla. Esto es vital para que los padres de familia visualicen la información de manera legible desde sus smartphones.
 
 **Title (SEO)**
-
-`<title>KidTrack — Transporte Escolar Seguro</title>`
+<!-- Título SEO Principal -->
+<title>KidTrack — Transporte Escolar Seguro</title>
 
 Define el título que aparece en la pestaña del navegador y en los resultados de búsqueda. Su función es proporcionar una identificación inmediata de la marca y su propósito principal, siendo un factor crítico para el posicionamiento orgánico.
 
 **Meta Description (SEO)**
-
-`<meta name="description" content="Plataforma integral para el monitoreo en tiempo real, control de asistencia y comunicación segura entre conductores y padres de familia.">`
+<!-- Meta Descripción -->
+<meta name="description" content="Plataforma integral para el monitoreo en tiempo real, control de asistencia y comunicación segura entre conductores y padres de familia." />
 
 Provee un resumen conciso del contenido del sitio. Su función es aparecer como el fragmento de texto (snippet) en Google, atrayendo a los usuarios al explicar claramente cómo KidTrack resuelve la inseguridad en el transporte escolar.
 
 **Meta Keywords (SEO)**
-
-`<meta name="keywords" content="transporte escolar, monitoreo GPS, seguridad, KidTrack, logística escolar, app bilingüe">`
+<!-- Palabras Clave -->
+<meta name="keywords" content="transporte escolar, monitoreo GPS, seguridad escolar, KidTrack, logística escolar, app bilingüe" />
 
 Especifica palabras clave relevantes para la temática de la página. Su función es ayudar a los algoritmos de indexación a clasificar el sitio dentro del nicho de tecnología de transporte y seguridad educativa.
 
 **Meta Author**
-
-`<meta name="author" content="KidTrack Team">`
+<!-- Autoría y Propiedad Intelectual -->
+<meta name="author" content="KidTrack Team" />
+<meta name="copyright" content="KidTrack 2026" />
 
 Identifica formalmente a los creadores de la plataforma. Su función es atribuir la autoría del proyecto al equipo de KidTrack, vinculando el desarrollo técnico con el startup responsable.
 
@@ -1617,14 +1660,14 @@ Identifica formalmente a los creadores de la plataforma. Su función es atribuir
 Esta línea establece legalmente la propiedad intelectual de la página. Su función es indicar la titularidad de los derechos de autor y el año de vigencia, protegiendo el contenido y diseño del sitio.
 
 **Meta Robots**
-
-`<meta name="robots" content="index, follow">`
+<!-- Indexación para Buscadores -->
+<meta name="robots" content="index, follow" />
 
 Instruye a los motores de búsqueda sobre cómo tratar el sitio. Su función es permitir que los "robots" incluyan la página en sus índices y sigan los enlaces internos, lo cual es fundamental para el crecimiento del tráfico hacia la plataforma.
 
 **Meta Language**
-
-`<html lang="es">`
+<!-- Idioma Principal del Documento -->
+<html lang="es">
 
 Declara el idioma principal de la estructura del sitio. Su función es informar a los navegadores y buscadores que el texto base está en español, mejorando la segmentación del público objetivo.
 
@@ -1634,52 +1677,26 @@ En esta sección se describen los mecanismos de asistencia y recuperación de in
 
 ##### Vista del Conductor / Dueño de Unidad
 
-1. **Medios de ayuda para la búsqueda de datos**
-   * **Barra de búsqueda operativa:** Ubicada en los módulos de "Rutas" y "Lista de Alumnos" para acceso rápido.
-   * **Autocompletado inteligente:** Sugiere nombres de alumnos o puntos de parada conforme el conductor escribe, facilitando la operación en dispositivos móviles.
-   * **Mensajes contextuales:** En caso de no hallar un registro, el sistema ofrece opciones como *"¿Desea registrar un nuevo alumno en esta parada?"*.
-   * **Búsqueda por proximidad:** Sugerencia automática de la siguiente parada basada en la ubicación GPS actual.
-
-2. **Filtros y opciones**
-   * **Por Nombre del Alumno:** Localización directa de la ficha de contacto y datos de emergencia.
-   * **Por Estado de Asistencia:** Filtrado rápido de alumnos *"Abordados"*, *"Pendientes"* o *"Ausentes"*.
-   * **Por Punto de Parada:** Visualización de todos los estudiantes vinculados a un hito específico de la ruta.
-   * **Por Turno:** Filtrado entre rutas de *"Recojo"* (mañana) y *"Retorno"* (tarde).
-
-3. **Visualización de resultados**
-   * **Tarjetas de Alumno (Cards):** Incluyen foto, nombre, grado y una etiqueta de estado de alta visibilidad.
-   * **Indicadores de Color:**
-     * **Naranja (`#E07A2B`):** Alumno en espera.
-     * **Verde (`#22C55E`):** Alumno ya abordó la unidad.
-     * **Naranja Rojizo (`#DE4A26`):** Alumno reportado como ausente.
-   * **Acciones rápidas:** Botones directos para *"Marcar Asistencia"*, *"Llamar a Apoderado"* o *"Reportar Incidencia"*.
+* **Barra de búsqueda operativa:** Disponible en "Rutas" y "Lista de Alumnos".
+  * **Autocompletado inteligente:** Sugiere nombres de estudiantes o paradas al escribir.
+  * **Búsqueda por proximidad:** Prioriza las paradas siguientes según la posición GPS.
+  * **Mensajes contextuales:** Asistencia paso a paso ante búsquedas sin resultados.
+* **Filtros Disponibles:** Por nombre del alumno, estado de asistencia (*Abordado*, *Pendiente*, *Ausente*), punto de parada y turno (*Mañana* / *Tarde*).
+* **Visualización de Resultados:** Tarjetas con fotografía, grado, indicadores cromáticos de estado y botones de acción rápida (*Marcar Asistencia*, *Llamar Apoderado*, *Reportar Incidencia*).
 
 ##### Vista del Padre de Familia
 
-1. **Medios de ayuda para la búsqueda de datos**
-   * **Buscador de historial:** Permite localizar eventos específicos dentro de la bitácora de viajes del alumno.
-   * **Sugerencias por fecha:** Calendario interactivo para seleccionar días específicos de consulta.
-   * **Acceso directo a Unidad:** Buscador para identificar los datos del bus asignado mediante la placa o nombre del conductor.
-
-2. **Filtros y opciones**
-   * **Por Fecha:** Consulta de registros de asistencia de días o meses anteriores.
-   * **Por Tipo de Evento:** Filtrado entre *"Notificaciones de Proximidad"*, *"Confirmación de Abordaje"* y *"Llegada al Destino"*.
-   * **Por Estado del Viaje:** Filtrado entre rutas *"Completadas"*, *"En curso"* o *"Canceladas"*.
-
-3. **Visualización de resultados**
-   * **Timeline de Eventos:** Lista cronológica detallada con la hora exacta de cada suceso.
-   * **Mapa de Resultados:** Al buscar un historial, se muestra el trazado que siguió la unidad en esa fecha específica.
-   * **Colores de Estado:**
-     * **Check Verde (`#22C55E`):** Evento completado con éxito.
-     * **Reloj Naranja (`#E07A2B`):** Retraso reportado en el punto de entrega.
-     * **Círculo Rojo (`#DE4A26`):** Registro de inasistencia justificada.
+* **Medios de Ayuda:**
+  * **Buscador de historial:** Localización de eventos específicos en la bitácora.
+  * **Calendario interactivo:** Selección de fechas específicas de consulta.
+  * **Buscador de unidad:** Consulta rápida por placa o datos del conductor.
+* **Filtros Disponibles:** Por fecha, tipo de evento (*Proximidad*, *Abordaje*, *Llegada*) y estado del viaje (*Completado*, *En curso*, *Cancelado*).
+* **Visualización de Resultados:** *Timeline* cronológico con marcas horarias, mapa con el recorrido trazado e indicadores cromáticos de estado (Verde: *Completado*, Naranja: *Retraso*, Naranja Rojizo: *Inasistencia/Incidencia*).
 
 #### 4.2.5. Navigation Systems
-La navegación en **KidTrack** ha sido diseñada para ser intuitiva y guiada mediante componentes de interfaz que permiten a los usuarios gestionar la seguridad del transporte de forma fluida y sin fricciones. En la *landing page*, se utiliza un sistema de desplazamiento vertical (*smooth scroll*) que permite explorar de forma narrativa los beneficios, los roles de usuario y los planes de suscripción, guiando al visitante estratégicamente hacia los llamados a la acción (*CTAs*) para el contacto. Esta navegación se apoya en una barra superior persistente (*Sticky Nav*) que incluye un selector de idioma (*i18n*), permitiendo cambiar el contexto lingüístico en cualquier punto del recorrido.
+La navegación en la **Landing Page** utiliza un desplazamiento vertical fluido (*Smooth Scroll*) acompañado de una barra superior fija (*Sticky Navigation*) con selector bilingüe (i18n).
 
-Dentro de la aplicación web, la navegación principal se organiza mediante una barra lateral fija (*Sidebar*) que otorga acceso inmediato a las secciones críticas: Monitoreo en Tiempo Real, Lista de Alumnos, Historial de Rutas, Alertas de Seguridad y Configuración de Perfil. Este diseño permite que, por ejemplo, un conductor pueda alternar entre su hoja de ruta y el reporte de incidencias con un solo toque, manteniendo siempre la visibilidad del estado del viaje.
-
-La experiencia de navegación también se adapta dinámicamente según el tipo de usuario. Los Padres de Familia acceden a una vista simplificada centrada en el mapa y las notificaciones de sus hijos, mientras que los Conductores disponen de controles operativos más robustos. El uso de pestañas (*tabs*) y botones de acción rápida dentro de cada módulo asegura que el usuario pueda ejecutar tareas específicas, como marcar la asistencia o llamar a un apoderado, sin perder el contexto de la ruta activa, garantizando un flujo de trabajo coherente con la naturaleza crítica del servicio.
+Dentro de la **Aplicación Web**, la estructura se basa en un menú lateral fijo (*Sidebar*) que brinda acceso directo a las secciones clave (*Monitoreo*, *Lista de Alumnos*, *Historial*, *Alertas* y *Configuración*). El diseño adapta dinámicamente sus controles al perfil del usuario, empleando pestañas (*tabs*) y accesos directos para ejecutar acciones operativas sin abandonar el contexto del mapa o la ruta activa.
 
 ### 4.3. Landing Page UI Design
 
@@ -2989,7 +3006,7 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   Presentation trip:
 
-  ![WebServices](.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png)
+  ![WebServices](<.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png>)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
@@ -3014,8 +3031,11 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Notification-dark%20(1).png>)
 
-- Shared Kernel:
-  Detalla las 4 capas transversales que sostienen a todos los módulos de bounded context en el frontend: el Navigation Bar en la capa de presentación, el HTTP Service centralizado con interceptores JWT en la capa de aplicación, los resources e interfaces base en el dominio, y el Map Service, que integra Leaflet y OpenRouteService, en la capa de infraestructura.
+**Shared — Componentes compartidos del frontend**
+
+El diagrama presenta componentes reutilizables de soporte para el frontend, como la navegación, la comunicación HTTP, los interceptores y la integración con mapas. Estos elementos se agrupan bajo la denominación Shared por su función técnica transversal.
+
+En esta vista, Shared representa componentes técnicos compartidos y no implica que todos ellos formen parte de un Shared Kernel de dominio. Las reglas de negocio permanecen bajo la responsabilidad de los contextos correspondientes.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark.png)
 
   Presentation shared:
@@ -3058,8 +3078,16 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
   Describe el módulo de comunicación asíncrona en sus 4 capas: recibe los eventos internos que emite el contexto de Trip y usa su capa de infraestructura para enviar, a través de Resend, las alertas de pánico, las notificaciones de abordaje y los comunicados de difusión general.
   ![WebServices](./assets/images/Chapter4/C4/ComponentDiagram_Notification-dark.png)
 
-- Shared Kernel:
-  Este diagrama muestra las 4 capas transversales (Building Blocks) sobre las que se apoya la arquitectura limpia del monolito: los Middlewares en la capa API, las interfaces y resources base en Application, los Value Objects globales (TripId, StudentId) en Domain, y los repositorios genéricos en Infrastructure, todo pensado para no duplicar código en el resto de los Bounded Contexts.
+- Shared — Componentes compartidos del backend:
+
+El diagrama reúne componentes de soporte utilizados por distintos bounded contexts, organizados en interfaces, aplicación, dominio e infraestructura.
+
+Para interpretar esta vista, el rótulo “Shared Kernel” del contenedor general debe entenderse como “Shared — componentes compartidos”. Su alcance gráfico incluye utilidades técnicas y, por tanto, es más amplio que el concepto de Shared Kernel de dominio.
+
+En el presente diseño se reserva el término Shared Kernel para un conjunto mínimo de tipos de dominio que necesiten mantener el mismo significado y las mismas reglas entre contextos. Los middlewares, recursos REST, configuraciones y utilidades de persistencia se consideran soporte técnico compartido; su reutilización no los convierte en parte de ese núcleo de dominio.
+
+Como regla de diseño, solo se incorporarán al núcleo los tipos cuya necesidad de compartir esté justificada. Sus cambios deberán coordinarse con los contextos consumidores. Las reglas de negocio y los repositorios específicos permanecerán en sus respectivos contextos, y el núcleo de dominio no deberá depender de componentes web ni de implementaciones de persistencia.
+
   ![WebServices](<./assets/images/Chapter4/C4/ComponentDiagram_Shared-dark%20(1).png>)
 
   - Identity & Access Management:
@@ -3078,9 +3106,9 @@ Los diagramas presentan a App como el componente raíz que contiene los componen
 
 - Trip Execution & Monitoring:
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
+![kidtrack-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-domain.puml)
 
-![saferoute-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
+![kidtrack-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-trip-infrastructure.puml)
 
 Este contexto reúne las pantallas destinadas a supervisar y gestionar los viajes durante su ejecución.
 
@@ -3090,9 +3118,9 @@ Este contexto reúne las pantallas destinadas a supervisar y gestionar los viaje
 
 - Fleet & Route Planning:
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
+![kidtrack-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-domain.puml)
 
-![saferoute-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
+![kidtrack-fleet](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-fleet-infrastructure.puml)
 
 Este contexto proporciona las interfaces necesarias para organizar las rutas, los vehículos y las asignaciones del servicio.
 
@@ -3102,9 +3130,9 @@ Este contexto proporciona las interfaces necesarias para organizar las rutas, lo
 
 - Notifications & Communication:
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
+![kidtrack-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-domain.puml)
 
-![saferoute-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
+![kidtrack-notifications](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-notifications-infrastructure.puml)
 
 Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicados.
 
@@ -3114,9 +3142,9 @@ Agrupa las funciones de consulta y envío de notificaciones, alertas y comunicad
 
 - Stakeholder & Asset Management:
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
+![kidtrack-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-domain.puml)
 
-![saferoute-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
+![kidtrack-stakeholder](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-stakeholder-infrastructure.puml)
 
 Incluye las vistas utilizadas para consultar y administrar a los participantes del servicio.
 
@@ -3126,9 +3154,9 @@ Incluye las vistas utilizadas para consultar y administrar a los participantes d
 
 - Identity and Access Management:
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
+![kidtrack-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-domain.puml)
 
-![saferoute-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
+![kidtrack-iam](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-iam-infrastructure.puml)
 
 Comprende las interfaces de autenticación y administración de los datos de la organización.
 
@@ -3138,9 +3166,9 @@ Comprende las interfaces de autenticación y administración de los datos de la 
 
 - Subscription & Plan Management:
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
+![kidtrack-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-domain.puml)
 
-![saferoute-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
+![kidtrack-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-webapp/main/docs/angular-saferoute-subscription-infrastructure.puml)
 
 Ofrece las vistas para consultar los planes disponibles y administrar la suscripción de la organización.
 
@@ -3158,19 +3186,19 @@ Concentra las responsabilidades relacionadas con la organización logística del
 
 Representa el recorrido y las condiciones de su programación mediante Value Objects como DepartureTime y ServiceDays. También incorpora la secuencia de paradas que componen la ruta, representadas por Stop.
 
-![saferoute-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
+![kidtrack-fleet-route](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-route-ddd.puml)
 
 - Vehicle Aggregate
 
 Administra la información de capacidad y disponibilidad de cada vehículo destinado al servicio.
 
-![saferoute-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
+![kidtrack-fleet-vehicle](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-vehicle-ddd.puml)
 
 - Assignment Aggregate
 
 Establece la relación entre un conductor, un grupo de estudiantes y una ruta para organizar su participación en un viaje específico.
 
-![saferoute-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
+![kidtrack-fleet-assignment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-fleet-assignment-ddd.puml)
 
 - Trip Execution & Monitoring:
 
@@ -3180,13 +3208,13 @@ Agrupa la lógica necesaria para desarrollar los viajes y realizar su seguimient
 
 Administra las etapas del viaje mediante operaciones como start() y complete(). Relaciona el recorrido con una ruta, un conductor y una organización, además de incorporar los registros de asistencia (Attendance) y los incidentes (Incident).
 
-![saferoute-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
+![kidtrack-trip-trip](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-trip-ddd.puml)
 
 - TripLocation Aggregate
 
 Gestiona los datos de ubicación del vehículo para permitir su seguimiento en tiempo real durante el viaje.
 
-![saferoute-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
+![kidtrack-trip-triplocation](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-trip-triplocation-ddd.puml)
 
 - Notifications & Communication:
 
@@ -3196,7 +3224,7 @@ Reúne la lógica de comunicación destinada a informar a los padres de familia 
 
 Administra los mensajes dirigidos a los apoderados, incluida su categoría y estado de entrega. Dentro de esta responsabilidad se consideran tanto las alertas como los comunicados.
 
-![saferoute-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
+![kidtrack-notifications-notification](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-notifications-notification-ddd.puml)
 
 - Stakeholder & Asset Management:
 
@@ -3206,19 +3234,19 @@ Representa a los participantes del servicio y las agrupaciones mediante las cual
 
 Modela al apoderado y su relación con los estudiantes bajo su responsabilidad. Permite incorporar o retirar hijos de esa relación.
 
-![saferoute-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
+![kidtrack-stakeholder-parent](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-parent-ddd.puml)
 
 - Driver Aggregate
 
 Representa al conductor y reúne los datos asociados a su actividad, entre ellos la información de su licencia.
 
-![saferoute-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
+![kidtrack-stakeholder-driver](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-driver-ddd.puml)
 
 - StudentGroup Aggregate
 
 Reúne las referencias de varios estudiantes en un grupo para facilitar su asignación dentro de la operación del transporte.
 
-![saferoute-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
+![kidtrack-stakeholder-studentgroup](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-stakeholder-studentgroup-ddd.puml)
 
 - Identity and Access Management (IAM):
 
@@ -3228,13 +3256,13 @@ Concentra la administración de las organizaciones, las cuentas de usuario y los
 
 Administra la creación y los cambios de estado de la organización mediante create(), suspend() y activate(). Su identificador, nombre y estado se representan mediante Value Objects.
 
-![saferoute-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
+![kidtrack-iam-organization](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-organization-ddd.puml)
 
 - User Aggregate
 
 Reúne las operaciones de registro, autenticación y modificación del rol de una cuenta mediante register(), authenticate() y changeRole(). La pertenencia del usuario a una organización se establece con el identificador compartido OrganizationId, mientras que datos de seguridad como la contraseña se representan mediante Value Objects como PasswordHash.
 
-![saferoute-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
+![kidtrack-iam-user](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-iam-user-ddd.puml)
 
 - Subscription & Plan Management:
 
@@ -3244,29 +3272,29 @@ Agrupa las reglas del modelo comercial relacionadas con los planes disponibles y
 
 Define las condiciones económicas y los límites operativos del plan. Los Value Objects RouteQuota y DriverQuota representan las cuotas de rutas y conductores y permiten validar que se respete la capacidad contratada.
 
-![saferoute-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
+![kidtrack-subscription-plan](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-plan-ddd.puml)
 
 - Subscription Aggregate
 
 Administra la vigencia y los cambios de estado de la suscripción mediante activate(), upgrade() y cancel(). Cada suscripción mantiene su relación con una organización y un plan a través de sus respectivos identificadores.
 
-![saferoute-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
+![kidtrack-subscription-subscription](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-subscription-ddd.puml)
 
 - Payment Aggregate
 
 Administra los registros de pago asociados a las suscripciones del servicio.
 
-![saferoute-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
+![kidtrack-subscription-payment](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-subscription-payment-ddd.puml)
 
-- Shared:
+**Shared — Componentes técnicos compartidos**
 
-Proporciona el Shared Kernel utilizado por los distintos contextos de la solución desarrollada en Spring Boot.
+El diagrama de clases de Shared muestra elementos reutilizables para construir respuestas REST, transformar errores, manejar excepciones y configurar aspectos de infraestructura, como el acceso web, la persistencia y la localización de mensajes.
 
-- Shared Bounded Context
+Shared se presenta aquí como un módulo de soporte técnico, no como un bounded context de negocio independiente. Por ello, su contenido no se limita a Value Objects ni debe identificarse en su totalidad como un Shared Kernel de dominio.
 
-Reúne únicamente Value Objects inmutables que representan identificadores y conceptos compartidos, como OrganizationId, RouteId, ChildId, FullName y Coordinates. Su uso permite mantener definiciones de tipos consistentes cuando los bounded contexts intercambian información.
+La inclusión de un tipo de dominio en el Shared Kernel requiere justificar que varios contextos necesitan compartir su significado y sus reglas. El diagrama de soporte técnico presentado a continuación no constituye, por sí solo, un inventario de esos tipos de dominio.
 
-![saferoute-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
+![kidtrack-shared](https://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/upc-pre-202610-1asi0729-11896-fivetech/saferoute-platform/refs/heads/develop/saferoute-platform/docs/java-saferoute-shared-ddd.puml)
 
 ### 4.8. Database Design
 **- Identity & Access Management (IAM)**
@@ -3683,7 +3711,6 @@ El esquema de Stakeholder organiza el inventario de activos y la asignación de 
 
 La gestión de configuración de KidTrack establece cómo el equipo StackForge organiza sus herramientas, controla los cambios y prepara las versiones del producto. Estas convenciones permiten trabajar sobre el informe, la Landing Page, la aplicación web y los servicios RESTful manteniendo coherencia entre los requisitos y la implementación.
 
-La configuración descrita constituye el esquema de trabajo previsto. Los enlaces o datos marcados como pendientes deben completarse con la información real del equipo antes de presentar las evidencias del entregable.
 
 #### 5.1.1. Software Development Environment Configuration
 
@@ -3727,7 +3754,7 @@ El entorno de KidTrack contempla actividades de planificación, requisitos, dise
 | OpenAPI y Swagger UI | Describir los contratos de la API y permitir su consulta y prueba interactiva. Swagger UI documenta los servicios; no ejecuta ni hospeda el backend Java. | [Swagger UI](https://swagger.io/open-source/swagger-ui/) |
 | GitHub Pages | Servicio propuesto para publicar la Landing Page estática. | [GitHub Pages](https://docs.github.com/en/pages) |
 | Vercel | Alternativa propuesta para publicar la aplicación Angular; su uso debe confirmarse con el equipo. | [Vercel — documentación](https://vercel.com/docs) |
-| Hosting compatible con Java y MySQL | Ejecutar el backend y disponer de persistencia accesible desde el entorno publicado. El proveedor está pendiente de definición. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
+| Hosting compatible con Java y MySQL | Ejecutar el backend y proporcionar acceso a la base de datos MySQL. La selección y configuración del proveedor están previstas para el Sprint 3 y quedan fuera del alcance por el momento. | [Despliegue de Spring Boot](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html) |
 
 
 #### 5.1.2. Source Code Management
@@ -3740,7 +3767,7 @@ KidTrack utiliza Git para controlar versiones y GitHub para alojar los repositor
 | Informe | [kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report) |
 | Landing Page | [kidtrack-landingpage](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website.git)  |
 | Frontend Web Application | [kidtrack-webapp](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp.git) |
-
+| Backend Web Application | [kidtrack-platform](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform.git) |
 
 ##### Flujo de ramas
 
@@ -3857,7 +3884,7 @@ El backend se desarrollará con Java y Spring Boot. Requiere un proveedor que ej
 6. Configurar HTTPS y los orígenes CORS autorizados para el frontend publicado. Verificar un endpoint público y otro protegido, además de una operación con persistencia.
 7. Comprobar la especificación OpenAPI y Swagger UI en las rutas configuradas; registrar las URLs reales de la API y su documentación.
 
-**Proveedor, URL de API y URL de documentación:** pendientes 
+**Proveedor, URL de API y URL de documentación:** se registrarán después de su publicación en el Sprint 3. No disponibles en AV1 por encontrarse fuera de su alcance.
 
 Referencia: [Despliegue de Spring Boot en la nube](https://docs.spring.io/spring-boot/how-to/deployment/cloud.html).
 
@@ -3882,24 +3909,24 @@ El primer sprint se orienta a una versión inicial de la Landing Page que expliq
 | Sprint 0 Retrospective Summary | No aplica  |
 | **Sprint Goal & User Stories** | |
 | Sprint 1 Goal | Nuestro enfoque es ofrecer una Landing Page pública que permita a los transportistas escolares y a los padres o apoderados interesados comprender la propuesta de KidTrack, comparar las condiciones de sus planes y conocer cómo comenzar a utilizar el servicio. Consideramos que esto les permitirá evaluar si la plataforma responde a sus necesidades y encontrar el siguiente paso para acceder a ella. Lo confirmaremos al finalizar el sprint mediante la validación satisfactoria de tres recorridos: consultar los beneficios correspondientes a su rol, comparar los planes publicados y continuar hacia el registro o inicio de sesión. |
-| Sprint 1 Velocity | 14 story points |
-| Sum of Story Points | 9 story points |
+| Sprint 1 Velocity | El alcance seleccionado comprende 21 Story Points. |
+| Sum of Story Points | 21 Story Points, correspondientes a US23 (2), US24 (3), US25 (3), US26 (3), US27 (3), US33 (2) y TS5 (5)|
 
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
 
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
 
-| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Backend Architecture (L/C) | Landing Page (L/C) | Documentation (L/C) |
-| ----------------------------------- | --------------- | ------------------ | -------------------------- | ------------------ | ------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                          | L                  | C                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | C                  | L                          | C                  | C                   |
-| Su Caletti, Eddo                    | Asalreon520     | L                  | C                          | C                  | C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                          | L                  | L                   |
-| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                          | C                  | L                   |
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |
+| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |
 
 ##### 5.2.1.3. Sprint Backlog 1
-El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores, y se desarrollaron las bases de la arquitectura del sistema bajo el enfoque Domain-Driven Design(DDD).
+El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilingüe (ES/EN) orientado a los segmentos objetivos: padres de familia y conductores.
 
 ![Sprint Backlog 1](assets/images/Chapter-5/Sprint1/Sprint-Backlog-1.png)
 
@@ -3908,25 +3935,32 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 | Sprint #       | Sprint 1                |                      |                                              |                                                                                        |                        |                 |            |
 | :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
 | **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
-| **Story Id**         | **Story Title**     | **Task Id**  | **Task Title**                                    | **Task Description**                                                                     | **Estimation (Hours)** | **Assigned To** | **Status** |
-| US21  | Consulta de propuesta y beneficios | T01          | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal                       | 1          |      Nickolas     | Done        |
-| US21  | Consulta de propuesta y beneficios | T02          | Estructura base de seccion hero, funcionalidades y roles| Implementar la estructura inicial de las 3 secciones                        | 1          |      Nickolas     | Done        |
-| US21  | Consulta de propuesta y beneficios | T03          | Implementar seccion hero | Incorporar la informacion principal de la plataforma y los botones que nos llevaran a otras secciones                       | 2          |     Nickolas      | Done        |
-| US21  | Consulta de propuesta y beneficios | T04          | Implementar seccion funcionalidades  | Incorporar cards explicando las funcionalidades de la plataforma                       | 2          |     Nickolas      | Done        |
-| US21  | Consulta de propuesta y beneficios | T05          | Implementar seccion Roles del sistema  | Incorporar cards explicando los roles que habran en la plataforma y que lugar ocupara cada uno                       | 2          |    Nickolas       | Done        |
-| US21  | Consulta de propuesta y beneficios | T06          | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 1 |     Jose      | Done        |
-| US22  | Comparación de planes              | T07                  | Estructurar seccion planes | Implementar la estructura inicial de la seccion planes                      | 1 |     Jose       | Done        |
-| US22  | Comparación de planes              | T08                  | Implementar seccion plan basico   | Se agregara una cards con la informacion del plan basico y un boton que funcionara si se selecciona dicho plan                       | 1          |    Edo       | Done        |
-| US22  | Comparación de planes              | T09                  | Implementar seccion plan Intermedio   | Se agregara una cards con la informacion del plan intermedio y un boton que funcionara si se selecciona dicho plan                        | 1          |   Edo        | Done        |
-| US22  | Comparación de planes              | T010                  | Implementar seccion plan Completo | Se agregara una cards con la informacion del plan completo y un boton que funcionara si se selecciona dicho plan                        | 1          |     Edo      | Done        |
-| US22  | Comparación de planes              | T011                  | Aplicar tipografia y guia de estilos del modelo de negocio  | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |     Jose      | Done        |
-| US23  | Consulta del funcionamiento y acceso al servicio | T012                  | Estructurar seccion de como funciona la plataforma | Implementar la estructura inicial de la seccion de como funciona la plataforma                       | 2          |      Salvador     | Done       |
-| US23  | Consulta del funcionamiento y acceso al servicio | T013                  | Implementar seccion de como funciona la plataforma | Se agregara la informacion mediante pasos de un workflow simple de como se usa la plataforma                       | 1          |     Salvador     | Done       |
-| US23  | Consulta del funcionamiento y acceso al servicio                            | T014                  | Aplicar tipografia y guia de estilos del modelo de negocio   | Se aplicaran las tipografias, colores diseños y se corrobora que el responsive funciona correctamente                       | 2          |    Jose       | Done        |
-| US26  | Uso en inglés y español i18n                     | T015                  | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto.                       | 2          |    Matias       | Done       |
-| US26  | Uso en inglés y español i18n                     | T016                  | Crear diccionario en español | Definir textos de la Landing Page en español.                       | 1          |    Matias      | Done       |
-| US26  | Uso en inglés y español i18n                     | T017                  | Crear diccionario en inglés | Definir traducciones de la Landing Page en inglés.                       | 1          |    Matias       | Done       |
-| US26  | Uso en inglés y español i18n                     | T018                  | Implementar boton de seleccion de idioma | Agregar boton cambio de idioma ES/EN en la interfaz.                       | 3          |    Jose       | Done       |
+| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS5 | Soporte i18n de la Landing Page | T01 | Configurar Vue-i18n | Configurar Vue-i18n dentro del proyecto. | 2 | Matias | Done |
+|   |   | T02 | Crear diccionario en español | Definir los textos de la Landing Page en español. | 1 | Salvador | Done |
+|   |   | T03 | Crear diccionario en inglés | Definir las traducciones de la Landing Page en inglés. | 2 | Salvador | Done |
+|   |   | T04 | Persistir idioma seleccionado | Guardar la preferencia de idioma del visitante para conservarla al recargar la página. | 2 | Matias | Done |
+|  |   | T05 | Definir traducción de respaldo en inglés | Usar la traducción en inglés cuando falte una clave en el idioma seleccionado. | 1 | Matias | Done |
+| US23 | Visualización de Hero | T01 | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal. | 1 | Nickolas | Done |
+|   |   | T02 | Implementar sección hero | Incorporar la información principal de KidTrack y su propuesta de seguridad en el transporte escolar. | 2 | Nickolas | Done |
+|   |   | T03 | Agregar botón de registro y página de recurso no encontrado | Dirigir al visitante al registro y mostrar una página con opción para volver al inicio ante una dirección inexistente. | 2 | Nickolas | Done |
+| US24 | Navegación de Funciones | T01 | Estructurar sección de funcionalidades | Implementar la estructura inicial de la sección de funcionalidades. | 1 | Jose | Done |
+|   |   | T02 | Implementar cards de funcionalidades | Incorporar cards explicando las capacidades de monitoreo y gestión de la plataforma. | 2 | Jose | Done |
+|   |  | T03 | Implementar detalle ampliado | Permitir consultar la descripción completa con ratón, teclado o interacción táctil. | 2 | Jose | Done |
+| US25 | Detalle de Roles | T01 | Estructurar sección de roles del sistema | Implementar la estructura inicial de la sección de roles. | 1 | Nickolas | Done |
+|  |   | T02 | Implementar cards de roles | Incorporar cards con los beneficios y funciones de padre, conductor y administrador. | 2 | Nickolas | Done |
+|   |   | T03 | Definir perfil inicial | Mostrar inicialmente la información del administrador al acceder a la sección. | 1 | Nickolas | Done |
+| US26 | Consulta de Precios | T01 | Estructurar sección de planes | Implementar la estructura inicial de la sección de planes. | 1 | Edo | Done |
+|   |   | T02 | Implementar cards de planes Básico, Intermedio y Completo | Agregar cards con la información de cada plan y un botón para seleccionarlo. | 3 | Edo | Done |
+|   |  | T03 | Mostrar precios en PEN con descuento anual | Presentar los importes en soles peruanos y aplicar el 20 % de descuento a la modalidad anual. | 2 | Edo | Done |
+|   |   | T04 | Marcar planes como Próximamente | Identificar los planes no disponibles e impedir iniciar su contratación. | 1 | Edo | Done |
+| US27 | Selección de Idioma | T01 | Implementar botón de selección de idioma | Agregar el botón de cambio de idioma ES/EN en la interfaz. | 2 | Jose | Done |
+| |   | T02 | Definir inglés como idioma predeterminado | Usar inglés en la primera visita sin preferencia guardada. | 1 | Jose | Done |
+|   |   | T03 | Aplicar idioma de respaldo | Usar inglés cuando la preferencia guardada corresponda a un idioma no soportado. | 1 | Jose | Done |
+| US33 | Diseño Adaptable e i18n | T01 | Aplicar tipografía y guía de estilos del modelo de negocio | Aplicar tipografías, colores y diseños, y comprobar que el responsive funciona correctamente. | 2 | Salvador | Done |
+|  |   | T02 | Ajustar contenido traducido en móvil | Mantener legible el texto traducido que ocupa más espacio en pantallas pequeñas. | 2 | Salvador | Done |
+|   |   | T03 | Adaptar navegación y tamaño de fuente | Conservar el idioma al cambiar la orientación y permitir leer el texto con fuente ampliada sin recortes. | 1 | Salvador | Done |
+
 ##### 5.2.1.4. Development Evidence for Sprint Review
 **URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
 
@@ -4036,11 +4070,116 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 
 ### 5.2.2. Sprint 2
 ##### 5.2.2.1. Sprint Planning 2
+El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera versión navegable del frontend para administradores, conductores y apoderados, junto con mejoras informativas de la Landing Page. Mientras no se disponga de los servicios backend, los flujos de la aplicación utilizarán datos de prueba identificados como tales.
+.
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-09-27 |
+| Time |  07:00 PM |
+| Location |  Microsoft Teams, Discord |
+| Prepared By | Ortega Quintana, Jose Zacarias |
+| Attendees (to planning meeting) | Todo el equipo |
+| Sprint 1 Review Summary | El incremento reportado del Sprint 1 corresponde a la Landing Page pública de KidTrack. La selección informada comprende US23, US24, US25, US26, US27, US33 y TS5, con una suma de 21 Story Points. La retroalimentación del entregable identificó la necesidad de alinear los identificadores del Sprint Backlog con el Product Backlog, diferenciar capacidad estimada de puntos seleccionados y aportar evidencia de los recorridos definidos en el Sprint Goal. Los 21 puntos seleccionados no se consideran automáticamente velocidad observada sin verificar la aceptación de las historias. |
+| Sprint 1 Retrospective Summary | A partir de la revisión del entregable, se proponen como mejoras para el siguiente sprint mantener una única correspondencia de IDs entre historias y tareas, identificar las dependencias de backend antes de comprometer funcionalidades y registrar resultados verificables de las pruebas. Asimismo, se concluyó que el uso de ramas feature permitió reducir conflictos de integración y mejorar el trabajo colaborativo. |
+| **Sprint Goal & User Stories** | |
+| Sprint 2 Goal | Nuestro enfoque es permitir que administradores, conductores y apoderados evalúen los flujos iniciales de organización y seguimiento del transporte escolar en el frontend de KidTrack, además de facilitar que los visitantes resuelvan dudas sobre el servicio en la Landing Page. Consideramos que esto permitirá detectar dificultades de navegación y comprensión antes de integrar el backend. Lo confirmaremos al finalizar el sprint mediante la ejecución documentada de tres recorridos con datos de prueba: un administrador completa el formulario de un estudiante y consulta una ruta con sus paradas; un conductor accede a un viaje asignado y visualiza su cambio de estado mediante una simulación de inicio; y un apoderado consulta en el mapa una ubicación de prueba del vehículo. Cada recorrido deberá alcanzar el resultado esperado sin enlaces rotos ni errores que impidan completarlo. Asimismo, se comprobará el acceso HTTPS a la Landing Page y se evaluará la interfaz de suscripción al newsletter, diferenciando la validación del formulario de la suscripción efectiva, que requerirá un servicio operativo. |
+| Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
+| Sum of Story Points | 86 Story Points, correspondientes a US35, US30, TS6, TS2, US1, US2, US4, US3, US5, US6, US10, US11, US17, US19, US14, US12, US21, US22 y US13. |
+
 ##### 5.2.2.2. Aspect Leaders and Collaborators
+De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
+
+| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |FrontEnd (L/C) |
+| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |------------------- |
+| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |L                   |
+| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |C                   |
+| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |C                   |
+| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |C                   |
+| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |C                   |
+
 ##### 5.2.2.3. Sprint Backlog 2
+| Sprint #       | Sprint 2                |                      |                                              |                                                                                        |                        |                 |            |
+| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
+| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
+| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar y configurar Leaflet con su capa base de mapa en las vistas de seguimiento. | 2 | Matias | Done |
+|  |  | T02 | Representar rutas y paradas en el mapa | Dibujar el recorrido y los marcadores de las paradas a partir de coordenadas válidas. | 3 | Matias | Done |
+|  |  | T03 | Actualizar marcador y manejar falla del mapa base | Reflejar nuevas ubicaciones del vehículo e informar cuando el proveedor de teselas no responda. | 2 | Matias | Done |
+| TS6 | Implementación HTTPS/SSL | T01 | Configurar certificado SSL | Instalar un certificado válido en el sitio publicado. | 2 | Matias | Done |
+|  |  | T02 | Configurar redirección de HTTP a HTTPS | Redirigir automáticamente las visitas HTTP a su dirección HTTPS. | 1 | Matias | Done |
+|  |  | T03 | Forzar HTTPS en formularios | Asegurar que los formularios con datos sensibles solo transmitan por HTTPS. | 1 | Matias | Done |
+| US1 | Contratar Plan | T01 | Implementar vista de selección de planes | Permitir al administrador elegir el plan de su organización. | 2 | Nickolas | Done |
+|  |  | T02 | Integrar confirmación de pago | Confirmar el pago y aplicar los límites del plan contratado. | 3 | Nickolas | Done |
+|  |  | T03 | Manejar cancelación y pago rechazado | Mantener el plan actual cuando se cancele la contratación o se rechace el pago. | 3 | Nickolas | Done |
+| US2 | Registro de Conductores | T01 | Crear modelo y API de conductores | Implementar la entidad Conductor con sus operaciones de registro y consulta. | 3 | Nickolas | Done |
+|  |  | T02 | Implementar formulario de registro de conductor | Crear la vista con los datos del conductor y validación de campos obligatorios. | 3 | Nickolas | Done |
+|  |  | T03 | Validar DNI único y verificación de licencia | Rechazar DNI duplicados y registrar el estado Verificado al aprobar la licencia. | 2 | Nickolas | Done |
+| US3 | Registro de Padres | T01 | Crear modelo y API de padres | Implementar la entidad Padre con registro y envío de invitación de acceso. | 3 | Nickolas | Done |
+|  | Registro de Padres | T02 | Implementar formulario de registro de padres | Crear la vista de registro con validación del formato de correo. | 2 | Nickolas | Done |
+|  | Registro de Padres | T03 | Vincular padre con estudiante | Asociar al padre con su hijo para habilitar el seguimiento autorizado. | 2 | Nickolas | Done |
+| US4 | Alta de Alumnos | T01 | Crear modelo y API de estudiantes | Implementar la entidad Estudiante con sus operaciones de alta y consulta. | 3 | Nickolas | Done |
+|  |  | T02 | Implementar formulario de alta de alumnos | Crear la vista de registro e identificar los datos obligatorios faltantes. | 2 | Nickolas | Done |
+|  |  | T03 | Cargar fotografía y generar carné digital | Guardar una fotografía válida y mostrarla en el carné digital del estudiante. | 3 | Nickolas | Done |
+| US5 | Creación de Rutas | T01 | Crear modelo y API de rutas y paradas | Implementar las entidades Ruta y Parada con sus operaciones de creación y consulta. | 3 | Jose | Done |
+|  |  | T02 | Implementar vista de creación de rutas | Crear la interfaz para definir origen, destino y paradas sobre el mapa. | 3 | Jose | Done |
+|  |  | T03 | Calcular recorrido y duración estimada | Obtener el trazado, el tiempo estimado y un orden sugerido de paradas; informar si no hay trayecto. | 3 | Jose | Done |
+| US6 | Asignación de Conductores a Rutas | T01 | Crear API de asignación conductor-ruta | Registrar la asignación de un conductor disponible a una ruta. | 2 | Jose | Done |
+|  |  | T02 | Validar conflictos de horario | Impedir asignaciones incompatibles en el mismo horario e informar la falta de disponibilidad. | 2 | Jose | Done |
+|  |  | T03 | Implementar vista de asignación y aviso | Crear la interfaz de asignación y notificar al conductor asignado. | 2 | Jose | Done |
+| US10 | Inicio de Trayecto | T01 | Crear endpoint de inicio de viaje | Cambiar el viaje asignado al estado En camino. | 2 | Edo | Done |
+|  |  | T02 | Implementar botón de inicio de viaje | Crear la interfaz del conductor para confirmar el inicio. | 2 | Edo | Done |
+|  |  | T03 | Enviar coordenadas y manejar falta de conexión | Iniciar el envío de ubicación e informar cuando no se pueda confirmar el inicio. | 3 | Edo | Done |
+| US11 | Marcación de Abordaje | T01 | Registrar abordaje de estudiantes | Guardar la asistencia del viaje y generar el aviso al padre. | 2 | Edo | Done |
+|  |  | T02 | Implementar escaneo de código QR | Leer el QR del estudiante asignado sin duplicar asistencias. | 3 | Edo | Done |
+|  |  | T03 | Validar estudiante por parada | Rechazar abordajes de estudiantes que no corresponden a la parada. | 2 | Edo | Done |
+| US12 | Reporte de Incidencias | T01 | Implementar formulario de incidencias | Crear la vista para que el conductor registre retrasos y averías. | 2 | Edo | Done |
+|  |  | T02 | Actualizar hora estimada de llegada | Recalcular la llegada que consultan los padres tras un retraso. | 3 | Edo | Done |
+| |  | T03 | Notificar a central y permitir ubicación manual | Enviar el aviso de avería y permitir indicar dónde ocurrió sin GPS. | 2 | Edo | Done |
+| US13 | Botón de Pánico | T01 | Implementar interfaz de alerta SOS | Activar tras mantener presionado 3 segundos y permitir cancelar en 2 segundos. | 3 | Edo | Done |
+|  |  | T02 | Enviar alerta con ubicación y hora | Registrar y enviar la alerta con la ubicación disponible. | 3 | Edo | Done |
+|  |  | T03 | Manejar alerta sin ubicación GPS | Enviar la identificación del conductor y la hora indicando que la ubicación no está disponible. | 2 | Edo | Done |
+| US14 | Finalización de Viaje | T01 | Crear endpoint de cierre de viaje | Cerrar el viaje y detener el envío de ubicación. | 2 | Jose | Done |
+|  |  | T02 | Validar estudiantes a bordo | Impedir el cierre mientras haya estudiantes pendientes de entrega. | 2 | Jose | Done |
+|  |  | T03 | Manejar rechazo del servidor y reintento | Informar que el viaje no se cerró y permitir volver a intentarlo. | 2 | Jose | Done |
+| US17 | Rastreo en Tiempo Real | T01 | Implementar vista de seguimiento | Crear la pantalla del padre con el mapa del viaje activo. | 3 | Salvador | Done |
+|  |  | T02 | Actualizar marcador del vehículo | Representar las posiciones recibidas durante el viaje. | 3 | Salvador | Done |
+|  |  | T03 | Mostrar distancia a la parada y estado finalizado | Calcular los kilómetros a la parada e indicar cuando el servicio concluyó. | 2 | Salvador | Done |
+| US19 | Confirmación de Llegada | T01 | Registrar entrega individual del estudiante | Guardar la confirmación del conductor en viajes de ida y de retorno. | 2 | Salvador | Done |
+| | | T02 | Enviar aviso Hijo entregado | Notificar al padre la llegada de su hijo. | 2 | Salvador | Done |
+|  |  | T03 | Generar alerta de demora | Alertar cuando el retraso supere veinte minutos respecto a la llegada estimada. | 3 | Salvador | Done |
+| US21 | Historial de Asistencia | T01 | Implementar consulta mensual de asistencia | Mostrar los días y estados de asistencia del estudiante. | 3 | Salvador | Done |
+|  |  | T02 | Registrar justificación de ausencias | Marcar una ausencia como Justificado tras el registro del padre. | 2 | Salvador | Done |
+|  |  | T03 | Manejar periodos sin datos | Informar cuando el mes consultado aún no tiene registros. | 1 | Salvador | Done |
+| US22 | Perfil del Estudiante | T01 | Implementar formulario de información médica | Guardar alergias y precauciones visibles para el conductor asignado. | 3 | Salvador | Done |
+|  |  | T02 | Actualizar fotografía del estudiante | Reflejar la nueva imagen en las vistas autorizadas. | 2 | Salvador | Done |
+|  |  | T03 | Validar campos obligatorios | Informar el campo faltante y conservar los datos previos. | 2 | Salvador | Done |
+| US30 | Suscripción al Newsletter | T01 | Implementar formulario de suscripción | Registrar el correo válido con el consentimiento del visitante. | 2 | Matias | Done |
+|  |  | T02 | Enviar mensaje de bienvenida | Enviar el correo tras confirmar la suscripción. | 2 | Matias | Done |
+|  |  | T03 | Evitar suscripciones duplicadas | Informar cuando el correo ya esté suscrito. | 1 | Matias | Done |
+| US35 | Verificación de SSL | T01 | Verificar conexión HTTPS | Comprobar que el sitio use un certificado válido. | 1 | Matias | Done |
+|  |  | T02 | Verificar envío de formularios por HTTPS | Comprobar que las solicitudes de los formularios se transmitan de forma segura. | 1 | Matias | Done |
+|  |  | T03 | Comprobar advertencia por certificado inválido | Verificar que el navegador informe del problema antes de continuar. | 1 | Matias | Done |
+
 ##### 5.2.2.4. Development Evidence for Sprint Review
+
+| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
+| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
+| - | -        | -   | -                                                        | -  | - |
+
 ##### 5.2.2.5. Execution Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo logró diseñar y desplegar la primera versión pública del FrontEnd de KidTrack:
+
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEnd de KidTrack. 
+
+| Endpoint      | Acción implementada   | URL | Método HTTP    | Sintaxis de llamada | Parametros | Response |
+| ------------- | --------------------  | --- | -------------- | --------------------|-------------|-------- |
+|               |                       |     |                |                     |             |         |
+
+
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
