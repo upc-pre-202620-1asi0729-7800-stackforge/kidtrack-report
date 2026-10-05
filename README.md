@@ -4143,8 +4143,8 @@ Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEn
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
 - El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas, ya que se necesitan de experiencias de usuarios reales.
 ## Recomendaciones
--Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
--Analizar la posibilidad de actualizar o corregir tipografia tanto en el FrontEnd como en la Landing Page.
+- Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
+- Analizar la posibilidad de actualizar o corregir tipografia tanto en el FrontEnd como en la Landing Page.
 ## Video About-the-Team
 
 ## Bibliografía
