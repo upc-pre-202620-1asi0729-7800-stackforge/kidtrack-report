@@ -4684,8 +4684,27 @@ Sigue en GitHub Pages, igual que en el Sprint 1.  En esta versión, al elegir un
 
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
-## FrontEnd:
-![KidTrack FrontEnd](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop. 
+
+En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
+
+**FrontEnd**
+
+![Insights de la aplicación web](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+
+
+**Fake API**
+
+![Insights de la Fake API](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
+
+**Landing Page**
+
+![Insights de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+
+**Informe**
+
+![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
+
 
 ### 5.4 Video About-the-Product
 
