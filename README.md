@@ -4106,71 +4106,75 @@ Para este sprint se tomaron como aspectos los seis bounded contexts de la aplica
 
 ##### 5.2.2.3. Sprint Backlog 2
 
-El objetivo del Sprint 2 fue el desarrollo y despliegue del Front End
+El objetivo del Sprint 2 fue validar el sprint 2 goal mediante la publicación del FrontEnd de KidTrack.
+
+Se completaron los 79 Story Points comprometidos en el sprint planning, por lo que las 17 historias de usuario tienen su funcionalidad en la aplicación y todas sus tareas quedaron en Done. Lo que depende del backend en JAVA, como la ubicación real del vehículo o avisos automáticos se conectará en el Sprint 3.
 
 ![Sprint Backlog 2](assets/images/Chapter-5/Sprint2/Sprint-Backlog-2.png)
 
-| Sprint #       | Sprint 2                |                      |                                              |                                                                                        |                        |                 |            |
-| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
-| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
-| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
-| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar y configurar Leaflet con su capa base de mapa en las vistas de seguimiento. | 2 | Matias | Done |
-|  |  | T02 | Representar rutas y paradas en el mapa | Dibujar el recorrido y los marcadores de las paradas a partir de coordenadas válidas. | 3 | Matias | Done |
-|  |  | T03 | Actualizar marcador y manejar falla del mapa base | Reflejar nuevas ubicaciones del vehículo e informar cuando el proveedor de teselas no responda. | 2 | Matias | Done |
-| TS6 | Implementación HTTPS/SSL | T01 | Configurar certificado SSL | Instalar un certificado válido en el sitio publicado. | 2 | Matias | Done |
-|  |  | T02 | Configurar redirección de HTTP a HTTPS | Redirigir automáticamente las visitas HTTP a su dirección HTTPS. | 1 | Matias | Done |
-|  |  | T03 | Forzar HTTPS en formularios | Asegurar que los formularios con datos sensibles solo transmitan por HTTPS. | 1 | Matias | Done |
-| US1 | Contratar Plan | T01 | Implementar vista de selección de planes | Permitir al administrador elegir el plan de su organización. | 2 | Nickolas | Done |
-|  |  | T02 | Integrar confirmación de pago | Confirmar el pago y aplicar los límites del plan contratado. | 3 | Nickolas | Done |
-|  |  | T03 | Manejar cancelación y pago rechazado | Mantener el plan actual cuando se cancele la contratación o se rechace el pago. | 3 | Nickolas | Done |
-| US2 | Registro de Conductores | T01 | Crear modelo y API de conductores | Implementar la entidad Conductor con sus operaciones de registro y consulta. | 3 | Nickolas | Done |
-|  |  | T02 | Implementar formulario de registro de conductor | Crear la vista con los datos del conductor y validación de campos obligatorios. | 3 | Nickolas | Done |
-|  |  | T03 | Verificación de licencia | Registrar el estado Verificado al aprobar la licencia. | 2 | Nickolas | Done |
-| US3 | Registro de Padres | T01 | Crear modelo y API de padres | Implementar la entidad Padre con registro y envío de invitación de acceso. | 3 | Nickolas | Done |
-|  | Registro de Padres | T02 | Implementar formulario de registro de padres | Crear la vista de registro con validación del formato de correo. | 2 | Nickolas | Done |
-|  | Registro de Padres | T03 | Vincular padre con estudiante | Asociar al padre con su hijo para habilitar el seguimiento autorizado. | 2 | Nickolas | Done |
-| US4 | Alta de Alumnos | T01 | Crear modelo y API de estudiantes | Implementar la entidad Estudiante con sus operaciones de alta y consulta. | 3 | Nickolas | Done |
-|  |  | T02 | Implementar formulario de alta de alumnos | Crear la vista de registro e identificar los datos obligatorios faltantes. | 2 | Nickolas | Done |
-|  |  | T03 | Cargar fotografía y generar carné digital | Guardar una fotografía válida y mostrarla en el carné digital del estudiante. | 3 | Nickolas | Done |
-| US5 | Creación de Rutas | T01 | Crear modelo y API de rutas y paradas | Implementar las entidades Ruta y Parada con sus operaciones de creación y consulta. | 3 | Jose | Done |
-|  |  | T02 | Implementar vista de creación de rutas | Crear la interfaz para definir origen, destino y paradas sobre el mapa. | 3 | Jose | Done |
-|  |  | T03 | Calcular recorrido y duración estimada | Obtener el trazado, el tiempo estimado y un orden sugerido de paradas; informar si no hay trayecto. | 3 | Jose | Done |
-| US6 | Asignación de Conductores a Rutas | T01 | Crear API de asignación conductor-ruta | Registrar la asignación de un conductor disponible a una ruta. | 2 | Jose | Done |
-|  |  | T02 | Validar conflictos de horario | Impedir asignaciones incompatibles en el mismo horario e informar la falta de disponibilidad. | 2 | Jose | Done |
-|  |  | T03 | Implementar vista de asignación y aviso | Crear la interfaz de asignación y notificar al conductor asignado. | 2 | Jose | Done |
-| US10 | Inicio de Trayecto | T01 | Crear endpoint de inicio de viaje | Cambiar el viaje asignado al estado En camino. | 2 | Edo | Done |
-|  |  | T02 | Implementar botón de inicio de viaje | Crear la interfaz del conductor para confirmar el inicio. | 2 | Edo | Done |
-|  |  | T03 | Enviar coordenadas y manejar falta de conexión | Iniciar el envío de ubicación e informar cuando no se pueda confirmar el inicio. | 3 | Edo | Done |
-| US11 | Marcación de Abordaje | T01 | Registrar abordaje de estudiantes | Guardar la asistencia del viaje y generar el aviso al padre. | 2 | Edo | Done |
-|  |  | T02 | Implementar escaneo de código QR | Leer el QR del estudiante asignado sin duplicar asistencias. | 3 | Edo | Done |
-|  |  | T03 | Validar estudiante por parada | Rechazar abordajes de estudiantes que no corresponden a la parada. | 2 | Edo | Done |
-| US12 | Reporte de Incidencias | T01 | Implementar formulario de incidencias | Crear la vista para que el conductor registre retrasos y averías. | 2 | Edo | Done |
-|  |  | T02 | Actualizar hora estimada de llegada | Recalcular la llegada que consultan los padres tras un retraso. | 3 | Edo | Done |
-| |  | T03 | Notificar a central y permitir ubicación manual | Enviar el aviso de avería y permitir indicar dónde ocurrió sin GPS. | 2 | Edo | Done |
-| US13 | Botón de Pánico | T01 | Implementar interfaz de alerta SOS | Activar tras mantener presionado 3 segundos y permitir cancelar en 2 segundos. | 3 | Edo | Done |
-|  |  | T02 | Enviar alerta con ubicación y hora | Registrar y enviar la alerta con la ubicación disponible. | 3 | Edo | Done |
-|  |  | T03 | Manejar alerta sin ubicación GPS | Enviar la identificación del conductor y la hora indicando que la ubicación no está disponible. | 2 | Edo | Done |
-| US14 | Finalización de Viaje | T01 | Crear endpoint de cierre de viaje | Cerrar el viaje y detener el envío de ubicación. | 2 | Jose | Done |
-|  |  | T02 | Validar estudiantes a bordo | Impedir el cierre mientras haya estudiantes pendientes de entrega. | 2 | Jose | Done |
-|  |  | T03 | Manejar rechazo del servidor y reintento | Informar que el viaje no se cerró y permitir volver a intentarlo. | 2 | Jose | Done |
-| US17 | Rastreo en Tiempo Real | T01 | Implementar vista de seguimiento | Crear la pantalla del padre con el mapa del viaje activo. | 3 | Salvador | Done |
-|  |  | T02 | Actualizar marcador del vehículo | Representar las posiciones recibidas durante el viaje. | 3 | Salvador | Done |
-|  |  | T03 | Mostrar distancia a la parada y estado finalizado | Calcular los kilómetros a la parada e indicar cuando el servicio concluyó. | 2 | Salvador | Done |
-| US19 | Confirmación de Llegada | T01 | Registrar entrega individual del estudiante | Guardar la confirmación del conductor en viajes de ida y de retorno. | 2 | Salvador | Done |
-| | | T02 | Enviar aviso Hijo entregado | Notificar al padre la llegada de su hijo. | 2 | Salvador | Done |
-|  |  | T03 | Generar alerta de demora | Alertar cuando el retraso supere veinte minutos respecto a la llegada estimada. | 3 | Salvador | Done |
-| US21 | Historial de Asistencia | T01 | Implementar consulta mensual de asistencia | Mostrar los días y estados de asistencia del estudiante. | 3 | Salvador | Done |
-|  |  | T02 | Registrar justificación de ausencias | Marcar una ausencia como Justificado tras el registro del padre. | 2 | Salvador | Done |
-|  |  | T03 | Manejar periodos sin datos | Informar cuando el mes consultado aún no tiene registros. | 1 | Salvador | Done |
-| US22 | Perfil del Estudiante | T01 | Implementar formulario de información médica | Guardar alergias y precauciones visibles para el conductor asignado. | 3 | Salvador | Done |
-|  |  | T02 | Actualizar fotografía del estudiante | Reflejar la nueva imagen en las vistas autorizadas. | 2 | Salvador | Done |
-|  |  | T03 | Validar campos obligatorios | Informar el campo faltante y conservar los datos previos. | 2 | Salvador | Done |
-| US30 | Suscripción al Newsletter | T01 | Implementar formulario de suscripción | Registrar el correo válido con el consentimiento del visitante. | 2 | Matias | Done |
-|  |  | T02 | Enviar mensaje de bienvenida | Enviar el correo tras confirmar la suscripción. | 2 | Matias | Done |
-|  |  | T03 | Evitar suscripciones duplicadas | Informar cuando el correo ya esté suscrito. | 1 | Matias | Done |
-| US35 | Verificación de SSL | T01 | Verificar conexión HTTPS | Comprobar que el sitio use un certificado válido. | 1 | Matias | Done |
-|  |  | T02 | Verificar envío de formularios por HTTPS | Comprobar que las solicitudes de los formularios se transmitan de forma segura. | 1 | Matias | Done |
-|  |  | T03 | Comprobar advertencia por certificado inválido | Verificar que el navegador informe del problema antes de continuar. | 1 | Matias | Done |
+**URL del Board:** [KidTrack - Sprint 2](https://trello.com/b/SUgGiFTd/kidtrack)
+
+
+| Sprint # | Sprint 2 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar Leaflet y dejar un servicio de mapas que puedan reutilizar todas las pantallas con mapa. | 2 | Nickolas | Done |
+|  |  | T02 | Dibujar ruta y paradas | Pintar el trazado de la ruta y un marcador por cada parada a partir de sus coordenadas. | 3 | Edo | Done |
+|  |  | T03 | Mover el marcador del vehículo | Cambiar la posición del vehículo en el mapa cada vez que llega una nueva ubicación (de muestra en este sprint). | 2 | Nickolas | Done |
+| US1 | Contratar Plan | T01 | Modelo de planes y suscripciones | Definir el plan y la suscripción con sus estados, y conectarlos con la Fake API. | 2 | Nickolas | Done |
+|  |  | T02 | Vista de selección de planes | Mostrar los tres planes con su precio y sus límites, y llevar al pago del plan elegido. | 3 | Nickolas | Done |
+|  |  | T03 | Pago y activación del plan | Integrar el botón de pago de PayPal y activar la suscripción cuando el pago queda confirmado. | 3 | Nickolas | Done |
+|  |  | T04 | Cancelación y pago rechazado | Mantener el plan anterior y avisar al administrador cuando cancela o cuando el pago no se concreta. | 2 | Nickolas | Done |
+|  |  | T05 | Vista de estado de la suscripción | Mostrar el plan vigente, sus fechas y lo que incluye. | 2 | Nickolas | Done |
+| US2 | Registro de Conductores | T01 | Modelo de conductor | Definir al conductor con su licencia y vehículo, y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de registro de conductor | Crear el formulario con sus datos, avisar si falta un dato obligatorio o si el conductor ya existe. | 3 | Matias | Done |
+|  |  | T03 | Verificación de licencia | Marcar al conductor como Verificado al adjuntar su licencia (la revisión es de muestra). | 2 | Matias | Done |
+| US3 | Registro de Padres | T01 | Modelo de padre | Definir al padre con sus datos de contacto y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de registro de padre | Crear el formulario, validar el formato del correo y generar la cuenta con la que el padre podrá ingresar. El aviso de invitación se muestra en pantalla (el correo todavía no se envía). | 3 | Matias | Done |
+|  |  | T03 | Vincular al padre con sus hijos | Asociar uno o más alumnos al padre para que solo vea el seguimiento que le corresponde. | 2 | Matias | Done |
+| US4 | Alta de Alumnos | T01 | Modelo de alumno | Definir al alumno con su grado, su padre y su estado de abordaje, y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de alta de alumnos | Crear el formulario y avisar qué dato obligatorio falta antes de guardar. | 2 | Matias | Done |
+|  |  | T03 | Fotografía y carné digital | Guardar la foto del alumno y mostrarla en su carné digital. | 3 | Matias | Done |
+| US5 | Creación de Rutas | T01 | Modelo de ruta, parada y vehículo | Definir la ruta con sus paradas y el vehículo, y conectarlos con la Fake API. | 3 | Edo | Done |
+|  |  | T02 | Vista de creación de rutas | Permitir marcar las paradas sobre el mapa, nombrarlas e indicar qué alumnos suben en cada una. | 4 | Edo | Done |
+|  |  | T03 | Trazado de la ruta por calles | Dibujar el camino real entre las paradas usando un servicio de rutas. | 3 | Edo | Done |
+|  |  | T04 | Ordenar las paradas | Proponer un orden más corto para las paradas intermedias cuando el administrador lo solicita. | 2 | Edo | Done |
+|  |  | T05 | Listado de rutas | Mostrar las rutas de la organización; el conductor solo ve las suyas. | 1 | Edo | Done |
+| US6 | Asignación de Conductores a Rutas | T01 | Asignar conductor y vehículo | Permitir elegir el conductor y la unidad de cada ruta y guardar el cambio. | 2 | Edo | Done |
+|  |  | T02 | Validar cruces de horario | Impedir que un conductor quede en dos rutas a la misma hora y avisar del motivo. | 2 | Edo | Done |
+|  |  | T03 | Avisar al conductor y programar el viaje | Mostrar el aviso de asignación y dejar creado el viaje del día para esa ruta. | 2 | Edo | Done |
+| US10 | Inicio de Trayecto | T01 | Modelo de viaje | Definir el viaje con sus estados (programado, en camino, completado) y conectarlo con la Fake API. | 3 | Nickolas | Done |
+|  |  | T02 | Vista del viaje activo | Mostrar al conductor sus viajes del día, el mapa de la ruta y el avance por paradas. | 3 | Nickolas | Done |
+|  |  | T03 | Iniciar el viaje | Pasar el viaje a En camino al confirmar; si no se puede guardar, avisar y no mostrarlo como iniciado. | 2 | Nickolas | Done |
+|  |  | T04 | Revisión de seguridad previa | Pedir al conductor que confirme una lista de seguridad antes de poder iniciar el viaje. | 2 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T01 | Lista de abordaje | Mostrar los alumnos de la parada y permitir marcarlos como abordado o ausente. | 2 | Nickolas | Done |
+|  |  | T02 | Lectura de código QR | Leer con la cámara el QR del carné y registrar el abordaje solo si el alumno pertenece al viaje. | 3 | Nickolas | Done |
+|  |  | T03 | Aviso al padre | Generar el aviso de abordaje para el padre del alumno. | 2 | Nickolas | Done |
+| US12 | Reporte de Incidencias | T01 | Modelo de incidencia | Definir la incidencia con su tipo, gravedad y estado, y conectarla con la Fake API. | 2 | Nickolas | Done |
+|  |  | T02 | Formulario de reporte | Permitir registrar un retraso, una avería u otro problema indicando la ruta y dónde ocurrió. | 3 | Salvador | Done |
+|  |  | T03 | Listado y cierre de incidencias | Mostrar las incidencias con filtros y permitir marcarlas como resueltas. | 2 | Salvador | Done |
+| US13 | Botón de Pánico | T01 | Botón SOS | Activar la alerta solo si el conductor mantiene presionado el botón durante tres segundos. | 3 | Nickolas | Done |
+|  |  | T02 | Registrar la alerta | Guardar la alerta con el conductor, la hora y la ubicación disponible. | 3 | Nickolas | Done |
+|  |  | T03 | Cancelar una activación accidental | Descartar la alerta si el conductor suelta el botón antes de tiempo. | 2 | Nickolas | Done |
+| US14 | Finalización de Viaje | T01 | Cerrar el viaje | Pasar el viaje a Completado y detener el movimiento del vehículo en el mapa. | 2 | Nickolas | Done |
+|  |  | T02 | Advertir paradas pendientes | Avisar al conductor cuando intenta cerrar el viaje sin haber completado todas las paradas. | 2 | Nickolas | Done |
+| US16 | Navegación Integrada | T01 | Abrir la navegación externa | Abrir Google Maps con la siguiente parada como destino. | 1 | Nickolas | Done |
+| US17 | Rastreo en Tiempo Real | T01 | Vista de seguimiento del padre | Crear la pantalla del padre con el mapa, la ruta y su parada. | 3 | Nickolas | Done |
+|  |  | T02 | Avance del vehículo | Mover el vehículo sobre la ruta (posiciones de muestra en este sprint). | 3 | Nickolas | Done |
+|  |  | T03 | Distancia y fin del servicio | Mostrar cuánto falta para la parada del padre e indicar cuando el servicio terminó. | 2 | Nickolas | Done |
+| US18 | Alerta de Proximidad | T01 | Aviso de cercanía | Mostrar el aviso con la distancia cuando el vehículo está cerca de la parada del padre. | 2 | Nickolas | Done |
+|  |  | T02 | Vibración del dispositivo | Hacer vibrar el celular cuando aparece el aviso, si el equipo lo permite. | 1 | Nickolas | Done |
+| US19 | Confirmación de Llegada | T01 | Aviso de llegada | Mostrar al padre la confirmación cuando el vehículo llega a su parada. | 2 | Nickolas | Done |
+|  |  | T02 | Modelo de notificación | Definir la notificación con su tipo y su estado de lectura, y conectarla con la Fake API. | 2 | Salvador | Done |
+|  |  | T03 | Bandeja de avisos | Mostrar al padre sus avisos, distinguir los no leídos y permitir marcarlos como leídos. | 3 | Salvador | Done |
+| US21 | Historial de Asistencia | T01 | Calendario mensual | Mostrar por mes los días en que el alumno estuvo presente, llegó tarde o faltó (registros de muestra). | 3 | Nickolas | Done |
+|  |  | T02 | Detalle del día y resumen | Mostrar el detalle del día elegido y el total del mes. | 2 | Nickolas | Done |
+|  |  | T03 | Meses sin registros | Indicar cuando el mes consultado todavía no tiene datos. | 1 | Nickolas | Done |
+| — | Tareas generales del Sprint | T01 | Estructura de la aplicación | Crear el proyecto Angular con una carpeta por bounded context y sus cuatro capas, más los elementos compartidos. | 4 | Nickolas | Done |
+|  |  | T02 | Publicar la Fake API | Dejar la Fake API disponible en internet para la aplicación publicada. | 2 | Matias | Done |
+|  |  | T03 | Publicar la aplicación web | Publicar la primera versión de la aplicación con HTTPS y comprobar que carga sus vistas. | 2 | Matias | Done |
+|  |  | T04 | Conectar la Landing Page con la aplicación | Hacer que los botones de planes e inicio de sesión de la Landing Page lleven a la aplicación web y publicar la nueva versión. | 2 | Matias | Done |
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
 
