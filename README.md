@@ -3924,9 +3924,8 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 |   |   | T03 | Adaptar navegación y tamaño de fuente | Conservar el idioma al cambiar la orientación y permitir leer el texto con fuente ampliada sin recortes. | 1 | Salvador | Done |
 
 ##### 5.2.1.4. Development Evidence for Sprint Review
-**URL desplegada:** [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/)
 
-Durante el Sprint 1, el equipo realizó commits principalmente sobre el repositorio del informe (kidtrack-report), abarcando la documentación de los capítulos I al V, incluyendo el diseño de producto, arquitectura de software, wireframes, mockups y la configuración del entorno de desarrollo.
+Durante el Sprint 1, el equipo realizó commits sobre el repositorio de la landing page con el objetivo de satisface el sprint 1 goal.
 
 | Repository | Branch | Commit Id | Commit Message | Committed By | Date |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -4086,7 +4085,7 @@ El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera vers
 | Sprint 1 Review Summary | El incremento reportado del Sprint 1 corresponde a la Landing Page pública de KidTrack. La selección informada comprende US23, US24, US25, US26, US27, US33 y TS5, con una suma de 21 Story Points. La retroalimentación del entregable identificó la necesidad de alinear los identificadores del Sprint Backlog con el Product Backlog, diferenciar capacidad estimada de puntos seleccionados y aportar evidencia de los recorridos definidos en el Sprint Goal. Los 21 puntos seleccionados no se consideran automáticamente velocidad observada sin verificar la aceptación de las historias. |
 | Sprint 1 Retrospective Summary | A partir de la revisión del entregable, se proponen como mejoras para el siguiente sprint mantener una única correspondencia de IDs entre historias y tareas, identificar las dependencias de backend antes de comprometer funcionalidades y registrar resultados verificables de las pruebas. Asimismo, se concluyó que el uso de ramas feature permitió reducir conflictos de integración y mejorar el trabajo colaborativo. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | Nuestro enfoque es permitir que administradores, conductores y apoderados evalúen los flujos iniciales de organización y seguimiento del transporte escolar en el frontend de KidTrack, además de facilitar que los visitantes resuelvan dudas sobre el servicio en la Landing Page. Consideramos que esto permitirá detectar dificultades de navegación y comprensión antes de integrar el backend. Lo confirmaremos al finalizar el sprint mediante la ejecución documentada de tres recorridos con datos de prueba: un administrador completa el formulario de un estudiante y consulta una ruta con sus paradas; un conductor accede a un viaje asignado y visualiza su cambio de estado mediante una simulación de inicio; y un apoderado consulta en el mapa una ubicación de prueba del vehículo. Cada recorrido deberá alcanzar el resultado esperado sin enlaces rotos ni errores que impidan completarlo. Asimismo, se comprobará el acceso HTTPS a la Landing Page y se evaluará la interfaz de suscripción al newsletter, diferenciando la validación del formulario de la suscripción efectiva, que requerirá un servicio operativo. |
+| Sprint 2 Goal | **Nuestro enfoque es** tener lista una primera versión de la aplicación web de KidTrack donde quienes la usan puedan crear su cuenta, entrar con ella y acceder solo a lo que les corresponde. Podrán contratar su plan, registrar su organización y crear rutas con paradas en el mapa; el conductor podrá iniciar su viaje y marcar quiénes suben al vehículo; y el padre podrá ver por dónde va el vehículo y revisar sus avisos. **Consideramos que** esto nos permitirá comprobar si las pantallas se entienden y si los pasos tienen sentido antes de conectar el backend, y saber con claridad qué datos le vamos a pedir en el siguiente sprint. **Lo confirmaremos cuando** al finalizar el sprint las historias de usuario cumplan sus criterios de aceptación probados con datos de prueba. Mientras no exista el backend habrán funciones y acciones como el pago o el inicio de sesión que serán simuladas.|
 | Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
 | Sum of Story Points | 86 Story Points, correspondientes a TS2 (5), TS6 (3), US1 (5), US2 (3), US3 (3), US4 (5), US5 (5), US6 (3), US10 (3), US11 (5), US12 (5), US13 (5), US14 (2), US17 (5), US19 (3), US21 (5), US22 (5), US30 (3) y US35 (5). |
 
@@ -4171,9 +4170,100 @@ El objetivo del Sprint 2 fue el desarrollo y despliegue del Front End
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
 
-| Repository       | Branch         | Commit Id | Commit Message                                                          | Committed By  | Date       |
-| ---------------- | -------------- | --------- | ----------------------------------------------------------------------- | ------------- | ---------- |
-| - | -        | -   | -                                                        | -  | - |
+Durante el Sprint 2, el equipo realizó commits sobre el repositorio del FrontEnd con el objetivo de satisface el sprint 2 goal.
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| kidtrack-webapp | main | 9adf890 | Initial commit | Bynickram02 | 2026-09-03 |
+| kidtrack-webapp | main | 42b772b | Update README.md | Bynickram02 | 2026-09-03 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 3ef6afe | feat(subscription): add subscription store | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | f3f6a4b | feat(subscription): add plan entity | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | f650fef | feat(subscription): add subscription entity | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | f896afd | feat(subscription): add infrastructure layer with api, resources and assemblers | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 1cc777d | feat(subscription): add subscription routes | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | develop | e2cffb4 | Merge pull request #1 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | d4c9518 | feat(subscription): add checkout styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | d2aae37 | feat(subscription): add checkout view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 12e9b44 | feat(subscription): add checkout component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | b09827d | feat(subscription): add plan metadata | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | d1003b2 | feat(subscription): add plan selection styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 594414e | feat(subscription): add plan selection view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 8c9998c | feat(subscription): add plan selection component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | aa74a11 | feat(subscription): add subscription status component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | c1b65fd | feat(subscription): add subscription status styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 9436c10 | feat(subscription): add subscription status view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 04e7a99 | refactor: move angular project to repository root | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/subscription-and-plan-management | 779b70b | refactor: move angular project files to repository root | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | develop | a354dd0 | Merge pull request #2 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | a2b66bf | feat(trip): add trip store | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 08eced8 | feat(trip): add incident entity | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | c524dc9 | feat(trip): add trip entity | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 8a98763 | feat(trip): add trip assembler | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 57ce8d2 | feat(trip): add trip resources | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | f0fddef | feat(trip): add trip api service | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 9bd809c | feat(trip): add boarding scanner component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | cd476b3 | feat(trip): add active trip styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | b9ab4ad | feat(trip): add active trip view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 5fcb549 | feat(trip): add active trip component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 11d17f6 | feat(trip): add attendance history styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 34e541f | feat(trip): add attendance history view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | ef8cca8 | feat(trip): add attendance history component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 5610ca4 | feat(trip): add parent tracking styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | dde0598 | feat(trip): add parent tracking view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 611c58d | feat(trip): add parent tracking component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 61cb614 | feat(trip): add trip list component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | ea71724 | feat(trip): add trip monitoring styles | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 2f32a34 | feat(trip): add trip monitoring view | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | a489ab5 | feat(trip): add trip monitoring component logic | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | be959ea | feat(trip): add trip routes | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/trip-execution-and-monitoring | 0ed9d70 | feat: add app root setup with config and routes | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | develop | f1d3121 | Merge pull request #3 from feature/trip-execution-and-monitoring | Bynickram02 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 0536bef | feat(notifications): add notification entity | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 5849046 | feat(notifications): add notification assembler | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 7455769 | feat(notifications): add notification resource | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 995704b | feat(notifications): add notification api | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 369bb1b | feat(notifications): add notification store | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | 27daf2e | feat(notifications): add notification routes | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/notifications-and-communication | d18592c | feat(notifications): add alert-center component | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | develop | 90aed4f | Merge pull request #4 from feature/notifications-and-communication | SALVA1704 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 1a059f7 | feat(IAM): add user entity | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | d175f13 | feat(IAM): add organization entity | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 0b391ab | feat(iam): add iam.interceptor | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 0385849 | feat(iam): add DTO interfaces for authentication and user resources | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 18cd9bd | feat(iam): implement API service for authentication, users, and organizations | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 62c2cc0 | feat(iam): add entity-resource assembler for organizations | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | e91a19d | feat(iam): add entity-resource assembler for users | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 755a080 | feat(iam): add navigation routes for authentication, profile, and organization | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | ea75b0e | feat(iam): add admin registration form component | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 0d4888c | feat(iam): add organization creation and edition form component | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 775edf1 | feat(iam): add organization profile view component | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 2692789 | style(iam): add CSS styles for admin profile view | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | e678d40 | feat(iam): add HTML template for admin profile view | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 2651c49 | feat(iam): add component logic for admin profile | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | b5a673e | feat(iam): add organization management view with editing and suspension | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 78fb7c9 | style(iam): add CSS styles for sign-in view | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 64a4650 | feat(iam): add HTML template for sign-in view | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 152cd72 | feat(iam): implement sign-in view with role validation and redirection | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 5389303 | style(iam): add CSS styles for sign-up flow | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 9ef4a51 | feat(iam): implement multi-step sign-up view with plan support | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | fb24575 | feat(iam): implement multi-step sign-up view with plan integration | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | bd09501 | feat(iam): add auth and guest guards for route protection | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/identity-and-access-management | 5a443e6 | feat(iam): implement IamStore for session and organization state management | Argox16 | 2026-10-05 |
+| kidtrack-webapp | develop | 3a80653 | Merge pull request #5 from feature/identity-and-access-management | Argox16 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 640fca1 | feat(fleet): add Route entity with requirement validation and cloning | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 70323b5 | feat(fleet): add Vehicle entity for vehicle management | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 658bcca | feat(fleet): add Waypoint interface for route stop definition | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 06abccb | feat(fleet): add DTO interfaces for route, vehicle, and waypoint resources | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | b85b902 | feat(fleet): implement FleetApi for route and vehicle CRUD operations | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 0265db8 | feat(fleet): add RouteAssembler for mapping between route resources and entities | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 5c5f5a5 | feat(fleet): add VehicleAssembler for mapping between vehicle resources and entities | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | e320aaa | feat(fleet): add routing file for the fleet bounded context | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | d18132b | feat(fleet): create RouteList component for paginated and filtered route display | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 692b21e | style(fleet): add CSS styles for route management panel and map view | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 8e36bc7 | feat(fleet): add HTML template for route management view and dialog | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 575102b | feat(fleet): implement RouteManagement component with Leaflet maps, TSP optimization, and trip auto-creation | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | feature/fleet-and-route-planning | 0543156 | feat(fleet): add fleet store | Asalreon520 | 2026-10-05 |
+| kidtrack-webapp | develop | 5e6d038 | Merge pull request #6 from feature/fleet-and-route-planning | Asalreon520 | 2026-10-05 |
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
