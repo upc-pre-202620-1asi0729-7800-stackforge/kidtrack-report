@@ -4093,15 +4093,16 @@ Para esta entrega todavía no se usa el backend en Java, por lo que se usa una F
 | Sum of Story Points | 79 Story Points de 17 historias de usuario: TS2 (5), US1 (5), US2 (3), US3 (3), US4 (5), US5 (8), US6 (3), US10 (3), US11 (5), US12 (5), US13 (8), US14 (2), US16 (3), US17 (8), US18 (5), US19 (3) y US21 (5).  |
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators
-De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
 
-| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |FrontEnd (L/C) |
-| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |L                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |C                   |
-| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |C                   |
-| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |C                   |
+Para este sprint se tomaron como aspectos los seis bounded contexts de la aplicación web, el despliegue y la documentación del informe. 
+
+| Team Member (Last Name, First Name) | GitHub Username | Identity & Access Management (L/C) | Subscription & Plan Management (L/C) | Stakeholder & Asset Management (L/C) | Fleet & Route Planning (L/C) | Trip Execution & Monitoring (L/C) | Notifications & Communication (L/C)  | Deployment (L/C) | Documentation (L/C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | L | C | L | 
+| De la Cruz De los Santos, Mathias Marcelo | Dela050406 | C | C | L | C | L | C | L | C | 
+| Ortega Quintana, Jose Zacarias | Argox16 | L | C | C | C | C | C | C | C | 
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | L | C | C | L | C | L | C | 
+| Su Caletti, Eddo | Asalreon520 | C | C | C | L | C | C | C | C | 
 
 ##### 5.2.2.3. Sprint Backlog 2
 
