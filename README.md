@@ -4643,6 +4643,45 @@ Ejemplo de respuesta de GET {base}/notifications?organizationId=... (primer elem
   ![Inicio de sesión en la Fake API](assets/images/Chapter-5/Sprint2/fake-api-sign-in.png)
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+En este sprint se desplegaron tres cosas: la primera versión del FrontEnd de KidTrack, la Fake API que usa la aplicación y una nueva versión de la Landing Page. El backend en Java no se despliega todavía porque está fuera del alcance de este sprint.
+
+**Fake API**
+
+Se desplegó en Azure App Service.
+
+-  Se creó en Azure un Web App llamado kidtrack-mockapi con Node.js 24, en la región Central US.
+-  Se conectó con el repositorio KidTrack-API-7800. 
+-  Se comprobó desde el navegador que la Fake API responde por HTTPS.
+
+**URL:** https://kidtrack-mockapi-abh4gyegc5byhbb7.centralus-01.azurewebsites.net/api/v1
+
+![Configuración de la Fake API](assets/images/Chapter-5/Sprint2/deploy-fake-api-config.png)
+
+![Fake API respondiendo](assets/images/Chapter-5/Sprint2/deploy-fake-api-live.png)
+
+**Front End**
+
+Se desplegó en Azure Static Web Apps.
+
+- En el environment de Angular se puso la URL de la Fake API publicada (commit add6ba8).
+- Se creó en Azure un Static Web App y se conectó con el repositorio kidtrack-webapp. 
+- Se integró develop a main  y se publicó la aplicación.
+
+**URL:** https://salmon-bush-078a34410.3.azurestaticapps.net
+
+![Configuración del despliegue de la aplicación](assets/images/Chapter-5/Sprint2/deploy-webapp-config.png)
+
+![Aplicación web publicada](assets/images/Chapter-5/Sprint2/deploy-webapp-live.png)
+
+**Landing Page**
+
+Sigue en GitHub Pages, igual que en el Sprint 1.  En esta versión, al elegir un plan se muestra una ventana de pago simulado y luego la Landing lleva al FrotnEnd.
+
+**URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/deploy-landing.png)
+
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
 ## FrontEnd:
