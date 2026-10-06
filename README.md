@@ -4071,23 +4071,26 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
 ### 5.2.2. Sprint 2
+
 ##### 5.2.2.1. Sprint Planning 2
-El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera versión navegable del frontend para administradores, conductores y apoderados, junto con mejoras informativas de la Landing Page. Mientras no se disponga de los servicios backend, los flujos de la aplicación utilizarán datos de prueba identificados como tales.
-.
+
+En el Sprint 2 el equipo desarrolló la primera versión del FrontEnd de la aplicación web de KidTrack. La aplicación está hecha en Angular y se divide en seis bounded contexts que fueron definidos en el capitulo.
+Para esta entrega todavía no se usa el backend en Java, por lo que se usa una Fake API con json-server,por lo que hay partes que por ahora son simuladas como la posición del vehículo en el mapa.
+
 | Sprint # | Sprint 2 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
 | Date | 2026-09-27 |
-| Time |  07:00 PM |
-| Location |  Microsoft Teams, Discord |
+| Time | 07:00 PM |
+| Location | Reunión virtual por Microsoft Teams, con seguimiento diario por Discord |
 | Prepared By | Ortega Quintana, Jose Zacarias |
-| Attendees (to planning meeting) | Todo el equipo |
-| Sprint 1 Review Summary | El incremento reportado del Sprint 1 corresponde a la Landing Page pública de KidTrack. La selección informada comprende US23, US24, US25, US26, US27, US33 y TS5, con una suma de 21 Story Points. La retroalimentación del entregable identificó la necesidad de alinear los identificadores del Sprint Backlog con el Product Backlog, diferenciar capacidad estimada de puntos seleccionados y aportar evidencia de los recorridos definidos en el Sprint Goal. Los 21 puntos seleccionados no se consideran automáticamente velocidad observada sin verificar la aceptación de las historias. |
-| Sprint 1 Retrospective Summary | A partir de la revisión del entregable, se proponen como mejoras para el siguiente sprint mantener una única correspondencia de IDs entre historias y tareas, identificar las dependencias de backend antes de comprometer funcionalidades y registrar resultados verificables de las pruebas. Asimismo, se concluyó que el uso de ramas feature permitió reducir conflictos de integración y mejorar el trabajo colaborativo. |
+| Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
+| Sprint 1 Review Summary | En el Sprint 1 se publicó la Landing Page de KidTrack en GitHub Pages, en español e inglés y con diseño responsive. Se terminaron las siete historias elegidas (US23, US24, US25, US26, US27, US33 y TS5), que suman 21 Story Points. En la revisión del AV1 el docente reconoció que la Landing está publicada y que el Sprint Backlog tiene tareas, responsables, horas y estados, pero observó cuatro cosas del sprint: la velocity y la suma de Story Points no coincidían, el Sprint Goal no tenía evidencia de validación , los commits mostrados eran del repositorio del informe y no del repositorio de la Landing, y se decía que se trabajó DDD sin que hubiera tareas de eso en el Sprint 1 Backlog. También pidió aclarar qué botones de la Landing son solo informativos, porque "Adquirir plan" e "Iniciar sesión" todavía no llevaban a ningún lado. |
+| Sprint 1 Retrospective Summary | **Lo que salió bien:** cada sección de la Landing se trabajó en su propia rama y se unió con Pull Request, así casi no hubo conflictos, y dividir la página por secciones ayudó a avanzar al mismo tiempo. **Lo que hay que mejorar:** Que haya coherencia entre el sprint backlog y el product backlog, mejorar la redacción del sprint goal y evidenciar la validación del sprint goal de manera correcta. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | **Nuestro enfoque es** tener lista una primera versión de la aplicación web de KidTrack donde quienes la usan puedan crear su cuenta, entrar con ella y acceder solo a lo que les corresponde. Podrán contratar su plan, registrar su organización y crear rutas con paradas en el mapa; el conductor podrá iniciar su viaje y marcar quiénes suben al vehículo; y el padre podrá ver por dónde va el vehículo y revisar sus avisos. **Consideramos que** esto nos permitirá comprobar si las pantallas se entienden y si los pasos tienen sentido antes de conectar el backend, y saber con claridad qué datos le vamos a pedir en el siguiente sprint. **Lo confirmaremos cuando** al finalizar el sprint las historias de usuario cumplan sus criterios de aceptación probados con datos de prueba. Mientras no exista el backend habrán funciones y acciones que serán simuladas.|
-| Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
-| Sum of Story Points | 86 Story Points, correspondientes a TS2 (5), TS6 (3), US1 (5), US2 (3), US3 (3), US4 (5), US5 (5), US6 (3), US10 (3), US11 (5), US12 (5), US13 (5), US14 (2), US17 (5), US19 (3), US21 (5), US22 (5), US30 (3) y US35 (5). |
+| Sprint 2 Goal | **Nuestro enfoque es** tener la primera versión del FrontEnd de la aplicación web de KidTrack, donde se le ofrezca al conductor una forma rápida de llevar el control de su viaje, y al padre una forma de seguir el traslado de su hijo. **Creemos que esto les da** a los transportistas una forma ordenada y práctica de llevar su servicio de una manera más eficiente, y a los padres la tranquilidad de saber dónde está su hijo sin llamar ni escribir al conductor. **Lo confirmaremos cuando**, en la aplicación se puedan registrar conductores, padres, alumnos y rutas. Cuando el conductor pueda marcar e iniciar el viaje, pueda marcar qué alumnos suben, reportar incidencias o emergencias y pueda finalizar el viaje. Cuando el padre pueda ver el vehículo en el mapa, recibir avisos, revisar la asistencia de su hijo y ser notificado de que su hijo haya llegado al destino. |
+| Sprint 2 Velocity | 79 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint y coincide con lo comprometido.|
+| Sum of Story Points | 79 Story Points de 17 historias de usuario: TS2 (5), US1 (5), US2 (3), US3 (3), US4 (5), US5 (8), US6 (3), US10 (3), US11 (5), US12 (5), US13 (8), US14 (2), US16 (3), US17 (8), US18 (5), US19 (3) y US21 (5).  |
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators
 De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
