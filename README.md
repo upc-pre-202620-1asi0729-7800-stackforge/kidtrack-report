@@ -4071,218 +4071,640 @@ https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/#feat
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
 ### 5.2.2. Sprint 2
+
 ##### 5.2.2.1. Sprint Planning 2
-El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera versión navegable del frontend para administradores, conductores y apoderados, junto con mejoras informativas de la Landing Page. Mientras no se disponga de los servicios backend, los flujos de la aplicación utilizarán datos de prueba identificados como tales.
-.
+
+En el Sprint 2 el equipo desarrolló la primera versión del FrontEnd de la aplicación web de KidTrack. La aplicación está hecha en Angular y se divide en seis bounded contexts que fueron definidos en el capitulo.
+Para esta entrega todavía no se usa el backend en Java, por lo que se usa una Fake API con json-server,por lo que hay partes que por ahora son simuladas como la posición del vehículo en el mapa.
+
 | Sprint # | Sprint 2 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
 | Date | 2026-09-27 |
-| Time |  07:00 PM |
-| Location |  Microsoft Teams, Discord |
+| Time | 07:00 PM |
+| Location | Reunión virtual por Microsoft Teams, con seguimiento diario por Discord |
 | Prepared By | Ortega Quintana, Jose Zacarias |
-| Attendees (to planning meeting) | Todo el equipo |
-| Sprint 1 Review Summary | El incremento reportado del Sprint 1 corresponde a la Landing Page pública de KidTrack. La selección informada comprende US23, US24, US25, US26, US27, US33 y TS5, con una suma de 21 Story Points. La retroalimentación del entregable identificó la necesidad de alinear los identificadores del Sprint Backlog con el Product Backlog, diferenciar capacidad estimada de puntos seleccionados y aportar evidencia de los recorridos definidos en el Sprint Goal. Los 21 puntos seleccionados no se consideran automáticamente velocidad observada sin verificar la aceptación de las historias. |
-| Sprint 1 Retrospective Summary | A partir de la revisión del entregable, se proponen como mejoras para el siguiente sprint mantener una única correspondencia de IDs entre historias y tareas, identificar las dependencias de backend antes de comprometer funcionalidades y registrar resultados verificables de las pruebas. Asimismo, se concluyó que el uso de ramas feature permitió reducir conflictos de integración y mejorar el trabajo colaborativo. |
+| Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
+| Sprint 1 Review Summary | En el Sprint 1 se publicó la Landing Page de KidTrack en GitHub Pages, en español e inglés y con diseño responsive. Se terminaron las siete historias elegidas (US23, US24, US25, US26, US27, US33 y TS5), que suman 21 Story Points. En la revisión del AV1 el docente reconoció que la Landing está publicada y que el Sprint Backlog tiene tareas, responsables, horas y estados, pero observó cuatro cosas del sprint: la velocity y la suma de Story Points no coincidían, el Sprint Goal no tenía evidencia de validación , los commits mostrados eran del repositorio del informe y no del repositorio de la Landing, y se decía que se trabajó DDD sin que hubiera tareas de eso en el Sprint 1 Backlog. También pidió aclarar qué botones de la Landing son solo informativos, porque "Adquirir plan" e "Iniciar sesión" todavía no llevaban a ningún lado. |
+| Sprint 1 Retrospective Summary | **Lo que salió bien:** cada sección de la Landing se trabajó en su propia rama y se unió con Pull Request, así casi no hubo conflictos, y dividir la página por secciones ayudó a avanzar al mismo tiempo. **Lo que hay que mejorar:** Que haya coherencia entre el sprint backlog y el product backlog, mejorar la redacción del sprint goal y evidenciar la validación del sprint goal de manera correcta. |
 | **Sprint Goal & User Stories** | |
-| Sprint 2 Goal | **Nuestro enfoque es** tener lista una primera versión de la aplicación web de KidTrack donde quienes la usan puedan crear su cuenta, entrar con ella y acceder solo a lo que les corresponde. Podrán contratar su plan, registrar su organización y crear rutas con paradas en el mapa; el conductor podrá iniciar su viaje y marcar quiénes suben al vehículo; y el padre podrá ver por dónde va el vehículo y revisar sus avisos. **Consideramos que** esto nos permitirá comprobar si las pantallas se entienden y si los pasos tienen sentido antes de conectar el backend, y saber con claridad qué datos le vamos a pedir en el siguiente sprint. **Lo confirmaremos cuando** al finalizar el sprint las historias de usuario cumplan sus criterios de aceptación probados con datos de prueba. Mientras no exista el backend habrán funciones y acciones que serán simuladas.|
-| Sprint 2 Velocity | La velocidad observada al cierre del Sprint 2 fue de 86 Story Points, correspondientes a las historias completadas con todos sus criterios de aceptación. Este valor representa el resultado del sprint, no una estimación histórica disponible al momento de planificarlo. |
-| Sum of Story Points | 86 Story Points, correspondientes a TS2 (5), TS6 (3), US1 (5), US2 (3), US3 (3), US4 (5), US5 (5), US6 (3), US10 (3), US11 (5), US12 (5), US13 (5), US14 (2), US17 (5), US19 (3), US21 (5), US22 (5), US30 (3) y US35 (5). |
+| Sprint 2 Goal | **Nuestro enfoque es** tener la primera versión del FrontEnd de la aplicación web de KidTrack, donde se le ofrezca al conductor una forma rápida de llevar el control de su viaje, y al padre una forma de seguir el traslado de su hijo. **Creemos que esto les da** a los transportistas una forma ordenada y práctica de llevar su servicio de una manera más eficiente, y a los padres la tranquilidad de saber dónde está su hijo sin llamar ni escribir al conductor. **Lo confirmaremos cuando**, en la aplicación se puedan registrar conductores, padres, alumnos y rutas. Cuando el conductor pueda marcar e iniciar el viaje, pueda marcar qué alumnos suben, reportar incidencias o emergencias y pueda finalizar el viaje. Cuando el padre pueda ver el vehículo en el mapa, recibir avisos, revisar la asistencia de su hijo y ser notificado de que su hijo haya llegado al destino. |
+| Sprint 2 Velocity | 79 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint y coincide con lo comprometido.|
+| Sum of Story Points | 79 Story Points de 17 historias de usuario: TS2 (5), US1 (5), US2 (3), US3 (3), US4 (5), US5 (8), US6 (3), US10 (3), US11 (5), US12 (5), US13 (8), US14 (2), US16 (3), US17 (8), US18 (5), US19 (3) y US21 (5).  |
 
 ##### 5.2.2.2. Aspect Leaders and Collaborators
-De acuerdo a la especialización de cada integrante en la esquematización del proyecto, se presenta la Leadership-and-Collaboration Matrix (LACX):<table>
 
-| Team Member (Last Name, First Name) | GitHub Username | UX/UI Design (L/C) | Landing Page (L/C) | Documentation (L/C) |FrontEnd (L/C) |
-| ----------------------------------- | --------------- | ------------------ | ------------------ | ------------------- |------------------- |
-| De La Cruz, Mathias Marcelo         | Dela050406      | C                  | L                  | C                   |L                   |
-| Ortega Quintana, José Zacarías      | AgoxX61         | L                  | C                  | C                   |C                   |
-| Su Caletti, Eddo                    | Asalreon520     | C                  | L                  | C                   |C                   |
-| Ramirez Ruiz, Nickolas              | Bynickram02     | C                  | C                  | C                   |C                   |
-| Chamorro Acero,Salvador Edward      | SALVA1704       | C                  | C                  | L                   |C                   |
+Para este sprint se tomaron como aspectos los seis bounded contexts de la aplicación web, el despliegue y la documentación del informe. 
+
+| Team Member (Last Name, First Name) | GitHub Username | Identity & Access Management (L/C) | Subscription & Plan Management (L/C) | Stakeholder & Asset Management (L/C) | Fleet & Route Planning (L/C) | Trip Execution & Monitoring (L/C) | Notifications & Communication (L/C)  | Deployment (L/C) | Documentation (L/C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
+| Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | L | C | L | 
+| De la Cruz De los Santos, Mathias Marcelo | Dela050406 | C | C | L | C | L | C | L | C | 
+| Ortega Quintana, Jose Zacarias | Argox16 | L | C | C | C | C | C | C | C | 
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | L | C | C | L | C | L | C | 
+| Su Caletti, Eddo | Asalreon520 | C | C | C | L | C | C | C | C | 
 
 ##### 5.2.2.3. Sprint Backlog 2
 
-El objetivo del Sprint 2 fue el desarrollo y despliegue del Front End
+El objetivo del Sprint 2 fue validar el sprint 2 goal mediante la publicación del FrontEnd de KidTrack.
+
+Se completaron los 79 Story Points comprometidos en el sprint planning, por lo que las 17 historias de usuario tienen su funcionalidad en la aplicación y todas sus tareas quedaron en Done. Lo que depende del backend en JAVA, como la ubicación real del vehículo o avisos automáticos se conectará en el Sprint 3.
 
 ![Sprint Backlog 2](assets/images/Chapter-5/Sprint2/Sprint-Backlog-2.png)
 
-| Sprint #       | Sprint 2                |                      |                                              |                                                                                        |                        |                 |            |
-| :------------- | :---------------------- | :------------------- | :------------------------------------------- | :------------------------------------------------------------------------------------- | :--------------------- | :-------------- | :--------- |
-| **User Story** |                         | **Work-Item / Task** |                                              |                                                                                        |                        |                 |            |
-| **Story Id**   | **Story Title**         | **Task Id**          | **Task Title**                               | **Task Description**                                                                   | **Estimation (Hours)** | **Assigned To** | **Status** |
-| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar y configurar Leaflet con su capa base de mapa en las vistas de seguimiento. | 2 | Matias | Done |
-|  |  | T02 | Representar rutas y paradas en el mapa | Dibujar el recorrido y los marcadores de las paradas a partir de coordenadas válidas. | 3 | Matias | Done |
-|  |  | T03 | Actualizar marcador y manejar falla del mapa base | Reflejar nuevas ubicaciones del vehículo e informar cuando el proveedor de teselas no responda. | 2 | Matias | Done |
-| TS6 | Implementación HTTPS/SSL | T01 | Configurar certificado SSL | Instalar un certificado válido en el sitio publicado. | 2 | Matias | Done |
-|  |  | T02 | Configurar redirección de HTTP a HTTPS | Redirigir automáticamente las visitas HTTP a su dirección HTTPS. | 1 | Matias | Done |
-|  |  | T03 | Forzar HTTPS en formularios | Asegurar que los formularios con datos sensibles solo transmitan por HTTPS. | 1 | Matias | Done |
-| US1 | Contratar Plan | T01 | Implementar vista de selección de planes | Permitir al administrador elegir el plan de su organización. | 2 | Nickolas | Done |
-|  |  | T02 | Integrar confirmación de pago | Confirmar el pago y aplicar los límites del plan contratado. | 3 | Nickolas | Done |
-|  |  | T03 | Manejar cancelación y pago rechazado | Mantener el plan actual cuando se cancele la contratación o se rechace el pago. | 3 | Nickolas | Done |
-| US2 | Registro de Conductores | T01 | Crear modelo y API de conductores | Implementar la entidad Conductor con sus operaciones de registro y consulta. | 3 | Nickolas | Done |
-|  |  | T02 | Implementar formulario de registro de conductor | Crear la vista con los datos del conductor y validación de campos obligatorios. | 3 | Nickolas | Done |
-|  |  | T03 | Verificación de licencia | Registrar el estado Verificado al aprobar la licencia. | 2 | Nickolas | Done |
-| US3 | Registro de Padres | T01 | Crear modelo y API de padres | Implementar la entidad Padre con registro y envío de invitación de acceso. | 3 | Nickolas | Done |
-|  | Registro de Padres | T02 | Implementar formulario de registro de padres | Crear la vista de registro con validación del formato de correo. | 2 | Nickolas | Done |
-|  | Registro de Padres | T03 | Vincular padre con estudiante | Asociar al padre con su hijo para habilitar el seguimiento autorizado. | 2 | Nickolas | Done |
-| US4 | Alta de Alumnos | T01 | Crear modelo y API de estudiantes | Implementar la entidad Estudiante con sus operaciones de alta y consulta. | 3 | Nickolas | Done |
-|  |  | T02 | Implementar formulario de alta de alumnos | Crear la vista de registro e identificar los datos obligatorios faltantes. | 2 | Nickolas | Done |
-|  |  | T03 | Cargar fotografía y generar carné digital | Guardar una fotografía válida y mostrarla en el carné digital del estudiante. | 3 | Nickolas | Done |
-| US5 | Creación de Rutas | T01 | Crear modelo y API de rutas y paradas | Implementar las entidades Ruta y Parada con sus operaciones de creación y consulta. | 3 | Jose | Done |
-|  |  | T02 | Implementar vista de creación de rutas | Crear la interfaz para definir origen, destino y paradas sobre el mapa. | 3 | Jose | Done |
-|  |  | T03 | Calcular recorrido y duración estimada | Obtener el trazado, el tiempo estimado y un orden sugerido de paradas; informar si no hay trayecto. | 3 | Jose | Done |
-| US6 | Asignación de Conductores a Rutas | T01 | Crear API de asignación conductor-ruta | Registrar la asignación de un conductor disponible a una ruta. | 2 | Jose | Done |
-|  |  | T02 | Validar conflictos de horario | Impedir asignaciones incompatibles en el mismo horario e informar la falta de disponibilidad. | 2 | Jose | Done |
-|  |  | T03 | Implementar vista de asignación y aviso | Crear la interfaz de asignación y notificar al conductor asignado. | 2 | Jose | Done |
-| US10 | Inicio de Trayecto | T01 | Crear endpoint de inicio de viaje | Cambiar el viaje asignado al estado En camino. | 2 | Edo | Done |
-|  |  | T02 | Implementar botón de inicio de viaje | Crear la interfaz del conductor para confirmar el inicio. | 2 | Edo | Done |
-|  |  | T03 | Enviar coordenadas y manejar falta de conexión | Iniciar el envío de ubicación e informar cuando no se pueda confirmar el inicio. | 3 | Edo | Done |
-| US11 | Marcación de Abordaje | T01 | Registrar abordaje de estudiantes | Guardar la asistencia del viaje y generar el aviso al padre. | 2 | Edo | Done |
-|  |  | T02 | Implementar escaneo de código QR | Leer el QR del estudiante asignado sin duplicar asistencias. | 3 | Edo | Done |
-|  |  | T03 | Validar estudiante por parada | Rechazar abordajes de estudiantes que no corresponden a la parada. | 2 | Edo | Done |
-| US12 | Reporte de Incidencias | T01 | Implementar formulario de incidencias | Crear la vista para que el conductor registre retrasos y averías. | 2 | Edo | Done |
-|  |  | T02 | Actualizar hora estimada de llegada | Recalcular la llegada que consultan los padres tras un retraso. | 3 | Edo | Done |
-| |  | T03 | Notificar a central y permitir ubicación manual | Enviar el aviso de avería y permitir indicar dónde ocurrió sin GPS. | 2 | Edo | Done |
-| US13 | Botón de Pánico | T01 | Implementar interfaz de alerta SOS | Activar tras mantener presionado 3 segundos y permitir cancelar en 2 segundos. | 3 | Edo | Done |
-|  |  | T02 | Enviar alerta con ubicación y hora | Registrar y enviar la alerta con la ubicación disponible. | 3 | Edo | Done |
-|  |  | T03 | Manejar alerta sin ubicación GPS | Enviar la identificación del conductor y la hora indicando que la ubicación no está disponible. | 2 | Edo | Done |
-| US14 | Finalización de Viaje | T01 | Crear endpoint de cierre de viaje | Cerrar el viaje y detener el envío de ubicación. | 2 | Jose | Done |
-|  |  | T02 | Validar estudiantes a bordo | Impedir el cierre mientras haya estudiantes pendientes de entrega. | 2 | Jose | Done |
-|  |  | T03 | Manejar rechazo del servidor y reintento | Informar que el viaje no se cerró y permitir volver a intentarlo. | 2 | Jose | Done |
-| US17 | Rastreo en Tiempo Real | T01 | Implementar vista de seguimiento | Crear la pantalla del padre con el mapa del viaje activo. | 3 | Salvador | Done |
-|  |  | T02 | Actualizar marcador del vehículo | Representar las posiciones recibidas durante el viaje. | 3 | Salvador | Done |
-|  |  | T03 | Mostrar distancia a la parada y estado finalizado | Calcular los kilómetros a la parada e indicar cuando el servicio concluyó. | 2 | Salvador | Done |
-| US19 | Confirmación de Llegada | T01 | Registrar entrega individual del estudiante | Guardar la confirmación del conductor en viajes de ida y de retorno. | 2 | Salvador | Done |
-| | | T02 | Enviar aviso Hijo entregado | Notificar al padre la llegada de su hijo. | 2 | Salvador | Done |
-|  |  | T03 | Generar alerta de demora | Alertar cuando el retraso supere veinte minutos respecto a la llegada estimada. | 3 | Salvador | Done |
-| US21 | Historial de Asistencia | T01 | Implementar consulta mensual de asistencia | Mostrar los días y estados de asistencia del estudiante. | 3 | Salvador | Done |
-|  |  | T02 | Registrar justificación de ausencias | Marcar una ausencia como Justificado tras el registro del padre. | 2 | Salvador | Done |
-|  |  | T03 | Manejar periodos sin datos | Informar cuando el mes consultado aún no tiene registros. | 1 | Salvador | Done |
-| US22 | Perfil del Estudiante | T01 | Implementar formulario de información médica | Guardar alergias y precauciones visibles para el conductor asignado. | 3 | Salvador | Done |
-|  |  | T02 | Actualizar fotografía del estudiante | Reflejar la nueva imagen en las vistas autorizadas. | 2 | Salvador | Done |
-|  |  | T03 | Validar campos obligatorios | Informar el campo faltante y conservar los datos previos. | 2 | Salvador | Done |
-| US30 | Suscripción al Newsletter | T01 | Implementar formulario de suscripción | Registrar el correo válido con el consentimiento del visitante. | 2 | Matias | Done |
-|  |  | T02 | Enviar mensaje de bienvenida | Enviar el correo tras confirmar la suscripción. | 2 | Matias | Done |
-|  |  | T03 | Evitar suscripciones duplicadas | Informar cuando el correo ya esté suscrito. | 1 | Matias | Done |
-| US35 | Verificación de SSL | T01 | Verificar conexión HTTPS | Comprobar que el sitio use un certificado válido. | 1 | Matias | Done |
-|  |  | T02 | Verificar envío de formularios por HTTPS | Comprobar que las solicitudes de los formularios se transmitan de forma segura. | 1 | Matias | Done |
-|  |  | T03 | Comprobar advertencia por certificado inválido | Verificar que el navegador informe del problema antes de continuar. | 1 | Matias | Done |
+**URL del Board:** [KidTrack - Sprint 2](https://trello.com/b/SUgGiFTd/kidtrack)
+
+
+| Sprint # | Sprint 2 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS2 | Integración Leaflet Maps | T01 | Integrar Leaflet en el proyecto | Instalar Leaflet y dejar un servicio de mapas que puedan reutilizar todas las pantallas con mapa. | 2 | Nickolas | Done |
+|  |  | T02 | Dibujar ruta y paradas | Pintar el trazado de la ruta y un marcador por cada parada a partir de sus coordenadas. | 3 | Edo | Done |
+|  |  | T03 | Mover el marcador del vehículo | Cambiar la posición del vehículo en el mapa cada vez que llega una nueva ubicación (de muestra en este sprint). | 2 | Nickolas | Done |
+| US1 | Contratar Plan | T01 | Modelo de planes y suscripciones | Definir el plan y la suscripción con sus estados, y conectarlos con la Fake API. | 2 | Nickolas | Done |
+|  |  | T02 | Vista de selección de planes | Mostrar los tres planes con su precio y sus límites, y llevar al pago del plan elegido. | 3 | Nickolas | Done |
+|  |  | T03 | Pago y activación del plan | Integrar el botón de pago de PayPal y activar la suscripción cuando el pago queda confirmado. | 3 | Nickolas | Done |
+|  |  | T04 | Cancelación y pago rechazado | Mantener el plan anterior y avisar al administrador cuando cancela o cuando el pago no se concreta. | 2 | Nickolas | Done |
+|  |  | T05 | Vista de estado de la suscripción | Mostrar el plan vigente, sus fechas y lo que incluye. | 2 | Nickolas | Done |
+| US2 | Registro de Conductores | T01 | Modelo de conductor | Definir al conductor con su licencia y vehículo, y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de registro de conductor | Crear el formulario con sus datos, avisar si falta un dato obligatorio o si el conductor ya existe. | 3 | Matias | Done |
+|  |  | T03 | Verificación de licencia | Marcar al conductor como Verificado al adjuntar su licencia (la revisión es de muestra). | 2 | Matias | Done |
+| US3 | Registro de Padres | T01 | Modelo de padre | Definir al padre con sus datos de contacto y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de registro de padre | Crear el formulario, validar el formato del correo y generar la cuenta con la que el padre podrá ingresar. El aviso de invitación se muestra en pantalla (el correo todavía no se envía). | 3 | Matias | Done |
+|  |  | T03 | Vincular al padre con sus hijos | Asociar uno o más alumnos al padre para que solo vea el seguimiento que le corresponde. | 2 | Matias | Done |
+| US4 | Alta de Alumnos | T01 | Modelo de alumno | Definir al alumno con su grado, su padre y su estado de abordaje, y conectarlo con la Fake API. | 2 | Matias | Done |
+|  |  | T02 | Formulario de alta de alumnos | Crear el formulario y avisar qué dato obligatorio falta antes de guardar. | 2 | Matias | Done |
+|  |  | T03 | Fotografía y carné digital | Guardar la foto del alumno y mostrarla en su carné digital. | 3 | Matias | Done |
+| US5 | Creación de Rutas | T01 | Modelo de ruta, parada y vehículo | Definir la ruta con sus paradas y el vehículo, y conectarlos con la Fake API. | 3 | Edo | Done |
+|  |  | T02 | Vista de creación de rutas | Permitir marcar las paradas sobre el mapa, nombrarlas e indicar qué alumnos suben en cada una. | 4 | Edo | Done |
+|  |  | T03 | Trazado de la ruta por calles | Dibujar el camino real entre las paradas usando un servicio de rutas. | 3 | Edo | Done |
+|  |  | T04 | Ordenar las paradas | Proponer un orden más corto para las paradas intermedias cuando el administrador lo solicita. | 2 | Edo | Done |
+|  |  | T05 | Listado de rutas | Mostrar las rutas de la organización; el conductor solo ve las suyas. | 1 | Edo | Done |
+| US6 | Asignación de Conductores a Rutas | T01 | Asignar conductor y vehículo | Permitir elegir el conductor y la unidad de cada ruta y guardar el cambio. | 2 | Edo | Done |
+|  |  | T02 | Validar cruces de horario | Impedir que un conductor quede en dos rutas a la misma hora y avisar del motivo. | 2 | Edo | Done |
+|  |  | T03 | Avisar al conductor y programar el viaje | Mostrar el aviso de asignación y dejar creado el viaje del día para esa ruta. | 2 | Edo | Done |
+| US10 | Inicio de Trayecto | T01 | Modelo de viaje | Definir el viaje con sus estados (programado, en camino, completado) y conectarlo con la Fake API. | 3 | Nickolas | Done |
+|  |  | T02 | Vista del viaje activo | Mostrar al conductor sus viajes del día, el mapa de la ruta y el avance por paradas. | 3 | Nickolas | Done |
+|  |  | T03 | Iniciar el viaje | Pasar el viaje a En camino al confirmar; si no se puede guardar, avisar y no mostrarlo como iniciado. | 2 | Nickolas | Done |
+|  |  | T04 | Revisión de seguridad previa | Pedir al conductor que confirme una lista de seguridad antes de poder iniciar el viaje. | 2 | Nickolas | Done |
+| US11 | Marcación de Abordaje | T01 | Lista de abordaje | Mostrar los alumnos de la parada y permitir marcarlos como abordado o ausente. | 2 | Nickolas | Done |
+|  |  | T02 | Lectura de código QR | Leer con la cámara el QR del carné y registrar el abordaje solo si el alumno pertenece al viaje. | 3 | Nickolas | Done |
+|  |  | T03 | Aviso al padre | Generar el aviso de abordaje para el padre del alumno. | 2 | Nickolas | Done |
+| US12 | Reporte de Incidencias | T01 | Modelo de incidencia | Definir la incidencia con su tipo, gravedad y estado, y conectarla con la Fake API. | 2 | Nickolas | Done |
+|  |  | T02 | Formulario de reporte | Permitir registrar un retraso, una avería u otro problema indicando la ruta y dónde ocurrió. | 3 | Salvador | Done |
+|  |  | T03 | Listado y cierre de incidencias | Mostrar las incidencias con filtros y permitir marcarlas como resueltas. | 2 | Salvador | Done |
+| US13 | Botón de Pánico | T01 | Botón SOS | Activar la alerta solo si el conductor mantiene presionado el botón durante tres segundos. | 3 | Nickolas | Done |
+|  |  | T02 | Registrar la alerta | Guardar la alerta con el conductor, la hora y la ubicación disponible. | 3 | Nickolas | Done |
+|  |  | T03 | Cancelar una activación accidental | Descartar la alerta si el conductor suelta el botón antes de tiempo. | 2 | Nickolas | Done |
+| US14 | Finalización de Viaje | T01 | Cerrar el viaje | Pasar el viaje a Completado y detener el movimiento del vehículo en el mapa. | 2 | Nickolas | Done |
+|  |  | T02 | Advertir paradas pendientes | Avisar al conductor cuando intenta cerrar el viaje sin haber completado todas las paradas. | 2 | Nickolas | Done |
+| US16 | Navegación Integrada | T01 | Abrir la navegación externa | Abrir Google Maps con la siguiente parada como destino. | 1 | Nickolas | Done |
+| US17 | Rastreo en Tiempo Real | T01 | Vista de seguimiento del padre | Crear la pantalla del padre con el mapa, la ruta y su parada. | 3 | Nickolas | Done |
+|  |  | T02 | Avance del vehículo | Mover el vehículo sobre la ruta (posiciones de muestra en este sprint). | 3 | Nickolas | Done |
+|  |  | T03 | Distancia y fin del servicio | Mostrar cuánto falta para la parada del padre e indicar cuando el servicio terminó. | 2 | Nickolas | Done |
+| US18 | Alerta de Proximidad | T01 | Aviso de cercanía | Mostrar el aviso con la distancia cuando el vehículo está cerca de la parada del padre. | 2 | Nickolas | Done |
+|  |  | T02 | Vibración del dispositivo | Hacer vibrar el celular cuando aparece el aviso, si el equipo lo permite. | 1 | Nickolas | Done |
+| US19 | Confirmación de Llegada | T01 | Aviso de llegada | Mostrar al padre la confirmación cuando el vehículo llega a su parada. | 2 | Nickolas | Done |
+|  |  | T02 | Modelo de notificación | Definir la notificación con su tipo y su estado de lectura, y conectarla con la Fake API. | 2 | Salvador | Done |
+|  |  | T03 | Bandeja de avisos | Mostrar al padre sus avisos, distinguir los no leídos y permitir marcarlos como leídos. | 3 | Salvador | Done |
+| US21 | Historial de Asistencia | T01 | Calendario mensual | Mostrar por mes los días en que el alumno estuvo presente, llegó tarde o faltó (registros de muestra). | 3 | Nickolas | Done |
+|  |  | T02 | Detalle del día y resumen | Mostrar el detalle del día elegido y el total del mes. | 2 | Nickolas | Done |
+|  |  | T03 | Meses sin registros | Indicar cuando el mes consultado todavía no tiene datos. | 1 | Nickolas | Done |
+| — | Tareas generales del Sprint | T01 | Estructura de la aplicación | Crear el proyecto Angular con una carpeta por bounded context y sus cuatro capas, más los elementos compartidos. | 4 | Nickolas | Done |
+|  |  | T02 | Publicar la Fake API | Dejar la Fake API disponible en internet para la aplicación publicada. | 2 | Matias | Done |
+|  |  | T03 | Publicar la aplicación web | Publicar la primera versión de la aplicación con HTTPS y comprobar que carga sus vistas. | 2 | Matias | Done |
+|  |  | T04 | Conectar la Landing Page con la aplicación | Hacer que los botones de planes e inicio de sesión de la Landing Page lleven a la aplicación web y publicar la nueva versión. | 2 | Matias | Done |
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo realizó commits sobre el repositorio del FrontEnd con el objetivo de satisface el sprint 2 goal.
+Durante el Sprint 2 el equipo trabajó en el repositorio del FrontEnd de KidTrack (kidtrack-webapp). También se creó el repositorio de la Fake API (KidTrack-API-7800) y se actualizó el de la Landing Page (kidtrack-website).
 
-| Repository | Branch | Commit Id | Commit Message | Committed By | Date |
+| Producto | Repositorio |
+| :--- | :--- |
+| FrontEnd | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp |
+| Fake API | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 |
+| Landing Page | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| kidtrack-webapp | main | 9adf890 | Initial commit | Bynickram02 | 2026-09-03 |
-| kidtrack-webapp | main | 42b772b | Update README.md | Bynickram02 | 2026-09-03 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 3ef6afe | feat(subscription): add subscription store | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f3f6a4b | feat(subscription): add plan entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f650fef | feat(subscription): add subscription entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f896afd | feat(subscription): add infrastructure layer with api, resources and assemblers | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 1cc777d | feat(subscription): add subscription routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | e2cffb4 | Merge pull request #1 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d4c9518 | feat(subscription): add checkout styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d2aae37 | feat(subscription): add checkout view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 12e9b44 | feat(subscription): add checkout component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | b09827d | feat(subscription): add plan metadata | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d1003b2 | feat(subscription): add plan selection styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 594414e | feat(subscription): add plan selection view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 8c9998c | feat(subscription): add plan selection component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | aa74a11 | feat(subscription): add subscription status component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | c1b65fd | feat(subscription): add subscription status styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 9436c10 | feat(subscription): add subscription status view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 04e7a99 | refactor: move angular project to repository root | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 779b70b | refactor: move angular project files to repository root | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | a354dd0 | Merge pull request #2 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | a2b66bf | feat(trip): add trip store | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 08eced8 | feat(trip): add incident entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | c524dc9 | feat(trip): add trip entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 8a98763 | feat(trip): add trip assembler | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 57ce8d2 | feat(trip): add trip resources | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | f0fddef | feat(trip): add trip api service | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 9bd809c | feat(trip): add boarding scanner component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | cd476b3 | feat(trip): add active trip styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | b9ab4ad | feat(trip): add active trip view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 5fcb549 | feat(trip): add active trip component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 11d17f6 | feat(trip): add attendance history styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 34e541f | feat(trip): add attendance history view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | ef8cca8 | feat(trip): add attendance history component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 5610ca4 | feat(trip): add parent tracking styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | dde0598 | feat(trip): add parent tracking view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 611c58d | feat(trip): add parent tracking component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 61cb614 | feat(trip): add trip list component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | ea71724 | feat(trip): add trip monitoring styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 2f32a34 | feat(trip): add trip monitoring view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | a489ab5 | feat(trip): add trip monitoring component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | be959ea | feat(trip): add trip routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 0ed9d70 | feat: add app root setup with config and routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | f1d3121 | Merge pull request #3 from feature/trip-execution-and-monitoring | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 0536bef | feat(notifications): add notification entity | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 5849046 | feat(notifications): add notification assembler | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 7455769 | feat(notifications): add notification resource | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 995704b | feat(notifications): add notification api | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 369bb1b | feat(notifications): add notification store | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 27daf2e | feat(notifications): add notification routes | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | d18592c | feat(notifications): add alert-center component | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | develop | 90aed4f | Merge pull request #4 from feature/notifications-and-communication | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 1a059f7 | feat(IAM): add user entity | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | d175f13 | feat(IAM): add organization entity | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0b391ab | feat(iam): add iam.interceptor | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0385849 | feat(iam): add DTO interfaces for authentication and user resources | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 18cd9bd | feat(iam): implement API service for authentication, users, and organizations | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 62c2cc0 | feat(iam): add entity-resource assembler for organizations | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | e91a19d | feat(iam): add entity-resource assembler for users | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 755a080 | feat(iam): add navigation routes for authentication, profile, and organization | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | ea75b0e | feat(iam): add admin registration form component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0d4888c | feat(iam): add organization creation and edition form component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 775edf1 | feat(iam): add organization profile view component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 2692789 | style(iam): add CSS styles for admin profile view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | e678d40 | feat(iam): add HTML template for admin profile view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 2651c49 | feat(iam): add component logic for admin profile | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | b5a673e | feat(iam): add organization management view with editing and suspension | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 78fb7c9 | style(iam): add CSS styles for sign-in view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 64a4650 | feat(iam): add HTML template for sign-in view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 152cd72 | feat(iam): implement sign-in view with role validation and redirection | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 5389303 | style(iam): add CSS styles for sign-up flow | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 9ef4a51 | feat(iam): implement multi-step sign-up view with plan support | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | fb24575 | feat(iam): implement multi-step sign-up view with plan integration | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | bd09501 | feat(iam): add auth and guest guards for route protection | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 5a443e6 | feat(iam): implement IamStore for session and organization state management | Argox16 | 2026-10-05 |
-| kidtrack-webapp | develop | 3a80653 | Merge pull request #5 from feature/identity-and-access-management | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 640fca1 | feat(fleet): add Route entity with requirement validation and cloning | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 70323b5 | feat(fleet): add Vehicle entity for vehicle management | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 658bcca | feat(fleet): add Waypoint interface for route stop definition | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 06abccb | feat(fleet): add DTO interfaces for route, vehicle, and waypoint resources | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | b85b902 | feat(fleet): implement FleetApi for route and vehicle CRUD operations | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 0265db8 | feat(fleet): add RouteAssembler for mapping between route resources and entities | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 5c5f5a5 | feat(fleet): add VehicleAssembler for mapping between vehicle resources and entities | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | e320aaa | feat(fleet): add routing file for the fleet bounded context | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | d18132b | feat(fleet): create RouteList component for paginated and filtered route display | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 692b21e | style(fleet): add CSS styles for route management panel and map view | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 8e36bc7 | feat(fleet): add HTML template for route management view and dialog | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 575102b | feat(fleet): implement RouteManagement component with Leaflet maps, TSP optimization, and trip auto-creation | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 0543156 | feat(fleet): add fleet store | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | develop | 5e6d038 | Merge pull request #6 from feature/fleet-and-route-planning | Asalreon520 | 2026-10-05 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 9adf890 | Initial commit | Bynickram02 | 03/09/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 42b772b | Update README.md | Bynickram02 | 03/09/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 3ef6afe | feat(subscription): add subscription store | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f3f6a4b | feat(subscription): add plan entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f650fef | feat(subscription): add subscription entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f896afd | feat(subscription): add infrastructure layer with api, resources and assemblers | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 1cc777d | feat(subscription): add subscription routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | e2cffb4 | Merge pull request #1 from feature/subscription-and-plan-management | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d4c9518 | feat(subscription): add checkout styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d2aae37 | feat(subscription): add checkout view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 12e9b44 | feat(subscription): add checkout component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | b09827d | feat(subscription): add plan metadata | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d1003b2 | feat(subscription): add plan selection styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 594414e | feat(subscription): add plan selection view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 8c9998c | feat(subscription): add plan selection component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | aa74a11 | feat(subscription): add subscription status component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | c1b65fd | feat(subscription): add subscription status styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 9436c10 | feat(subscription): add subscription status view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 04e7a99 | refactor: move angular project to repository root | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 779b70b | refactor: move angular project files to repository root | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | a354dd0 | Merge pull request #2 from feature/subscription-and-plan-management | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | a2b66bf | feat(trip): add trip store | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 08eced8 | feat(trip): add incident entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | c524dc9 | feat(trip): add trip entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 8a98763 | feat(trip): add trip assembler | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 57ce8d2 | feat(trip): add trip resources | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | f0fddef | feat(trip): add trip api service | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 9bd809c | feat(trip): add boarding scanner component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | cd476b3 | feat(trip): add active trip styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | b9ab4ad | feat(trip): add active trip view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 5fcb549 | feat(trip): add active trip component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 11d17f6 | feat(trip): add attendance history styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 34e541f | feat(trip): add attendance history view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | ef8cca8 | feat(trip): add attendance history component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 5610ca4 | feat(trip): add parent tracking styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | dde0598 | feat(trip): add parent tracking view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 611c58d | feat(trip): add parent tracking component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 61cb614 | feat(trip): add trip list component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | ea71724 | feat(trip): add trip monitoring styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 2f32a34 | feat(trip): add trip monitoring view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | a489ab5 | feat(trip): add trip monitoring component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | be959ea | feat(trip): add trip routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 0ed9d70 | feat: add app root setup with config and routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | f1d3121 | Merge pull request #3 from feature/trip-execution-and-monitoring | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 0536bef | feat(notifications): add notification entity | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 5849046 | feat(notifications): add notification assembler | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 7455769 | feat(notifications): add notification resource | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 995704b | feat(notifications): add notification api | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 369bb1b | feat(notifications): add notification store | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 27daf2e | feat(notifications): add notification routes | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | d18592c | feat(notifications): add alert-center component | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 90aed4f | Merge pull request #4 from feature/notifications-and-communication | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 1a059f7 | feat(IAM): add user entity | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | d175f13 | feat(IAM): add organization entity | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0b391ab | feat(iam): add iam.interceptor | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0385849 | feat(iam): add DTO interfaces for authentication and user resources | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 18cd9bd | feat(iam): implement API service for authentication, users, and organizations | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 62c2cc0 | feat(iam): add entity-resource assembler for organizations | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | e91a19d | feat(iam): add entity-resource assembler for users | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 755a080 | feat(iam): add navigation routes for authentication, profile, and organization | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | ea75b0e | feat(iam): add admin registration form component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0d4888c | feat(iam): add organization creation and edition form component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 775edf1 | feat(iam): add organization profile view component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 2692789 | style(iam): add CSS styles for admin profile view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | e678d40 | feat(iam): add HTML template for admin profile view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 2651c49 | feat(iam): add component logic for admin profile | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | b5a673e | feat(iam): add organization management view with editing and suspension | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 78fb7c9 | style(iam): add CSS styles for sign-in view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 64a4650 | feat(iam): add HTML template for sign-in view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 152cd72 | feat(iam): implement sign-in view with role validation and redirection | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 5389303 | style(iam): add CSS styles for sign-up flow | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 9ef4a51 | feat(iam): implement multi-step sign-up view with plan support | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | fb24575 | feat(iam): implement multi-step sign-up view with plan integration | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | bd09501 | feat(iam): add auth and guest guards for route protection | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 5a443e6 | feat(iam): implement IamStore for session and organization state management | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 3a80653 | Merge pull request #5 from feature/identity-and-access-management | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 640fca1 | feat(fleet): add Route entity with requirement validation and cloning | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 70323b5 | feat(fleet): add Vehicle entity for vehicle management | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 658bcca | feat(fleet): add Waypoint interface for route stop definition | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 06abccb | feat(fleet): add DTO interfaces for route, vehicle, and waypoint resources | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | b85b902 | feat(fleet): implement FleetApi for route and vehicle CRUD operations | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 0265db8 | feat(fleet): add RouteAssembler for mapping between route resources and entities | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 5c5f5a5 | feat(fleet): add VehicleAssembler for mapping between vehicle resources and entities | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | e320aaa | feat(fleet): add routing file for the fleet bounded context | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | d18132b | feat(fleet): create RouteList component for paginated and filtered route display | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 692b21e | style(fleet): add CSS styles for route management panel and map view | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 8e36bc7 | feat(fleet): add HTML template for route management view and dialog | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 575102b | feat(fleet): implement RouteManagement component with Leaflet maps, TSP optimization, and trip auto-creation | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 0543156 | feat(fleet): add fleet store | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 5e6d038 | Merge pull request #6 from feature/fleet-and-route-planning | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 7aa93f5 | feat(shared): add ConfirmService for confirmation dialogs | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | c969de3 | feat(stakeholder): added domain layer | Dela0405 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | 12a932f | feat(stakeholder): added infrastructure layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | ea9abd7 | feat(stakeholder): added application layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | a6eba68 | feat(stakeholder): added presentation layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 9058351 | Merge pull request #7 from feature/shared | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 0ced5b2 | feat(shared): add ToastService for app-wide notifications | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 15d4874 | feat(shared): add domain model base entity and value objects | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 5d68a89 | Merge pull request #8 from stakeholder-and-asset-management | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 3a27307 | feat(shared): add i18n support with en/es translations | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 15aa816 | feat(shared): add base API, base endpoint and map service | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | bf33d37 | feat(shared): add presentation layer with layout components, views and title strategy | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | c038604 | fix: add missing Angular project and sync src so the app compiles | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 6f3c1be | ci: add Azure Static Web Apps workflow file | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | add6ba8 | feat(environments): update api base url in production. | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 7705042 | Merge pull request #9 from develop | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | d882cc3 | ci: fix Azure SWA output location, inject API keys from secrets and add SPA fallback | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 92434c0 | Update README.md | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | ba7c08d | fix(deploy): send Referer to tile servers so OpenStreetMap maps load in production | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 | main | 51cf321 | feat: set up json-server fake API with health check and IAM sign-in endpoint | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 | main | 4aac150 | Add or update the Azure App Service build and deployment workflow config | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | develop | 9510fe0 | feat: add simulated payment modal and redirect landing to webapp | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 73cdfc3 | Merge pull request #7 from develop | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | e8e237b | Update README.md | Dela0405 | 06/10/2026 |
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo logró diseñar y desplegar la primera versión pública del FrontEnd de KidTrack:
+En el Sprint 2 se logró diseñar y desplegar la primera versión del FrontEnd de KidTrack, accesible en https://salmon-bush-078a34410.3.azurestaticapps.net
+
+Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Administrador | admin@kidtrack.pe | admin123 |
+| Conductor | driver@kidtrack.pe | driver123 |
+| Padre | parent@kidtrack.pe | parent123 |
+
+Se realizó un video donde se puede ver la ejecución en tiempo real: **URL de video de evidencia**
+
+**Validación del Sprint 2 Goal:**
+
+---
+
+**Registro de conductores, padres, alumnos y rutas**
+
+Estas vistas se usan con el rol administrador de la aplicación.
+
+**Planes y pago**
+
+El administrador elige entre los planes Básico, Intermedio y Completo y paga con PayPal (US1). Si el pago se confirma, el plan queda activo. Si se cancela o falla, la organización se queda con el plan que tenía.
+
+![Selección de planes](assets/images/Chapter-5/Sprint2/webapp-plans.png)
+
+![Pago del plan](assets/images/Chapter-5/Sprint2/webapp-checkout.png)
+
+**Registro e inicio de sesión**
+
+En una sola vista el administrador registra a los conductores con su licencia y vehículo (US2), a los padres con sus hijos (US3) y a los alumnos con su grado y su foto (US4). Al registrar a un padre se crea su cuenta y se muestra el aviso de invitación, aunque el correo todavía no se envía. Cada alumno tiene su carné digital. La verificación de la licencia y la subida de la foto son simuladas.
+
+![Gestión de conductores, padres y alumnos](assets/images/Chapter-5/Sprint2/webapp-community.png)
+![Registro de organización y administrador](assets/images/Chapter-5/Sprint2/webapp-sign-up.png)
+![Inicio de sesión](assets/images/Chapter-5/Sprint2/webapp-sign-in.png)
+
+**Registro de rutas**
+
+Para las rutas (US5, US6, TS2), el administrador marca las paradas en el mapa, indica qué alumnos suben en cada una y elige al conductor y al vehículo. También puede ordenar las paradas por el camino más corto. Si el conductor ya tiene otra ruta a esa hora, no se puede guardar. Al guardar se muestra el aviso de asignación y se crea el viaje del día.
+
+![Gestión de rutas](assets/images/Chapter-5/Sprint2/webapp-routes.png)
+
+---
+
+**Conductor**
+
+**Viaje activo y marcación de abordaje**
+
+El conductor ve sus viajes y elige uno (US10). Antes de iniciarlo confirma una lista de seguridad. En cada parada marca a los alumnos como abordados o ausentes, a mano o escaneando el QR del carné (US11). Si el QR no es de un alumno del viaje, se rechaza. Cada marcación crea un aviso para el padre. Con el botón de navegación se abre Google Maps hacia la siguiente parada (US16). Al final el conductor cierra el viaje (US14); si todavía faltan paradas, la aplicación le avisa.
+
+![Viaje activo del conductor](assets/images/Chapter-5/Sprint2/webapp-active-trip.png)
+
+![Lectura de QR para el abordaje](assets/images/Chapter-5/Sprint2/webapp-qr-scanner.png)
+
+**Incidencias y emergencias**
+
+Para una emergencia está el botón SOS (US13), que se activa manteniéndolo presionado tres segundos para que no se active por error, y guarda una alerta con la hora y el lugar. Para un retraso, una avería u otro problema se registra una incidencia desde la vista de alertas (US12), con el viaje, la gravedad y una descripción. El administrador ve las incidencias y las alertas, las puede filtrar y marcar como resueltas, y también ve el estado de los viajes del día.
+
+
+![Incidencias](assets/images/Chapter-5/Sprint2/webapp-alerts.png)
+
+![Monitoreo de viajes](assets/images/Chapter-5/Sprint2/webapp-trip-monitor.png)
+
+---
+
+**Padre de familia**
+
+**Seguimiento del vehículo y aviso de llegada**
+
+El padre ve en el mapa la ruta, su parada y el vehículo avanzando, con la distancia y el tiempo que falta (US17). Cuando el vehículo está cerca le sale un aviso de proximidad y el celular vibra (US18). Cuando llega le sale la confirmación de llegada (US19). En este sprint el vehículo avanza sobre una ruta de demostración; la ubicación real se tendrá con el backend.
+
+![Seguimiento del vehículo](assets/images/Chapter-5/Sprint2/webapp-parent-tracking.png)
+
+**Avisos**
+
+El padre tiene una lista con sus avisos de abordaje y llegada (US19). Los que no ha leído aparecen resaltados.
+
+![Avisos del padre](assets/images/Chapter-5/Sprint2/webapp-parent-notifications.png)
+
+**Asistencia**
+
+Para la asistencia (US21) hay un calendario por mes con los días en que el alumno estuvo presente, llegó tarde o faltó, y el detalle de cada día. Los registros de este sprint son de prueba.
+
+
+![Historial de asistencia](assets/images/Chapter-5/Sprint2/webapp-attendance.png)
+
+---
+
+**Conclusión:**
+
+El FrontEnd de KidTrack permite validar satisfactoriamente el Sprint 2 Goal, ya que las condiciones definidas en él fueron implementadas. En la aplicación se pueden registrar conductores, padres, alumnos y rutas. El conductor puede iniciar su viaje, marcar qué alumnos suben, reportar incidencias o emergencias y finalizar el viaje. El padre puede ver el vehículo en el mapa, recibir sus avisos, revisar la asistencia de su hijo y ser notificado de su llegada.
+Funciones como la ubicación del vehículo no han sido implementadas como tal debido a que la implementación del backend no forma parte del alcance de este Sprint, sino del siguiente.
+
 
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEnd de KidTrack. 
+Los Web Services en Java y su documentación Swagger están fuera del alcance de este sprint y se harán en el Sprint 3. Lo que sí se hizo en este sprint fue definir los recursos que necesita la aplicación y publicarlos en una Fake API con json-server.
 
-| Endpoint      | Acción implementada   | URL | Método HTTP    | Sintaxis de llamada | Parametros | Response |
-| ------------- | --------------------  | --- | -------------- | --------------------|-------------|-------- |
-|               |                       |     |                |                     |             |         |
+- **URL base :** https://kidtrack-mockapi-abh4gyegc5byhbb7.centralus-01.azurewebsites.net/api/v1
+- **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800
 
+
+Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaciones 201 Created con el registro y su id, las modificaciones 200 OK con el registro actualizado y las eliminaciones 200 OK con un objeto vacío. 
+
+**Identity & Access Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /authentication/sign-in | Iniciar sesión | POST | POST {base}/authentication/sign-in | Body: email, password | 200 con los datos del usuario (sin contraseña) más un token. 401 con invalid-credentials si el correo o la contraseña no coinciden. |
+| /authentication/sign-up | Registrar un usuario (administrador, conductor o padre) | POST | POST {base}/authentication/sign-up | Body: firstName, lastName, email, password, roleTier, organizationId | 201 con el usuario creado. 400 si falta el correo o la contraseña. 409 si el correo ya está registrado. |
+| /users | Listar los usuarios de una organización | GET | GET {base}/users?organizationId={id} | Query: organizationId | Lista de usuarios. |
+| /users/{id} | Actualizar datos personales o contraseña | PATCH | PATCH {base}/users/{id} | Path: id. Body: los campos que cambian | Usuario actualizado. |
+| /organizations | Crear una organización | POST | POST {base}/organizations | Body: name, status, createdAt | Organización creada. |
+| /organizations/{id} | Consultar una organización | GET | GET {base}/organizations/{id} | Path: id | Organización. |
+| /organizations/{id} | Editar o suspender una organización | PATCH | PATCH {base}/organizations/{id} | Path: id. Body: name o status | Organización actualizada. |
+
+
+Ejemplo de respuesta de POST {base}/authentication/sign-in con la cuenta del administrador. Con roleTier (ADMIN, DRIVER o PARENT) la aplicación decide qué vistas mostrar, y organizationId se usa para filtrar las demás consultas:
+
+```json
+{
+  "id": "b0000000-0000-0000-0000-000000000001",
+  "firstName": "Nickolas",
+  "lastName": "Quispe",
+  "email": "admin@kidtrack.pe",
+  "roleTier": "ADMIN",
+  "organizationId": "a0000000-0000-0000-0000-000000000001",
+  "token": "dev-token-b0000000-0000-0000-0000-000000000001-1791312000000"
+}
+```
+
+**Subscription & Plan Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /plans | Listar los planes disponibles | GET | GET {base}/plans | Ninguno | Lista de planes con precio y límites. |
+| /subscriptions | Consultar la suscripción activa de una organización | GET | GET {base}/subscriptions?organizationId={id}&state=ACTIVE | Query: organizationId, state | Lista con la suscripción activa (vacía si no tiene). |
+| /subscriptions | Crear una suscripción al confirmar el pago | POST | POST {base}/subscriptions | Body: organizationId, planId, planTier, state, startDate, endDate | Suscripción creada. |
+| /subscriptions/{id} | Cambiar de plan o cancelar | PATCH | PATCH {base}/subscriptions/{id} | Path: id. Body: planId o state | Suscripción actualizada. |
+
+
+Ejemplo de respuesta de GET {base}/plans (primer elemento). maxRoutes, maxDrivers y maxStudents son los límites de cada plan:
+
+```json
+[
+  {
+    "id": "plan-basic",
+    "planTier": "BASIC",
+    "name": "Básico",
+    "maxRoutes": 2,
+    "maxDrivers": 2,
+    "maxStudents": 30,
+    "price": 9.99,
+    "description": "Ideal para grupos pequeños de padres organizados"
+  }
+]
+```
+
+**Stakeholder & Asset Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /parents | Listar los padres de una organización | GET | GET {base}/parents?organizationId={id} | Query: organizationId | Lista de padres. |
+| /parents | Registrar un padre | POST | POST {base}/parents | Body: name, email, phone, status, organizationId | Padre creado. |
+| /parents/{id} | Editar un padre | PUT | PUT {base}/parents/{id} | Path: id. Body: padre completo | Padre actualizado. |
+| /parents/{id} | Eliminar un padre | DELETE | DELETE {base}/parents/{id} | Path: id | Objeto vacío. |
+| /children | Listar los alumnos de una organización | GET | GET {base}/children?organizationId={id} | Query: organizationId | Lista de alumnos. |
+| /children | Dar de alta un alumno | POST | POST {base}/children | Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | Alumno creado. |
+| /children/{id} | Editar un alumno | PUT | PUT {base}/children/{id} | Path: id. Body: alumno completo | Alumno actualizado. |
+| /children/{id} | Cambiar el estado de abordaje | PATCH | PATCH {base}/children/{id} | Path: id. Body: boardingStatus | Alumno actualizado. |
+| /children/{id} | Eliminar un alumno | DELETE | DELETE {base}/children/{id} | Path: id | Objeto vacío. |
+| /profiles | Listar los conductores de una organización | GET | GET {base}/profiles?organizationId={id}&role=driver | Query: organizationId, role | Lista de conductores. |
+| /profiles | Registrar un conductor | POST | POST {base}/profiles | Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | Conductor creado. |
+| /profiles/{id} | Editar un conductor | PUT | PUT {base}/profiles/{id} | Path: id. Body: conductor completo | Conductor actualizado. |
+| /profiles/{id} | Eliminar un conductor | DELETE | DELETE {base}/profiles/{id} | Path: id | Objeto vacío. |
+
+
+Ejemplo de respuesta de GET {base}/children?organizationId=... (primer elemento). boardingStatus puede ser EN_ESPERA, ABORDADO o AUSENTE y es lo que cambia el conductor al marcar el abordaje:
+
+```json
+[
+  {
+    "id": "c-1",
+    "name": "Lucía Nery",
+    "grade": "3ro B",
+    "parentId": "p-1",
+    "status": true,
+    "boardingStatus": "AUSENTE",
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Fleet & Route Planning**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /routes | Listar las rutas de una organización | GET | GET {base}/routes?organizationId={id} | Query: organizationId | Lista de rutas con sus paradas. |
+| /routes | Crear una ruta | POST | POST {base}/routes | Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | Ruta creada. |
+| /routes/{id} | Editar una ruta o su asignación | PUT | PUT {base}/routes/{id} | Path: id. Body: ruta completa | Ruta actualizada. |
+| /routes/{id} | Eliminar una ruta | DELETE | DELETE {base}/routes/{id} | Path: id | Objeto vacío. |
+| /vehicles | Listar los vehículos de una organización | GET | GET {base}/vehicles?organizationId={id} | Query: organizationId | Lista de vehículos. |
+| /vehicles | Registrar un vehículo | POST | POST {base}/vehicles | Body: plate, model, capacity, status, organizationId | Vehículo creado. |
+| /vehicles/{id} | Editar un vehículo | PUT | PUT {base}/vehicles/{id} | Path: id. Body: vehículo completo | Vehículo actualizado. |
+| /vehicles/{id} | Eliminar un vehículo | DELETE | DELETE {base}/vehicles/{id} | Path: id | Objeto vacío. |
+
+Ejemplo de respuesta de GET {base}/routes?organizationId=... (primer elemento). type indica si la ruta es de ida (OUTBOUND) o de retorno (RETURN), y cada elemento de waypoints es una parada con su orden y sus coordenadas:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Ruta Norte — Comas / Los Olivos",
+    "type": "OUTBOUND",
+    "driverId": "b0000000-0000-0000-0000-000000000002",
+    "driverName": "Carlos Ramirez",
+    "vehicleId": 1,
+    "vehiclePlate": "ABC-123",
+    "studentIds": [
+      "c-1",
+      "c-2",
+      "c-5"
+    ],
+    "scheduledStartTime": "06:00",
+    "status": "ACTIVE",
+    "organizationId": "a0000000-0000-0000-0000-000000000001",
+    "waypoints": [
+      {
+        "order": 1,
+        "name": "Av. Universitaria cdra. 54",
+        "lat": -11.9553,
+        "lng": -77.0602
+      },
+      {
+        "order": 2,
+        "name": "Av. Angélica Gamarra cdra. 8",
+        "lat": -11.9612,
+        "lng": -77.0648
+      },
+      {
+        "order": 3,
+        "name": "Jr. Las Orquídeas 342",
+        "lat": -11.968,
+        "lng": -77.0701
+      },
+      {
+        "order": 4,
+        "name": "I.E. San Marcos (llegada)",
+        "lat": -11.972,
+        "lng": -77.0742
+      }
+    ]
+  }
+]
+```
+
+**Trip Execution & Monitoring**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /trips | Listar los viajes de una organización | GET | GET {base}/trips?organizationId={id} | Query: organizationId | Lista de viajes. |
+| /trips | Programar un viaje para una ruta | POST | POST {base}/trips | Body: routeId, routeName, driverId, driverName, vehicleId, vehiclePlate, studentIds, tripType, scheduledDate, scheduledStartTime, status, studentsTotal, studentsBoarded, organizationId | Viaje creado. |
+| /trips/{id} | Iniciar, actualizar el avance o finalizar un viaje | PATCH | PATCH {base}/trips/{id} | Path: id. Body: status, startTime, endTime, currentStop, studentsBoarded según el caso | Viaje actualizado. |
+| /trips/{id} | Eliminar un viaje | DELETE | DELETE {base}/trips/{id} | Path: id | Objeto vacío. |
+| /incidents | Listar las incidencias de una organización | GET | GET {base}/incidents?organizationId={id} | Query: organizationId | Lista de incidencias. |
+| /incidents | Reportar una incidencia o una alerta SOS | POST | POST {base}/incidents | Body: tripId, routeId, routeName, type, severity, description, reportedBy, timestamp, status, organizationId | Incidencia creada. |
+| /incidents/{id} | Marcar una incidencia como resuelta | PATCH | PATCH {base}/incidents/{id} | Path: id. Body: status | Incidencia actualizada. |
+
+
+Ejemplo de respuesta de GET {base}/trips?organizationId=... (primer elemento). status puede ser SCHEDULED, EN_ROUTE, COMPLETED o CANCELLED; al iniciar el viaje se guarda startTime y al finalizar endTime:
+
+```json
+[
+  {
+    "id": 1,
+    "routeId": 1,
+    "routeName": "Ruta Norte — Comas / Los Olivos",
+    "driverId": "b0000000-0000-0000-0000-000000000002",
+    "driverName": "Carlos Ramirez",
+    "vehicleId": 1,
+    "vehiclePlate": "ABC-123",
+    "studentIds": [
+      "c-1",
+      "c-2",
+      "c-5"
+    ],
+    "tripType": "OUTBOUND",
+    "scheduledDate": "2026-05-09",
+    "scheduledStartTime": "06:00",
+    "status": "EN_ROUTE",
+    "startTime": "2026-05-09T06:05:00Z",
+    "endTime": null,
+    "studentsTotal": 3,
+    "studentsBoarded": 0,
+    "currentStop": "Jr. Las Orquídeas 342",
+    "currentLocation": "Jr. Las Orquídeas 342",
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Notifications & Communication**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /notifications | Listar los avisos de una organización | GET | GET {base}/notifications?organizationId={id} | Query: organizationId | Lista de avisos. |
+| /notifications | Crear un aviso para un padre | POST | POST {base}/notifications | Body: type, message, timestamp, read, parentId, tripId, organizationId | Aviso creado. |
+| /notifications/{id} | Marcar un aviso como leído | PATCH | PATCH {base}/notifications/{id} | Path: id. Body: read | Aviso actualizado. |
+
+Ejemplo de respuesta de GET {base}/notifications?organizationId=... (primer elemento). type puede ser ABORDAJE, PROXIMIDAD, AUSENCIA, LLEGADA o RETRASO, y read indica si el padre ya lo leyó:
+
+```json
+[
+  {
+    "id": "n-1",
+    "type": "ABORDAJE",
+    "message": "Lucía Nery abordó la unidad en Av. Universitaria cdra. 54",
+    "timestamp": "2026-05-09T06:12:00Z",
+    "read": false,
+    "parentId": "p-1",
+    "tripId": 1,
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Interacción con datos de prueba**
+
+- Consulta de rutas
+
+  ![Consulta de rutas en la Fake API](assets/images/Chapter-5/Sprint2/fake-api-get-routes.png)
+  
+- Inicio de sesion con datos de prueba
+
+  ![Inicio de sesión en la Fake API](assets/images/Chapter-5/Sprint2/fake-api-sign-in.png)
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
+
+En este sprint se desplegaron tres cosas: la primera versión del FrontEnd de KidTrack, la Fake API que usa la aplicación y una nueva versión de la Landing Page. El backend en Java no se despliega todavía porque está fuera del alcance de este sprint.
+
+**Fake API**
+
+Se desplegó en Azure App Service.
+
+-  Se creó en Azure un Web App llamado kidtrack-mockapi con Node.js 24, en la región Central US.
+-  Se conectó con el repositorio KidTrack-API-7800. 
+-  Se comprobó desde el navegador que la Fake API responde por HTTPS.
+
+**URL:** https://kidtrack-mockapi-abh4gyegc5byhbb7.centralus-01.azurewebsites.net/api/v1
+
+![Configuración de la Fake API](assets/images/Chapter-5/Sprint2/deploy-fake-api-config.png)
+
+![Fake API respondiendo](assets/images/Chapter-5/Sprint2/deploy-fake-api-live.png)
+
+**Front End**
+
+Se desplegó en Azure Static Web Apps.
+
+- En el environment de Angular se puso la URL de la Fake API publicada (commit add6ba8).
+- Se creó en Azure un Static Web App y se conectó con el repositorio kidtrack-webapp. 
+- Se integró develop a main  y se publicó la aplicación.
+
+**URL:** https://salmon-bush-078a34410.3.azurestaticapps.net
+
+![Configuración del despliegue de la aplicación](assets/images/Chapter-5/Sprint2/deploy-webapp-config.png)
+
+![Aplicación web publicada](assets/images/Chapter-5/Sprint2/deploy-webapp-live.png)
+
+**Landing Page**
+
+Sigue en GitHub Pages, igual que en el Sprint 1.  En esta versión, al elegir un plan se muestra una ventana de pago simulado y luego la Landing lleva al FrotnEnd.
+
+**URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/deploy-landing.png)
+
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
 
-## FrontEnd:
-![KidTrack FrontEnd](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop. 
+
+En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
+
+**FrontEnd**
+
+![Insights de la aplicación web](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+
+
+**Fake API**
+
+![Insights de la Fake API](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
+
+**Landing Page**
+
+![Insights de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+
+**Informe**
+
+![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
+
 
 ### 5.4 Video About-the-Product
 
