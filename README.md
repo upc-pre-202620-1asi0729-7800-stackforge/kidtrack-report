@@ -4402,12 +4402,245 @@ Funciones como la ubicación del vehículo no han sido implementadas como tal de
 
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo se enfocó en el diseño y despliegue del FrontEnd de KidTrack. 
+Los Web Services en Java y su documentación Swagger están fuera del alcance de este sprint y se harán en el Sprint 3. Lo que sí se hizo en este sprint fue definir los recursos que necesita la aplicación y publicarlos en una Fake API con json-server.
 
-| Endpoint      | Acción implementada   | URL | Método HTTP    | Sintaxis de llamada | Parametros | Response |
-| ------------- | --------------------  | --- | -------------- | --------------------|-------------|-------- |
-|               |                       |     |                |                     |             |         |
+- **URL base :** https://kidtrack-mockapi-abh4gyegc5byhbb7.centralus-01.azurewebsites.net/api/v1
+- **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800
 
+
+Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaciones 201 Created con el registro y su id, las modificaciones 200 OK con el registro actualizado y las eliminaciones 200 OK con un objeto vacío. 
+
+**Identity & Access Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /authentication/sign-in | Iniciar sesión | POST | POST {base}/authentication/sign-in | Body: email, password | 200 con los datos del usuario (sin contraseña) más un token. 401 con invalid-credentials si el correo o la contraseña no coinciden. |
+| /authentication/sign-up | Registrar un usuario (administrador, conductor o padre) | POST | POST {base}/authentication/sign-up | Body: firstName, lastName, email, password, roleTier, organizationId | 201 con el usuario creado. 400 si falta el correo o la contraseña. 409 si el correo ya está registrado. |
+| /users | Listar los usuarios de una organización | GET | GET {base}/users?organizationId={id} | Query: organizationId | Lista de usuarios. |
+| /users/{id} | Actualizar datos personales o contraseña | PATCH | PATCH {base}/users/{id} | Path: id. Body: los campos que cambian | Usuario actualizado. |
+| /organizations | Crear una organización | POST | POST {base}/organizations | Body: name, status, createdAt | Organización creada. |
+| /organizations/{id} | Consultar una organización | GET | GET {base}/organizations/{id} | Path: id | Organización. |
+| /organizations/{id} | Editar o suspender una organización | PATCH | PATCH {base}/organizations/{id} | Path: id. Body: name o status | Organización actualizada. |
+
+
+Ejemplo de respuesta de POST {base}/authentication/sign-in con la cuenta del administrador. Con roleTier (ADMIN, DRIVER o PARENT) la aplicación decide qué vistas mostrar, y organizationId se usa para filtrar las demás consultas:
+
+```json
+{
+  "id": "b0000000-0000-0000-0000-000000000001",
+  "firstName": "Nickolas",
+  "lastName": "Quispe",
+  "email": "admin@kidtrack.pe",
+  "roleTier": "ADMIN",
+  "organizationId": "a0000000-0000-0000-0000-000000000001",
+  "token": "dev-token-b0000000-0000-0000-0000-000000000001-1791312000000"
+}
+```
+
+**Subscription & Plan Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /plans | Listar los planes disponibles | GET | GET {base}/plans | Ninguno | Lista de planes con precio y límites. |
+| /subscriptions | Consultar la suscripción activa de una organización | GET | GET {base}/subscriptions?organizationId={id}&state=ACTIVE | Query: organizationId, state | Lista con la suscripción activa (vacía si no tiene). |
+| /subscriptions | Crear una suscripción al confirmar el pago | POST | POST {base}/subscriptions | Body: organizationId, planId, planTier, state, startDate, endDate | Suscripción creada. |
+| /subscriptions/{id} | Cambiar de plan o cancelar | PATCH | PATCH {base}/subscriptions/{id} | Path: id. Body: planId o state | Suscripción actualizada. |
+
+
+Ejemplo de respuesta de GET {base}/plans (primer elemento). maxRoutes, maxDrivers y maxStudents son los límites de cada plan:
+
+```json
+[
+  {
+    "id": "plan-basic",
+    "planTier": "BASIC",
+    "name": "Básico",
+    "maxRoutes": 2,
+    "maxDrivers": 2,
+    "maxStudents": 30,
+    "price": 9.99,
+    "description": "Ideal para grupos pequeños de padres organizados"
+  }
+]
+```
+
+**Stakeholder & Asset Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /parents | Listar los padres de una organización | GET | GET {base}/parents?organizationId={id} | Query: organizationId | Lista de padres. |
+| /parents | Registrar un padre | POST | POST {base}/parents | Body: name, email, phone, status, organizationId | Padre creado. |
+| /parents/{id} | Editar un padre | PUT | PUT {base}/parents/{id} | Path: id. Body: padre completo | Padre actualizado. |
+| /parents/{id} | Eliminar un padre | DELETE | DELETE {base}/parents/{id} | Path: id | Objeto vacío. |
+| /children | Listar los alumnos de una organización | GET | GET {base}/children?organizationId={id} | Query: organizationId | Lista de alumnos. |
+| /children | Dar de alta un alumno | POST | POST {base}/children | Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | Alumno creado. |
+| /children/{id} | Editar un alumno | PUT | PUT {base}/children/{id} | Path: id. Body: alumno completo | Alumno actualizado. |
+| /children/{id} | Cambiar el estado de abordaje | PATCH | PATCH {base}/children/{id} | Path: id. Body: boardingStatus | Alumno actualizado. |
+| /children/{id} | Eliminar un alumno | DELETE | DELETE {base}/children/{id} | Path: id | Objeto vacío. |
+| /profiles | Listar los conductores de una organización | GET | GET {base}/profiles?organizationId={id}&role=driver | Query: organizationId, role | Lista de conductores. |
+| /profiles | Registrar un conductor | POST | POST {base}/profiles | Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | Conductor creado. |
+| /profiles/{id} | Editar un conductor | PUT | PUT {base}/profiles/{id} | Path: id. Body: conductor completo | Conductor actualizado. |
+| /profiles/{id} | Eliminar un conductor | DELETE | DELETE {base}/profiles/{id} | Path: id | Objeto vacío. |
+
+
+Ejemplo de respuesta de GET {base}/children?organizationId=... (primer elemento). boardingStatus puede ser EN_ESPERA, ABORDADO o AUSENTE y es lo que cambia el conductor al marcar el abordaje:
+
+```json
+[
+  {
+    "id": "c-1",
+    "name": "Lucía Nery",
+    "grade": "3ro B",
+    "parentId": "p-1",
+    "status": true,
+    "boardingStatus": "AUSENTE",
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Fleet & Route Planning**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /routes | Listar las rutas de una organización | GET | GET {base}/routes?organizationId={id} | Query: organizationId | Lista de rutas con sus paradas. |
+| /routes | Crear una ruta | POST | POST {base}/routes | Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | Ruta creada. |
+| /routes/{id} | Editar una ruta o su asignación | PUT | PUT {base}/routes/{id} | Path: id. Body: ruta completa | Ruta actualizada. |
+| /routes/{id} | Eliminar una ruta | DELETE | DELETE {base}/routes/{id} | Path: id | Objeto vacío. |
+| /vehicles | Listar los vehículos de una organización | GET | GET {base}/vehicles?organizationId={id} | Query: organizationId | Lista de vehículos. |
+| /vehicles | Registrar un vehículo | POST | POST {base}/vehicles | Body: plate, model, capacity, status, organizationId | Vehículo creado. |
+| /vehicles/{id} | Editar un vehículo | PUT | PUT {base}/vehicles/{id} | Path: id. Body: vehículo completo | Vehículo actualizado. |
+| /vehicles/{id} | Eliminar un vehículo | DELETE | DELETE {base}/vehicles/{id} | Path: id | Objeto vacío. |
+
+Ejemplo de respuesta de GET {base}/routes?organizationId=... (primer elemento). type indica si la ruta es de ida (OUTBOUND) o de retorno (RETURN), y cada elemento de waypoints es una parada con su orden y sus coordenadas:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Ruta Norte — Comas / Los Olivos",
+    "type": "OUTBOUND",
+    "driverId": "b0000000-0000-0000-0000-000000000002",
+    "driverName": "Carlos Ramirez",
+    "vehicleId": 1,
+    "vehiclePlate": "ABC-123",
+    "studentIds": [
+      "c-1",
+      "c-2",
+      "c-5"
+    ],
+    "scheduledStartTime": "06:00",
+    "status": "ACTIVE",
+    "organizationId": "a0000000-0000-0000-0000-000000000001",
+    "waypoints": [
+      {
+        "order": 1,
+        "name": "Av. Universitaria cdra. 54",
+        "lat": -11.9553,
+        "lng": -77.0602
+      },
+      {
+        "order": 2,
+        "name": "Av. Angélica Gamarra cdra. 8",
+        "lat": -11.9612,
+        "lng": -77.0648
+      },
+      {
+        "order": 3,
+        "name": "Jr. Las Orquídeas 342",
+        "lat": -11.968,
+        "lng": -77.0701
+      },
+      {
+        "order": 4,
+        "name": "I.E. San Marcos (llegada)",
+        "lat": -11.972,
+        "lng": -77.0742
+      }
+    ]
+  }
+]
+```
+
+**Trip Execution & Monitoring**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /trips | Listar los viajes de una organización | GET | GET {base}/trips?organizationId={id} | Query: organizationId | Lista de viajes. |
+| /trips | Programar un viaje para una ruta | POST | POST {base}/trips | Body: routeId, routeName, driverId, driverName, vehicleId, vehiclePlate, studentIds, tripType, scheduledDate, scheduledStartTime, status, studentsTotal, studentsBoarded, organizationId | Viaje creado. |
+| /trips/{id} | Iniciar, actualizar el avance o finalizar un viaje | PATCH | PATCH {base}/trips/{id} | Path: id. Body: status, startTime, endTime, currentStop, studentsBoarded según el caso | Viaje actualizado. |
+| /trips/{id} | Eliminar un viaje | DELETE | DELETE {base}/trips/{id} | Path: id | Objeto vacío. |
+| /incidents | Listar las incidencias de una organización | GET | GET {base}/incidents?organizationId={id} | Query: organizationId | Lista de incidencias. |
+| /incidents | Reportar una incidencia o una alerta SOS | POST | POST {base}/incidents | Body: tripId, routeId, routeName, type, severity, description, reportedBy, timestamp, status, organizationId | Incidencia creada. |
+| /incidents/{id} | Marcar una incidencia como resuelta | PATCH | PATCH {base}/incidents/{id} | Path: id. Body: status | Incidencia actualizada. |
+
+
+Ejemplo de respuesta de GET {base}/trips?organizationId=... (primer elemento). status puede ser SCHEDULED, EN_ROUTE, COMPLETED o CANCELLED; al iniciar el viaje se guarda startTime y al finalizar endTime:
+
+```json
+[
+  {
+    "id": 1,
+    "routeId": 1,
+    "routeName": "Ruta Norte — Comas / Los Olivos",
+    "driverId": "b0000000-0000-0000-0000-000000000002",
+    "driverName": "Carlos Ramirez",
+    "vehicleId": 1,
+    "vehiclePlate": "ABC-123",
+    "studentIds": [
+      "c-1",
+      "c-2",
+      "c-5"
+    ],
+    "tripType": "OUTBOUND",
+    "scheduledDate": "2026-05-09",
+    "scheduledStartTime": "06:00",
+    "status": "EN_ROUTE",
+    "startTime": "2026-05-09T06:05:00Z",
+    "endTime": null,
+    "studentsTotal": 3,
+    "studentsBoarded": 0,
+    "currentStop": "Jr. Las Orquídeas 342",
+    "currentLocation": "Jr. Las Orquídeas 342",
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Notifications & Communication**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /notifications | Listar los avisos de una organización | GET | GET {base}/notifications?organizationId={id} | Query: organizationId | Lista de avisos. |
+| /notifications | Crear un aviso para un padre | POST | POST {base}/notifications | Body: type, message, timestamp, read, parentId, tripId, organizationId | Aviso creado. |
+| /notifications/{id} | Marcar un aviso como leído | PATCH | PATCH {base}/notifications/{id} | Path: id. Body: read | Aviso actualizado. |
+
+Ejemplo de respuesta de GET {base}/notifications?organizationId=... (primer elemento). type puede ser ABORDAJE, PROXIMIDAD, AUSENCIA, LLEGADA o RETRASO, y read indica si el padre ya lo leyó:
+
+```json
+[
+  {
+    "id": "n-1",
+    "type": "ABORDAJE",
+    "message": "Lucía Nery abordó la unidad en Av. Universitaria cdra. 54",
+    "timestamp": "2026-05-09T06:12:00Z",
+    "read": false,
+    "parentId": "p-1",
+    "tripId": 1,
+    "organizationId": "a0000000-0000-0000-0000-000000000001"
+  }
+]
+```
+
+**Interacción con datos de prueba**
+
+- Consulta de rutas
+
+  ![Consulta de rutas en la Fake API](assets/images/Chapter-5/Sprint2/fake-api-get-routes.png)
+  
+- Inicio de sesion con datos de prueba
+
+  ![Inicio de sesión en la Fake API](assets/images/Chapter-5/Sprint2/fake-api-sign-in.png)
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review
 ##### 5.2.2.8. Team Collaboration Insights during Sprint
