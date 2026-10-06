@@ -3909,17 +3909,13 @@ El objetivo del Sprint 1 fue el desarrollo y despliegue de la Landing Page bilin
 |  |   | T05 | Definir traducción de respaldo en inglés | Usar la traducción en inglés cuando falte una clave en el idioma seleccionado. | 1 | Matias | Done |
 | US23 | Visualización de Hero | T01 | Estructura base de la landing page | Configurar la estructura inicial de la landing page principal. | 1 | Nickolas | Done |
 |   |   | T02 | Implementar sección hero | Incorporar la información principal de KidTrack y su propuesta de seguridad en el transporte escolar. | 2 | Nickolas | Done |
-|   |   | T03 | Agregar botón de registro y página de recurso no encontrado | Dirigir al visitante al registro y mostrar una página con opción para volver al inicio ante una dirección inexistente. | 2 | Nickolas | Done |
 | US24 | Navegación de Funciones | T01 | Estructurar sección de funcionalidades | Implementar la estructura inicial de la sección de funcionalidades. | 1 | Jose | Done |
 |   |   | T02 | Implementar cards de funcionalidades | Incorporar cards explicando las capacidades de monitoreo y gestión de la plataforma. | 2 | Jose | Done |
-|   |  | T03 | Implementar detalle ampliado | Permitir consultar la descripción completa con ratón, teclado o interacción táctil. | 2 | Jose | Done |
 | US25 | Detalle de Roles | T01 | Estructurar sección de roles del sistema | Implementar la estructura inicial de la sección de roles. | 1 | Nickolas | Done |
 |  |   | T02 | Implementar cards de roles | Incorporar cards con los beneficios y funciones de padre, conductor y administrador. | 2 | Nickolas | Done |
-|   |   | T03 | Definir perfil inicial | Mostrar inicialmente la información del administrador al acceder a la sección. | 1 | Nickolas | Done |
 | US26 | Consulta de Precios | T01 | Estructurar sección de planes | Implementar la estructura inicial de la sección de planes. | 1 | Edo | Done |
 |   |   | T02 | Implementar cards de planes Básico, Intermedio y Completo | Agregar cards con la información de cada plan y un botón para seleccionarlo. | 3 | Edo | Done |
 |   |  | T03 | Mostrar precios en dolares con descuento anual | Presentar los importes en soles peruanos y aplicar el 20 % de descuento a la modalidad anual. | 2 | Edo | Done |
-|   |   | T04 | Marcar planes como Próximamente | Identificar los planes no disponibles e impedir iniciar su contratación. | 1 | Edo | Done |
 | US27 | Selección de Idioma | T01 | Implementar botón de selección de idioma | Agregar el botón de cambio de idioma ES/EN en la interfaz. | 2 | Jose | Done |
 | |   | T02 | Definir inglés como idioma predeterminado | Usar inglés en la primera visita sin preferencia guardada. | 1 | Jose | Done |
 |   |   | T03 | Aplicar idioma de respaldo | Usar inglés cuando la preferencia guardada corresponda a un idioma no soportado. | 1 | Jose | Done |
