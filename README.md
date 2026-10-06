@@ -4178,100 +4178,131 @@ Se completaron los 79 Story Points comprometidos en el sprint planning, por lo q
 
 ##### 5.2.2.4. Development Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo realizó commits sobre el repositorio del FrontEnd con el objetivo de satisface el sprint 2 goal.
+Durante el Sprint 2 el equipo trabajó en el repositorio del FrontEnd de KidTrack (kidtrack-webapp). También se creó el repositorio de la Fake API (KidTrack-API-7800) y se actualizó el de la Landing Page (kidtrack-website).
 
-| Repository | Branch | Commit Id | Commit Message | Committed By | Date |
+| Producto | Repositorio |
+| :--- | :--- |
+| FrontEnd | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp |
+| Fake API | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 |
+| Landing Page | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed on (Date) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| kidtrack-webapp | main | 9adf890 | Initial commit | Bynickram02 | 2026-09-03 |
-| kidtrack-webapp | main | 42b772b | Update README.md | Bynickram02 | 2026-09-03 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 3ef6afe | feat(subscription): add subscription store | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f3f6a4b | feat(subscription): add plan entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f650fef | feat(subscription): add subscription entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | f896afd | feat(subscription): add infrastructure layer with api, resources and assemblers | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 1cc777d | feat(subscription): add subscription routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | e2cffb4 | Merge pull request #1 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d4c9518 | feat(subscription): add checkout styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d2aae37 | feat(subscription): add checkout view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 12e9b44 | feat(subscription): add checkout component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | b09827d | feat(subscription): add plan metadata | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | d1003b2 | feat(subscription): add plan selection styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 594414e | feat(subscription): add plan selection view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 8c9998c | feat(subscription): add plan selection component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | aa74a11 | feat(subscription): add subscription status component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | c1b65fd | feat(subscription): add subscription status styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 9436c10 | feat(subscription): add subscription status view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 04e7a99 | refactor: move angular project to repository root | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/subscription-and-plan-management | 779b70b | refactor: move angular project files to repository root | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | a354dd0 | Merge pull request #2 from feature/subscription-and-plan-management | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | a2b66bf | feat(trip): add trip store | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 08eced8 | feat(trip): add incident entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | c524dc9 | feat(trip): add trip entity | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 8a98763 | feat(trip): add trip assembler | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 57ce8d2 | feat(trip): add trip resources | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | f0fddef | feat(trip): add trip api service | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 9bd809c | feat(trip): add boarding scanner component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | cd476b3 | feat(trip): add active trip styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | b9ab4ad | feat(trip): add active trip view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 5fcb549 | feat(trip): add active trip component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 11d17f6 | feat(trip): add attendance history styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 34e541f | feat(trip): add attendance history view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | ef8cca8 | feat(trip): add attendance history component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 5610ca4 | feat(trip): add parent tracking styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | dde0598 | feat(trip): add parent tracking view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 611c58d | feat(trip): add parent tracking component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 61cb614 | feat(trip): add trip list component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | ea71724 | feat(trip): add trip monitoring styles | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 2f32a34 | feat(trip): add trip monitoring view | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | a489ab5 | feat(trip): add trip monitoring component logic | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | be959ea | feat(trip): add trip routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/trip-execution-and-monitoring | 0ed9d70 | feat: add app root setup with config and routes | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | develop | f1d3121 | Merge pull request #3 from feature/trip-execution-and-monitoring | Bynickram02 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 0536bef | feat(notifications): add notification entity | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 5849046 | feat(notifications): add notification assembler | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 7455769 | feat(notifications): add notification resource | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 995704b | feat(notifications): add notification api | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 369bb1b | feat(notifications): add notification store | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | 27daf2e | feat(notifications): add notification routes | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/notifications-and-communication | d18592c | feat(notifications): add alert-center component | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | develop | 90aed4f | Merge pull request #4 from feature/notifications-and-communication | SALVA1704 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 1a059f7 | feat(IAM): add user entity | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | d175f13 | feat(IAM): add organization entity | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0b391ab | feat(iam): add iam.interceptor | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0385849 | feat(iam): add DTO interfaces for authentication and user resources | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 18cd9bd | feat(iam): implement API service for authentication, users, and organizations | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 62c2cc0 | feat(iam): add entity-resource assembler for organizations | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | e91a19d | feat(iam): add entity-resource assembler for users | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 755a080 | feat(iam): add navigation routes for authentication, profile, and organization | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | ea75b0e | feat(iam): add admin registration form component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 0d4888c | feat(iam): add organization creation and edition form component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 775edf1 | feat(iam): add organization profile view component | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 2692789 | style(iam): add CSS styles for admin profile view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | e678d40 | feat(iam): add HTML template for admin profile view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 2651c49 | feat(iam): add component logic for admin profile | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | b5a673e | feat(iam): add organization management view with editing and suspension | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 78fb7c9 | style(iam): add CSS styles for sign-in view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 64a4650 | feat(iam): add HTML template for sign-in view | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 152cd72 | feat(iam): implement sign-in view with role validation and redirection | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 5389303 | style(iam): add CSS styles for sign-up flow | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 9ef4a51 | feat(iam): implement multi-step sign-up view with plan support | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | fb24575 | feat(iam): implement multi-step sign-up view with plan integration | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | bd09501 | feat(iam): add auth and guest guards for route protection | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/identity-and-access-management | 5a443e6 | feat(iam): implement IamStore for session and organization state management | Argox16 | 2026-10-05 |
-| kidtrack-webapp | develop | 3a80653 | Merge pull request #5 from feature/identity-and-access-management | Argox16 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 640fca1 | feat(fleet): add Route entity with requirement validation and cloning | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 70323b5 | feat(fleet): add Vehicle entity for vehicle management | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 658bcca | feat(fleet): add Waypoint interface for route stop definition | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 06abccb | feat(fleet): add DTO interfaces for route, vehicle, and waypoint resources | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | b85b902 | feat(fleet): implement FleetApi for route and vehicle CRUD operations | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 0265db8 | feat(fleet): add RouteAssembler for mapping between route resources and entities | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 5c5f5a5 | feat(fleet): add VehicleAssembler for mapping between vehicle resources and entities | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | e320aaa | feat(fleet): add routing file for the fleet bounded context | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | d18132b | feat(fleet): create RouteList component for paginated and filtered route display | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 692b21e | style(fleet): add CSS styles for route management panel and map view | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 8e36bc7 | feat(fleet): add HTML template for route management view and dialog | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 575102b | feat(fleet): implement RouteManagement component with Leaflet maps, TSP optimization, and trip auto-creation | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | feature/fleet-and-route-planning | 0543156 | feat(fleet): add fleet store | Asalreon520 | 2026-10-05 |
-| kidtrack-webapp | develop | 5e6d038 | Merge pull request #6 from feature/fleet-and-route-planning | Asalreon520 | 2026-10-05 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 9adf890 | Initial commit | Bynickram02 | 03/09/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 42b772b | Update README.md | Bynickram02 | 03/09/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 3ef6afe | feat(subscription): add subscription store | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f3f6a4b | feat(subscription): add plan entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f650fef | feat(subscription): add subscription entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | f896afd | feat(subscription): add infrastructure layer with api, resources and assemblers | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 1cc777d | feat(subscription): add subscription routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | e2cffb4 | Merge pull request #1 from feature/subscription-and-plan-management | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d4c9518 | feat(subscription): add checkout styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d2aae37 | feat(subscription): add checkout view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 12e9b44 | feat(subscription): add checkout component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | b09827d | feat(subscription): add plan metadata | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | d1003b2 | feat(subscription): add plan selection styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 594414e | feat(subscription): add plan selection view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 8c9998c | feat(subscription): add plan selection component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | aa74a11 | feat(subscription): add subscription status component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | c1b65fd | feat(subscription): add subscription status styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 9436c10 | feat(subscription): add subscription status view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 04e7a99 | refactor: move angular project to repository root | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/subscription-and-plan-management | 779b70b | refactor: move angular project files to repository root | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | a354dd0 | Merge pull request #2 from feature/subscription-and-plan-management | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | a2b66bf | feat(trip): add trip store | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 08eced8 | feat(trip): add incident entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | c524dc9 | feat(trip): add trip entity | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 8a98763 | feat(trip): add trip assembler | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 57ce8d2 | feat(trip): add trip resources | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | f0fddef | feat(trip): add trip api service | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 9bd809c | feat(trip): add boarding scanner component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | cd476b3 | feat(trip): add active trip styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | b9ab4ad | feat(trip): add active trip view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 5fcb549 | feat(trip): add active trip component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 11d17f6 | feat(trip): add attendance history styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 34e541f | feat(trip): add attendance history view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | ef8cca8 | feat(trip): add attendance history component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 5610ca4 | feat(trip): add parent tracking styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | dde0598 | feat(trip): add parent tracking view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 611c58d | feat(trip): add parent tracking component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 61cb614 | feat(trip): add trip list component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | ea71724 | feat(trip): add trip monitoring styles | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 2f32a34 | feat(trip): add trip monitoring view | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | a489ab5 | feat(trip): add trip monitoring component logic | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | be959ea | feat(trip): add trip routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/trip-execution-and-monitoring | 0ed9d70 | feat: add app root setup with config and routes | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | f1d3121 | Merge pull request #3 from feature/trip-execution-and-monitoring | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 0536bef | feat(notifications): add notification entity | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 5849046 | feat(notifications): add notification assembler | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 7455769 | feat(notifications): add notification resource | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 995704b | feat(notifications): add notification api | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 369bb1b | feat(notifications): add notification store | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | 27daf2e | feat(notifications): add notification routes | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/notifications-and-communication | d18592c | feat(notifications): add alert-center component | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 90aed4f | Merge pull request #4 from feature/notifications-and-communication | SALVA1704 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 1a059f7 | feat(IAM): add user entity | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | d175f13 | feat(IAM): add organization entity | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0b391ab | feat(iam): add iam.interceptor | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0385849 | feat(iam): add DTO interfaces for authentication and user resources | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 18cd9bd | feat(iam): implement API service for authentication, users, and organizations | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 62c2cc0 | feat(iam): add entity-resource assembler for organizations | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | e91a19d | feat(iam): add entity-resource assembler for users | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 755a080 | feat(iam): add navigation routes for authentication, profile, and organization | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | ea75b0e | feat(iam): add admin registration form component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 0d4888c | feat(iam): add organization creation and edition form component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 775edf1 | feat(iam): add organization profile view component | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 2692789 | style(iam): add CSS styles for admin profile view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | e678d40 | feat(iam): add HTML template for admin profile view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 2651c49 | feat(iam): add component logic for admin profile | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | b5a673e | feat(iam): add organization management view with editing and suspension | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 78fb7c9 | style(iam): add CSS styles for sign-in view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 64a4650 | feat(iam): add HTML template for sign-in view | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 152cd72 | feat(iam): implement sign-in view with role validation and redirection | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 5389303 | style(iam): add CSS styles for sign-up flow | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 9ef4a51 | feat(iam): implement multi-step sign-up view with plan support | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | fb24575 | feat(iam): implement multi-step sign-up view with plan integration | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | bd09501 | feat(iam): add auth and guest guards for route protection | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/identity-and-access-management | 5a443e6 | feat(iam): implement IamStore for session and organization state management | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 3a80653 | Merge pull request #5 from feature/identity-and-access-management | Argox16 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 640fca1 | feat(fleet): add Route entity with requirement validation and cloning | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 70323b5 | feat(fleet): add Vehicle entity for vehicle management | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 658bcca | feat(fleet): add Waypoint interface for route stop definition | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 06abccb | feat(fleet): add DTO interfaces for route, vehicle, and waypoint resources | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | b85b902 | feat(fleet): implement FleetApi for route and vehicle CRUD operations | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 0265db8 | feat(fleet): add RouteAssembler for mapping between route resources and entities | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 5c5f5a5 | feat(fleet): add VehicleAssembler for mapping between vehicle resources and entities | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | e320aaa | feat(fleet): add routing file for the fleet bounded context | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | d18132b | feat(fleet): create RouteList component for paginated and filtered route display | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 692b21e | style(fleet): add CSS styles for route management panel and map view | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 8e36bc7 | feat(fleet): add HTML template for route management view and dialog | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 575102b | feat(fleet): implement RouteManagement component with Leaflet maps, TSP optimization, and trip auto-creation | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/fleet-and-route-planning | 0543156 | feat(fleet): add fleet store | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 5e6d038 | Merge pull request #6 from feature/fleet-and-route-planning | Asalreon520 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 7aa93f5 | feat(shared): add ConfirmService for confirmation dialogs | Bynickram02 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | c969de3 | feat(stakeholder): added domain layer | Dela0405 | 05/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | 12a932f | feat(stakeholder): added infrastructure layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | ea9abd7 | feat(stakeholder): added application layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | stakeholder-and-asset-management | a6eba68 | feat(stakeholder): added presentation layer | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 9058351 | Merge pull request #7 from feature/shared | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 0ced5b2 | feat(shared): add ToastService for app-wide notifications | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 15d4874 | feat(shared): add domain model base entity and value objects | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | 5d68a89 | Merge pull request #8 from stakeholder-and-asset-management | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 3a27307 | feat(shared): add i18n support with en/es translations | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | 15aa816 | feat(shared): add base API, base endpoint and map service | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | feature/shared | bf33d37 | feat(shared): add presentation layer with layout components, views and title strategy | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | c038604 | fix: add missing Angular project and sync src so the app compiles | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 6f3c1be | ci: add Azure Static Web Apps workflow file | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | develop | add6ba8 | feat(environments): update api base url in production. | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 7705042 | Merge pull request #9 from develop | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | d882cc3 | ci: fix Azure SWA output location, inject API keys from secrets and add SPA fallback | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 92434c0 | Update README.md | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | ba7c08d | fix(deploy): send Referer to tile servers so OpenStreetMap maps load in production | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 | main | 51cf321 | feat: set up json-server fake API with health check and IAM sign-in endpoint | Bynickram02 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/KidTrack-API-7800 | main | 4aac150 | Add or update the Azure App Service build and deployment workflow config | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | develop | 9510fe0 | feat: add simulated payment modal and redirect landing to webapp | Dela0405 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 73cdfc3 | Merge pull request #7 from develop | Dela050406 | 06/10/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | e8e237b | Update README.md | Dela0405 | 06/10/2026 |
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
