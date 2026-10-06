@@ -4306,7 +4306,99 @@ Durante el Sprint 2 el equipo trabajó en el repositorio del FrontEnd de KidTrac
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
-Durante el Sprint 2, el equipo logró diseñar y desplegar la primera versión pública del FrontEnd de KidTrack:
+En el Sprint 2 se logró diseñar y desplegar la primera versión del FrontEnd de KidTrack, accesible en https://salmon-bush-078a34410.3.azurestaticapps.net
+
+Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Administrador | admin@kidtrack.pe | admin123 |
+| Conductor | driver@kidtrack.pe | driver123 |
+| Padre | parent@kidtrack.pe | parent123 |
+
+Se realizó un video donde se puede ver la ejecución en tiempo real: **URL de video de evidencia**
+
+**Validación del Sprint 2 Goal:**
+
+---
+
+**Registro de conductores, padres, alumnos y rutas**
+
+Estas vistas se usan con el rol administrador de la aplicación.
+
+**Planes y pago**
+
+El administrador elige entre los planes Básico, Intermedio y Completo y paga con PayPal (US1). Si el pago se confirma, el plan queda activo. Si se cancela o falla, la organización se queda con el plan que tenía.
+
+![Selección de planes](assets/images/Chapter-5/Sprint2/webapp-plans.png)
+
+![Pago del plan](assets/images/Chapter-5/Sprint2/webapp-checkout.png)
+
+**Registro e inicio de sesión**
+
+En una sola vista el administrador registra a los conductores con su licencia y vehículo (US2), a los padres con sus hijos (US3) y a los alumnos con su grado y su foto (US4). Al registrar a un padre se crea su cuenta y se muestra el aviso de invitación, aunque el correo todavía no se envía. Cada alumno tiene su carné digital. La verificación de la licencia y la subida de la foto son simuladas.
+
+![Gestión de conductores, padres y alumnos](assets/images/Chapter-5/Sprint2/webapp-community.png)
+![Registro de organización y administrador](assets/images/Chapter-5/Sprint2/webapp-sign-up.png)
+![Inicio de sesión](assets/images/Chapter-5/Sprint2/webapp-sign-in.png)
+
+**Registro de rutas**
+
+Para las rutas (US5, US6, TS2), el administrador marca las paradas en el mapa, indica qué alumnos suben en cada una y elige al conductor y al vehículo. También puede ordenar las paradas por el camino más corto. Si el conductor ya tiene otra ruta a esa hora, no se puede guardar. Al guardar se muestra el aviso de asignación y se crea el viaje del día.
+
+![Gestión de rutas](assets/images/Chapter-5/Sprint2/webapp-routes.png)
+
+---
+
+**Conductor**
+
+**Viaje activo y marcación de abordaje**
+
+El conductor ve sus viajes y elige uno (US10). Antes de iniciarlo confirma una lista de seguridad. En cada parada marca a los alumnos como abordados o ausentes, a mano o escaneando el QR del carné (US11). Si el QR no es de un alumno del viaje, se rechaza. Cada marcación crea un aviso para el padre. Con el botón de navegación se abre Google Maps hacia la siguiente parada (US16). Al final el conductor cierra el viaje (US14); si todavía faltan paradas, la aplicación le avisa.
+
+![Viaje activo del conductor](assets/images/Chapter-5/Sprint2/webapp-active-trip.png)
+
+![Lectura de QR para el abordaje](assets/images/Chapter-5/Sprint2/webapp-qr-scanner.png)
+
+**Incidencias y emergencias**
+
+Para una emergencia está el botón SOS (US13), que se activa manteniéndolo presionado tres segundos para que no se active por error, y guarda una alerta con la hora y el lugar. Para un retraso, una avería u otro problema se registra una incidencia desde la vista de alertas (US12), con el viaje, la gravedad y una descripción. El administrador ve las incidencias y las alertas, las puede filtrar y marcar como resueltas, y también ve el estado de los viajes del día.
+
+
+![Incidencias](assets/images/Chapter-5/Sprint2/webapp-alerts.png)
+
+![Monitoreo de viajes](assets/images/Chapter-5/Sprint2/webapp-trip-monitor.png)
+
+---
+
+**Padre de familia**
+
+**Seguimiento del vehículo y aviso de llegada**
+
+El padre ve en el mapa la ruta, su parada y el vehículo avanzando, con la distancia y el tiempo que falta (US17). Cuando el vehículo está cerca le sale un aviso de proximidad y el celular vibra (US18). Cuando llega le sale la confirmación de llegada (US19). En este sprint el vehículo avanza sobre una ruta de demostración; la ubicación real se tendrá con el backend.
+
+![Seguimiento del vehículo](assets/images/Chapter-5/Sprint2/webapp-parent-tracking.png)
+
+**Avisos**
+
+El padre tiene una lista con sus avisos de abordaje y llegada (US19). Los que no ha leído aparecen resaltados.
+
+![Avisos del padre](assets/images/Chapter-5/Sprint2/webapp-parent-notifications.png)
+
+**Asistencia**
+
+Para la asistencia (US21) hay un calendario por mes con los días en que el alumno estuvo presente, llegó tarde o faltó, y el detalle de cada día. Los registros de este sprint son de prueba.
+
+
+![Historial de asistencia](assets/images/Chapter-5/Sprint2/webapp-attendance.png)
+
+---
+
+**Conclusión:**
+
+El FrontEnd de KidTrack permite validar satisfactoriamente el Sprint 2 Goal, ya que las condiciones definidas en él fueron implementadas. En la aplicación se pueden registrar conductores, padres, alumnos y rutas. El conductor puede iniciar su viaje, marcar qué alumnos suben, reportar incidencias o emergencias y finalizar el viaje. El padre puede ver el vehículo en el mapa, recibir sus avisos, revisar la asistencia de su hijo y ser notificado de su llegada.
+Funciones como la ubicación del vehículo no han sido implementadas como tal debido a que la implementación del backend no forma parte del alcance de este Sprint, sino del siguiente.
+
 
 ##### 5.2.2.6. Services Documentation Evidence for Sprint Review
 
