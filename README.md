@@ -4316,7 +4316,7 @@ Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
 | Conductor | driver@kidtrack.pe | driver123 |
 | Padre | parent@kidtrack.pe | parent123 |
 
-Se realizó un video donde se puede ver la ejecución en tiempo real: **URL de video de evidencia**
+Se realizó un video donde se puede ver la ejecución en tiempo real: [**URL de video de evidencia**](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC5iYdGclAPSbuO62U1IWQUAWGoSNWx-T13gvSgEI270sI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ne6kWr)
 
 **Validación del Sprint 2 Goal:**
 
