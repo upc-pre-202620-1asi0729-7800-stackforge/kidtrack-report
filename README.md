@@ -4712,20 +4712,14 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
 
-
-### 5.4 Video About-the-Product
-
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
 - El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend con DDD, por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas al 100%, ya que se necesitan de experiencias de usuarios reales.
+  
 ## Recomendaciones
 - Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
-## Video About-the-Team
-
+  
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
 - Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). _Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial_. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
-
-
-## Anexos
