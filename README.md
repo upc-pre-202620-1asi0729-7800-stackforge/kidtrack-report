@@ -98,11 +98,12 @@ Proyecto
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report/tree/develop)
 
 ### Sprint 1
-
-## AV1:
-![KidTrack Report](assets/images/Chapter-5/Sprint1/Insights-Report.png)
-## Landing Page:
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
+
+### Sprint 2
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
 
 <br><br>
 <br><br><br>
