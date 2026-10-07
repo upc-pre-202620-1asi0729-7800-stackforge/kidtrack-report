@@ -3972,11 +3972,7 @@ Durante el Sprint 1, el equipo realizó commits sobre el repositorio de la landi
 
 Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
 
-<<<<<<< HEAD
 Se realizó un video donde se puede ver la ejecución en tiempo real: [Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQAt1Zy5Fu7xQ5eE68drZG6-AXmE_FsPNgi_vQMHooi3NTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=veoeG9)
-=======
-Se realizo un video donde se puede ver la ejecucion en tiempo real:https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQAt1Zy5Fu7xQ5eE68drZG6-AXmE_FsPNgi_vQMHooi3NTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=veoeG9
->>>>>>> 0c3e4fc66e434d0f6624980521eb71070518f35a
 
 **Validación del Sprint 1 Goal :**
 
