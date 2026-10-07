@@ -232,6 +232,18 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
 ---
 ## Student Outcome
 
@@ -273,6 +285,17 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
  </tr>
 
   </table>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ## Capítulo I: Introducción
 
