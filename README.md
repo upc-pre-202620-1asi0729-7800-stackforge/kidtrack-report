@@ -1575,118 +1575,16 @@ El Sprint 2 propone ampliar la experiencia de KidTrack mediante una primera vers
 
 ### 5.3. Validation Interviews
 
-La validación con usuarios es una fase crítica dentro del ciclo de desarrollo ágil de **KidTrack**, la cual permite contrastar los artefactos de software implementados (Landing Page y WebApp) frente a las expectativas, necesidades y fricciones reales de nuestros stakeholders clave. Esta sección detalla el diseño metodológico de los instrumentos de recolección de datos qualitativos, el registro de las sesiones de prueba en entornos controlados y la síntesis de los hallazgos para orientar las iteraciones del producto de cara a la entrega final.
+
 
 #### 5.3.1. Diseño de Entrevistas
-Con el objetivo de validar la usabilidad, arquitectura de información y propuesta de valor de la plataforma **KidTrack** (Web & App) en su fase de entrega AV2, se diseñó una guía de entrevistas cualitativas estructurada. El diseño del instrumento responde a la necesidad de evaluar el comportamiento de los usuarios en tiempo real ante las interfaces desplegadas, garantizando preguntas abiertas, sin sesgos ni lenguaje inducido.
 
-El instrumento se divide en una sección de preguntas demográficas generales y dos bloques específicos orientados a cada uno de nuestros segmentos objetivos clave:
-
-##### Preguntas para Segmento Objetivo 1: Conductor 
-- ¿En qué distrito o zona sueles realizar tus rutas de transporte escolar?
-- ¿Trabajas de manera independiente o para una empresa / asociación de transporte?
-- Cuéntame cómo es un día normal de trabajo desde que inicias el recorrido hasta que entregas al último estudiante.
-- Al interactuar con la pantalla "Mis Rutas" de KidTrack en el celular, ¿te resulta claro cómo seleccionar tu trayecto e iniciar el viaje?
-- Al detenerte en una parada, ¿qué tan fácil te resulta ubicar al estudiante y marcar su estado ("Abordado" / "Ausente") con un solo toque?
-- Respecto a los botones e íconos en pantalla, ¿consideras que su tamaño te permite interactuar de forma segura sin distraerte al conducir?
-- Si encuentras tráfico pesado o un imprevisto en la vía, ¿resulta intuitivo el acceso al botón de "Reportar Incidencia"?
-- ¿El contraste de los colores principales te permite leer la pantalla de un vistazo bajo la luz solar directa mientras conduces?
-- ¿Qué ajuste o simplificación le harías a esta interfaz para que requiera la mínima lectura posible mientras estás al volante?
-- Si tuvieras que usar esta herramienta diariamente en tus rutas, ¿qué funcionalidad considerarías indispensable mantener o mejorar?
-
-##### Preguntas para Segmento Objetivo 2: Padre de Familia
-- ¿Desde hace cuánto tiempo utilizas el servicio de transporte escolar para tu hijo/a?
-- ¿Con qué frecuencia revisas aplicaciones en tu teléfono móvil mientras tu hijo/a está en camino al colegio o a casa?
-- Cuéntame cómo te enteras actualmente del trayecto de tu hijo/a y qué tan tranquilo/a te sientes con ese método.
-- ¿Qué es lo primero que te llama la atención o ubicas visualmente al abrir el mapa de seguimiento mientras tu hijo/a está en camino?
-- En cuanto a las alertas de notificación ("Abordado", "En Trayecto", "Entregado"), ¿qué información esperas recibir en cada una y con qué frecuencia te gustaría que aparezcan?
-- ¿Qué datos de los que aparecen en la pantalla te parecen más útiles y cuáles consideras que están de más?
-- ¿Podrías revisar el historial de viajes para ver los horarios de llegada de la semana pasada y comentarme qué tan fácil o difícil fue encontrar ese registro?
-- ¿Qué opinas de la información visualizada sobre los datos del vehículo, la placa y el perfil del conductor asignado?
-- Al interactuar con la plataforma, ¿qué elementos visuales te generan mayor confianza y cuáles te generan duda o confusión?
-
-
-##### Preguntas Generales (Demográficas y Contexto Tecnológico)
-- ¿Cuál es su nombre completo y edad?
-- ¿En qué distrito o zona reside actualmente?
-- ¿Cuál es el dispositivo o herramienta tecnológica que utiliza con mayor frecuencia en su día a día (Smartphone Android/iOS, PC Windows/Mac)?
-- ¿Podría describir brevemente la composición de su entorno familiar (hijos en edad escolar, personas a cargo)?
 
 
 #### 5.3.2. Registro de Entrevistas
 
 #### 5.3.3. Evaluaciones según heurísticas
 
-A continuación, se presenta la sesión de evaluación de usabilidad, arquitectura de información y diseño inclusivo realizada sobre la plataforma **KidTrack** (Web & App), siguiendo la estructura y formato especificados en el Anexo D.
-
----
-
-### UX Heuristics & Principles Evaluation
-**Usability - Inclusive Design - Information Architecture**
-
-- **CARRERA:** Ingeniería de Software
-- **CURSO:** 1ASI0729 Desarrollo de Aplicaciones Open Source
-- **SECCIÓN:** NRC 7800
-- **PROFESOR:** Robles Fernández, Iván
-- **AUDITORES (EQUIPO DE TRABAJO):** 
-  - Su Caletti, Eddo (U20221A390)
-  - Chamorro Acero, Salvador Edward (U201914367)
-  - De la Cruz De los Santos, Mathías Marcelo (U202424059)
-  - Ramírez Ruiz, Nickolas (U202415551)
-  - Ortega Quintana, José Zacarías (U202316852)
-- **CLIENTE(S):** Padres de Familia y Conductores 
-
----
-
-#### SITE / APP A EVALUAR:
-- **KidTrack WebApp & Mobile Interface**
-
----
-
-#### TAREAS A EVALUAR:
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-1. Visualización y seguimiento del mapa en tiempo real durante el trayecto escolar.
-2. Consulta y filtrado de registros en el Historial de Viajes y Asistencia.
-3. Marcación rápida de estado de abordaje del estudiante por parte del conductor ("Abordado" / "Ausente").
-4. Envío de alertas y notificaciones push de cambio de estado de la unidad.
-5. Reporte rápido de incidencias o tráfico por parte del conductor al volante.
-6. Visualización de datos de identificación del vehículo, placa y perfil del conductor asignado.
-
-**No están incluidas en esta versión de la evaluación las siguientes tareas:**
-1. Configuración de métodos de pago y facturación recurrente de la mensualidad.
-2. Gestión de múltiples rutas simultáneas para empresas de transporte escolar masivas.
-3. Integración con sistemas de videovigilancia en vivo dentro de la unidad vehicular.
-
----
-
-#### ESCALA DE SEVERIDAD:
-Los errores identificados han sido puntuados tomando en cuenta la siguiente escala de severidad:
-
-| Nivel | Descripción |
-| :---: | :--- |
-| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
-| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
-| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
-| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
-
----
-
-#### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
-
-| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
-| :-: | :--- | :-: | :--- |
-| **1** | El mapa en tiempo real no muestra un indicador explícito al refrescar las coordenadas GPS de la unidad escolar. | **3** | **Usability:** Visibilidad del estado del sistema |
-| **2** | En los detalles del historial de viajes se muestran coordenadas técnicas en lugar de direcciones legibles. | **2** | **Usability:** Relación entre el sistema y el mundo real |
-| **3** | Al aplicar filtros por fecha en el historial, no existe un control rápido para limpiar o restablecer la búsqueda. | **2** | **Usability:** Control y libertad del usuario |
-| **4** | Los botones de marcación rápida del conductor diferían en tipografía y radio de borde respecto al panel general. | **3** | **Usability:** Consistencia y estándares |
-| **5** | El botón de "Reportar Incidencia" al conducir se activaba con un solo toque, generando alertas accidentales. | **3** | **Usability:** Prevención de errores |
-| **6** | Los datos de la placa y perfil del conductor no se mantenían visibles de forma fija al observar el mapa. | **3** | **Information Architecture:** Recognition rather than recall |
-| **7** | En el panel inicial del padre, se visualizaban accesos directos deshabilitados antes de vincular al estudiante. | **1** | **Usability:** Flexibilidad y eficiencia de uso |
-| **8** | Textos densos e imágenes promocionales en la Landing Page sin textos alternativos accesibles. | **3** | **Inclusive Design:** Proporciona experiencias comparables / Estética y diseño minimalista |
-| **9** | Ante la pérdida de conexión a internet, el sistema mostraba una pantalla en blanco sin indicación de reconexión. | **4** | **Usability:** Ayuda a reconocer, diagnosticar y recuperar errores |
-| **10** | No se incluía un enlace accesible o modal de preguntas frecuentes para resolver dudas iniciales del usuario. | **2** | **Information Architecture:** Help & Documentation |
-
----
 
 
 
