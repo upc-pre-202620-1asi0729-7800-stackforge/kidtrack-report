@@ -4863,6 +4863,89 @@ Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTra
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
 
+##### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 la aplicación web de KidTrack dejó de usar la Fake API y ahora guarda sus datos en el backend publicado en Azure. Como el backend respeta los mismos endpoints que ya usaba el FrontEnd, todas las vistas del Sprint 2 siguen funcionando, pero ahora los registros, las rutas, los viajes, el abordaje, las incidencias y los avisos quedan guardados en la base de datos.
+
+**URL del FrontEnd:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+Para probar la aplicación se mantienen las tres cuentas de prueba, que ahora vienen cargadas en el backend:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Administrador | admin@kidtrack.pe | admin123 |
+| Conductor | driver@kidtrack.pe | driver123 |
+| Padre | parent@kidtrack.pe | parent123 |
+
+Se realizó un video donde se puede ver la ejecución en tiempo real: 
+
+**Validación del Sprint 3 Goal:**
+
+---
+
+**Escenario A: viaje completo**
+
+
+El administrador entra con su cuenta y revisa la Ruta Norte con sus paradas, sus alumnos, el conductor y el vehículo asignados. Cuando se guarda una ruta completa, la aplicación programa el viaje del día, que aparece en el monitor de viajes como Programado.
+
+   ![Inicio del administrador](assets/images/Chapter-5/Sprint3/webapp-admin-home.png)
+
+   ![Gestión de rutas](assets/images/Chapter-5/Sprint3/webapp-route-management.png)
+
+   ![Monitor de viajes con el viaje del día programado](assets/images/Chapter-5/Sprint3/webapp-trip-monitor-admin.png)
+
+El conductor entra con su cuenta, elige su viaje, completa el check de seguridad y lo inicia. El viaje pasa a En camino.
+
+   ![Viajes del conductor](assets/images/Chapter-5/Sprint3/webapp-driver-trips.png)
+
+   ![Check de seguridad antes de iniciar](assets/images/Chapter-5/Sprint3/webapp-safety-check.png)
+
+   ![Viaje iniciado](assets/images/Chapter-5/Sprint3/webapp-trip-started.png)
+
+En la parada el conductor marca a Lucía y Diego como abordados y a Mateo como ausente. Al recargar la página, el viaje sigue En camino con 2 de 3 alumnos, porque los datos vienen del backend.
+
+   ![Abordaje de alumnos](assets/images/Chapter-5/Sprint3/webapp-boarding.png)
+
+   ![Viaje en camino después de recargar](assets/images/Chapter-5/Sprint3/webapp-trip-en-route.png)
+
+El conductor finaliza el viaje. El viaje pasa a Completado y en el backend queda con su hora de inicio y de fin.
+
+   ![Viaje finalizado](assets/images/Chapter-5/Sprint3/webapp-trip-completed.png)
+
+   ![Viaje completado consultado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-completed.png)
+
+La madre de Lucía y Diego entra con su cuenta y ve los avisos de abordaje de sus hijos.
+
+   ![Avisos del padre](assets/images/Chapter-5/Sprint3/webapp-parent-notifications.png)
+
+**Escenario B: acciones que el backend no permite**
+
+- Si se intenta iniciar un viaje que no está programado, el backend responde 400 con el mensaje "Only a scheduled trip can be started.". En la captura se intenta poner En camino el viaje que ya se había completado.
+- Si se consulta un endpoint protegido sin token, el backend responde 401.
+- Si un conductor intenta modificar un viaje que no es suyo, el backend responde 403.
+- Si un usuario intenta ver datos de otra organización, el backend responde 403.
+- Un viaje finalizado no se puede cancelar ni reasignar.
+
+![Cambio de estado rechazado](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+![Consulta sin token rechazada](assets/images/Chapter-5/Sprint3/swagger-trips-without-token.png)
+
+**Escenario C: incidencia durante el viaje**
+
+Con el viaje en camino, el conductor reporta un retraso por tráfico con gravedad moderada. La incidencia queda guardada con su viaje, su tipo, su gravedad, su estado y la hora, y aparece en el Centro de Alertas junto a las incidencias anteriores, abiertas o resueltas.
+
+![Formulario de incidencia](assets/images/Chapter-5/Sprint3/webapp-incident-form.png)
+
+![Incidencia reportada](assets/images/Chapter-5/Sprint3/webapp-incident.png)
+
+---
+
+**Conclusión:**
+
+Los Web Services de KidTrack permiten validar satisfactoriamente el Sprint 3 Goal, ya que las condiciones definidas en él fueron implementadas. El backend está publicado en Azure con su documentación en Swagger y la aplicación web funciona conectada a él. Los conductores, padres, alumnos y rutas que se registran en la aplicación quedan guardados en el backend. El conductor puede iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo queda guardado. El padre puede ver los avisos de abordaje de su hijo y el backend rechaza las acciones que no corresponden, como iniciar un viaje que no está programado. 
+
+---
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
