@@ -4946,6 +4946,129 @@ Los Web Services de KidTrack permiten validar satisfactoriamente el Sprint 3 Goa
 
 ---
 
+##### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+En este sprint se documentaron los Web Services con OpenAPI usando Swagger UI. La documentación describe los 61 endpoints de los seis bounded contexts, con sus parámetros y respuestas, y permite probarlos con un token. Los endpoints mantienen los mismos nombres y campos que la Fake API del Sprint 2, por eso el FrontEnd se conectó sin cambiar sus vistas.
+
+- **URL base:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+- **Swagger UI:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/swagger-ui.html
+- **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform
+
+Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaciones 201 Created con el registro y su id, las modificaciones 200 OK con el registro actualizado y las eliminaciones 204 No Content, sin cuerpo. El inicio de sesión devuelve 200 OK con el usuario y su token, y ese token se envía en el encabezado Authorization para usar los demás recursos. Cuando algo falla, el backend responde con un mensaje que explica el error: 400 si faltan datos o el cambio no está permitido, 401 si no hay token, 403 si el recurso es de otra organización o el usuario no tiene permiso, 404 si no existe y 409 si el dato ya está registrado.
+
+
+**Identity & Access Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /authentication/sign-in | Iniciar sesión y recibir el token | POST | POST {base}/authentication/sign-in | Body: email, password | 200 con el usuario y su token. 401 INVALID_CREDENTIALS si la contraseña no coincide. |
+| /authentication/sign-up | Registrar un usuario (administrador, conductor o padre) | POST | POST {base}/authentication/sign-up | Body: firstName, lastName, email, password, roleTier, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /organizations | Crear una organización | POST | POST {base}/organizations | Body: name, status | 201 con la organización creada (público). |
+| /organizations/{organizationId} | Consultar una organización | GET | GET {base}/organizations/{organizationId} | Path: organizationId | 200 con el recurso. 404 si no existe. |
+| /organizations/{organizationId} | Editar o suspender una organización | PATCH | PATCH {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /organizations/{organizationId} | Reemplazar los datos de una organización | PUT | PUT {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users | Listar los usuarios de una organización | GET | GET {base}/users?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /users/{userId} | Consultar un usuario | GET | GET {base}/users/{userId} | Path: userId | 200 con el recurso. 404 si no existe. |
+| /users/{userId} | Actualizar datos personales o contraseña | PATCH | PATCH {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users/{userId} | Reemplazar los datos de un usuario | PUT | PUT {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Subscription & Plan Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /plans | Listar los planes (público) | GET | GET {base}/plans | — | 200 con la lista (público). |
+| /plans/{planId} | Consultar un plan | GET | GET {base}/plans/{planId} | Path: planId | 200 con el recurso. 404 si no existe. |
+| /plans | Crear un plan | POST | POST {base}/plans | Body: planTier, name, maxRoutes, maxDrivers, maxStudents, price, description | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions | Listar las suscripciones de una organización | GET | GET {base}/subscriptions?organizationId={organizationId}&state={state} | Query: organizationId, state | 200 con la lista. |
+| /subscriptions/{subscriptionId} | Consultar una suscripción | GET | GET {base}/subscriptions/{subscriptionId} | Path: subscriptionId | 200 con el recurso. 404 si no existe. |
+| /subscriptions | Contratar un plan | POST | POST {base}/subscriptions | Body: organizationId, planId, planTier, state, startDate, endDate | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions/{subscriptionId} | Cambiar de plan, activar o cancelar | PATCH | PATCH {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /subscriptions/{subscriptionId} | Reemplazar los datos de una suscripción | PUT | PUT {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Stakeholder & Asset Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /children | Listar alumnos (por organización o por padre) | GET | GET {base}/children?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId | 200 con la lista. |
+| /children/{childId} | Consultar un alumno | GET | GET {base}/children/{childId} | Path: childId | 200 con el recurso. 404 si no existe. |
+| /children | Dar de alta un alumno | POST | POST {base}/children | Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /children/{childId} | Reemplazar los datos de un alumno | PUT | PUT {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Editar un alumno o marcar su abordaje | PATCH | PATCH {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Eliminar un alumno | DELETE | DELETE {base}/children/{childId} | Path: childId | 204 sin contenido. |
+| /parents | Listar los padres de una organización | GET | GET {base}/parents?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /parents/{parentId} | Consultar un padre | GET | GET {base}/parents/{parentId} | Path: parentId | 200 con el recurso. 404 si no existe. |
+| /parents | Registrar un padre | POST | POST {base}/parents | Body: name, email, phone, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /parents/{parentId} | Reemplazar los datos de un padre | PUT | PUT {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Editar los datos de un padre | PATCH | PATCH {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Eliminar un padre | DELETE | DELETE {base}/parents/{parentId} | Path: parentId | 204 sin contenido. |
+| /profiles | Listar perfiles (por ejemplo, conductores) | GET | GET {base}/profiles?organizationId={organizationId}&role={role} | Query: organizationId, role | 200 con la lista. |
+| /profiles/{profileId} | Consultar un perfil | GET | GET {base}/profiles/{profileId} | Path: profileId | 200 con el recurso. 404 si no existe. |
+| /profiles | Registrar un conductor con su licencia | POST | POST {base}/profiles | Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /profiles/{profileId} | Reemplazar los datos de un perfil | PUT | PUT {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Editar un perfil o verificar la licencia | PATCH | PATCH {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Eliminar un perfil | DELETE | DELETE {base}/profiles/{profileId} | Path: profileId | 204 sin contenido. |
+
+**Fleet & Route Planning**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /routes | Listar las rutas de una organización | GET | GET {base}/routes?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /routes/{routeId} | Consultar una ruta con sus paradas | GET | GET {base}/routes/{routeId} | Path: routeId | 200 con el recurso. 404 si no existe. |
+| /routes | Crear una ruta con paradas, conductor y vehículo | POST | POST {base}/routes | Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /routes/{routeId} | Editar una ruta o su asignación | PUT | PUT {base}/routes/{routeId} | Path: routeId. Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /routes/{routeId} | Eliminar una ruta (y sus viajes) | DELETE | DELETE {base}/routes/{routeId} | Path: routeId | 204 sin contenido. |
+| /vehicles | Listar los vehículos de una organización | GET | GET {base}/vehicles?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /vehicles/{vehicleId} | Consultar un vehículo | GET | GET {base}/vehicles/{vehicleId} | Path: vehicleId | 200 con el recurso. 404 si no existe. |
+| /vehicles | Registrar un vehículo | POST | POST {base}/vehicles | Body: plate, model, capacity, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /vehicles/{vehicleId} | Reemplazar los datos de un vehículo | PUT | PUT {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Editar un vehículo | PATCH | PATCH {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Eliminar un vehículo | DELETE | DELETE {base}/vehicles/{vehicleId} | Path: vehicleId | 204 sin contenido. |
+
+**Trip Execution & Monitoring**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /incidents | Listar las incidencias | GET | GET {base}/incidents?organizationId={organizationId}&tripId={tripId} | Query: organizationId, tripId, status | 200 con la lista. |
+| /incidents/{incidentId} | Consultar una incidencia | GET | GET {base}/incidents/{incidentId} | Path: incidentId | 200 con el recurso. 404 si no existe. |
+| /incidents | Reportar una incidencia o alerta SOS | POST | POST {base}/incidents | Body: tripId, routeId, type, severity, description, reportedBy, timestamp, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /incidents/{incidentId} | Marcar una incidencia como resuelta | PATCH | PATCH {base}/incidents/{incidentId} | Path: incidentId. Body: status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /trips | Listar los viajes | GET | GET {base}/trips?organizationId={organizationId}&routeId={routeId} | Query: organizationId, routeId, driverId, status, scheduledDate | 200 con la lista. |
+| /trips/{tripId} | Consultar un viaje | GET | GET {base}/trips/{tripId} | Path: tripId | 200 con el recurso. 404 si no existe. |
+| /trips | Programar un viaje para una ruta | POST | POST {base}/trips | Body: routeId, scheduledDate, scheduledStartTime, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /trips/{tripId} | Iniciar, actualizar el avance, finalizar o cancelar un viaje | PATCH | PATCH {base}/trips/{tripId} | Path: tripId. Body: status, startTime, endTime, currentStop, studentsBoarded (según el caso) | 200 con el viaje actualizado. 400 si el cambio de estado no está permitido. 403 si no es el conductor asignado. |
+| /trips/{tripId} | Eliminar un viaje (y sus avisos) | DELETE | DELETE {base}/trips/{tripId} | Path: tripId | 204 sin contenido. |
+
+**Notifications & Communication**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /notifications | Listar los avisos | GET | GET {base}/notifications?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId, tripId, read | 200 con la lista. |
+| /notifications/{notificationId} | Consultar un aviso | GET | GET {base}/notifications/{notificationId} | Path: notificationId | 200 con el recurso. 404 si no existe. |
+| /notifications | Crear un aviso para un padre | POST | POST {base}/notifications | Body: type, message, timestamp, read, parentId, tripId, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /notifications/{notificationId} | Marcar un aviso como leído | PATCH | PATCH {base}/notifications/{notificationId} | Path: notificationId. Body: read | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /notifications/{notificationId} | Eliminar un aviso | DELETE | DELETE {base}/notifications/{notificationId} | Path: notificationId | 204 sin contenido. |
+
+**Interacción con datos de prueba**
+
+- Vista general de la documentación publicada
+
+  ![Swagger UI publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+- Consulta pública de los planes (no necesita token)
+
+  ![Consulta de planes en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-plans.png)
+
+- Inicio de sesión con la cuenta del conductor y obtención del token (el token está difuminado en la captura)
+
+  ![Inicio de sesión en Swagger](assets/images/Chapter-5/Sprint3/swagger-sign-in.png)
+
+- Consulta de rutas con el token
+
+  ![Consulta de rutas en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-routes.png)
+
+- Cambio de estado no permitido en un viaje completado
+
+  ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
