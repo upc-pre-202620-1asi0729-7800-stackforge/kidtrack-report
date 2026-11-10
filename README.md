@@ -4780,6 +4780,18 @@ En el Sprint 3 el equipo desarrolló la primera versión de los Web Services de 
 | Sprint 3 Velocity | 32 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint. Los puntos que quedan aceptados después de las pruebas se indican al final de la sección 5.2.3.3. |
 | Sum of Story Points | 32 Story Points de 9 historias: TS1 (5), TS4 (3), TS6 (3), TS8 (3), US10 (3), US11 (5), US12 (5), US14 (2) y US19 (3). Las historias US10, US11, US12, US14 y US19 vuelven a este sprint porque en el Sprint 2 funcionaban con la Fake API y ahora funcionan con el backend. |
 
+##### 5.2.3.2. Aspect Leaders and Collaborators
+
+Para este sprint se tomaron como aspectos los seis bounded contexts del backend, el shared kernel (seguridad JWT y manejo de errores), las pruebas de integración, el despliegue y la documentación del informe.
+
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel & Security (L/C) | Identity & Access Management (L/C) | Subscription & Plan Management (L/C) | Stakeholder & Asset Management (L/C) | Fleet & Route Planning (L/C) | Trip Execution & Monitoring (L/C) | Notifications & Communication (L/C) | Integration Tests (L/C) | Deployment (L/C) | Report (L/C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | C | L | C | C | L |
+| De la Cruz De los Santos, Mathias Marcelo | Dela050406 | L | L | C | L | C | C | C | L | C | C |
+| Ortega Quintana, Jose Zacarias | Argox16 | C | L | C | C | C | C | C | C | C | C |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
+| Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
