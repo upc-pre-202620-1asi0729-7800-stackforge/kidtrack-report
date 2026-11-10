@@ -4792,6 +4792,49 @@ Para este sprint se tomaron como aspectos los seis bounded contexts del backend,
 | Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
 | Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
 
+##### 5.2.3.3. Sprint Backlog 3
+
+El objetivo del Sprint 3 fue validar el Sprint 3 Goal mediante el desarrollo de los Web Services de KidTrack, su despliegue en Azure y su conexión con la aplicación web.
+
+De los 32 Story Points comprometidos en el Sprint Planning se aceptaron 26. Las historias que en el Sprint 2 funcionaban con la Fake API ahora guardan sus datos en el backend.
+
+![Sprint Backlog 3](assets/images/Chapter-5/Sprint3/Sprint-Backlog-3.png)
+
+**URL del Board:** 
+
+| Sprint # | Sprint 3 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS1 | Implementación JWT Authentication | T01 | Proyecto Spring Boot | Crear el proyecto en Java 21 con Spring Boot, la estructura por bounded context y el Dockerfile. | 3 | Mathias | Done |
+|  |  | T02 | Seguridad con JWT | Generar y validar el token en cada consulta, y responder 401 cuando no se envía o no es válido. | 4 | Mathias | Done |
+|  |  | T03 | Inicio de sesión y registro | Permitir iniciar sesión y registrar usuarios; el primer administrador de una organización se registra sin token. | 3 | Mathias | Done |
+|  |  | T04 | Permisos por rol y organización | Hacer que cada usuario solo vea los datos de su organización y que el conductor no pueda hacer acciones de administrador. | 3 | Mathias | Done |
+| TS4 | Configuración Swagger/OpenAPI | T01 | Documentar la API | Configurar Swagger UI y describir los endpoints de los seis contextos. | 2 | Mathias | Done |
+|  |  | T02 | Swagger en el backend publicado | Activar la documentación en el entorno de Azure para poder consultarla y probarla. | 1 | Nickolas | Done |
+| TS6 | Implementación HTTPS/SSL | T01 | Publicar el backend con HTTPS | Publicar el backend en Azure App Service, que responde con certificado válido. | 2 | Nickolas | Done |
+|  |  | T02 | Publicar el FrontEnd con HTTPS | Publicar la nueva versión del FrontEnd en Azure Static Web Apps. | 2 | Nickolas | Done |
+|  |  | T03 | Redirigir HTTP a HTTPS | Activar la opción HTTPS Only en Azure y comprobar que una dirección http redirige a https. | 1 | Nickolas | Done |
+| TS8 | API: Obtener Alumnos | T01 | Endpoints de alumnos | Consultar los alumnos de una organización o de un padre, y darlos de alta, editarlos y eliminarlos. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos de cada ruta | Guardar en cada parada de la ruta qué alumnos suben, para consultarlos desde la ruta. | 1 | Eddo | Done |
+| US10 | Inicio de Trayecto | T01 | Viaje en el backend | Guardar el viaje con sus estados (programado, en camino, completado y cancelado). | 3 | Nickolas | Done |
+|  |  | T02 | Reglas para iniciar | Permitir iniciar solo un viaje programado, y solo al conductor asignado a ese viaje. | 2 | Nickolas | Done |
+|  |  | T03 | Un viaje por ruta y por día | No permitir programar dos viajes de la misma ruta el mismo día. | 1 | Nickolas | Done |
+|  |  | T04 | Cambios de la ruta | Cuando se cambia el conductor o el vehículo de una ruta, o se elimina, avisar con un evento para que sus viajes se actualicen. | 2 | Eddo | Done |
+| US11 | Marcación de Abordaje | T01 | Abordaje en el backend | Guardar el estado de abordaje del alumno cuando el conductor lo marca. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos abordados | Validar que la cantidad de alumnos abordados no supere la de alumnos del viaje. | 1 | Nickolas | Done |
+|  |  | T03 | Prueba del abordaje | Probar que el administrador gestiona alumnos y que el conductor marca su abordaje. | 2 | Mathias | Done |
+| US12 | Reporte de Incidencias | T01 | Incidencias en el backend | Guardar las incidencias y alertas SOS con su viaje, tipo, gravedad y hora. | 3 | Nickolas | Done |
+|  |  | T02 | Cerrar incidencias | Permitir marcar una incidencia como resuelta y filtrar por estado. | 1 | Nickolas | Done |
+| US14 | Finalización de Viaje | T01 | Reglas para finalizar | Permitir finalizar solo un viaje que está en camino; un viaje finalizado no se puede cancelar ni reasignar. | 1 | Nickolas | Done |
+|  |  | T02 | Prueba del ciclo del viaje | Probar el ciclo completo: crear la ruta, programar el viaje, iniciarlo y finalizarlo. | 2 | Mathias | Done |
+| US19 | Confirmación de Llegada | T01 | Avisos en el backend | Guardar los avisos de cada padre y permitir marcarlos como leídos. | 3 | Salvador | Done |
+|  |  | T02 | Limpiar avisos de un viaje | Borrar los avisos de un viaje cuando ese viaje se elimina. | 1 | Salvador | Done |
+|  |  | T03 | Aviso automático de llegada | Que el backend genere el aviso de llegada cuando el conductor finaliza el viaje, sin depender de la aplicación. | 3 | Salvador | Done |
+| — | Tareas generales del Sprint | T01 | Pruebas de integración | Probar inicio de sesión, rutas públicas y protegidas, datos de otra organización y permisos del conductor. | 3 | Mathias | Done |
+|  |  | T02 | Conectar el FrontEnd con el backend | Cambiar la dirección de la API del FrontEnd por la del backend publicado. | 1 | Nickolas | Done |
+|  |  | T03 | Nueva versión de la Landing Page | Cambiar el enlace de la Landing al nuevo FrontEnd y agregar en el footer los Términos y Condiciones y la Política de Privacidad. | 3 | Mathias | Done |
+|  |  | T04 | Documentar el Sprint 3 | Redactar el Sprint 3 en el informe con la evidencia de los repositorios. | 4 | Salvador | Done|
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
