@@ -5069,6 +5069,49 @@ Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaci
 - Cambio de estado no permitido en un viaje completado
 
   ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+  ##### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En este sprint se desplegaron los Web Services por primera vez y una nueva versión del FrontEnd conectada a ellos. La Fake API del Sprint 2 ya no se usa.
+
+**Web Services**
+
+Se desplegaron en Azure App Service con un workflow de GitHub Actions.
+
+- Se creó en Azure un Web App llamado kidtrack-platform con Java 21, en la región Chile Central.
+- Se agregó al repositorio el workflow que, cada vez que se sube un cambio a main, compila el proyecto con Maven y publica el archivo .jar en Azure (commit 0447078).
+- En la configuración del Web App se colocaron las variables de entorno que usa el perfil de producción: datos de conexión a MySQL (DATABASE_URL, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD y DATABASE_SSL), la clave del token (JWT_SECRET), SEED_ENABLED para cargar los datos de prueba y SWAGGER_ENABLED para la documentación. Las claves no se guardan en el repositorio.
+- La base de datos MySQL está en [COMPLETAR: servicio usado, por ejemplo Azure Database for MySQL].
+- Se comprobó que el backend responde por HTTPS y que Swagger UI está disponible.
+
+**URL:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+
+![Workflow de despliegue del backend en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-platform-actions.png)
+
+![Backend publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+**Front End**
+
+Se desplegó una nueva versión en Azure Static Web Apps.
+
+- Se creó un nuevo Static Web App y se agregó su workflow al repositorio (commit 6d6a6fb). Las claves que necesita la aplicación se pasan como secretos del repositorio (commit c874a84).
+- Se quitó el workflow del Static Web App anterior (commit 30aedf3).
+- En el environment de Angular se puso la URL del backend publicado (commit 704f3df).
+
+**URL:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+![Workflow de despliegue del FrontEnd en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-webapp-actions.png)
+
+![Aplicación web publicada](assets/images/Chapter-5/Sprint3/deploy-webapp-live.png)
+
+**Landing Page**
+
+Sigue en GitHub Pages. 
+
+**URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
