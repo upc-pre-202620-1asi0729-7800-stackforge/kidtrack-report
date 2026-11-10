@@ -5112,6 +5112,24 @@ Sigue en GitHub Pages.
 
 ![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
 
+##### 5.2.3.8. Team Collaboration Insights during Sprint
+
+El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop.
+
+En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
+
+**Web Services**
+
+![Insights de los Web Services](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
+
+**FrontEnd**
+
+![Insights de la aplicación web](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+
+**Landing Page**
+
+![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
