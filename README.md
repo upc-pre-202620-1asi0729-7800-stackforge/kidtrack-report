@@ -4803,6 +4803,227 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 #### 5.3.2. Diseño de Entrevistas
 
+#### Segmento 1: Padre de familia  
+
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+
+##### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+##### Entrevista 3
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+#### Segmento 2: Coductores 
+
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+
+##### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+##### Entrevista 3
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | |
+| **Apellidos** | |
+| **Edad** | |
+| **Distrito** | |
+| **Ocupación** | |
+| **Vehículo que posee** | |
+| **Fecha de la entrevista** | |
+| **Entrevistador** | |
+| **Inicio en el video** | 00:00 |
+| **Duración** | 00:00 |
+
+![Entrevista 4](assets/img/sprint3/validation-04.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+#### Resultados generales
+
+| Tarea | Completada sin ayuda | Completada con ayuda | No completada | Facilidad promedio (1-7) |
+|---|:---:|:---:|:---:|:---:|
+| **L1** |  |  |  |  |
+| **L2** |  |  |  |  |
+| **L3** |  |  |  |  |
+| **L4** |  |  |  |  |
+| **A1 / P1** |  |  |  |  |
+| **A2** |  |  |  |  |
+| **A3** |  |  |  |  |
+| **A4** |  |  |  |  |
+| **A5** |  |  |  |  |
+| **P2** |  |  |  |  |
+| **P3** |  |  |  |  |
+| **P4** |  |  |  |  |
+| **P5** |  |  |  |  |
+
+En términos generales, las evaluaciones de usabilidad demostraron que los flujos principales de la plataforma son intuitivos y de fácil adopción para los usuarios. Las tareas relacionadas con la exploración en la Landing Page (L1), el registro de cuentas (A2), la visualización de detalles principales (A3) y el envío de notificaciones (A4) obtuvieron las calificaciones más altas de facilidad (promedio de 7.0), destacando la claridad de los botones principales y la calidad visual de las interfaces. Sin embargo, se identifican problemas recurrentes en tareas de alta complejidad temporal o de personalización, como la selección de fechas no consecutivas o parámetros avanzados en módulos específicos (A3/P4) y ciertas dificultades con el tamaño de tipografías iniciales para usuarios con fatiga visual. Las principales diferencias entre segmentos radicaron en que los apoderados priorizan la agilidad y transparencia en la ubicación de recojo y alertas en tiempo real, mientras que los conductores exigen mayor control sobre la marcación rápida y el estado de disponibilidad del vehículo.
+
+
 #### 5.3.3. Evaluaciones según heurísticas
 
 A continuación, se presenta la sesión de evaluación de usabilidad, arquitectura de información y diseño inclusivo realizada sobre la plataforma **KidTrack** (Web & App), siguiendo la estructura y formato especificados en el Anexo D.
@@ -4853,82 +5074,11 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 
 #### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
 
-| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
-| :-: | :--- | :-: | :--- |
-| **1** | El mapa en tiempo real no muestra un indicador explícito al refrescar las coordenadas GPS de la unidad escolar. | **3** | **Usability:** Visibilidad del estado del sistema |
-| **2** | En los detalles del historial de viajes se muestran coordenadas técnicas en lugar de direcciones legibles. | **2** | **Usability:** Relación entre el sistema y el mundo real |
-| **3** | Al aplicar filtros por fecha en el historial, no existe un control rápido para limpiar o restablecer la búsqueda. | **2** | **Usability:** Control y libertad del usuario |
-| **4** | Los botones de marcación rápida del conductor diferían en tipografía y radio de borde respecto al panel general. | **3** | **Usability:** Consistencia y estándares |
-| **5** | El botón de "Reportar Incidencia" al conducir se activaba con un solo toque, generando alertas accidentales. | **3** | **Usability:** Prevención de errores |
-| **6** | Los datos de la placa y perfil del conductor no se mantenían visibles de forma fija al observar el mapa. | **3** | **Information Architecture:** Recognition rather than recall |
-| **7** | En el panel inicial del padre, se visualizaban accesos directos deshabilitados antes de vincular al estudiante. | **1** | **Usability:** Flexibilidad y eficiencia de uso |
-| **8** | Textos densos e imágenes promocionales en la Landing Page sin textos alternativos accesibles. | **3** | **Inclusive Design:** Proporciona experiencias comparables / Estética y diseño minimalista |
-| **9** | Ante la pérdida de conexión a internet, el sistema mostraba una pantalla en blanco sin indicación de reconexión. | **4** | **Usability:** Ayuda a reconocer, diagnosticar y recuperar errores |
-| **10** | No se incluía un enlace accesible o modal de preguntas frecuentes para resolver dudas iniciales del usuario. | **2** | **Information Architecture:** Help & Documentation |
 
----
 
 #### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
 
-##### PROBLEMA #1: Sin indicador de estado al actualizar el mapa en tiempo real
-- **Severidad:** 3 (Problema mayor)
-- **Heurística violada:** Usability - Visibilidad del estado del sistema
-- **Problema:** Al observar el mapa de seguimiento en vivo mientras la unidad escolar está en marcha, no existe un indicador visual ("Cargando...", spinner o pulso de luz) que informe al padre si las coordenadas GPS están actualizadas o si la señal se encuentra temporalmente en pausa. *(Se incluye captura de pantalla del mapa activo sin indicador)*.
-- **Recomendación:** Incorporar una etiqueta flotante en la esquina superior del mapa con el texto "Actualizando posición en vivo..." junto a un punto verde intermitente de estado.
 
-##### PROBLEMA #2: Presentación de datos de ubicación mediante coordenadas puras
-- **Severidad:** 2 (Problema menor)
-- **Heurística violada:** Usability - Relación entre el sistema y el mundo real
-- **Problema:** Al revisar el detalle de las paradas en el Historial de Viajes, el sistema despliega las coordenadas geográficas (`Lat: -12.08, Lng: -76.97`) en lugar del nombre descriptivo de las avenidas o la referencia de la parada. *(Se incluye captura del módulo de historial)*.
-- **Recomendación:** Implementar un servicio de geocodificación inversa (*Reverse Geocoding*) para traducir las coordenadas a formatos urbanos comprensibles como "Av. Javier Prado Este / Calle Los Olivos, Surco".
-
-##### PROBLEMA #3: Imposibilidad de restablecer rápidamente los filtros de búsqueda
-- **Severidad:** 2 (Problema menor)
-- **Heurística violada:** Usability - Control y libertad del usuario
-- **Problema:** Al realizar búsquedas de asistencias pasadas mediante selectores de fecha en la WebApp del padre, no existe un botón de "Limpiar filtros", obligando al usuario a borrar manualmente la fecha o recargar la página para volver a la vista inicial. *(Se incluye captura del formulario de búsqueda)*.
-- **Recomendación:** Agregar un botón secundario con el icono de "Restablecer" al lado de la barra de búsqueda que limpie las entradas con un solo clic.
-
-##### PROBLEMA #4: Inconsistencia visual en los botones del panel del conductor
-- **Severidad:** 3 (Problema mayor)
-- **Heurística violada:** Usability - Consistencia y estándares
-- **Problema:** Los botones de marcación rápida ("Abordado" / "Ausente") en la vista móvil del conductor utilizaban una paleta de colores y un estilo de bordes distinto al resto de los componentes del sistema de diseño oficial de KidTrack. *(Se incluye captura de la interfaz del conductor)*.
-- **Recomendación:** Uniformizar los estilos aplicando los tokens globales de diseño (Naranja Rojizo `#FF5722` y Azul Marino `#1A237E`) manteniéndolos alineados a la guía de estilo general.
-
-##### PROBLEMA #5: Ausencia de prevención frente al toque accidental de "Reportar Incidencia"
-- **Severidad:** 3 (Problema mayor)
-- **Heurística violada:** Usability - Prevención de errores
-- **Problema:** En el panel móvil del conductor, el botón para notificar imprevistos o tráfico pesado se activa al recibir un solo toque. Esto genera falsas alarmas y notificaciones erróneas a los padres cuando el conductor manipula el celular montado en el tablero. *(Se incluye captura del botón en la vista del conductor)*.
-- **Recomendación:** Reemplazar el botón de toque simple por un componente de deslizamiento (*slide to confirm*) para evitar la detonación accidental de la alerta.
-
-##### PROBLEMA #6: Ocultamiento de la información del conductor durante el monitoreo
-- **Severidad:** 3 (Problema mayor)
-- **Heurística violada:** Information Architecture - Recognition rather than recall
-- **Problema:** Cuando el padre abre la vista ampliada del mapa en tiempo real, la tarjeta que contiene la placa del vehículo, el nombre del conductor y su número de contacto se oculta automáticamente, obligando al usuario a recordar los datos o salir del mapa para consultarlos. *(Se incluye captura del mapa sin tarjeta flotante)*.
-- **Recomendación:** Fijar una tarjeta flotante desplegable (*bottom sheet*) en el área inferior de la pantalla con la foto, placa y botón de llamada directa.
-
-##### PROBLEMA #7: Opciones inactivas visibles en el menú del usuario nuevo
-- **Severidad:** 1 (Problema superficial)
-- **Heurística violada:** Usability - Flexibilidad y eficiencia de uso
-- **Problema:** Cuando un padre ingresa por primera vez y aún no ha vinculado el código del estudiante, las opciones de "Historial" y "Reportes" se muestran en el menú pero emiten mensajes de error al hacer clic. *(Se incluye captura del menú deshabilitado)*.
-- **Recomendación:** Ocultar dinámicamente las secciones avanzadas hasta que la vinculación del estudiante haya sido completada con éxito.
-
-##### PROBLEMA #8: Falta de atributos de accesibilidad e imágenes sin texto alternativo
-- **Severidad:** 3 (Problema mayor)
-- **Heurística violada:** Inclusive Design - Proporciona experiencias comparables
-- **Problema:** Múltiples elementos visuales e iconos en la Landing Page y en la interfaz web no incorporaban atributos `alt` ni etiquetas `aria-label`, dificultando la navegación a usuarios que emplean lectores de pantalla. *(Se incluye captura de código e interfaz de la Landing Page)*.
-- **Recomendación:** Implementar descriptores `alt` claros en todas las imágenes ilustrativas y estructurar atributos ARIA en los elementos interactivos del menú.
-
-##### PROBLEMA #9: Fallo de sistema no controlado ante pérdida de conectividad
-- **Severidad:** 4 (Problema muy grave)
-- **Heurística violada:** Usability - Ayuda a los usuarios a reconocer, diagnosticar y recuperar errores
-- **Problema:** Si el usuario pierde la conexión a datos móviles durante el seguimiento del viaje, la aplicación queda en pantalla blanca y se bloquea sin emitir un mensaje informativo sobre la falta de red. *(Se incluye captura del estado de falla)*.
-- **Recomendación:** Crear un estado de contingencia (*empty state*) amigable con el mensaje: "Sin conexión a internet. Verifique su red y presione Reintentar".
-
-##### PROBLEMA #10: Ausencia de centro de ayuda o sección de FAQ
-- **Severidad:** 2 (Problema menor)
-- **Heurística violada:** Information Architecture - Help & Documentation
-- **Problema:** En el menú principal de la plataforma no se dispone de una opción de ayuda rápida o preguntas frecuentes para guiarlos ante dudas sobre las alertas de abordaje. *(Se incluye captura del menú de perfil)*.
-- **Recomendación:** Incorporar una pestaña de "Ayuda y Preguntas Frecuentes" accesible desde el perfil de usuario.
 
 
 
