@@ -4758,6 +4758,28 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
 
+### 5.2.3. Sprint 3
+
+##### 5.2.3.1. Sprint Planning 3
+
+En el Sprint 3 el equipo desarrolló la primera versión de los Web Services de KidTrack en Java con Spring Boot (kidtrack-platform) y conectó el FrontEnd con ellos, dejando de usar la Fake API. El backend mantiene los seis bounded contexts definidos en el capítulo IV y respeta los mismos endpoints que ya usaba la aplicación, por eso el FrontEnd solo tuvo que cambiar la dirección de la API.
+
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-11-01 |
+| Time | 10:00 AM |
+| Location | Reunión virtual por Microsoft Teams, con seguimiento por Discord |
+| Prepared By | Salvador Chamorro Acero |
+| Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
+| Sprint 2 Retrospective Summary | **Lo que salió bien:** dividir el FrontEnd por bounded contexts, con una rama y un Pull Request por contexto, permitió avanzar al mismo tiempo sin muchos conflictos, y el despliegue en Azure salió sin problemas. **Lo que hay que mejorar:** dejar claro en el Context Map qué contexto es dueño de cada entidad, probar el flujo completo y los casos límite antes de la entrega, y trabajar el backend también con ramas y Pull Requests. |
+| Sprint 3 Goal | **Nuestro enfoque es** tener la primera versión de los Web Services de KidTrack, hechos en Java con Spring Boot, desplegados en Azure y conectados con la aplicación web, para que todo lo que registran el administrador, el conductor y el padre quede guardado en el backend y ya no en una API simulada. **Creemos que esto les da** a los transportistas la seguridad de que la información de sus rutas, alumnos y viajes no se pierde, y a los padres la confianza de que los avisos que reciben sobre su hijo son reales. **Lo confirmaremos cuando** el backend esté publicado en Azure, con su documentación en Swagger, y la aplicación web funcione conectada a él. Cuando los conductores, padres, alumnos y rutas que se registran en la aplicación queden guardados en el backend. Cuando el conductor pueda iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo quede guardado. Cuando el padre pueda ver los avisos de su hijo y el backend rechace las acciones que no corresponden, como iniciar un viaje que no está programado. |
+| Sprint 3 Velocity | 32 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint. Los puntos que quedan aceptados después de las pruebas se indican al final de la sección 5.2.3.3. |
+| Sum of Story Points | 32 Story Points de 9 historias: TS1 (5), TS4 (3), TS6 (3), TS8 (3), US10 (3), US11 (5), US12 (5), US14 (2) y US19 (3). Las historias US10, US11, US12, US14 y US19 vuelven a este sprint porque en el Sprint 2 funcionaban con la Fake API y ahora funcionan con el backend. |
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
