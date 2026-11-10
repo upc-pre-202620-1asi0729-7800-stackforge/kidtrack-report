@@ -4758,6 +4758,378 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
 
+### 5.2.3. Sprint 3
+
+##### 5.2.3.1. Sprint Planning 3
+
+En el Sprint 3 el equipo desarrolló la primera versión de los Web Services de KidTrack en Java con Spring Boot (kidtrack-platform) y conectó el FrontEnd con ellos, dejando de usar la Fake API. El backend mantiene los seis bounded contexts definidos en el capítulo IV y respeta los mismos endpoints que ya usaba la aplicación, por eso el FrontEnd solo tuvo que cambiar la dirección de la API.
+
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-11-01 |
+| Time | 10:00 AM |
+| Location | Reunión virtual por Microsoft Teams, con seguimiento por Discord |
+| Prepared By | Salvador Chamorro Acero |
+| Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
+| Sprint 2 Retrospective Summary | **Lo que salió bien:** dividir el FrontEnd por bounded contexts, con una rama y un Pull Request por contexto, permitió avanzar al mismo tiempo sin muchos conflictos, y el despliegue en Azure salió sin problemas. **Lo que hay que mejorar:** dejar claro en el Context Map qué contexto es dueño de cada entidad, probar el flujo completo y los casos límite antes de la entrega, y trabajar el backend también con ramas y Pull Requests. |
+| Sprint 3 Goal | **Nuestro enfoque es** tener la primera versión de los Web Services de KidTrack, hechos en Java con Spring Boot, desplegados en Azure y conectados con la aplicación web, para que todo lo que registran el administrador, el conductor y el padre quede guardado en el backend y ya no en una API simulada. **Creemos que esto les da** a los transportistas la seguridad de que la información de sus rutas, alumnos y viajes no se pierde, y a los padres la confianza de que los avisos que reciben sobre su hijo son reales. **Lo confirmaremos cuando** el backend esté publicado en Azure, con su documentación en Swagger, y la aplicación web funcione conectada a él. Cuando los conductores, padres, alumnos y rutas que se registran en la aplicación queden guardados en el backend. Cuando el conductor pueda iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo quede guardado. Cuando el padre pueda ver los avisos de su hijo y el backend rechace las acciones que no corresponden, como iniciar un viaje que no está programado. |
+| Sprint 3 Velocity | 32 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint. Los puntos que quedan aceptados después de las pruebas se indican al final de la sección 5.2.3.3. |
+| Sum of Story Points | 32 Story Points de 9 historias: TS1 (5), TS4 (3), TS6 (3), TS8 (3), US10 (3), US11 (5), US12 (5), US14 (2) y US19 (3). Las historias US10, US11, US12, US14 y US19 vuelven a este sprint porque en el Sprint 2 funcionaban con la Fake API y ahora funcionan con el backend. |
+
+##### 5.2.3.2. Aspect Leaders and Collaborators
+
+Para este sprint se tomaron como aspectos los seis bounded contexts del backend, el shared kernel (seguridad JWT y manejo de errores), las pruebas de integración, el despliegue y la documentación del informe.
+
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel & Security (L/C) | Identity & Access Management (L/C) | Subscription & Plan Management (L/C) | Stakeholder & Asset Management (L/C) | Fleet & Route Planning (L/C) | Trip Execution & Monitoring (L/C) | Notifications & Communication (L/C) | Integration Tests (L/C) | Deployment (L/C) | Report (L/C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | C | L | C | C | L |
+| De la Cruz De los Santos, Mathias Marcelo | Dela050406 | L | L | C | L | C | C | C | L | C | C |
+| Ortega Quintana, Jose Zacarias | Argox16 | C | L | C | C | C | C | C | C | C | C |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
+| Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
+
+##### 5.2.3.3. Sprint Backlog 3
+
+El objetivo del Sprint 3 fue validar el Sprint 3 Goal mediante el desarrollo de los Web Services de KidTrack, su despliegue en Azure y su conexión con la aplicación web.
+
+De los 32 Story Points comprometidos en el Sprint Planning se aceptaron 26. Las historias que en el Sprint 2 funcionaban con la Fake API ahora guardan sus datos en el backend.
+
+![Sprint Backlog 3](assets/images/Chapter-5/Sprint3/Sprint-Backlog-3.png)
+
+**URL del Board:** 
+
+| Sprint # | Sprint 3 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS1 | Implementación JWT Authentication | T01 | Proyecto Spring Boot | Crear el proyecto en Java 21 con Spring Boot, la estructura por bounded context y el Dockerfile. | 3 | Mathias | Done |
+|  |  | T02 | Seguridad con JWT | Generar y validar el token en cada consulta, y responder 401 cuando no se envía o no es válido. | 4 | Mathias | Done |
+|  |  | T03 | Inicio de sesión y registro | Permitir iniciar sesión y registrar usuarios; el primer administrador de una organización se registra sin token. | 3 | Mathias | Done |
+|  |  | T04 | Permisos por rol y organización | Hacer que cada usuario solo vea los datos de su organización y que el conductor no pueda hacer acciones de administrador. | 3 | Mathias | Done |
+| TS4 | Configuración Swagger/OpenAPI | T01 | Documentar la API | Configurar Swagger UI y describir los endpoints de los seis contextos. | 2 | Mathias | Done |
+|  |  | T02 | Swagger en el backend publicado | Activar la documentación en el entorno de Azure para poder consultarla y probarla. | 1 | Nickolas | Done |
+| TS6 | Implementación HTTPS/SSL | T01 | Publicar el backend con HTTPS | Publicar el backend en Azure App Service, que responde con certificado válido. | 2 | Nickolas | Done |
+|  |  | T02 | Publicar el FrontEnd con HTTPS | Publicar la nueva versión del FrontEnd en Azure Static Web Apps. | 2 | Nickolas | Done |
+|  |  | T03 | Redirigir HTTP a HTTPS | Activar la opción HTTPS Only en Azure y comprobar que una dirección http redirige a https. | 1 | Nickolas | Done |
+| TS8 | API: Obtener Alumnos | T01 | Endpoints de alumnos | Consultar los alumnos de una organización o de un padre, y darlos de alta, editarlos y eliminarlos. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos de cada ruta | Guardar en cada parada de la ruta qué alumnos suben, para consultarlos desde la ruta. | 1 | Eddo | Done |
+| US10 | Inicio de Trayecto | T01 | Viaje en el backend | Guardar el viaje con sus estados (programado, en camino, completado y cancelado). | 3 | Nickolas | Done |
+|  |  | T02 | Reglas para iniciar | Permitir iniciar solo un viaje programado, y solo al conductor asignado a ese viaje. | 2 | Nickolas | Done |
+|  |  | T03 | Un viaje por ruta y por día | No permitir programar dos viajes de la misma ruta el mismo día. | 1 | Nickolas | Done |
+|  |  | T04 | Cambios de la ruta | Cuando se cambia el conductor o el vehículo de una ruta, o se elimina, avisar con un evento para que sus viajes se actualicen. | 2 | Eddo | Done |
+| US11 | Marcación de Abordaje | T01 | Abordaje en el backend | Guardar el estado de abordaje del alumno cuando el conductor lo marca. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos abordados | Validar que la cantidad de alumnos abordados no supere la de alumnos del viaje. | 1 | Nickolas | Done |
+|  |  | T03 | Prueba del abordaje | Probar que el administrador gestiona alumnos y que el conductor marca su abordaje. | 2 | Mathias | Done |
+| US12 | Reporte de Incidencias | T01 | Incidencias en el backend | Guardar las incidencias y alertas SOS con su viaje, tipo, gravedad y hora. | 3 | Nickolas | Done |
+|  |  | T02 | Cerrar incidencias | Permitir marcar una incidencia como resuelta y filtrar por estado. | 1 | Nickolas | Done |
+| US14 | Finalización de Viaje | T01 | Reglas para finalizar | Permitir finalizar solo un viaje que está en camino; un viaje finalizado no se puede cancelar ni reasignar. | 1 | Nickolas | Done |
+|  |  | T02 | Prueba del ciclo del viaje | Probar el ciclo completo: crear la ruta, programar el viaje, iniciarlo y finalizarlo. | 2 | Mathias | Done |
+| US19 | Confirmación de Llegada | T01 | Avisos en el backend | Guardar los avisos de cada padre y permitir marcarlos como leídos. | 3 | Salvador | Done |
+|  |  | T02 | Limpiar avisos de un viaje | Borrar los avisos de un viaje cuando ese viaje se elimina. | 1 | Salvador | Done |
+|  |  | T03 | Aviso automático de llegada | Que el backend genere el aviso de llegada cuando el conductor finaliza el viaje, sin depender de la aplicación. | 3 | Salvador | Done |
+| — | Tareas generales del Sprint | T01 | Pruebas de integración | Probar inicio de sesión, rutas públicas y protegidas, datos de otra organización y permisos del conductor. | 3 | Mathias | Done |
+|  |  | T02 | Conectar el FrontEnd con el backend | Cambiar la dirección de la API del FrontEnd por la del backend publicado. | 1 | Nickolas | Done |
+|  |  | T03 | Nueva versión de la Landing Page | Cambiar el enlace de la Landing al nuevo FrontEnd y agregar en el footer los Términos y Condiciones y la Política de Privacidad. | 3 | Mathias | Done |
+|  |  | T04 | Documentar el Sprint 3 | Redactar el Sprint 3 en el informe con la evidencia de los repositorios. | 4 | Salvador | Done|
+
+##### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1, usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
+
+| Producto | Repositorio |
+| :--- | :--- |
+| Web Services | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform |
+| FrontEnd | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp |
+| Landing Page | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | e1af627 | chore: initialize Spring Boot project with Docker setup | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | b5809af | feat(shared): add shared kernel, JWT security and error handling | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a76b14c | feat(iam): add identity and access management context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | ca7d13b | feat(stakeholder): add parents, children and drivers context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a9c7544 | feat(subscription): add plans and subscriptions context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 34208ed | feat(fleet): add vehicles and routes context | Eddo Su Caletti | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 5ba65d3 | feat(trip): add trips and incidents context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | d0bfec3 | feat(notifications): add notifications context | Salvador Chamorro | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 6591076 | test: add API integration tests | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | main | 0447078 | Add or update the Azure App Service build and deployment workflow config | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 6d6a6fb | ci: add Azure Static Web Apps workflow file on-behalf-of: @Azure opensource@microsoft.com | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | c874a84 | ci: inject API keys in new Azure SWA workflow | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
+
+##### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 la aplicación web de KidTrack dejó de usar la Fake API y ahora guarda sus datos en el backend publicado en Azure. Como el backend respeta los mismos endpoints que ya usaba el FrontEnd, todas las vistas del Sprint 2 siguen funcionando, pero ahora los registros, las rutas, los viajes, el abordaje, las incidencias y los avisos quedan guardados en la base de datos.
+
+**URL del FrontEnd:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+Para probar la aplicación se mantienen las tres cuentas de prueba, que ahora vienen cargadas en el backend:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Administrador | admin@kidtrack.pe | admin123 |
+| Conductor | driver@kidtrack.pe | driver123 |
+| Padre | parent@kidtrack.pe | parent123 |
+
+Se realizó un video donde se puede ver la ejecución en tiempo real: 
+
+**Validación del Sprint 3 Goal:**
+
+---
+
+**Escenario A: viaje completo**
+
+
+El administrador entra con su cuenta y revisa la Ruta Norte con sus paradas, sus alumnos, el conductor y el vehículo asignados. Cuando se guarda una ruta completa, la aplicación programa el viaje del día, que aparece en el monitor de viajes como Programado.
+
+   ![Inicio del administrador](assets/images/Chapter-5/Sprint3/webapp-admin-home.png)
+
+   ![Gestión de rutas](assets/images/Chapter-5/Sprint3/webapp-route-management.png)
+
+   ![Monitor de viajes con el viaje del día programado](assets/images/Chapter-5/Sprint3/webapp-trip-monitor-admin.png)
+
+El conductor entra con su cuenta, elige su viaje, completa el check de seguridad y lo inicia. El viaje pasa a En camino.
+
+   ![Viajes del conductor](assets/images/Chapter-5/Sprint3/webapp-driver-trips.png)
+
+   ![Check de seguridad antes de iniciar](assets/images/Chapter-5/Sprint3/webapp-safety-check.png)
+
+   ![Viaje iniciado](assets/images/Chapter-5/Sprint3/webapp-trip-started.png)
+
+En la parada el conductor marca a Lucía y Diego como abordados y a Mateo como ausente. Al recargar la página, el viaje sigue En camino con 2 de 3 alumnos, porque los datos vienen del backend.
+
+   ![Abordaje de alumnos](assets/images/Chapter-5/Sprint3/webapp-boarding.png)
+
+   ![Viaje en camino después de recargar](assets/images/Chapter-5/Sprint3/webapp-trip-en-route.png)
+
+El conductor finaliza el viaje. El viaje pasa a Completado y en el backend queda con su hora de inicio y de fin.
+
+   ![Viaje finalizado](assets/images/Chapter-5/Sprint3/webapp-trip-completed.png)
+
+   ![Viaje completado consultado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-completed.png)
+
+La madre de Lucía y Diego entra con su cuenta y ve los avisos de abordaje de sus hijos.
+
+   ![Avisos del padre](assets/images/Chapter-5/Sprint3/webapp-parent-notifications.png)
+
+**Escenario B: acciones que el backend no permite**
+
+- Si se intenta iniciar un viaje que no está programado, el backend responde 400 con el mensaje "Only a scheduled trip can be started.". En la captura se intenta poner En camino el viaje que ya se había completado.
+- Si se consulta un endpoint protegido sin token, el backend responde 401.
+- Si un conductor intenta modificar un viaje que no es suyo, el backend responde 403.
+- Si un usuario intenta ver datos de otra organización, el backend responde 403.
+- Un viaje finalizado no se puede cancelar ni reasignar.
+
+![Cambio de estado rechazado](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+![Consulta sin token rechazada](assets/images/Chapter-5/Sprint3/swagger-trips-without-token.png)
+
+**Escenario C: incidencia durante el viaje**
+
+Con el viaje en camino, el conductor reporta un retraso por tráfico con gravedad moderada. La incidencia queda guardada con su viaje, su tipo, su gravedad, su estado y la hora, y aparece en el Centro de Alertas junto a las incidencias anteriores, abiertas o resueltas.
+
+![Formulario de incidencia](assets/images/Chapter-5/Sprint3/webapp-incident-form.png)
+
+![Incidencia reportada](assets/images/Chapter-5/Sprint3/webapp-incident.png)
+
+---
+
+**Conclusión:**
+
+Los Web Services de KidTrack permiten validar satisfactoriamente el Sprint 3 Goal, ya que las condiciones definidas en él fueron implementadas. El backend está publicado en Azure con su documentación en Swagger y la aplicación web funciona conectada a él. Los conductores, padres, alumnos y rutas que se registran en la aplicación quedan guardados en el backend. El conductor puede iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo queda guardado. El padre puede ver los avisos de abordaje de su hijo y el backend rechaza las acciones que no corresponden, como iniciar un viaje que no está programado. 
+
+---
+
+##### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+En este sprint se documentaron los Web Services con OpenAPI usando Swagger UI. La documentación describe los 61 endpoints de los seis bounded contexts, con sus parámetros y respuestas, y permite probarlos con un token. Los endpoints mantienen los mismos nombres y campos que la Fake API del Sprint 2, por eso el FrontEnd se conectó sin cambiar sus vistas.
+
+- **URL base:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+- **Swagger UI:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/swagger-ui.html
+- **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform
+
+Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaciones 201 Created con el registro y su id, las modificaciones 200 OK con el registro actualizado y las eliminaciones 204 No Content, sin cuerpo. El inicio de sesión devuelve 200 OK con el usuario y su token, y ese token se envía en el encabezado Authorization para usar los demás recursos. Cuando algo falla, el backend responde con un mensaje que explica el error: 400 si faltan datos o el cambio no está permitido, 401 si no hay token, 403 si el recurso es de otra organización o el usuario no tiene permiso, 404 si no existe y 409 si el dato ya está registrado.
+
+
+**Identity & Access Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /authentication/sign-in | Iniciar sesión y recibir el token | POST | POST {base}/authentication/sign-in | Body: email, password | 200 con el usuario y su token. 401 INVALID_CREDENTIALS si la contraseña no coincide. |
+| /authentication/sign-up | Registrar un usuario (administrador, conductor o padre) | POST | POST {base}/authentication/sign-up | Body: firstName, lastName, email, password, roleTier, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /organizations | Crear una organización | POST | POST {base}/organizations | Body: name, status | 201 con la organización creada (público). |
+| /organizations/{organizationId} | Consultar una organización | GET | GET {base}/organizations/{organizationId} | Path: organizationId | 200 con el recurso. 404 si no existe. |
+| /organizations/{organizationId} | Editar o suspender una organización | PATCH | PATCH {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /organizations/{organizationId} | Reemplazar los datos de una organización | PUT | PUT {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users | Listar los usuarios de una organización | GET | GET {base}/users?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /users/{userId} | Consultar un usuario | GET | GET {base}/users/{userId} | Path: userId | 200 con el recurso. 404 si no existe. |
+| /users/{userId} | Actualizar datos personales o contraseña | PATCH | PATCH {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users/{userId} | Reemplazar los datos de un usuario | PUT | PUT {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Subscription & Plan Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /plans | Listar los planes (público) | GET | GET {base}/plans | — | 200 con la lista (público). |
+| /plans/{planId} | Consultar un plan | GET | GET {base}/plans/{planId} | Path: planId | 200 con el recurso. 404 si no existe. |
+| /plans | Crear un plan | POST | POST {base}/plans | Body: planTier, name, maxRoutes, maxDrivers, maxStudents, price, description | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions | Listar las suscripciones de una organización | GET | GET {base}/subscriptions?organizationId={organizationId}&state={state} | Query: organizationId, state | 200 con la lista. |
+| /subscriptions/{subscriptionId} | Consultar una suscripción | GET | GET {base}/subscriptions/{subscriptionId} | Path: subscriptionId | 200 con el recurso. 404 si no existe. |
+| /subscriptions | Contratar un plan | POST | POST {base}/subscriptions | Body: organizationId, planId, planTier, state, startDate, endDate | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions/{subscriptionId} | Cambiar de plan, activar o cancelar | PATCH | PATCH {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /subscriptions/{subscriptionId} | Reemplazar los datos de una suscripción | PUT | PUT {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Stakeholder & Asset Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /children | Listar alumnos (por organización o por padre) | GET | GET {base}/children?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId | 200 con la lista. |
+| /children/{childId} | Consultar un alumno | GET | GET {base}/children/{childId} | Path: childId | 200 con el recurso. 404 si no existe. |
+| /children | Dar de alta un alumno | POST | POST {base}/children | Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /children/{childId} | Reemplazar los datos de un alumno | PUT | PUT {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Editar un alumno o marcar su abordaje | PATCH | PATCH {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Eliminar un alumno | DELETE | DELETE {base}/children/{childId} | Path: childId | 204 sin contenido. |
+| /parents | Listar los padres de una organización | GET | GET {base}/parents?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /parents/{parentId} | Consultar un padre | GET | GET {base}/parents/{parentId} | Path: parentId | 200 con el recurso. 404 si no existe. |
+| /parents | Registrar un padre | POST | POST {base}/parents | Body: name, email, phone, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /parents/{parentId} | Reemplazar los datos de un padre | PUT | PUT {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Editar los datos de un padre | PATCH | PATCH {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Eliminar un padre | DELETE | DELETE {base}/parents/{parentId} | Path: parentId | 204 sin contenido. |
+| /profiles | Listar perfiles (por ejemplo, conductores) | GET | GET {base}/profiles?organizationId={organizationId}&role={role} | Query: organizationId, role | 200 con la lista. |
+| /profiles/{profileId} | Consultar un perfil | GET | GET {base}/profiles/{profileId} | Path: profileId | 200 con el recurso. 404 si no existe. |
+| /profiles | Registrar un conductor con su licencia | POST | POST {base}/profiles | Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /profiles/{profileId} | Reemplazar los datos de un perfil | PUT | PUT {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Editar un perfil o verificar la licencia | PATCH | PATCH {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Eliminar un perfil | DELETE | DELETE {base}/profiles/{profileId} | Path: profileId | 204 sin contenido. |
+
+**Fleet & Route Planning**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /routes | Listar las rutas de una organización | GET | GET {base}/routes?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /routes/{routeId} | Consultar una ruta con sus paradas | GET | GET {base}/routes/{routeId} | Path: routeId | 200 con el recurso. 404 si no existe. |
+| /routes | Crear una ruta con paradas, conductor y vehículo | POST | POST {base}/routes | Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /routes/{routeId} | Editar una ruta o su asignación | PUT | PUT {base}/routes/{routeId} | Path: routeId. Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /routes/{routeId} | Eliminar una ruta (y sus viajes) | DELETE | DELETE {base}/routes/{routeId} | Path: routeId | 204 sin contenido. |
+| /vehicles | Listar los vehículos de una organización | GET | GET {base}/vehicles?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /vehicles/{vehicleId} | Consultar un vehículo | GET | GET {base}/vehicles/{vehicleId} | Path: vehicleId | 200 con el recurso. 404 si no existe. |
+| /vehicles | Registrar un vehículo | POST | POST {base}/vehicles | Body: plate, model, capacity, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /vehicles/{vehicleId} | Reemplazar los datos de un vehículo | PUT | PUT {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Editar un vehículo | PATCH | PATCH {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Eliminar un vehículo | DELETE | DELETE {base}/vehicles/{vehicleId} | Path: vehicleId | 204 sin contenido. |
+
+**Trip Execution & Monitoring**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /incidents | Listar las incidencias | GET | GET {base}/incidents?organizationId={organizationId}&tripId={tripId} | Query: organizationId, tripId, status | 200 con la lista. |
+| /incidents/{incidentId} | Consultar una incidencia | GET | GET {base}/incidents/{incidentId} | Path: incidentId | 200 con el recurso. 404 si no existe. |
+| /incidents | Reportar una incidencia o alerta SOS | POST | POST {base}/incidents | Body: tripId, routeId, type, severity, description, reportedBy, timestamp, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /incidents/{incidentId} | Marcar una incidencia como resuelta | PATCH | PATCH {base}/incidents/{incidentId} | Path: incidentId. Body: status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /trips | Listar los viajes | GET | GET {base}/trips?organizationId={organizationId}&routeId={routeId} | Query: organizationId, routeId, driverId, status, scheduledDate | 200 con la lista. |
+| /trips/{tripId} | Consultar un viaje | GET | GET {base}/trips/{tripId} | Path: tripId | 200 con el recurso. 404 si no existe. |
+| /trips | Programar un viaje para una ruta | POST | POST {base}/trips | Body: routeId, scheduledDate, scheduledStartTime, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /trips/{tripId} | Iniciar, actualizar el avance, finalizar o cancelar un viaje | PATCH | PATCH {base}/trips/{tripId} | Path: tripId. Body: status, startTime, endTime, currentStop, studentsBoarded (según el caso) | 200 con el viaje actualizado. 400 si el cambio de estado no está permitido. 403 si no es el conductor asignado. |
+| /trips/{tripId} | Eliminar un viaje (y sus avisos) | DELETE | DELETE {base}/trips/{tripId} | Path: tripId | 204 sin contenido. |
+
+**Notifications & Communication**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /notifications | Listar los avisos | GET | GET {base}/notifications?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId, tripId, read | 200 con la lista. |
+| /notifications/{notificationId} | Consultar un aviso | GET | GET {base}/notifications/{notificationId} | Path: notificationId | 200 con el recurso. 404 si no existe. |
+| /notifications | Crear un aviso para un padre | POST | POST {base}/notifications | Body: type, message, timestamp, read, parentId, tripId, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /notifications/{notificationId} | Marcar un aviso como leído | PATCH | PATCH {base}/notifications/{notificationId} | Path: notificationId. Body: read | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /notifications/{notificationId} | Eliminar un aviso | DELETE | DELETE {base}/notifications/{notificationId} | Path: notificationId | 204 sin contenido. |
+
+**Interacción con datos de prueba**
+
+- Vista general de la documentación publicada
+
+  ![Swagger UI publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+- Consulta pública de los planes (no necesita token)
+
+  ![Consulta de planes en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-plans.png)
+
+- Inicio de sesión con la cuenta del conductor y obtención del token (el token está difuminado en la captura)
+
+  ![Inicio de sesión en Swagger](assets/images/Chapter-5/Sprint3/swagger-sign-in.png)
+
+- Consulta de rutas con el token
+
+  ![Consulta de rutas en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-routes.png)
+
+- Cambio de estado no permitido en un viaje completado
+
+  ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+  ##### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En este sprint se desplegaron los Web Services por primera vez y una nueva versión del FrontEnd conectada a ellos. La Fake API del Sprint 2 ya no se usa.
+
+**Web Services**
+
+Se desplegaron en Azure App Service con un workflow de GitHub Actions.
+
+- Se creó en Azure un Web App llamado kidtrack-platform con Java 21, en la región Chile Central.
+- Se agregó al repositorio el workflow que, cada vez que se sube un cambio a main, compila el proyecto con Maven y publica el archivo .jar en Azure (commit 0447078).
+- En la configuración del Web App se colocaron las variables de entorno que usa el perfil de producción: datos de conexión a MySQL (DATABASE_URL, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD y DATABASE_SSL), la clave del token (JWT_SECRET), SEED_ENABLED para cargar los datos de prueba y SWAGGER_ENABLED para la documentación. Las claves no se guardan en el repositorio.
+- La base de datos MySQL está en [COMPLETAR: servicio usado, por ejemplo Azure Database for MySQL].
+- Se comprobó que el backend responde por HTTPS y que Swagger UI está disponible.
+
+**URL:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+
+![Workflow de despliegue del backend en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-platform-actions.png)
+
+![Backend publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+**Front End**
+
+Se desplegó una nueva versión en Azure Static Web Apps.
+
+- Se creó un nuevo Static Web App y se agregó su workflow al repositorio (commit 6d6a6fb). Las claves que necesita la aplicación se pasan como secretos del repositorio (commit c874a84).
+- Se quitó el workflow del Static Web App anterior (commit 30aedf3).
+- En el environment de Angular se puso la URL del backend publicado (commit 704f3df).
+
+**URL:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+![Workflow de despliegue del FrontEnd en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-webapp-actions.png)
+
+![Aplicación web publicada](assets/images/Chapter-5/Sprint3/deploy-webapp-live.png)
+
+**Landing Page**
+
+Sigue en GitHub Pages. 
+
+**URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+
+##### 5.2.3.8. Team Collaboration Insights during Sprint
+
+El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop.
+
+En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
+
+**Web Services**
+
+![Insights de los Web Services](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
+
+**FrontEnd**
+
+![Insights de la aplicación web](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+
+**Landing Page**
+
+![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
