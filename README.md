@@ -4835,6 +4835,34 @@ De los 32 Story Points comprometidos en el Sprint Planning se aceptaron 26. Las 
 |  |  | T02 | Conectar el FrontEnd con el backend | Cambiar la dirección de la API del FrontEnd por la del backend publicado. | 1 | Nickolas | Done |
 |  |  | T03 | Nueva versión de la Landing Page | Cambiar el enlace de la Landing al nuevo FrontEnd y agregar en el footer los Términos y Condiciones y la Política de Privacidad. | 3 | Mathias | Done |
 |  |  | T04 | Documentar el Sprint 3 | Redactar el Sprint 3 en el informe con la evidencia de los repositorios. | 4 | Salvador | Done|
+
+##### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1, usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
+
+| Producto | Repositorio |
+| :--- | :--- |
+| Web Services | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform |
+| FrontEnd | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp |
+| Landing Page | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | e1af627 | chore: initialize Spring Boot project with Docker setup | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | b5809af | feat(shared): add shared kernel, JWT security and error handling | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a76b14c | feat(iam): add identity and access management context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | ca7d13b | feat(stakeholder): add parents, children and drivers context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a9c7544 | feat(subscription): add plans and subscriptions context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 34208ed | feat(fleet): add vehicles and routes context | Eddo Su Caletti | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 5ba65d3 | feat(trip): add trips and incidents context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | d0bfec3 | feat(notifications): add notifications context | Salvador Chamorro | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 6591076 | test: add API integration tests | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | main | 0447078 | Add or update the Azure App Service build and deployment workflow config | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 6d6a6fb | ci: add Azure Static Web Apps workflow file on-behalf-of: @Azure opensource@microsoft.com | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | c874a84 | ci: inject API keys in new Azure SWA workflow | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
+
 ## Conclusiones
 - El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
 - La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
