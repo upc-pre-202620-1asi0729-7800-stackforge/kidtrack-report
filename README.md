@@ -5190,7 +5190,7 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Fin en el video** | 12:14 |
 | **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
 
-![Entrevista 1](assets/img/Chapter-5/validation/interview1)
+![Entrevista 1](assets/images/Chapter-5/validation/interview1.png)
 
 **Resumen:** El entrevistado valoró positivamente la interfaz, indicando que la creación de viajes y el acceso a las funciones son muy directos y fáciles de ubicar ("como al ojo"). Consideró que los botones están bien distribuidos y el botón de reportar incidencia es accesible al encontrarse cerca del mapa. Como recomendación principal, sugirió que la aplicación abra directamente el mapa al iniciar sesión y que se integre una alerta de tráfico en tiempo real cambiando el color de las vías.
 
@@ -5221,7 +5221,7 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Fin en el video** | 24:04 |
 | **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
 
-![Entrevista 2](assets/img/Chapter-5/validation/interview2)
+![Entrevista 2](assets/images/Chapter-5/validation/interview2.png)
 
 **Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
 
@@ -5252,7 +5252,7 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Fin en el video** | 32:56 |
 | **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
 
-![Entrevista 3](assets/img/Chapter-5/validation/interview3)
+![Entrevista 3](assets/images/Chapter-5/validation/interview3.png)
 
 **Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
 
@@ -5287,7 +5287,7 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Fin en el video** | 43:43|
 | **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa)|
 
-![Entrevista 4](assets/img/Chapter-5/validation/interview4)
+![Entrevista 4](assets/images/Chapter-5/validation/interview4.png)
 
 **Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
 
