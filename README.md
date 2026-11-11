@@ -5131,6 +5131,281 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
 
+
+### 5.3. Validation Interviews
+
+La validación con usuarios es una fase crítica dentro del ciclo de desarrollo ágil de **KidTrack**, la cual permite contrastar los artefactos de software implementados (Landing Page y WebApp) frente a las expectativas, necesidades y fricciones reales de nuestros stakeholders clave. Esta sección detalla el diseño metodológico de los instrumentos de recolección de datos qualitativos, el registro de las sesiones de prueba en entornos controlados y la síntesis de los hallazgos para orientar las iteraciones del producto de cara a la entrega final.
+
+#### 5.3.1. Diseño de Entrevistas
+Con el objetivo de validar la usabilidad, arquitectura de información y propuesta de valor de la plataforma **KidTrack** (Web & App) en su fase de entrega AV2, se diseñó una guía de entrevistas cualitativas estructurada. El diseño del instrumento responde a la necesidad de evaluar el comportamiento de los usuarios en tiempo real ante las interfaces desplegadas, garantizando preguntas abiertas, sin sesgos ni lenguaje inducido.
+
+El instrumento se divide en una sección de preguntas demográficas generales y dos bloques específicos orientados a cada uno de nuestros segmentos objetivos clave:
+
+##### Preguntas Generales (Demográficas y Contexto Tecnológico)
+- ¿Cuál es su nombre completo y edad?
+- ¿En qué distrito o zona reside actualmente?
+- ¿Cuál es el dispositivo o herramienta tecnológica que utiliza con mayor frecuencia en su día a día (Smartphone Android/iOS, PC Windows/Mac)?
+- ¿Podría describir brevemente la composición de su entorno familiar (hijos en edad escolar, personas a cargo)?
+
+##### Preguntas para Segmento Objetivo 1: Conductor 
+- ¿En qué distrito o zona sueles realizar tus rutas de transporte escolar?
+- ¿Trabajas de manera independiente o para una empresa / asociación de transporte?
+- Cuéntame cómo es un día normal de trabajo desde que inicias el recorrido hasta que entregas al último estudiante.
+- Al interactuar con la pantalla "Mis Rutas" de KidTrack en el celular, ¿te resulta claro cómo seleccionar tu trayecto e iniciar el viaje?
+- Al detenerte en una parada, ¿qué tan fácil te resulta ubicar al estudiante y marcar su estado ("Abordado" / "Ausente") con un solo toque?
+- Respecto a los botones e íconos en pantalla, ¿consideras que su tamaño te permite interactuar de forma segura sin distraerte al conducir?
+- Si encuentras tráfico pesado o un imprevisto en la vía, ¿resulta intuitivo el acceso al botón de "Reportar Incidencia"?
+- ¿El contraste de los colores principales te permite leer la pantalla de un vistazo bajo la luz solar directa mientras conduces?
+- ¿Qué ajuste o simplificación le harías a esta interfaz para que requiera la mínima lectura posible mientras estás al volante?
+- Si tuvieras que usar esta herramienta diariamente en tus rutas, ¿qué funcionalidad considerarías indispensable mantener o mejorar?
+
+##### Preguntas para Segmento Objetivo 2: Padre de Familia
+- ¿Desde hace cuánto tiempo utilizas el servicio de transporte escolar para tu hijo/a?
+- ¿Con qué frecuencia revisas aplicaciones en tu teléfono móvil mientras tu hijo/a está en camino al colegio o a casa?
+- Cuéntame cómo te enteras actualmente del trayecto de tu hijo/a y qué tan tranquilo/a te sientes con ese método.
+- ¿Qué es lo primero que te llama la atención o ubicas visualmente al abrir el mapa de seguimiento mientras tu hijo/a está en camino?
+- En cuanto a las alertas de notificación ("Abordado", "En Trayecto", "Entregado"), ¿qué información esperas recibir en cada una y con qué frecuencia te gustaría que aparezcan?
+- ¿Qué datos de los que aparecen en la pantalla te parecen más útiles y cuáles consideras que están de más?
+- ¿Podrías revisar el historial de viajes para ver los horarios de llegada de la semana pasada y comentarme qué tan fácil o difícil fue encontrar ese registro?
+- ¿Qué opinas de la información visualizada sobre los datos del vehículo, la placa y el perfil del conductor asignado?
+- Al interactuar con la plataforma, ¿qué elementos visuales te generan mayor confianza y cuáles te generan duda o confusión?
+
+#### 5.3.2. Diseño de Entrevistas
+
+#### Segmento 1: Conductor
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Juan Diego |
+| **Apellidos** | León |
+| **Edad** | 25 |
+| **Distrito** | Salamanca (Rutas en La Molina, San Borja, Surco, San Isidro) |
+| **Ocupación** | Conductor de Movilidad Escolar / Transportista |
+| **Vehículo que posee** | Minivan amplia (vehículo de varias filas) |
+| **Fecha de la entrevista** | 11/11/2026 |
+| **Entrevistador** | Eddo Su Caletti |
+| **Inicio en el video** | 00:09 |
+| **Fin en el video** | 12:14 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 1](assets/img/Chapter-5/validation/interview1)
+
+**Resumen:** El entrevistado valoró positivamente la interfaz, indicando que la creación de viajes y el acceso a las funciones son muy directos y fáciles de ubicar ("como al ojo"). Consideró que los botones están bien distribuidos y el botón de reportar incidencia es accesible al encontrarse cerca del mapa. Como recomendación principal, sugirió que la aplicación abra directamente el mapa al iniciar sesión y que se integre una alerta de tráfico en tiempo real cambiando el color de las vías.
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| **L1** | Completada sin ayuda | 7 | Interfaz muy didáctica y fácil de ubicar. |
+| **L2** | Completada sin ayuda | 7 | Acceso rápido a las rutas asignadas en los distritos. |
+| **L3** | Completada sin ayuda | 6 | Buena visibilidad y organización de las opciones. |
+| **L4** | Completada sin ayuda | 7 | Recepción fluida de alertas y avisos en ruta. |
+| **P1** | Completada sin ayuda | 6 | Botón de reporte de incidencias bien ubicado debajo del mapa para un clic rápido. |
+| **P2** | Completada sin ayuda | 7 | Muy fácil de usar al llegar a una parada para registrar el estado del estudiante. |
+| **P3** | Completada sin ayuda | 7 | Visualización clara de los perfiles y datos del vehículo. |
+| **P4** | Completada sin ayuda | 6 | Seguimiento correcto de los puntos de recojo y retorno. |
+| **P5** | Completada sin ayuda | 6 | Los colores no son fluorescentes y se distinguen muy bien bajo la luz solar directa. |
+
+
+##### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Renzo|
+| **Apellidos** |Arévalo |
+| **Edad** |27 |
+| **Distrito** |Surco |
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 12:16 |
+| **Fin en el video** | 24:04 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 2](assets/img/Chapter-5/validation/interview2)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+##### Entrevista 3
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Victor|
+| **Apellidos** | Gutierrez|
+| **Edad** |23 |
+| **Distrito** | San Borja|
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** |Jose Zacarias Ortega |
+| **Inicio en el video** | 24:06 |
+| **Fin en el video** | 32:56 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 3](assets/img/Chapter-5/validation/interview3)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+#### Segmento 2: Padre de familia
+
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Esmeralda|
+| **Apellidos** | Andrade|
+| **Edad** | 25|
+| **Distrito** | Surco|
+| **Ocupación** | Madre de familia|
+| **Hijos** |1 |
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 33:01 |
+| **Fin en el video** | 43:43|
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa)|
+
+![Entrevista 4](assets/img/Chapter-5/validation/interview4)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+
+
+#### Resultados generales
+
+| Tarea | Completada sin ayuda | Completada con ayuda | No completada | Facilidad promedio (1-7) |
+|---|:---:|:---:|:---:|:---:|
+| **L1** |  |  |  |  |
+| **L2** |  |  |  |  |
+| **L3** |  |  |  |  |
+| **L4** |  |  |  |  |
+| **A1 / P1** |  |  |  |  |
+| **A2** |  |  |  |  |
+| **A3** |  |  |  |  |
+| **A4** |  |  |  |  |
+| **A5** |  |  |  |  |
+| **P2** |  |  |  |  |
+| **P3** |  |  |  |  |
+| **P4** |  |  |  |  |
+| **P5** |  |  |  |  |
+
+En términos generales, las evaluaciones de usabilidad demostraron que los flujos principales de la plataforma son intuitivos y de fácil adopción para los usuarios. Las tareas relacionadas con la exploración en la Landing Page (L1), el registro de cuentas (A2), la visualización de detalles principales (A3) y el envío de notificaciones (A4) obtuvieron las calificaciones más altas de facilidad (promedio de 7.0), destacando la claridad de los botones principales y la calidad visual de las interfaces. Sin embargo, se identifican problemas recurrentes en tareas de alta complejidad temporal o de personalización, como la selección de fechas no consecutivas o parámetros avanzados en módulos específicos (A3/P4) y ciertas dificultades con el tamaño de tipografías iniciales para usuarios con fatiga visual. Las principales diferencias entre segmentos radicaron en que los apoderados priorizan la agilidad y transparencia en la ubicación de recojo y alertas en tiempo real, mientras que los conductores exigen mayor control sobre la marcación rápida y el estado de disponibilidad del vehículo.
+
+
+#### 5.3.3. Evaluaciones según heurísticas
+
+A continuación, se presenta la sesión de evaluación de usabilidad, arquitectura de información y diseño inclusivo realizada sobre la plataforma **KidTrack** (Web & App), siguiendo la estructura y formato especificados en el Anexo D.
+
+---
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Evaluación** | UX Heuristics & Principles Evaluation<br>*(Usability - Inclusive Design - Information Architecture)* |
+| **Carrera** | Ingeniería de Software |
+| **Curso** | 1ASI0729 Desarrollo de Aplicaciones Open Source |
+| **Sección** | NRC 7800 |
+| **Profesor** | Robles Fernández, Iván |
+| **Auditores (Equipo de Trabajo)** | • Su Caletti, Eddo (U20221A390)<br>• Chamorro Acero, Salvador Edward (U201914367)<br>• De la Cruz De los Santos, Mathías Marcelo (U202424059)<br>• Ramírez Ruiz, Nickolas (U202415551)<br>• Ortega Quintana, José Zacarías (U202316852) |
+| **Cliente(s)** | Padres de Familia y Conductores |
+
+#### SITE / APP A EVALUAR:
+- **KidTrack Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+- **KidTrack WebApp & Mobile Interface:** https://victorious-tree-02a19840f.6.azurestaticapps.net/identity-and-access-management/sign-in?redirect=%2Fhome
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Visualización y seguimiento del mapa en tiempo real durante el trayecto escolar.
+2. Consulta y filtrado de registros en el Historial de Viajes y Asistencia.
+3. Marcación rápida de estado de abordaje del estudiante por parte del conductor ("Abordado" / "Ausente").
+4. Envío de alertas y notificaciones push de cambio de estado de la unidad.
+5. Reporte rápido de incidencias o tráfico por parte del conductor al volante.
+6. Visualización de datos de identificación del vehículo, placa y perfil del conductor asignado.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+1. Configuración de métodos de pago y facturación recurrente de la mensualidad.
+2. Gestión de múltiples rutas simultáneas para empresas de transporte escolar masivas.
+3. Integración con sistemas de videovigilancia en vivo dentro de la unidad vehicular.
+
+---
+
+#### ESCALA DE SEVERIDAD:
+Los errores identificados han sido puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
+
+| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
+| :-: | :--- | :-: | :--- |
+| **1** | Tipografía reducida en los títulos principales de la Landing Page. | **2** | **Inclusive Design:** Visibilidad y legibilidad |
+| **2** | Restricción de selección continua en fechas de reserva. | **3** | **Usability:** Flexibilidad y eficiencia de uso |
+
+---
+
+#### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
+
+##### PROBLEMA #1: Tipografía reducida en los títulos principales de la Landing Page
+- **Severidad:** 2 (Problema menor)
+- **Heurística violada:** Inclusive Design - Visibilidad y legibilidad
+- **Problema:** Durante las pruebas de usabilidad con los entrevistados, se obtuvo que el texto inicial e informativo en la vista principal presenta grosores de línea y tamaños ligeramente reducidos, lo que genera ligera fatiga visual o dificultad de lectura rápida para usuarios con menor agudeza visual. 
+
+![Problema 1]()
+
+
+- **Recomendación:** Aumentar el peso de fuente (`font-weight`) y el tamaño base de los títulos principales en la Landing Page, garantizando un contraste adecuado y una lectura inclusiva.
+
+##### PROBLEMA #2: Restricción de selección continua en fechas de reserva
+- **Severidad:** 3 (Problema mayor)
+- **Heurística violada:** Usability - Coincidencia entre el sistema y el mundo real / Flexibilidad y eficiencia de uso
+- **Problema:** Durante las pruebas realizadas en campo, el usuario no comprende el motivo por el cual ciertas fechas en el calendario no se pueden seleccionar, generando confusión al no recibir retroalimentación del estado de disponibilidad. 
+
+![Problema 2]()
+
+- **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
+
+
 ## Conclusiones
 
 ### Avance de conclusiones — AV2
