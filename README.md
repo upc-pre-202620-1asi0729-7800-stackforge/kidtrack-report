@@ -91,6 +91,7 @@ Proyecto
 | :----- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AV1    | 17/09/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
 | TB1    | 06/10/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Stage Review correspondiente a la Semana 7. Se corrigieron las observaciones recibidas en la revisión del AV1, entre ellas la coherencia entre el Product Backlog y el Sprint Backlog, la velocity del sprint, la evidencia de validación del Sprint Goal y la evidencia de commits del repositorio del software. A nivel de implementación, se desarrolló y desplegó la primera versión del FrontEnd de KidTrack en Angular, organizado en seis bounded contexts (Identity & Access Management, Subscription & Plan Management, Stakeholder & Asset Management, Fleet & Route Planning, Trip Execution & Monitoring y Notifications & Communication), junto con una Fake API en json-server que reemplaza al backend en esta entrega. El FrontEnd se publicó en Azure Static Web Apps y la Fake API en Azure App Service. También se desplegó una nueva versión del Landing Page, que ahora lleva al FrontEnd. El informe incorpora la evidencia completa del Sprint 2: planificación, líderes y colaboradores por bounded context, backlog con 17 historias y 79 Story Points, evidencia de desarrollo con commits y Pull Requests, evidencia de ejecución, documentación de los recursos de la Fake API, despliegue y análisis de la colaboración del equipo. |
+| AV2 | 10/11/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se incorporó la documentación del Sprint 3, correspondiente a la implementación de la primera versión de los Web Services de KidTrack con Java y Spring Boot, su despliegue en Azure y la integración de la aplicación web con el backend, reemplazando la API simulada utilizada en TB1. Se documentaron las operaciones de los servicios mediante Swagger/OpenAPI, sus parámetros, ejemplos de respuesta y evidencias de interacción. Asimismo, se incorporaron las evidencias de desarrollo, ejecución, despliegue y colaboración correspondientes al sprint. Se actualizaron las conclusiones y recomendaciones según el avance de AV2, diferenciando los resultados técnicos de las hipótesis que requieren medición con usuarios, y se añadió la estructura de la sección Video About-the-Team. |
 
 <br><br><br>
 <br><br><br>
@@ -117,6 +118,12 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
+
+### Sprint 3
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Report.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
 
 <br><br>
 <br><br><br>
@@ -5130,13 +5137,353 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
 
+
+### 5.3. Validation Interviews
+
+La validación con usuarios es una fase crítica dentro del ciclo de desarrollo ágil de **KidTrack**, la cual permite contrastar los artefactos de software implementados (Landing Page y WebApp) frente a las expectativas, necesidades y fricciones reales de nuestros stakeholders clave. Esta sección detalla el diseño metodológico de los instrumentos de recolección de datos qualitativos, el registro de las sesiones de prueba en entornos controlados y la síntesis de los hallazgos para orientar las iteraciones del producto de cara a la entrega final.
+
+#### 5.3.1. Diseño de Entrevistas
+Con el objetivo de validar la usabilidad, arquitectura de información y propuesta de valor de la plataforma **KidTrack** (Web & App) en su fase de entrega AV2, se diseñó una guía de entrevistas cualitativas estructurada. El diseño del instrumento responde a la necesidad de evaluar el comportamiento de los usuarios en tiempo real ante las interfaces desplegadas, garantizando preguntas abiertas, sin sesgos ni lenguaje inducido.
+
+El instrumento se divide en una sección de preguntas demográficas generales y dos bloques específicos orientados a cada uno de nuestros segmentos objetivos clave:
+
+##### Preguntas Generales (Demográficas y Contexto Tecnológico)
+- ¿Cuál es su nombre completo y edad?
+- ¿En qué distrito o zona reside actualmente?
+- ¿Cuál es el dispositivo o herramienta tecnológica que utiliza con mayor frecuencia en su día a día (Smartphone Android/iOS, PC Windows/Mac)?
+- ¿Podría describir brevemente la composición de su entorno familiar (hijos en edad escolar, personas a cargo)?
+
+##### Preguntas para Segmento Objetivo 1: Conductor 
+- ¿En qué distrito o zona sueles realizar tus rutas de transporte escolar?
+- ¿Trabajas de manera independiente o para una empresa / asociación de transporte?
+- Cuéntame cómo es un día normal de trabajo desde que inicias el recorrido hasta que entregas al último estudiante.
+- Al interactuar con la pantalla "Mis Rutas" de KidTrack en el celular, ¿te resulta claro cómo seleccionar tu trayecto e iniciar el viaje?
+- Al detenerte en una parada, ¿qué tan fácil te resulta ubicar al estudiante y marcar su estado ("Abordado" / "Ausente") con un solo toque?
+- Respecto a los botones e íconos en pantalla, ¿consideras que su tamaño te permite interactuar de forma segura sin distraerte al conducir?
+- Si encuentras tráfico pesado o un imprevisto en la vía, ¿resulta intuitivo el acceso al botón de "Reportar Incidencia"?
+- ¿El contraste de los colores principales te permite leer la pantalla de un vistazo bajo la luz solar directa mientras conduces?
+- ¿Qué ajuste o simplificación le harías a esta interfaz para que requiera la mínima lectura posible mientras estás al volante?
+- Si tuvieras que usar esta herramienta diariamente en tus rutas, ¿qué funcionalidad considerarías indispensable mantener o mejorar?
+
+##### Preguntas para Segmento Objetivo 2: Padre de Familia
+- ¿Desde hace cuánto tiempo utilizas el servicio de transporte escolar para tu hijo/a?
+- ¿Con qué frecuencia revisas aplicaciones en tu teléfono móvil mientras tu hijo/a está en camino al colegio o a casa?
+- Cuéntame cómo te enteras actualmente del trayecto de tu hijo/a y qué tan tranquilo/a te sientes con ese método.
+- ¿Qué es lo primero que te llama la atención o ubicas visualmente al abrir el mapa de seguimiento mientras tu hijo/a está en camino?
+- En cuanto a las alertas de notificación ("Abordado", "En Trayecto", "Entregado"), ¿qué información esperas recibir en cada una y con qué frecuencia te gustaría que aparezcan?
+- ¿Qué datos de los que aparecen en la pantalla te parecen más útiles y cuáles consideras que están de más?
+- ¿Podrías revisar el historial de viajes para ver los horarios de llegada de la semana pasada y comentarme qué tan fácil o difícil fue encontrar ese registro?
+- ¿Qué opinas de la información visualizada sobre los datos del vehículo, la placa y el perfil del conductor asignado?
+- Al interactuar con la plataforma, ¿qué elementos visuales te generan mayor confianza y cuáles te generan duda o confusión?
+
+#### 5.3.2. Diseño de Entrevistas
+
+#### Segmento 1: Conductor
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Juan Diego |
+| **Apellidos** | León |
+| **Edad** | 25 |
+| **Distrito** | Salamanca (Rutas en La Molina, San Borja, Surco, San Isidro) |
+| **Ocupación** | Conductor de Movilidad Escolar / Transportista |
+| **Vehículo que posee** | Minivan amplia (vehículo de varias filas) |
+| **Fecha de la entrevista** | 11/11/2026 |
+| **Entrevistador** | Eddo Su Caletti |
+| **Inicio en el video** | 00:09 |
+| **Fin en el video** | 12:14 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 1](assets/images/Chapter-5/validation/interview1.png)
+
+**Resumen:** El entrevistado valoró positivamente la interfaz, indicando que la creación de viajes y el acceso a las funciones son muy directos y fáciles de ubicar ("como al ojo"). Consideró que los botones están bien distribuidos y el botón de reportar incidencia es accesible al encontrarse cerca del mapa. Como recomendación principal, sugirió que la aplicación abra directamente el mapa al iniciar sesión y que se integre una alerta de tráfico en tiempo real cambiando el color de las vías.
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| **L1** | Completada sin ayuda | 7 | Interfaz muy didáctica y fácil de ubicar. |
+| **L2** | Completada sin ayuda | 7 | Acceso rápido a las rutas asignadas en los distritos. |
+| **L3** | Completada sin ayuda | 6 | Buena visibilidad y organización de las opciones. |
+| **L4** | Completada sin ayuda | 7 | Recepción fluida de alertas y avisos en ruta. |
+| **P1** | Completada sin ayuda | 6 | Botón de reporte de incidencias bien ubicado debajo del mapa para un clic rápido. |
+| **P2** | Completada sin ayuda | 7 | Muy fácil de usar al llegar a una parada para registrar el estado del estudiante. |
+| **P3** | Completada sin ayuda | 7 | Visualización clara de los perfiles y datos del vehículo. |
+| **P4** | Completada sin ayuda | 6 | Seguimiento correcto de los puntos de recojo y retorno. |
+| **P5** | Completada sin ayuda | 6 | Los colores no son fluorescentes y se distinguen muy bien bajo la luz solar directa. |
+
+
+##### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Renzo|
+| **Apellidos** |Arévalo |
+| **Edad** |27 |
+| **Distrito** |Surco |
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 12:16 |
+| **Fin en el video** | 24:04 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 2](assets/images/Chapter-5/validation/interview2.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+##### Entrevista 3
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Victor|
+| **Apellidos** | Gutierrez|
+| **Edad** |23 |
+| **Distrito** | San Borja|
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** |Jose Zacarias Ortega |
+| **Inicio en el video** | 24:06 |
+| **Fin en el video** | 32:56 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 3](assets/images/Chapter-5/validation/interview3.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+#### Segmento 2: Padre de familia
+
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Esmeralda|
+| **Apellidos** | Andrade|
+| **Edad** | 25|
+| **Distrito** | Surco|
+| **Ocupación** | Madre de familia|
+| **Hijos** |1 |
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 33:01 |
+| **Fin en el video** | 43:43|
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa)|
+
+![Entrevista 4](assets/images/Chapter-5/validation/interview4.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+
+
+#### Resultados generales
+
+| Tarea | Completada sin ayuda | Completada con ayuda | No completada | Facilidad promedio (1-7) |
+|---|:---:|:---:|:---:|:---:|
+| **L1** |  |  |  |  |
+| **L2** |  |  |  |  |
+| **L3** |  |  |  |  |
+| **L4** |  |  |  |  |
+| **A1 / P1** |  |  |  |  |
+| **A2** |  |  |  |  |
+| **A3** |  |  |  |  |
+| **A4** |  |  |  |  |
+| **A5** |  |  |  |  |
+| **P2** |  |  |  |  |
+| **P3** |  |  |  |  |
+| **P4** |  |  |  |  |
+| **P5** |  |  |  |  |
+
+En términos generales, las evaluaciones de usabilidad demostraron que los flujos principales de la plataforma son intuitivos y de fácil adopción para los usuarios. Las tareas relacionadas con la exploración en la Landing Page (L1), el registro de cuentas (A2), la visualización de detalles principales (A3) y el envío de notificaciones (A4) obtuvieron las calificaciones más altas de facilidad (promedio de 7.0), destacando la claridad de los botones principales y la calidad visual de las interfaces. Sin embargo, se identifican problemas recurrentes en tareas de alta complejidad temporal o de personalización, como la selección de fechas no consecutivas o parámetros avanzados en módulos específicos (A3/P4) y ciertas dificultades con el tamaño de tipografías iniciales para usuarios con fatiga visual. Las principales diferencias entre segmentos radicaron en que los apoderados priorizan la agilidad y transparencia en la ubicación de recojo y alertas en tiempo real, mientras que los conductores exigen mayor control sobre la marcación rápida y el estado de disponibilidad del vehículo.
+
+
+#### 5.3.3. Evaluaciones según heurísticas
+
+A continuación, se presenta la sesión de evaluación de usabilidad, arquitectura de información y diseño inclusivo realizada sobre la plataforma **KidTrack** (Web & App), siguiendo la estructura y formato especificados en el Anexo D.
+
+---
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Evaluación** | UX Heuristics & Principles Evaluation<br>*(Usability - Inclusive Design - Information Architecture)* |
+| **Carrera** | Ingeniería de Software |
+| **Curso** | 1ASI0729 Desarrollo de Aplicaciones Open Source |
+| **Sección** | NRC 7800 |
+| **Profesor** | Robles Fernández, Iván |
+| **Auditores (Equipo de Trabajo)** | • Su Caletti, Eddo (U20221A390)<br>• Chamorro Acero, Salvador Edward (U201914367)<br>• De la Cruz De los Santos, Mathías Marcelo (U202424059)<br>• Ramírez Ruiz, Nickolas (U202415551)<br>• Ortega Quintana, José Zacarías (U202316852) |
+| **Cliente(s)** | Padres de Familia y Conductores |
+
+#### SITE / APP A EVALUAR:
+- **KidTrack Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+- **KidTrack WebApp & Mobile Interface:** https://victorious-tree-02a19840f.6.azurestaticapps.net/identity-and-access-management/sign-in?redirect=%2Fhome
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Visualización y seguimiento del mapa en tiempo real durante el trayecto escolar.
+2. Consulta y filtrado de registros en el Historial de Viajes y Asistencia.
+3. Marcación rápida de estado de abordaje del estudiante por parte del conductor ("Abordado" / "Ausente").
+4. Envío de alertas y notificaciones push de cambio de estado de la unidad.
+5. Reporte rápido de incidencias o tráfico por parte del conductor al volante.
+6. Visualización de datos de identificación del vehículo, placa y perfil del conductor asignado.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+1. Configuración de métodos de pago y facturación recurrente de la mensualidad.
+2. Gestión de múltiples rutas simultáneas para empresas de transporte escolar masivas.
+3. Integración con sistemas de videovigilancia en vivo dentro de la unidad vehicular.
+
+---
+
+#### ESCALA DE SEVERIDAD:
+Los errores identificados han sido puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
+
+| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
+| :-: | :--- | :-: | :--- |
+| **1** | Tipografía reducida en los títulos principales de la Landing Page. | **2** | **Inclusive Design:** Visibilidad y legibilidad |
+| **2** | Restricción de selección continua en fechas de reserva. | **3** | **Usability:** Flexibilidad y eficiencia de uso |
+
+---
+
+#### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
+
+##### PROBLEMA #1: Tipografía reducida en los títulos principales de la Landing Page
+- **Severidad:** 2 (Problema menor)
+- **Heurística violada:** Inclusive Design - Visibilidad y legibilidad
+- **Problema:** Durante las pruebas de usabilidad con los entrevistados, se obtuvo que el texto inicial e informativo en la vista principal presenta grosores de línea y tamaños ligeramente reducidos, lo que genera ligera fatiga visual o dificultad de lectura rápida para usuarios con menor agudeza visual. 
+
+![Problema 1]()
+
+
+- **Recomendación:** Aumentar el peso de fuente (`font-weight`) y el tamaño base de los títulos principales en la Landing Page, garantizando un contraste adecuado y una lectura inclusiva.
+
+##### PROBLEMA #2: Restricción de selección continua en fechas de reserva
+- **Severidad:** 3 (Problema mayor)
+- **Heurística violada:** Usability - Coincidencia entre el sistema y el mundo real / Flexibilidad y eficiencia de uso
+- **Problema:** Durante las pruebas realizadas en campo, el usuario no comprende el motivo por el cual ciertas fechas en el calendario no se pueden seleccionar, generando confusión al no recibir retroalimentación del estado de disponibilidad. 
+
+![Problema 2]()
+
+- **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
+
+
 ## Conclusiones
-- El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
-- La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
-- El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend con DDD, por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas al 100%, ya que se necesitan de experiencias de usuarios reales.
-  
+
+### Avance de conclusiones — AV2
+
+Hasta la entrega AV2, KidTrack ha avanzado desde la identificación del problema y el diseño de la experiencia de usuario hacia una primera versión integrada de la plataforma. Este avance permite relacionar las necesidades identificadas durante el proceso Lean UX con los componentes desarrollados y las evidencias de implementación del Sprint 3.
+
+El Problem Statement plantea dos necesidades relacionadas: los apoderados requieren información sobre el traslado de sus hijos y los transportistas necesitan organizar su operación sin depender exclusivamente de llamadas, mensajes y registros manuales. Estas necesidades orientaron la definición de las historias de usuario y la incorporación de funcionalidades para gestionar estudiantes, conductores, vehículos, rutas, viajes e incidencias.
+
+Respecto a los Assumptions, el desarrollo realizado permite explorar la propuesta de centralizar la información del servicio y facilitar su consulta según el rol del usuario. Sin embargo, disponer de estas funcionalidades no demuestra por sí solo que los usuarios adoptarán la plataforma o que disminuirá su carga de trabajo. Estas suposiciones requieren contrastarse con observaciones de uso y resultados medibles.
+
+En relación con los Hypothesis Statements, KidTrack cuenta con una base funcional para evaluar la consulta del estado del traslado, el registro de abordajes y la organización del servicio. Las evidencias técnicas permiten comprobar comportamientos específicos del sistema, pero no reemplazan la medición de los indicadores definidos en el capítulo 1. Por ello, el cumplimiento de las metas de uso, registro de la operación y cambio de plan permanece sujeto a una evaluación durante los periodos establecidos.
+
+A nivel técnico, el Sprint 3 incorpora la primera versión de los Web Services, desarrollados con Java y Spring Boot, documentados mediante Swagger/OpenAPI y desplegados en Azure. El informe registra también la conexión de la aplicación web con el backend. Este avance permite continuar la evaluación de los flujos con servicios reales y persistencia de información, superando la etapa basada en una API simulada.
+
+Las evidencias de interacción documentadas muestran consultas de planes y rutas, autenticación y rechazo de una transición de viaje no permitida. Estos resultados respaldan el funcionamiento de los casos presentados y la aplicación de determinadas reglas de negocio, sin constituir una validación exhaustiva de todas las operaciones ni de su desempeño en condiciones reales de transporte escolar.
+
+Finalmente, el avance de AV2 destaca la importancia de mantener coherencia entre las historias de usuario, el diseño, la implementación y las evidencias. La documentación de los servicios y del despliegue facilita comunicar el estado del producto e identificar qué aspectos cuentan con respaldo técnico y cuáles requieren validación adicional con usuarios.
+
+### Comparación entre Lean UX y el avance obtenido
+
+
+| Elemento Lean UX | Planteamiento inicial | Avance al cierre de AV2 |
+| :--- | :--- | :--- |
+| Problem Statement | Los apoderados necesitan visibilidad del traslado y los transportistas requieren organizar la operación del servicio. | Se desarrollaron componentes para gestionar los recursos del transporte y consultar información relacionada con los viajes. |
+| Assumptions sobre los usuarios | Los apoderados valorarán información confiable y los transportistas utilizarán una herramienta sencilla para organizar su trabajo. | La plataforma ofrece flujos diferenciados por rol que permiten evaluar estas suposiciones. |
+| Hipótesis 1 | Durante las primeras cuatro semanas, al menos el 70% de los padres activos consultará el estado del trayecto una vez al día. | Se dispone de funcionalidades relacionadas con la consulta de viajes y avisos. |
+| Hipótesis 2 | Durante las primeras cuatro semanas, el 80% de los trayectos registrados tendrá el checklist de abordaje completo. | Se implementaron operaciones relacionadas con los viajes y el registro del abordaje. |
+| Hipótesis 3 | Dentro de los primeros 15 días, al menos el 75% de los administradores habrá registrado la totalidad de sus usuarios y rutas. | Se incorporaron servicios para administrar usuarios, estudiantes, perfiles, vehículos y rutas. |
+| Hipótesis 4 | Durante los primeros tres meses, al menos el 20% de los administradores en planes Básico o Intermedio migrará a un plan superior. | Se implementaron servicios de planes y suscripciones. |
+
 ## Recomendaciones
-- Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
+
+- Continuar la validación con representantes de los segmentos objetivo, registrando las tareas realizadas, las dificultades observadas y los resultados obtenidos. Diferenciar los comentarios de los participantes de las conclusiones respaldadas por mediciones.
+
+- Mantener actualizada la documentación Swagger/OpenAPI para que sus parámetros, esquemas y códigos de respuesta correspondan con el comportamiento de los servicios implementados.
+
+- Evaluar progresivamente los flujos en condiciones representativas del transporte escolar, considerando retrasos, interrupciones de conectividad e incidencias. La interacción del conductor debe realizarse cuando el vehículo esté detenido.
+
+- Priorizar las siguientes mejoras según los hallazgos de validación y las dependencias técnicas, manteniendo trazabilidad entre las observaciones, las historias de usuario y el trabajo seleccionado para cada sprint.
+
+## Video About-the-Team
+
+### Resumen
+
+El video About-the-Team de AV2 tiene como propósito presentar el trabajo del equipo StackForge durante el desarrollo de KidTrack y reflexionar sobre los aprendizajes obtenidos hasta el Sprint 3.
+
+La presentación se organiza alrededor de la evolución del proyecto: identificación de necesidades, definición de requisitos, diseño de la experiencia de usuario y de la arquitectura, implementación de los componentes y publicación de la solución. Cada integrante explicará las actividades en las que participó y las relacionará con evidencias concretas del informe o de los repositorios.
+
+La reflexión grupal abordará los logros alcanzados, las dificultades encontradas y las oportunidades de mejora en la coordinación del equipo. Asimismo, se destacará la importancia de comunicar las decisiones técnicas, mantener consistencia entre los entregables y distinguir el funcionamiento implementado de los beneficios que todavía requieren validación con usuarios.
+
+### Video representativo
+
+**Estado:** pendiente de incorporar la evidencia audiovisual correspondiente a AV2.
+
+<!-- Insertar aquí una captura del video About-the-Team de KidTrack una vez disponible. -->
+
+### URL del video
+
+- **Microsoft Stream:** pendiente de incorporar el enlace del video de KidTrack.
+- **YouTube:** pendiente de incorporar el enlace del video de KidTrack.
+- **Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+### Pauta propuesta de secuencias de contenido
+
+Los tiempos de inicio se completarán según la edición final del video.
+
+| Tiempo de inicio | Sección | Contenido previsto |
+| :--- | :--- | :--- |
+| Por completar | Presentación del equipo y del proyecto | Identificación de StackForge, propósito de KidTrack y alcance alcanzado en AV2. |
+| Por completar | Evolución y reflexión grupal | Principales avances, dificultades de coordinación, decisiones adoptadas y oportunidades de mejora. |
+| Por completar | Participación de cada integrante | Explicación individual de los aportes realizados, sus evidencias y las competencias fortalecidas durante el proyecto. |
+| Por completar | Cierre | Aprendizajes compartidos y prioridades para continuar la implementación y validación de KidTrack. |
   
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
