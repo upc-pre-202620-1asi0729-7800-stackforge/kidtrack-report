@@ -161,11 +161,7 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
     - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 - [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
     - [2.1. Competidores](#21-competidores)
-        - [Identificación de Competidores](#identificación-de-competidores)
-            - [OnTrack School](#onTrack-school)
-            - [SafeRoute Parent](#safesoute-parent)
-            - [BusRight](#busright)
-        - [2.1.1 Análisis Competitivo - Landscape](#211-análisis-competitivo---landscape)
+        - [2.1.1 Análisis Competitivo - Landscape](#211-análisis-competitivo)
         - [2.1.2 Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
     - [2.2. Entrevistas](#22-entrevistas)
         - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
@@ -227,7 +223,6 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
         - [5.2.1. Sprint 1](#521-sprint-1)
         - [5.2.2. Sprint 2](#522-sprint-2)
         - [5.2.3. Sprint 3](#523-sprint-3)
-        - [5.2.4. Sprint 4](#sprint--4)
     - [5.3. Validation Interviews](#53-validation-interviews)
         - [5.3.1. Diseño de Entrevistas](#531-diseño-de-entrevistas)
         - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
@@ -237,7 +232,6 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 - [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
-- [Anexos](#anexos)
 
 <br><br><br>
 <br><br><br>
@@ -1380,8 +1374,6 @@ En esta sección se presenta el glosario de términos de negocio utilizados dent
 | **Trust Signal** | Señal de confianza | Elemento comercial que incrementa credibilidad, como testimonios, alianzas o certificaciones. |
 
 ## Capítulo III: Requirements Specification
-
-### 3.1. User Stories
 
 ### 3.1. User Stories
 
@@ -3009,7 +3001,7 @@ Aquí se detallan las principales unidades de despliegue del sistema. El diagram
  
 - Single Page
 
-![WebServices](.\assets\images\Chapter4\C4\Front\ComponentDiagram_SPA-dark.png)
+![WebServices](./assets/images/Chapter4/C4/Front/ComponentDiagram_SPA-dark.png)
 La SPA se construyó con Angular, Angular Material y TypeScript, y está organizada en módulos según el bounded context. Cada módulo mantiene la misma estructura interna de cuatro capas: Model (los resources del dominio), Assembler (transforma lo que devuelve la API), API Service (consume el backend por HttpClient) y Store (el estado reactivo, con Angular Signals). La Navigation Bar del módulo Shared se encarga de moverse entre módulos, el HTTP Service centraliza todas las llamadas REST y el Map Service gestiona la integración con Leaflet.
  
 - Trip Execution & Monitoring:
@@ -3019,7 +3011,7 @@ La SPA se construyó con Angular, Angular Material y TypeScript, y está organiz
 
   Presentation trip:
 
-  ![WebServices](<.\assets\images\Chapter4\C4\ComponentPresentation\ComponentDiagram_Trip-dark(1).png>)
+  ![WebServices](<./assets/images/Chapter4/C4/ComponentPresentation/ComponentDiagram_Trip-dark(1).png>)
 
 - Route Planning & Execution:
   Detalla las 4 capas del módulo que se encarga de la logística previa al viaje en el cliente: la configuración visual de rutas y paraderos con coordenadas GPS, la asignación de vehículos y conductores y la definición de horarios, con el Route Signal Store sincronizando ese estado de configuración hacia el Web Service.
