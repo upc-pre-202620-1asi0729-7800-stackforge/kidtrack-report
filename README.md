@@ -5413,6 +5413,15 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 
 - **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
 
+### 5.4. Video About-the-Product
+
+[![Video About-the-Product](assets/images/Chapter-5/Sprint3/about-the-product.png)](https://youtu.be/YCY3Z61_eIk)
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Microsoft Stream** | [Ver video en Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBaylJiS-pyQKFyLh1xAM4BAeIZhMDuyKaGOvA0IUdnCtA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9RYj1r) |
+| **YouTube** | [https://youtu.be/YCY3Z61_eIk](https://youtu.be/YCY3Z61_eIk) |
+| **Duración** | 1:54 |
 
 ## Conclusiones
 
