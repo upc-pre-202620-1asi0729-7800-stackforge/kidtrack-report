@@ -5119,7 +5119,7 @@ Sigue publicada en GitHub Pages. En este sprint se cambió el enlace que lleva a
 
 **URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
 
-![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/deploy-landing.png)
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint3/deploy-landing-sprint3.png)
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint
 
