@@ -4781,7 +4781,6 @@ En el Sprint 3 el equipo desarrolló la primera versión de los Web Services de 
 | Prepared By | Salvador Chamorro Acero |
 | Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
 | Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
-| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
 | Sprint 2 Retrospective Summary | **Lo que salió bien:** dividir el FrontEnd por bounded contexts, con una rama y un Pull Request por contexto, permitió avanzar al mismo tiempo sin muchos conflictos, y el despliegue en Azure salió sin problemas. **Lo que hay que mejorar:** dejar claro en el Context Map qué contexto es dueño de cada entidad, probar el flujo completo y los casos límite antes de la entrega, y trabajar el backend también con ramas y Pull Requests. |
 | Sprint 3 Goal | **Nuestro enfoque es** tener la primera versión de los Web Services de KidTrack, hechos en Java con Spring Boot, desplegados en Azure y conectados con la aplicación web, para que todo lo que registran el administrador, el conductor y el padre quede guardado en el backend y ya no en una API simulada. **Creemos que esto les da** a los transportistas la seguridad de que la información de sus rutas, alumnos y viajes no se pierde, y a los padres la confianza de que los avisos que reciben sobre su hijo son reales. **Lo confirmaremos cuando** el backend esté publicado en Azure, con su documentación en Swagger, y la aplicación web funcione conectada a él. Cuando los conductores, padres, alumnos y rutas que se registran en la aplicación queden guardados en el backend. Cuando el conductor pueda iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo quede guardado. Cuando el padre pueda ver los avisos de su hijo y el backend rechace las acciones que no corresponden, como iniciar un viaje que no está programado. |
 | Sprint 3 Velocity | 32 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint. Los puntos que quedan aceptados después de las pruebas se indican al final de la sección 5.2.3.3. |
@@ -4795,7 +4794,7 @@ Para este sprint se tomaron como aspectos los seis bounded contexts del backend,
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | C | L | C | C | L |
 | De la Cruz De los Santos, Mathias Marcelo | Dela050406 | L | L | C | L | C | C | C | L | C | C |
-| Ortega Quintana, Jose Zacarias | Argox16 | C | L | C | C | C | C | C | C | C | C |
+| Ortega Quintana, Jose Zacarias | Argox16 | C | C | C | C | C | C | C | C | C | C |
 | Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
 | Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
 
@@ -4803,11 +4802,14 @@ Para este sprint se tomaron como aspectos los seis bounded contexts del backend,
 
 El objetivo del Sprint 3 fue validar el Sprint 3 Goal mediante el desarrollo de los Web Services de KidTrack, su despliegue en Azure y su conexión con la aplicación web.
 
-De los 32 Story Points comprometidos en el Sprint Planning se aceptaron 26. Las historias que en el Sprint 2 funcionaban con la Fake API ahora guardan sus datos en el backend.
+De los 32 Story Points comprometidos en el Sprint Planning se aceptaron los 32. Las historias que en el Sprint 2 funcionaban con la Fake API ahora guardan sus datos en el backend.
 
 ![Sprint Backlog 3](assets/images/Chapter-5/Sprint3/Sprint-Backlog-3.png)
 
 **URL del Board:** 
+
+[KidTrack - Sprint 3](https://trello.com/b/SUgGiFTd/kidtrack)
+
 
 | Sprint # | Sprint 3 | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -4845,7 +4847,7 @@ De los 32 Story Points comprometidos en el Sprint Planning se aceptaron 26. Las 
 
 ##### 5.2.3.4. Development Evidence for Sprint Review
 
-Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1, usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
+Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1 y usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
 
 | Producto | Repositorio |
 | :--- | :--- |
@@ -4869,6 +4871,8 @@ Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTra
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | c874a84 | ci: inject API keys in new Azure SWA workflow | Bynickram02 | 08/11/2026 |
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 86d0de0 | feat(about): added about section | Dela0405 | 10/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 82b21a3 | fix: redirection web app link | Dela0405 | 10/11/2026 |
 
 ##### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -4883,8 +4887,6 @@ Para probar la aplicación se mantienen las tres cuentas de prueba, que ahora vi
 | Administrador | admin@kidtrack.pe | admin123 |
 | Conductor | driver@kidtrack.pe | driver123 |
 | Padre | parent@kidtrack.pe | parent123 |
-
-Se realizó un video donde se puede ver la ejecución en tiempo real: 
 
 **Validación del Sprint 3 Goal:**
 
@@ -5077,7 +5079,7 @@ Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaci
 
   ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
 
-  ##### 5.2.3.7. Software Deployment Evidence for Sprint Review
+##### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 En este sprint se desplegaron los Web Services por primera vez y una nueva versión del FrontEnd conectada a ellos. La Fake API del Sprint 2 ya no se usa.
 
@@ -5088,7 +5090,7 @@ Se desplegaron en Azure App Service con un workflow de GitHub Actions.
 - Se creó en Azure un Web App llamado kidtrack-platform con Java 21, en la región Chile Central.
 - Se agregó al repositorio el workflow que, cada vez que se sube un cambio a main, compila el proyecto con Maven y publica el archivo .jar en Azure (commit 0447078).
 - En la configuración del Web App se colocaron las variables de entorno que usa el perfil de producción: datos de conexión a MySQL (DATABASE_URL, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD y DATABASE_SSL), la clave del token (JWT_SECRET), SEED_ENABLED para cargar los datos de prueba y SWAGGER_ENABLED para la documentación. Las claves no se guardan en el repositorio.
-- La base de datos MySQL está en [COMPLETAR: servicio usado, por ejemplo Azure Database for MySQL].
+- La base de datos MySQL corre en un contenedor desplegado en Azure. El backend se conecta a ella con las variables de entorno DATABASE_URL, DATABASE_PORT y DATABASE_NAME, que se configuran en el Web App y se leen en el perfil de producción (application-prod.properties).
 - Se comprobó que el backend responde por HTTPS y que Swagger UI está disponible.
 
 **URL:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
@@ -5113,15 +5115,15 @@ Se desplegó una nueva versión en Azure Static Web Apps.
 
 **Landing Page**
 
-Sigue en GitHub Pages. 
+Sigue publicada en GitHub Pages. En este sprint se cambió el enlace que lleva a la aplicación para que abra la nueva versión del FrontEnd publicada y se agregó la sección "Conoce KidTrack en video".
 
 **URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
 
-![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint3/deploy-landing-sprint3.png)
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint
 
-El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop.
+En este sprint el trabajo principal fue el backend. El equipo repartió los Web Services por bounded contexts y cada parte se fue integrando en la rama develop del repositorio kidtrack-platform. En el FrontEnd el trabajo fue conectarlo con el backend y publicar la nueva versión, y en la Landing Page se actualizó el enlace a la aplicación y se agregó la sección del video.
 
 En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
 
