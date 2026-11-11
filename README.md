@@ -5414,6 +5414,7 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 - **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
 
 ### 5.4. Video About-the-Product
+El video About-the-Product presenta KidTrack a los visitantes de la Landing Page. Se muestra cómo funciona la aplicación para cada rol: el administrador arma las rutas, el conductor inicia el viaje y marca el abordaje, y el padre recibe los avisos de su hijo. Al final se incluyen dos testimonios de las entrevistas de validación, una madre de familia y un conductor.
 
 [![Video About-the-Product](assets/images/Chapter-5/Sprint3/about-the-product.png)](https://youtu.be/YCY3Z61_eIk)
 
