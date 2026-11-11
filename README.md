@@ -4847,7 +4847,7 @@ De los 32 Story Points comprometidos en el Sprint Planning se aceptaron los 32. 
 
 ##### 5.2.3.4. Development Evidence for Sprint Review
 
-Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1, usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
+Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1 y usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
 
 | Producto | Repositorio |
 | :--- | :--- |
@@ -4871,6 +4871,8 @@ Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTra
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | c874a84 | ci: inject API keys in new Azure SWA workflow | Bynickram02 | 08/11/2026 |
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
 | upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 86d0de0 | feat(about): added about section | Dela0405 | 10/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 82b21a3 | fix: redirection web app link | Dela0405 | 10/11/2026 |
 
 ##### 5.2.3.5. Execution Evidence for Sprint Review
 
@@ -5077,7 +5079,7 @@ Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaci
 
   ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
 
-  ##### 5.2.3.7. Software Deployment Evidence for Sprint Review
+##### 5.2.3.7. Software Deployment Evidence for Sprint Review
 
 En este sprint se desplegaron los Web Services por primera vez y una nueva versión del FrontEnd conectada a ellos. La Fake API del Sprint 2 ya no se usa.
 
