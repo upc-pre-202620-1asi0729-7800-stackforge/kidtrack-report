@@ -4910,32 +4910,32 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 | Campo | Detalle |
 |---|---|
-| **Nombres** | |
-| **Apellidos** | |
-| **Edad** | |
-| **Distrito** | |
-| **Ocupación** | |
-| **Vehículo que posee** | |
-| **Fecha de la entrevista** | |
-| **Entrevistador** | |
+| **Nombres** | Juan Diego |
+| **Apellidos** | León |
+| **Edad** | 25 |
+| **Distrito** | Salamanca (Rutas en La Molina, San Borja, Surco, San Isidro) |
+| **Ocupación** | Conductor de Movilidad Escolar / Transportista |
+| **Vehículo que posee** | Minivan amplia (vehículo de varias filas) |
+| **Fecha de la entrevista** | 11/11/2026 |
+| **Entrevistador** | Eddo Su Caletti |
 | **Inicio en el video** | 00:00 |
-| **Duración** | 00:00 |
+| **Duración** | 12:05 |
 
-![Entrevista 4](assets/img/sprint3/validation-04.png)
+![Entrevista 1]()
 
-**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+**Resumen:** El entrevistado valoró positivamente la interfaz, indicando que la creación de viajes y el acceso a las funciones son muy directos y fáciles de ubicar ("como al ojo"). Consideró que los botones están bien distribuidos y el botón de reportar incidencia es accesible al encontrarse cerca del mapa. Como recomendación principal, sugirió que la aplicación abra directamente el mapa al iniciar sesión y que se integre una alerta de tráfico en tiempo real cambiando el color de las vías.
 
 | Tarea | Resultado | Facilidad (1-7) | Observación principal |
 |---|---|---|---|
-| L1 | | | |
-| L2 | | | |
-| L3 | | | |
-| L4 | | | |
-| P1 | | | |
-| P2 | | | |
-| P3 | | | |
-| P4 | | | |
-| P5 | | | |
+| **L1** | Completada sin ayuda | 7 | Interfaz muy didáctica y fácil de ubicar. |
+| **L2** | Completada sin ayuda | 7 | Acceso rápido a las rutas asignadas en los distritos. |
+| **L3** | Completada sin ayuda | 6 | Buena visibilidad y organización de las opciones. |
+| **L4** | Completada sin ayuda | 7 | Recepción fluida de alertas y avisos en ruta. |
+| **P1** | Completada sin ayuda | 6 | Botón de reporte de incidencias bien ubicado debajo del mapa para un clic rápido. |
+| **P2** | Completada sin ayuda | 7 | Muy fácil de usar al llegar a una parada para registrar el estado del estudiante. |
+| **P3** | Completada sin ayuda | 7 | Visualización clara de los perfiles y datos del vehículo. |
+| **P4** | Completada sin ayuda | 6 | Seguimiento correcto de los puntos de recojo y retorno. |
+| **P5** | Completada sin ayuda | 6 | Los colores no son fluorescentes y se distinguen muy bien bajo la luz solar directa. |
 
 
 
