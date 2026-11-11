@@ -5074,11 +5074,33 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 
 #### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
 
+| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
+| :-: | :--- | :-: | :--- |
+| **1** | Tipografía reducida en los títulos principales de la Landing Page. | **2** | **Inclusive Design:** Visibilidad y legibilidad |
+| **2** | Restricción de selección continua en fechas de reserva. | **3** | **Usability:** Flexibilidad y eficiencia de uso |
 
+---
 
 #### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
 
+##### PROBLEMA #1: Tipografía reducida en los títulos principales de la Landing Page
+- **Severidad:** 2 (Problema menor)
+- **Heurística violada:** Inclusive Design - Visibilidad y legibilidad
+- **Problema:** Durante las pruebas de usabilidad con los entrevistados, se obtuvo que el texto inicial e informativo en la vista principal presenta grosores de línea y tamaños ligeramente reducidos, lo que genera ligera fatiga visual o dificultad de lectura rápida para usuarios con menor agudeza visual. 
 
+![Problema 1]()
+
+
+- **Recomendación:** Aumentar el peso de fuente (`font-weight`) y el tamaño base de los títulos principales en la Landing Page, garantizando un contraste adecuado y una lectura inclusiva.
+
+##### PROBLEMA #2: Restricción de selección continua en fechas de reserva
+- **Severidad:** 3 (Problema mayor)
+- **Heurística violada:** Usability - Coincidencia entre el sistema y el mundo real / Flexibilidad y eficiencia de uso
+- **Problema:** Durante las pruebas realizadas en campo, el usuario no comprende el motivo por el cual ciertas fechas en el calendario no se pueden seleccionar, generando confusión al no recibir retroalimentación del estado de disponibilidad. 
+
+![Problema 2]()
+
+- **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
 
 
 
