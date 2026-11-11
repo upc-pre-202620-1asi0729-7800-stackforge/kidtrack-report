@@ -78,6 +78,10 @@ Proyecto
 
 <br><br><br>
 <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ---
 
@@ -86,27 +90,55 @@ Proyecto
 | Avance | Fecha      | Autor                                                                                                                                                         | Descripción de Modificación                                                                                                                                                                                                                                                                                                |
 | :----- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AV1    | 17/09/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Sprint Review correspondiente a la Semana 4, incluyendo la elaboración del Final Project Documentation Report, la presentación del Final Project Keynote y el reporte individual de desempeño de los integrantes. A nivel de implementación, se desarrolló y desplegó la primera versión del Landing Page. El informe incorpora la carátula, registro de versiones, insights de colaboración, student outcome, y los capítulos I al V, abarcando desde la introducción, levantamiento y especificación de requerimientos, diseño del producto, hasta la implementación, validación y despliegue. Además, se documenta la gestión de configuración del software, el entorno de desarrollo, control de código fuente, convenciones de estilo y configuración de despliegue. Finalmente, se incluye la evidencia completa del Sprint 1: planificación, backlog, desarrollo, ejecución, documentación de servicios, despliegue y análisis de la colaboración del equipo, junto con conclusiones, bibliografía y anexos. |
+| TB1    | 06/10/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se desarrolló el Stage Review correspondiente a la Semana 7. Se corrigieron las observaciones recibidas en la revisión del AV1, entre ellas la coherencia entre el Product Backlog y el Sprint Backlog, la velocity del sprint, la evidencia de validación del Sprint Goal y la evidencia de commits del repositorio del software. A nivel de implementación, se desarrolló y desplegó la primera versión del FrontEnd de KidTrack en Angular, organizado en seis bounded contexts (Identity & Access Management, Subscription & Plan Management, Stakeholder & Asset Management, Fleet & Route Planning, Trip Execution & Monitoring y Notifications & Communication), junto con una Fake API en json-server que reemplaza al backend en esta entrega. El FrontEnd se publicó en Azure Static Web Apps y la Fake API en Azure App Service. También se desplegó una nueva versión del Landing Page, que ahora lleva al FrontEnd. El informe incorpora la evidencia completa del Sprint 2: planificación, líderes y colaboradores por bounded context, backlog con 17 historias y 79 Story Points, evidencia de desarrollo con commits y Pull Requests, evidencia de ejecución, documentación de los recursos de la Fake API, despliegue y análisis de la colaboración del equipo. |
+| AV2 | 10/11/2026 | De La Cruz De Los Santos, Mathias Marcelo; Ortega Quintana, Jose Zacarias; Su Caletti Eddo; Ramirez Ruiz, Nickolas; Chamorro Acero, Salvador Edward | Se incorporó la documentación del Sprint 3, correspondiente a la implementación de la primera versión de los Web Services de KidTrack con Java y Spring Boot, su despliegue en Azure y la integración de la aplicación web con el backend, reemplazando la API simulada utilizada en TB1. Se documentaron las operaciones de los servicios mediante Swagger/OpenAPI, sus parámetros, ejemplos de respuesta y evidencias de interacción. Asimismo, se incorporaron las evidencias de desarrollo, ejecución, despliegue y colaboración correspondientes al sprint. Se actualizaron las conclusiones y recomendaciones según el avance de AV2, diferenciando los resultados técnicos de las hipótesis que requieren medición con usuarios, y se añadió la estructura de la sección Video About-the-Team. |
 
 <br><br><br>
 <br><br><br>
 <br><br><br>
 <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
 ---
 ## Project Report Collaboration Insights
 
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report/tree/develop)
 
 ### Sprint 1
-
-## AV1:
-![KidTrack Report](assets/images/Chapter-5/Sprint1/Insights-Report.png)
-## Landing Page:
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
+
+### Sprint 2
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
+
+### Sprint 3
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Report.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
 
 <br><br>
 <br><br><br>
 <br><br><br>
 <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
 ---
 ## Tabla de contenidos
 
@@ -207,6 +239,18 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
 ---
 ## Student Outcome
 
@@ -215,34 +259,50 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 <table>
  <tr>
     <th colspan="2">Criterio Específico</th>
-    <th colspan="10">Acciones Realizadas</td>
-    <th colspan="2">Conclusiones</td>
+    <th colspan="10">Acciones Realizadas</th>
+    <th colspan="2">Conclusiones</th>
  </tr>
  <tr>
     <td colspan="2">Comunica oralmente con efectividad a diferentes rangos de audiencia.
-    </th>
+    </td>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> Durante el desarrollo de esta primera entrega se sostuvo una comunicacion constante mediante reuniones y trabajo en conjunto para poder lograr los objetivos de manera satisfactoria. <br>AV1:<br><br>
-    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Mantuve comunicación constante con el equipo durante el desarrollo de este primer avance, coordinando la distribución del trabajo en ramas de Git entre los integrantes y validando junto a ellos los cambios de branding y contenido antes de integrarlos al repositorio.<br><br>
-    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Lideré la presentación oral del proyecto, exponiendo los objetivos generales y estructurando los avances del equipo de manera clara y articulada, transmitiendo las ideas clave con un lenguaje técnico y adaptado a la audiencia.  <br><br>
-    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:En el desarrollo de la primera entrega se consolidó comunicación clara y precisa acerca de los objetivos del trabajo, se mantuvo una comunicación constante referente a algunos problemas o cruces que podría suceder.<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1:Trabaje de manera grupal y coordinadamente con mis compañeros, manteniendo comunicación constante y clara con ellos.<br><br>
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1: Durante el desarrollo de esta primera entrega se sostuvo una comunicacion constante mediante reuniones y trabajo en conjunto para poder lograr los objetivos de manera satisfactoria.<br>TB1: Participé en las reuniones del Sprint 2 por Teams y Discord, donde coordiné con mis compañeros qué avisos necesitaba mostrar la vista de alertas y qué datos de los viajes y de los padres debía recibir de los otros bounded contexts.<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Mantuve comunicación constante con el equipo durante el desarrollo de este primer avance, coordinando la distribución del trabajo en ramas de Git entre los integrantes y validando junto a ellos los cambios de branding y contenido antes de integrarlos al repositorio.<br>TB1: Coordiné con el equipo la integración de los bounded contexts en la rama develop y el despliegue del FrontEnd y de la Fake API, avisando a cada integrante cuando algo no compilaba o faltaba subir para poder publicar la aplicación.<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Lideré la presentación oral del proyecto, exponiendo los objetivos generales y estructurando los avances del equipo de manera clara y articulada, transmitiendo las ideas clave con un lenguaje técnico y adaptado a la audiencia.<br>TB1: Expliqué al equipo la estructura del proyecto Angular y los elementos compartidos, para que cada integrante pudiera conectar su bounded context con la Fake API de la misma forma, y resolví sus dudas durante el desarrollo.<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1: En el desarrollo de la primera entrega se consolidó comunicación clara y precisa acerca de los objetivos del trabajo, se mantuvo una comunicación constante referente a algunos problemas o cruces que podría suceder.<br>TB1: Preparé el Sprint Planning 2 con apoyo de Salvador y lo revisé con el equipo, y coordiné con mis compañeros cómo debía funcionar el inicio de sesión y el acceso por rol para que sus vistas quedaran protegidas.<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1: Trabaje de manera grupal y coordinadamente con mis compañeros, manteniendo comunicación constante y clara con ellos.<br>TB1: Coordiné con mis compañeros la relación entre las rutas y los viajes, ya que al guardar una ruta se programa su viaje, y les comuniqué los cambios que hacía en las rutas para que no afectaran sus vistas.<br><br>
+    </td>
     <td colspan="2">
-    AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.</td>
+    AV1: Durante el AV1, el equipo logró establecer un entorno colaborativo mediante reuniones donde todos los integrantes participaron y aportaron para el correcto desarrollo del proyecto.<br><br>
+    TB1: Durante el TB1, el equipo se organizó por bounded contexts y mantuvo la coordinación por Teams y Discord. Esto permitió que cada integrante avanzara en su parte y que al final los seis contextos se integraran en una sola aplicación publicada.</td>
  </tr>
  <tr>
     <td colspan="2">Comunica por escrito con efectividad a diferentes rangos de audiencia.
-    </th>
+    </td>
     <td colspan="10">
-    <b>Chamorro Acero, Salvador Edward</b> Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto. <br>AV1:<br><br>
-    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Redacté y adapté las secciones Landing Page UI Design,Web Applications UX/UI Design: wireframes, wireflow diagrams, mock-ups y user flow diagrams, Web Applications Prototyping y Domain-Driven Software Architecture: Event Storming, diagrama de contexto, de contenedores y de componentes del informe. Además, lideré el rebranding de la landing page de  KidTrack (paleta de colores, logotipo y textos) y coordiné la división del código de la landing entre los integrantes del equipo mediante ramas de Git.<br><br>
-    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br><br>
-    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1:Redacté todo el bloque del capítulo 3 ( User Stories.Impact Mapping,Product Backlog). También tuve colaboración en los Class Diagrams,Database Design y Database Diagrams. Finalmente aporté en parte de la elaboración de la landing page y el capítulo 5 sobre la configuración, despliego de software y sprint.<br><br>
-    <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br><br><b> </b> 
-    <td colspan="2"> AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.</td>
+    <b>Chamorro Acero, Salvador Edward</b> <br>AV1: Realice mi aporte en el proyecto mediante el desarrollo del capitulo 2 donde se realizo el analisis de los segmentos objetivos y en el capitulo 5 donde se desarrollo el marco de trabajo utilizado para el proyecto.<br>TB1: Redacté la documentación del Sprint 2 en el capítulo 5: elaboré el Sprint Backlog, apoyé a Jose en el Sprint Planning y redacté las secciones de líderes y colaboradores, evidencias de desarrollo, ejecución, servicios y despliegue. También corregí las observaciones del AV1 sobre la velocity, la coherencia entre el Product Backlog y el Sprint Backlog y la validación del Sprint Goal, y actualicé el registro de versiones y las conclusiones. En el FrontEnd desarrollé el bounded context Notifications & Communication, con la vista de alertas donde se reportan las incidencias y el padre revisa sus avisos.<br><br>
+    <b>De la Cruz De los Santos, Mathias Marcelo</b> <br>AV1: Redacté y adapté las secciones Landing Page UI Design,Web Applications UX/UI Design: wireframes, wireflow diagrams, mock-ups y user flow diagrams, Web Applications Prototyping y Domain-Driven Software Architecture: Event Storming, diagrama de contexto, de contenedores y de componentes del informe. Además, lideré el rebranding de la landing page de  KidTrack (paleta de colores, logotipo y textos) y coordiné la división del código de la landing entre los integrantes del equipo mediante ramas de Git.<br>TB1: Mi aporte en esta entrega fue principalmente en el desarrollo. Desarrollé el bounded context Stakeholder & Asset Management, con el registro de conductores, padres y alumnos. Desplegué el FrontEnd en Azure Static Web Apps y la Fake API en Azure App Service, y actualicé la Landing Page para que lleve al FrontEnd. Para el informe entregué los enlaces y los datos del despliegue que se usaron como evidencia.<br><br>
+    <b>Ramirez Ruiz, Nickolas</b> <br>AV1: Redacté las secciones de Solution Profile (Lean UX Process, Problem Statements, Assumptions, Hypothesis y Canvas), Diagramas de Clases y Diseño de Base de Datos. Asimismo, colaboré en la estructuración de las entrevistas del proyecto, apoyé en la elaboración del contenido para la landing page y en la preparación de la presentación ejecutiva (PPT).<br>TB1: Mi aporte en esta entrega fue principalmente en el desarrollo. Desarrollé los bounded contexts Subscription & Plan Management y Trip Execution & Monitoring, los elementos compartidos del FrontEnd (API base, mapas, idiomas y menú) y la Fake API con sus datos y cuentas de prueba. Documenté mi avance con commits en inglés siguiendo Conventional Commits, que se usaron como evidencia en el informe.<br><br>
+    <b>Ortega Quintana, Jose Zacarias</b> <br>AV1: Redacté todo el bloque del capítulo 3 ( User Stories.Impact Mapping,Product Backlog). También tuve colaboración en los Class Diagrams,Database Design y Database Diagrams. Finalmente aporté en parte de la elaboración de la landing page y el capítulo 5 sobre la configuración, despliego de software y sprint.<br>TB1: Desarrollé el bounded context Identity & Access Management, con el registro de la organización y su administrador, el inicio de sesión por rol y el perfil. En el informe elaboré el Sprint Planning 2, con apoyo de Salvador.<br><br>
+    <b>Su Caletti, Eddo</b> <br>AV1: Elaboré la segunda  mitad del capítulo 2 además de participar en la elaboración de las entrevistas de nuestro segmento en el capitulo 4 me encargue de la primera parte de este ademas de ayudar en la participacion en la landing y en el ppt.<br>TB1: Desarrollé el bounded context Fleet & Route Planning, con la creación de rutas sobre el mapa, el orden de paradas y la asignación de conductores y vehículos. En el informe apoyé con correcciones generales, como en el capítulo 2 y en el Sprint 1.<br><br>
+    </td>
+    <td colspan="2">
+    AV1: Durante el AV1, el equipo logró plasmar la estructura desarrollada en el informa donde cada integrantes colaboro activamente lo que concluyo en un informe completo junto a una landing page funcional.<br><br>
+    TB1: Durante el TB1, el equipo corrigió el informe a partir de las observaciones del AV1 y documentó el Sprint 2 con evidencia de los repositorios. El trabajo de cada integrante quedó registrado en commits y Pull Requests, y el resultado fue el FrontEnd publicado junto con su Fake API y una nueva versión de la Landing Page.</td>
  </tr>
 
   </table>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 
 ## Capítulo I: Introducción
 
@@ -3965,7 +4025,7 @@ Durante el Sprint 1, el equipo realizó commits sobre el repositorio de la landi
 
 Durante el Sprint 1, el equipo logró diseñar y desplegar la primera versión pública de la Landing Page de KidTrack, accesible en [Landing Page KidTrack](https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/).
 
-Se realizo un video donde se puede ver la ejecucion en tiempo real:[Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQAt1Zy5Fu7xQ5eE68drZG6-AXmE_FsPNgi_vQMHooi3NTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=veoeG9)
+Se realizó un video donde se puede ver la ejecución en tiempo real: [Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQAt1Zy5Fu7xQ5eE68drZG6-AXmE_FsPNgi_vQMHooi3NTc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=veoeG9)
 
 **Validación del Sprint 1 Goal :**
 
@@ -4316,7 +4376,7 @@ Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
 | Conductor | driver@kidtrack.pe | driver123 |
 | Padre | parent@kidtrack.pe | parent123 |
 
-Se realizó un video donde se puede ver la ejecución en tiempo real: **URL de video de evidencia**
+Se realizó un video donde se puede ver la ejecución en tiempo real: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC5iYdGclAPSbuO62U1IWQUAWGoSNWx-T13gvSgEI270sI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ne6kWr
 
 **Validación del Sprint 2 Goal:**
 
@@ -4705,20 +4765,738 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights del informe](assets/images/Chapter-5/Sprint2/Insights-Report.png)
 
+### 5.2.3. Sprint 3
 
-### 5.4 Video About-the-Product
+##### 5.2.3.1. Sprint Planning 3
+
+En el Sprint 3 el equipo desarrolló la primera versión de los Web Services de KidTrack en Java con Spring Boot (kidtrack-platform) y conectó el FrontEnd con ellos, dejando de usar la Fake API. El backend mantiene los seis bounded contexts definidos en el capítulo IV y respeta los mismos endpoints que ya usaba la aplicación, por eso el FrontEnd solo tuvo que cambiar la dirección de la API.
+
+
+| Sprint # | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| Date | 2026-11-01 |
+| Time | 10:00 AM |
+| Location | Reunión virtual por Microsoft Teams, con seguimiento por Discord |
+| Prepared By | Salvador Chamorro Acero |
+| Attendees (to planning meeting) | Chamorro Acero, Salvador Edward / De la Cruz De los Santos, Mathias Marcelo / Ortega Quintana, Jose Zacarias / Ramirez Ruiz, Nickolas / Su Caletti, Eddo |
+| Sprint 2 Review Summary | En el Sprint 2 se publicó la primera versión del FrontEnd de KidTrack en Azure Static Web Apps, organizada en seis bounded contexts, junto con una Fake API en json-server publicada en Azure App Service. La Landing Page quedó conectada con la aplicación. En la revisión del TB1 el docente reconoció el despliegue, la conexión de la Landing con el FrontEnd y que se veía el aporte de cada integrante en los commits y Pull Requests. Como siguientes pasos, pidió definir en el Context Map qué contexto es dueño de Student, Vehicle, Route, Assignment y Trip, modelar los eventos del viaje, agregar pruebas para los casos límite, demostrar un viaje completo, desde el abordaje hasta la entrega del alumno, y probar la aplicación con usuarios reales. |
+| Sprint 2 Retrospective Summary | **Lo que salió bien:** dividir el FrontEnd por bounded contexts, con una rama y un Pull Request por contexto, permitió avanzar al mismo tiempo sin muchos conflictos, y el despliegue en Azure salió sin problemas. **Lo que hay que mejorar:** dejar claro en el Context Map qué contexto es dueño de cada entidad, probar el flujo completo y los casos límite antes de la entrega, y trabajar el backend también con ramas y Pull Requests. |
+| Sprint 3 Goal | **Nuestro enfoque es** tener la primera versión de los Web Services de KidTrack, hechos en Java con Spring Boot, desplegados en Azure y conectados con la aplicación web, para que todo lo que registran el administrador, el conductor y el padre quede guardado en el backend y ya no en una API simulada. **Creemos que esto les da** a los transportistas la seguridad de que la información de sus rutas, alumnos y viajes no se pierde, y a los padres la confianza de que los avisos que reciben sobre su hijo son reales. **Lo confirmaremos cuando** el backend esté publicado en Azure, con su documentación en Swagger, y la aplicación web funcione conectada a él. Cuando los conductores, padres, alumnos y rutas que se registran en la aplicación queden guardados en el backend. Cuando el conductor pueda iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo quede guardado. Cuando el padre pueda ver los avisos de su hijo y el backend rechace las acciones que no corresponden, como iniciar un viaje que no está programado. |
+| Sprint 3 Velocity | 32 Story Points. Es la cantidad de puntos que el equipo acepta para este sprint. Los puntos que quedan aceptados después de las pruebas se indican al final de la sección 5.2.3.3. |
+| Sum of Story Points | 32 Story Points de 9 historias: TS1 (5), TS4 (3), TS6 (3), TS8 (3), US10 (3), US11 (5), US12 (5), US14 (2) y US19 (3). Las historias US10, US11, US12, US14 y US19 vuelven a este sprint porque en el Sprint 2 funcionaban con la Fake API y ahora funcionan con el backend. |
+
+##### 5.2.3.2. Aspect Leaders and Collaborators
+
+Para este sprint se tomaron como aspectos los seis bounded contexts del backend, el shared kernel (seguridad JWT y manejo de errores), las pruebas de integración, el despliegue y la documentación del informe.
+
+| Team Member (Last Name, First Name) | GitHub Username | Shared Kernel & Security (L/C) | Identity & Access Management (L/C) | Subscription & Plan Management (L/C) | Stakeholder & Asset Management (L/C) | Fleet & Route Planning (L/C) | Trip Execution & Monitoring (L/C) | Notifications & Communication (L/C) | Integration Tests (L/C) | Deployment (L/C) | Report (L/C) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | C | L | C | C | L |
+| De la Cruz De los Santos, Mathias Marcelo | Dela050406 | L | L | C | L | C | C | C | L | C | C |
+| Ortega Quintana, Jose Zacarias | Argox16 | C | C | C | C | C | C | C | C | C | C |
+| Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
+| Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
+
+##### 5.2.3.3. Sprint Backlog 3
+
+El objetivo del Sprint 3 fue validar el Sprint 3 Goal mediante el desarrollo de los Web Services de KidTrack, su despliegue en Azure y su conexión con la aplicación web.
+
+De los 32 Story Points comprometidos en el Sprint Planning se aceptaron los 32. Las historias que en el Sprint 2 funcionaban con la Fake API ahora guardan sus datos en el backend.
+
+![Sprint Backlog 3](assets/images/Chapter-5/Sprint3/Sprint-Backlog-3.png)
+
+**URL del Board:** 
+
+[KidTrack - Sprint 3](https://trello.com/b/SUgGiFTd/kidtrack)
+
+
+| Sprint # | Sprint 3 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story** | | **Work-Item / Task** | | | | | |
+| **Story Id** | **Story Title** | **Task Id** | **Task Title** | **Task Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| TS1 | Implementación JWT Authentication | T01 | Proyecto Spring Boot | Crear el proyecto en Java 21 con Spring Boot, la estructura por bounded context y el Dockerfile. | 3 | Mathias | Done |
+|  |  | T02 | Seguridad con JWT | Generar y validar el token en cada consulta, y responder 401 cuando no se envía o no es válido. | 4 | Mathias | Done |
+|  |  | T03 | Inicio de sesión y registro | Permitir iniciar sesión y registrar usuarios; el primer administrador de una organización se registra sin token. | 3 | Mathias | Done |
+|  |  | T04 | Permisos por rol y organización | Hacer que cada usuario solo vea los datos de su organización y que el conductor no pueda hacer acciones de administrador. | 3 | Mathias | Done |
+| TS4 | Configuración Swagger/OpenAPI | T01 | Documentar la API | Configurar Swagger UI y describir los endpoints de los seis contextos. | 2 | Mathias | Done |
+|  |  | T02 | Swagger en el backend publicado | Activar la documentación en el entorno de Azure para poder consultarla y probarla. | 1 | Nickolas | Done |
+| TS6 | Implementación HTTPS/SSL | T01 | Publicar el backend con HTTPS | Publicar el backend en Azure App Service, que responde con certificado válido. | 2 | Nickolas | Done |
+|  |  | T02 | Publicar el FrontEnd con HTTPS | Publicar la nueva versión del FrontEnd en Azure Static Web Apps. | 2 | Nickolas | Done |
+|  |  | T03 | Redirigir HTTP a HTTPS | Activar la opción HTTPS Only en Azure y comprobar que una dirección http redirige a https. | 1 | Nickolas | Done |
+| TS8 | API: Obtener Alumnos | T01 | Endpoints de alumnos | Consultar los alumnos de una organización o de un padre, y darlos de alta, editarlos y eliminarlos. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos de cada ruta | Guardar en cada parada de la ruta qué alumnos suben, para consultarlos desde la ruta. | 1 | Eddo | Done |
+| US10 | Inicio de Trayecto | T01 | Viaje en el backend | Guardar el viaje con sus estados (programado, en camino, completado y cancelado). | 3 | Nickolas | Done |
+|  |  | T02 | Reglas para iniciar | Permitir iniciar solo un viaje programado, y solo al conductor asignado a ese viaje. | 2 | Nickolas | Done |
+|  |  | T03 | Un viaje por ruta y por día | No permitir programar dos viajes de la misma ruta el mismo día. | 1 | Nickolas | Done |
+|  |  | T04 | Cambios de la ruta | Cuando se cambia el conductor o el vehículo de una ruta, o se elimina, avisar con un evento para que sus viajes se actualicen. | 2 | Eddo | Done |
+| US11 | Marcación de Abordaje | T01 | Abordaje en el backend | Guardar el estado de abordaje del alumno cuando el conductor lo marca. | 2 | Mathias | Done |
+|  |  | T02 | Alumnos abordados | Validar que la cantidad de alumnos abordados no supere la de alumnos del viaje. | 1 | Nickolas | Done |
+|  |  | T03 | Prueba del abordaje | Probar que el administrador gestiona alumnos y que el conductor marca su abordaje. | 2 | Mathias | Done |
+| US12 | Reporte de Incidencias | T01 | Incidencias en el backend | Guardar las incidencias y alertas SOS con su viaje, tipo, gravedad y hora. | 3 | Nickolas | Done |
+|  |  | T02 | Cerrar incidencias | Permitir marcar una incidencia como resuelta y filtrar por estado. | 1 | Nickolas | Done |
+| US14 | Finalización de Viaje | T01 | Reglas para finalizar | Permitir finalizar solo un viaje que está en camino; un viaje finalizado no se puede cancelar ni reasignar. | 1 | Nickolas | Done |
+|  |  | T02 | Prueba del ciclo del viaje | Probar el ciclo completo: crear la ruta, programar el viaje, iniciarlo y finalizarlo. | 2 | Mathias | Done |
+| US19 | Confirmación de Llegada | T01 | Avisos en el backend | Guardar los avisos de cada padre y permitir marcarlos como leídos. | 3 | Salvador | Done |
+|  |  | T02 | Limpiar avisos de un viaje | Borrar los avisos de un viaje cuando ese viaje se elimina. | 1 | Salvador | Done |
+|  |  | T03 | Aviso automático de llegada | Que el backend genere el aviso de llegada cuando el conductor finaliza el viaje, sin depender de la aplicación. | 3 | Salvador | Done |
+| — | Tareas generales del Sprint | T01 | Pruebas de integración | Probar inicio de sesión, rutas públicas y protegidas, datos de otra organización y permisos del conductor. | 3 | Mathias | Done |
+|  |  | T02 | Conectar el FrontEnd con el backend | Cambiar la dirección de la API del FrontEnd por la del backend publicado. | 1 | Nickolas | Done |
+|  |  | T03 | Nueva versión de la Landing Page | Cambiar el enlace de la Landing al nuevo FrontEnd y agregar en el footer los Términos y Condiciones y la Política de Privacidad. | 3 | Mathias | Done |
+|  |  | T04 | Documentar el Sprint 3 | Redactar el Sprint 3 en el informe con la evidencia de los repositorios. | 4 | Salvador | Done|
+
+##### 5.2.3.4. Development Evidence for Sprint Review
+
+Durante el Sprint 3 el equipo creó el repositorio de los Web Services de KidTrack (kidtrack-platform), hecho en Java 21 con Spring Boot. Cada bounded context tiene sus capas domain, application, infrastructure e interfaces, y los contextos se consultan entre sí mediante fachadas (ACL) y eventos de dominio. El backend expone 61 endpoints bajo /api/v1 y usa MySQL para guardar los datos. En el FrontEnd (kidtrack-webapp) se publicó una nueva versión conectada a este backend.
+
+| Producto | Repositorio |
+| :--- | :--- |
+| Web Services | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform |
+| FrontEnd | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp |
+| Landing Page | https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website |
+
+| Repository | Branch | Commit Id | Commit Message | Committed By | Committed on (Date) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | e1af627 | chore: initialize Spring Boot project with Docker setup | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | b5809af | feat(shared): add shared kernel, JWT security and error handling | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a76b14c | feat(iam): add identity and access management context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | ca7d13b | feat(stakeholder): add parents, children and drivers context | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | a9c7544 | feat(subscription): add plans and subscriptions context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 34208ed | feat(fleet): add vehicles and routes context | Eddo Su Caletti | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 5ba65d3 | feat(trip): add trips and incidents context | Nickolas Ramirez | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | d0bfec3 | feat(notifications): add notifications context | Salvador Chamorro | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | develop | 6591076 | test: add API integration tests | Mathias De la Cruz | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform | main | 0447078 | Add or update the Azure App Service build and deployment workflow config | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 6d6a6fb | ci: add Azure Static Web Apps workflow file on-behalf-of: @Azure opensource@microsoft.com | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | c874a84 | ci: inject API keys in new Azure SWA workflow | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 30aedf3 | ci: remove old Azure SWA workflow (salmon-bush) | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-webapp | main | 704f3df | feat(environments): point apiBaseUrl to kidtrack-platform backend on Azure | Bynickram02 | 08/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 86d0de0 | feat(about): added about section | Dela0405 | 10/11/2026 |
+| upc-pre-202620-1asi0729-7800-stackforge/kidtrack-website | main | 82b21a3 | fix: redirection web app link | Dela0405 | 10/11/2026 |
+
+##### 5.2.3.5. Execution Evidence for Sprint Review
+
+En el Sprint 3 la aplicación web de KidTrack dejó de usar la Fake API y ahora guarda sus datos en el backend publicado en Azure. Como el backend respeta los mismos endpoints que ya usaba el FrontEnd, todas las vistas del Sprint 2 siguen funcionando, pero ahora los registros, las rutas, los viajes, el abordaje, las incidencias y los avisos quedan guardados en la base de datos.
+
+**URL del FrontEnd:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+Para probar la aplicación se mantienen las tres cuentas de prueba, que ahora vienen cargadas en el backend:
+
+| Rol | Correo | Contraseña |
+| :--- | :--- | :--- |
+| Administrador | admin@kidtrack.pe | admin123 |
+| Conductor | driver@kidtrack.pe | driver123 |
+| Padre | parent@kidtrack.pe | parent123 |
+
+**Validación del Sprint 3 Goal:**
+
+---
+
+**Escenario A: viaje completo**
+
+
+El administrador entra con su cuenta y revisa la Ruta Norte con sus paradas, sus alumnos, el conductor y el vehículo asignados. Cuando se guarda una ruta completa, la aplicación programa el viaje del día, que aparece en el monitor de viajes como Programado.
+
+   ![Inicio del administrador](assets/images/Chapter-5/Sprint3/webapp-admin-home.png)
+
+   ![Gestión de rutas](assets/images/Chapter-5/Sprint3/webapp-route-management.png)
+
+   ![Monitor de viajes con el viaje del día programado](assets/images/Chapter-5/Sprint3/webapp-trip-monitor-admin.png)
+
+El conductor entra con su cuenta, elige su viaje, completa el check de seguridad y lo inicia. El viaje pasa a En camino.
+
+   ![Viajes del conductor](assets/images/Chapter-5/Sprint3/webapp-driver-trips.png)
+
+   ![Check de seguridad antes de iniciar](assets/images/Chapter-5/Sprint3/webapp-safety-check.png)
+
+   ![Viaje iniciado](assets/images/Chapter-5/Sprint3/webapp-trip-started.png)
+
+En la parada el conductor marca a Lucía y Diego como abordados y a Mateo como ausente. Al recargar la página, el viaje sigue En camino con 2 de 3 alumnos, porque los datos vienen del backend.
+
+   ![Abordaje de alumnos](assets/images/Chapter-5/Sprint3/webapp-boarding.png)
+
+   ![Viaje en camino después de recargar](assets/images/Chapter-5/Sprint3/webapp-trip-en-route.png)
+
+El conductor finaliza el viaje. El viaje pasa a Completado y en el backend queda con su hora de inicio y de fin.
+
+   ![Viaje finalizado](assets/images/Chapter-5/Sprint3/webapp-trip-completed.png)
+
+   ![Viaje completado consultado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-completed.png)
+
+La madre de Lucía y Diego entra con su cuenta y ve los avisos de abordaje de sus hijos.
+
+   ![Avisos del padre](assets/images/Chapter-5/Sprint3/webapp-parent-notifications.png)
+
+**Escenario B: acciones que el backend no permite**
+
+- Si se intenta iniciar un viaje que no está programado, el backend responde 400 con el mensaje "Only a scheduled trip can be started.". En la captura se intenta poner En camino el viaje que ya se había completado.
+- Si se consulta un endpoint protegido sin token, el backend responde 401.
+- Si un conductor intenta modificar un viaje que no es suyo, el backend responde 403.
+- Si un usuario intenta ver datos de otra organización, el backend responde 403.
+- Un viaje finalizado no se puede cancelar ni reasignar.
+
+![Cambio de estado rechazado](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+![Consulta sin token rechazada](assets/images/Chapter-5/Sprint3/swagger-trips-without-token.png)
+
+**Escenario C: incidencia durante el viaje**
+
+Con el viaje en camino, el conductor reporta un retraso por tráfico con gravedad moderada. La incidencia queda guardada con su viaje, su tipo, su gravedad, su estado y la hora, y aparece en el Centro de Alertas junto a las incidencias anteriores, abiertas o resueltas.
+
+![Formulario de incidencia](assets/images/Chapter-5/Sprint3/webapp-incident-form.png)
+
+![Incidencia reportada](assets/images/Chapter-5/Sprint3/webapp-incident.png)
+
+---
+
+**Conclusión:**
+
+Los Web Services de KidTrack permiten validar satisfactoriamente el Sprint 3 Goal, ya que las condiciones definidas en él fueron implementadas. El backend está publicado en Azure con su documentación en Swagger y la aplicación web funciona conectada a él. Los conductores, padres, alumnos y rutas que se registran en la aplicación quedan guardados en el backend. El conductor puede iniciar el viaje, marcar qué alumnos suben, reportar incidencias y finalizar el viaje, y todo queda guardado. El padre puede ver los avisos de abordaje de su hijo y el backend rechaza las acciones que no corresponden, como iniciar un viaje que no está programado. 
+
+---
+
+##### 5.2.3.6. Services Documentation Evidence for Sprint Review
+
+En este sprint se documentaron los Web Services con OpenAPI usando Swagger UI. La documentación describe los 61 endpoints de los seis bounded contexts, con sus parámetros y respuestas, y permite probarlos con un token. Los endpoints mantienen los mismos nombres y campos que la Fake API del Sprint 2, por eso el FrontEnd se conectó sin cambiar sus vistas.
+
+- **URL base:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+- **Swagger UI:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/swagger-ui.html
+- **Repositorio:** https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-platform
+
+Todos los recursos responden en JSON. Las consultas devuelven 200 OK, las creaciones 201 Created con el registro y su id, las modificaciones 200 OK con el registro actualizado y las eliminaciones 204 No Content, sin cuerpo. El inicio de sesión devuelve 200 OK con el usuario y su token, y ese token se envía en el encabezado Authorization para usar los demás recursos. Cuando algo falla, el backend responde con un mensaje que explica el error: 400 si faltan datos o el cambio no está permitido, 401 si no hay token, 403 si el recurso es de otra organización o el usuario no tiene permiso, 404 si no existe y 409 si el dato ya está registrado.
+
+
+**Identity & Access Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /authentication/sign-in | Iniciar sesión y recibir el token | POST | POST {base}/authentication/sign-in | Body: email, password | 200 con el usuario y su token. 401 INVALID_CREDENTIALS si la contraseña no coincide. |
+| /authentication/sign-up | Registrar un usuario (administrador, conductor o padre) | POST | POST {base}/authentication/sign-up | Body: firstName, lastName, email, password, roleTier, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /organizations | Crear una organización | POST | POST {base}/organizations | Body: name, status | 201 con la organización creada (público). |
+| /organizations/{organizationId} | Consultar una organización | GET | GET {base}/organizations/{organizationId} | Path: organizationId | 200 con el recurso. 404 si no existe. |
+| /organizations/{organizationId} | Editar o suspender una organización | PATCH | PATCH {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /organizations/{organizationId} | Reemplazar los datos de una organización | PUT | PUT {base}/organizations/{organizationId} | Path: organizationId. Body: name, status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users | Listar los usuarios de una organización | GET | GET {base}/users?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /users/{userId} | Consultar un usuario | GET | GET {base}/users/{userId} | Path: userId | 200 con el recurso. 404 si no existe. |
+| /users/{userId} | Actualizar datos personales o contraseña | PATCH | PATCH {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /users/{userId} | Reemplazar los datos de un usuario | PUT | PUT {base}/users/{userId} | Path: userId. Body: firstName, lastName, email, phone, roleTier, organizationId, password | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Subscription & Plan Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /plans | Listar los planes (público) | GET | GET {base}/plans | — | 200 con la lista (público). |
+| /plans/{planId} | Consultar un plan | GET | GET {base}/plans/{planId} | Path: planId | 200 con el recurso. 404 si no existe. |
+| /plans | Crear un plan | POST | POST {base}/plans | Body: planTier, name, maxRoutes, maxDrivers, maxStudents, price, description | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions | Listar las suscripciones de una organización | GET | GET {base}/subscriptions?organizationId={organizationId}&state={state} | Query: organizationId, state | 200 con la lista. |
+| /subscriptions/{subscriptionId} | Consultar una suscripción | GET | GET {base}/subscriptions/{subscriptionId} | Path: subscriptionId | 200 con el recurso. 404 si no existe. |
+| /subscriptions | Contratar un plan | POST | POST {base}/subscriptions | Body: organizationId, planId, planTier, state, startDate, endDate | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /subscriptions/{subscriptionId} | Cambiar de plan, activar o cancelar | PATCH | PATCH {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /subscriptions/{subscriptionId} | Reemplazar los datos de una suscripción | PUT | PUT {base}/subscriptions/{subscriptionId} | Path: subscriptionId. Body: planId, planTier, state, startDate, endDate | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+
+**Stakeholder & Asset Management**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /children | Listar alumnos (por organización o por padre) | GET | GET {base}/children?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId | 200 con la lista. |
+| /children/{childId} | Consultar un alumno | GET | GET {base}/children/{childId} | Path: childId | 200 con el recurso. 404 si no existe. |
+| /children | Dar de alta un alumno | POST | POST {base}/children | Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /children/{childId} | Reemplazar los datos de un alumno | PUT | PUT {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Editar un alumno o marcar su abordaje | PATCH | PATCH {base}/children/{childId} | Path: childId. Body: name, grade, parentId, status, boardingStatus, hasPhoto | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /children/{childId} | Eliminar un alumno | DELETE | DELETE {base}/children/{childId} | Path: childId | 204 sin contenido. |
+| /parents | Listar los padres de una organización | GET | GET {base}/parents?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /parents/{parentId} | Consultar un padre | GET | GET {base}/parents/{parentId} | Path: parentId | 200 con el recurso. 404 si no existe. |
+| /parents | Registrar un padre | POST | POST {base}/parents | Body: name, email, phone, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /parents/{parentId} | Reemplazar los datos de un padre | PUT | PUT {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Editar los datos de un padre | PATCH | PATCH {base}/parents/{parentId} | Path: parentId. Body: name, email, phone, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /parents/{parentId} | Eliminar un padre | DELETE | DELETE {base}/parents/{parentId} | Path: parentId | 204 sin contenido. |
+| /profiles | Listar perfiles (por ejemplo, conductores) | GET | GET {base}/profiles?organizationId={organizationId}&role={role} | Query: organizationId, role | 200 con la lista. |
+| /profiles/{profileId} | Consultar un perfil | GET | GET {base}/profiles/{profileId} | Path: profileId | 200 con el recurso. 404 si no existe. |
+| /profiles | Registrar un conductor con su licencia | POST | POST {base}/profiles | Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /profiles/{profileId} | Reemplazar los datos de un perfil | PUT | PUT {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Editar un perfil o verificar la licencia | PATCH | PATCH {base}/profiles/{profileId} | Path: profileId. Body: userId, firstName, lastName, phone, role, license, vehicleId, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /profiles/{profileId} | Eliminar un perfil | DELETE | DELETE {base}/profiles/{profileId} | Path: profileId | 204 sin contenido. |
+
+**Fleet & Route Planning**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /routes | Listar las rutas de una organización | GET | GET {base}/routes?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /routes/{routeId} | Consultar una ruta con sus paradas | GET | GET {base}/routes/{routeId} | Path: routeId | 200 con el recurso. 404 si no existe. |
+| /routes | Crear una ruta con paradas, conductor y vehículo | POST | POST {base}/routes | Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /routes/{routeId} | Editar una ruta o su asignación | PUT | PUT {base}/routes/{routeId} | Path: routeId. Body: name, type, driverId, driverName, vehicleId, vehiclePlate, studentIds, scheduledStartTime, status, organizationId, waypoints | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /routes/{routeId} | Eliminar una ruta (y sus viajes) | DELETE | DELETE {base}/routes/{routeId} | Path: routeId | 204 sin contenido. |
+| /vehicles | Listar los vehículos de una organización | GET | GET {base}/vehicles?organizationId={organizationId} | Query: organizationId | 200 con la lista. |
+| /vehicles/{vehicleId} | Consultar un vehículo | GET | GET {base}/vehicles/{vehicleId} | Path: vehicleId | 200 con el recurso. 404 si no existe. |
+| /vehicles | Registrar un vehículo | POST | POST {base}/vehicles | Body: plate, model, capacity, status, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /vehicles/{vehicleId} | Reemplazar los datos de un vehículo | PUT | PUT {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Editar un vehículo | PATCH | PATCH {base}/vehicles/{vehicleId} | Path: vehicleId. Body: plate, model, capacity, status, organizationId | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /vehicles/{vehicleId} | Eliminar un vehículo | DELETE | DELETE {base}/vehicles/{vehicleId} | Path: vehicleId | 204 sin contenido. |
+
+**Trip Execution & Monitoring**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /incidents | Listar las incidencias | GET | GET {base}/incidents?organizationId={organizationId}&tripId={tripId} | Query: organizationId, tripId, status | 200 con la lista. |
+| /incidents/{incidentId} | Consultar una incidencia | GET | GET {base}/incidents/{incidentId} | Path: incidentId | 200 con el recurso. 404 si no existe. |
+| /incidents | Reportar una incidencia o alerta SOS | POST | POST {base}/incidents | Body: tripId, routeId, type, severity, description, reportedBy, timestamp, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /incidents/{incidentId} | Marcar una incidencia como resuelta | PATCH | PATCH {base}/incidents/{incidentId} | Path: incidentId. Body: status | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /trips | Listar los viajes | GET | GET {base}/trips?organizationId={organizationId}&routeId={routeId} | Query: organizationId, routeId, driverId, status, scheduledDate | 200 con la lista. |
+| /trips/{tripId} | Consultar un viaje | GET | GET {base}/trips/{tripId} | Path: tripId | 200 con el recurso. 404 si no existe. |
+| /trips | Programar un viaje para una ruta | POST | POST {base}/trips | Body: routeId, scheduledDate, scheduledStartTime, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /trips/{tripId} | Iniciar, actualizar el avance, finalizar o cancelar un viaje | PATCH | PATCH {base}/trips/{tripId} | Path: tripId. Body: status, startTime, endTime, currentStop, studentsBoarded (según el caso) | 200 con el viaje actualizado. 400 si el cambio de estado no está permitido. 403 si no es el conductor asignado. |
+| /trips/{tripId} | Eliminar un viaje (y sus avisos) | DELETE | DELETE {base}/trips/{tripId} | Path: tripId | 204 sin contenido. |
+
+**Notifications & Communication**
+
+| Endpoint | Acción | Verbo HTTP | Sintaxis de llamada | Parámetros | Respuesta |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| /notifications | Listar los avisos | GET | GET {base}/notifications?organizationId={organizationId}&parentId={parentId} | Query: organizationId, parentId, tripId, read | 200 con la lista. |
+| /notifications/{notificationId} | Consultar un aviso | GET | GET {base}/notifications/{notificationId} | Path: notificationId | 200 con el recurso. 404 si no existe. |
+| /notifications | Crear un aviso para un padre | POST | POST {base}/notifications | Body: type, message, timestamp, read, parentId, tripId, organizationId | 201 con el recurso creado. 400 si faltan datos o se rompe una regla. |
+| /notifications/{notificationId} | Marcar un aviso como leído | PATCH | PATCH {base}/notifications/{notificationId} | Path: notificationId. Body: read | 200 con el recurso actualizado. 400 si se rompe una regla de negocio. |
+| /notifications/{notificationId} | Eliminar un aviso | DELETE | DELETE {base}/notifications/{notificationId} | Path: notificationId | 204 sin contenido. |
+
+**Interacción con datos de prueba**
+
+- Vista general de la documentación publicada
+
+  ![Swagger UI publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+- Consulta pública de los planes (no necesita token)
+
+  ![Consulta de planes en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-plans.png)
+
+- Inicio de sesión con la cuenta del conductor y obtención del token (el token está difuminado en la captura)
+
+  ![Inicio de sesión en Swagger](assets/images/Chapter-5/Sprint3/swagger-sign-in.png)
+
+- Consulta de rutas con el token
+
+  ![Consulta de rutas en Swagger](assets/images/Chapter-5/Sprint3/swagger-get-routes.png)
+
+- Cambio de estado no permitido en un viaje completado
+
+  ![Cambio de estado rechazado en Swagger](assets/images/Chapter-5/Sprint3/swagger-trip-rejected.png)
+
+##### 5.2.3.7. Software Deployment Evidence for Sprint Review
+
+En este sprint se desplegaron los Web Services por primera vez y una nueva versión del FrontEnd conectada a ellos. La Fake API del Sprint 2 ya no se usa.
+
+**Web Services**
+
+Se desplegaron en Azure App Service con un workflow de GitHub Actions.
+
+- Se creó en Azure un Web App llamado kidtrack-platform con Java 21, en la región Chile Central.
+- Se agregó al repositorio el workflow que, cada vez que se sube un cambio a main, compila el proyecto con Maven y publica el archivo .jar en Azure (commit 0447078).
+- En la configuración del Web App se colocaron las variables de entorno que usa el perfil de producción: datos de conexión a MySQL (DATABASE_URL, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD y DATABASE_SSL), la clave del token (JWT_SECRET), SEED_ENABLED para cargar los datos de prueba y SWAGGER_ENABLED para la documentación. Las claves no se guardan en el repositorio.
+- La base de datos MySQL corre en un contenedor desplegado en Azure. El backend se conecta a ella con las variables de entorno DATABASE_URL, DATABASE_PORT y DATABASE_NAME, que se configuran en el Web App y se leen en el perfil de producción (application-prod.properties).
+- Se comprobó que el backend responde por HTTPS y que Swagger UI está disponible.
+
+**URL:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
+
+![Workflow de despliegue del backend en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-platform-actions.png)
+
+![Backend publicado](assets/images/Chapter-5/Sprint3/swagger-overview.png)
+
+**Front End**
+
+Se desplegó una nueva versión en Azure Static Web Apps.
+
+- Se creó un nuevo Static Web App y se agregó su workflow al repositorio (commit 6d6a6fb). Las claves que necesita la aplicación se pasan como secretos del repositorio (commit c874a84).
+- Se quitó el workflow del Static Web App anterior (commit 30aedf3).
+- En el environment de Angular se puso la URL del backend publicado (commit 704f3df).
+
+**URL:** https://victorious-tree-02a19840f.6.azurestaticapps.net
+
+![Workflow de despliegue del FrontEnd en GitHub Actions](assets/images/Chapter-5/Sprint3/deploy-webapp-actions.png)
+
+![Aplicación web publicada](assets/images/Chapter-5/Sprint3/deploy-webapp-live.png)
+
+**Landing Page**
+
+Sigue publicada en GitHub Pages. En este sprint se cambió el enlace que lleva a la aplicación para que abra la nueva versión del FrontEnd publicada y se agregó la sección "Conoce KidTrack en video".
+
+**URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint3/deploy-landing-sprint3.png)
+
+##### 5.2.3.8. Team Collaboration Insights during Sprint
+
+En este sprint el trabajo principal fue el backend. El equipo repartió los Web Services por bounded contexts y cada parte se fue integrando en la rama develop del repositorio kidtrack-platform. En el FrontEnd el trabajo fue conectarlo con el backend y publicar la nueva versión, y en la Landing Page se actualizó el enlace a la aplicación y se agregó la sección del video.
+
+En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
+
+**Web Services**
+
+![Insights de los Web Services](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
+
+**FrontEnd**
+
+![Insights de la aplicación web](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+
+**Landing Page**
+
+![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+
+
+### 5.3. Validation Interviews
+
+La validación con usuarios es una fase crítica dentro del ciclo de desarrollo ágil de **KidTrack**, la cual permite contrastar los artefactos de software implementados (Landing Page y WebApp) frente a las expectativas, necesidades y fricciones reales de nuestros stakeholders clave. Esta sección detalla el diseño metodológico de los instrumentos de recolección de datos qualitativos, el registro de las sesiones de prueba en entornos controlados y la síntesis de los hallazgos para orientar las iteraciones del producto de cara a la entrega final.
+
+#### 5.3.1. Diseño de Entrevistas
+Con el objetivo de validar la usabilidad, arquitectura de información y propuesta de valor de la plataforma **KidTrack** (Web & App) en su fase de entrega AV2, se diseñó una guía de entrevistas cualitativas estructurada. El diseño del instrumento responde a la necesidad de evaluar el comportamiento de los usuarios en tiempo real ante las interfaces desplegadas, garantizando preguntas abiertas, sin sesgos ni lenguaje inducido.
+
+El instrumento se divide en una sección de preguntas demográficas generales y dos bloques específicos orientados a cada uno de nuestros segmentos objetivos clave:
+
+##### Preguntas Generales (Demográficas y Contexto Tecnológico)
+- ¿Cuál es su nombre completo y edad?
+- ¿En qué distrito o zona reside actualmente?
+- ¿Cuál es el dispositivo o herramienta tecnológica que utiliza con mayor frecuencia en su día a día (Smartphone Android/iOS, PC Windows/Mac)?
+- ¿Podría describir brevemente la composición de su entorno familiar (hijos en edad escolar, personas a cargo)?
+
+##### Preguntas para Segmento Objetivo 1: Conductor 
+- ¿En qué distrito o zona sueles realizar tus rutas de transporte escolar?
+- ¿Trabajas de manera independiente o para una empresa / asociación de transporte?
+- Cuéntame cómo es un día normal de trabajo desde que inicias el recorrido hasta que entregas al último estudiante.
+- Al interactuar con la pantalla "Mis Rutas" de KidTrack en el celular, ¿te resulta claro cómo seleccionar tu trayecto e iniciar el viaje?
+- Al detenerte en una parada, ¿qué tan fácil te resulta ubicar al estudiante y marcar su estado ("Abordado" / "Ausente") con un solo toque?
+- Respecto a los botones e íconos en pantalla, ¿consideras que su tamaño te permite interactuar de forma segura sin distraerte al conducir?
+- Si encuentras tráfico pesado o un imprevisto en la vía, ¿resulta intuitivo el acceso al botón de "Reportar Incidencia"?
+- ¿El contraste de los colores principales te permite leer la pantalla de un vistazo bajo la luz solar directa mientras conduces?
+- ¿Qué ajuste o simplificación le harías a esta interfaz para que requiera la mínima lectura posible mientras estás al volante?
+- Si tuvieras que usar esta herramienta diariamente en tus rutas, ¿qué funcionalidad considerarías indispensable mantener o mejorar?
+
+##### Preguntas para Segmento Objetivo 2: Padre de Familia
+- ¿Desde hace cuánto tiempo utilizas el servicio de transporte escolar para tu hijo/a?
+- ¿Con qué frecuencia revisas aplicaciones en tu teléfono móvil mientras tu hijo/a está en camino al colegio o a casa?
+- Cuéntame cómo te enteras actualmente del trayecto de tu hijo/a y qué tan tranquilo/a te sientes con ese método.
+- ¿Qué es lo primero que te llama la atención o ubicas visualmente al abrir el mapa de seguimiento mientras tu hijo/a está en camino?
+- En cuanto a las alertas de notificación ("Abordado", "En Trayecto", "Entregado"), ¿qué información esperas recibir en cada una y con qué frecuencia te gustaría que aparezcan?
+- ¿Qué datos de los que aparecen en la pantalla te parecen más útiles y cuáles consideras que están de más?
+- ¿Podrías revisar el historial de viajes para ver los horarios de llegada de la semana pasada y comentarme qué tan fácil o difícil fue encontrar ese registro?
+- ¿Qué opinas de la información visualizada sobre los datos del vehículo, la placa y el perfil del conductor asignado?
+- Al interactuar con la plataforma, ¿qué elementos visuales te generan mayor confianza y cuáles te generan duda o confusión?
+
+#### 5.3.2. Diseño de Entrevistas
+
+#### Segmento 1: Conductor
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Juan Diego |
+| **Apellidos** | León |
+| **Edad** | 25 |
+| **Distrito** | Salamanca (Rutas en La Molina, San Borja, Surco, San Isidro) |
+| **Ocupación** | Conductor de Movilidad Escolar / Transportista |
+| **Vehículo que posee** | Minivan amplia (vehículo de varias filas) |
+| **Fecha de la entrevista** | 11/11/2026 |
+| **Entrevistador** | Eddo Su Caletti |
+| **Inicio en el video** | 00:09 |
+| **Fin en el video** | 12:14 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 1](assets/images/Chapter-5/validation/interview1.png)
+
+**Resumen:** El entrevistado valoró positivamente la interfaz, indicando que la creación de viajes y el acceso a las funciones son muy directos y fáciles de ubicar ("como al ojo"). Consideró que los botones están bien distribuidos y el botón de reportar incidencia es accesible al encontrarse cerca del mapa. Como recomendación principal, sugirió que la aplicación abra directamente el mapa al iniciar sesión y que se integre una alerta de tráfico en tiempo real cambiando el color de las vías.
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| **L1** | Completada sin ayuda | 7 | Interfaz muy didáctica y fácil de ubicar. |
+| **L2** | Completada sin ayuda | 7 | Acceso rápido a las rutas asignadas en los distritos. |
+| **L3** | Completada sin ayuda | 6 | Buena visibilidad y organización de las opciones. |
+| **L4** | Completada sin ayuda | 7 | Recepción fluida de alertas y avisos en ruta. |
+| **P1** | Completada sin ayuda | 6 | Botón de reporte de incidencias bien ubicado debajo del mapa para un clic rápido. |
+| **P2** | Completada sin ayuda | 7 | Muy fácil de usar al llegar a una parada para registrar el estado del estudiante. |
+| **P3** | Completada sin ayuda | 7 | Visualización clara de los perfiles y datos del vehículo. |
+| **P4** | Completada sin ayuda | 6 | Seguimiento correcto de los puntos de recojo y retorno. |
+| **P5** | Completada sin ayuda | 6 | Los colores no son fluorescentes y se distinguen muy bien bajo la luz solar directa. |
+
+
+##### Entrevista 2
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Renzo|
+| **Apellidos** |Arévalo |
+| **Edad** |27 |
+| **Distrito** |Surco |
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 12:16 |
+| **Fin en el video** | 24:04 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 2](assets/images/Chapter-5/validation/interview2.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+##### Entrevista 3
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Victor|
+| **Apellidos** | Gutierrez|
+| **Edad** |23 |
+| **Distrito** | San Borja|
+| **Ocupación** | Conductor de movilidad escolar|
+| **Entrevistador** |Jose Zacarias Ortega |
+| **Inicio en el video** | 24:06 |
+| **Fin en el video** | 32:56 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 3](assets/images/Chapter-5/validation/interview3.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+#### Segmento 2: Padre de familia
+
+
+##### Entrevista 1
+
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Esmeralda|
+| **Apellidos** | Andrade|
+| **Edad** | 25|
+| **Distrito** | Surco|
+| **Ocupación** | Madre de familia|
+| **Hijos** |1 |
+| **Entrevistador** | Jose Zacarias Ortega|
+| **Inicio en el video** | 33:01 |
+| **Fin en el video** | 43:43|
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa)|
+
+![Entrevista 4](assets/images/Chapter-5/validation/interview4.png)
+
+**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| L1 | | | |
+| L2 | | | |
+| L3 | | | |
+| L4 | | | |
+| P1 | | | |
+| P2 | | | |
+| P3 | | | |
+| P4 | | | |
+| P5 | | | |
+
+
+
+
+#### Resultados generales
+
+| Tarea | Completada sin ayuda | Completada con ayuda | No completada | Facilidad promedio (1-7) |
+|---|:---:|:---:|:---:|:---:|
+| **L1** |  |  |  |  |
+| **L2** |  |  |  |  |
+| **L3** |  |  |  |  |
+| **L4** |  |  |  |  |
+| **A1 / P1** |  |  |  |  |
+| **A2** |  |  |  |  |
+| **A3** |  |  |  |  |
+| **A4** |  |  |  |  |
+| **A5** |  |  |  |  |
+| **P2** |  |  |  |  |
+| **P3** |  |  |  |  |
+| **P4** |  |  |  |  |
+| **P5** |  |  |  |  |
+
+En términos generales, las evaluaciones de usabilidad demostraron que los flujos principales de la plataforma son intuitivos y de fácil adopción para los usuarios. Las tareas relacionadas con la exploración en la Landing Page (L1), el registro de cuentas (A2), la visualización de detalles principales (A3) y el envío de notificaciones (A4) obtuvieron las calificaciones más altas de facilidad (promedio de 7.0), destacando la claridad de los botones principales y la calidad visual de las interfaces. Sin embargo, se identifican problemas recurrentes en tareas de alta complejidad temporal o de personalización, como la selección de fechas no consecutivas o parámetros avanzados en módulos específicos (A3/P4) y ciertas dificultades con el tamaño de tipografías iniciales para usuarios con fatiga visual. Las principales diferencias entre segmentos radicaron en que los apoderados priorizan la agilidad y transparencia en la ubicación de recojo y alertas en tiempo real, mientras que los conductores exigen mayor control sobre la marcación rápida y el estado de disponibilidad del vehículo.
+
+
+#### 5.3.3. Evaluaciones según heurísticas
+
+A continuación, se presenta la sesión de evaluación de usabilidad, arquitectura de información y diseño inclusivo realizada sobre la plataforma **KidTrack** (Web & App), siguiendo la estructura y formato especificados en el Anexo D.
+
+---
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Evaluación** | UX Heuristics & Principles Evaluation<br>*(Usability - Inclusive Design - Information Architecture)* |
+| **Carrera** | Ingeniería de Software |
+| **Curso** | 1ASI0729 Desarrollo de Aplicaciones Open Source |
+| **Sección** | NRC 7800 |
+| **Profesor** | Robles Fernández, Iván |
+| **Auditores (Equipo de Trabajo)** | • Su Caletti, Eddo (U20221A390)<br>• Chamorro Acero, Salvador Edward (U201914367)<br>• De la Cruz De los Santos, Mathías Marcelo (U202424059)<br>• Ramírez Ruiz, Nickolas (U202415551)<br>• Ortega Quintana, José Zacarías (U202316852) |
+| **Cliente(s)** | Padres de Familia y Conductores |
+
+#### SITE / APP A EVALUAR:
+- **KidTrack Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+- **KidTrack WebApp & Mobile Interface:** https://victorious-tree-02a19840f.6.azurestaticapps.net/identity-and-access-management/sign-in?redirect=%2Fhome
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1. Visualización y seguimiento del mapa en tiempo real durante el trayecto escolar.
+2. Consulta y filtrado de registros en el Historial de Viajes y Asistencia.
+3. Marcación rápida de estado de abordaje del estudiante por parte del conductor ("Abordado" / "Ausente").
+4. Envío de alertas y notificaciones push de cambio de estado de la unidad.
+5. Reporte rápido de incidencias o tráfico por parte del conductor al volante.
+6. Visualización de datos de identificación del vehículo, placa y perfil del conductor asignado.
+
+**No están incluidas en esta versión de la evaluación las siguientes tareas:**
+1. Configuración de métodos de pago y facturación recurrente de la mensualidad.
+2. Gestión de múltiples rutas simultáneas para empresas de transporte escolar masivas.
+3. Integración con sistemas de videovigilancia en vivo dentro de la unidad vehicular.
+
+---
+
+#### ESCALA DE SEVERIDAD:
+Los errores identificados han sido puntuados tomando en cuenta la siguiente escala de severidad:
+
+| Nivel | Descripción |
+| :---: | :--- |
+| **1** | **Problema superficial:** Puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| **2** | **Problema menor:** Puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara al siguiente release. |
+| **3** | **Problema mayor:** Ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| **4** | **Problema muy grave:** Un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### TABLA RESUMEN DE EVALUACIÓN HEURÍSTICA:
+
+| # | Hallazgo / Problema Identificado | Escala de Severidad (1-4) | Heurística / Principio Violado |
+| :-: | :--- | :-: | :--- |
+| **1** | Tipografía reducida en los títulos principales de la Landing Page. | **2** | **Inclusive Design:** Visibilidad y legibilidad |
+| **2** | Restricción de selección continua en fechas de reserva. | **3** | **Usability:** Flexibilidad y eficiencia de uso |
+
+---
+
+#### DESCRIPCIÓN DETALLADA DE PROBLEMAS:
+
+##### PROBLEMA #1: Tipografía reducida en los títulos principales de la Landing Page
+- **Severidad:** 2 (Problema menor)
+- **Heurística violada:** Inclusive Design - Visibilidad y legibilidad
+- **Problema:** Durante las pruebas de usabilidad con los entrevistados, se obtuvo que el texto inicial e informativo en la vista principal presenta grosores de línea y tamaños ligeramente reducidos, lo que genera ligera fatiga visual o dificultad de lectura rápida para usuarios con menor agudeza visual. 
+
+![Problema 1]()
+
+
+- **Recomendación:** Aumentar el peso de fuente (`font-weight`) y el tamaño base de los títulos principales en la Landing Page, garantizando un contraste adecuado y una lectura inclusiva.
+
+##### PROBLEMA #2: Restricción de selección continua en fechas de reserva
+- **Severidad:** 3 (Problema mayor)
+- **Heurística violada:** Usability - Coincidencia entre el sistema y el mundo real / Flexibilidad y eficiencia de uso
+- **Problema:** Durante las pruebas realizadas en campo, el usuario no comprende el motivo por el cual ciertas fechas en el calendario no se pueden seleccionar, generando confusión al no recibir retroalimentación del estado de disponibilidad. 
+
+![Problema 2]()
+
+- **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
+
+### 5.4. Video About-the-Product
+El video About-the-Product presenta KidTrack a los visitantes de la Landing Page. Se muestra cómo funciona la aplicación para cada rol: el administrador arma las rutas, el conductor inicia el viaje y marca el abordaje, y el padre recibe los avisos de su hijo. Al final se incluyen dos testimonios de las entrevistas de validación, una madre de familia y un conductor.
+
+[![Video About-the-Product](assets/images/Chapter-5/Sprint3/about-the-product.png)](https://youtu.be/YCY3Z61_eIk)
+
+| Campo | Detalle |
+| :--- | :--- |
+| **Microsoft Stream** | [Ver video en Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQBaylJiS-pyQKFyLh1xAM4BAeIZhMDuyKaGOvA0IUdnCtA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=9RYj1r) |
+| **YouTube** | [https://youtu.be/YCY3Z61_eIk](https://youtu.be/YCY3Z61_eIk) |
+| **Duración** | 1:54 |
 
 ## Conclusiones
-- El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
-- La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
-- El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend con DDD, por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas al 100%, ya que se necesitan de experiencias de usuarios reales.
+
+### Avance de conclusiones — AV2
+
+Hasta la entrega AV2, KidTrack ha avanzado desde la identificación del problema y el diseño de la experiencia de usuario hacia una primera versión integrada de la plataforma. Este avance permite relacionar las necesidades identificadas durante el proceso Lean UX con los componentes desarrollados y las evidencias de implementación del Sprint 3.
+
+El Problem Statement plantea dos necesidades relacionadas: los apoderados requieren información sobre el traslado de sus hijos y los transportistas necesitan organizar su operación sin depender exclusivamente de llamadas, mensajes y registros manuales. Estas necesidades orientaron la definición de las historias de usuario y la incorporación de funcionalidades para gestionar estudiantes, conductores, vehículos, rutas, viajes e incidencias.
+
+Respecto a los Assumptions, el desarrollo realizado permite explorar la propuesta de centralizar la información del servicio y facilitar su consulta según el rol del usuario. Sin embargo, disponer de estas funcionalidades no demuestra por sí solo que los usuarios adoptarán la plataforma o que disminuirá su carga de trabajo. Estas suposiciones requieren contrastarse con observaciones de uso y resultados medibles.
+
+En relación con los Hypothesis Statements, KidTrack cuenta con una base funcional para evaluar la consulta del estado del traslado, el registro de abordajes y la organización del servicio. Las evidencias técnicas permiten comprobar comportamientos específicos del sistema, pero no reemplazan la medición de los indicadores definidos en el capítulo 1. Por ello, el cumplimiento de las metas de uso, registro de la operación y cambio de plan permanece sujeto a una evaluación durante los periodos establecidos.
+
+A nivel técnico, el Sprint 3 incorpora la primera versión de los Web Services, desarrollados con Java y Spring Boot, documentados mediante Swagger/OpenAPI y desplegados en Azure. El informe registra también la conexión de la aplicación web con el backend. Este avance permite continuar la evaluación de los flujos con servicios reales y persistencia de información, superando la etapa basada en una API simulada.
+
+Las evidencias de interacción documentadas muestran consultas de planes y rutas, autenticación y rechazo de una transición de viaje no permitida. Estos resultados respaldan el funcionamiento de los casos presentados y la aplicación de determinadas reglas de negocio, sin constituir una validación exhaustiva de todas las operaciones ni de su desempeño en condiciones reales de transporte escolar.
+
+Finalmente, el avance de AV2 destaca la importancia de mantener coherencia entre las historias de usuario, el diseño, la implementación y las evidencias. La documentación de los servicios y del despliegue facilita comunicar el estado del producto e identificar qué aspectos cuentan con respaldo técnico y cuáles requieren validación adicional con usuarios.
+
+### Comparación entre Lean UX y el avance obtenido
+
+
+| Elemento Lean UX | Planteamiento inicial | Avance al cierre de AV2 |
+| :--- | :--- | :--- |
+| Problem Statement | Los apoderados necesitan visibilidad del traslado y los transportistas requieren organizar la operación del servicio. | Se desarrollaron componentes para gestionar los recursos del transporte y consultar información relacionada con los viajes. |
+| Assumptions sobre los usuarios | Los apoderados valorarán información confiable y los transportistas utilizarán una herramienta sencilla para organizar su trabajo. | La plataforma ofrece flujos diferenciados por rol que permiten evaluar estas suposiciones. |
+| Hipótesis 1 | Durante las primeras cuatro semanas, al menos el 70% de los padres activos consultará el estado del trayecto una vez al día. | Se dispone de funcionalidades relacionadas con la consulta de viajes y avisos. |
+| Hipótesis 2 | Durante las primeras cuatro semanas, el 80% de los trayectos registrados tendrá el checklist de abordaje completo. | Se implementaron operaciones relacionadas con los viajes y el registro del abordaje. |
+| Hipótesis 3 | Dentro de los primeros 15 días, al menos el 75% de los administradores habrá registrado la totalidad de sus usuarios y rutas. | Se incorporaron servicios para administrar usuarios, estudiantes, perfiles, vehículos y rutas. |
+| Hipótesis 4 | Durante los primeros tres meses, al menos el 20% de los administradores en planes Básico o Intermedio migrará a un plan superior. | Se implementaron servicios de planes y suscripciones. |
+
 ## Recomendaciones
-- Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
+
+- Continuar la validación con representantes de los segmentos objetivo, registrando las tareas realizadas, las dificultades observadas y los resultados obtenidos. Diferenciar los comentarios de los participantes de las conclusiones respaldadas por mediciones.
+
+- Mantener actualizada la documentación Swagger/OpenAPI para que sus parámetros, esquemas y códigos de respuesta correspondan con el comportamiento de los servicios implementados.
+
+- Evaluar progresivamente los flujos en condiciones representativas del transporte escolar, considerando retrasos, interrupciones de conectividad e incidencias. La interacción del conductor debe realizarse cuando el vehículo esté detenido.
+
+- Priorizar las siguientes mejoras según los hallazgos de validación y las dependencias técnicas, manteniendo trazabilidad entre las observaciones, las historias de usuario y el trabajo seleccionado para cada sprint.
+
 ## Video About-the-Team
 
+### Resumen
+
+El video About-the-Team de AV2 tiene como propósito presentar el trabajo del equipo StackForge durante el desarrollo de KidTrack y reflexionar sobre los aprendizajes obtenidos hasta el Sprint 3.
+
+La presentación se organiza alrededor de la evolución del proyecto: identificación de necesidades, definición de requisitos, diseño de la experiencia de usuario y de la arquitectura, implementación de los componentes y publicación de la solución. Cada integrante explicará las actividades en las que participó y las relacionará con evidencias concretas del informe o de los repositorios.
+
+La reflexión grupal abordará los logros alcanzados, las dificultades encontradas y las oportunidades de mejora en la coordinación del equipo. Asimismo, se destacará la importancia de comunicar las decisiones técnicas, mantener consistencia entre los entregables y distinguir el funcionamiento implementado de los beneficios que todavía requieren validación con usuarios.
+
+### Video representativo
+
+**Estado:** pendiente de incorporar la evidencia audiovisual correspondiente a AV2.
+
+<!-- Insertar aquí una captura del video About-the-Team de KidTrack una vez disponible. -->
+
+### URL del video
+
+- **Microsoft Stream:** pendiente de incorporar el enlace del video de KidTrack.
+- **YouTube:** pendiente de incorporar el enlace del video de KidTrack.
+- **Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+### Pauta propuesta de secuencias de contenido
+
+Los tiempos de inicio se completarán según la edición final del video.
+
+| Tiempo de inicio | Sección | Contenido previsto |
+| :--- | :--- | :--- |
+| Por completar | Presentación del equipo y del proyecto | Identificación de StackForge, propósito de KidTrack y alcance alcanzado en AV2. |
+| Por completar | Evolución y reflexión grupal | Principales avances, dificultades de coordinación, decisiones adoptadas y oportunidades de mejora. |
+| Por completar | Participación de cada integrante | Explicación individual de los aportes realizados, sus evidencias y las competencias fortalecidas durante el proyecto. |
+| Por completar | Cierre | Aprendizajes compartidos y prioridades para continuar la implementación y validación de KidTrack. |
+  
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
 - Superintendencia de Transporte Terrestre de Personas, Carga y Mercancías. (2024). _Sutran (MTC) sensibilizó a más de 47 000 escolares sobre seguridad vial_. Gob.pe. Recuperado el 9 de abril de 2026, de https://www.gob.pe/institucion/sutran/noticias/1255228-sutran-mtc-sensibilizo-a-mas-de-47-000-escolares-sobre-seguridad-vial-en-lo-que-va-del-2025
-
-
-## Anexos
