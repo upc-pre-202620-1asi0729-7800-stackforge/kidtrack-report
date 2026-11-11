@@ -119,6 +119,12 @@ El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pr
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
 
+### Sprint 3
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Report.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
+
 <br><br>
 <br><br><br>
 <br><br><br>
