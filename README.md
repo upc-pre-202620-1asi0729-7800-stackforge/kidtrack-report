@@ -4794,7 +4794,7 @@ Para este sprint se tomaron como aspectos los seis bounded contexts del backend,
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Chamorro Acero, Salvador Edward | SALVA1704 | C | C | C | C | C | C | L | C | C | L |
 | De la Cruz De los Santos, Mathias Marcelo | Dela050406 | L | L | C | L | C | C | C | L | C | C |
-| Ortega Quintana, Jose Zacarias | Argox16 | C | L | C | C | C | C | C | C | C | C |
+| Ortega Quintana, Jose Zacarias | Argox16 | C | C | C | C | C | C | C | C | C | C |
 | Ramirez Ruiz, Nickolas | Bynickram02 | C | C | L | C | C | L | C | C | L | C |
 | Su Caletti, Eddo | Asalreon520 | C | C | C | C | L | C | C | C | C | C |
 
@@ -5121,7 +5121,7 @@ Sigue publicada en GitHub Pages. En este sprint se cambió el enlace que lleva a
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint
 
-El equipo dividió el FrontEnd por bounded contexts. Cada integrante trabajó el suyo en una rama propia y posteriormente se integró a la rama develop.
+En este sprint el trabajo principal fue el backend. El equipo repartió los Web Services por bounded contexts y cada parte se fue integrando en la rama develop del repositorio kidtrack-platform. En el FrontEnd el trabajo fue conectarlo con el backend y publicar la nueva versión, y en la Landing Page se actualizó el enlace a la aplicación y se agregó la sección del video.
 
 En las siguientes capturas se ve la participación de cada integrante en los repositorios durante el sprint.
 
