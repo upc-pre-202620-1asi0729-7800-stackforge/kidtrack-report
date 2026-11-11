@@ -4808,7 +4808,7 @@ De los 32 Story Points comprometidos en el Sprint Planning se aceptaron los 32. 
 
 **URL del Board:** 
 
-[Validation](https://trello.com/b/SUgGiFTd/kidtrack)
+[KidTrack - Sprint 3](https://trello.com/b/SUgGiFTd/kidtrack)
 
 
 | Sprint # | Sprint 3 | | | | | | |
@@ -5090,7 +5090,7 @@ Se desplegaron en Azure App Service con un workflow de GitHub Actions.
 - Se creó en Azure un Web App llamado kidtrack-platform con Java 21, en la región Chile Central.
 - Se agregó al repositorio el workflow que, cada vez que se sube un cambio a main, compila el proyecto con Maven y publica el archivo .jar en Azure (commit 0447078).
 - En la configuración del Web App se colocaron las variables de entorno que usa el perfil de producción: datos de conexión a MySQL (DATABASE_URL, DATABASE_PORT, DATABASE_NAME, DATABASE_USERNAME, DATABASE_PASSWORD y DATABASE_SSL), la clave del token (JWT_SECRET), SEED_ENABLED para cargar los datos de prueba y SWAGGER_ENABLED para la documentación. Las claves no se guardan en el repositorio.
-- La base de datos MySQL está en [COMPLETAR: servicio usado, por ejemplo Azure Database for MySQL].
+- La base de datos MySQL corre en un contenedor desplegado en Azure. El backend se conecta a ella con las variables de entorno DATABASE_URL, DATABASE_PORT y DATABASE_NAME, que se configuran en el Web App y se leen en el perfil de producción (application-prod.properties).
 - Se comprobó que el backend responde por HTTPS y que Swagger UI está disponible.
 
 **URL:** https://kidtrack-platform-amfpcyand9b8hrdz.chilecentral-01.azurewebsites.net/api/v1
