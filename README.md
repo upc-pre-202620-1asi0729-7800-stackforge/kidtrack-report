@@ -5113,11 +5113,11 @@ Se desplegó una nueva versión en Azure Static Web Apps.
 
 **Landing Page**
 
-Sigue en GitHub Pages. 
+Sigue publicada en GitHub Pages. En este sprint se cambió el enlace que lleva a la aplicación para que abra la nueva versión del FrontEnd publicada y se agregó la sección "Conoce KidTrack en video".
 
 **URL:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
 
-![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+![Nueva versión de la Landing Page](assets/images/Chapter-5/Sprint2/deploy-landing.png)
 
 ##### 5.2.3.8. Team Collaboration Insights during Sprint
 
