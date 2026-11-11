@@ -5131,12 +5131,77 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 ![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
 
 ## Conclusiones
-- El problema planteado existe, ya que en las entrevistas se obutvo que todo se coordina por WhatsApp y llamadas, por lo que los padres no saben dónde está el vehículo ni reciben avisos a tiempo de los retrasos, y los conductores atienden muchos mensajes mientras trabajan.
-- La Landing Page explica efectivamente qué es KidTrack, como funciona, sus funciones principales, qué hace cada rol y los diferentes planes, por lo que ya existe una herramienta real que presenta el servicio a padres y transportistas.
-- El FrontEnd cumple con las funciones mas importantes definidas pero aun no existe una conexion con un backend con DDD, por lo que la aplicacion no funciona a su 100% y no es posible validar las hipotesis definidas al 100%, ya que se necesitan de experiencias de usuarios reales.
-  
+
+### Avance de conclusiones — AV2
+
+Hasta la entrega AV2, KidTrack ha avanzado desde la identificación del problema y el diseño de la experiencia de usuario hacia una primera versión integrada de la plataforma. Este avance permite relacionar las necesidades identificadas durante el proceso Lean UX con los componentes desarrollados y las evidencias de implementación del Sprint 3.
+
+El Problem Statement plantea dos necesidades relacionadas: los apoderados requieren información sobre el traslado de sus hijos y los transportistas necesitan organizar su operación sin depender exclusivamente de llamadas, mensajes y registros manuales. Estas necesidades orientaron la definición de las historias de usuario y la incorporación de funcionalidades para gestionar estudiantes, conductores, vehículos, rutas, viajes e incidencias.
+
+Respecto a los Assumptions, el desarrollo realizado permite explorar la propuesta de centralizar la información del servicio y facilitar su consulta según el rol del usuario. Sin embargo, disponer de estas funcionalidades no demuestra por sí solo que los usuarios adoptarán la plataforma o que disminuirá su carga de trabajo. Estas suposiciones requieren contrastarse con observaciones de uso y resultados medibles.
+
+En relación con los Hypothesis Statements, KidTrack cuenta con una base funcional para evaluar la consulta del estado del traslado, el registro de abordajes y la organización del servicio. Las evidencias técnicas permiten comprobar comportamientos específicos del sistema, pero no reemplazan la medición de los indicadores definidos en el capítulo 1. Por ello, el cumplimiento de las metas de uso, registro de la operación y cambio de plan permanece sujeto a una evaluación durante los periodos establecidos.
+
+A nivel técnico, el Sprint 3 incorpora la primera versión de los Web Services, desarrollados con Java y Spring Boot, documentados mediante Swagger/OpenAPI y desplegados en Azure. El informe registra también la conexión de la aplicación web con el backend. Este avance permite continuar la evaluación de los flujos con servicios reales y persistencia de información, superando la etapa basada en una API simulada.
+
+Las evidencias de interacción documentadas muestran consultas de planes y rutas, autenticación y rechazo de una transición de viaje no permitida. Estos resultados respaldan el funcionamiento de los casos presentados y la aplicación de determinadas reglas de negocio, sin constituir una validación exhaustiva de todas las operaciones ni de su desempeño en condiciones reales de transporte escolar.
+
+Finalmente, el avance de AV2 destaca la importancia de mantener coherencia entre las historias de usuario, el diseño, la implementación y las evidencias. La documentación de los servicios y del despliegue facilita comunicar el estado del producto e identificar qué aspectos cuentan con respaldo técnico y cuáles requieren validación adicional con usuarios.
+
+### Comparación entre Lean UX y el avance obtenido
+
+
+| Elemento Lean UX | Planteamiento inicial | Avance al cierre de AV2 |
+| :--- | :--- | :--- |
+| Problem Statement | Los apoderados necesitan visibilidad del traslado y los transportistas requieren organizar la operación del servicio. | Se desarrollaron componentes para gestionar los recursos del transporte y consultar información relacionada con los viajes. |
+| Assumptions sobre los usuarios | Los apoderados valorarán información confiable y los transportistas utilizarán una herramienta sencilla para organizar su trabajo. | La plataforma ofrece flujos diferenciados por rol que permiten evaluar estas suposiciones. |
+| Hipótesis 1 | Durante las primeras cuatro semanas, al menos el 70% de los padres activos consultará el estado del trayecto una vez al día. | Se dispone de funcionalidades relacionadas con la consulta de viajes y avisos. |
+| Hipótesis 2 | Durante las primeras cuatro semanas, el 80% de los trayectos registrados tendrá el checklist de abordaje completo. | Se implementaron operaciones relacionadas con los viajes y el registro del abordaje. |
+| Hipótesis 3 | Dentro de los primeros 15 días, al menos el 75% de los administradores habrá registrado la totalidad de sus usuarios y rutas. | Se incorporaron servicios para administrar usuarios, estudiantes, perfiles, vehículos y rutas. |
+| Hipótesis 4 | Durante los primeros tres meses, al menos el 20% de los administradores en planes Básico o Intermedio migrará a un plan superior. | Se implementaron servicios de planes y suscripciones. |
+
 ## Recomendaciones
-- Integrar en el Sprint 3 la autenticación JWT y el backend propuesto con DDD, documentarla con Swagger y desplegarla .
+
+- Continuar la validación con representantes de los segmentos objetivo, registrando las tareas realizadas, las dificultades observadas y los resultados obtenidos. Diferenciar los comentarios de los participantes de las conclusiones respaldadas por mediciones.
+
+- Mantener actualizada la documentación Swagger/OpenAPI para que sus parámetros, esquemas y códigos de respuesta correspondan con el comportamiento de los servicios implementados.
+
+- Evaluar progresivamente los flujos en condiciones representativas del transporte escolar, considerando retrasos, interrupciones de conectividad e incidencias. La interacción del conductor debe realizarse cuando el vehículo esté detenido.
+
+- Priorizar las siguientes mejoras según los hallazgos de validación y las dependencias técnicas, manteniendo trazabilidad entre las observaciones, las historias de usuario y el trabajo seleccionado para cada sprint.
+
+## Video About-the-Team
+
+### Resumen
+
+El video About-the-Team de AV2 tiene como propósito presentar el trabajo del equipo StackForge durante el desarrollo de KidTrack y reflexionar sobre los aprendizajes obtenidos hasta el Sprint 3.
+
+La presentación se organiza alrededor de la evolución del proyecto: identificación de necesidades, definición de requisitos, diseño de la experiencia de usuario y de la arquitectura, implementación de los componentes y publicación de la solución. Cada integrante explicará las actividades en las que participó y las relacionará con evidencias concretas del informe o de los repositorios.
+
+La reflexión grupal abordará los logros alcanzados, las dificultades encontradas y las oportunidades de mejora en la coordinación del equipo. Asimismo, se destacará la importancia de comunicar las decisiones técnicas, mantener consistencia entre los entregables y distinguir el funcionamiento implementado de los beneficios que todavía requieren validación con usuarios.
+
+### Video representativo
+
+**Estado:** pendiente de incorporar la evidencia audiovisual correspondiente a AV2.
+
+<!-- Insertar aquí una captura del video About-the-Team de KidTrack una vez disponible. -->
+
+### URL del video
+
+- **Microsoft Stream:** pendiente de incorporar el enlace del video de KidTrack.
+- **YouTube:** pendiente de incorporar el enlace del video de KidTrack.
+- **Landing Page:** https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
+
+### Pauta propuesta de secuencias de contenido
+
+Los tiempos de inicio se completarán según la edición final del video.
+
+| Tiempo de inicio | Sección | Contenido previsto |
+| :--- | :--- | :--- |
+| Por completar | Presentación del equipo y del proyecto | Identificación de StackForge, propósito de KidTrack y alcance alcanzado en AV2. |
+| Por completar | Evolución y reflexión grupal | Principales avances, dificultades de coordinación, decisiones adoptadas y oportunidades de mejora. |
+| Por completar | Participación de cada integrante | Explicación individual de los aportes realizados, sus evidencias y las competencias fortalecidas durante el proyecto. |
+| Por completar | Cierre | Aprendizajes compartidos y prioridades para continuar la implementación y validación de KidTrack. |
   
 ## Bibliografía
 - Ministerio de Educación. (2023). _Resultados del Censo Educativo 2022_. ESCALE. Recuperado el 9 de abril de 2026, de https://escale.minedu.gob.pe/documents/10156/9345030/PPT_Censo_Educativo_2023_final.pdf
