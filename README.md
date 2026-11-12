@@ -5311,8 +5311,8 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Distrito** | San Borja|
 | **Ocupación** | Padre de familia|
 | **Entrevistador** |Salvador Chamorro |
-| **Inicio en el video** | 24:06 |
-| **Fin en el video** | 32:56 |
+| **Inicio en el video** | 43:43 |
+| **Fin en el video** | 51:04 |
 | **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
 
 ![Entrevista 3](assets/images/Chapter-5/validation/Entrevista_jesus_padre_de_familia.png)
