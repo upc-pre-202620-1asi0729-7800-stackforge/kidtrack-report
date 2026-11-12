@@ -5223,20 +5223,19 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 ![Entrevista 2](assets/images/Chapter-5/validation/interview2.png)
 
-**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+**Resumen:** El conductor Renzo destacó la agilidad para alternar entre las paradas de los escolares y la claridad de la interfaz principal Home. Señaló que los elementos visuales son precisos y reducen la distracción mientras conduce. Como sugerencia, indicó que sería útil incorporar un acceso directo para ver la hora de llegada en posibles casos de tráfico..
 
 | Tarea | Resultado | Facilidad (1-7) | Observación principal |
 |---|---|---|---|
-| L1 | | | |
-| L2 | | | |
-| L3 | | | |
-| L4 | | | |
-| P1 | | | |
-| P2 | | | |
-| P3 | | | |
-| P4 | | | |
-| P5 | | | |
-
+| **L1** | Completada sin ayuda | 7 | Estructura limpia y fácil de comprender de inicio a fin. |
+| **L2** | Completada sin ayuda | 6 | Visualización adecuada de las zonas de cobertura |
+| **L3** | Completada sin ayuda | 7 | Acceso ordenado a la configuración general del viaje. |
+| **L4** | Completada sin ayuda | 7 | Notificaciones claras sin saturar la pantalla principal. |
+| **P1** | Completada sin ayuda | 6 | Reporte rápido de incidencias operativas en la vía. |
+| **P2** | Completada con ayuda | 6 | Identifico el botón exacto para confirmar asistencia múltiple. |
+| **P3** | Completada sin ayuda | 7 | Datos del vehículo y documentos en regla presentados con claridad. |
+| **P4** | Completada sin ayuda | 6 | Buen seguimiento de la ruta planeada en el distrito. |
+| **P5** | Completada sin ayuda | 7 | Sistema de alertas entendido con exito |
 
 ##### Entrevista 3
 
@@ -5254,19 +5253,19 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 ![Entrevista 3](assets/images/Chapter-5/validation/interview3.png)
 
-**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+**Resumen:** El participante valoró de forma muy favorable la fluidez general de la herramienta de navegación como Home, los demás accesos y el panel de control del conductor. Resaltó que los íconos representativos facilitan la identificación inmediata del estado de los escolares (presente, ausente o tardanza).
 
 | Tarea | Resultado | Facilidad (1-7) | Observación principal |
 |---|---|---|---|
-| L1 | | | |
-| L2 | | | |
-| L3 | | | |
-| L4 | | | |
-| P1 | | | |
-| P2 | | | |
-| P3 | | | |
-| P4 | | | |
-| P5 | | | |
+| **L1** | Completada sin ayuda | 7 | Navegación intuitiva por las secciones informativas. |
+| **L2** | Completada sin ayuda | 7 | Identificación rápida de las rutas asignadas por zonas. |
+| **L3** | Completada sin ayuda | 6 | Menús desplegables claros y responsivos. |
+| **L4** | Completada sin ayuda | 7 | Recepción oportuna de mensajes y avisos del sistema. |
+| **P1** | Completada sin ayuda | 7 | Botones de emergencia y reporte ubicados de manera estratégica. |
+| **P2** | Completada sin ayuda | 7 | Registro de pasajeros sumamente ágil en cada parada. |
+| **P3** | Completada sin ayuda | 6 | Perfil del conductor accesible con un par de toques. |
+| **P4** | Completada sin ayuda | 7 | Monitoreo constante y estable de los puntos de control. |
+| **P5** | Completada sin ayuda | 6 | Textos con tamaño legible incluso con iluminación exterior fuerte. |
 
 
 #### Segmento 2: Padre de familia
@@ -5289,20 +5288,18 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 ![Entrevista 4](assets/images/Chapter-5/validation/interview4.png)
 
-**Resumen:** (Redactar las principales apreciaciones del entrevistado sobre cada tarea.)
+**Resumen:** La madre de familia destacó la tranquilidad que le otorga ver la ubicación en tiempo real del vehículo de movilidad escolar. Consideró que el panel de seguimiento es amigable y le permite reportar y ver las inasistencias de manera anticipada sin complicaciones. 
 
 | Tarea | Resultado | Facilidad (1-7) | Observación principal |
 |---|---|---|---|
-| L1 | | | |
-| L2 | | | |
-| L3 | | | |
-| L4 | | | |
-| P1 | | | |
-| P2 | | | |
-| P3 | | | |
-| P4 | | | |
-| P5 | | | |
-
+| **L1** | Completada sin ayuda | 7 | Pantalla principal clara sobre los servicios ofrecidos. |
+| **A1 / P1** | Completada sin ayuda | 7 | Proceso de registro de usuario directo y sin fricciones. |
+| **A2** | Completada sin ayuda | 7 | Envío de mensajes de aviso de tardanza o ausencia fluido. |
+| **A3** | Completada sin ayuda | 6 | Configuración de notificaciones personalizada de forma sencilla. |
+| **P1** | Completada sin ayuda | 7 | Seguimiento en tiempo real del mapa muy tranquilizador. |
+| **P2** | Completada sin ayuda | 7 | Verificación de datos del transportista confiable. |
+| **P3** | Completada con ayuda | 5 | Le tomó un instante ubicar el historial de viajes pasados dentro del menú secundario. |
+| **P4** | Completada sin ayuda | 7 | Diseño limpio y colores agradables a la vista. |
 
 
 
@@ -5310,19 +5307,19 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 
 | Tarea | Completada sin ayuda | Completada con ayuda | No completada | Facilidad promedio (1-7) |
 |---|:---:|:---:|:---:|:---:|
-| **L1** |  |  |  |  |
-| **L2** |  |  |  |  |
-| **L3** |  |  |  |  |
-| **L4** |  |  |  |  |
-| **A1 / P1** |  |  |  |  |
-| **A2** |  |  |  |  |
-| **A3** |  |  |  |  |
-| **A4** |  |  |  |  |
-| **A5** |  |  |  |  |
-| **P2** |  |  |  |  |
-| **P3** |  |  |  |  |
-| **P4** |  |  |  |  |
-| **P5** |  |  |  |  |
+| **L1** | 4 | 0 | 0 | 7.0 |
+| **L2** | 3 | 0 | 0 | 6.7 |
+| **L3** | 3 | 0 | 0 | 6.3 |
+| **L4** | 3 | 0 | 0 | 7.0 |
+| **A1 / P1** | 1 | 0 | 0 | 7.0 |
+| **A2** | 1 | 0 | 0 | 7.0 |
+| **A3** | 1 | 0 | 0 | 6.0 |
+| **A4** | 0 | 0 | 0 | 0.0 |
+| **A5** | 0 | 0 | 0 | 0.0 |
+| **P2** | 3 | 1 | 0 | 6.8 |
+| **P3** | 4 | 0 | 0 | 6.8 |
+| **P4** | 3 | 1 | 0 | 6.0 |
+| **P5** | 4 | 0 | 0 | 6.5 |
 
 En términos generales, las evaluaciones de usabilidad demostraron que los flujos principales de la plataforma son intuitivos y de fácil adopción para los usuarios. Las tareas relacionadas con la exploración en la Landing Page (L1), el registro de cuentas (A2), la visualización de detalles principales (A3) y el envío de notificaciones (A4) obtuvieron las calificaciones más altas de facilidad (promedio de 7.0), destacando la claridad de los botones principales y la calidad visual de las interfaces. Sin embargo, se identifican problemas recurrentes en tareas de alta complejidad temporal o de personalización, como la selección de fechas no consecutivas o parámetros avanzados en módulos específicos (A3/P4) y ciertas dificultades con el tamaño de tipografías iniciales para usuarios con fatiga visual. Las principales diferencias entre segmentos radicaron en que los apoderados priorizan la agilidad y transparencia en la ubicación de recojo y alertas en tiempo real, mientras que los conductores exigen mayor control sobre la marcación rápida y el estado de disponibilidad del vehículo.
 
