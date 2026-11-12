@@ -112,17 +112,33 @@ Proyecto
 El equipo ha utilizado un flujo de trabajo en github: [https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report](https://github.com/upc-pre-202620-1asi0729-7800-stackforge/kidtrack-report/tree/develop)
 
 ### Sprint 1
+
+**Insights - Landing Page** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint1/Insights-Landing-Page.png)
 
 ### Sprint 2
+
+**Insights - Landing Page** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Landing-Page.png)
+
+**Insights - Front End** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Front-End.png)
+
+**Insights - Fake Api** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint2/Insights-Fake-API.png)
 
 ### Sprint 3
+
+**Insights - Report** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Report.png)
+
+**Insights - Landing Page** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
+
+**Insights - Front End** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Front-End.png)
+
+**Insights - Platform** 
 ![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Platform.png)
 
 <br><br>
@@ -4358,7 +4374,7 @@ Durante el Sprint 2 el equipo trabajó en el repositorio del FrontEnd de KidTrac
 
 ##### 5.2.2.5. Execution Evidence for Sprint Review
 
-En el Sprint 2 se logró diseñar y desplegar la primera versión del FrontEnd de KidTrack, accesible en https://salmon-bush-078a34410.3.azurestaticapps.net
+En el Sprint 2 se logró diseñar y desplegar la primera versión del FrontEnd de KidTrack, accesible en https://upc-pre-202620-1asi0729-7800-stackforge.github.io/kidtrack-website/
 
 Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
 
@@ -4368,7 +4384,7 @@ Para probar la aplicación se dejaron tres cuentas de prueba, una por cada rol:
 | Conductor | driver@kidtrack.pe | driver123 |
 | Padre | parent@kidtrack.pe | parent123 |
 
-Se realizó un video donde se puede ver la ejecución en tiempo real: https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC5iYdGclAPSbuO62U1IWQUAWGoSNWx-T13gvSgEI270sI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ne6kWr
+Se realizó un video donde se puede ver la ejecución en tiempo real:[Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQC5iYdGclAPSbuO62U1IWQUAWGoSNWx-T13gvSgEI270sI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Ne6kWr) 
 
 **Validación del Sprint 2 Goal:**
 
@@ -5131,6 +5147,9 @@ En las siguientes capturas se ve la participación de cada integrante en los rep
 
 ![Insights de la Landing Page](assets/images/Chapter-5/Sprint3/Insights-Landing-Page.png)
 
+**Report**
+![KidTrack Landing Page](assets/images/Chapter-5/Sprint3/Insights-Report.png)
+
 
 ### 5.3. Validation Interviews
 
@@ -5313,7 +5332,7 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **Entrevistador** |Salvador Chamorro |
 | **Inicio en el video** | 43:43 |
 | **Fin en el video** | 51:04 |
-| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+| **URL** | [Validation](https://upcedupe-my.sharepoint.com/:v:/g/personal/u201914367_upc_edu_pe/IQB1Z8pqNy_GR7Kpt1kQiHdtAVt6FZj6ysySHZxEBzZn5Uc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VwG7WE) |
 
 ![Entrevista 3](assets/images/Chapter-5/validation/Entrevista_jesus_padre_de_familia.png)
 
