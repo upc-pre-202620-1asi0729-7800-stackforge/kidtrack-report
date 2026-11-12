@@ -5391,7 +5391,7 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 - **Heurística violada:** Inclusive Design - Visibilidad y legibilidad
 - **Problema:** Durante las pruebas de usabilidad con los entrevistados, se obtuvo que el texto inicial e informativo en la vista principal presenta grosores de línea y tamaños ligeramente reducidos, lo que genera ligera fatiga visual o dificultad de lectura rápida para usuarios con menor agudeza visual. 
 
-![Problema 1]()
+![Problema 1](assets/images/Chapter-5/validation/Problema_eu_1.png)
 
 
 - **Recomendación:** Aumentar el peso de fuente (`font-weight`) y el tamaño base de los títulos principales en la Landing Page, garantizando un contraste adecuado y una lectura inclusiva.
@@ -5401,7 +5401,7 @@ Los errores identificados han sido puntuados tomando en cuenta la siguiente esca
 - **Heurística violada:** Usability - Coincidencia entre el sistema y el mundo real / Flexibilidad y eficiencia de uso
 - **Problema:** Durante las pruebas realizadas en campo, el usuario no comprende el motivo por el cual ciertas fechas en el calendario no se pueden seleccionar, generando confusión al no recibir retroalimentación del estado de disponibilidad. 
 
-![Problema 2]()
+![Problema 2](assets/images/Chapter-5/validation/Problema2_eu_2.png)
 
 - **Recomendación:** Agregar un elemento visual más vistoso de aviso para indicar explícitamente que las fechas seleccionadas no están disponibles e indicar el motivo.
 
