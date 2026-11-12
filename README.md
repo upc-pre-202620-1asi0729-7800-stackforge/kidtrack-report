@@ -4736,7 +4736,7 @@ Se desplegó en Azure Static Web Apps.
 - Se creó en Azure un Static Web App y se conectó con el repositorio kidtrack-webapp. 
 - Se integró develop a main  y se publicó la aplicación.
 
-**URL:** https://salmon-bush-078a34410.3.azurestaticapps.net
+**URL:** https://victorious-tree-02a19840f.6.azurestaticapps.net
 
 ![Configuración del despliegue de la aplicación](assets/images/Chapter-5/Sprint2/deploy-webapp-config.png)
 
