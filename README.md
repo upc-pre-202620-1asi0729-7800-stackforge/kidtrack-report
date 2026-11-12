@@ -5301,7 +5301,35 @@ El instrumento se divide en una sección de preguntas demográficas generales y 
 | **P3** | Completada con ayuda | 5 | Le tomó un instante ubicar el historial de viajes pasados dentro del menú secundario. |
 | **P4** | Completada sin ayuda | 7 | Diseño limpio y colores agradables a la vista. |
 
+##### Entrevista 2
 
+| Campo | Detalle |
+|---|---|
+| **Nombres** | Jesus Denilson|
+| **Apellidos** | Quiroz Tarqui|
+| **Edad** |28 |
+| **Distrito** | San Borja|
+| **Ocupación** | Padre de familia|
+| **Entrevistador** |Salvador Chamorro |
+| **Inicio en el video** | 43:43 |
+| **Fin en el video** | 51:04 |
+| **URL** | [Validation](https://1drv.ms/v/c/a3bda66c80e2095c/IQCvTO_P1wNxRZiq_ycfS5KhAUr919Xetdm4GTSSD5VLfyw?e=UqDVDa) |
+
+![Entrevista 3](assets/images/Chapter-5/validation/Entrevista_jesus_padre_de_familia.png)
+
+**Resumen:** El entrevistado comento que las herramientas son de mucha utilidad, el mapa funciona correctamente, le parece importante el tema de las notificaciones y en cuanto al diseño le parecio que todo es bastante facilde intuir es una plataforma que tiene lo necesario, quiza se podria corregir alguna que otra cosa visualmente , pero en general, su apreciacion en cuanto a la parte tecnia fue bastante favorable.
+
+| Tarea | Resultado | Facilidad (1-7) | Observación principal |
+|---|---|---|---|
+| **L1** | Completada sin ayuda | 7 | Entendió lo que ofrece KidTrack sin necesidad de explicaciones. |
+| **L2** | Completada sin ayuda | 7 | Ubicó la información que buscaba sin dificultad. |
+| **L3** | Completada sin ayuda | 7 | Ingresó a la aplicación sin problemas. |
+| **L4** | Completada sin ayuda | 7 | Se movió por el menú con naturalidad. |
+| **P1** | Completada sin ayuda | 7 | Encontró el seguimiento del bus sin ayuda. |
+| **P2** | Completada sin ayuda | 7 | Entendió los avisos sin que se los explicaran. |
+| **P3** | Completada sin ayuda | 6 | Le parecieron útiles los datos principales, pero sugirió quitar algunos elementos innecesarios. |
+| **P4** | Completada sin ayuda | 7 | Accedió al historial sin dificultad. |
+| **P5** | Completada sin ayuda | 5 | Accedió a los datos, pero considera que falta más información del conductor. |
 
 #### Resultados generales
 
@@ -5414,6 +5442,11 @@ El video About-the-Product presenta KidTrack a los visitantes de la Landing Page
 | **Duración** | 1:54 |
 
 ## Conclusiones
+- KidTrack permitirá a los transportistas escolares gestionar de manera más organizada sus rutas, alumnos, abordajes e incidencias, optimizando sus actividades diarias y reduciendo la dependencia de herramientas informales como WhatsApp o registros manuales.
+
+- Los padres de familia tendrán mayor visibilidad sobre el traslado de sus hijos mediante información organizada sobre el estado del viaje, las paradas y los registros de abordaje, contribuyendo a disminuir la incertidumbre y fortalecer la confianza en el servicio de transporte escolar.
+
+- La centralización de la información permitirá mejorar el control de la operación, facilitando el registro de alumnos, conductores y rutas, así como el seguimiento de incidencias y recorridos. Esto puede contribuir a reducir errores y mejorar la planificación del servicio.
 
 ### Avance de conclusiones — AV2
 
